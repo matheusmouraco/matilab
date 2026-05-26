@@ -49,10 +49,15 @@ nav.solid{background:rgba(8,8,8,.9);backdrop-filter:blur(20px);-webkit-backdrop-
 .nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(181,251,103,.25)}
 
 /* ── UTIL ── */
-.w{max-width:900px;margin:0 auto;padding:0 max(calc(50% - 450px),32px)}
-.ey{font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.w{max-width:900px;margin:0 auto;padding:0 max(calc(50% - 450px),32px);display:flex;flex-direction:column;align-items:center;text-align:center}
+/* All direct children of .w are centered as blocks */
+.w > *{width:100%;max-width:860px}
+/* But grids and card-groups span full .w width */
+.w > .grid-2,.w > .grid-3,.w > .grid-4{max-width:860px}
+.ey{font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;margin-bottom:16px;width:auto !important}
 .ey.dark{color:var(--lime)}.ey.dark::before,.ey.dark::after{content:'';width:20px;height:1px;background:var(--lime)}
 .ey.light{color:#3DBA2C}.ey.light::before,.ey.light::after{content:'';width:20px;height:1px;background:#3DBA2C}
+.ey-single{display:inline-flex;align-items:center;gap:10px;margin-bottom:16px;font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;width:auto !important}
 .ey-single.dark{color:var(--lime)}.ey-single.dark::before{content:'';width:20px;height:1px;background:var(--lime)}
 .ey-single.light{color:#3DBA2C}.ey-single.light::before{content:'';width:20px;height:1px;background:#3DBA2C}
 [data-rv]{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
@@ -99,16 +104,15 @@ footer{background:#080808;border-top:1px solid var(--ld);padding:64px 0 32px;col
 .sec-dark{background:#0A0A0A;border-top:1px solid var(--ld);padding:80px 0;text-align:center}
 .sec-light{background:#F5F4F2;border-top:1px solid rgba(0,0,0,.07);padding:80px 0;text-align:center}
 .sec-alt{background:#111;border-top:1px solid var(--ld);padding:80px 0;text-align:center}
-.w{max-width:1440px;margin:0 auto;padding:0 max(calc(50% - 720px),48px)}
 .sec-h2{font-size:clamp(24px,3vw,42px);font-weight:700;letter-spacing:-1.5px;line-height:1.1;color:#fff;margin-bottom:16px;text-align:center}
 .sec-h2.dark-text{color:#080808}
 .sec-p{font-size:15px;font-weight:300;color:rgba(255,255,255,.6);line-height:1.7;max-width:600px;margin:0 auto;text-align:center}
 .sec-p.dark-text{color:#555}
 
 /* ── CARDS ── */
-.card-dark{background:rgba(255,255,255,.025);border:1px solid var(--ld);border-radius:18px;padding:32px 28px;transition:transform .35s,border-color .3s,background .3s}
+.card-dark{background:rgba(255,255,255,.025);border:1px solid var(--ld);border-radius:18px;padding:32px 28px;transition:transform .35s,border-color .3s,background .3s;text-align:left}
 .card-dark:hover{transform:translateY(-4px);border-color:var(--ld2);background:rgba(255,255,255,.04)}
-.card-light{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:18px;padding:32px 28px;transition:transform .35s,box-shadow .35s}
+.card-light{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:18px;padding:32px 28px;transition:transform .35s,box-shadow .35s;text-align:left}
 .card-light:hover{transform:translateY(-4px);box-shadow:0 22px 48px rgba(0,0,0,.07)}
 
 /* ── GRID LAYOUTS ── */
@@ -264,6 +268,8 @@ footer{background:#080808;border-top:1px solid var(--ld);padding:64px 0 32px;col
   .stats-row{gap:20px}
   .hero-ctas{flex-direction:column;align-items:center}
   .hero-ctas .btn-primary,.hero-ctas .btn-ghost{width:100%;max-width:340px;justify-content:center}
+  .w{padding:0 24px}
+  .w > *{max-width:100%}
 }
 @media(max-width:580px){
   .proj-grid{grid-template-columns:1fr!important}
