@@ -5,9 +5,18 @@ Site estático em HTML/CSS/JS puro. Sem build, sem dependências.
 ## Estrutura
 ```
 matilab-site/
-  index.html      → o site completo
-  vercel.json     → configuração de deploy (cache de imagens + clean URLs)
-  imgs/           → screenshots do portfólio (thumb_XX + full_XX)
+  index.html      → site completo (HTML + CSS + JS inline)
+  vercel.json     → deploy config (cache de imagens, clean URLs, headers de segurança)
+  robots.txt      → regras de crawling
+  sitemap.xml     → mapa do site para indexação
+  imgs/           → screenshots do portfólio (thumb_XX + full_XX, 24 projetos)
+```
+
+## Preview local
+```
+cd matilab-site
+python3 -m http.server 4173
+# abrir http://localhost:4173
 ```
 
 ## Como subir no Vercel
