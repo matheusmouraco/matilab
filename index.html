@@ -239,9 +239,10 @@ nav.solid{background:rgba(8,8,8,.9);backdrop-filter:blur(20px);-webkit-backdrop-
 .cr-fade-r{right:0;background:linear-gradient(to left,#0A0A0A,rgba(10,10,10,.8) 40%,transparent)}
 .cr-nav-btn{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.12);background:transparent;color:#fff;font-size:15px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;cursor:none}
 .cr-nav-btn:hover{background:#B5FB67;border-color:#B5FB67;color:#080808}
-.cr-dots{display:flex;justify-content:center;gap:5px;margin-top:16px}
-.cr-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.14);border:none;cursor:none;transition:all .28s;padding:10px;margin:-10px;box-sizing:content-box;flex-shrink:0;position:relative}
-.cr-dot.act{background:#B5FB67;width:22px;border-radius:3px}
+.cr-dots{display:flex;justify-content:center;gap:8px;margin-top:16px;align-items:center}
+.cr-dot{width:22px;height:22px;background:transparent;border:none;cursor:none;transition:all .28s;flex-shrink:0;display:flex;align-items:center;justify-content:center;padding:0}
+.cr-dot::after{content:'';display:block;width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.18);transition:all .28s}
+.cr-dot.act::after{background:#B5FB67;width:14px;border-radius:3px}
 /* ─ MODAL ─ */
 #pf-modal{position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .3s ease}
 #pf-modal.open{opacity:1;pointer-events:all}
@@ -280,9 +281,10 @@ nav.solid{background:rgba(8,8,8,.9);backdrop-filter:blur(20px);-webkit-backdrop-
 .cr-fade-r{right:0;background:linear-gradient(to left,#0A0A0A,rgba(10,10,10,.8) 40%,transparent)}
 .cr-nav-btn{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.12);background:transparent;color:#fff;font-size:15px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;cursor:none}
 .cr-nav-btn:hover{background:#B5FB67;border-color:#B5FB67;color:#080808}
-.cr-dots{display:flex;justify-content:center;gap:5px;margin-top:16px}
-.cr-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.14);border:none;cursor:none;transition:all .28s;padding:10px;margin:-10px;box-sizing:content-box;flex-shrink:0;position:relative}
-.cr-dot.act{background:#B5FB67;width:22px;border-radius:3px}
+.cr-dots{display:flex;justify-content:center;gap:8px;margin-top:16px;align-items:center}
+.cr-dot{width:22px;height:22px;background:transparent;border:none;cursor:none;transition:all .28s;flex-shrink:0;display:flex;align-items:center;justify-content:center;padding:0}
+.cr-dot::after{content:'';display:block;width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.18);transition:all .28s}
+.cr-dot.act::after{background:#B5FB67;width:14px;border-radius:3px}
 /* ─ MODAL ─ */
 #pf-modal{position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .3s ease}
 #pf-modal.open{opacity:1;pointer-events:all}
@@ -384,7 +386,6 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
 .testi-col.mid{animation:tcol 44s linear infinite;animation-delay:-12s}
 @keyframes tcol{from{transform:translateY(0)}to{transform:translateY(-50%)}}
 @keyframes tcolrev{from{transform:translateY(-50%)}to{transform:translateY(0)}}
-.testi-cols:hover .testi-col{animation-play-state:paused}
 .tc{background:rgba(255,255,255,.025);border:1px solid var(--ld);border-radius:16px;padding:24px;transition:border-color .3s,transform .3s;cursor:none;flex-shrink:0}
 .tc:hover{border-color:rgba(181,251,103,.2);transform:translateY(-2px)}
 .tc-stars{display:flex;gap:3px;margin-bottom:14px}
@@ -570,15 +571,16 @@ footer{background:#080808;border-top:1px solid var(--ld);padding:64px 0 32px;col
   <!-- 3D perspective portfolio screenshot slideshow -->
   <div id="hero-screen" style="position:relative;z-index:1;opacity:0;transition:opacity 1s 0.8s ease;width:100%;margin-top:-1rem;overflow:hidden">
     <div style="max-width:90rem;margin:0 auto;-webkit-mask-image:linear-gradient(to bottom,black 55%,transparent 100%);mask-image:linear-gradient(to bottom,black 55%,transparent 100%)">
-      <div style="perspective:1200px;-webkit-mask-image:linear-gradient(to right,black 55%,transparent 100%);mask-image:linear-gradient(to right,black 55%,transparent 100%);margin-right:-14rem;padding-left:14rem">
+      <div style="perspective:1200px;-webkit-mask-image:radial-gradient(ellipse 85% 100% at 30% 50%,black 40%,rgba(0,0,0,0.6) 65%,transparent 85%);mask-image:radial-gradient(ellipse 85% 100% at 30% 50%,black 40%,rgba(0,0,0,0.6) 65%,transparent 85%);margin-right:-14rem;padding-left:14rem">
         <div style="transform:rotateX(20deg)">
           <div id="hero-slide-wrap" style="height:40rem;position:relative;transform:skewX(0.36rad)">
-            <img src="imgs/full_00.jpg" alt="Portfólio Matilab — projeto 1" class="hero-slide" width="1200" height="640" fetchpriority="high" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;border:1px solid rgba(255,255,255,0.08);display:block;opacity:1;transition:opacity 1.4s ease">
-            <img src="imgs/full_01.jpg" alt="Portfólio Matilab — projeto 2" class="hero-slide" width="1200" height="640" loading="lazy" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;border:1px solid rgba(255,255,255,0.08);display:block;opacity:0;transition:opacity 1.4s ease">
-            <img src="imgs/full_02.jpg" alt="Portfólio Matilab — projeto 3" class="hero-slide" width="1200" height="640" loading="lazy" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;border:1px solid rgba(255,255,255,0.08);display:block;opacity:0;transition:opacity 1.4s ease">
-            <img src="imgs/full_03.jpg" alt="Portfólio Matilab — projeto 4" class="hero-slide" width="1200" height="640" loading="lazy" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;border:1px solid rgba(255,255,255,0.08);display:block;opacity:0;transition:opacity 1.4s ease">
-            <img src="imgs/full_04.jpg" alt="Portfólio Matilab — projeto 5" class="hero-slide" width="1200" height="640" loading="lazy" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;border:1px solid rgba(255,255,255,0.08);display:block;opacity:0;transition:opacity 1.4s ease">
-            <img src="imgs/full_05.jpg" alt="Portfólio Matilab — projeto 6" class="hero-slide" width="1200" height="640" loading="lazy" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;border:1px solid rgba(255,255,255,0.08);display:block;opacity:0;transition:opacity 1.4s ease">
+            <img src="imgs/full_02.jpg" alt="Portfólio Matilab — MONTE." class="hero-slide" fetchpriority="high" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:1;transition:opacity 1.6s ease">
+            <img src="imgs/full_04.jpg" alt="Portfólio Matilab — Black Finance" class="hero-slide" loading="lazy" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transition:opacity 1.6s ease">
+            <img src="imgs/full_05.jpg" alt="Portfólio Matilab — Calix Family Office" class="hero-slide" loading="lazy" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transition:opacity 1.6s ease">
+            <img src="imgs/full_07.jpg" alt="Portfólio Matilab — Nivelo Group" class="hero-slide" loading="lazy" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transition:opacity 1.6s ease">
+            <img src="imgs/full_13.jpg" alt="Portfólio Matilab — RGB Arquitetos" class="hero-slide" loading="lazy" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transition:opacity 1.6s ease">
+            <img src="imgs/full_16.jpg" alt="Portfólio Matilab — ArquiStudio" class="hero-slide" loading="lazy" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transition:opacity 1.6s ease">
+            <img src="imgs/full_21.jpg" alt="Portfólio Matilab — Traço 8" class="hero-slide" loading="lazy" style="border-radius:12px;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transition:opacity 1.6s ease">
           </div>
         </div>
       </div>
@@ -1219,10 +1221,8 @@ function crNext(){
     goTo(next);
   }
 }
-let crAuto=setInterval(crNext,3500);
+let crAuto=setInterval(crNext,5000);
 const crOuter=document.querySelector('.cr-outer');
-crOuter.addEventListener('mouseenter',()=>clearInterval(crAuto));
-crOuter.addEventListener('mouseleave',()=>{crAuto=setInterval(crNext,3500);});
 function openModal(i){mIdx=i;showM(i);document.getElementById('pf-modal').classList.add('open');document.body.style.overflow='hidden';goTo(i);}
 function showM(i){const p=PF[i];document.getElementById('pf-modal-tag').textContent=p.tag;document.getElementById('pf-modal-name').textContent=p.name;document.getElementById('pf-modal-desc').textContent=p.desc;document.getElementById('pf-modal-link').href=p.url;document.getElementById('m-counter').textContent=(i+1)+' / '+PF.length;const img=document.getElementById('pf-modal-img');img.src=p.full;img.alt=p.name;const r=document.getElementById('pf-modal-right');if(r)r.scrollTop=0;mIdx=i;}
 function navigateModal(d){const n=Math.max(0,Math.min(mIdx+d,PF.length-1));showM(n);goTo(n);}
@@ -1440,8 +1440,12 @@ function closeModal(){document.getElementById('pf-modal').classList.remove('open
         
         <circle cx="371" cy="315" r="7" fill="#B5FB67" opacity="0.95"/>
         <circle cx="371" cy="315" r="12" fill="none" stroke="#B5FB67" stroke-width="1.5" opacity="0.5">
-          <animate attributeName="r" values="9;20;9" dur="3s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="r" values="9;22;9" dur="2.8s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.6;0;0.6" dur="2.8s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="371" cy="315" r="20" fill="none" stroke="#B5FB67" stroke-width="0.8" opacity="0.2">
+          <animate attributeName="r" values="16;36;16" dur="2.8s" repeatCount="indefinite" begin="1.4s"/>
+          <animate attributeName="opacity" values="0.25;0;0.25" dur="2.8s" repeatCount="indefinite" begin="1.4s"/>
         </circle>
         <text x="381" y="311" font-size="9" fill="#B5FB67" font-family="DM Sans,sans-serif" font-weight="700" opacity="0.95">São Paulo</text>
         <text x="381" y="323" font-size="7" fill="rgba(181,251,103,0.5)" font-family="DM Sans,sans-serif">HQ</text>
@@ -1456,19 +1460,19 @@ function closeModal(){document.getElementById('pf-modal').classList.remove('open
           <animate attributeName="r" values="5;13;5" dur="4.9s" repeatCount="indefinite"/>
           <animate attributeName="opacity" values="0.25;0;0.25" dur="4.9s" repeatCount="indefinite"/>
         </circle>
-        <text x="300" y="134" font-size="7.5" fill="rgba(255,255,255,0.45)" font-family="DM Sans,sans-serif">New York</text>
+        <text x="300" y="134" font-size="7.5" fill="rgba(255,255,255,0.45)" font-family="DM Sans,sans-serif">Nova York</text>
         <circle cx="490" cy="138" r="3.5" fill="#B5FB67" opacity="0.7"/>
         <circle cx="490" cy="138" r="7" fill="none" stroke="#B5FB67" stroke-width="0.8" opacity="0.2">
           <animate attributeName="r" values="5;13;5" dur="4.1s" repeatCount="indefinite"/>
           <animate attributeName="opacity" values="0.25;0;0.25" dur="4.1s" repeatCount="indefinite"/>
         </circle>
-        <text x="496" y="135" font-size="7.5" fill="rgba(255,255,255,0.45)" font-family="DM Sans,sans-serif">Madrid</text>
+        <text x="496" y="135" font-size="7.5" fill="rgba(255,255,255,0.45)" font-family="DM Sans,sans-serif">Madri</text>
         <circle cx="500" cy="107" r="3.5" fill="#B5FB67" opacity="0.7"/>
         <circle cx="500" cy="107" r="7" fill="none" stroke="#B5FB67" stroke-width="0.8" opacity="0.2">
           <animate attributeName="r" values="5;13;5" dur="5.4s" repeatCount="indefinite"/>
           <animate attributeName="opacity" values="0.25;0;0.25" dur="5.4s" repeatCount="indefinite"/>
         </circle>
-        <text x="506" y="104" font-size="7.5" fill="rgba(255,255,255,0.45)" font-family="DM Sans,sans-serif">London</text>
+        <text x="506" y="104" font-size="7.5" fill="rgba(255,255,255,0.45)" font-family="DM Sans,sans-serif">Londres</text>
         <circle cx="654" cy="180" r="3.5" fill="#B5FB67" opacity="0.7"/>
         <circle cx="654" cy="180" r="7" fill="none" stroke="#B5FB67" stroke-width="0.8" opacity="0.2">
           <animate attributeName="r" values="5;13;5" dur="4.6s" repeatCount="indefinite"/>
