@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site para Escritório de Arquitetura | Matilab — 8 Cases de Sucesso</title>
+<meta name="description" content="Criamos sites para escritórios de arquitetura de alto padrão. 8+ cases incluindo vencedores de prêmios internacionais. Design editorial, portfólio imersivo e SEO técnico. São Paulo. A partir de R$1.800.">
+<link rel="canonical" href="https://matilab.com.br/site-para-escritorio-de-arquitetura">
+<meta property="og:title" content="Site para Escritório de Arquitetura | Matilab">
+<meta property="og:description" content="Sites para escritórios de arquitetura premiados. Design editorial, portfólio imersivo e SEO. 8+ cases de sucesso. A partir de R$1.800.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://matilab.com.br/site-para-escritorio-de-arquitetura">
+<meta property="og:locale" content="pt_BR">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Matilab Creative House">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#0A0A0A;color:#fff;font-family:'DM Sans',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.container{max-width:1440px;margin:0 auto;padding:0 max(calc(50% - 720px),24px)}
+section{padding:96px max(calc(50% - 720px),24px)}
+h1,h2,h3{font-family:'DM Serif Display',serif;font-weight:400;line-height:1.1;letter-spacing:-0.02em}
+h1{font-size:clamp(40px,6vw,72px)}
+h2{font-size:clamp(32px,4.5vw,52px);margin-bottom:24px}
+h3{font-size:clamp(22px,2.5vw,28px);margin-bottom:12px}
+p{font-size:16px;color:rgba(255,255,255,0.7)}
+.tag{display:inline-block;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#B5FB67;font-weight:600;margin-bottom:24px}
+.cta-primary{display:inline-block;background:#B5FB67;color:#0A0A0A;padding:16px 32px;border-radius:100px;font-weight:700;font-size:14px;text-decoration:none;transition:transform .2s}
+.cta-primary:hover{transform:translateY(-2px)}
+.cta-secondary{display:inline-block;border:1px solid rgba(255,255,255,0.2);color:#fff;padding:16px 32px;border-radius:100px;font-weight:500;font-size:14px;text-decoration:none}
+
+/* Hero */
+.hero{padding-top:120px;padding-bottom:96px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(181,251,103,0.08),transparent 60%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:center;position:relative;z-index:1}
+.hero h1{margin-bottom:32px}
+.hero .subtitle{font-size:19px;color:rgba(255,255,255,0.75);margin-bottom:40px;line-height:1.55;max-width:600px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:48px}
+.hero-stat{padding:32px;border:1px solid rgba(255,255,255,0.08);border-radius:24px;background:rgba(255,255,255,0.02)}
+.hero-stat-num{font-family:'DM Serif Display',serif;font-size:88px;color:#B5FB67;line-height:1}
+.hero-stat-label{color:rgba(255,255,255,0.65);font-size:15px;margin-top:8px}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:48px}}
+
+/* Why section */
+.why{background:#0D0D0D;border-top:1px solid rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.04)}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px;margin-top:48px}
+.why-card{padding:32px;border-radius:20px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06)}
+.why-card-icon{width:48px;height:48px;border-radius:12px;background:rgba(181,251,103,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:#B5FB67;font-size:24px;font-weight:700}
+.why-card h3{font-size:20px;font-family:'DM Sans',sans-serif;font-weight:600;margin-bottom:12px}
+.why-card p{font-size:14px}
+
+/* Includes */
+.includes-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:48px}
+.includes-item{display:flex;gap:16px;padding:24px;border-radius:16px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06)}
+.includes-check{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:#B5FB67;color:#0A0A0A;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.includes-item h4{font-size:16px;font-weight:600;margin-bottom:4px;font-family:'DM Sans',sans-serif}
+.includes-item p{font-size:13px;color:rgba(255,255,255,0.55)}
+
+/* Cases */
+.cases{background:#0D0D0D}
+.cases-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:48px}
+.case-card{padding:40px;border-radius:24px;background:linear-gradient(135deg,rgba(181,251,103,0.05),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.08);transition:all .3s}
+.case-card:hover{border-color:rgba(181,251,103,0.3);transform:translateY(-4px)}
+.case-card .name{font-family:'DM Serif Display',serif;font-size:32px;margin-bottom:8px}
+.case-card .domain{font-size:12px;color:#B5FB67;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px;display:block}
+.case-card p{font-size:14px;color:rgba(255,255,255,0.65)}
+.case-card .highlight{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.08);font-size:13px;color:#B5FB67}
+@media(max-width:760px){.cases-grid{grid-template-columns:1fr}}
+
+/* Testimonials */
+.testimonials{background:#F5F4F2;color:#0A0A0A}
+.testimonials .tag{color:#0A0A0A;opacity:.5}
+.testimonials h2{color:#0A0A0A}
+.testimonials-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:48px}
+.testimonial{padding:40px;background:#fff;border-radius:24px;box-shadow:0 4px 24px rgba(0,0,0,0.04)}
+.testimonial blockquote{font-family:'DM Serif Display',serif;font-size:22px;line-height:1.4;color:#0A0A0A;margin-bottom:24px}
+.testimonial cite{font-style:normal;font-size:14px;color:rgba(0,0,0,0.6);font-weight:600}
+.testimonial cite span{display:block;font-weight:400;font-size:13px;color:rgba(0,0,0,0.4);margin-top:2px}
+@media(max-width:760px){.testimonials-grid{grid-template-columns:1fr}}
+
+/* Pricing */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.price-card{padding:40px 32px;border-radius:24px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02)}
+.price-card.featured{background:linear-gradient(180deg,rgba(181,251,103,0.08),rgba(255,255,255,0.02));border-color:rgba(181,251,103,0.3);position:relative}
+.price-card.featured::before{content:"Mais escolhido";position:absolute;top:-12px;left:32px;background:#B5FB67;color:#0A0A0A;font-size:11px;font-weight:700;letter-spacing:1px;padding:6px 14px;border-radius:100px;text-transform:uppercase}
+.price-card h3{font-family:'DM Sans',sans-serif;font-size:18px;font-weight:600;margin-bottom:8px}
+.price-card .price{font-family:'DM Serif Display',serif;font-size:42px;color:#B5FB67;margin:16px 0 8px}
+.price-card .price-detail{font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:24px}
+.price-card ul{list-style:none;padding:0}
+.price-card li{font-size:14px;color:rgba(255,255,255,0.7);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05)}
+.price-card li:last-child{border-bottom:none}
+@media(max-width:900px){.pricing-grid{grid-template-columns:1fr}}
+
+/* Process */
+.process{background:#0D0D0D}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
+.process-step{padding:32px 24px;border-radius:20px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);position:relative}
+.process-num{font-family:'DM Serif Display',serif;font-size:64px;color:#B5FB67;line-height:1;margin-bottom:16px;opacity:.4}
+.process-step h3{font-size:18px;font-family:'DM Sans',sans-serif;font-weight:600;margin-bottom:8px}
+.process-step p{font-size:13px}
+@media(max-width:900px){.process-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.process-grid{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq-list{max-width:900px;margin:48px auto 0}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.08)}
+.faq-question{width:100%;background:none;border:none;color:#fff;font-family:'DM Sans',sans-serif;font-size:18px;font-weight:600;text-align:left;padding:28px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px}
+.faq-question:hover{color:#B5FB67}
+.faq-icon{width:32px;height:32px;border-radius:50%;background:rgba(181,251,103,0.1);color:#B5FB67;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:18px;transition:transform .3s}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease;color:rgba(255,255,255,0.7);font-size:15px}
+.faq-item.open .faq-answer{max-height:500px;padding-bottom:28px}
+
+/* Final CTA */
+.final-cta{background:linear-gradient(135deg,rgba(181,251,103,0.08),rgba(10,10,10,0));text-align:center;padding-top:120px;padding-bottom:120px}
+.final-cta h2{max-width:800px;margin:0 auto 24px}
+.final-cta p{max-width:600px;margin:0 auto 40px;font-size:18px}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Service",
+  "name":"Site para Escritório de Arquitetura",
+  "provider":{
+    "@type":"Organization",
+    "name":"Matilab Creative House",
+    "url":"https://matilab.com.br",
+    "address":{"@type":"PostalAddress","addressLocality":"Vila Olímpia","addressRegion":"São Paulo","addressCountry":"BR"},
+    "telephone":"+5511992644010"
+  },
+  "areaServed":{"@type":"Country","name":"Brasil"},
+  "serviceType":"Desenvolvimento de Site para Escritórios de Arquitetura",
+  "description":"Criação de sites institucionais e portfólios digitais sob medida para escritórios de arquitetura e arquitetos, com design editorial, performance e SEO técnico.",
+  "offers":{"@type":"Offer","priceCurrency":"BRL","price":"1800","priceSpecification":{"@type":"PriceSpecification","minPrice":"1800","priceCurrency":"BRL"}}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://matilab.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Serviços","item":"https://matilab.com.br/#servicos"},
+    {"@type":"ListItem","position":3,"name":"Site para Escritório de Arquitetura","item":"https://matilab.com.br/site-para-escritorio-de-arquitetura"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Vocês têm experiência com escritórios de arquitetura?","acceptedAnswer":{"@type":"Answer","text":"Sim. A Matilab já desenvolveu sites para mais de 8 escritórios de arquitetura no Brasil, incluindo Cardim Paisagismo (vencedor do International Architecture Award), Arkitito Arquitetura, VOA Arquitetura, RGB Arquitetos, Vitor Dias Arquitetura, Gabriela Prado (publicada em Casa Vogue), Maena e Traço 8 (CASACOR 2025). Conhecemos profundamente as exigências estéticas e comerciais do setor."}},
+    {"@type":"Question","name":"O site vai mostrar bem os projetos e fotos?","acceptedAnswer":{"@type":"Answer","text":"Sim. Aplicamos técnicas de imagem responsiva, lazy loading inteligente e galerias imersivas otimizadas. As fotos carregam rápido, mantêm fidelidade de cor e ficam impactantes em qualquer tela. Galerias podem ser categorizadas por tipologia (residencial, comercial, paisagismo) e por status (entregue, em obra)."}},
+    {"@type":"Question","name":"Preciso ter fotos profissionais para começar?","acceptedAnswer":{"@type":"Answer","text":"Recomendamos sim, pois um site de arquitetura é primordialmente visual. Caso ainda não tenha, podemos indicar fotógrafos especializados em arquitetura ou começar com renders e maquetes 3D, atualizando depois conforme os projetos são fotografados profissionalmente."}},
+    {"@type":"Question","name":"Quanto tempo leva o site de um escritório de arquitetura?","acceptedAnswer":{"@type":"Answer","text":"O prazo médio é de 14 a 30 dias úteis, dependendo do escopo. Sites institucionais simples ficam prontos em 14-21 dias. Sites com portfólio avançado, blog e versão bilíngue levam de 21 a 30 dias. Tudo isso com revisões iterativas e alinhamento de direção de arte."}},
+    {"@type":"Question","name":"Posso atualizar o portfólio sozinho depois?","acceptedAnswer":{"@type":"Answer","text":"Sim. Entregamos o site com painel administrativo intuitivo para que sua equipe consiga adicionar novos projetos, fotos e textos sem precisar de programador. Também oferecemos treinamento gravado e suporte mensal opcional."}},
+    {"@type":"Question","name":"Vale a pena ter blog no site de arquitetura?","acceptedAnswer":{"@type":"Answer","text":"Sim, especialmente para SEO. Escritórios que publicam regularmente sobre projetos entregues, processos e referências aparecem mais nas buscas como 'arquiteto em São Paulo' ou 'arquitetura residencial alto padrão'. O blog também alimenta redes sociais e fortalece a autoridade do escritório."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav style="position:sticky;top:0;z-index:100;background:rgba(10,10,10,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.06);padding:0 max(calc(50% - 720px),24px)">
+  <div style="display:flex;align-items:center;justify-content:space-between;height:64px">
+    <a href="/" aria-label="Matilab">
+      <svg height="16" viewBox="0 0 1439 266" fill="none"><path fill="white" d="M1260.27 4.14H1308.67V92.29C1322.15 74.32 1340.47 64.98 1363.98 64.98C1388.87 64.98 1407.89 73.63 1420.33 90.57C1432.78 107.85 1439 131.01 1439 160.74C1439 175.26 1436.93 188.06 1433.47 199.81C1430.01 211.56 1424.83 221.93 1417.91 230.23C1411 238.53 1403.05 245.1 1393.37 249.59C1383.69 254.43 1372.62 256.5 1360.53 256.5C1350.85 256.5 1341.51 254.78 1332.52 250.97C1323.53 247.52 1314.89 240.6 1307.29 230.92V250.97H1260.27V4.14Z"/><path fill="white" d="M347.403 4.14H409.284L470.819 188.4L534.083 4.14H594.236V250.97H546.874V86.42L490.525 250.97H450.423L393.727 86.76V250.97H347.403V4.14Z"/></svg>
+    </a>
+    <div style="display:flex;align-items:center;gap:20px">
+      <a href="/" style="font-size:13px;color:rgba(255,255,255,.6);text-decoration:none;font-family:'DM Sans',sans-serif">← Início</a>
+      <a href="https://api.whatsapp.com/send/?phone=5511992644010&text=Quero+um+site+para+meu+escritório+de+arquitetura" target="_blank" style="font-size:13px;background:#B5FB67;color:#0A0A0A;font-weight:700;padding:8px 20px;border-radius:100px;text-decoration:none;font-family:'DM Sans',sans-serif">Fale Conosco →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <span class="tag">Especialidade · Escritórios de Arquitetura</span>
+      <h1>Site para Escritório de Arquitetura que Conquista Clientes</h1>
+      <p class="subtitle">A Matilab criou sites para mais de 8 dos principais escritórios de arquitetura do Brasil, incluindo vencedores de prêmios internacionais e publicados em Casa Vogue. Entendemos que um site de arquitetura precisa transmitir sensibilidade estética e gerar negócios ao mesmo tempo.</p>
+      <div class="hero-actions">
+        <a href="https://api.whatsapp.com/send/?phone=5511992644010&text=Quero+um+site+para+meu+escritório+de+arquitetura" target="_blank" class="cta-primary">Quero meu orçamento →</a>
+        <a href="#cases" class="cta-secondary">Ver cases</a>
+      </div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">8+</div>
+      <div class="hero-stat-label">escritórios de arquitetura no portfólio Matilab — de premiados internacionalmente a integrantes da CASACOR 2025.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div style="max-width:760px">
+    <span class="tag">Por que um site especializado</span>
+    <h2>Arquitetura exige um site que não se compare a qualquer outro</h2>
+    <p>Diferente de qualquer outro segmento, um site de arquitetura é uma extensão da identidade visual do escritório. Cada detalhe — tipografia, espaçamento, ritmo das imagens — comunica posicionamento. Um site genérico não converte clientes de alto padrão.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-card-icon">◐</div>
+      <h3>Imagem é o produto</h3>
+      <p>Fotos de obras entregues são o principal ativo. Galerias precisam ser imersivas, com alta fidelidade de cor e carregamento instantâneo.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-card-icon">✦</div>
+      <h3>Público exigente</h3>
+      <p>Clientes de alto padrão julgam o escritório pela apresentação digital antes do primeiro contato. Design fraco filtra negócios antes mesmo do briefing.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-card-icon">◉</div>
+      <h3>SEO local qualificado</h3>
+      <p>Buscas como "arquiteto residencial SP", "escritório de arquitetura em São Paulo" ou "arquiteto de interiores Jardins" trazem leads quentes — se o site rankear bem.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-card-icon">◇</div>
+      <h3>Direção de arte autoral</h3>
+      <p>Cada escritório tem uma linguagem única. Nosso processo não usa templates — desenhamos cada site como um projeto editorial sob medida.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUDES -->
+<section>
+  <span class="tag">Escopo Completo</span>
+  <h2>O que inclui um site para arquiteto na Matilab</h2>
+  <p style="max-width:720px">Cada projeto entregue contempla os elementos essenciais para um escritório de arquitetura comunicar autoridade, atrair leads qualificados e manter o portfólio sempre vivo.</p>
+  <div class="includes-list">
+    <div class="includes-item"><div class="includes-check">✓</div><div><h4>Galeria imersiva de projetos</h4><p>Visualização fullscreen, navegação fluida e zoom em alta resolução.</p></div></div>
+    <div class="includes-item"><div class="includes-check">✓</div><div><h4>Portfólio categorizado</h4><p>Filtros por tipologia (residencial, comercial, paisagismo) e status.</p></div></div>
+    <div class="includes-item"><div class="includes-check">✓</div><div><h4>Página de equipe e filosofia</h4><p>Posicionamento autoral, manifesto criativo e biografia dos sócios.</p></div></div>
+    <div class="includes-item"><div class="includes-check">✓</div><div><h4>Blog para SEO</h4><p>Publicações de projetos entregues e processos atraem buscas qualificadas.</p></div></div>
+    <div class="includes-item"><div class="includes-check">✓</div><div><h4>Formulário de contato qualificado</h4><p>Campos pré-segmentados para filtrar e priorizar leads desde o briefing.</p></div></div>
+    <div class="includes-item"><div class="includes-check">✓</div><div><h4>SEO técnico de busca local</h4><p>Schema Organization, LocalBusiness e otimização para "arquiteto em [cidade]".</p></div></div>
+    <div class="includes-item"><div class="includes-check">✓</div><div><h4>Performance 90+ Lighthouse</h4><p>Lazy-loading, imagens em formato moderno e Core Web Vitals no verde.</p></div></div>
+    <div class="includes-item"><div class="includes-check">✓</div><div><h4>Painel administrativo</h4><p>Atualize projetos, fotos e textos sem depender de programador.</p></div></div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section class="cases" id="cases">
+  <span class="tag">Portfólio Real</span>
+  <h2>Cases de escritórios de arquitetura atendidos</h2>
+  <p style="max-width:720px">Selecionamos quatro dos nossos cases mais expressivos no segmento — escritórios premiados, publicados em revistas e com presença consolidada no mercado brasileiro.</p>
+  <div class="cases-grid">
+    <div class="case-card">
+      <span class="domain">cardimpaisagismo.com.br</span>
+      <div class="name">Cardim Paisagismo</div>
+      <p>Vencedor do International Architecture Award, com projetos em quase todos os estados brasileiros. Liderado por Ricardo Cardim, referência em paisagismo nativo.</p>
+      <div class="highlight">"Cuidado em cada detalhe, paciência para resolver tudo de perto."</div>
+    </div>
+    <div class="case-card">
+      <span class="domain">arkitito.com</span>
+      <div class="name">Arkitito Arquitetura</div>
+      <p>Escritório paulistano com presença consolidada, frequentemente publicado em veículos da imprensa nacional. Foco em residencial de alto padrão.</p>
+      <div class="highlight">Site sempre atualizado, refletindo projetos com qualidade.</div>
+    </div>
+    <div class="case-card">
+      <span class="domain">voaarquitetura.com</span>
+      <div class="name">VOA Arquitetura</div>
+      <p>Quatro arquitetas com linguagem contemporânea. Site bilíngue PT/EN, portfólio minimalista e estratégia editorial focada em projetos autorais.</p>
+      <div class="highlight">Bilíngue · Portfólio minimalista contemporâneo.</div>
+    </div>
+    <div class="case-card">
+      <span class="domain">traco8.base44.app</span>
+      <div class="name">Traço 8</div>
+      <p>Arquitetas do elenco oficial da CASACOR 2025. Posicionamento de prestígio e linguagem visual alinhada à elite do design brasileiro.</p>
+      <div class="highlight">CASACOR 2025 · Prestígio e curadoria.</div>
+    </div>
+  </div>
+  <div style="margin-top:48px;padding:32px;border-radius:20px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06)">
+    <p style="font-size:14px;color:rgba(255,255,255,0.6)"><strong style="color:#B5FB67">Outros escritórios atendidos:</strong> RGB Arquitetos (filosofia Arte + Natureza + Tecnologia), Vitor Dias Arquitetura (alto padrão em Jundiaí), Gabriela Prado (publicada em Casa Vogue, KAZA e Decor com 10+ anos de mercado) e Maena (Porto Alegre, arquitetura e design integrados).</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <span class="tag">Depoimentos</span>
+  <h2>O que dizem os escritórios atendidos</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial">
+      <blockquote>"A parceria resultou em um site altamente otimizado, com navegação fluida e design pensado para transmitir nossa essência de forma clara. Superou todas as expectativas."</blockquote>
+      <cite>Tito Ficarelli<span>Habitai Casas · CEO</span></cite>
+    </div>
+    <div class="testimonial">
+      <blockquote>"Ágeis, eficientes e entendem exatamente o que nosso escritório precisa: um site sempre atualizado e vivo, refletindo nossos projetos com qualidade."</blockquote>
+      <cite>Chantal Ficarelli<span>Arkitito · Sócia</span></cite>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section>
+  <span class="tag">Investimento</span>
+  <h2>Preços para sites de escritório de arquitetura</h2>
+  <p style="max-width:680px">Três faixas de investimento conforme a complexidade do escopo. Todos os valores incluem direção de arte, desenvolvimento, SEO técnico básico, treinamento e 30 dias de suporte pós-entrega.</p>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <h3>Site Institucional</h3>
+      <div class="price">R$ 1.800</div>
+      <div class="price-detail">a partir de · prazo 14-21 dias</div>
+      <ul>
+        <li>Até 6 páginas</li>
+        <li>Galeria de projetos básica</li>
+        <li>Formulário de contato</li>
+        <li>SEO técnico essencial</li>
+        <li>Painel admin simples</li>
+      </ul>
+    </div>
+    <div class="price-card featured">
+      <h3>Portfólio Avançado</h3>
+      <div class="price">R$ 3.500</div>
+      <div class="price-detail">a partir de · prazo 21-28 dias</div>
+      <ul>
+        <li>Páginas ilimitadas</li>
+        <li>Galeria imersiva categorizada</li>
+        <li>Blog completo para SEO</li>
+        <li>SEO local avançado</li>
+        <li>Performance 90+ Lighthouse</li>
+      </ul>
+    </div>
+    <div class="price-card">
+      <h3>Bilíngue PT/EN</h3>
+      <div class="price">R$ 4.200</div>
+      <div class="price-detail">a partir de · prazo 28-30 dias</div>
+      <ul>
+        <li>Tudo do Portfólio Avançado</li>
+        <li>Versão completa em inglês</li>
+        <li>SEO internacional</li>
+        <li>Schema bilíngue</li>
+        <li>Indicado para projetos no exterior</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <span class="tag">Metodologia</span>
+  <h2>Processo de trabalho em 4 etapas</h2>
+  <p style="max-width:680px">Um fluxo testado em mais de 8 escritórios de arquitetura, desenhado para entregar sites com identidade autoral sem atrasos nem retrabalho.</p>
+  <div class="process-grid">
+    <div class="process-step">
+      <div class="process-num">01</div>
+      <h3>Briefing e direção de arte</h3>
+      <p>Imersão na linguagem do escritório, definição de referências e moodboard visual.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">02</div>
+      <h3>Design editorial único</h3>
+      <p>Wireframes e UI desenhados sob medida — nada de templates ou layouts prontos.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">03</div>
+      <h3>Desenvolvimento e performance</h3>
+      <p>Código limpo, otimização de imagens, SEO técnico e Core Web Vitals no verde.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">04</div>
+      <h3>Entrega e treinamento</h3>
+      <p>Publicação, ajustes finos e treinamento da equipe para atualizar portfólio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <span class="tag">Dúvidas Frequentes</span>
+  <h2>Perguntas comuns de escritórios de arquitetura</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false"><span>Vocês têm experiência com escritórios de arquitetura?</span><span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Sim. A Matilab já desenvolveu sites para mais de 8 escritórios de arquitetura no Brasil, incluindo Cardim Paisagismo (vencedor do International Architecture Award), Arkitito Arquitetura, VOA Arquitetura, RGB Arquitetos, Vitor Dias Arquitetura, Gabriela Prado (publicada em Casa Vogue), Maena e Traço 8 (CASACOR 2025). Conhecemos profundamente as exigências estéticas e comerciais do setor.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false"><span>O site vai mostrar bem os projetos e fotos?</span><span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Sim. Aplicamos técnicas de imagem responsiva, lazy loading inteligente e galerias imersivas otimizadas. As fotos carregam rápido, mantêm fidelidade de cor e ficam impactantes em qualquer tela. Galerias podem ser categorizadas por tipologia (residencial, comercial, paisagismo) e por status (entregue, em obra).</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false"><span>Preciso ter fotos profissionais para começar?</span><span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Recomendamos sim, pois um site de arquitetura é primordialmente visual. Caso ainda não tenha, podemos indicar fotógrafos especializados em arquitetura ou começar com renders e maquetes 3D, atualizando depois conforme os projetos são fotografados profissionalmente.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false"><span>Quanto tempo leva o site de um escritório de arquitetura?</span><span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>O prazo médio é de 14 a 30 dias úteis, dependendo do escopo. Sites institucionais simples ficam prontos em 14-21 dias. Sites com portfólio avançado, blog e versão bilíngue levam de 21 a 30 dias. Tudo isso com revisões iterativas e alinhamento de direção de arte.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false"><span>Posso atualizar o portfólio sozinho depois?</span><span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Sim. Entregamos o site com painel administrativo intuitivo para que sua equipe consiga adicionar novos projetos, fotos e textos sem precisar de programador. Também oferecemos treinamento gravado e suporte mensal opcional.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false"><span>Vale a pena ter blog no site de arquitetura?</span><span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Sim, especialmente para SEO. Escritórios que publicam regularmente sobre projetos entregues, processos e referências aparecem mais nas buscas como "arquiteto em São Paulo" ou "arquitetura residencial alto padrão". O blog também alimenta redes sociais e fortalece a autoridade do escritório.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <span class="tag">Vamos conversar</span>
+  <h2>Pronto para um site à altura do seu escritório?</h2>
+  <p>Receba um orçamento personalizado em menos de 24 horas. Atendemos escritórios de arquitetura em todo o Brasil, com sede em Vila Olímpia, São Paulo.</p>
+  <a href="https://api.whatsapp.com/send/?phone=5511992644010&text=Quero+um+site+para+meu+escritório+de+arquitetura" target="_blank" class="cta-primary">Falar com a Matilab no WhatsApp →</a>
+</section>
+
+<footer style="background:#080808;border-top:1px solid rgba(255,255,255,0.06);padding:48px max(calc(50% - 720px),24px) 24px">
+  <div style="display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;margin-bottom:40px">
+    <div>
+      <p style="color:rgba(255,255,255,0.4);font-size:13px;margin-top:12px;font-family:'DM Sans',sans-serif">Agência de desenvolvimento web de alto padrão</p>
+      <p style="color:rgba(255,255,255,0.25);font-size:12px;margin-top:4px;font-family:'DM Sans',sans-serif">Vila Olímpia · São Paulo, Brasil</p>
+    </div>
+    <div style="display:flex;gap:40px;flex-wrap:wrap">
+      <div>
+        <p style="color:rgba(255,255,255,0.4);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;font-family:'DM Sans',sans-serif">Serviços</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px">
+          <li><a href="/agencia-web-sao-paulo" style="color:rgba(255,255,255,0.5);font-size:13px;text-decoration:none;font-family:'DM Sans',sans-serif">Agência Web SP</a></li>
+          <li><a href="/quanto-custa-criar-um-site" style="color:rgba(255,255,255,0.5);font-size:13px;text-decoration:none;font-family:'DM Sans',sans-serif">Preços e orçamentos</a></li>
+          <li><a href="/landing-page-alta-conversao" style="color:rgba(255,255,255,0.5);font-size:13px;text-decoration:none;font-family:'DM Sans',sans-serif">Landing Pages</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between">
+    <span style="color:rgba(255,255,255,0.3);font-size:12px;font-family:'DM Sans',sans-serif">© 2026 Matilab Creative House — CNPJ 40.283.248/0001-21</span>
+    <span style="color:rgba(255,255,255,0.3);font-size:12px;font-family:'DM Sans',sans-serif">Todos os direitos reservados</span>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-question').setAttribute('aria-expanded','false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
