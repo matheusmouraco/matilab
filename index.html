@@ -235,7 +235,7 @@ body.big #cur{width:18px;height:18px}
 body.big #ring{width:50px;height:50px;border-color:rgba(181,251,103,.55)}
 
 /* ── LOADING ── */
-#loader{position:fixed;inset:0;background:#0A0A0A;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:8000;transition:opacity .4s ease}
+#loader{position:fixed;inset:0;background:#0A0A0A;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:8000;transition:opacity .25s ease}
 #loader.out{opacity:0;pointer-events:none}
 #loader-logo{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
 #loader-logo.in{opacity:1;transform:none}
@@ -1903,19 +1903,19 @@ window.scrollTo(0, 0);
   function killLoader(){
     if(!loader || !loader.parentNode) return;
     loader.classList.add('out');
-    setTimeout(()=>{ if(loader && loader.parentNode) loader.remove(); }, 450);
+    setTimeout(()=>{ if(loader && loader.parentNode) loader.remove(); }, 300);
   }
   try {
     if(logo) setTimeout(()=> logo.classList.add('in'), 80);
     const start = Date.now();
-    const DURATION = 900;
+    const DURATION = 500;
     function tick(){
       const elapsed = Date.now() - start;
       let p = Math.min((elapsed / DURATION) * 100, 100);
       if(bar) bar.style.width = p + '%';
       if(pct) pct.textContent = Math.round(p) + '%';
       if(p < 100){ requestAnimationFrame(tick); }
-      else { setTimeout(killLoader, 150); }
+      else { setTimeout(killLoader, 50); }
     }
     requestAnimationFrame(tick);
   } catch(e){ killLoader(); }
@@ -2091,44 +2091,51 @@ function setLang(l){
 })();
 
 
-/* world dot map — desktop only (hidden on mobile via CSS) */
+/* world dot map — desktop only, deferred after LCP to avoid blocking main thread */
 (function(){
   if(IS_MOBILE) return;
-  const canvas = document.getElementById('worldmap');
-  if(!canvas) return;
-  const W = 1000, H = 500;
-  canvas.width = W; canvas.height = H;
-  const ctx = canvas.getContext('2d');
-  const STEP = 9;
-  // land mask function
-  function isLand(lat, lon){
-    if(lon > -170 && lon < -50 && lat > 15 && lat < 75) return true;  // N America
-    if(lon > -82 && lon < -34 && lat > -56 && lat < 13) return true;   // S America
-    if(lon > -10 && lon < 40 && lat > 35 && lat < 72) return true;     // Europe
-    if(lon > -18 && lon < 52 && lat > -35 && lat < 38) return true;    // Africa
-    if(lon > 25 && lon < 145 && lat > 10 && lat < 75) return true;     // Asia
-    if(lon > 95 && lon < 145 && lat > -10 && lat < 30) return true;    // SE Asia
-    if(lon > 113 && lon < 154 && lat > -40 && lat < -10) return true;  // Australia
-    if(lon > 130 && lon < 145 && lat > 30 && lat < 46) return true;    // Japan
-    if(lon > -60 && lon < -15 && lat > 60 && lat < 84) return true;    // Greenland
-    if(lon > -10 && lon < 2 && lat > 50 && lat < 60) return true;      // UK
-    return false;
-  }
-  ctx.fillStyle = 'rgba(255,255,255,0.13)';
-  for(let row = 0; row < H; row += STEP){
-    for(let col = 0; col < W; col += STEP){
-      const lat = 90 - row * 180 / H;
-      const lon = col * 360 / W - 180;
-      if(isLand(lat, lon)){
-        ctx.beginPath();
-        ctx.arc(col, row, 1.5, 0, Math.PI*2);
-        ctx.fill();
+  function drawMap(){
+    const canvas = document.getElementById('worldmap');
+    if(!canvas) return;
+    const W = 1000, H = 500;
+    canvas.width = W; canvas.height = H;
+    const ctx = canvas.getContext('2d');
+    const STEP = 9;
+    function isLand(lat, lon){
+      if(lon > -170 && lon < -50 && lat > 15 && lat < 75) return true;
+      if(lon > -82 && lon < -34 && lat > -56 && lat < 13) return true;
+      if(lon > -10 && lon < 40 && lat > 35 && lat < 72) return true;
+      if(lon > -18 && lon < 52 && lat > -35 && lat < 38) return true;
+      if(lon > 25 && lon < 145 && lat > 10 && lat < 75) return true;
+      if(lon > 95 && lon < 145 && lat > -10 && lat < 30) return true;
+      if(lon > 113 && lon < 154 && lat > -40 && lat < -10) return true;
+      if(lon > 130 && lon < 145 && lat > 30 && lat < 46) return true;
+      if(lon > -60 && lon < -15 && lat > 60 && lat < 84) return true;
+      if(lon > -10 && lon < 2 && lat > 50 && lat < 60) return true;
+      return false;
+    }
+    ctx.fillStyle = 'rgba(255,255,255,0.13)';
+    for(let row = 0; row < H; row += STEP){
+      for(let col = 0; col < W; col += STEP){
+        const lat = 90 - row * 180 / H;
+        const lon = col * 360 / W - 180;
+        if(isLand(lat, lon)){
+          ctx.beginPath();
+          ctx.arc(col, row, 1.5, 0, Math.PI*2);
+          ctx.fill();
+        }
       }
     }
+    // Use known height constant — never read offsetHeight after DOM mutation (forced reflow)
+    const svg = document.getElementById('citySVG');
+    if(svg){ svg.style.height = H + 'px'; }
   }
-  // resize citySVG to match
-  const svg = document.getElementById('citySVG');
-  if(svg){ svg.style.height = canvas.offsetHeight + 'px'; }
+  // Defer entirely: runs only after browser is idle, keeping LCP path clear
+  if('requestIdleCallback' in window){
+    requestIdleCallback(drawMap, {timeout: 3000});
+  } else {
+    setTimeout(drawMap, 500);
+  }
 })();
 
 </script>
