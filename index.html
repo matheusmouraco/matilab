@@ -503,6 +503,10 @@ footer{background:#080808;border-top:1px solid var(--ld);padding:64px 0 32px;col
 .ft-links a:hover{color:#fff}
 .ft-bot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;max-width:1440px;margin:0 auto;padding:24px max(calc(50% - 720px),48px) 0;border-top:1px solid var(--ld)}
 .ft-copy{font-size:11px;font-weight:400;color:#888;letter-spacing:.2px}
+.ft-guias{max-height:152px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.1) transparent;padding-right:4px}
+.ft-guias::-webkit-scrollbar{width:2px}
+.ft-guias::-webkit-scrollbar-thumb{background:rgba(255,255,255,.12);border-radius:2px}
+.ft-guias::-webkit-scrollbar-track{background:transparent}
 
 /* ── REDUCED MOTION + MOBILE: kill continuous CPU/GPU animations ── */
 @media(prefers-reduced-motion:reduce){
@@ -1837,7 +1841,7 @@ function closeModal(){document.getElementById('pf-modal').classList.remove('open
     </div>
     <div>
       <div class="ft-col-t">Guias</div>
-      <ul class="ft-links">
+      <ul class="ft-links ft-guias">
         <li><a href="/quanto-custa-criar-um-site">Quanto custa um site?</a></li>
         <li><a href="/quanto-custa-ecommerce">Custo de E-commerce</a></li>
         <li><a href="/agencia-web-sao-paulo">Agência Web SP</a></li>

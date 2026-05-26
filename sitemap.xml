@@ -50,7 +50,7 @@
     </image:image>
   </url>
 
-  <!-- PÁGINAS SEO/GEO -->
+  <!-- PÁGINAS SEO/GEO — TIER 1 (prioridade alta) -->
   <url>
     <loc>https://matilab.com.br/quanto-custa-criar-um-site</loc>
     <lastmod>2026-05-26</lastmod>
@@ -66,6 +66,21 @@
   </url>
 
   <url>
+    <loc>https://matilab.com.br/ecommerce-profissional</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/quanto-custa-ecommerce</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- PÁGINAS SEO/GEO — TIER 2 (prioridade média-alta) -->
+  <url>
     <loc>https://matilab.com.br/landing-page-alta-conversao</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -77,6 +92,62 @@
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/site-para-clinica</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/site-para-advogado</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/site-para-imobiliaria</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/site-para-construtora</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/redesign-de-site</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/agencia-nextjs-brasil</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/site-para-saas</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/site-para-fintech</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
 
 </urlset>
