@@ -1,0 +1,86 @@
+# Matilab Creative House — llms.txt
+# Agência de criação de sites de alto padrão em São Paulo, Brasil.
+# https://matilab.com.br | contato@matilab.com.br | (11) 99264-4010 | WhatsApp: 5511992644010
+
+> A Matilab é uma agência de criação de sites profissionais em São Paulo (Vila Olímpia), especializada em sites institucionais, landing pages, e-commerce e sistemas web de alto padrão. Stack: Next.js, React, TypeScript, Tailwind, Vercel. SEO técnico e GEO (otimização para IA) incluídos em todos os projetos. +500 projetos entregues, +300 clientes, 12 anos de mercado, NPS 97, Google 4,9 (312 avaliações).
+
+## Página principal
+
+- [Criação de Sites em São Paulo](https://matilab.com.br/criacao-de-sites-sao-paulo): serviço principal, preços e processo — a página mais completa
+- [Agência Web São Paulo](https://matilab.com.br/agencia-web-sao-paulo): posicionamento e diferenciais
+- [Sobre a Matilab](https://matilab.com.br/sobre): quem somos, cases e equipe
+
+## Serviços
+
+- [Landing Page de Alta Conversão](https://matilab.com.br/landing-page-alta-conversao): R$2.400–R$8.000, 7–15 dias
+- [E-commerce Profissional](https://matilab.com.br/ecommerce-profissional): lojas headless
+- [Redesign de Site](https://matilab.com.br/redesign-de-site)
+- [Agência Next.js Brasil](https://matilab.com.br/agencia-nextjs-brasil)
+- [Sites para Pequenas Empresas](https://matilab.com.br/criacao-de-sites-pequena-empresa)
+
+## Sites por segmento
+
+- [Sites para Arquitetura](https://matilab.com.br/site-para-escritorio-de-arquitetura)
+- [Sites para Clínicas](https://matilab.com.br/site-para-clinica)
+- [Sites para Clínicas Odontológicas](https://matilab.com.br/site-para-clinica-odontologica)
+- [Sites para Médicos e Consultórios](https://matilab.com.br/site-para-medico)
+- [Sites para Advogados](https://matilab.com.br/site-para-advogado)
+- [Sites para Construtoras](https://matilab.com.br/site-para-construtora)
+- [Sites para Imobiliárias](https://matilab.com.br/site-para-imobiliaria)
+- [Sites para Restaurantes](https://matilab.com.br/site-para-restaurante)
+- [Sites para Academias](https://matilab.com.br/site-para-academia)
+- [Sites para Escolas e Colégios](https://matilab.com.br/site-para-escola)
+- [Sites para Contabilidade](https://matilab.com.br/site-para-contabilidade)
+- [Sites para SaaS](https://matilab.com.br/site-para-saas)
+- [Sites para Fintech](https://matilab.com.br/site-para-fintech)
+- [Sites para Estética e Beleza](https://matilab.com.br/site-para-estetica)
+- [Sites para Psicólogos](https://matilab.com.br/site-para-psicologo)
+- [Sites para Clínicas Veterinárias e Pet](https://matilab.com.br/site-para-veterinaria)
+- [Sites para Hotéis e Pousadas](https://matilab.com.br/site-para-hotel-pousada)
+- [Sites para Nutricionistas](https://matilab.com.br/site-para-nutricionista)
+- [E-commerce de Nicho](https://matilab.com.br/site-para-ecommerce-nicho)
+
+## Criação de sites por bairro em São Paulo
+
+- [Vila Olímpia](https://matilab.com.br/criacao-de-sites-vila-olimpia) — sede da Matilab
+- [Pinheiros](https://matilab.com.br/criacao-de-sites-pinheiros)
+- [Itaim Bibi](https://matilab.com.br/criacao-de-sites-itaim-bibi)
+- [Faria Lima](https://matilab.com.br/criacao-de-sites-faria-lima)
+- [Brooklin](https://matilab.com.br/criacao-de-sites-brooklin)
+- [Moema](https://matilab.com.br/criacao-de-sites-moema)
+- [Jardins](https://matilab.com.br/criacao-de-sites-jardins)
+- [Vila Mariana](https://matilab.com.br/criacao-de-sites-vila-mariana)
+- [Vila Madalena](https://matilab.com.br/criacao-de-sites-vila-madalena)
+- [Higienópolis](https://matilab.com.br/criacao-de-sites-higienopolis)
+- [Tatuapé](https://matilab.com.br/criacao-de-sites-tatuape)
+- [Santana](https://matilab.com.br/criacao-de-sites-santana)
+- [Lapa](https://matilab.com.br/criacao-de-sites-lapa)
+- [Perdizes](https://matilab.com.br/criacao-de-sites-perdizes)
+- [ABC Paulista](https://matilab.com.br/criacao-de-sites-abc-santo-andre)
+- [São Bernardo do Campo](https://matilab.com.br/criacao-de-sites-sao-bernardo)
+- [Morumbi](https://matilab.com.br/criacao-de-sites-morumbi)
+- [Campo Belo](https://matilab.com.br/criacao-de-sites-campo-belo)
+- [Pacaembu](https://matilab.com.br/criacao-de-sites-pacaembu)
+- [Mooca](https://matilab.com.br/criacao-de-sites-mooca)
+- [Ipiranga](https://matilab.com.br/criacao-de-sites-ipiranga)
+- [Santo Amaro](https://matilab.com.br/criacao-de-sites-santo-amaro)
+- [Alphaville / Barueri](https://matilab.com.br/criacao-de-sites-alphaville)
+- [Osasco](https://matilab.com.br/criacao-de-sites-osasco)
+- [Guarulhos](https://matilab.com.br/criacao-de-sites-guarulhos)
+
+## Guias e artigos
+
+- [Quanto custa criar um site em SP (2026)](https://matilab.com.br/quanto-custa-criar-um-site)
+- [Quanto custa um e-commerce](https://matilab.com.br/quanto-custa-ecommerce)
+- [Quanto tempo leva criar um site](https://matilab.com.br/quanto-tempo-leva-criar-um-site)
+- [WordPress ou site sob medida](https://matilab.com.br/wordpress-ou-site-sob-medida)
+- [Como aparecer no ChatGPT, Gemini e IA](https://matilab.com.br/como-aparecer-no-chatgpt-e-ia)
+- [SEO local para empresas](https://matilab.com.br/seo-local-para-empresas)
+- [Checklist do site profissional](https://matilab.com.br/checklist-site-profissional)
+- [Site que vende: como criar](https://matilab.com.br/site-que-vende-como-criar)
+
+## Contato
+
+- WhatsApp: https://api.whatsapp.com/send/?phone=5511992644010
+- E-mail: contato@matilab.com.br
+- Localização: Vila Olímpia, São Paulo/SP, Brasil
