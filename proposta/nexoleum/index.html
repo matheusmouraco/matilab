@@ -98,13 +98,13 @@
   .sec-light .sec-head p{color:var(--ink-d2)}
 
   /* ---------- HERO ---------- */
-  .hero{position:relative;min-height:100dvh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 0 90px;overflow:hidden}
+  .hero{position:relative;min-height:100dvh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 0 90px;overflow:hidden}
   .hero-bg{position:absolute;inset:0;z-index:0;background:url("/proposta/nexoleum/assets/hero-lab.jpg") center 30%/cover no-repeat}
   .hero-ov{position:absolute;inset:0;z-index:1;background:
     radial-gradient(120% 90% at 50% 8%,rgba(0,188,219,.16),transparent 42%),
     linear-gradient(180deg,rgba(0,20,50,.78),rgba(0,25,62,.88) 55%,rgba(0,22,55,.96))}
   .hero .wrap{position:relative;z-index:2;max-width:900px}
-  .hero-logo{height:clamp(58px,8vw,104px);width:auto;margin:0 auto 36px;filter:drop-shadow(0 6px 24px rgba(0,0,0,.4))}
+  .hero-logo{height:clamp(76px,11vw,150px);width:auto;margin:0 auto 40px;filter:drop-shadow(0 6px 24px rgba(0,0,0,.4))}
   .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--lilas);font-weight:600;margin-bottom:24px}
   .eyebrow::before,.eyebrow::after{content:"";width:24px;height:2px;background:var(--lilas);border-radius:2px}
   .hero h1{font-size:clamp(40px,6vw,72px);font-weight:700;color:#fff}
@@ -228,20 +228,6 @@
 </head>
 <body>
 
-<!-- NAV -->
-<header class="nav">
-  <div class="wrap nav-inner">
-    <div class="nav-left">
-      <img src="/proposta/nexoleum/assets/nexoleum-neg.svg" alt="Nexoleum" />
-      <span class="nav-badge">Proposta de landing pages</span>
-    </div>
-    <div class="nav-right">
-      <span class="nav-by">por <img src="/proposta/nexoleum/assets/matilab-logo-white.svg" alt="Matilab" /></span>
-      <a class="nav-cta" data-wa href="#reuniao">Falar com a Matilab</a>
-    </div>
-  </div>
-</header>
-
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
@@ -256,7 +242,7 @@
       <a class="btn btn-ghost" data-wa href="#reuniao">Falar no WhatsApp</a>
     </div>
     <div class="hero-meta">
-      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>A partir de R$ 1.500</span>
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Programadas em Next.js</span>
       <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>PageSpeed 90+ no contrato</span>
       <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>No ar em 12 dias</span>
     </div>
@@ -276,7 +262,6 @@
         <span class="tag">Opção 1</span>
         <h3>Landing page em português</h3>
         <p>Uma página completa, com o conteúdo e a identidade da Nexoleum, seguindo a referência aprovada.</p>
-        <div class="lp-price">R$ 1.500 <small>criação, pagamento único</small></div>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Conteúdo e identidade visual de vocês</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Layout seguindo a referência</li>
@@ -288,7 +273,6 @@
         <span class="tag">Opção 2</span>
         <h3>Landing page em dois idiomas</h3>
         <p>A mesma página, agora bilíngue: português mais um idioma à escolha, com troca de idioma nativa.</p>
-        <div class="lp-price">R$ 2.100 <small>criação, pagamento único</small></div>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Tudo da versão em português</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Segundo idioma completo</li>
@@ -432,7 +416,6 @@
         <a class="btn btn-primary" data-wa href="#">Falar no WhatsApp</a>
         <a class="btn btn-ghost" data-email href="#">Enviar e-mail</a>
       </div>
-      <div class="meet-sign">Uma proposta de <img src="/proposta/nexoleum/assets/matilab-logo-white.svg" alt="Matilab" /></div>
     </div>
   </div>
 </section>
