@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Proposta de Landing Pages | Nexoleum x Matilab</title>
+<meta name="description" content="Proposta da Matilab para as landing pages da Nexoleum: programadas, rápidas e prontas para IA, SEO e GEO." />
+<meta property="og:title" content="Proposta de Landing Pages | Nexoleum x Matilab" />
+<meta property="og:description" content="Duas landing pages programadas para a Nexoleum, com performance garantida acima de 90 no PageSpeed." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --navy:#002a68;
+    --navy-2:#001c47;
+    --navy-3:#0a336f;
+    --roxo:#363454;
+    --cyan:#00bcdb;
+    --cyan-600:#12a7c4;
+    --lilas:#9797dd;
+    --ink:#EEF4FD;
+    --ink-2:#A7BADE;
+    --ink-3:#6E83AC;
+    --line:rgba(151,151,221,.20);
+    --line-2:rgba(255,255,255,.09);
+    --on-cyan:#00203f;
+    --radius:16px;
+    --maxw:1180px;
+    --ease:cubic-bezier(0.16,1,0.3,1);
+    --shadow:0 24px 60px rgba(0,10,30,.4);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--navy);
+    color:var(--ink);
+    font-family:"Mozilla Text","Segoe UI",system-ui,-apple-system,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{font-family:"Mozilla Text",sans-serif;font-weight:600;letter-spacing:-0.015em;line-height:1.08;color:#fff}
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .cyan{color:var(--cyan)}
+  .lilas{color:var(--lilas)}
+
+  /* ---------- caminhos (grafismo de fundo) ---------- */
+  .paths{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+  .paths svg{position:absolute;width:140%;height:100%;left:-20%}
+  .paths path{fill:none;stroke-linecap:round;stroke-width:5}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(0,28,71,0.72);
+    backdrop-filter:blur(16px) saturate(140%);
+    -webkit-backdrop-filter:blur(16px) saturate(140%);
+    border-bottom:1px solid var(--line-2);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+  .nav-left{display:flex;align-items:center;gap:16px;min-width:0}
+  .nav-left img{height:30px;width:auto}
+  .nav-badge{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);padding-left:16px;border-left:1px solid var(--line-2);white-space:nowrap}
+  .nav-right{display:flex;align-items:center;gap:18px}
+  .nav-by{display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+  .nav-by img{height:14px;width:auto;opacity:.9}
+  .nav-cta{
+    display:inline-flex;align-items:center;gap:8px;background:var(--cyan);color:var(--on-cyan);
+    font-weight:600;font-size:14px;padding:11px 20px;border-radius:999px;
+    transition:transform .25s var(--ease),background .25s var(--ease);white-space:nowrap;
+    box-shadow:0 8px 22px rgba(0,188,219,.28);
+  }
+  .nav-cta:hover{background:#31cfe9;transform:translateY(-1px)}
+  .nav-cta:active{transform:translateY(0) scale(.98)}
+  @media(max-width:860px){.nav-badge,.nav-by{display:none}}
+
+  /* ---------- BUTTONS ---------- */
+  .btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px;padding:15px 26px;border-radius:999px;
+    transition:transform .25s var(--ease),background .25s var(--ease),border-color .25s var(--ease),color .25s var(--ease);
+    white-space:nowrap;cursor:pointer;border:1.5px solid transparent;}
+  .btn-primary{background:var(--cyan);color:var(--on-cyan);box-shadow:0 14px 30px rgba(0,188,219,.26)}
+  .btn-primary:hover{background:#31cfe9;transform:translateY(-2px)}
+  .btn-primary:active{transform:translateY(0) scale(.98)}
+  .btn-ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px)}
+
+  /* ---------- SECTIONS ---------- */
+  section{position:relative;padding:100px 0}
+  .alt{background:var(--navy-2)}
+  .sec-head{max-width:680px;margin-bottom:54px;position:relative;z-index:1}
+  .sec-kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);font-weight:600;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+  .sec-kicker::before{content:"";width:22px;height:2px;background:var(--cyan);border-radius:2px}
+  .sec-head h2{font-size:clamp(28px,3.5vw,44px)}
+  .sec-head p{margin-top:18px;color:var(--ink-2);font-size:17px}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:calc(100dvh - 72px);display:flex;align-items:center;padding:60px 0 76px;overflow:hidden}
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.12fr 0.88fr;gap:54px;align-items:center}
+  .hero-glow{position:absolute;z-index:1;top:-10%;right:-6%;width:640px;height:640px;border-radius:50%;
+    background:radial-gradient(circle,rgba(0,188,219,.20),transparent 62%);filter:blur(10px);pointer-events:none}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--lilas);font-weight:600;margin-bottom:26px}
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--lilas);border-radius:2px}
+  .hero h1{font-size:clamp(38px,5.4vw,66px);font-weight:700}
+  .hero h1 em{font-style:normal;color:var(--cyan)}
+  .hero p.sub{margin-top:24px;font-size:clamp(16px,1.5vw,19px);color:var(--ink-2);max-width:52ch}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+  .hero-card{position:relative;overflow:hidden;background:linear-gradient(165deg,var(--navy-3),var(--navy-2));
+    border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}
+  .hero-card::after{content:"";position:absolute;top:-50px;right:-50px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(151,151,221,.28),transparent 62%)}
+  .hero-card .klabel{position:relative;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:20px}
+  .hero-card ul{position:relative;list-style:none;display:grid;gap:16px}
+  .hero-card li{display:flex;gap:14px;align-items:flex-start}
+  .hero-card li .n{font-weight:700;color:var(--cyan);flex:none}
+  .hero-card li strong{font-weight:600;color:#fff;display:block;font-size:15.5px}
+  .hero-card li span.d{color:var(--ink-2);font-size:13.5px}
+  .hero-card .price{color:var(--cyan);font-weight:700;white-space:nowrap}
+  .hero-card .meta{position:relative;margin-top:22px;padding-top:20px;border-top:1px solid var(--line-2);font-size:13px;color:var(--ink-2)}
+  @media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:40px}.hero{min-height:auto;padding:48px 0 56px}}
+
+  /* ---------- ENTREGAVEIS (2 LPs) ---------- */
+  .lps{display:grid;grid-template-columns:1fr 1fr;gap:24px;position:relative;z-index:1}
+  .lp{position:relative;overflow:hidden;background:linear-gradient(165deg,var(--navy-3),var(--navy-2));border:1px solid var(--line-2);border-radius:var(--radius);padding:34px;transition:transform .35s var(--ease),border-color .35s var(--ease)}
+  .lp:hover{transform:translateY(-4px);border-color:var(--line)}
+  .lp::after{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--lilas))}
+  .lp .tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);background:rgba(0,188,219,.1);border:1px solid var(--line);padding:6px 12px;border-radius:999px;margin-bottom:20px}
+  .lp h3{font-size:23px;margin-bottom:10px}
+  .lp > p{color:var(--ink-2);font-size:15px;margin-bottom:22px}
+  .lp .lp-price{font-weight:700;font-size:34px;color:#fff;margin-bottom:6px}
+  .lp .lp-price small{font-size:14px;color:var(--ink-3);font-weight:500}
+  .lp ul{list-style:none;display:grid;gap:12px;margin-top:22px}
+  .lp li{display:flex;gap:11px;font-size:14.5px;color:var(--ink)}
+  .lp li svg{flex:none;margin-top:3px;color:var(--cyan)}
+  @media(max-width:820px){.lps{grid-template-columns:1fr}}
+
+  /* ---------- DIFERENCIAIS ---------- */
+  .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative;z-index:1}
+  .feat{background:rgba(255,255,255,.03);border:1px solid var(--line-2);border-radius:14px;padding:28px;transition:border-color .3s var(--ease),transform .3s var(--ease)}
+  .feat:hover{border-color:var(--line);transform:translateY(-3px)}
+  .feat .ic{width:48px;height:48px;border-radius:12px;background:rgba(0,188,219,.12);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--cyan);margin-bottom:18px}
+  .feat h4{font-size:18px;margin-bottom:8px}
+  .feat p{color:var(--ink-2);font-size:14px}
+  .feat .hi{color:var(--cyan);font-weight:600}
+  @media(max-width:820px){.feat-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.feat-grid{grid-template-columns:1fr}}
+
+  /* ---------- PROCESSO (stepper) ---------- */
+  .proc-top{display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;margin-bottom:56px}
+  .days{position:relative;flex:none;width:150px;height:150px;border-radius:24px;background:linear-gradient(160deg,var(--cyan),#0a86b8);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--on-cyan);box-shadow:0 20px 44px rgba(0,188,219,.3)}
+  .days b{font-size:56px;font-weight:700;line-height:1}
+  .days span{font-size:13px;font-weight:600;letter-spacing:.04em;margin-top:4px}
+  .proc-steps{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .step{position:relative;background:rgba(255,255,255,.03);border:1px solid var(--line-2);border-radius:14px;padding:24px}
+  .step .sn{width:32px;height:32px;border-radius:9px;background:var(--cyan);color:var(--on-cyan);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .step h4{font-size:16px;margin-bottom:6px}
+  .step p{color:var(--ink-2);font-size:13.5px}
+  @media(max-width:820px){.proc-top{grid-template-columns:1fr;text-align:center}.days{margin:0 auto}.proc-steps{grid-template-columns:1fr}}
+
+  /* ---------- INVESTIMENTO ---------- */
+  .plans{display:grid;grid-template-columns:1fr 1.05fr;gap:22px;align-items:stretch;position:relative;z-index:1}
+  .plan{position:relative;overflow:hidden;background:linear-gradient(165deg,var(--navy-3),var(--navy-2));border:1px solid var(--line-2);border-radius:18px;padding:34px;display:flex;flex-direction:column}
+  .plan.feat2{border:1.5px solid var(--cyan);box-shadow:0 26px 60px rgba(0,188,219,.14)}
+  .plan .ptop{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+  .plan h3{font-size:21px}
+  .plan .best{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--on-cyan);background:var(--cyan);padding:5px 11px;border-radius:999px}
+  .plan .pdesc{color:var(--ink-2);font-size:14.5px;margin-bottom:24px;min-height:44px}
+  .plan .price{font-weight:700;font-size:44px;color:#fff;line-height:1}
+  .plan .price small{display:block;font-size:13px;color:var(--ink-3);margin-top:8px;font-weight:500}
+  .plan ul{list-style:none;display:grid;gap:12px;margin:24px 0 28px}
+  .plan li{display:flex;gap:10px;font-size:14.5px;color:var(--ink)}
+  .plan li svg{flex:none;margin-top:3px;color:var(--cyan)}
+  .plan .btn{width:100%;justify-content:center;margin-top:auto}
+  .host{margin-top:24px;position:relative;z-index:1;display:flex;gap:14px;align-items:center;background:rgba(151,151,221,.08);border:1px solid var(--line);border-radius:14px;padding:20px 24px}
+  .host .hic{width:44px;height:44px;flex:none;border-radius:11px;background:rgba(151,151,221,.16);display:flex;align-items:center;justify-content:center;color:var(--lilas)}
+  .host b{color:#fff}
+  .host p{color:var(--ink-2);font-size:14.5px}
+  .host .hprice{margin-left:auto;text-align:right;flex:none}
+  .host .hprice b{font-size:22px;color:var(--lilas)}
+  .host .hprice span{display:block;font-size:12px;color:var(--ink-3)}
+  .invest-note{margin-top:24px;position:relative;z-index:1;font-size:13.5px;color:var(--ink-3);display:flex;gap:10px;align-items:flex-start;max-width:760px}
+  .invest-note svg{flex:none;margin-top:2px;color:var(--cyan)}
+  @media(max-width:820px){.plans{grid-template-columns:1fr}.host{flex-wrap:wrap}.host .hprice{margin-left:0}}
+
+  /* ---------- REUNIAO ---------- */
+  .meet-card{position:relative;overflow:hidden;border-radius:26px;padding:64px 40px;text-align:center;
+    background:linear-gradient(150deg,var(--navy-3),var(--roxo));border:1px solid var(--line);box-shadow:var(--shadow)}
+  .meet-card .mk{position:relative;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);font-weight:600;margin-bottom:18px}
+  .meet-card h2{position:relative;font-size:clamp(28px,4vw,44px);font-weight:700}
+  .meet-card p{position:relative;margin:20px auto 0;color:var(--ink-2);font-size:18px;max-width:60ch}
+  .meet-steps{position:relative;display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:34px 0}
+  .meet-steps span{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--ink);background:rgba(255,255,255,.06);border:1px solid var(--line-2);padding:9px 16px;border-radius:999px}
+  .meet-steps span svg{color:var(--cyan)}
+  .meet-actions{position:relative;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .meet-sign{position:relative;margin-top:36px;padding-top:26px;border-top:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;gap:12px;font-size:13px;color:var(--ink-2)}
+  .meet-sign img{height:17px;width:auto}
+  @media(max-width:560px){.meet-card{padding:48px 22px}}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:48px 0;background:var(--navy-2);border-top:1px solid var(--line-2)}
+  .foot-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+  .foot-left{display:flex;align-items:center;gap:18px}
+  .foot-left img{height:26px}
+  .foot-left .fdiv{width:1px;height:32px;background:var(--line-2)}
+  .foot-left .ftxt{font-size:13px;color:var(--ink-3);line-height:1.5}
+  .foot-left .ftxt b{color:var(--ink);font-weight:600;display:block;font-size:13.5px}
+  .foot-right{font-size:13px;color:var(--ink-3);display:flex;gap:22px;flex-wrap:wrap;align-items:center}
+  .foot-right a:hover{color:var(--cyan)}
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="nav-left">
+      <img src="/proposta/nexoleum/assets/nexoleum-neg.svg" alt="Nexoleum" />
+      <span class="nav-badge">Proposta de landing pages</span>
+    </div>
+    <div class="nav-right">
+      <span class="nav-by">por <img src="/proposta/nexoleum/assets/matilab-logo-white.svg" alt="Matilab" /></span>
+      <a class="nav-cta" data-wa href="#reuniao">Falar com a Matilab</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="paths">
+    <svg viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice">
+      <path d="M-100 250 H300 C420 250 420 120 540 120 C660 120 660 300 780 300 C900 300 900 140 1020 140 H1500" stroke="#00bcdb" opacity=".22"/>
+      <path d="M-100 420 H220 C360 420 360 560 500 560 C640 560 640 380 780 380 C920 380 920 600 1060 600 H1500" stroke="#9797dd" opacity=".18"/>
+      <path d="M-100 660 H420 C540 660 540 780 660 780 C780 780 780 640 900 640 H1500" stroke="#00bcdb" opacity=".12"/>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Proposta da Matilab para a Nexoleum</span>
+      <h1>Duas landing pages<br>que <em>abrem voando</em>.</h1>
+      <p class="sub">Com a identidade da Nexoleum, o conteúdo de vocês e performance garantida em contrato. Sites programados, prontos para o Google e para os agentes de IA, no ar em 12 dias.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#investimento">Ver a proposta</a>
+        <a class="btn btn-ghost" data-wa href="#reuniao">Falar no WhatsApp</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="klabel">O que está sobre a mesa</div>
+      <ul>
+        <li><span class="n">01</span><span><strong>Landing page em português</strong><span class="d">Conteúdo e identidade de vocês</span></span><span class="price">R$ 1.500</span></li>
+        <li><span class="n">02</span><span><strong>Landing page em dois idiomas</strong><span class="d">Português mais um idioma</span></span><span class="price">R$ 2.100</span></li>
+      </ul>
+      <div class="meta">Ambas programadas, com painel de administração e 30 dias de suporte. Hospedagem gerenciada por R$ 100/mês.</div>
+    </aside>
+  </div>
+</section>
+
+<!-- ENTREGAVEIS -->
+<section class="alt" id="entregaveis">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">O que vamos criar</div>
+      <h2>Duas versões, a sua escolha.</h2>
+      <p>As duas landing pages são construídas com a identidade visual da Nexoleum, o conteúdo fornecido por vocês e a referência de layout que já têm em mente. A diferença está no alcance de idioma.</p>
+    </div>
+    <div class="lps">
+      <article class="lp reveal">
+        <span class="tag">Opção 1</span>
+        <h3>Landing page em português</h3>
+        <p>Uma página completa, com o conteúdo e a identidade da Nexoleum, seguindo a referência aprovada.</p>
+        <div class="lp-price">R$ 1.500 <small>criação, pagamento único</small></div>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Conteúdo e identidade visual de vocês</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Layout seguindo a referência</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Painel de administração incluso</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Responsiva e otimizada para celular</li>
+        </ul>
+      </article>
+      <article class="lp reveal">
+        <span class="tag">Opção 2</span>
+        <h3>Landing page em dois idiomas</h3>
+        <p>A mesma página, agora bilíngue: português mais um idioma à escolha, com troca de idioma nativa.</p>
+        <div class="lp-price">R$ 2.100 <small>criação, pagamento único</small></div>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Tudo da versão em português</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Segundo idioma completo</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Seletor de idioma e SEO por idioma</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Ideal para alcance internacional</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS TECNICOS -->
+<section id="tecnologia">
+  <div class="paths">
+    <svg viewBox="0 0 1400 700" preserveAspectRatio="xMidYMid slice">
+      <path d="M-100 140 H500 C620 140 620 300 740 300 C860 300 860 120 980 120 H1500" stroke="#00bcdb" opacity=".10"/>
+      <path d="M-100 520 H360 C480 520 480 360 600 360 C720 360 720 560 840 560 H1500" stroke="#9797dd" opacity=".10"/>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Como fazemos diferente</div>
+      <h2>Não é um site montado. É programado.</h2>
+      <p>Enquanto a maioria usa construtores de arrastar e soltar, nós desenvolvemos as landing pages em código, com Next.js e React, a mesma base que o Google e a Vercel recomendam para performance máxima.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg></div>
+        <h4>Programado em Next.js</h4>
+        <p>Código próprio em <span class="hi">Next.js e React</span>, não um tema de construtor. Isso é o que garante velocidade real e controle total.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m13 2-3 7h5l-3 7"/><circle cx="12" cy="12" r="10" opacity=".4"/></svg></div>
+        <h4>PageSpeed 90+ garantido</h4>
+        <p>Entregamos com <span class="hi">nota acima de 90</span> no Google PageSpeed, e isso fica escrito no contrato. Site rápido posiciona melhor e converte mais.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h.01M15 9h.01M8 15c1 1 2.5 1.5 4 1.5s3-.5 4-1.5"/></svg></div>
+        <h4>Pronto para IA, SEO e GEO</h4>
+        <p>Estrutura que os <span class="hi">agentes de IA</span> (ChatGPT, Perplexity, AI Overviews) conseguem ler e citar, além de SEO técnico para o Google.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h4>Painel de administração</h4>
+        <p>Mesmo sendo programado, vocês recebem um <span class="hi">painel próprio</span> para editar textos e imagens sem depender de código nem da gente.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 8l7-5 7 5M5 8v8l7 5 7-5V8"/></svg></div>
+        <h4>Identidade Nexoleum</h4>
+        <p>Cores, tipografia Mozilla Text, símbolo e grafismos aplicados <span class="hi">fiéis ao manual de marca</span> de vocês.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h4>30 dias de suporte</h4>
+        <p>Depois de publicar, ficamos <span class="hi">30 dias com vocês</span> para ajustes e dúvidas, sem custo adicional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO + PRAZO -->
+<section class="alt" id="processo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Como funciona</div>
+      <h2>Do aceite ao ar, sem mistério.</h2>
+      <p>Um processo claro, com contrato e pagamento antes de começar, e uma rodada de aprovação para garantir que tudo saia do jeito que a Nexoleum quer.</p>
+    </div>
+    <div class="proc-top reveal">
+      <div class="days"><b>12</b><span>dias para criar</span></div>
+      <div>
+        <h3 style="font-size:22px;margin-bottom:8px">Da assinatura à publicação em 12 dias.</h3>
+        <p style="color:var(--ink-2);font-size:15.5px;max-width:60ch">Depois que o contrato é assinado e o pagamento confirmado, começamos no dia seguinte. Em 12 dias a landing page está pronta, aprovada e no ar.</p>
+      </div>
+    </div>
+    <div class="proc-steps">
+      <div class="step reveal"><div class="sn">1</div><h4>Você aceita a proposta</h4><p>Escolhe a opção que faz sentido e nos dá o sinal verde.</p></div>
+      <div class="step reveal"><div class="sn">2</div><h4>Enviamos o contrato</h4><p>Formalizamos tudo por escrito, incluindo a garantia de performance.</p></div>
+      <div class="step reveal"><div class="sn">3</div><h4>Assinatura e pagamento</h4><p>As duas partes assinam e o pagamento da criação é feito.</p></div>
+      <div class="step reveal"><div class="sn">4</div><h4>Começamos no dia seguinte</h4><p>Desenvolvimento inicia no dia após o pagamento confirmado.</p></div>
+      <div class="step reveal"><div class="sn">5</div><h4>Aprovação e ajustes</h4><p>Apresentamos, vocês avaliam, aplicamos os ajustes e aprovam.</p></div>
+      <div class="step reveal"><div class="sn">6</div><h4>Publicamos e damos suporte</h4><p>Subimos na hospedagem que contratamos e ficamos 30 dias com vocês.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTIMENTO -->
+<section id="investimento">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Investimento</div>
+      <h2>Preço fechado, sem surpresa.</h2>
+      <p>A criação é um pagamento único. A hospedagem gerenciada é mensal e cobre servidor, segurança e o site sempre no ar. Os 30 dias de suporte já estão inclusos na criação.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <div class="ptop"><h3>Português</h3></div>
+        <p class="pdesc">A landing page completa, em um idioma.</p>
+        <div class="price">R$ 1.500<small>criação, pagamento único</small></div>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Programada em Next.js e React</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>PageSpeed acima de 90 garantido</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Painel de administração incluso</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>30 dias de suporte</li>
+        </ul>
+        <a class="btn btn-ghost" data-wa href="#reuniao">Quero esta</a>
+      </div>
+      <div class="plan feat2 reveal">
+        <div class="ptop"><h3>Dois idiomas</h3><span class="best">Mais alcance</span></div>
+        <p class="pdesc">A mesma página, bilíngue: português mais um idioma.</p>
+        <div class="price">R$ 2.100<small>criação, pagamento único</small></div>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Tudo da versão em português</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Segundo idioma completo</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>SEO otimizado por idioma</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Pronta para alcance internacional</li>
+        </ul>
+        <a class="btn btn-primary" data-wa href="#reuniao">Quero esta</a>
+      </div>
+    </div>
+    <div class="host reveal">
+      <div class="hic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="6" rx="2"/><path d="M6 8h.01M6 17h.01"/></svg></div>
+      <div><b>Hospedagem gerenciada</b><p>Servidor, segurança, certificado e o site sempre no ar. Contratamos e cuidamos de tudo.</p></div>
+      <div class="hprice"><b>R$ 100/mês</b><span>por landing page</span></div>
+    </div>
+    <p class="invest-note reveal">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      Valores válidos por 30 dias. A criação é paga na assinatura do contrato e o desenvolvimento começa no dia seguinte. A hospedagem é cobrada mensalmente a partir da publicação. A garantia de PageSpeed acima de 90 consta em contrato.
+    </p>
+  </div>
+</section>
+
+<!-- REUNIAO -->
+<section class="alt" id="reuniao">
+  <div class="wrap">
+    <div class="meet-card reveal">
+      <div class="mk">Antes de fechar</div>
+      <h2>Vamos alinhar tudo numa conversa?</h2>
+      <p>O melhor jeito de começar é com uma ligação rápida. A gente entende o que a Nexoleum precisa, mostra referências e tira todas as dúvidas antes de qualquer contrato. Depois que estiver tudo certo, formalizamos e começamos.</p>
+      <div class="meet-steps">
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15.5 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5z"/><path d="M15 3v6h6"/></svg>Você escolhe o horário</span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Ligação rápida</span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Só assina depois de conversar</span>
+      </div>
+      <div class="meet-actions">
+        <a class="btn btn-primary" data-wa href="#">Falar no WhatsApp</a>
+        <a class="btn btn-ghost" data-email href="#">Enviar e-mail</a>
+      </div>
+      <div class="meet-sign">Uma proposta de <img src="/proposta/nexoleum/assets/matilab-logo-white.svg" alt="Matilab" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-left">
+      <img src="/proposta/nexoleum/assets/matilab-logo-white.svg" alt="Matilab" />
+      <div class="fdiv"></div>
+      <div class="ftxt"><b>Matilab</b>Proposta preparada para a Nexoleum</div>
+    </div>
+    <div class="foot-right">
+      <a href="https://matilab.com.br" target="_blank" rel="noopener">matilab.com.br</a>
+      <a data-wa href="#">WhatsApp</a>
+      <a data-email href="#">E-mail</a>
+      <span id="ano"></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ====== CONFIGURE AQUI ANTES DE ENVIAR ====== */
+  const CONFIG = {
+    whatsapp: "5511992644010",
+    email: "contato@matilab.com.br",
+    saudacao: "Ola! Sou da Nexoleum, vi a proposta das landing pages e gostaria de conversar com a Matilab.",
+    assunto: "Proposta de landing pages - Nexoleum"
+  };
+  /* ============================================= */
+  const waHref = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(CONFIG.saudacao);
+  const mailHref = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent(CONFIG.assunto);
+  document.querySelectorAll("[data-wa]").forEach(a=>{a.href=waHref;a.target="_blank";a.rel="noopener";});
+  document.querySelectorAll("[data-email]").forEach(a=>{a.href=mailHref;});
+  document.getElementById("ano").textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:0.12,rootMargin:"0px 0px -8% 0px"});
+  document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
