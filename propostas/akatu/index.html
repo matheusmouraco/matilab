@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Proposta de reformulação do site | Akatu Arquitetura x Matilab</title>
+<meta name="description" content="Proposta da Matilab para o novo site da Akatu Arquitetura e Construção: moderno, rápido, responsivo e com SEO básico." />
+<meta property="og:title" content="Proposta de reformulação do site | Akatu Arquitetura x Matilab" />
+<meta property="og:description" content="Um site institucional novo para a Akatu Arquitetura e Construção: mais rápido, moderno e feito para valorizar a marca e gerar contatos." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    /* graphite / concrete / paper — a marca da Akatu e preto e branco */
+    --ink:#0E0E0D;          /* near-black */
+    --ink-2:#1A1A18;
+    --graphite:#2C2C2A;     /* faceta do logo */
+    --steel:#4A4A47;
+    --concrete:#8C8C88;
+    --line:rgba(255,255,255,.12);
+    --line-2:rgba(255,255,255,.07);
+    /* dark text tones */
+    --d-ink:#F4F3F0;
+    --d-ink-2:#C6C5C0;
+    --d-ink-3:#94938E;
+    /* light surfaces */
+    --paper:#F4F3F0;
+    --paper-2:#EBE9E4;
+    --paper-3:#FFFFFF;
+    --l-ink:#141413;
+    --l-ink-2:#54534E;
+    --l-ink-3:#86847E;
+    --l-line:rgba(20,20,19,.14);
+    --l-line-2:rgba(20,20,19,.08);
+    --accent:#141413;       /* monocromatico: o acento e o proprio contraste */
+    --maxw:1180px;
+    --ease:cubic-bezier(0.16,1,0.3,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;overflow-x:hidden}
+  body{background:var(--ink);color:var(--d-ink);font-family:"Manrope","Segoe UI",system-ui,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:"Archivo",sans-serif;font-weight:700;letter-spacing:-0.02em;line-height:1.08}
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  em.it{font-style:italic;font-weight:700}
+
+  /* ---------- NAV ---------- */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(14,14,13,.74);backdrop-filter:blur(16px) saturate(130%);-webkit-backdrop-filter:blur(16px) saturate(130%);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+  .nav-left{display:flex;align-items:center;gap:15px;min-width:0}
+  .nav-word{font-family:"Archivo",sans-serif;font-weight:800;font-size:16px;color:#fff;letter-spacing:.02em}
+  .nav-badge{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--d-ink-3);padding-left:15px;border-left:1px solid var(--line);white-space:nowrap}
+  .nav-right{display:flex;align-items:center;gap:18px}
+  .nav-by{display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--d-ink-3);white-space:nowrap}
+  .nav-by img{height:14px;width:auto;opacity:.9}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--ink);font-weight:700;font-size:14px;padding:11px 20px;border-radius:2px;transition:transform .25s var(--ease),opacity .25s var(--ease);white-space:nowrap;font-family:"Archivo",sans-serif}
+  .nav-cta:hover{transform:translateY(-1px);opacity:.9}
+  @media(max-width:880px){.nav-badge,.nav-by{display:none}}
+
+  /* ---------- BUTTONS ---------- */
+  .btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;padding:15px 28px;border-radius:2px;transition:transform .25s var(--ease),background .25s var(--ease),border-color .25s var(--ease),color .25s var(--ease);white-space:nowrap;cursor:pointer;border:1.5px solid transparent;font-family:"Archivo",sans-serif}
+  .btn-primary{background:#fff;color:var(--ink)}
+  .btn-primary:hover{transform:translateY(-2px);background:var(--paper-2)}
+  .btn-primary:active{transform:translateY(0) scale(.99)}
+  .btn-ghost{background:transparent;border-color:var(--line);color:var(--d-ink)}
+  .btn-ghost:hover{border-color:#fff;color:#fff;transform:translateY(-2px)}
+  .sec-light .btn-primary{background:var(--ink);color:#fff}
+  .sec-light .btn-primary:hover{background:var(--graphite)}
+  .sec-light .btn-ghost{border-color:var(--l-line);color:var(--l-ink)}
+  .sec-light .btn-ghost:hover{border-color:var(--ink);color:var(--ink)}
+
+  /* ---------- SECTIONS ---------- */
+  section{position:relative;padding:104px 0;overflow:hidden}
+  .sec-dark{background:var(--ink)}
+  .sec-dark.deep{background:var(--ink-2)}
+  .sec-light{background:var(--paper);color:var(--l-ink)}
+  .sec-light.paper2{background:var(--paper-2)}
+  .sec-light h1,.sec-light h2,.sec-light h3,.sec-light h4{color:var(--l-ink)}
+  .sec-head{max-width:720px;margin-bottom:54px;position:relative;z-index:2}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--d-ink-3);font-weight:700;margin-bottom:18px;display:inline-flex;align-items:center;gap:12px;font-family:"Archivo",sans-serif}
+  .sec-kicker::before{content:"";width:26px;height:1px;background:currentColor}
+  .sec-light .sec-kicker{color:var(--l-ink-3)}
+  .center .sec-kicker{justify-content:center}
+  .center .sec-kicker::after{content:"";width:26px;height:1px;background:currentColor}
+  .sec-head h2{font-size:clamp(29px,3.7vw,46px)}
+  .sec-head h2 em{font-style:italic;color:inherit}
+  .sec-head p{margin-top:18px;font-size:17px}
+  .sec-dark .sec-head p{color:var(--d-ink-2)}
+  .sec-light .sec-head p{color:var(--l-ink-2)}
+
+  /* fine blueprint grid overlay */
+  .grid-lines{position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.5}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:94vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:88px 0 92px;overflow:hidden;background:
+    radial-gradient(120% 90% at 50% -8%,rgba(255,255,255,.06),transparent 52%),
+    linear-gradient(180deg,var(--ink-2),var(--ink))}
+  .hero .wrap{position:relative;z-index:3;max-width:940px}
+  .hero-blueprint{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.4}
+  .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--d-ink-3);font-weight:700;margin-bottom:30px;font-family:"Archivo",sans-serif}
+  .eyebrow::before,.eyebrow::after{content:"";width:26px;height:1px;background:currentColor}
+  .hero-logo{display:block;width:max-content;max-width:100%;background:#fff;border-radius:4px;padding:26px 38px;margin:0 auto 38px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+  .hero-logo img{height:clamp(52px,8vw,82px);width:auto}
+  @media(max-width:560px){.hero-logo{padding:20px 26px}}
+  .hero h1{font-size:clamp(33px,5.6vw,62px);font-weight:800;color:#fff;letter-spacing:-.03em}
+  .hero h1 em{font-style:italic;font-weight:700;color:#fff}
+  .hero p.sub{margin:26px auto 0;font-size:clamp(16px,1.6vw,20px);color:var(--d-ink-2);max-width:64ch}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:40px}
+  .hero-meta{margin-top:44px;display:flex;flex-wrap:wrap;gap:12px 30px;justify-content:center;font-size:13.5px;color:var(--d-ink-3)}
+  .hero-meta span{display:inline-flex;align-items:center;gap:9px}
+  .hero-meta svg{color:#fff}
+
+  /* ---------- APRESENTACAO / DIAGNOSTICO (light) ---------- */
+  .diag{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:stretch;position:relative;z-index:1}
+  .diag-card{border-radius:4px;padding:40px;background:var(--paper-3);border:1px solid var(--l-line-2)}
+  .diag-card h3{font-size:22px;margin-bottom:14px}
+  .diag-card p{color:var(--l-ink-2);font-size:15.5px;margin-bottom:14px}
+  .diag-card p:last-child{margin-bottom:0}
+  .diag-card b{color:var(--l-ink)}
+  .diag-visual{border-radius:4px;padding:36px;display:grid;gap:14px;align-content:center;background:var(--paper-3);border:1px solid var(--l-line-2)}
+  .diag-row{display:flex;align-items:center;gap:14px;font-size:14.5px;color:var(--l-ink)}
+  .diag-row .rk{flex:none;width:34px;height:34px;border-radius:3px;display:flex;align-items:center;justify-content:center;border:1px solid var(--l-line)}
+  .diag-row.bad .rk{color:var(--l-ink-3)}
+  .diag-row.good .rk{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .diag-row.bad{color:var(--l-ink-3)}
+  @media(max-width:820px){.diag{grid-template-columns:1fr}}
+
+  /* ---------- O QUE ESTA INCLUIDO (dark) ---------- */
+  .inc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative;z-index:1}
+  .inc{border-radius:4px;padding:32px 30px;background:var(--graphite);border:1px solid var(--line);transition:transform .3s var(--ease),border-color .3s var(--ease)}
+  .inc:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.28)}
+  .inc .ic{width:50px;height:50px;border-radius:3px;background:rgba(255,255,255,.06);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:#fff;margin-bottom:20px}
+  .inc .num{font-family:"Archivo",sans-serif;font-size:12px;letter-spacing:.2em;color:var(--d-ink-3);font-weight:700;margin-bottom:12px}
+  .inc h4{font-size:19px;color:#fff;margin-bottom:12px;line-height:1.2}
+  .inc p{color:var(--d-ink-2);font-size:14.5px}
+  .inc p b{color:#fff;font-weight:600}
+  @media(max-width:820px){.inc-grid{grid-template-columns:1fr}}
+
+  /* section list of previewed sections */
+  .seclist{margin-top:44px;border-top:1px solid var(--line);padding-top:36px;position:relative;z-index:1}
+  .seclist .st{font-family:"Archivo",sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--d-ink-3);font-weight:700;margin-bottom:22px}
+  .chips{display:flex;flex-wrap:wrap;gap:12px}
+  .chip{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:2px;border:1px solid var(--line);background:rgba(255,255,255,.03);font-size:14.5px;color:var(--d-ink);font-weight:500}
+  .chip span{font-family:"Archivo",sans-serif;font-weight:700;color:var(--d-ink-3);font-size:12px}
+
+  /* ---------- ETAPAS / TIMELINE (light) ---------- */
+  .tl{position:relative;max-width:900px;margin:0 auto}
+  .tl::before{content:"";position:absolute;left:50%;top:6px;bottom:6px;width:1px;transform:translateX(-50%);background:var(--l-line)}
+  .tl-item{position:relative;width:50%;padding:0 46px 8px;margin-bottom:30px}
+  .tl-item:nth-child(odd){left:0;text-align:right}
+  .tl-item:nth-child(even){left:50%}
+  .tl-node{position:absolute;top:2px;width:46px;height:46px;border-radius:50%;background:var(--paper);border:1px solid var(--ink);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;color:var(--ink);z-index:2;box-shadow:0 0 0 6px var(--paper);font-family:"Archivo",sans-serif}
+  .tl-item:nth-child(odd) .tl-node{right:-23px}
+  .tl-item:nth-child(even) .tl-node{left:-23px}
+  .tl-card{border-radius:4px;padding:24px 26px;background:var(--paper-3);border:1px solid var(--l-line-2)}
+  .tl-card h4{font-size:18px;margin-bottom:7px;color:var(--l-ink)}
+  .tl-card p{color:var(--l-ink-2);font-size:14px}
+  @media(max-width:720px){
+    .tl{max-width:540px}
+    .tl::before{left:23px}
+    .tl-item,.tl-item:nth-child(even){width:100%;left:0;text-align:left;padding:0 0 8px 62px}
+    .tl-item:nth-child(odd){text-align:left}
+    .tl-item:nth-child(odd) .tl-node,.tl-item:nth-child(even) .tl-node{left:0;right:auto}
+  }
+
+  /* ---------- INVESTIMENTO (dark) ---------- */
+  .offer{position:relative;z-index:1;display:grid;grid-template-columns:.92fr 1.08fr;gap:0;border-radius:6px;overflow:hidden;background:var(--graphite);border:1px solid var(--line)}
+  .offer-left{padding:48px 42px;background:linear-gradient(160deg,var(--graphite),var(--ink-2));border-right:1px solid var(--line)}
+  .offer-tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:#fff;padding:7px 14px;border-radius:2px;font-family:"Archivo",sans-serif;margin-bottom:24px}
+  .offer-price{font-family:"Archivo",sans-serif;font-weight:800;font-size:clamp(46px,6vw,66px);color:#fff;line-height:1;letter-spacing:-.02em}
+  .offer-price .cur{font-size:.42em;color:var(--d-ink-3);vertical-align:super;margin-right:6px;font-weight:700}
+  .offer-sub{color:var(--d-ink-2);font-size:14.5px;margin:16px 0 28px;max-width:36ch}
+  .offer-left .btn{width:100%;justify-content:center}
+  .offer-seal{display:flex;align-items:center;gap:14px;margin-top:28px;padding-top:26px;border-top:1px solid var(--line);color:#fff}
+  .offer-seal b{display:block;color:#fff;font-size:14.5px;font-weight:700;font-family:"Archivo",sans-serif}
+  .offer-seal span{font-size:13px;color:var(--d-ink-3)}
+  .offer-right{padding:48px 42px}
+  .offer-right h4{font-size:14px;text-transform:uppercase;letter-spacing:.14em;color:var(--d-ink-3);margin-bottom:22px;font-family:"Archivo",sans-serif}
+  .offer-right ul{list-style:none;display:grid;gap:15px}
+  .offer-right li{display:flex;gap:12px;font-size:15px;color:var(--d-ink)}
+  .offer-right li svg{flex:none;margin-top:3px;color:#fff}
+  @media(max-width:820px){.offer{grid-template-columns:1fr}.offer-left{border-right:0;border-bottom:1px solid var(--line)}.offer-left,.offer-right{padding:36px 28px}}
+
+  /* ---------- CONDICOES (light) ---------- */
+  .cond-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative;z-index:1}
+  .cond{display:flex;gap:16px;padding:26px 28px;border-radius:4px;background:var(--paper-3);border:1px solid var(--l-line-2)}
+  .cond .ci{flex:none;width:38px;height:38px;border-radius:3px;border:1px solid var(--l-line);display:flex;align-items:center;justify-content:center;color:var(--l-ink)}
+  .cond h4{font-size:16px;margin-bottom:5px}
+  .cond p{color:var(--l-ink-2);font-size:14px}
+  @media(max-width:720px){.cond-grid{grid-template-columns:1fr}}
+
+  /* ---------- CTA FINAL (dark) ---------- */
+  .cta-card{position:relative;overflow:hidden;border-radius:8px;padding:66px 42px;text-align:center;background:linear-gradient(150deg,var(--graphite),var(--ink));border:1px solid var(--line)}
+  .cta-card .cbp{position:absolute;inset:0;opacity:.3;pointer-events:none}
+  .cta-card .mk{position:relative;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--d-ink-3);font-weight:700;margin-bottom:18px;font-family:"Archivo",sans-serif}
+  .cta-card h2{position:relative;font-size:clamp(30px,4.4vw,50px);font-weight:800;color:#fff;letter-spacing:-.02em}
+  .cta-card p{position:relative;margin:20px auto 0;color:var(--d-ink-2);font-size:18px;max-width:60ch}
+  .cta-actions{position:relative;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+  .cta-contacts{position:relative;margin-top:36px;padding-top:28px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 28px;font-size:14px;color:var(--d-ink-2)}
+  .cta-contacts a,.cta-contacts span{display:inline-flex;align-items:center;gap:8px}
+  .cta-contacts svg{color:#fff}
+  .cta-contacts a:hover{color:#fff}
+  .cta-sign{position:relative;margin-top:32px;font-size:14px;color:var(--d-ink-2)}
+  .cta-sign b{color:#fff;font-weight:700}
+  .valid{margin-top:24px;text-align:center;font-size:13px;color:var(--d-ink-3)}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:46px 0;background:var(--ink-2);border-top:1px solid var(--line)}
+  .foot-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+  .foot-left{display:flex;align-items:center;gap:16px}
+  .foot-left img{height:22px}
+  .foot-left .fdiv{width:1px;height:30px;background:var(--line)}
+  .foot-left .ftxt{font-size:13px;color:var(--d-ink-3);line-height:1.5}
+  .foot-left .ftxt b{color:var(--d-ink);font-weight:600;display:block;font-size:13.5px}
+  .foot-right{font-size:13px;color:var(--d-ink-3);display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+  .foot-right a:hover{color:#fff}
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}*{transition:none!important}}
+
+  /* ---------- PRINT ---------- */
+  @media print{
+    @page{margin:14mm}
+    html,body{background:#fff!important;color:#141413!important}
+    header.nav,.hero-actions,.nav-cta,.hero-blueprint,.grid-lines,.cbp{display:none!important}
+    section{padding:26px 0!important;page-break-inside:avoid;background:#fff!important}
+    .sec-dark,.sec-dark.deep{background:#fff!important;color:#141413!important}
+    .hero{min-height:auto!important;padding:20px 0!important;background:#fff!important}
+    .hero h1,.hero p.sub,.inc h4,.inc p,.cta-card h2,.cta-card p,.offer-price,.offer-right li,.chip{color:#141413!important}
+    .inc,.offer,.offer-left,.offer-right,.cta-card,.diag-card,.diag-visual,.tl-card,.cond,.chip{box-shadow:none!important;border:1px solid #d9d7d0!important;background:#fff!important}
+    .inc .num,.sec-dark .sec-head p,.offer-sub,.cta-card p{color:#54534E!important}
+    .offer-tag{background:#141413!important;color:#fff!important}
+    a{color:inherit!important}
+    .reveal{opacity:1!important;transform:none!important}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="nav-left">
+      <span class="nav-word">AKATU</span>
+      <span class="nav-badge">Proposta de site</span>
+    </div>
+    <div class="nav-right">
+      <span class="nav-by">Por <img src="/propostas/akatu/assets/matilab-logo-white.svg" alt="Matilab" /></span>
+      <a class="nav-cta" data-wa href="#">Falar agora</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="hero-blueprint" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <pattern id="bp" width="60" height="60" patternUnits="userSpaceOnUse">
+        <path d="M60 0H0V60" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="1200" height="700" fill="url(#bp)"/>
+    <path d="M120 620 L360 180 L600 620" fill="none" stroke="rgba(255,255,255,.16)" stroke-width="1.4"/>
+    <path d="M600 620 L840 180 L1080 620" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="1.4"/>
+    <line x1="0" y1="620" x2="1200" y2="620" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+    <circle cx="360" cy="180" r="4" fill="#fff"/>
+    <circle cx="840" cy="180" r="3" fill="rgba(255,255,255,.7)"/>
+  </svg>
+  <div class="wrap">
+    <span class="eyebrow">Proposta preparada pela Matilab</span>
+    <span class="hero-logo"><img src="/propostas/akatu/assets/akatu-logo.png" alt="Akatu Arquitetura e Construção" /></span>
+    <h1>Um novo site para a Akatu:<br><em>sólido, moderno e feito para gerar contato.</em></h1>
+    <p class="sub">A Akatu entrega solidez do projeto à obra. O site precisa transmitir a mesma coisa: rápido, atual, impecável no celular e pensado para apresentar cada segmento de atuação com clareza e trazer mais contatos qualificados.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#investimento">Ver a proposta</a>
+      <a class="btn btn-ghost" data-wa href="#">Falar no WhatsApp</a>
+    </div>
+    <div class="hero-meta">
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Site novo e responsivo</span>
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Carrega rápido no celular</span>
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>SEO básico incluso</span>
+    </div>
+  </div>
+</section>
+
+<!-- APRESENTACAO / OBJETIVO (light) -->
+<section class="sec-light" id="objetivo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">O objetivo</div>
+      <h2>Reconstruir o site da Akatu, do zero e com propósito.</h2>
+      <p>A Akatu é referência em arquitetura e construção, atuando do projeto à entrega em segmentos industrial, corporativo, residencial, comercial e de interiores. Um posicionamento desse nível precisa de um site à altura. A ideia é manter tudo que já funciona, corrigir o que hoje limita a apresentação da empresa e entregar um site que carregue rápido, seja fácil de navegar e apareça bem no Google.</p>
+    </div>
+    <div class="diag">
+      <div class="diag-card reveal">
+        <h3>O que muda na prática</h3>
+        <p>O site atual apresenta a empresa, mas não valoriza a marca como ela merece: o visual não acompanha o nível das obras e a experiência no celular fica aquém, justamente onde está a maior parte dos acessos.</p>
+        <p><b>A proposta é elevar isso:</b> um site com identidade visual alinhada à Akatu, estrutura organizada por segmento de atuação e cada página pensada para transformar visita em contato qualificado.</p>
+      </div>
+      <div class="diag-visual reveal">
+        <div class="diag-row bad"><span class="rk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6 6 18M6 6l12 12"/></svg></span>Visual que não acompanha o nível das obras</div>
+        <div class="diag-row bad"><span class="rk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6 6 18M6 6l12 12"/></svg></span>Experiência limitada no celular</div>
+        <div class="diag-row bad"><span class="rk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6 6 18M6 6l12 12"/></svg></span>Segmentos de atuação pouco destacados</div>
+        <div class="diag-row good"><span class="rk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span>Design moderno e alinhado à marca</div>
+        <div class="diag-row good"><span class="rk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span>Rápido e impecável no celular</div>
+        <div class="diag-row good"><span class="rk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span>Cada segmento apresentado com clareza</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE ESTA INCLUIDO (dark) -->
+<section class="sec-dark" id="incluido">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">O que está incluído</div>
+      <h2>Um site institucional novo, ponta a ponta.</h2>
+      <p>Redesenho completo do layout e das páginas, com identidade visual alinhada à marca Akatu e estrutura pensada para apresentar a empresa, os segmentos, o processo e os serviços de forma clara e objetiva.</p>
+    </div>
+    <div class="inc-grid">
+      <article class="inc reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg></div>
+        <div class="num">01</div>
+        <h4>Site institucional novo</h4>
+        <p>Redesenho completo do layout e das páginas, com identidade alinhada à marca. Estrutura de seções organizada para apresentar a empresa, os segmentos de atuação, o processo de trabalho, os diferenciais e os serviços.</p>
+      </article>
+      <article class="inc reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
+        <div class="num">02</div>
+        <h4>Site responsivo</h4>
+        <p>Adaptação completa para celular, tablet e desktop. O site funciona e fica bonito em qualquer tela, garantindo <b>boa experiência para quem acessa pelo celular</b>, que hoje é a maioria dos visitantes.</p>
+      </article>
+      <article class="inc reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <div class="num">03</div>
+        <h4>SEO básico e performance</h4>
+        <p>Otimização técnica para o site carregar rápido e ser bem indexado pelo Google: títulos e descrições, estrutura de textos organizada, compressão de imagens, tags básicas de SEO e ajustes de velocidade.</p>
+      </article>
+    </div>
+
+    <div class="seclist reveal">
+      <div class="st">Seções previstas</div>
+      <div class="chips">
+        <span class="chip"><span>01</span>Início</span>
+        <span class="chip"><span>02</span>Segmentos de atuação</span>
+        <span class="chip"><span>03</span>Como funciona</span>
+        <span class="chip"><span>04</span>Diferenciais</span>
+        <span class="chip"><span>05</span>O que fazemos</span>
+        <span class="chip"><span>06</span>Contato</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ETAPAS (light) -->
+<section class="sec-light paper2" id="etapas">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="sec-kicker">Etapas do trabalho</div>
+      <h2>Do briefing ao site no ar.</h2>
+      <p>Um caminho claro, da primeira conversa até o site publicado e verificado.</p>
+    </div>
+    <div class="tl">
+      <div class="tl-item reveal"><div class="tl-node">1</div><div class="tl-card"><h4>Briefing e planejamento</h4><p>Alinhamento de conteúdo, referências e estrutura das páginas.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-node">2</div><div class="tl-card"><h4>Design</h4><p>Criação do layout do novo site para aprovação de vocês.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-node">3</div><div class="tl-card"><h4>Desenvolvimento</h4><p>Construção do site já responsivo e otimizado.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-node">4</div><div class="tl-card"><h4>Ajustes e revisão</h4><p>Uma rodada de ajustes com base no retorno de vocês.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-node">5</div><div class="tl-card"><h4>Publicação</h4><p>Colocação do site no ar e verificação final.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTIMENTO (dark) -->
+<section class="sec-dark deep" id="investimento">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="sec-kicker">Investimento</div>
+      <h2>Um preço fechado, à vista.</h2>
+      <p>Sem pacote confuso: a reformulação completa do site institucional, moderno, responsivo e com SEO básico.</p>
+    </div>
+    <div class="offer reveal">
+      <div class="offer-left">
+        <span class="offer-tag">Reformulação do site</span>
+        <div class="offer-price"><span class="cur">R$</span>1.500</div>
+        <p class="offer-sub">Site institucional novo, responsivo e com SEO básico. Pagamento à vista, no fechamento do projeto.</p>
+        <a class="btn btn-primary" data-wa href="#proximos">Quero começar</a>
+        <div class="offer-seal">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <div><b>Uma rodada de ajustes inclusa</b><span>após a apresentação do site</span></div>
+        </div>
+      </div>
+      <div class="offer-right">
+        <h4>O que está incluído</h4>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Redesenho completo do layout e das páginas</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Identidade visual alinhada à marca Akatu</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Segmentos, processo, diferenciais e serviços</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Site responsivo (celular, tablet e desktop)</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>SEO básico e ajustes de performance</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Uma rodada de ajustes após a apresentação</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDICOES (light) -->
+<section class="sec-light" id="condicoes">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Condições</div>
+      <h2>Combinado claro, sem letra miúda.</h2>
+    </div>
+    <div class="cond-grid">
+      <div class="cond reveal">
+        <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg></span>
+        <div><h4>Conteúdo e imagens</h4><p>Os textos e imagens podem ser fornecidos pela Akatu ou aproveitados do site atual.</p></div>
+      </div>
+      <div class="cond reveal">
+        <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 1 1-9-9"/><path d="m9 11 3 3L22 4"/></svg></span>
+        <div><h4>Rodada de ajustes</h4><p>Uma rodada de ajustes está inclusa após a apresentação do site.</p></div>
+      </div>
+      <div class="cond reveal">
+        <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h20v14H2z"/><path d="M8 21h8M12 17v4"/></svg></span>
+        <div><h4>Hospedagem e domínio</h4><p>Não estão inclusos neste valor e podem ser orçados à parte, se necessário.</p></div>
+      </div>
+      <div class="cond reveal">
+        <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <div><h4>Prazo de execução</h4><p>A combinar após o fechamento e o envio dos materiais.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL (dark) -->
+<section class="sec-dark" id="proximos">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <svg class="cbp" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <pattern id="bp2" width="54" height="54" patternUnits="userSpaceOnUse">
+            <path d="M54 0H0V54" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="1200" height="500" fill="url(#bp2)"/>
+      </svg>
+      <div class="mk">Próximos passos</div>
+      <h2>Vamos começar?</h2>
+      <p>Para dar início, basta a confirmação desta proposta. Em seguida iniciamos o briefing e o cronograma do projeto. Qualquer dúvida, é só me chamar que a gente conversa.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" data-wa href="#">Falar no WhatsApp</a>
+        <a class="btn btn-ghost" data-email href="#">Enviar e-mail</a>
+      </div>
+      <div class="cta-contacts">
+        <a data-wa href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>WhatsApp: <span id="wa-txt">a confirmar</span></a>
+        <a data-email href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>E-mail: <span id="mail-txt">a confirmar</span></a>
+        <a href="https://matilab.com.br" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg>matilab.com.br</a>
+      </div>
+      <div class="cta-sign">Proposta preparada por <b>Matheus Moura</b> · Matilab</div>
+    </div>
+    <p class="valid">Esta proposta é válida por 15 dias a partir da data de envio.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-left">
+      <img src="/propostas/akatu/assets/matilab-logo-white.svg" alt="Matilab" />
+      <div class="fdiv"></div>
+      <div class="ftxt"><b>Matilab</b>Proposta preparada para a Akatu Arquitetura e Construção</div>
+    </div>
+    <div class="foot-right">
+      <a href="https://matilab.com.br" target="_blank" rel="noopener">matilab.com.br</a>
+      <a data-wa href="#">WhatsApp</a>
+      <a data-email href="#">E-mail</a>
+      <span id="ano"></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ====== CONFIGURE AQUI ANTES DE ENVIAR ====== */
+  const CONFIG = {
+    whatsapp: "5511992644010",    // so numeros, com DDI 55
+    whatsappLabel: "(11) 99264-4010",
+    email: "contato@matilab.com.br",
+    saudacao: "Ola! Vi a proposta de reformulacao do site da Akatu e gostaria de conversar.",
+    assunto: "Proposta de site - Akatu Arquitetura e Construcao"
+  };
+  /* ============================================= */
+  const waBase = CONFIG.whatsapp ? "https://wa.me/" + CONFIG.whatsapp : "https://wa.me/";
+  const waHref = waBase + "?text=" + encodeURIComponent(CONFIG.saudacao);
+  const mailHref = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent(CONFIG.assunto);
+  document.querySelectorAll("[data-wa]").forEach(a=>{a.href=waHref;a.target="_blank";a.rel="noopener";});
+  document.querySelectorAll("[data-email]").forEach(a=>{a.href=mailHref;});
+  const set = (id,v)=>{const el=document.getElementById(id); if(el&&v) el.textContent=v;};
+  set("wa-txt", CONFIG.whatsappLabel);
+  set("mail-txt", CONFIG.email);
+  document.getElementById("ano").textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:0.1,rootMargin:"0px 0px -8% 0px"});
+  document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
