@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
   :root{
     --indigo:#3D4A94;
@@ -50,17 +50,11 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
   .orange{color:var(--orange)}
 
-  /* ---------- brand lockup (recriado em vetor) ---------- */
-  .brandmark{font-family:"Baloo 2",cursive;font-weight:800;display:inline-flex;align-items:flex-end;line-height:.9;letter-spacing:-.01em;white-space:nowrap;position:relative}
-  .brandmark .bm-c{color:var(--indigo);position:relative}
-  .brandmark .bm-v{color:var(--orange);margin-left:.06em}
-  .brandmark .bm-rest{color:var(--indigo)}
-  .brandmark .bm-plane{position:absolute;color:var(--orange)}
-  .brandmark.on-dark .bm-c,.brandmark.on-dark .bm-rest{color:#fff}
-  .nav-brand{font-size:26px}
-  .nav-brand .bm-plane{top:-9px;right:-3px;width:17px;height:17px}
-  .hero-brand{font-size:clamp(40px,7vw,74px);margin:0 auto 30px}
-  .hero-brand .bm-plane{top:-.28em;right:-.05em;width:.42em;height:.42em}
+  /* ---------- brand ---------- */
+  .nav-label{font-family:"Plus Jakarta Sans",sans-serif;font-weight:700;font-size:15px;color:#fff;letter-spacing:-.01em}
+  .hero-logo{display:inline-block;background:#fff;border-radius:20px;padding:22px 30px;margin:0 auto 34px;box-shadow:0 20px 50px rgba(8,12,32,.42),inset 0 1px 0 rgba(255,255,255,.6)}
+  .hero-logo img{height:clamp(58px,9vw,92px);width:auto}
+  @media(max-width:560px){.hero-logo{padding:18px 24px;border-radius:16px}}
 
   /* ---------- glass ---------- */
   .glass{background:var(--glass-d);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);
@@ -155,24 +149,23 @@
   .qa .short{display:inline-block;margin-top:12px;font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--orange);text-transform:uppercase;font-family:"Plus Jakarta Sans",sans-serif}
   @media(max-width:820px){.qa-grid{grid-template-columns:1fr}}
 
-  /* ---------- PLANOS (light) ---------- */
-  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch;position:relative;z-index:1}
-  .plan{position:relative;overflow:hidden;border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line-d);box-shadow:0 18px 44px rgba(31,37,71,.08)}
-  .plan.best{border-color:var(--orange);box-shadow:0 26px 60px rgba(245,130,46,.2);transform:translateY(-6px)}
-  .plan.best::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--orange),var(--orange-2))}
-  .plan .ptop{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;min-height:26px}
-  .plan h3{font-size:20px;color:var(--ink-d)}
-  .plan .tagbest{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--orange-cta);padding:5px 11px;border-radius:999px;font-family:"Plus Jakarta Sans",sans-serif}
-  .plan .pdesc{color:var(--ink-d2);font-size:14px;margin-bottom:20px;min-height:40px}
-  .plan .price{font-weight:800;font-size:38px;color:var(--indigo);line-height:1;font-family:"Plus Jakarta Sans",sans-serif}
-  .plan .price small{display:block;font-size:13px;color:var(--ink-d3);margin-top:8px;font-weight:500;font-family:"Inter",sans-serif}
-  .plan ul{list-style:none;display:grid;gap:11px;margin:22px 0 26px}
-  .plan li{display:flex;gap:10px;font-size:14px;color:var(--ink-d)}
-  .plan li svg{flex:none;margin-top:3px;color:var(--orange-cta)}
-  .plan .btn{width:100%;justify-content:center;margin-top:auto}
-  .plan .btn-soft{background:var(--paper);color:var(--indigo);border-color:var(--line-d)}
-  .plan .btn-soft:hover{background:#e6ecfa;color:var(--indigo-2);transform:translateY(-2px)}
-  @media(max-width:900px){.plans{grid-template-columns:1fr;max-width:440px;margin:0 auto}.plan.best{transform:none}}
+  /* ---------- INVESTIMENTO (light) ---------- */
+  .offer{position:relative;z-index:1;display:grid;grid-template-columns:.9fr 1.1fr;gap:0;border-radius:24px;overflow:hidden;background:#fff;border:1px solid var(--line-d);box-shadow:0 26px 60px rgba(31,37,71,.12)}
+  .offer-left{padding:44px 40px;background:linear-gradient(160deg,#fff,var(--paper-2));border-right:1px solid var(--line-d)}
+  .offer-tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-cta);background:rgba(245,130,46,.12);border:1px solid rgba(245,130,46,.28);padding:6px 12px;border-radius:999px;font-family:"Plus Jakarta Sans",sans-serif;margin-bottom:20px}
+  .offer-price{font-family:"Plus Jakarta Sans",sans-serif;font-weight:800;font-size:clamp(48px,6vw,66px);color:var(--indigo);line-height:1;letter-spacing:-.02em}
+  .offer-price .cur{font-size:.5em;color:var(--orange);vertical-align:top;margin-right:4px}
+  .offer-sub{color:var(--ink-d2);font-size:14.5px;margin:14px 0 26px;max-width:34ch}
+  .offer-left .btn{width:100%;justify-content:center}
+  .offer-seal{display:flex;align-items:center;gap:14px;margin-top:26px;padding-top:24px;border-top:1px solid var(--line-d);color:var(--orange-cta)}
+  .offer-seal b{display:block;color:var(--ink-d);font-size:14.5px;font-weight:700;font-family:"Plus Jakarta Sans",sans-serif}
+  .offer-seal span{font-size:13px;color:var(--ink-d3)}
+  .offer-right{padding:44px 40px}
+  .offer-right h4{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-d3);margin-bottom:20px;font-family:"Plus Jakarta Sans",sans-serif}
+  .offer-right ul{list-style:none;display:grid;gap:14px}
+  .offer-right li{display:flex;gap:11px;font-size:15px;color:var(--ink-d)}
+  .offer-right li svg{flex:none;margin-top:3px;color:var(--orange-cta)}
+  @media(max-width:820px){.offer{grid-template-columns:1fr}.offer-left{border-right:0;border-bottom:1px solid var(--line-d)}.offer-left,.offer-right{padding:34px 26px}}
 
   /* ---------- CUSTOS (dark, highlight) ---------- */
   .cost-card{position:relative;overflow:hidden;border-radius:24px;padding:52px 44px;display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;background:linear-gradient(150deg,var(--indigo-2),var(--indigo-4));border:1px solid var(--line);box-shadow:0 30px 70px rgba(10,16,40,.4)}
@@ -275,10 +268,7 @@
 <header class="nav">
   <div class="wrap nav-inner">
     <div class="nav-left">
-      <span class="brandmark nav-brand on-dark" aria-label="Checklist Viagens">
-        <span class="bm-c">check</span><span class="bm-rest">list</span><span class="bm-v">V</span><span class="bm-rest">iagens</span>
-        <svg class="bm-plane" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5 3.2c.6-.2.5.9.2 1.3l-6.4 8.8-.6 6.1c0 .5-.7.6-1 .2l-2.3-3.2-4.6 1.9c-.6.2-1-.5-.6-1L18.9 4.1c.9-.4 1.8-.7 2.6-.9Z"/></svg>
-      </span>
+      <span class="nav-label">Checklist Viagens</span>
       <span class="nav-badge">Proposta de site</span>
     </div>
     <div class="nav-right">
@@ -297,10 +287,7 @@
     <circle cx="900" cy="520" r="4" fill="var(--sky)"/>
   </svg>
   <div class="wrap">
-    <span class="brandmark hero-brand on-dark" aria-label="Checklist Viagens">
-      <span class="bm-c">check</span><span class="bm-rest">list</span><span class="bm-v">V</span><span class="bm-rest">iagens</span>
-      <svg class="bm-plane" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5 3.2c.6-.2.5.9.2 1.3l-6.4 8.8-.6 6.1c0 .5-.7.6-1 .2l-2.3-3.2-4.6 1.9c-.6.2-1-.5-.6-1L18.9 4.1c.9-.4 1.8-.7 2.6-.9Z"/></svg>
-    </span>
+    <span class="hero-logo"><img src="/propostas/checklistviagens/assets/checklist-logo.png" alt="Checklist Viagens" /></span>
     <span class="eyebrow">Proposta preparada pela Matilab</span>
     <h1>Um novo site pra Checklist Viagens:<br><em>moderno, rápido e feito pra vender.</em></h1>
     <p class="sub">Um site à altura da sua agência, com promoções que você mesmo publica e foco em vender pacotes, passagens e roteiros pela internet. E o melhor: o site, o domínio e o código ficam tudo no seu nome.</p>
@@ -310,8 +297,8 @@
     </div>
     <div class="hero-meta">
       <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Tudo no seu nome</span>
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>PageSpeed acima de 90 garantido</span>
       <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Você publica as promoções</span>
-      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Pronto em 4 a 6 semanas</span>
     </div>
   </div>
 </section>
@@ -353,9 +340,9 @@
       <p>Você mandou 12 perguntas diretas. Aqui vão as 12 respostas, também diretas, para você decidir com clareza.</p>
     </div>
     <div class="qa-grid">
-      <article class="qa glass reveal"><div class="qn"><span class="qbadge">1</span><h4>Quanto custa a implantação?</h4></div><p>A partir de <span class="hi">R$ 5.900</span>. O plano que eu recomendo é o <span class="hi">Profissional, por R$ 8.900</span>, que já entrega tudo que uma agência de turismo precisa para vender.</p></article>
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">1</span><h4>Quanto custa a implantação?</h4></div><p>Valor fechado de <span class="hi">R$ 4.500</span>, pagamento único, com tudo que uma agência de turismo precisa para vender pela internet. Sem plano caro, sem surpresa.</p></article>
 
-      <article class="qa glass reveal"><div class="qn"><span class="qbadge">2</span><h4>Tem mensalidade e hospedagem?</h4></div><p>Depois do site pronto, a única obrigação mensal fixa é o banco de dados Supabase, um serviço profissional que custa <span class="hi">US$ 25 por mês</span>. Fora isso, nenhum custo mensal obrigatório.</p></article>
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">2</span><h4>Tem mensalidade e hospedagem?</h4></div><p>Depois do site pronto, a única obrigação mensal fixa é o banco de dados Supabase, cerca de <span class="hi">US$ 25 por mês</span>, contratado <span class="hi">na sua própria conta, no seu nome</span>, sem passar por mim. Fora isso, nenhum custo mensal obrigatório.</p></article>
 
       <article class="qa glass reveal"><div class="qn"><span class="qbadge">3</span><h4>O site é WordPress?</h4></div><p>Não. Uso uma tecnologia mais moderna (<span class="hi">Next.js</span>), mais rápida, segura e melhor no Google, com um painel de edição tão simples quanto o do WordPress.</p></article>
 
@@ -367,67 +354,49 @@
 
       <article class="qa glass reveal"><div class="qn"><span class="qbadge">7</span><h4>Vocês criam landing pages?</h4></div><p>Sim. Páginas específicas para <span class="hi">campanhas e promoções</span>, focadas em conversão, do tipo que vende um pacote ou destino específico.</p></article>
 
-      <article class="qa glass reveal"><div class="qn"><span class="qbadge">8</span><h4>Fazem SEO?</h4></div><p>Sim. <span class="hi">SEO técnico completo já na entrega</span> (estrutura, velocidade, tags, dados estruturados, sitemap e integração com o Google). O trabalho de SEO contínuo fica disponível como serviço.</p></article>
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">8</span><h4>Fazem SEO?</h4></div><p>Sim. <span class="hi">SEO técnico completo já na entrega</span> (estrutura, velocidade, tags, dados estruturados, sitemap e integração com o Google), com <span class="hi">nota acima de 90 no PageSpeed garantida</span>. O trabalho de SEO contínuo fica disponível como serviço.</p></article>
 
       <article class="qa glass reveal"><div class="qn"><span class="qbadge">9</span><h4>Integra com operadoras de turismo?</h4></div><p>Sim, quando a operadora oferece integração (API ou feed). Quando não oferece, via link, motor de reserva incorporado ou redirecionamento. <span class="hi">Avaliação gratuita antes de fechar.</span></p></article>
 
       <article class="qa glass reveal"><div class="qn"><span class="qbadge">10</span><h4>Qual é o prazo de entrega?</h4></div><p>De <span class="hi">4 a 6 semanas</span> para o plano recomendado, contadas a partir da entrega dos conteúdos por parte de vocês.</p></article>
 
-      <article class="qa glass reveal"><div class="qn"><span class="qbadge">11</span><h4>Quantas alterações posso fazer?</h4></div><p>As do dia a dia (promoções, pacotes, textos, fotos) <span class="hi">vocês fazem sozinhos pelo painel, sem limite</span>. Alterações estruturais entram por pacote de horas quando precisar.</p></article>
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">11</span><h4>Quantas alterações posso fazer?</h4></div><p>Durante o desenvolvimento, <span class="hi">alterações ilimitadas até o site ficar 100%</span> do jeito que vocês querem. Depois de pronto, pelo painel vocês mudam <span class="hi">textos, cores e imagens</span> quando quiserem.</p></article>
 
       <article class="qa glass reveal"><div class="qn"><span class="qbadge">12</span><h4>E se eu encerrar o contrato?</h4></div><p>O site e o domínio são de vocês e continuam com vocês. <span class="hi">Entrego o código-fonte</span> e transfiro as contas. Nada fica refém.</p></article>
     </div>
   </div>
 </section>
 
-<!-- PLANOS (light) -->
+<!-- INVESTIMENTO (light) -->
 <section class="sec-light" id="planos">
   <div class="wrap">
     <div class="sec-head center reveal">
-      <div class="sec-kicker">Planos de implantação</div>
-      <h2>Três formas de começar.</h2>
-      <p>Todos os planos entregam um site moderno, no seu nome, com painel de edição. A diferença está no alcance de cada um. O Profissional é o que faz mais sentido para uma agência de turismo.</p>
+      <div class="sec-kicker">Investimento</div>
+      <h2>Um preço fechado, tudo incluso.</h2>
+      <p>Sem plano caro nem pacote confuso: um site completo, moderno e no seu nome, com tudo que uma agência de turismo precisa para vender pela internet.</p>
     </div>
-    <div class="plans">
-      <div class="plan reveal">
-        <div class="ptop"><h3>Essencial</h3></div>
-        <p class="pdesc">Um site institucional moderno para marcar presença com qualidade.</p>
-        <div class="price">R$ 5.900<small>implantação, pagamento único</small></div>
-        <ul>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Site institucional moderno</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Painel de edição</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>SEO básico na entrega</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Captação por WhatsApp e formulário</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Totalmente responsivo</li>
-        </ul>
-        <a class="btn btn-soft" data-wa href="#">Quero o Essencial</a>
+    <div class="offer reveal">
+      <div class="offer-left">
+        <span class="offer-tag">Site completo</span>
+        <div class="offer-price"><span class="cur">R$</span>4.500</div>
+        <p class="offer-sub">Pagamento único, sem mensalidade obrigatória (fora o banco de dados no seu nome).</p>
+        <a class="btn btn-primary" data-wa href="#comecar">Quero começar</a>
+        <div class="offer-seal">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <div><b>Nota acima de 90 no PageSpeed</b><span>garantido em contrato</span></div>
+        </div>
       </div>
-
-      <div class="plan best reveal">
-        <div class="ptop"><h3>Profissional</h3><span class="tagbest">Recomendado</span></div>
-        <p class="pdesc">O site completo para vender pacotes, passagens e roteiros pela internet.</p>
-        <div class="price">R$ 8.900<small>implantação, pagamento único</small></div>
+      <div class="offer-right">
+        <h4>O que está incluído</h4>
         <ul>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Tudo do Essencial</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Painel completo: páginas, blog, pacotes e promoções</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Site moderno e rápido, ótimo no celular</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Estrutura completa: home, sobre, pacotes, destinos, promoções, blog e contato</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Painel para você publicar promoções e pacotes</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Landing pages para campanhas</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>SEO técnico completo</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Você publica promoções sem limite</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>SEO técnico completo na entrega</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Captação por WhatsApp e formulário</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Site, domínio e código no seu nome</li>
         </ul>
-        <a class="btn btn-primary" data-wa href="#">Quero o Profissional</a>
-      </div>
-
-      <div class="plan reveal">
-        <div class="ptop"><h3>Completo</h3></div>
-        <p class="pdesc">Para quem quer vender e receber online, com integração de operadora.</p>
-        <div class="price">R$ 13.900<small>implantação, pagamento único</small></div>
-        <ul>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Tudo do Profissional</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Pagamento online com Pix e cartão</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Avaliação e integração com uma operadora</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Automações de captação e atendimento</li>
-        </ul>
-        <a class="btn btn-soft" data-wa href="#">Quero o Completo</a>
       </div>
     </div>
   </div>
@@ -444,7 +413,7 @@
       </div>
       <div class="cost-body">
         <h3>Sobre os custos, sem letra miúda.</h3>
-        <p>Depois que o site estiver pronto, a única obrigação mensal fixa é o banco de dados Supabase, que custa <b>US$ 25 por mês</b>. Ele fica registrado no seu nome e garante que o painel, as promoções e os dados do site funcionem com segurança e backup. Fora esse valor, você não tem nenhuma mensalidade obrigatória: o domínio é anual e barato, e o restante da estrutura roda sem custo mensal fixo.</p>
+        <p>Depois que o site estiver pronto, a única obrigação mensal fixa é o banco de dados Supabase, que custa <b>US$ 25 por mês</b>. Ele fica <b>na sua própria conta, registrado no seu nome e sem nenhum vínculo comigo</b>, e garante que o painel, as promoções e os dados do site funcionem com segurança e backup. Fora esse valor, você não tem nenhuma mensalidade obrigatória: o domínio é anual e barato, e o restante da estrutura roda sem custo mensal fixo.</p>
       </div>
     </div>
   </div>
@@ -464,7 +433,7 @@
       <div class="tl-item reveal"><div class="tl-node">3</div><div class="tl-card glass-l"><h4>Desenvolvimento</h4><p>Programo o site em Next.js e envio um link de prévia para vocês acompanharem de perto.</p></div></div>
       <div class="tl-item reveal"><div class="tl-node">4</div><div class="tl-card glass-l"><h4>Conteúdo e SEO</h4><p>Subimos pacotes, textos e fotos e aplico o SEO técnico completo para o Google encontrar vocês.</p></div></div>
       <div class="tl-item reveal"><div class="tl-node">5</div><div class="tl-card glass-l"><h4>Publicação e treinamento</h4><p>Colocamos no ar no domínio de vocês e ensino a usar o painel para publicar promoções sozinhos.</p></div></div>
-      <div class="tl-item reveal"><div class="tl-node">6</div><div class="tl-card glass-l"><h4>Suporte quando precisar</h4><p>Fico à disposição para dúvidas e ajustes, com pacote de horas para o que for estrutural.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-node">6</div><div class="tl-card glass-l"><h4>Suporte quando precisar</h4><p>Depois de pronto, vocês mudam textos, cores e imagens pelo painel, e eu fico à disposição para dúvidas.</p></div></div>
     </div>
   </div>
 </section>
