@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Proposta de novo site | Checklist Viagens x Matilab</title>
+<meta name="description" content="Proposta da Matilab para o novo site da Checklist Viagens: moderno, rápido, com painel de edição e feito para vender pacotes, passagens e roteiros." />
+<meta property="og:title" content="Proposta de novo site | Checklist Viagens x Matilab" />
+<meta property="og:description" content="Um site moderno e rápido para a Checklist Viagens, com promoções publicáveis por você e foco em vender pelo site." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --indigo:#3D4A94;
+    --indigo-2:#313D80;
+    --indigo-3:#26305F;
+    --indigo-4:#1C2249;
+    --orange:#F5822E;
+    --orange-2:#FF9A4D;
+    --orange-cta:#E96A12;
+    --sky:#6C97F0;
+    --ink:#EDF1FB;
+    --ink-2:#B3BEE4;
+    --ink-3:#828EBE;
+    /* light */
+    --paper:#EEF2FB;
+    --paper-2:#F7F9FE;
+    --ink-d:#1F2547;
+    --ink-d2:#525A83;
+    --ink-d3:#7A83AC;
+    --line:rgba(255,255,255,.10);
+    --line-d:rgba(31,37,71,.12);
+    --line-d2:rgba(31,37,71,.08);
+    --glass-d:rgba(255,255,255,.05);
+    --glass-d-b:rgba(255,255,255,.13);
+    --glass-l:rgba(255,255,255,.7);
+    --glass-l-b:rgba(255,255,255,.92);
+    --radius:18px;--maxw:1180px;
+    --ease:cubic-bezier(0.16,1,0.3,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;overflow-x:hidden}
+  body{background:var(--indigo-4);color:var(--ink);font-family:"Inter","Segoe UI",system-ui,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:"Plus Jakarta Sans",sans-serif;font-weight:700;letter-spacing:-0.02em;line-height:1.1}
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .orange{color:var(--orange)}
+
+  /* ---------- brand lockup (recriado em vetor) ---------- */
+  .brandmark{font-family:"Baloo 2",cursive;font-weight:800;display:inline-flex;align-items:flex-end;line-height:.9;letter-spacing:-.01em;white-space:nowrap;position:relative}
+  .brandmark .bm-c{color:var(--indigo);position:relative}
+  .brandmark .bm-v{color:var(--orange);margin-left:.06em}
+  .brandmark .bm-rest{color:var(--indigo)}
+  .brandmark .bm-plane{position:absolute;color:var(--orange)}
+  .brandmark.on-dark .bm-c,.brandmark.on-dark .bm-rest{color:#fff}
+  .nav-brand{font-size:26px}
+  .nav-brand .bm-plane{top:-9px;right:-3px;width:17px;height:17px}
+  .hero-brand{font-size:clamp(40px,7vw,74px);margin:0 auto 30px}
+  .hero-brand .bm-plane{top:-.28em;right:-.05em;width:.42em;height:.42em}
+
+  /* ---------- glass ---------- */
+  .glass{background:var(--glass-d);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);
+    border:1px solid var(--glass-d-b);box-shadow:inset 0 1px 0 rgba(255,255,255,.09),0 24px 60px rgba(10,16,40,.4)}
+  .glass-l{background:var(--glass-l);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);
+    border:1px solid var(--glass-l-b);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 20px 46px rgba(31,37,71,.1)}
+
+  /* ---------- NAV ---------- */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(28,34,73,.72);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+  .nav-left{display:flex;align-items:center;gap:15px;min-width:0}
+  .nav-badge{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);padding-left:15px;border-left:1px solid var(--line);white-space:nowrap}
+  .nav-right{display:flex;align-items:center;gap:18px}
+  .nav-by{display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+  .nav-by img{height:15px;width:auto;opacity:.92}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--orange-cta);color:#fff;font-weight:700;font-size:14px;padding:11px 20px;border-radius:999px;transition:transform .25s var(--ease),background .25s var(--ease);white-space:nowrap;box-shadow:0 8px 22px rgba(233,106,18,.32);font-family:"Plus Jakarta Sans",sans-serif}
+  .nav-cta:hover{background:var(--orange);transform:translateY(-1px)}
+  @media(max-width:880px){.nav-badge,.nav-by{display:none}}
+
+  /* ---------- BUTTONS ---------- */
+  .btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;padding:15px 28px;border-radius:999px;transition:transform .25s var(--ease),background .25s var(--ease),border-color .25s var(--ease),color .25s var(--ease);white-space:nowrap;cursor:pointer;border:1.5px solid transparent;font-family:"Plus Jakarta Sans",sans-serif}
+  .btn-primary{background:var(--orange-cta);color:#fff;box-shadow:0 14px 30px rgba(233,106,18,.3)}
+  .btn-primary:hover{background:var(--orange);transform:translateY(-2px)}
+  .btn-primary:active{transform:translateY(0) scale(.98)}
+  .btn-ghost{background:transparent;border-color:var(--glass-d-b);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--orange);color:var(--orange-2);transform:translateY(-2px)}
+  .sec-light .btn-ghost{border-color:var(--line-d);color:var(--indigo)}
+  .sec-light .btn-ghost:hover{border-color:var(--orange);color:var(--orange-cta)}
+
+  /* ---------- SECTIONS ---------- */
+  section{position:relative;padding:100px 0;overflow:hidden}
+  .sec-dark{background:var(--indigo-3)}
+  .sec-dark.deep{background:var(--indigo-4)}
+  .sec-light{background:var(--paper);color:var(--ink-d)}
+  .sec-light h1,.sec-light h2,.sec-light h3,.sec-light h4{color:var(--ink-d)}
+  .glow{position:absolute;border-radius:50%;pointer-events:none;filter:blur(8px);z-index:0}
+  .sec-head{max-width:700px;margin-bottom:52px;position:relative;z-index:2}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:16px;display:inline-flex;align-items:center;gap:10px;font-family:"Plus Jakarta Sans",sans-serif}
+  .sec-kicker::before{content:"";width:22px;height:2px;background:var(--orange);border-radius:2px}
+  .center .sec-kicker{justify-content:center}
+  .center .sec-kicker::after{content:"";width:22px;height:2px;background:var(--orange);border-radius:2px}
+  .sec-head h2{font-size:clamp(28px,3.6vw,44px)}
+  .sec-head p{margin-top:16px;font-size:17px}
+  .sec-dark .sec-head p{color:var(--ink-2)}
+  .sec-light .sec-head p{color:var(--ink-d2)}
+
+  /* flight path divider */
+  .flightline{position:absolute;left:0;right:0;height:60px;pointer-events:none;opacity:.5;z-index:1}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 0 84px;overflow:hidden;background:
+    radial-gradient(120% 80% at 50% -10%,rgba(108,151,240,.28),transparent 46%),
+    radial-gradient(90% 70% at 85% 20%,rgba(245,130,46,.14),transparent 50%),
+    linear-gradient(180deg,var(--indigo-3),var(--indigo-4))}
+  .hero .wrap{position:relative;z-index:3;max-width:920px}
+  .hero-arc{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.55}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:22px;font-family:"Plus Jakarta Sans",sans-serif}
+  .eyebrow::before,.eyebrow::after{content:"";width:24px;height:2px;background:var(--orange);border-radius:2px}
+  .hero h1{font-size:clamp(33px,5.4vw,60px);font-weight:800;color:#fff;letter-spacing:-.025em}
+  .hero h1 em{font-style:normal;color:var(--orange)}
+  .hero p.sub{margin:24px auto 0;font-size:clamp(16px,1.6vw,20px);color:#cfd8f2;max-width:62ch}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:38px}
+  .hero-meta{margin-top:40px;display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center;font-size:13.5px;color:#aebbe0}
+  .hero-meta span{display:inline-flex;align-items:center;gap:8px}
+  .hero-meta svg{color:var(--orange)}
+
+  /* ---------- DIAGNOSTICO (light) ---------- */
+  .diag{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:center;position:relative;z-index:1}
+  .diag-card{border-radius:22px;padding:38px}
+  .diag-card h3{font-size:22px;margin-bottom:14px}
+  .diag-card p{color:var(--ink-d2);font-size:15.5px;margin-bottom:14px}
+  .diag-card p:last-child{margin-bottom:0}
+  .diag-card b{color:var(--ink-d)}
+  .diag-visual{border-radius:22px;padding:34px;display:grid;gap:14px}
+  .diag-row{display:flex;align-items:center;gap:14px;font-size:14.5px;color:var(--ink-d)}
+  .diag-row .rk{flex:none;width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center}
+  .diag-row.bad .rk{background:rgba(31,37,71,.07);color:var(--ink-d3)}
+  .diag-row.good .rk{background:rgba(245,130,46,.14);color:var(--orange-cta)}
+  .diag-row.bad{color:var(--ink-d3)}
+  @media(max-width:820px){.diag{grid-template-columns:1fr}}
+
+  /* ---------- 12 PERGUNTAS (dark) ---------- */
+  .qa-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;position:relative;z-index:1}
+  .qa{border-radius:16px;padding:26px 26px 24px;transition:transform .3s var(--ease),border-color .3s var(--ease)}
+  .qa:hover{transform:translateY(-3px);border-color:rgba(245,130,46,.4)}
+  .qa .qn{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+  .qa .qbadge{flex:none;width:34px;height:34px;border-radius:10px;background:linear-gradient(150deg,var(--orange),var(--orange-2));color:#3a1c00;font-weight:800;font-family:"Plus Jakarta Sans",sans-serif;display:flex;align-items:center;justify-content:center;font-size:15px;box-shadow:0 6px 16px rgba(245,130,46,.3)}
+  .qa h4{font-size:16.5px;color:#fff;line-height:1.3}
+  .qa p{color:var(--ink-2);font-size:14.5px}
+  .qa p .hi{color:var(--orange-2);font-weight:600}
+  .qa .short{display:inline-block;margin-top:12px;font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--orange);text-transform:uppercase;font-family:"Plus Jakarta Sans",sans-serif}
+  @media(max-width:820px){.qa-grid{grid-template-columns:1fr}}
+
+  /* ---------- PLANOS (light) ---------- */
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch;position:relative;z-index:1}
+  .plan{position:relative;overflow:hidden;border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line-d);box-shadow:0 18px 44px rgba(31,37,71,.08)}
+  .plan.best{border-color:var(--orange);box-shadow:0 26px 60px rgba(245,130,46,.2);transform:translateY(-6px)}
+  .plan.best::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--orange),var(--orange-2))}
+  .plan .ptop{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;min-height:26px}
+  .plan h3{font-size:20px;color:var(--ink-d)}
+  .plan .tagbest{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--orange-cta);padding:5px 11px;border-radius:999px;font-family:"Plus Jakarta Sans",sans-serif}
+  .plan .pdesc{color:var(--ink-d2);font-size:14px;margin-bottom:20px;min-height:40px}
+  .plan .price{font-weight:800;font-size:38px;color:var(--indigo);line-height:1;font-family:"Plus Jakarta Sans",sans-serif}
+  .plan .price small{display:block;font-size:13px;color:var(--ink-d3);margin-top:8px;font-weight:500;font-family:"Inter",sans-serif}
+  .plan ul{list-style:none;display:grid;gap:11px;margin:22px 0 26px}
+  .plan li{display:flex;gap:10px;font-size:14px;color:var(--ink-d)}
+  .plan li svg{flex:none;margin-top:3px;color:var(--orange-cta)}
+  .plan .btn{width:100%;justify-content:center;margin-top:auto}
+  .plan .btn-soft{background:var(--paper);color:var(--indigo);border-color:var(--line-d)}
+  .plan .btn-soft:hover{background:#e6ecfa;color:var(--indigo-2);transform:translateY(-2px)}
+  @media(max-width:900px){.plans{grid-template-columns:1fr;max-width:440px;margin:0 auto}.plan.best{transform:none}}
+
+  /* ---------- CUSTOS (dark, highlight) ---------- */
+  .cost-card{position:relative;overflow:hidden;border-radius:24px;padding:52px 44px;display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;background:linear-gradient(150deg,var(--indigo-2),var(--indigo-4));border:1px solid var(--line);box-shadow:0 30px 70px rgba(10,16,40,.4)}
+  .cost-card .cglow{position:absolute;top:-40%;right:-5%;width:55%;height:120%;background:radial-gradient(circle,rgba(245,130,46,.2),transparent 62%);pointer-events:none}
+  .cost-price{position:relative;text-align:center;flex:none}
+  .cost-price .big{font-family:"Plus Jakarta Sans",sans-serif;font-weight:800;font-size:56px;color:#fff;line-height:1}
+  .cost-price .cur{color:var(--orange);font-size:26px;vertical-align:top;margin-right:2px}
+  .cost-price .per{display:block;font-size:13px;color:var(--ink-3);margin-top:6px;letter-spacing:.02em}
+  .cost-body{position:relative}
+  .cost-body h3{font-size:23px;color:#fff;margin-bottom:12px}
+  .cost-body p{color:var(--ink-2);font-size:15.5px}
+  .cost-body p b{color:#fff}
+  @media(max-width:720px){.cost-card{grid-template-columns:1fr;text-align:center;padding:44px 26px}.cost-price .big{font-size:48px}}
+
+  /* ---------- TIMELINE (light) ---------- */
+  .tl{position:relative;max-width:880px;margin:0 auto}
+  .tl::before{content:"";position:absolute;left:50%;top:6px;bottom:6px;width:2px;transform:translateX(-50%);background:linear-gradient(180deg,var(--orange),var(--sky));border-radius:2px}
+  .tl-item{position:relative;width:50%;padding:0 46px 8px;margin-bottom:28px}
+  .tl-item:nth-child(odd){left:0;text-align:right}
+  .tl-item:nth-child(even){left:50%}
+  .tl-node{position:absolute;top:2px;width:46px;height:46px;border-radius:50%;background:var(--paper);border:2px solid var(--orange);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;color:var(--orange-cta);z-index:2;box-shadow:0 0 0 6px var(--paper),0 6px 18px rgba(245,130,46,.32);font-family:"Plus Jakarta Sans",sans-serif}
+  .tl-item:nth-child(odd) .tl-node{right:-23px}
+  .tl-item:nth-child(even) .tl-node{left:-23px}
+  .tl-card{border-radius:14px;padding:22px 24px}
+  .tl-card h4{font-size:17px;margin-bottom:6px;color:var(--ink-d)}
+  .tl-card p{color:var(--ink-d2);font-size:14px}
+  @media(max-width:720px){
+    .tl{max-width:520px}
+    .tl::before{left:23px}
+    .tl-item,.tl-item:nth-child(even){width:100%;left:0;text-align:left;padding:0 0 8px 62px}
+    .tl-item:nth-child(odd){text-align:left}
+    .tl-item:nth-child(odd) .tl-node,.tl-item:nth-child(even) .tl-node{left:0;right:auto}
+  }
+
+  /* ---------- DIFERENTE (dark) ---------- */
+  .diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative;z-index:1}
+  .diff{border-radius:16px;padding:28px;transition:transform .3s var(--ease),border-color .3s var(--ease)}
+  .diff:hover{transform:translateY(-4px);border-color:rgba(245,130,46,.4)}
+  .diff .ic{width:48px;height:48px;border-radius:12px;background:rgba(245,130,46,.14);border:1px solid rgba(245,130,46,.28);display:flex;align-items:center;justify-content:center;color:var(--orange);margin-bottom:16px}
+  .diff h4{font-size:17px;margin-bottom:8px;color:#fff}
+  .diff p{color:var(--ink-2);font-size:14px}
+  .diff p .hi{color:var(--orange-2);font-weight:600}
+  @media(max-width:820px){.diff-grid{grid-template-columns:1fr}}
+
+  /* ---------- CTA FINAL (light) ---------- */
+  .cta-card{position:relative;overflow:hidden;border-radius:26px;padding:64px 40px;text-align:center;background:linear-gradient(150deg,var(--indigo-2),var(--indigo-4));border:1px solid var(--line);box-shadow:0 30px 70px rgba(31,37,71,.22)}
+  .cta-card .mglow{position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:70%;height:90%;background:radial-gradient(circle,rgba(245,130,46,.2),transparent 62%);pointer-events:none}
+  .cta-card .mk{position:relative;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:16px;font-family:"Plus Jakarta Sans",sans-serif}
+  .cta-card h2{position:relative;font-size:clamp(30px,4.4vw,48px);font-weight:800;color:#fff}
+  .cta-card p{position:relative;margin:18px auto 0;color:var(--ink-2);font-size:18px;max-width:58ch}
+  .cta-actions{position:relative;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+  .cta-contacts{position:relative;margin-top:34px;padding-top:26px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 26px;font-size:14px;color:var(--ink-2)}
+  .cta-contacts a,.cta-contacts span{display:inline-flex;align-items:center;gap:8px}
+  .cta-contacts svg{color:var(--orange)}
+  .cta-contacts a:hover{color:#fff}
+  .cta-sign{position:relative;margin-top:30px;font-size:14px;color:var(--ink-2)}
+  .cta-sign b{color:#fff;font-weight:700}
+  .cta-card .btn-ghost{border-color:rgba(255,255,255,.38);color:#fff}
+  .cta-card .btn-ghost:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.1)}
+  .valid{margin-top:22px;text-align:center;font-size:13px;color:var(--ink-d3)}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:44px 0;background:var(--indigo-4);border-top:1px solid var(--line)}
+  .foot-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+  .foot-left{display:flex;align-items:center;gap:16px}
+  .foot-left img{height:24px}
+  .foot-left .fdiv{width:1px;height:30px;background:var(--line)}
+  .foot-left .ftxt{font-size:13px;color:var(--ink-3);line-height:1.5}
+  .foot-left .ftxt b{color:var(--ink);font-weight:600;display:block;font-size:13.5px}
+  .foot-right{font-size:13px;color:var(--ink-3);display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+  .foot-right a:hover{color:var(--orange)}
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}*{transition:none!important}}
+
+  /* ---------- PRINT ---------- */
+  @media print{
+    @page{margin:14mm}
+    html,body{background:#fff!important;color:#1c1c1c!important}
+    header.nav,.hero-actions,.nav-cta,.hero-arc,.flightline,.glow,.cglow,.mglow{display:none!important}
+    section{padding:26px 0!important;page-break-inside:avoid;background:#fff!important}
+    .sec-dark,.sec-dark.deep{background:#fff!important;color:#1c1c1c!important}
+    .hero{min-height:auto!important;padding:20px 0!important;background:#fff!important}
+    .hero h1,.hero p.sub,.cost-body h3,.cost-body p,.cost-price .big,.qa h4,.qa p,.cta-card h2,.cta-card p,.diff h4,.diff p{color:#1c1c1c!important}
+    .brandmark.on-dark .bm-c,.brandmark.on-dark .bm-rest{color:var(--indigo)!important}
+    .glass,.glass-l,.qa,.diff,.plan,.cost-card,.cta-card,.diag-card,.diag-visual,.tl-card{box-shadow:none!important;border:1px solid #d9d9e3!important;background:#fff!important}
+    .qa h4,.diff h4{color:#1c1c1c!important}.qa p,.diff p,.cost-body p{color:#3a3a3a!important}
+    .cost-price .big,.cta-card h2,.cost-body h3{color:var(--indigo)!important}
+    .plan.best{transform:none!important}
+    a{color:inherit!important}
+    .reveal{opacity:1!important;transform:none!important}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="nav-left">
+      <span class="brandmark nav-brand on-dark" aria-label="Checklist Viagens">
+        <span class="bm-c">check</span><span class="bm-rest">list</span><span class="bm-v">V</span><span class="bm-rest">iagens</span>
+        <svg class="bm-plane" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5 3.2c.6-.2.5.9.2 1.3l-6.4 8.8-.6 6.1c0 .5-.7.6-1 .2l-2.3-3.2-4.6 1.9c-.6.2-1-.5-.6-1L18.9 4.1c.9-.4 1.8-.7 2.6-.9Z"/></svg>
+      </span>
+      <span class="nav-badge">Proposta de site</span>
+    </div>
+    <div class="nav-right">
+      <span class="nav-by">por <img src="/propostas/checklistviagens/assets/matilab-logo-white.svg" alt="Matilab" /></span>
+      <a class="nav-cta" data-wa href="#">Falar agora</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="hero-arc" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path d="M-40 560 Q400 320 760 380 T1260 180" fill="none" stroke="rgba(245,130,46,.5)" stroke-width="2" stroke-dasharray="2 12" stroke-linecap="round"/>
+    <path d="M-40 640 Q500 480 900 520 T1260 360" fill="none" stroke="rgba(108,151,240,.5)" stroke-width="2" stroke-dasharray="2 12" stroke-linecap="round"/>
+    <circle cx="760" cy="380" r="4" fill="var(--orange)"/>
+    <circle cx="900" cy="520" r="4" fill="var(--sky)"/>
+  </svg>
+  <div class="wrap">
+    <span class="brandmark hero-brand on-dark" aria-label="Checklist Viagens">
+      <span class="bm-c">check</span><span class="bm-rest">list</span><span class="bm-v">V</span><span class="bm-rest">iagens</span>
+      <svg class="bm-plane" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5 3.2c.6-.2.5.9.2 1.3l-6.4 8.8-.6 6.1c0 .5-.7.6-1 .2l-2.3-3.2-4.6 1.9c-.6.2-1-.5-.6-1L18.9 4.1c.9-.4 1.8-.7 2.6-.9Z"/></svg>
+    </span>
+    <span class="eyebrow">Proposta preparada pela Matilab</span>
+    <h1>Um novo site pra Checklist Viagens:<br><em>moderno, rápido e feito pra vender.</em></h1>
+    <p class="sub">Um site à altura da sua agência, com promoções que você mesmo publica e foco em vender pacotes, passagens e roteiros pela internet. E o melhor: o site, o domínio e o código ficam tudo no seu nome.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#planos">Ver a proposta</a>
+      <a class="btn btn-ghost" data-wa href="#">Falar no WhatsApp</a>
+    </div>
+    <div class="hero-meta">
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Tudo no seu nome</span>
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Você publica as promoções</span>
+      <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Pronto em 4 a 6 semanas</span>
+    </div>
+  </div>
+</section>
+
+<!-- DIAGNOSTICO (light) -->
+<section class="sec-light" id="diagnostico">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Onde vocês estão hoje</div>
+      <h2>O site atual cumpre a função. Dá pra ir muito além.</h2>
+      <p>O site que vocês têm hoje funciona e apresenta a agência, mas foi feito em uma tecnologia antiga, com um visual datado, principalmente quando aberto no celular, que é de onde vem a maior parte das buscas por viagem. Com as ferramentas de hoje, dá pra construir algo muito superior, mais bonito, mais rápido e feito para vender.</p>
+    </div>
+    <div class="diag">
+      <div class="diag-card glass-l reveal">
+        <h3>O que muda na prática</h3>
+        <p>Hoje o site é uma vitrine parada: mostra a agência, mas não trabalha para vocês. As promoções dependem de terceiros para publicar e o celular abre uma versão apertada e lenta.</p>
+        <p><b>A proposta é inverter isso:</b> um site rápido, leve no celular, com promoções e pacotes que vocês mesmos atualizam, e cada página pensada para transformar visita em contato e em venda.</p>
+      </div>
+      <div class="diag-visual glass-l reveal">
+        <div class="diag-row bad"><span class="rk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6 6 18M6 6l12 12"/></svg></span>Tecnologia antiga e visual datado</div>
+        <div class="diag-row bad"><span class="rk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6 6 18M6 6l12 12"/></svg></span>Experiência ruim no celular</div>
+        <div class="diag-row bad"><span class="rk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6 6 18M6 6l12 12"/></svg></span>Depende de terceiros pra publicar promoção</div>
+        <div class="diag-row good"><span class="rk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span>Site moderno, leve e rápido</div>
+        <div class="diag-row good"><span class="rk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span>Ótimo no celular, do jeito que o cliente busca</div>
+        <div class="diag-row good"><span class="rk"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span>Você publica promoções em minutos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 PERGUNTAS (dark) -->
+<section class="sec-dark" id="perguntas">
+  <div class="glow" style="width:520px;height:520px;background:radial-gradient(circle,rgba(245,130,46,.14),transparent 62%);top:-120px;right:-80px"></div>
+  <div class="glow" style="width:460px;height:460px;background:radial-gradient(circle,rgba(108,151,240,.16),transparent 62%);bottom:-120px;left:-90px"></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Sem rodeios</div>
+      <h2>Respondendo suas 12 perguntas.</h2>
+      <p>Você mandou 12 perguntas diretas. Aqui vão as 12 respostas, também diretas, para você decidir com clareza.</p>
+    </div>
+    <div class="qa-grid">
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">1</span><h4>Quanto custa a implantação?</h4></div><p>A partir de <span class="hi">R$ 5.900</span>. O plano que eu recomendo é o <span class="hi">Profissional, por R$ 8.900</span>, que já entrega tudo que uma agência de turismo precisa para vender.</p></article>
+
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">2</span><h4>Tem mensalidade e hospedagem?</h4></div><p>Depois do site pronto, a única obrigação mensal fixa é o banco de dados Supabase, um serviço profissional que custa <span class="hi">US$ 25 por mês</span>. Fora isso, nenhum custo mensal obrigatório.</p></article>
+
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">3</span><h4>O site é WordPress?</h4></div><p>Não. Uso uma tecnologia mais moderna (<span class="hi">Next.js</span>), mais rápida, segura e melhor no Google, com um painel de edição tão simples quanto o do WordPress.</p></article>
+
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">4</span><h4>O domínio fica no meu nome?</h4></div><p>Sim. Registrado no <span class="hi">CPF ou CNPJ de vocês</span>, direto no Registro.br. Vocês são os donos, ponto final.</p></article>
+
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">5</span><h4>Posso mudar de fornecedor depois?</h4></div><p>Sim, sem amarras. <span class="hi">Todo o código é de vocês</span>, as contas são transferíveis, sem aprisionamento a nenhuma plataforma.</p></article>
+
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">6</span><h4>Quantas páginas estão incluídas?</h4></div><p>Na prática, ilimitadas. Entrego a estrutura inicial (home, sobre, pacotes, destinos, promoções, blog e contato) e <span class="hi">vocês criam quantas quiserem</span> pelo painel.</p></article>
+
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">7</span><h4>Vocês criam landing pages?</h4></div><p>Sim. Páginas específicas para <span class="hi">campanhas e promoções</span>, focadas em conversão, do tipo que vende um pacote ou destino específico.</p></article>
+
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">8</span><h4>Fazem SEO?</h4></div><p>Sim. <span class="hi">SEO técnico completo já na entrega</span> (estrutura, velocidade, tags, dados estruturados, sitemap e integração com o Google). O trabalho de SEO contínuo fica disponível como serviço.</p></article>
+
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">9</span><h4>Integra com operadoras de turismo?</h4></div><p>Sim, quando a operadora oferece integração (API ou feed). Quando não oferece, via link, motor de reserva incorporado ou redirecionamento. <span class="hi">Avaliação gratuita antes de fechar.</span></p></article>
+
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">10</span><h4>Qual é o prazo de entrega?</h4></div><p>De <span class="hi">4 a 6 semanas</span> para o plano recomendado, contadas a partir da entrega dos conteúdos por parte de vocês.</p></article>
+
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">11</span><h4>Quantas alterações posso fazer?</h4></div><p>As do dia a dia (promoções, pacotes, textos, fotos) <span class="hi">vocês fazem sozinhos pelo painel, sem limite</span>. Alterações estruturais entram por pacote de horas quando precisar.</p></article>
+
+      <article class="qa glass reveal"><div class="qn"><span class="qbadge">12</span><h4>E se eu encerrar o contrato?</h4></div><p>O site e o domínio são de vocês e continuam com vocês. <span class="hi">Entrego o código-fonte</span> e transfiro as contas. Nada fica refém.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PLANOS (light) -->
+<section class="sec-light" id="planos">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="sec-kicker">Planos de implantação</div>
+      <h2>Três formas de começar.</h2>
+      <p>Todos os planos entregam um site moderno, no seu nome, com painel de edição. A diferença está no alcance de cada um. O Profissional é o que faz mais sentido para uma agência de turismo.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <div class="ptop"><h3>Essencial</h3></div>
+        <p class="pdesc">Um site institucional moderno para marcar presença com qualidade.</p>
+        <div class="price">R$ 5.900<small>implantação, pagamento único</small></div>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Site institucional moderno</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Painel de edição</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>SEO básico na entrega</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Captação por WhatsApp e formulário</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Totalmente responsivo</li>
+        </ul>
+        <a class="btn btn-soft" data-wa href="#">Quero o Essencial</a>
+      </div>
+
+      <div class="plan best reveal">
+        <div class="ptop"><h3>Profissional</h3><span class="tagbest">Recomendado</span></div>
+        <p class="pdesc">O site completo para vender pacotes, passagens e roteiros pela internet.</p>
+        <div class="price">R$ 8.900<small>implantação, pagamento único</small></div>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Tudo do Essencial</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Painel completo: páginas, blog, pacotes e promoções</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Landing pages para campanhas</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>SEO técnico completo</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Você publica promoções sem limite</li>
+        </ul>
+        <a class="btn btn-primary" data-wa href="#">Quero o Profissional</a>
+      </div>
+
+      <div class="plan reveal">
+        <div class="ptop"><h3>Completo</h3></div>
+        <p class="pdesc">Para quem quer vender e receber online, com integração de operadora.</p>
+        <div class="price">R$ 13.900<small>implantação, pagamento único</small></div>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Tudo do Profissional</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Pagamento online com Pix e cartão</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Avaliação e integração com uma operadora</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Automações de captação e atendimento</li>
+        </ul>
+        <a class="btn btn-soft" data-wa href="#">Quero o Completo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOS (dark highlight) -->
+<section class="sec-dark deep" id="custos">
+  <div class="wrap">
+    <div class="cost-card reveal">
+      <div class="cglow"></div>
+      <div class="cost-price">
+        <div class="big"><span class="cur">US$</span>25</div>
+        <span class="per">por mês, o único custo fixo</span>
+      </div>
+      <div class="cost-body">
+        <h3>Sobre os custos, sem letra miúda.</h3>
+        <p>Depois que o site estiver pronto, a única obrigação mensal fixa é o banco de dados Supabase, que custa <b>US$ 25 por mês</b>. Ele fica registrado no seu nome e garante que o painel, as promoções e os dados do site funcionem com segurança e backup. Fora esse valor, você não tem nenhuma mensalidade obrigatória: o domínio é anual e barato, e o restante da estrutura roda sem custo mensal fixo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE (light) -->
+<section class="sec-light" id="processo">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="sec-kicker">Como funciona</div>
+      <h2>Do início ao ar.</h2>
+      <p>Um caminho claro, da primeira conversa até o site publicado e vocês treinados para tocar tudo sozinhos.</p>
+    </div>
+    <div class="tl">
+      <div class="tl-item reveal"><div class="tl-node">1</div><div class="tl-card glass-l"><h4>Alinhamento</h4><p>Entendo o que a Checklist quer vender, os destinos-chave e as referências que vocês gostam.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-node">2</div><div class="tl-card glass-l"><h4>Design</h4><p>Desenho as telas com a identidade de vocês, pensadas para o celular e para converter.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-node">3</div><div class="tl-card glass-l"><h4>Desenvolvimento</h4><p>Programo o site em Next.js e envio um link de prévia para vocês acompanharem de perto.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-node">4</div><div class="tl-card glass-l"><h4>Conteúdo e SEO</h4><p>Subimos pacotes, textos e fotos e aplico o SEO técnico completo para o Google encontrar vocês.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-node">5</div><div class="tl-card glass-l"><h4>Publicação e treinamento</h4><p>Colocamos no ar no domínio de vocês e ensino a usar o painel para publicar promoções sozinhos.</p></div></div>
+      <div class="tl-item reveal"><div class="tl-node">6</div><div class="tl-card glass-l"><h4>Suporte quando precisar</h4><p>Fico à disposição para dúvidas e ajustes, com pacote de horas para o que for estrutural.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENTE (dark) -->
+<section class="sec-dark" id="diferente">
+  <div class="glow" style="width:500px;height:500px;background:radial-gradient(circle,rgba(245,130,46,.13),transparent 62%);top:0;left:-120px"></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker">Por que essa proposta é diferente</div>
+      <h2>O que é seu, fica seu.</h2>
+      <p>A maioria das agências entrega o site preso a um painel proprietário: se você sai, perde tudo. Aqui é o contrário. O site, o domínio e o código são de vocês, sem aprisionamento.</p>
+    </div>
+    <div class="diff-grid">
+      <div class="diff glass reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h4>O site é seu</h4>
+        <p>Você recebe o <span class="hi">código-fonte</span> e as contas transferíveis. Nada fica travado numa plataforma que só eu controlo.</p>
+      </div>
+      <div class="diff glass reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg></div>
+        <h4>O domínio é seu</h4>
+        <p>Registrado no <span class="hi">CPF ou CNPJ de vocês</span>, no Registro.br. É o endereço da agência, e ele pertence a vocês.</p>
+      </div>
+      <div class="diff glass reveal">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h4>Sem aprisionamento</h4>
+        <p>Quer trocar de fornecedor um dia? <span class="hi">Sem amarras.</span> Leva tudo com você, sem multa e sem perder o trabalho feito.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL (light) -->
+<section class="sec-light" id="comecar">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <div class="mglow"></div>
+      <div class="mk">O próximo passo</div>
+      <h2>Vamos começar?</h2>
+      <p>Me chama que a gente marca uma conversa rápida, tira todas as dúvidas e, se fizer sentido, já deixamos tudo alinhado para o novo site da Checklist Viagens sair do papel.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" data-wa href="#">Falar no WhatsApp</a>
+        <a class="btn btn-ghost" data-email href="#">Enviar e-mail</a>
+      </div>
+      <div class="cta-contacts">
+        <a data-wa href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>WhatsApp: <span id="wa-txt">a confirmar</span></a>
+        <a data-email href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>E-mail: <span id="mail-txt">a confirmar</span></a>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>Instagram: <span id="insta-txt">a confirmar</span></span>
+      </div>
+      <div class="cta-sign">Proposta preparada por <b>Matheus Moura</b></div>
+    </div>
+    <p class="valid">Esta proposta é válida por 15 dias a partir da data de envio.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-left">
+      <img src="/propostas/checklistviagens/assets/matilab-logo-white.svg" alt="Matilab" />
+      <div class="fdiv"></div>
+      <div class="ftxt"><b>Matilab</b>Proposta preparada para a Checklist Viagens</div>
+    </div>
+    <div class="foot-right">
+      <a href="https://matilab.com.br" target="_blank" rel="noopener">matilab.com.br</a>
+      <a data-wa href="#">WhatsApp</a>
+      <a data-email href="#">E-mail</a>
+      <span id="ano"></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ====== CONFIGURE AQUI ANTES DE ENVIAR ====== */
+  const CONFIG = {
+    whatsapp: "",                 // ex: "5511992644010" (só numeros, com DDI 55)
+    whatsappLabel: "a confirmar", // ex: "(11) 99264-4010"
+    email: "contato@matilab.com.br",
+    instagram: "a confirmar",     // ex: "@matilab"
+    saudacao: "Ola! Vi a proposta do novo site da Checklist Viagens e gostaria de conversar.",
+    assunto: "Proposta de site - Checklist Viagens"
+  };
+  /* ============================================= */
+  const waBase = CONFIG.whatsapp ? "https://wa.me/" + CONFIG.whatsapp : "https://wa.me/";
+  const waHref = waBase + "?text=" + encodeURIComponent(CONFIG.saudacao);
+  const mailHref = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent(CONFIG.assunto);
+  document.querySelectorAll("[data-wa]").forEach(a=>{a.href=waHref;a.target="_blank";a.rel="noopener";});
+  document.querySelectorAll("[data-email]").forEach(a=>{a.href=mailHref;});
+  const set = (id,v)=>{const el=document.getElementById(id); if(el&&v) el.textContent=v;};
+  set("wa-txt", CONFIG.whatsappLabel);
+  set("mail-txt", CONFIG.email);
+  set("insta-txt", CONFIG.instagram);
+  document.getElementById("ano").textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:0.1,rootMargin:"0px 0px -8% 0px"});
+  document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
