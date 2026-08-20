@@ -33,5 +33,7 @@ Allow: /
 # Demais agentes
 User-agent: *
 Allow: /
+# Propostas comerciais (área privada) — não indexar
+Disallow: /proposta/
 
 Sitemap: https://matilab.com.br/sitemap.xml

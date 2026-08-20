@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Luana Catarina · Prévia da Loja</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cru:#FBF8F3;
+    --cru-2:#F3ECE1;
+    --tinta:#211C17;
+    --tinta-70:rgba(33,28,23,.68);
+    --tinta-45:rgba(33,28,23,.45);
+    --clay:#B4552F;
+    --clay-soft:#C9744E;
+    --oliva:#6E7355;
+    --linha:rgba(33,28,23,.12);
+    --branco:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'DM Sans',-apple-system,system-ui,sans-serif;
+    background:var(--cru);
+    color:var(--tinta);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.55;
+  }
+  .serif{font-family:'Fraunces',Georgia,serif}
+  .wrap{max-width:1220px;margin:0 auto;padding:0 28px}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+
+  /* ---------- MOCKUP NOTE ---------- */
+  .concept-bar{
+    background:var(--tinta);color:var(--cru);
+    font-size:12.5px;letter-spacing:.02em;text-align:center;
+    padding:9px 16px;
+  }
+  .concept-bar b{color:#E9C9A0;font-weight:600}
+
+  /* ---------- ANNOUNCE ---------- */
+  .announce{
+    background:var(--clay);color:#fff;text-align:center;
+    font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+    padding:10px 16px;font-weight:500;
+  }
+
+  /* ---------- HEADER ---------- */
+  header.top{
+    position:sticky;top:0;z-index:40;
+    background:rgba(251,248,243,.86);
+    backdrop-filter:saturate(180%) blur(14px);
+    border-bottom:1px solid var(--linha);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .brand{display:flex;flex-direction:column;line-height:1}
+  .brand .name{font-size:23px;font-weight:600;letter-spacing:.14em}
+  .brand .sub{font-size:9.5px;letter-spacing:.42em;text-transform:uppercase;color:var(--tinta-45);margin-top:5px}
+  .menu{display:flex;gap:30px;font-size:14.5px;font-weight:500}
+  .menu a{position:relative;padding:4px 0;transition:color .2s}
+  .menu a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--clay);transition:width .28s}
+  .menu a:hover{color:var(--clay)}
+  .menu a:hover::after{width:100%}
+  .icons{display:flex;gap:20px;align-items:center}
+  .icons button{background:none;border:none;cursor:pointer;color:var(--tinta);display:flex;position:relative}
+  .cart-dot{position:absolute;top:-6px;right:-8px;background:var(--clay);color:#fff;font-size:10px;font-weight:700;font-family:'DM Sans';width:16px;height:16px;border-radius:50%;display:grid;place-items:center}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;overflow:hidden;background:var(--cru-2)}
+  .hero-grid{display:grid;grid-template-columns:1.02fr 1fr;min-height:560px}
+  .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:64px 60px 64px 0}
+  .eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--clay);font-weight:600;margin-bottom:22px}
+  .hero h1{font-size:clamp(42px,5.6vw,74px);font-weight:500;line-height:1.02;letter-spacing:-.015em}
+  .hero h1 em{font-style:italic;color:var(--clay)}
+  .hero p{font-size:17px;color:var(--tinta-70);max-width:430px;margin:26px 0 34px}
+  .btn{
+    display:inline-flex;align-items:center;gap:11px;
+    background:var(--tinta);color:var(--cru);
+    padding:16px 30px;font-size:14.5px;font-weight:600;letter-spacing:.03em;
+    border-radius:2px;transition:.25s;cursor:pointer;border:none;font-family:inherit;
+  }
+  .btn:hover{background:var(--clay);transform:translateY(-2px)}
+  .btn.ghost{background:transparent;color:var(--tinta);border:1.5px solid var(--tinta)}
+  .btn.ghost:hover{background:var(--tinta);color:var(--cru)}
+  .hero-visual{position:relative}
+  .hero-visual .ph{position:absolute;inset:0}
+
+  /* editorial photo placeholder */
+  .ph{position:relative;overflow:hidden;background:linear-gradient(140deg,#EADCCB 0%,#D6BFA6 60%,#C9AE92 100%)}
+  .ph.tone-2{background:linear-gradient(140deg,#E2D5C6,#C3A98F 70%,#B49A80)}
+  .ph.tone-3{background:linear-gradient(155deg,#E6D8C9,#BFA487 70%,#A98D6F)}
+  .ph.tone-4{background:linear-gradient(140deg,#DBD1C3,#B7A489 70%,#A08A6D)}
+  .ph.tone-5{background:linear-gradient(145deg,#ECE0D0,#CBB197 70%,#B99B7C)}
+  .ph.tone-6{background:linear-gradient(140deg,#DFD5C7,#B39D80 70%,#9D8465)}
+  .ph::before{content:"";position:absolute;inset:0;z-index:0;background:
+    radial-gradient(120% 80% at 25% 12%,rgba(255,255,255,.42),transparent 55%),
+    radial-gradient(120% 100% at 85% 100%,rgba(33,28,23,.16),transparent 60%)}
+  .ph .figure{position:absolute;inset:0;display:grid;place-items:center;opacity:.92;z-index:1}
+  .ph .figure svg{width:50%;height:auto;stroke:rgba(33,28,23,.42);fill:rgba(33,28,23,.05);stroke-width:1.3}
+  .ph .grain{position:absolute;inset:0;z-index:1;opacity:.4;mix-blend-mode:multiply;
+    background-image:radial-gradient(rgba(33,28,23,.08) 1px,transparent 1px);background-size:4px 4px}
+  .ph .hint{position:absolute;left:12px;bottom:11px;z-index:2;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(33,28,23,.42);font-weight:600}
+
+  /* ---------- BENEFITS STRIP ---------- */
+  .benefits{border-bottom:1px solid var(--linha);background:var(--cru)}
+  .benefits .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-top:26px;padding-bottom:26px}
+  .benefit{display:flex;gap:13px;align-items:flex-start}
+  .benefit svg{flex:0 0 auto;width:24px;height:24px;stroke:var(--clay);fill:none;stroke-width:1.6}
+  .benefit b{display:block;font-size:14px;font-weight:600}
+  .benefit span{font-size:12.5px;color:var(--tinta-70)}
+
+  /* ---------- SECTION HEADS ---------- */
+  section{padding:78px 0}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:40px;gap:20px}
+  .sec-head h2{font-size:clamp(30px,4vw,44px);font-weight:500;letter-spacing:-.01em;line-height:1.05}
+  .sec-head p{font-size:14px;color:var(--tinta-70);margin-top:8px}
+  .sec-link{font-size:13.5px;font-weight:600;color:var(--clay);letter-spacing:.03em;white-space:nowrap;border-bottom:1.5px solid var(--clay);padding-bottom:3px}
+
+  /* ---------- CATEGORIES ---------- */
+  .cats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .cat{position:relative;aspect-ratio:3/4;border-radius:3px;overflow:hidden;cursor:pointer}
+  .cat .ph{position:absolute;inset:0}
+  .cat .lbl{position:absolute;left:0;right:0;bottom:0;padding:22px;
+    background:linear-gradient(to top,rgba(33,28,23,.62),transparent);
+    color:#fff;display:flex;align-items:center;justify-content:space-between}
+  .cat .lbl .n{font-family:'Fraunces',serif;font-size:23px;font-weight:500}
+  .cat .lbl .a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.9}
+  .cat:hover .ph{transform:scale(1.045)}
+  .cat .ph{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+
+  /* ---------- PRODUCTS ---------- */
+  .grid-prod{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 20px}
+  .card{cursor:pointer;position:relative}
+  .card .thumb{position:relative;aspect-ratio:3/4;border-radius:3px;overflow:hidden;margin-bottom:14px;background:var(--cru-2)}
+  .card .thumb .ph{position:absolute;inset:0;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+  .card:hover .thumb .ph{transform:scale(1.05)}
+  .tag{position:absolute;top:12px;left:12px;z-index:2;background:var(--tinta);color:var(--cru);
+    font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:2px}
+  .tag.sale{background:var(--clay)}
+  .wish{position:absolute;top:10px;right:10px;z-index:2;width:34px;height:34px;border-radius:50%;
+    background:rgba(251,248,243,.9);display:grid;place-items:center;border:none;cursor:pointer}
+  .wish svg{width:17px;height:17px;stroke:var(--tinta);fill:none;stroke-width:1.6}
+  .quick{position:absolute;left:12px;right:12px;bottom:12px;z-index:2;opacity:0;transform:translateY(8px);
+    transition:.28s;background:var(--cru);color:var(--tinta);text-align:center;
+    font-size:13px;font-weight:600;padding:11px;border-radius:2px}
+  .card:hover .quick{opacity:1;transform:translateY(0)}
+  .card h3{font-size:15px;font-weight:500;font-family:'Fraunces',serif}
+  .card .cat-lbl{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta-45);margin:2px 0 7px}
+  .price{display:flex;align-items:center;gap:9px}
+  .price .now{font-size:15px;font-weight:600}
+  .price .was{font-size:13px;color:var(--tinta-45);text-decoration:line-through}
+  .swatches{display:flex;gap:6px;margin-top:9px}
+  .sw{width:15px;height:15px;border-radius:50%;border:1px solid var(--linha)}
+
+  /* ---------- EDITORIAL BANNER ---------- */
+  .editorial{background:var(--tinta);color:var(--cru);border-radius:4px;overflow:hidden}
+  .editorial .inner{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+  .editorial .txt{padding:66px 56px;display:flex;flex-direction:column;justify-content:center}
+  .editorial .eyebrow{color:var(--clay-soft)}
+  .editorial h2{font-size:clamp(30px,3.6vw,46px);font-weight:500;line-height:1.06;color:var(--cru)}
+  .editorial p{color:rgba(251,248,243,.72);margin:20px 0 30px;max-width:400px}
+  .editorial .btn{background:var(--cru);color:var(--tinta)}
+  .editorial .btn:hover{background:var(--clay);color:#fff}
+  .editorial .ph{min-height:360px}
+
+  /* ---------- NEWSLETTER ---------- */
+  .news{text-align:center;background:var(--cru-2)}
+  .news h2{font-size:clamp(28px,3.4vw,40px);font-weight:500}
+  .news p{color:var(--tinta-70);max-width:440px;margin:16px auto 30px}
+  .news form{display:flex;gap:10px;max-width:460px;margin:0 auto}
+  .news input{flex:1;padding:15px 18px;border:1.5px solid var(--linha);background:var(--cru);
+    font-family:inherit;font-size:14px;border-radius:2px}
+  .news input:focus{outline:none;border-color:var(--clay)}
+
+  /* ---------- FOOTER ---------- */
+  footer.foot{background:var(--tinta);color:var(--cru);padding:70px 0 30px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(251,248,243,.14)}
+  .foot .name{font-size:22px;font-weight:600;letter-spacing:.14em}
+  .foot .sub{font-size:9.5px;letter-spacing:.42em;text-transform:uppercase;color:rgba(251,248,243,.5);margin:6px 0 18px}
+  .foot p.desc{font-size:13.5px;color:rgba(251,248,243,.66);max-width:260px}
+  .foot h4{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(251,248,243,.5);margin-bottom:16px}
+  .foot ul{list-style:none;display:flex;flex-direction:column;gap:11px;font-size:14px;color:rgba(251,248,243,.82)}
+  .foot ul li{cursor:pointer}
+  .foot ul li:hover{color:var(--clay-soft)}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-size:12.5px;color:rgba(251,248,243,.5);flex-wrap:wrap;gap:12px}
+  .pays{display:flex;gap:8px;align-items:center}
+  .pays span{font-size:10px;letter-spacing:.08em;background:rgba(251,248,243,.1);padding:5px 9px;border-radius:3px}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:960px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-copy{padding:52px 0 40px}
+    .hero-visual{min-height:420px}
+    .benefits .wrap{grid-template-columns:1fr 1fr;gap:20px}
+    .cats{grid-template-columns:1fr 1fr}
+    .grid-prod{grid-template-columns:1fr 1fr}
+    .editorial .inner{grid-template-columns:1fr}
+    .editorial .txt{padding:44px 30px}
+    .foot-grid{grid-template-columns:1fr 1fr}
+    .menu{display:none}
+  }
+  @media(max-width:560px){
+    .cats{grid-template-columns:1fr}
+    .grid-prod{grid-template-columns:1fr 1fr;gap:18px 14px}
+    .news form{flex-direction:column}
+    .foot-grid{grid-template-columns:1fr}
+  }
+
+  /* ===== FOTOS REAIS ===== */
+  .hero-visual .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%}
+  .cat .cat-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+  .cat:hover .cat-img{transform:scale(1.045)}
+  .card .thumb .pimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+  .card:hover .thumb .pimg{transform:scale(1.05)}
+  .editorial .ed-photo{width:100%;height:100%;min-height:360px;object-fit:cover;object-position:center 25%;display:block}
+
+  /* ===== BANNER DE ESTAÇÃO (INVERNO) ===== */
+  .season{position:relative;min-height:430px;display:flex;align-items:center;border-radius:4px;overflow:hidden}
+  .season img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  .season::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(90deg,rgba(22,17,12,.78) 8%,rgba(22,17,12,.28) 62%,rgba(22,17,12,.05))}
+  .season .s-copy{position:relative;z-index:2;color:#fff;padding:54px 8%;max-width:640px}
+  .season .s-copy .eyebrow{color:#E9C9A0}
+  .season .s-copy h2{font-size:clamp(30px,4.4vw,50px);font-weight:500;line-height:1.05;letter-spacing:-.01em}
+  .season .s-copy p{margin:16px 0 26px;color:rgba(255,255,255,.86);font-size:16px;max-width:460px}
+  .season .btn{background:#fff;color:var(--tinta)}
+  .season .btn:hover{background:var(--clay);color:#fff}
+  @media(max-width:640px){.season .s-copy{padding:36px 26px}.season::after{background:linear-gradient(180deg,rgba(22,17,12,.35),rgba(22,17,12,.82))}}
+</style>
+</head>
+<body>
+
+<div class="concept-bar">Prévia conceitual criada pela <b>Matilab</b> · nome, cores, peças e preços são ilustrativos e serão ajustados à marca real da Luana</div>
+
+<div class="announce">Frete grátis para todo o Brasil acima de R$ 299 · Parcele em até 6x sem juros</div>
+
+<header class="top">
+  <div class="wrap nav">
+    <div class="brand">
+      <span class="name serif">LUANA CATARINA</span>
+      <span class="sub">Foz do Iguaçu · Moda Feminina</span>
+    </div>
+    <nav class="menu">
+      <a href="#novidades">Novidades</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#vestidos">Vestidos</a>
+      <a href="#sale">Promoções</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <div class="icons">
+      <button aria-label="Buscar"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+      <button aria-label="Conta"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></button>
+      <button aria-label="Sacola"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cart-dot">2</span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Nova coleção · Inverno 2026</span>
+        <h1 class="serif">Peças que vestem a <em>sua história</em></h1>
+        <p>Moda feminina selecionada com cuidado, do casual ao especial. Do jeito Foz: leve, real e cheio de atitude.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap">
+          <button class="btn">Ver a coleção
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <button class="btn ghost">Novidades</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-photo" src="/proposta/luana/assets/look-1.jpg" alt="Look de alfaiataria da nova coleção" loading="eager">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<div class="benefits">
+  <div class="wrap">
+    <div class="benefit">
+      <svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+      <div><b>Frete para todo o Brasil</b><span>Grátis acima de R$ 299</span></div>
+    </div>
+    <div class="benefit">
+      <svg viewBox="0 0 24 24"><path d="M3 10h18M6 3l-3 7v11h18V10l-3-7z"/><path d="M9 14a3 3 0 0 0 6 0"/></svg>
+      <div><b>Pix, cartão e boleto</b><span>Até 6x sem juros</span></div>
+    </div>
+    <div class="benefit">
+      <svg viewBox="0 0 24 24"><path d="M12 3v6l4 2"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><b>Troca fácil em 7 dias</b><span>Não serviu? A gente resolve</span></div>
+    </div>
+    <div class="benefit">
+      <svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-4-7.5"/><path d="M9 12l2 2 5-5"/></svg>
+      <div><b>Compra 100% segura</b><span>Ambiente protegido</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<section id="categorias">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2 class="serif">Encontre o seu estilo</h2>
+        <p>Navegue pelas categorias favoritas das nossas clientes</p>
+      </div>
+      <a class="sec-link" href="#">Ver tudo</a>
+    </div>
+    <div class="cats">
+      <div class="cat"><img class="cat-img" src="/proposta/luana/assets/look-9.jpg" alt="Vestidos" loading="lazy"><div class="lbl"><span class="n serif">Vestidos</span><span class="a">42 peças</span></div></div>
+      <div class="cat"><img class="cat-img" src="/proposta/luana/assets/look-10.jpg" alt="Blusas e alfaiataria" loading="lazy"><div class="lbl"><span class="n serif">Blusas</span><span class="a">58 peças</span></div></div>
+      <div class="cat"><img class="cat-img" src="/proposta/luana/assets/look-1.jpg" alt="Calças e alfaiataria" loading="lazy"><div class="lbl"><span class="n serif">Calças</span><span class="a">30 peças</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="novidades" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Recém-chegados</span>
+        <h2 class="serif">Novidades da semana</h2>
+      </div>
+      <a class="sec-link" href="#">Ver novidades</a>
+    </div>
+    <div class="grid-prod" id="prodGrid"></div>
+  </div>
+</section>
+
+<!-- WINTER BANNER (quebra de estação) -->
+<section style="padding-top:20px;padding-bottom:22px">
+  <div class="wrap">
+    <div class="season">
+      <img src="/proposta/luana/assets/banner-inverno.jpg" alt="Coleção de inverno" loading="lazy">
+      <div class="s-copy">
+        <span class="eyebrow">Coleção de estação</span>
+        <h2 class="serif">Inverno 2026: alfaiataria, tricô e sobreposições</h2>
+        <p>Peças encorpadas em tons profundos para montar looks que aquecem sem abrir mão da atitude.</p>
+        <button class="btn">Ver coleção de inverno</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDITORIAL BANNER -->
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div class="editorial">
+      <div class="inner">
+        <div class="txt">
+          <span class="eyebrow">Edição limitada</span>
+          <h2 class="serif">A alfaiataria que vai do trabalho ao jantar</h2>
+          <p>Uma seleção de peças versáteis para montar looks que trabalham por você o dia inteiro.</p>
+          <button class="btn">Explorar a edição</button>
+        </div>
+        <img class="ed-photo" src="/proposta/luana/assets/look-4.jpg" alt="Look editorial de alfaiataria" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SALE -->
+<section id="sale" style="padding-top:60px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow" style="color:var(--clay)">Últimas unidades</span>
+        <h2 class="serif">Promoções</h2>
+      </div>
+      <a class="sec-link" href="#">Ver todas as ofertas</a>
+    </div>
+    <div class="grid-prod" id="saleGrid"></div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="news" id="sobre">
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;margin-bottom:14px">Clube Luana Catarina</span>
+    <h2 class="serif">Ganhe 10% na primeira compra</h2>
+    <p>Cadastre seu e-mail e receba novidades, looks e ofertas exclusivas antes de todo mundo.</p>
+    <form onsubmit="return false">
+      <input type="email" placeholder="Seu melhor e-mail" aria-label="E-mail">
+      <button class="btn" type="submit">Quero meu cupom</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="name serif">LUANA CATARINA</div>
+        <div class="sub">Foz do Iguaçu · PR</div>
+        <p class="desc">Moda feminina que veste a sua história. Curadoria com carinho, entrega para todo o Brasil.</p>
+      </div>
+      <div>
+        <h4>Loja</h4>
+        <ul><li>Novidades</li><li>Vestidos</li><li>Blusas</li><li>Calças</li><li>Promoções</li></ul>
+      </div>
+      <div>
+        <h4>Ajuda</h4>
+        <ul><li>Trocas e devoluções</li><li>Prazo de entrega</li><li>Formas de pagamento</li><li>Fale conosco</li></ul>
+      </div>
+      <div>
+        <h4>Siga</h4>
+        <ul><li>Instagram</li><li>WhatsApp</li><li>TikTok</li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Luana Catarina · CNPJ 00.000.000/0001-00 · Prévia ilustrativa</span>
+      <div class="pays"><span>PIX</span><span>VISA</span><span>MASTER</span><span>ELO</span><span>BOLETO</span></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const A='/proposta/luana/assets/';
+  const swatchSets=[['#211C17','#B4552F','#C9BBA6'],['#6E7355','#E8D9C4','#211C17'],['#B4552F','#F3ECE1','#8A6A4E'],['#2E3A2E','#C9744E','#DED2C4']];
+
+  const novidades=[
+    {n:'Vestido Midi de Linho',c:'Vestidos',price:'R$ 249,90',tag:'Novo',img:'look-11.jpg'},
+    {n:'Blusa Cropped Canelada',c:'Blusas',price:'R$ 89,90',tag:'Novo',img:'look-10.jpg'},
+    {n:'Calça Wide Alfaiataria',c:'Calças',price:'R$ 199,90',tag:'',img:'look-4.jpg'},
+    {n:'Conjunto Tricô Off',c:'Conjuntos',price:'R$ 279,90',tag:'Novo',img:'look-8.jpg'},
+    {n:'Vestido Chemise Fluido',c:'Vestidos',price:'R$ 229,90',tag:'',img:'look-6.jpg'},
+    {n:'Blazer Estruturado',c:'Alfaiataria',price:'R$ 319,90',tag:'Novo',img:'look-2.jpg'},
+    {n:'Saia Midi Plissada',c:'Saias',price:'R$ 169,90',tag:'',img:'look-7.jpg'},
+    {n:'Camisa de Viscose',c:'Camisas',price:'R$ 149,90',tag:'',img:'look-3.jpg'}
+  ];
+  const sale=[
+    {n:'Vestido Longo Estampado',c:'Vestidos',price:'R$ 179,90',was:'R$ 269,90',img:'look-9.jpg'},
+    {n:'Tricô Gola Alta',c:'Tricô',price:'R$ 119,90',was:'R$ 189,90',img:'look-1.jpg'},
+    {n:'Calça Pantalona',c:'Calças',price:'R$ 129,90',was:'R$ 199,90',img:'look-4.jpg'},
+    {n:'Blusa Manga Bufante',c:'Blusas',price:'R$ 69,90',was:'R$ 109,90',img:'look-10.jpg'}
+  ];
+
+  function card(p,i,isSale){
+    const sws=swatchSets[i%swatchSets.length].map(c=>`<span class="sw" style="background:${c}"></span>`).join('');
+    const tag=isSale?`<span class="tag sale">Oferta</span>`:(p.tag?`<span class="tag">${p.tag}</span>`:'');
+    const price=isSale
+      ? `<div class="price"><span class="now" style="color:var(--clay)">${p.price}</span><span class="was">${p.was}</span></div>`
+      : `<div class="price"><span class="now">${p.price}</span></div>`;
+    return `<article class="card">
+      <div class="thumb">
+        ${tag}
+        <button class="wish" aria-label="Favoritar"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-9.3-9C1 7.5 3 4 6.5 4 9 4 10.5 6 12 8c1.5-2 3-4 5.5-4C21 4 23 7.5 21.3 11 19 15.5 12 20 12 20Z"/></svg></button>
+        <img class="pimg" src="${A}${p.img}" alt="${p.n}" loading="lazy">
+        <div class="quick">Compra rápida</div>
+      </div>
+      <h3>${p.n}</h3>
+      <div class="cat-lbl">${p.c}</div>
+      ${price}
+      <div class="swatches">${sws}</div>
+    </article>`;
+  }
+  document.getElementById('prodGrid').innerHTML=novidades.map((p,i)=>card(p,i,false)).join('');
+  document.getElementById('saleGrid').innerHTML=sale.map((p,i)=>card(p,i,true)).join('');
+</script>
+</body>
+</html>
