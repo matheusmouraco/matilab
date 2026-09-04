@@ -311,7 +311,8 @@
           "Código enxuto, imagens otimizadas, hospedagem premium e menos scripts. A Matilab entrega sites em Next.js com Lighthouse 90+."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-04"
     },
     {
       "slug": "checklist-para-contratar-agencia-de-sites",
@@ -388,7 +389,8 @@
           "Sim. Contrato formal, prazo, 90 dias de garantia e suporte pos-entrega fazem parte do padrão Matilab."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-04"
     },
     {
       "slug": "redesign-ou-site-novo-como-decidir",
