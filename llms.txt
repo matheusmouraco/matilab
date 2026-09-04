@@ -85,3 +85,12 @@
 - WhatsApp: https://api.whatsapp.com/send/?phone=5511992644010
 - E-mail: contato@matilab.com.br
 - Localização: Vila Olímpia, São Paulo/SP, Brasil
+
+## Guias de decisão (contratar agência / fazer site)
+
+- [Como escolher uma agência de criação de sites](https://matilab.com.br/como-escolher-agencia-de-criacao-de-sites)
+- [Agência ou freelancer para criar seu site](https://matilab.com.br/agencia-ou-freelancer-para-criar-site)
+- [Quanto custa manter um site por mês](https://matilab.com.br/quanto-custa-manter-um-site)
+- [Preciso de site se já tenho Instagram?](https://matilab.com.br/preciso-de-site-se-tenho-instagram)
+- [Quanto tempo para um site aparecer no Google](https://matilab.com.br/quanto-tempo-site-aparece-no-google)
+- [Wix ou site profissional: construtor vale a pena?](https://matilab.com.br/construtor-de-sites-vale-a-pena)
