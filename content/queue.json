@@ -2604,6 +2604,1526 @@
         ]
       ],
       "status": "pending"
+    },
+    {
+      "slug": "o-que-e-llms-txt-e-para-que-serve",
+      "svc": "GEO e IA",
+      "title": "O que é o llms.txt e Para que Serve (Guia 2026) | Matilab",
+      "ogtitle": "O que é o llms.txt e Para que Serve (Guia 2026) | Matilab",
+      "desc": "O que é o arquivo llms.txt, para que serve e como ele orienta as IAs a entenderem o seu site. Guia direto para quem quer aparecer no ChatGPT e no Perplexity.",
+      "bc": "O que é o llms.txt",
+      "eyebrow": "Assunto do momento · GEO",
+      "h1": "O que é o llms.txt e para que serve",
+      "lede": "O llms.txt é um arquivo simples na raiz do site que resume, em texto, o que a sua marca faz e quais páginas importam, feito para os modelos de IA entenderem rápido. É uma das novas convenções da era da busca com IA.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.8",
+      "intro": {
+        "h2": "Um mapa do site para as IAs",
+        "p": "Assim como o robots.txt orienta o Google, o llms.txt propõe orientar as IAs sobre o conteúdo essencial da marca. É recente e ainda evoluindo, mas já vale ter."
+      },
+      "points_h2": "O que ele traz",
+      "points": [
+        {
+          "h3": "Resumo da marca",
+          "p": "Uma descrição curta do que a empresa faz e para quem."
+        },
+        {
+          "h3": "Links principais",
+          "p": "As páginas e serviços que você quer que as IAs conheçam."
+        },
+        {
+          "h3": "Formato simples",
+          "p": "Texto em Markdown, fácil de manter."
+        },
+        {
+          "h3": "Complemento, não substituto",
+          "p": "Ele reforça, mas não substitui bom conteúdo e SEO técnico."
+        }
+      ],
+      "checklist_h2": "Boas práticas de llms.txt",
+      "checklist": [
+        "Colocar na raiz do site (/llms.txt)",
+        "Descrever a marca de forma factual e clara",
+        "Listar os serviços e guias principais",
+        "Manter atualizado quando publicar conteúdo novo",
+        "Continuar investindo em conteúdo por assunto (o que mais pesa)"
+      ],
+      "close": {
+        "h2": "Como a Matilab aplica",
+        "p": "Já entregamos os sites com llms.txt e Schema.org, além do conteúdo por assunto que realmente faz a IA citar a marca. O arquivo ajuda; o conteúdo decide."
+      },
+      "related": [
+        "o-que-e-geo",
+        "O que é GEO"
+      ],
+      "faq": [
+        [
+          "O que é o llms.txt?",
+          "É um arquivo de texto na raiz do site que resume o que a marca faz e aponta as páginas importantes, pensado para orientar os modelos de IA."
+        ],
+        [
+          "Para que serve o llms.txt?",
+          "Para ajudar as IAs a entenderem rapidamente o seu site e o seu contexto, funcionando como um mapa em texto da marca."
+        ],
+        [
+          "llms.txt substitui o SEO?",
+          "Não. É um complemento recente. O que mais influencia a citação por IAs continua sendo conteúdo por assunto, SEO técnico e autoridade."
+        ],
+        [
+          "Todo site precisa de llms.txt?",
+          "Não é obrigatório e o suporte ainda evolui, mas é simples de ter e não custa nada implementar."
+        ],
+        [
+          "A Matilab configura o llms.txt?",
+          "Sim, já entregamos os sites com llms.txt e Schema.org."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-chatgpt-search-e-como-aparecer",
+      "svc": "GEO e IA",
+      "title": "O que é o ChatGPT Search e Como Aparecer Nele | Matilab",
+      "ogtitle": "O que é o ChatGPT Search e Como Aparecer Nele | Matilab",
+      "desc": "O que é o ChatGPT Search, como ele busca na web e o que fazer para a sua marca aparecer e ser citada nas respostas com fontes.",
+      "bc": "O que é o ChatGPT Search",
+      "eyebrow": "Assunto do momento · IA",
+      "h1": "O que é o ChatGPT Search e como aparecer nele",
+      "lede": "O ChatGPT deixou de responder só com o que sabia: agora ele busca na web em tempo real e cita fontes. Isso criou um novo canal onde a sua marca pode aparecer, ou ficar de fora.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.8",
+      "intro": {
+        "h2": "Uma nova porta de entrada",
+        "p": "Quando o ChatGPT busca na web e cita fontes, ele vira um buscador. Aparecer nessas citações é o novo jogo, e ele se ganha com conteúdo claro e confiável."
+      },
+      "points_h2": "Como ele decide o que citar",
+      "points": [
+        {
+          "h3": "Busca na web",
+          "p": "Consulta páginas atualizadas em tempo real para responder."
+        },
+        {
+          "h3": "Fontes confiáveis",
+          "p": "Prioriza conteúdo claro, factual e de autoridade."
+        },
+        {
+          "h3": "Conteúdo por assunto",
+          "p": "Cita quem tem uma página respondendo exatamente aquilo."
+        },
+        {
+          "h3": "Estrutura",
+          "p": "FAQ e Schema.org facilitam a extração da resposta."
+        }
+      ],
+      "checklist_h2": "Como aparecer no ChatGPT Search",
+      "checklist": [
+        "Ter uma página por pergunta do seu nicho",
+        "Responder de forma objetiva e factual",
+        "Usar FAQ com Schema.org",
+        "Manter SEO técnico e site rápido",
+        "Construir autoridade e menções"
+      ],
+      "close": {
+        "h2": "Como a Matilab prepara",
+        "p": "Construímos sites que o ChatGPT Search consegue ler e citar: conteúdo estruturado por assunto, factual e com Schema.org, sobre uma base técnica sólida."
+      },
+      "related": [
+        "como-o-chatgpt-escolhe-quais-marcas-recomendar",
+        "Como o ChatGPT escolhe marcas"
+      ],
+      "faq": [
+        [
+          "O que é o ChatGPT Search?",
+          "É o recurso do ChatGPT que busca na web em tempo real e responde citando fontes, funcionando como um buscador com IA."
+        ],
+        [
+          "Como aparecer no ChatGPT Search?",
+          "Tenha conteúdo por assunto em formato de resposta, factual, com FAQ e Schema.org, e uma base de SEO técnico e autoridade."
+        ],
+        [
+          "O ChatGPT Search mostra links?",
+          "Sim, ele cita as fontes que usou, o que abre espaço para a sua marca ser referenciada."
+        ],
+        [
+          "É diferente do Google?",
+          "O objetivo é parecido (achar informação), mas entrega uma resposta pronta com poucas fontes, em vez de uma lista de links."
+        ],
+        [
+          "A Matilab prepara o site para isso?",
+          "Sim, todo site já nasce pronto para os buscadores com IA."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-google-ai-mode",
+      "svc": "GEO e IA",
+      "title": "O que é o Google AI Mode e o que Muda para o seu Site | Matilab",
+      "ogtitle": "O que é o Google AI Mode e o que Muda para o seu Site | Matilab",
+      "desc": "O que é o modo de IA do Google (AI Mode e AI Overviews), como ele muda os resultados de busca e o que fazer para continuar aparecendo.",
+      "bc": "O que é o Google AI Mode",
+      "eyebrow": "Assunto do momento · Busca",
+      "h1": "O que é o Google AI Mode e o que muda para o seu site",
+      "lede": "O Google está colocando respostas de IA no topo dos resultados. Em vez de só uma lista de links, o usuário vê um resumo gerado por IA que cita algumas fontes. Isso muda quem recebe o clique, e quem some.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.8",
+      "intro": {
+        "h2": "O resultado mudou de forma",
+        "p": "O topo da busca agora pode ser uma resposta de IA. Aparecer nela, ou logo abaixo, passou a ser tão importante quanto a primeira posição clássica."
+      },
+      "points_h2": "O que muda",
+      "points": [
+        {
+          "h3": "Resposta no topo",
+          "p": "Um resumo de IA aparece antes dos links tradicionais."
+        },
+        {
+          "h3": "Menos cliques em alguns casos",
+          "p": "Parte das dúvidas é resolvida ali mesmo."
+        },
+        {
+          "h3": "Fontes citadas",
+          "p": "O Google mostra de onde tirou a resposta, um novo espaço a conquistar."
+        },
+        {
+          "h3": "Conteúdo claro vence",
+          "p": "Páginas objetivas e estruturadas têm mais chance de serem usadas."
+        }
+      ],
+      "checklist_h2": "Como continuar aparecendo",
+      "checklist": [
+        "Conteúdo que responde a pergunta de forma direta",
+        "FAQ e dados estruturados (Schema.org)",
+        "SEO técnico e site rápido",
+        "Autoridade e E-E-A-T",
+        "Cobrir os assuntos do seu nicho com profundidade"
+      ],
+      "close": {
+        "h2": "Como a Matilab prepara",
+        "p": "Construímos sites prontos para o AI Mode: conteúdo objetivo por assunto, Schema.org e base técnica que faz o Google usar e citar as suas páginas."
+      },
+      "related": [
+        "ai-overviews-google-o-que-e",
+        "AI Overviews do Google"
+      ],
+      "faq": [
+        [
+          "O que é o Google AI Mode?",
+          "É o modo de busca do Google com respostas geradas por IA no topo dos resultados, que resume a informação e cita algumas fontes."
+        ],
+        [
+          "O AI Mode acaba com o SEO?",
+          "Não, mas muda o jogo. Continua valendo aparecer bem, e agora também ser a fonte usada na resposta de IA."
+        ],
+        [
+          "Como aparecer no AI Mode e nos AI Overviews?",
+          "Com conteúdo direto por assunto, FAQ, Schema.org, SEO técnico e autoridade."
+        ],
+        [
+          "Isso reduz o tráfego do meu site?",
+          "Pode reduzir em dúvidas simples, mas ser citado na resposta gera visibilidade e cliques qualificados."
+        ],
+        [
+          "A Matilab prepara o site para o AI Mode?",
+          "Sim, é parte do que fazemos em SEO e GEO."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-perplexity-e-como-ser-citado",
+      "svc": "GEO e IA",
+      "title": "O que é o Perplexity e Como Ser Citado Nele | Matilab",
+      "ogtitle": "O que é o Perplexity e Como Ser Citado Nele | Matilab",
+      "desc": "O que é o Perplexity, por que ele virou referência de busca com IA e o que fazer para a sua marca ser citada nas respostas dele.",
+      "bc": "O que é o Perplexity",
+      "eyebrow": "Assunto do momento · IA",
+      "h1": "O que é o Perplexity e como ser citado nele",
+      "lede": "O Perplexity é um buscador com IA que responde perguntas citando fontes de forma bem visível. Para muita gente, ele já substituiu o Google em pesquisas de decisão. Estar entre as fontes dele é ouro.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.8",
+      "intro": {
+        "h2": "Busca que sempre mostra a fonte",
+        "p": "O Perplexity nasceu citando fontes de forma clara. Isso torna a citação um objetivo direto e mensurável para marcas."
+      },
+      "points_h2": "Como ele escolhe fontes",
+      "points": [
+        {
+          "h3": "Relevância ao tema",
+          "p": "Prioriza páginas focadas no assunto perguntado."
+        },
+        {
+          "h3": "Clareza",
+          "p": "Conteúdo objetivo e bem estruturado é mais fácil de citar."
+        },
+        {
+          "h3": "Atualidade",
+          "p": "Conteúdo recente e mantido tem vantagem."
+        },
+        {
+          "h3": "Autoridade",
+          "p": "Sites confiáveis e citados por outros ganham espaço."
+        }
+      ],
+      "checklist_h2": "Como ser citado",
+      "checklist": [
+        "Página por assunto, em formato de resposta",
+        "Respostas objetivas e factuais",
+        "FAQ com Schema.org",
+        "SEO técnico e site rápido",
+        "Manter o conteúdo atualizado"
+      ],
+      "close": {
+        "h2": "Como a Matilab prepara",
+        "p": "Estruturamos o conteúdo do jeito que o Perplexity gosta de citar: direto, factual e por assunto, sobre uma base técnica sólida."
+      },
+      "related": [
+        "como-saber-se-minha-marca-aparece-nas-ias",
+        "Como saber se apareço nas IAs"
+      ],
+      "faq": [
+        [
+          "O que é o Perplexity?",
+          "É um buscador com IA que responde perguntas citando as fontes de forma visível, usado cada vez mais em pesquisas de decisão."
+        ],
+        [
+          "Como ser citado no Perplexity?",
+          "Com conteúdo por assunto, objetivo e factual, FAQ com Schema.org, SEO técnico e conteúdo atualizado."
+        ],
+        [
+          "Perplexity é melhor que o Google?",
+          "Depende do uso. Para respostas diretas com fontes, muita gente prefere; para navegar entre opções, o Google ainda domina."
+        ],
+        [
+          "Dá para medir citações no Perplexity?",
+          "Sim, com ferramentas de monitoramento de GEO que acompanham menções da marca nas IAs."
+        ],
+        [
+          "A Matilab prepara o site para o Perplexity?",
+          "Sim, faz parte do nosso trabalho de GEO."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-zero-click-search",
+      "svc": "SEO e busca",
+      "title": "O que é Zero-Click Search e o que Fazer a Respeito | Matilab",
+      "ogtitle": "O que é Zero-Click Search e o que Fazer a Respeito | Matilab",
+      "desc": "O que é a busca sem clique (zero-click search), por que ela cresce com a IA e como sua marca ganha visibilidade mesmo quando o usuário não clica.",
+      "bc": "O que é zero-click search",
+      "eyebrow": "Assunto do momento · Busca",
+      "h1": "O que é zero-click search e o que fazer a respeito",
+      "lede": "Cada vez mais buscas terminam sem clique: o usuário obtém a resposta na própria página de resultados, em um resumo ou resposta de IA. Isso muda a régua do sucesso: aparecer virou tão valioso quanto ser clicado.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "O clique deixou de ser tudo",
+        "p": "Se a resposta aparece no topo, muita gente não clica. Ignorar isso é achar que perdeu, quando na verdade dá para ganhar marca e autoridade mesmo sem o clique."
+      },
+      "points_h2": "Por que cresce",
+      "points": [
+        {
+          "h3": "Respostas de IA",
+          "p": "AI Overviews e chatbots resolvem a dúvida ali mesmo."
+        },
+        {
+          "h3": "Featured snippets",
+          "p": "O Google já mostra a resposta em destaque há anos."
+        },
+        {
+          "h3": "Painéis e mapas",
+          "p": "Informações de negócio aparecem sem precisar entrar no site."
+        },
+        {
+          "h3": "Comportamento",
+          "p": "O usuário quer resposta rápida, não navegar."
+        }
+      ],
+      "checklist_h2": "Como se beneficiar",
+      "checklist": [
+        "Ser a fonte citada na resposta (marca e autoridade)",
+        "Otimizar para featured snippets e FAQ",
+        "Fortalecer o Perfil da Empresa no Google",
+        "Medir impressões, não só cliques",
+        "Ter conteúdo que gera clique quando o tema exige profundidade"
+      ],
+      "close": {
+        "h2": "Como a Matilab ajuda",
+        "p": "Construímos conteúdo que vira a resposta citada e, quando o assunto pede aprofundamento, atrai o clique. Você ganha nos dois cenários."
+      },
+      "related": [
+        "como-a-ia-generativa-mudou-a-busca",
+        "Como a IA mudou a busca"
+      ],
+      "faq": [
+        [
+          "O que é zero-click search?",
+          "É a busca que termina sem clique: o usuário obtém a resposta na própria página de resultados, em um snippet ou resposta de IA."
+        ],
+        [
+          "Zero-click é ruim para o meu site?",
+          "Não necessariamente. Você perde alguns cliques, mas ganha marca e autoridade ao ser a fonte citada na resposta."
+        ],
+        [
+          "Como aproveitar a busca sem clique?",
+          "Sendo a fonte da resposta, otimizando para snippets e FAQ, e fortalecendo o Perfil da Empresa no Google."
+        ],
+        [
+          "Devo parar de medir cliques?",
+          "Não, mas passe a olhar também impressões e citações, não só cliques."
+        ],
+        [
+          "A Matilab ajuda com isso?",
+          "Sim, criando conteúdo que aparece na resposta e atrai clique quando o tema pede."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "busca-por-voz-e-o-seo",
+      "svc": "SEO e busca",
+      "title": "Busca por Voz e o SEO: O que Muda para o seu Site | Matilab",
+      "ogtitle": "Busca por Voz e o SEO: O que Muda para o seu Site | Matilab",
+      "desc": "Como a busca por voz (assistentes e celulares) muda o SEO e o que fazer para a sua empresa ser a resposta falada ao cliente.",
+      "bc": "Busca por voz e SEO",
+      "eyebrow": "Assunto do momento · Busca",
+      "h1": "Busca por voz e o SEO: o que muda para o seu site",
+      "lede": "Quando alguém pergunta ao celular ou ao assistente, a busca vira uma conversa e a resposta costuma ser uma só. Otimizar para voz é otimizar para perguntas naturais e respostas diretas, o mesmo caminho do AEO.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Da palavra-chave à pergunta",
+        "p": "Na voz, ninguém fala palavra solta; fala pergunta completa. Quem estrutura o conteúdo em perguntas e respostas leva vantagem."
+      },
+      "points_h2": "O que muda na voz",
+      "points": [
+        {
+          "h3": "Linguagem natural",
+          "p": "As buscas viram perguntas completas e conversacionais."
+        },
+        {
+          "h3": "Uma resposta só",
+          "p": "O assistente costuma ler uma única resposta em voz alta."
+        },
+        {
+          "h3": "Contexto local",
+          "p": "Muita busca por voz é 'perto de mim', reforçando o SEO local."
+        },
+        {
+          "h3": "Objetividade",
+          "p": "Respostas curtas e diretas são preferidas."
+        }
+      ],
+      "checklist_h2": "Como otimizar para voz",
+      "checklist": [
+        "Conteúdo em formato de pergunta e resposta",
+        "FAQ com Schema.org",
+        "Respostas curtas e diretas",
+        "SEO local forte para buscas 'perto de mim'",
+        "Site rápido e mobile"
+      ],
+      "close": {
+        "h2": "Como a Matilab prepara",
+        "p": "Estruturamos o conteúdo em perguntas e respostas, com Schema.org e SEO local, o mesmo trabalho que faz a marca aparecer na voz e nas IAs."
+      },
+      "related": [
+        "por-que-toda-pagina-deveria-ter-um-faq",
+        "Por que ter um FAQ"
+      ],
+      "faq": [
+        [
+          "A busca por voz muda o SEO?",
+          "Sim. Ela favorece perguntas naturais e respostas diretas, o que se alinha ao AEO e ao uso de FAQ com Schema.org."
+        ],
+        [
+          "Como otimizar meu site para busca por voz?",
+          "Estruture o conteúdo em perguntas e respostas objetivas, use FAQ com Schema.org, fortaleça o SEO local e deixe o site rápido no celular."
+        ],
+        [
+          "Busca por voz é importante para negócios locais?",
+          "Muito. Boa parte é do tipo 'perto de mim', então o SEO local e o Perfil da Empresa pesam bastante."
+        ],
+        [
+          "Voz e IA são a mesma coisa?",
+          "São próximas. Assistentes de voz usam IA e favorecem respostas diretas, como os buscadores com IA."
+        ],
+        [
+          "A Matilab prepara o site para voz?",
+          "Sim, com conteúdo em Q&A, Schema.org e SEO local."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-vibe-coding",
+      "svc": "Tecnologia e desenvolvimento",
+      "title": "O que é Vibe Coding e o que Isso Significa para o seu Site | Matilab",
+      "ogtitle": "O que é Vibe Coding e o que Isso Significa para o seu Site | Matilab",
+      "desc": "O que é vibe coding, por que virou tendência com a IA e por que criar site com IA sem engenharia por trás pode sair caro.",
+      "bc": "O que é vibe coding",
+      "eyebrow": "Assunto do momento · Dev",
+      "h1": "O que é vibe coding e o que significa para o seu site",
+      "lede": "Vibe coding é criar software conversando com a IA, descrevendo o que quer em vez de programar linha a linha. É poderoso para prototipar, mas um site profissional precisa de engenharia por trás, não só de vibe.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Prototipar é fácil, sustentar é outra história",
+        "p": "A IA ajuda muito a começar rápido. O risco é publicar algo que parece pronto mas é lento, inseguro ou impossível de manter. Prototipar não é entregar."
+      },
+      "points_h2": "Onde o vibe coding brilha e onde falha",
+      "points": [
+        {
+          "h3": "Brilha",
+          "p": "Prototipar ideias, testar telas e acelerar tarefas repetitivas."
+        },
+        {
+          "h3": "Falha em performance",
+          "p": "Código gerado sem cuidado costuma ser pesado e lento."
+        },
+        {
+          "h3": "Falha em segurança",
+          "p": "Sem revisão, abre brechas que só aparecem depois."
+        },
+        {
+          "h3": "Falha em manutenção",
+          "p": "Difícil de evoluir quando ninguém entende o que foi gerado."
+        }
+      ],
+      "checklist_h2": "Como usar IA no desenvolvimento com responsabilidade",
+      "checklist": [
+        "Usar IA para acelerar, não para dispensar engenharia",
+        "Revisar performance (Core Web Vitals) e segurança",
+        "Escolher uma base sólida (Next.js) e não só 'o que a IA cuspiu'",
+        "Testar de verdade antes de publicar",
+        "Ter quem responda pela manutenção depois"
+      ],
+      "close": {
+        "h2": "Como a Matilab trabalha",
+        "p": "Usamos IA para ir mais rápido, mas entregamos engenharia de verdade: Next.js, performance, segurança e SEO técnico. Velocidade com responsabilidade, não vibe solta."
+      },
+      "related": [
+        "wordpress-ou-site-sob-medida",
+        "WordPress ou site sob medida"
+      ],
+      "faq": [
+        [
+          "O que é vibe coding?",
+          "É criar software descrevendo o que se quer para a IA, em linguagem natural, em vez de programar manualmente. Ótimo para prototipar."
+        ],
+        [
+          "Dá para fazer um site profissional só com vibe coding?",
+          "Dá para começar, mas um site profissional exige engenharia: performance, segurança, SEO e manutenção. Vibe coding sem isso costuma sair caro."
+        ],
+        [
+          "Site feito só com IA é bom?",
+          "Pode parecer pronto e falhar no que não se vê: velocidade, segurança e capacidade de evoluir. A IA acelera, mas não substitui engenharia."
+        ],
+        [
+          "A Matilab usa IA para criar sites?",
+          "Sim, para acelerar. Mas entregamos engenharia de verdade em Next.js, com performance e SEO técnico."
+        ],
+        [
+          "Vibe coding é o futuro?",
+          "É uma ferramenta poderosa que veio para ficar, desde que usada com critério técnico."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-web-agentica",
+      "svc": "Tecnologia e IA",
+      "title": "O que é a Web Agêntica (Agentes de IA Navegando) | Matilab",
+      "ogtitle": "O que é a Web Agêntica (Agentes de IA Navegando) | Matilab",
+      "desc": "O que é a web agêntica, como agentes de IA passam a navegar e agir nos sites no seu lugar e o que sua empresa precisa fazer para estar pronta.",
+      "bc": "O que é a web agêntica",
+      "eyebrow": "Assunto do momento · IA",
+      "h1": "O que é a web agêntica e por que seu site precisa estar pronto",
+      "lede": "A próxima onda não é só a IA responder: é a IA agir. Agentes vão navegar, comparar e até comprar em sites no lugar do usuário. Um site que a IA não consegue entender e usar fica de fora dessa nova camada.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.8",
+      "intro": {
+        "h2": "De responder para agir",
+        "p": "Se antes a IA lia e resumia, agora ela começa a executar tarefas: pesquisar, preencher, comparar. Sites legíveis para máquinas viram vantagem competitiva."
+      },
+      "points_h2": "O que muda",
+      "points": [
+        {
+          "h3": "Agentes navegando",
+          "p": "IAs percorrem sites para cumprir tarefas do usuário."
+        },
+        {
+          "h3": "Máquina como visitante",
+          "p": "Parte do tráfego passa a ser de agentes, não só de pessoas."
+        },
+        {
+          "h3": "Estrutura importa mais",
+          "p": "Dados estruturados e conteúdo claro guiam o agente."
+        },
+        {
+          "h3": "Velocidade e clareza",
+          "p": "Site confuso ou lento atrapalha o agente e some da jogada."
+        }
+      ],
+      "checklist_h2": "Como se preparar",
+      "checklist": [
+        "Dados estruturados (Schema.org) por toda parte",
+        "Conteúdo claro, factual e por assunto",
+        "Site rápido e bem organizado",
+        "APIs e integrações quando fizer sentido",
+        "SEO técnico impecável, que também serve às IAs"
+      ],
+      "close": {
+        "h2": "Como a Matilab prepara",
+        "p": "Construímos sites legíveis por máquinas: Schema.org, conteúdo estruturado e base técnica sólida. Isso serve ao Google, às respostas de IA e, agora, aos agentes."
+      },
+      "related": [
+        "como-a-ia-generativa-mudou-a-busca",
+        "Como a IA mudou a busca"
+      ],
+      "faq": [
+        [
+          "O que é a web agêntica?",
+          "É a web onde agentes de IA navegam e executam tarefas nos sites no lugar do usuário, como pesquisar, comparar e comprar."
+        ],
+        [
+          "Isso já é realidade?",
+          "Está no começo, mas avança rápido. Já existem agentes que navegam e realizam ações em sites."
+        ],
+        [
+          "O que meu site precisa para a web agêntica?",
+          "Dados estruturados, conteúdo claro, site rápido e bem organizado, além de SEO técnico impecável."
+        ],
+        [
+          "Agentes de IA vão substituir os visitantes?",
+          "Não substituir, mas somar: parte do acesso passa a ser de agentes agindo em nome de pessoas."
+        ],
+        [
+          "A Matilab prepara o site para agentes de IA?",
+          "Sim, com Schema.org, conteúdo estruturado e base técnica sólida."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-rag-e-por-que-importa-para-conteudo",
+      "svc": "Tecnologia e IA",
+      "title": "O que é RAG e Por que Importa para o seu Conteúdo | Matilab",
+      "ogtitle": "O que é RAG e Por que Importa para o seu Conteúdo | Matilab",
+      "desc": "O que é RAG (geração aumentada por recuperação), como as IAs usam conteúdo da web para responder e por que isso valoriza páginas claras e factuais.",
+      "bc": "O que é RAG",
+      "eyebrow": "Assunto do momento · IA",
+      "h1": "O que é RAG e por que importa para o seu conteúdo",
+      "lede": "RAG é a técnica que faz a IA buscar conteúdo atualizado antes de responder, em vez de inventar do zero. Entender isso explica por que ter conteúdo claro e factual na web é o que faz a IA citar a sua marca.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "A IA busca antes de responder",
+        "p": "Com RAG, o modelo recupera trechos de fontes reais e monta a resposta com base neles. Ou seja: quem escreve conteúdo bom alimenta as respostas da IA."
+      },
+      "points_h2": "Por que isso importa para você",
+      "points": [
+        {
+          "h3": "Conteúdo vira fonte",
+          "p": "A IA usa páginas reais; a sua pode ser uma delas."
+        },
+        {
+          "h3": "Clareza é recuperável",
+          "p": "Textos objetivos e factuais são mais fáceis de recuperar e citar."
+        },
+        {
+          "h3": "Estrutura ajuda",
+          "p": "FAQ e Schema.org facilitam a extração dos trechos certos."
+        },
+        {
+          "h3": "Atualidade conta",
+          "p": "Conteúdo recente tende a ser preferido nas respostas."
+        }
+      ],
+      "checklist_h2": "Como se beneficiar do RAG",
+      "checklist": [
+        "Escrever conteúdo factual e objetivo por assunto",
+        "Usar FAQ e Schema.org",
+        "Manter o conteúdo atualizado",
+        "Ter SEO técnico e site rápido",
+        "Construir autoridade para ser fonte confiável"
+      ],
+      "close": {
+        "h2": "Como a Matilab aplica",
+        "p": "Estruturamos o conteúdo do jeito que os sistemas RAG recuperam e citam: claro, factual, por assunto e com Schema.org, sobre uma base técnica sólida."
+      },
+      "related": [
+        "o-que-e-aeo-answer-engine-optimization",
+        "O que é AEO"
+      ],
+      "faq": [
+        [
+          "O que é RAG?",
+          "RAG (retrieval-augmented generation) é a técnica em que a IA recupera conteúdo real e atualizado da web antes de gerar a resposta, em vez de responder só com o que memorizou."
+        ],
+        [
+          "Por que RAG importa para o meu conteúdo?",
+          "Porque a IA usa páginas reais como fonte. Conteúdo claro e factual sobre o seu assunto pode ser recuperado e citado nas respostas."
+        ],
+        [
+          "Como aparecer nas respostas de sistemas RAG?",
+          "Com conteúdo objetivo por assunto, FAQ, Schema.org, atualidade e autoridade."
+        ],
+        [
+          "RAG é a mesma coisa que GEO?",
+          "Não. RAG é a técnica que a IA usa; GEO é otimizar o seu conteúdo para ser recuperado e citado por ela."
+        ],
+        [
+          "A Matilab prepara o conteúdo para isso?",
+          "Sim, é o que fazemos em GEO e AEO."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-headless-cms",
+      "svc": "Tecnologia e desenvolvimento",
+      "title": "O que é Headless CMS e Quando Vale a Pena | Matilab",
+      "ogtitle": "O que é Headless CMS e Quando Vale a Pena | Matilab",
+      "desc": "O que é um headless CMS, como ele separa o conteúdo do site e por que combina com sites rápidos em Next.js. Quando vale a pena usar.",
+      "bc": "O que é headless CMS",
+      "eyebrow": "Assunto do momento · Dev",
+      "h1": "O que é headless CMS e quando vale a pena",
+      "lede": "Um headless CMS separa onde você edita o conteúdo de onde ele é exibido. Você mantém um painel fácil para editar e o site é entregue em tecnologia rápida como Next.js. O melhor dos dois mundos: autonomia e performance.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Editar fácil sem abrir mão de velocidade",
+        "p": "No modelo tradicional, o painel e o site vêm colados, o que costuma pesar. O headless separa os dois: painel amigável de um lado, site rápido do outro."
+      },
+      "points_h2": "Como funciona",
+      "points": [
+        {
+          "h3": "Conteúdo no painel",
+          "p": "Você edita textos, imagens e posts em um painel simples."
+        },
+        {
+          "h3": "Entrega via API",
+          "p": "O conteúdo é servido para o site por API."
+        },
+        {
+          "h3": "Site em Next.js",
+          "p": "A exibição é rápida e otimizada, sem o peso de temas."
+        },
+        {
+          "h3": "Flexível",
+          "p": "O mesmo conteúdo pode alimentar site, app e outros canais."
+        }
+      ],
+      "checklist_h2": "Quando vale a pena",
+      "checklist": [
+        "Você quer editar o conteúdo com autonomia",
+        "Performance é prioridade",
+        "Quer um site em Next.js, não em tema pronto",
+        "Pode querer usar o conteúdo em vários canais",
+        "Busca segurança e escalabilidade"
+      ],
+      "close": {
+        "h2": "Como a Matilab entrega",
+        "p": "Montamos sites em Next.js com headless CMS quando você precisa editar sozinho, unindo painel fácil e performance de ponta, com SEO técnico incluso."
+      },
+      "related": [
+        "o-que-e-cms-e-preciso-de-um",
+        "O que é um CMS"
+      ],
+      "faq": [
+        [
+          "O que é um headless CMS?",
+          "É um sistema de gestão de conteúdo que separa a edição (painel) da exibição (site), entregando o conteúdo por API para um front-end rápido como o Next.js."
+        ],
+        [
+          "Qual a vantagem do headless CMS?",
+          "Você edita com autonomia em um painel simples e o site continua rápido e seguro, sem o peso dos temas tradicionais."
+        ],
+        [
+          "Headless CMS é melhor que WordPress tradicional?",
+          "Para performance e flexibilidade, costuma ser. Para quem quer o modelo tudo-em-um mais simples, o WordPress ainda serve."
+        ],
+        [
+          "Quando vale a pena usar headless?",
+          "Quando performance é prioridade, você quer editar sozinho e possivelmente usar o conteúdo em vários canais."
+        ],
+        [
+          "A Matilab trabalha com headless CMS?",
+          "Sim, em sites Next.js quando o cliente precisa de autonomia de edição."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-jamstack",
+      "svc": "Tecnologia e desenvolvimento",
+      "title": "O que é Jamstack e Por que Deixa Sites Mais Rápidos | Matilab",
+      "ogtitle": "O que é Jamstack e Por que Deixa Sites Mais Rápidos | Matilab",
+      "desc": "O que é Jamstack, como essa arquitetura moderna deixa sites mais rápidos e seguros e por que ela é a base de sites de alto padrão.",
+      "bc": "O que é Jamstack",
+      "eyebrow": "Assunto do momento · Dev",
+      "h1": "O que é Jamstack e por que deixa sites mais rápidos",
+      "lede": "Jamstack é uma forma moderna de construir sites que entrega páginas prontas e leves, sem depender de servidor pesado a cada acesso. O resultado é site mais rápido, mais seguro e mais barato de escalar.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Site pronto, não montado a cada clique",
+        "p": "Em vez de gerar a página no servidor a cada visita, o Jamstack entrega páginas já prontas e distribuídas globalmente. Isso é o que faz carregar num piscar."
+      },
+      "points_h2": "Por que é mais rápido e seguro",
+      "points": [
+        {
+          "h3": "Páginas pré-construídas",
+          "p": "Entregues prontas, sem processamento a cada acesso."
+        },
+        {
+          "h3": "Distribuição global (CDN)",
+          "p": "O site fica perto do usuário, em qualquer lugar."
+        },
+        {
+          "h3": "Menos superfície de ataque",
+          "p": "Sem servidor tradicional exposto, menos brechas."
+        },
+        {
+          "h3": "Escala fácil",
+          "p": "Aguenta picos sem cair nem encarecer."
+        }
+      ],
+      "checklist_h2": "Onde o Jamstack brilha",
+      "checklist": [
+        "Sites institucionais e landing pages",
+        "Blogs e conteúdo",
+        "E-commerce headless",
+        "Sites que precisam de performance e SEO",
+        "Projetos que vão escalar"
+      ],
+      "close": {
+        "h2": "Como a Matilab aplica",
+        "p": "Nossos sites em Next.js seguem os princípios do Jamstack: páginas rápidas, distribuídas na Vercel, seguras e prontas para SEO. Velocidade é arquitetura, não sorte."
+      },
+      "related": [
+        "por-que-velocidade-de-site-importa",
+        "Por que a velocidade importa"
+      ],
+      "faq": [
+        [
+          "O que é Jamstack?",
+          "É uma arquitetura moderna de sites que entrega páginas pré-construídas e leves, distribuídas globalmente, sem depender de servidor pesado a cada acesso."
+        ],
+        [
+          "Por que o Jamstack é mais rápido?",
+          "Porque as páginas já vêm prontas e são entregues por CDN perto do usuário, sem processamento a cada visita."
+        ],
+        [
+          "Jamstack é mais seguro?",
+          "Tende a ser, porque reduz a superfície de ataque de um servidor tradicional."
+        ],
+        [
+          "Next.js é Jamstack?",
+          "Segue os mesmos princípios de performance e distribuição, e é uma das principais tecnologias para construir assim."
+        ],
+        [
+          "A Matilab usa Jamstack?",
+          "Sim, nossos sites em Next.js seguem esses princípios."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-edge-computing-para-sites",
+      "svc": "Tecnologia e performance",
+      "title": "O que é Edge Computing e Por que Deixa Sites Mais Rápidos | Matilab",
+      "ogtitle": "O que é Edge Computing e Por que Deixa Sites Mais Rápidos | Matilab",
+      "desc": "O que é edge computing, como servir o site pertinho do usuário reduz o tempo de carregamento e por que isso importa para SEO e conversão.",
+      "bc": "O que é edge computing",
+      "eyebrow": "Assunto do momento · Performance",
+      "h1": "O que é edge computing e por que deixa sites mais rápidos",
+      "lede": "Edge computing é entregar o site a partir de servidores espalhados pelo mundo, o mais perto possível de quem acessa. Quanto menor a distância, menor a espera. É um dos motivos de sites modernos carregarem num instante.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Perto do usuário, mais rápido",
+        "p": "Um site hospedado longe do visitante demora mais para responder. O edge coloca o conteúdo perto de cada pessoa, cortando a espera."
+      },
+      "points_h2": "Por que importa",
+      "points": [
+        {
+          "h3": "Menos latência",
+          "p": "O conteúdo viaja menos, então carrega mais rápido."
+        },
+        {
+          "h3": "Melhor Core Web Vitals",
+          "p": "Velocidade impacta ranking no Google."
+        },
+        {
+          "h3": "Escala global",
+          "p": "Atende bem visitantes de qualquer lugar."
+        },
+        {
+          "h3": "Mais conversão",
+          "p": "Site rápido perde menos gente no caminho."
+        }
+      ],
+      "checklist_h2": "Como ter isso",
+      "checklist": [
+        "Hospedagem moderna com rede global (Vercel, Cloudflare)",
+        "Site em arquitetura leve (Next.js/Jamstack)",
+        "Imagens otimizadas e cache",
+        "Menos scripts pesados",
+        "Medir com PageSpeed e Core Web Vitals"
+      ],
+      "close": {
+        "h2": "Como a Matilab entrega",
+        "p": "Hospedamos os sites na Vercel, com rede global na borda, e construímos em Next.js. Assim o site carrega rápido para qualquer visitante, o que ajuda SEO e conversão."
+      },
+      "related": [
+        "por-que-velocidade-de-site-importa",
+        "Por que a velocidade importa"
+      ],
+      "faq": [
+        [
+          "O que é edge computing?",
+          "É entregar o site a partir de servidores próximos do usuário, distribuídos pelo mundo, para reduzir a distância e o tempo de carregamento."
+        ],
+        [
+          "Edge computing deixa o site mais rápido?",
+          "Sim. Ao servir o conteúdo perto de quem acessa, reduz a latência e melhora os Core Web Vitals."
+        ],
+        [
+          "Isso ajuda no SEO?",
+          "Ajuda, porque velocidade é fator de ranqueamento do Google."
+        ],
+        [
+          "Como ter edge no meu site?",
+          "Com hospedagem moderna de rede global, como a Vercel, e um site leve em Next.js."
+        ],
+        [
+          "A Matilab usa edge?",
+          "Sim, hospedamos na Vercel com entrega na borda."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-pwa-progressive-web-app",
+      "svc": "Tecnologia e desenvolvimento",
+      "title": "O que é PWA (Progressive Web App) e Quando Vale | Matilab",
+      "ogtitle": "O que é PWA (Progressive Web App) e Quando Vale | Matilab",
+      "desc": "O que é uma PWA, como ela faz o site funcionar como um aplicativo (instalável e offline) e quando vale a pena para o seu negócio.",
+      "bc": "O que é PWA",
+      "eyebrow": "Assunto do momento · Dev",
+      "h1": "O que é PWA (Progressive Web App) e quando vale a pena",
+      "lede": "Uma PWA é um site que se comporta como aplicativo: pode ser instalado na tela do celular, funciona parcialmente offline e envia notificações, sem precisar de loja de apps. Une o alcance do site com a experiência de app.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Site com cara e poderes de app",
+        "p": "A PWA elimina o atrito de baixar um app na loja e ainda entrega parte da experiência nativa. Para muitos negócios, é o melhor custo-benefício."
+      },
+      "points_h2": "O que uma PWA oferece",
+      "points": [
+        {
+          "h3": "Instalável",
+          "p": "O usuário adiciona o site à tela inicial, como um app."
+        },
+        {
+          "h3": "Funciona offline",
+          "p": "Partes do conteúdo abrem mesmo sem internet."
+        },
+        {
+          "h3": "Notificações",
+          "p": "Pode enviar avisos, como um aplicativo."
+        },
+        {
+          "h3": "Sem loja de apps",
+          "p": "Não depende de aprovação nem download pesado."
+        }
+      ],
+      "checklist_h2": "Quando vale a pena",
+      "checklist": [
+        "Uso recorrente pelos mesmos usuários",
+        "Quer presença no celular sem custo de app nativo",
+        "Precisa de acesso rápido e notificações",
+        "Público que voltaria sempre ao serviço",
+        "Orçamento que não comporta app nativo agora"
+      ],
+      "close": {
+        "h2": "Como a Matilab avalia",
+        "p": "Analisamos se a PWA faz sentido para o seu caso e, quando faz, entregamos a experiência de app sobre um site rápido em Next.js, sem o custo de um aplicativo nativo."
+      },
+      "related": [
+        "quanto-custa-criar-um-site",
+        "Quanto custa criar um site"
+      ],
+      "faq": [
+        [
+          "O que é uma PWA?",
+          "É um Progressive Web App: um site que funciona como aplicativo, podendo ser instalado na tela do celular, abrir parte do conteúdo offline e enviar notificações."
+        ],
+        [
+          "Qual a diferença entre PWA e aplicativo nativo?",
+          "A PWA roda pelo navegador e é instalada sem loja de apps, com custo menor. O app nativo tem mais recursos, mas custa e demora mais."
+        ],
+        [
+          "Quando vale a pena fazer uma PWA?",
+          "Quando o público usa o serviço com recorrência e você quer presença no celular sem o custo de um app nativo."
+        ],
+        [
+          "PWA aparece no Google?",
+          "Sim, é um site, então continua indexável e rankeável normalmente."
+        ],
+        [
+          "A Matilab faz PWA?",
+          "Sim, quando faz sentido para o projeto, sobre um site rápido em Next.js."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-e-commerce-headless",
+      "svc": "E-commerce e tecnologia",
+      "title": "O que é E-commerce Headless e Por que é Mais Rápido | Matilab",
+      "ogtitle": "O que é E-commerce Headless e Por que é Mais Rápido | Matilab",
+      "desc": "O que é e-commerce headless, como ele separa a loja do visual para ganhar performance e quando vale a pena para a sua operação.",
+      "bc": "O que é e-commerce headless",
+      "eyebrow": "Assunto do momento · E-commerce",
+      "h1": "O que é e-commerce headless e por que é mais rápido",
+      "lede": "E-commerce headless separa o motor da loja (produtos, checkout, estoque) da camada visual, construída em tecnologia rápida como Next.js. O resultado é uma loja muito mais veloz e personalizável, ideal para escalar.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Motor de um lado, vitrine do outro",
+        "p": "Nas plataformas tradicionais, tudo vem colado e isso limita a velocidade. No headless, o motor cuida da operação e o Next.js entrega uma vitrine rápida e sob medida."
+      },
+      "points_h2": "Vantagens do headless",
+      "points": [
+        {
+          "h3": "Velocidade",
+          "p": "Vitrine em Next.js carrega muito mais rápido, o que reduz abandono."
+        },
+        {
+          "h3": "Personalização total",
+          "p": "A loja não fica presa ao tema da plataforma."
+        },
+        {
+          "h3": "SEO forte",
+          "p": "Estrutura otimizada para Google e Shopping."
+        },
+        {
+          "h3": "Escala",
+          "p": "Aguenta crescimento e picos sem travar."
+        }
+      ],
+      "checklist_h2": "Quando vale a pena",
+      "checklist": [
+        "Loja com volume ou ambição de escalar",
+        "Performance como diferencial competitivo",
+        "Necessidade de experiência sob medida",
+        "Integrações específicas com ERP e sistemas",
+        "Marca premium que quer se destacar"
+      ],
+      "close": {
+        "h2": "Como a Matilab entrega",
+        "p": "Construímos e-commerce headless em Next.js, ligando um motor robusto a uma vitrine rápida e sob medida, com SEO técnico e checkout eficiente."
+      },
+      "related": [
+        "agencia-ecommerce-rapido-otimizado-brasil",
+        "Agência de e-commerce"
+      ],
+      "faq": [
+        [
+          "O que é e-commerce headless?",
+          "É uma loja onde o motor (produtos, checkout, estoque) fica separado da camada visual, construída em tecnologia rápida como o Next.js."
+        ],
+        [
+          "Por que o e-commerce headless é mais rápido?",
+          "Porque a vitrine é feita sob medida em tecnologia leve, sem o peso do tema de uma plataforma tradicional."
+        ],
+        [
+          "Quando vale a pena um e-commerce headless?",
+          "Quando a loja tem volume ou quer escalar, precisa de performance, personalização e integrações específicas."
+        ],
+        [
+          "Headless é mais caro?",
+          "O investimento inicial costuma ser maior, mas compensa em performance e escala para lojas que crescem."
+        ],
+        [
+          "A Matilab faz e-commerce headless?",
+          "Sim, em Next.js, com SEO técnico e checkout eficiente."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "first-party-data-e-o-fim-dos-cookies",
+      "svc": "Marketing e dados",
+      "title": "First-Party Data e o Fim dos Cookies: O que Muda | Matilab",
+      "ogtitle": "First-Party Data e o Fim dos Cookies: O que Muda | Matilab",
+      "desc": "O que é first-party data, por que ela ganha valor com o fim dos cookies de terceiros e como o seu site vira a peça central da sua estratégia de dados.",
+      "bc": "First-party data e o fim dos cookies",
+      "eyebrow": "Assunto do momento · Dados",
+      "h1": "First-party data e o fim dos cookies: o que muda",
+      "lede": "Com o fim dos cookies de terceiros, rastrear o usuário pela internet ficou mais difícil. O que ganha valor são os dados que a sua própria empresa coleta, os first-party data, e o seu site é onde isso acontece.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Seus dados viram o ativo",
+        "p": "Sem cookies de terceiros, quem depende de rastreamento alheio perde. Quem coleta os próprios dados, com consentimento, sai na frente. E isso começa no site."
+      },
+      "points_h2": "O que muda",
+      "points": [
+        {
+          "h3": "Menos rastreamento externo",
+          "p": "Cookies de terceiros deixam de funcionar como antes."
+        },
+        {
+          "h3": "Dados próprios valem mais",
+          "p": "Contatos e comportamento no seu site viram ouro."
+        },
+        {
+          "h3": "Consentimento",
+          "p": "Coleta transparente e com permissão vira regra."
+        },
+        {
+          "h3": "Site no centro",
+          "p": "É onde você capta e-mail, WhatsApp e comportamento próprios."
+        }
+      ],
+      "checklist_h2": "Como se preparar",
+      "checklist": [
+        "Captar contatos no próprio site (leads, newsletter)",
+        "Medir comportamento com GA4 (first-party)",
+        "Integrar site e CRM",
+        "Pedir consentimento de forma clara",
+        "Reduzir dependência de rastreamento de terceiros"
+      ],
+      "close": {
+        "h2": "Como a Matilab ajuda",
+        "p": "Construímos o site como central de dados próprios: captação de leads, GA4, integração com CRM e WhatsApp. Você passa a depender menos de terceiros e mais do que é seu."
+      },
+      "related": [
+        "como-medir-resultados-do-meu-site",
+        "Como medir resultados do site"
+      ],
+      "faq": [
+        [
+          "O que é first-party data?",
+          "São os dados que a própria empresa coleta diretamente, como contatos, comportamento no site e histórico de compra, com consentimento do usuário."
+        ],
+        [
+          "Por que os cookies de terceiros estão acabando?",
+          "Por privacidade e regulação. Isso reduz o rastreamento entre sites e valoriza os dados próprios de cada empresa."
+        ],
+        [
+          "O que fazer com o fim dos cookies?",
+          "Focar em first-party data: captar contatos no próprio site, medir com GA4, integrar CRM e reduzir dependência de rastreamento externo."
+        ],
+        [
+          "Meu site fica mais importante com isso?",
+          "Sim, ele vira a peça central da coleta de dados próprios da sua empresa."
+        ],
+        [
+          "A Matilab ajuda com first-party data?",
+          "Sim, construímos o site como central de captação e medição, integrado ao CRM e ao WhatsApp."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-inp-nova-metrica-do-google",
+      "svc": "SEO técnico e performance",
+      "title": "O que é INP, a Métrica do Google que Substituiu o FID | Matilab",
+      "ogtitle": "O que é INP, a Métrica do Google que Substituiu o FID | Matilab",
+      "desc": "O que é o INP (Interaction to Next Paint), a métrica de Core Web Vitals que substituiu o FID, e como deixar seu site ágil para pontuar bem.",
+      "bc": "O que é INP",
+      "eyebrow": "Assunto do momento · Core Web Vitals",
+      "h1": "O que é o INP, a nova métrica do Google",
+      "lede": "O INP substituiu o FID como métrica de interatividade dos Core Web Vitals do Google. Ele mede o quanto o site responde rápido quando o usuário clica ou toca. Um INP ruim faz o site parecer travado, e isso conta no ranking.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Agilidade virou nota",
+        "p": "O Google passou a medir não só o quanto o site carrega, mas o quanto ele responde a cada interação. Site que 'engasga' ao clicar perde pontos."
+      },
+      "points_h2": "O que o INP mede",
+      "points": [
+        {
+          "h3": "Resposta à interação",
+          "p": "O tempo entre o clique/toque e a resposta visível na tela."
+        },
+        {
+          "h3": "Experiência real",
+          "p": "Reflete a sensação de agilidade do usuário."
+        },
+        {
+          "h3": "Fator de Core Web Vitals",
+          "p": "Entra na avaliação de página do Google."
+        },
+        {
+          "h3": "Impacto no ranking",
+          "p": "INP ruim pode derrubar posição e conversão."
+        }
+      ],
+      "checklist_h2": "Como melhorar o INP",
+      "checklist": [
+        "Reduzir JavaScript pesado e desnecessário",
+        "Código enxuto (Next.js) em vez de temas cheios de plugins",
+        "Carregar scripts sob demanda",
+        "Evitar travar a interface durante o carregamento",
+        "Medir com PageSpeed e o relatório de Core Web Vitals"
+      ],
+      "close": {
+        "h2": "Como a Matilab entrega",
+        "p": "Construímos sites leves em Next.js, com JavaScript sob controle, para responder rápido a cada toque. INP bom faz parte do nosso padrão de performance."
+      },
+      "related": [
+        "por-que-velocidade-de-site-importa",
+        "Por que a velocidade importa"
+      ],
+      "faq": [
+        [
+          "O que é INP?",
+          "INP (Interaction to Next Paint) é a métrica de Core Web Vitals que mede o quão rápido o site responde às interações do usuário. Substituiu o FID em 2024."
+        ],
+        [
+          "Por que o INP importa?",
+          "Porque mede a agilidade real do site. Um INP ruim faz a página parecer travada e pode prejudicar o ranking no Google e a conversão."
+        ],
+        [
+          "Como melhorar o INP do meu site?",
+          "Reduzindo JavaScript pesado, usando código enxuto (Next.js), carregando scripts sob demanda e evitando travar a interface."
+        ],
+        [
+          "INP faz parte dos Core Web Vitals?",
+          "Sim, é uma das três métricas principais, ao lado de LCP e CLS."
+        ],
+        [
+          "A Matilab otimiza o INP?",
+          "Sim, faz parte do nosso padrão de performance em Next.js."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-core-update-do-google",
+      "svc": "SEO e busca",
+      "title": "O que é um Core Update do Google e Como se Proteger | Matilab",
+      "ogtitle": "O que é um Core Update do Google e Como se Proteger | Matilab",
+      "desc": "O que é um core update do Google, por que ele pode fazer seu tráfego cair ou subir e como construir um site que resiste às atualizações.",
+      "bc": "O que é um core update",
+      "eyebrow": "Assunto do momento · SEO",
+      "h1": "O que é um core update do Google e como se proteger",
+      "lede": "De tempos em tempos, o Google faz uma grande atualização do seu algoritmo, o core update. Sites sobem ou caem da noite para o dia. A boa notícia: quem investe em qualidade e autoridade tende a resistir, e até ganhar.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Mudança de régua, não de castigo",
+        "p": "Um core update não é punição a um erro específico; é o Google recalibrando o que considera qualidade. Sites rasos costumam cair; sites bons, subir."
+      },
+      "points_h2": "O que acontece num core update",
+      "points": [
+        {
+          "h3": "Reavaliação ampla",
+          "p": "O Google reordena resultados em muitos temas de uma vez."
+        },
+        {
+          "h3": "Vencedores e perdedores",
+          "p": "Alguns sites sobem, outros caem, às vezes muito."
+        },
+        {
+          "h3": "Foco em qualidade",
+          "p": "Conteúdo raso e enganoso tende a perder."
+        },
+        {
+          "h3": "Recuperação leva tempo",
+          "p": "Quem cai se recupera melhorando qualidade, não com truque."
+        }
+      ],
+      "checklist_h2": "Como se proteger",
+      "checklist": [
+        "Conteúdo útil, aprofundado e factual (E-E-A-T)",
+        "SEO técnico sólido e site rápido",
+        "Evitar conteúdo raso em massa (index bloat)",
+        "Construir autoridade e boas menções",
+        "Consistência ao longo do tempo, sem atalho"
+      ],
+      "close": {
+        "h2": "Como a Matilab constrói",
+        "p": "Fazemos sites feitos para durar: qualidade técnica, conteúdo por assunto e autoridade. É o que faz resistir a core updates em vez de rezar a cada atualização."
+      },
+      "related": [
+        "o-que-e-eeat-no-seo",
+        "O que é E-E-A-T"
+      ],
+      "faq": [
+        [
+          "O que é um core update do Google?",
+          "É uma grande atualização do algoritmo de busca do Google que reavalia a qualidade dos sites e pode fazer o tráfego subir ou cair."
+        ],
+        [
+          "Por que meu tráfego caiu num core update?",
+          "Geralmente porque o Google recalibrou o que considera qualidade e o site tinha conteúdo raso, técnico fraco ou pouca autoridade."
+        ],
+        [
+          "Como me proteger de core updates?",
+          "Com conteúdo útil e factual, SEO técnico sólido, autoridade e evitando conteúdo raso em massa."
+        ],
+        [
+          "Dá para recuperar depois de cair?",
+          "Sim, melhorando a qualidade real do site. Não há atalho; a recuperação vem com consistência."
+        ],
+        [
+          "A Matilab constrói sites que resistem a updates?",
+          "Sim, com qualidade técnica, conteúdo por assunto e autoridade."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-multimodalidade-e-busca-por-imagem",
+      "svc": "Tecnologia e busca",
+      "title": "Multimodalidade e Busca por Imagem: O que Muda | Matilab",
+      "ogtitle": "Multimodalidade e Busca por Imagem: O que Muda | Matilab",
+      "desc": "O que é a IA multimodal, como a busca por imagem e voz cresce e por que suas fotos e conteúdo visual precisam ser otimizados também.",
+      "bc": "Multimodalidade e busca por imagem",
+      "eyebrow": "Assunto do momento · IA",
+      "h1": "Multimodalidade e busca por imagem: o que muda para o seu site",
+      "lede": "As IAs agora entendem texto, imagem, áudio e vídeo ao mesmo tempo, isso é multimodalidade. Na prática, buscar por foto ou por voz vira comum, e o seu conteúdo visual precisa ser otimizado tanto quanto o texto.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "A busca não é só texto",
+        "p": "Se a IA entende imagens, uma foto bem descrita pode trazer cliente. Ignorar o visual é deixar metade da busca de fora."
+      },
+      "points_h2": "O que muda",
+      "points": [
+        {
+          "h3": "Busca por imagem",
+          "p": "O usuário fotografa ou envia uma imagem para pesquisar."
+        },
+        {
+          "h3": "Conteúdo visual conta",
+          "p": "Imagens bem descritas ajudam Google e IAs a entender."
+        },
+        {
+          "h3": "Voz e vídeo",
+          "p": "Áudio e vídeo também entram na conversa multimodal."
+        },
+        {
+          "h3": "Descrição importa",
+          "p": "Texto alternativo e contexto viram peça de SEO."
+        }
+      ],
+      "checklist_h2": "Como otimizar",
+      "checklist": [
+        "Texto alternativo (alt) descritivo nas imagens",
+        "Imagens otimizadas e no formato certo (WebP)",
+        "Nomes de arquivo e legendas com contexto",
+        "Dados estruturados de imagem quando fizer sentido",
+        "Conteúdo que conecta imagem e texto"
+      ],
+      "close": {
+        "h2": "Como a Matilab ajuda",
+        "p": "Otimizamos o visual do site tanto quanto o texto: imagens leves e bem descritas, com contexto que Google e IAs entendem. Assim você aparece também na busca por imagem."
+      },
+      "related": [
+        "como-a-ia-generativa-mudou-a-busca",
+        "Como a IA mudou a busca"
+      ],
+      "faq": [
+        [
+          "O que é multimodalidade na IA?",
+          "É a capacidade da IA de entender e combinar diferentes formatos ao mesmo tempo: texto, imagem, áudio e vídeo."
+        ],
+        [
+          "Como isso muda a busca?",
+          "Cresce a busca por imagem e por voz, então o conteúdo visual e falado precisa ser otimizado, não só o texto."
+        ],
+        [
+          "Como otimizar imagens para busca?",
+          "Com texto alternativo descritivo, imagens leves e bem nomeadas, legendas com contexto e dados estruturados quando fizer sentido."
+        ],
+        [
+          "Isso vale para o meu negócio?",
+          "Vale, especialmente se produtos e portfólio são visuais. Boas imagens otimizadas trazem tráfego."
+        ],
+        [
+          "A Matilab otimiza o visual do site?",
+          "Sim, imagens leves e bem descritas fazem parte do SEO que entregamos."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-next-js-e-por-que-a-matilab-usa",
+      "svc": "Tecnologia e desenvolvimento",
+      "title": "O que é Next.js e Por que a Matilab Usa | Matilab",
+      "ogtitle": "O que é Next.js e Por que a Matilab Usa | Matilab",
+      "desc": "O que é o Next.js, por que ele é a tecnologia por trás de sites rápidos e bem posicionados e por que a Matilab construiu sua stack nele.",
+      "bc": "O que é Next.js",
+      "eyebrow": "Assunto do momento · Dev",
+      "h1": "O que é Next.js e por que a Matilab usa",
+      "lede": "Next.js é uma tecnologia moderna para construir sites e aplicações rápidas, seguras e otimizadas para SEO. É o padrão de muitas marcas de alto nível, e a base da stack da Matilab. Entenda por quê.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "A base de sites de alto padrão",
+        "p": "Next.js virou referência porque entrega o que importa: velocidade, SEO e flexibilidade. Não é modismo, é a fundação certa para um site que precisa performar."
+      },
+      "points_h2": "Por que Next.js",
+      "points": [
+        {
+          "h3": "Velocidade",
+          "p": "Páginas rápidas e otimizadas, com ótimos Core Web Vitals."
+        },
+        {
+          "h3": "SEO amigável",
+          "p": "Renderização pensada para o Google indexar e entender."
+        },
+        {
+          "h3": "Segurança",
+          "p": "Menos brechas que sites cheios de plugins."
+        },
+        {
+          "h3": "Flexível",
+          "p": "Do site institucional ao e-commerce headless, tudo sob medida."
+        }
+      ],
+      "checklist_h2": "O que você ganha na prática",
+      "checklist": [
+        "Site que carrega rápido no celular",
+        "Melhor posicionamento no Google",
+        "Menos dependência de plugins pagos",
+        "Base pronta para IAs e GEO",
+        "Escala sem dor de cabeça"
+      ],
+      "close": {
+        "h2": "Como a Matilab usa",
+        "p": "Toda a nossa entrega é em Next.js, hospedada na Vercel, com SEO técnico e performance Lighthouse 90+. É a razão de os nossos sites serem rápidos e bem posicionados."
+      },
+      "related": [
+        "agencia-nextjs-brasil",
+        "Agência Next.js no Brasil"
+      ],
+      "faq": [
+        [
+          "O que é Next.js?",
+          "É uma tecnologia moderna (framework React) para construir sites e aplicações rápidas, seguras e otimizadas para SEO."
+        ],
+        [
+          "Por que Next.js é bom para SEO?",
+          "Porque renderiza as páginas de forma que o Google indexa e entende bem, com performance alta, que também é fator de ranqueamento."
+        ],
+        [
+          "Next.js é melhor que WordPress?",
+          "Para performance, segurança e sites sob medida, costuma ser. O WordPress ainda serve para quem quer o modelo tudo-em-um mais simples."
+        ],
+        [
+          "Por que a Matilab usa Next.js?",
+          "Porque entrega velocidade, SEO e flexibilidade, a base para sites de alto padrão prontos para Google e IAs."
+        ],
+        [
+          "Preciso entender de Next.js para ter um site assim?",
+          "Não. A Matilab cuida de toda a parte técnica; você recebe o site pronto e fácil de usar."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-muda-para-sites-e-marcas-com-a-ia-em-2026",
+      "svc": "GEO e estratégia",
+      "title": "O que Muda para Sites e Marcas com a IA em 2026 | Matilab",
+      "ogtitle": "O que Muda para Sites e Marcas com a IA em 2026 | Matilab",
+      "desc": "Um panorama direto do que mudou para sites e marcas com a IA em 2026: nova busca, novos hábitos e o que fazer agora para não ficar invisível.",
+      "bc": "Sites e marcas com IA em 2026",
+      "eyebrow": "Assunto do momento · Estratégia",
+      "h1": "O que muda para sites e marcas com a IA em 2026",
+      "lede": "2026 consolidou uma virada: parte das buscas virou conversa com IA, o Google mostra respostas geradas e as pessoas confiam em recomendações de modelos. Quem entende isso agora larga na frente; quem ignora, some.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.85",
+      "intro": {
+        "h2": "A virada já aconteceu",
+        "p": "Não é previsão, é presente: IA no topo do Google, ChatGPT e Perplexity como buscadores, agentes começando a agir. A pergunta não é 'se', é 'o que fazer agora'."
+      },
+      "points_h2": "O que mudou",
+      "points": [
+        {
+          "h3": "Busca virou resposta",
+          "p": "Menos listas de links, mais respostas prontas com poucas marcas."
+        },
+        {
+          "h3": "Nova disputa",
+          "p": "O jogo é ser citado pela IA, não só ranquear."
+        },
+        {
+          "h3": "Confiança na IA",
+          "p": "As pessoas seguem recomendações de modelos ao decidir."
+        },
+        {
+          "h3": "Conteúdo é o ativo",
+          "p": "Quem tem conteúdo por assunto aparece; quem não tem, some."
+        }
+      ],
+      "checklist_h2": "O que fazer agora",
+      "checklist": [
+        "Ter uma página por pergunta do seu nicho",
+        "Estruturar conteúdo com FAQ e Schema.org",
+        "Manter SEO técnico e site rápido",
+        "Medir onde a marca aparece nas IAs",
+        "Publicar com constância para cobrir mais assuntos"
+      ],
+      "close": {
+        "h2": "Como a Matilab prepara",
+        "p": "Construímos e alimentamos sites prontos para essa nova era: conteúdo por assunto, base técnica forte e presença no Google e nas IAs. É exatamente o que fazemos no nosso próprio site."
+      },
+      "related": [
+        "google-ou-ia-onde-seus-clientes-procuram-em-2026",
+        "Google ou IA em 2026"
+      ],
+      "faq": [
+        [
+          "O que mudou para sites com a IA em 2026?",
+          "A busca passou a entregar respostas geradas por IA com poucas fontes, o ChatGPT e o Perplexity viraram buscadores e as pessoas confiam em recomendações de modelos."
+        ],
+        [
+          "Meu site ainda importa com a IA?",
+          "Importa mais do que nunca. As IAs leem sites para responder; sem um site bom e com conteúdo, a marca não é citada."
+        ],
+        [
+          "O que fazer agora para não ficar invisível?",
+          "Criar conteúdo por assunto em formato de resposta, com FAQ e Schema.org, manter SEO técnico e medir a presença nas IAs."
+        ],
+        [
+          "SEO morreu com a IA?",
+          "Não. Ele evoluiu para incluir GEO e AEO. A base continua sendo conteúdo bom e site tecnicamente forte."
+        ],
+        [
+          "A Matilab prepara marcas para a IA?",
+          "Sim, é o foco do nosso trabalho de SEO e GEO."
+        ]
+      ],
+      "status": "pending"
     }
   ]
 }
