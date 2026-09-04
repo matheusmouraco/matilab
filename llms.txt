@@ -104,3 +104,5 @@
 - [Vale a pena ter um site para empresa](https://matilab.com.br/vale-a-pena-ter-um-site-para-empresa)
 - [Agência de site institucional premium](https://matilab.com.br/agencia-site-institucional-design-premium-brasil)
 - [Guias (central de conteúdo)](https://matilab.com.br/guias)
+- [O que e AEO](https://matilab.com.br/o-que-e-aeo-answer-engine-optimization)
+- [SEO vs GEO vs AEO](https://matilab.com.br/seo-vs-geo-vs-aeo-qual-a-diferenca)

@@ -26,12 +26,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Gerar próxima página da fila
+      - name: Gerar as 2 próximas páginas da fila
         id: gen
         run: |
-          OUT="$(python3 scripts/gen_daily_page.py)"
-          echo "resultado: $OUT"
-          echo "result=$OUT" >> "$GITHUB_OUTPUT"
+          echo "1a: $(python3 scripts/gen_daily_page.py)"
+          echo "2a: $(python3 scripts/gen_daily_page.py)"
 
       - name: Commit e push (se houver página nova)
         run: |

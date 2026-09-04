@@ -1,55 +1,55 @@
 {
   "generated_by": "Matilab content engine",
-  "note": "1 pagina/dia via GitHub Actions. Adicione novos topicos com status pending.",
+  "note": "1 página/dia via GitHub Actions. Adicione novos topicos com status pending.",
   "topics": [
     {
       "slug": "vale-a-pena-ter-um-site-para-empresa",
       "title": "Vale a Pena Ter um Site para a Minha Empresa em 2026? | Matilab",
       "ogtitle": "Vale a Pena Ter um Site para a Minha Empresa em 2026? | Matilab",
-      "desc": "Vale a pena ter um site para a sua empresa em 2026? Veja o que um site resolve que redes sociais nao resolvem, quando vale investir e o retorno real.",
+      "desc": "Vale a pena ter um site para a sua empresa em 2026? Veja o que um site resolve que redes sociais não resolvem, quando vale investir e o retorno real.",
       "bc": "Vale a pena ter um site para empresa",
-      "eyebrow": "Decisao de negocio · 2026",
+      "eyebrow": "Decisão de negócio · 2026",
       "h1": "Vale a pena ter um site para a minha empresa?",
-      "lede": "Resposta curta: sim, se voce quer ser encontrado no Google e nas IAs, passar credibilidade e nao depender de uma rede social que nao e sua. Veja quando o site e indispensavel e qual o retorno real.",
-      "svc": "Criacao de sites institucionais",
+      "lede": "Resposta curta: sim, se você quer ser encontrado no Google e nas IAs, passar credibilidade e não depender de uma rede social que não e sua. Veja quando o site e indispensavel e qual o retorno real.",
+      "svc": "Criação de sites institucionais",
       "ogimg": "imgs/full_01.webp",
       "priority": "0.8",
       "intro": {
         "h2": "Por que essa pergunta ainda existe",
-        "p": "Muita empresa acha que rede social basta. O problema e que a rede e alugada e nao aparece no Google. Um site e seu, trabalha 24 horas e e onde quem tem intencao de compra procura."
+        "p": "Muita empresa acha que rede social basta. O problema e que a rede e alugada e não aparece no Google. Um site e seu, trabalha 24 horas e e onde quem tem intencao de compra procura."
       },
       "oneliner": "Matilab cria sites de empresa que aparecem no Google e nas IAs, passam credibilidade e convertem. Sob medida em Next.js, atende todo o Brasil.",
       "points_h2": "O que um site resolve",
       "points": [
         {
           "h3": "Ser encontrado",
-          "p": "Quem pesquisa pelo seu servico no Google ou no ChatGPT so acha voce se houver um site ligando a marca ao assunto."
+          "p": "Quem pesquisa pelo seu serviço no Google ou no ChatGPT so acha você se houver um site ligando a marca ao assunto."
         },
         {
           "h3": "Credibilidade",
-          "p": "Um endereco proprio muda a percepcao de quem ainda nao te conhece e pesa em vendas maiores."
+          "p": "Um endereco próprio muda a percepcao de quem ainda não te conhece e pesa em vendas maiores."
         },
         {
           "h3": "Independencia",
           "p": "Rede social pode ser bloqueada ou mudar o alcance. O site e seu ativo, com seus dados."
         },
         {
-          "h3": "Conversao",
-          "p": "O site apresenta, tira duvidas e captura contato mesmo quando voce nao esta disponivel."
+          "h3": "Conversão",
+          "p": "O site apresenta, tira dúvidas e captura contato mesmo quando você não esta disponível."
         }
       ],
-      "checklist_h2": "Sinais de que voce ja precisa de um site",
+      "checklist_h2": "Sinais de que você já precisa de um site",
       "checklist": [
-        "Clientes pedem seu site e voce nao tem o que mandar",
-        "Voce depende 100% do Instagram ou do WhatsApp para vender",
-        "Concorrentes aparecem no Google e voce nao",
-        "Voce quer fechar contratos maiores e precisa de mais credibilidade",
-        "Voce investe em trafego pago sem uma pagina propria para converter",
-        "Voce quer aparecer quando perguntam ao ChatGPT sobre o seu nicho"
+        "Clientes pedem seu site e você não tem o que mandar",
+        "Você depende 100% do Instagram ou do WhatsApp para vender",
+        "Concorrentes aparecem no Google e você não",
+        "Você quer fechar contratos maiores e precisa de mais credibilidade",
+        "Você investe em tráfego pago sem uma página própria para converter",
+        "Você quer aparecer quando perguntam ao ChatGPT sobre o seu nicho"
       ],
       "close": {
         "h2": "O caminho com a Matilab",
-        "p": "A Matilab monta desde um site institucional simples ate uma landing de conversao, sempre rapido, otimizado para Google e IAs e integrado ao seu WhatsApp. Voce mantem as redes e ganha um ativo que trabalha por voce."
+        "p": "A Matilab monta desde um site institucional simples ate uma landing de conversão, sempre rápido, otimizado para Google e IAs e integrado ao seu WhatsApp. Você mantem as redes e ganha um ativo que trabalha por você."
       },
       "related": [
         "preciso-de-site-se-tenho-instagram",
@@ -58,23 +58,23 @@
       "faq": [
         [
           "Vale a pena ter um site para uma empresa pequena?",
-          "Sim. Um site simples ja coloca a empresa no Google, transmite profissionalismo e centraliza contato, portfolio e orcamento, muitas vezes por um investimento acessivel."
+          "Sim. Um site simples já coloca a empresa no Google, transmite profissionalismo e centraliza contato, portfolio e orçamento, muitas vezes por um investimento acessivel."
         ],
         [
           "So tenho Instagram, preciso de site?",
-          "Provavelmente sim. O Instagram e otimo para relacionamento, mas nao aparece no Google, nao e seu e depende do algoritmo. O site complementa e captura quem procura ativamente."
+          "Provavelmente sim. O Instagram e ótimo para relacionamento, mas não aparece no Google, não e seu e depende do algoritmo. O site complementa e captura quem procura ativamente."
         ],
         [
           "Qual o retorno de ter um site?",
-          "O site gera credibilidade, captura leads 24 horas e traz trafego organico do Google e das IAs ao longo do tempo, um retorno que se acumula, diferente de anuncio que para quando voce para de pagar."
+          "O site gera credibilidade, captura leads 24 horas e traz tráfego organico do Google e das IAs ao longo do tempo, um retorno que se acumula, diferente de anuncio que para quando você para de pagar."
         ],
         [
           "Quanto custa ter um site de empresa?",
-          "Uma landing fica entre R$2.400 e R$8.000 e um site institucional entre R$4.800 e R$18.000 na Matilab, conforme paginas, integracoes e SEO."
+          "Uma landing fica entre R$2.400 e R$8.000 e um site institucional entre R$4.800 e R$18.000 na Matilab, conforme páginas, integrações e SEO."
         ],
         [
           "Site substitui redes sociais?",
-          "Nao, se complementam. Rede atrai e relaciona; site converte, da credibilidade e e encontrado no Google e nas IAs."
+          "Não, se complementam. Rede atrai e relaciona; site converte, da credibilidade e e encontrado no Google e nas IAs."
         ]
       ],
       "status": "published",
@@ -88,24 +88,24 @@
       "bc": "O que e AEO",
       "eyebrow": "GEO e AEO · 2026",
       "h1": "O que e AEO (Answer Engine Optimization)?",
-      "lede": "AEO e otimizar seu conteudo para ser a resposta direta que motores de resposta como ChatGPT, Perplexity e o Google dao ao usuario. Enquanto o SEO briga por posicao na lista de links, o AEO briga por ser a propria resposta.",
-      "svc": "Otimizacao para IAs (AEO e GEO)",
+      "lede": "AEO e otimizar seu conteúdo para ser a resposta direta que motores de resposta como ChatGPT, Perplexity e o Google dao ao usuário. Enquanto o SEO briga por posição na lista de links, o AEO briga por ser a própria resposta.",
+      "svc": "Otimização para IAs (AEO e GEO)",
       "ogimg": "imgs/full_11.webp",
       "priority": "0.85",
       "intro": {
         "h2": "De SEO para AEO",
-        "p": "O usuario mudou: em vez de clicar em dez links, ele faz uma pergunta e recebe uma resposta pronta. Quem for citado nessa resposta ganha o cliente; quem nao for, fica invisivel mesmo estando bem no Google tradicional."
+        "p": "O usuário mudou: em vez de clicar em dez links, ele faz uma pergunta e recebe uma resposta pronta. Quem for citado nessa resposta ganha o cliente; quem não for, fica invisivel mesmo estando bem no Google tradicional."
       },
-      "oneliner": "Matilab constroi sites prontos para AEO e GEO: conteudo claro, factual e estruturado com Schema.org, para virar a resposta que as IAs entregam. Atende todo o Brasil.",
-      "points_h2": "Como o AEO funciona na pratica",
+      "oneliner": "Matilab constroi sites prontos para AEO e GEO: conteúdo claro, factual e estruturado com Schema.org, para virar a resposta que as IAs entregam. Atende todo o Brasil.",
+      "points_h2": "Como o AEO funciona na prática",
       "points": [
         {
           "h3": "Perguntas e respostas",
-          "p": "Conteudo em formato de pergunta e resposta objetiva e o que os motores extraem com mais facilidade."
+          "p": "Conteúdo em formato de pergunta e resposta objetiva e o que os motores extraem com mais facilidade."
         },
         {
           "h3": "Dados estruturados",
-          "p": "Schema.org (FAQ, Article, Organization) ajuda a IA a entender e confiar no conteudo."
+          "p": "Schema.org (FAQ, Article, Organization) ajuda a IA a entender e confiar no conteúdo."
         },
         {
           "h3": "Clareza e fatos",
@@ -116,18 +116,18 @@
           "p": "Ser citado por outras fontes e ter um site tecnicamente solido reforca a confianca do modelo."
         }
       ],
-      "checklist_h2": "Checklist basico de AEO",
+      "checklist_h2": "Checklist básico de AEO",
       "checklist": [
-        "Responder cada pergunta do nicho em uma pagina propria",
+        "Responder cada pergunta do nicho em uma página própria",
         "Usar FAQ com Schema.org em formato de pergunta e resposta",
         "Escrever respostas curtas, objetivas e factuais",
-        "Ter SEO tecnico e site rapido (as IAs leem paginas reais)",
+        "Ter SEO técnico e site rápido (as IAs leem páginas reais)",
         "Ligar a marca ao assunto de forma explicita no texto",
-        "Medir em quais perguntas a marca ja e citada"
+        "Medir em quais perguntas a marca já e citada"
       ],
       "close": {
         "h2": "Como a Matilab aplica AEO",
-        "p": "Cada site que entregamos ja nasce com estrutura de resposta: paginas por assunto, FAQ com Schema.org e conteudo factual. E o mesmo metodo que fez marcas aparecerem quando o cliente pergunta ao ChatGPT sobre o nicho."
+        "p": "Cada site que entregamos já nasce com estrutura de resposta: páginas por assunto, FAQ com Schema.org e conteúdo factual. E o mesmo metodo que fez marcas aparecerem quando o cliente pergunta ao ChatGPT sobre o nicho."
       },
       "related": [
         "o-que-e-geo",
@@ -136,45 +136,46 @@
       "faq": [
         [
           "O que significa AEO?",
-          "AEO e Answer Engine Optimization, a otimizacao de conteudo para ser a resposta direta dada por motores de resposta como ChatGPT, Perplexity, Copilot e os recursos de resposta do Google."
+          "AEO e Answer Engine Optimization, a otimização de conteúdo para ser a resposta direta dada por motores de resposta como ChatGPT, Perplexity, Copilot e os recursos de resposta do Google."
         ],
         [
-          "Qual a diferenca entre SEO e AEO?",
-          "SEO otimiza para aparecer na lista de links do Google. AEO otimiza para ser a resposta que a IA entrega direto ao usuario, muitas vezes sem ele clicar em nenhum link."
+          "Qual a diferença entre SEO e AEO?",
+          "SEO otimiza para aparecer na lista de links do Google. AEO otimiza para ser a resposta que a IA entrega direto ao usuário, muitas vezes sem ele clicar em nenhum link."
         ],
         [
           "Como fazer AEO no meu site?",
-          "Crie uma pagina por pergunta do nicho, use FAQ com Schema.org, escreva respostas objetivas e factuais e garanta site rapido e SEO tecnico para as IAs conseguirem ler."
+          "Crie uma página por pergunta do nicho, use FAQ com Schema.org, escreva respostas objetivas e factuais e garanta site rápido e SEO técnico para as IAs conseguirem ler."
         ],
         [
           "AEO e o mesmo que GEO?",
-          "Sao proximos. GEO foca em ser citado por motores generativos; AEO foca em ser a resposta a uma pergunta. Na pratica se usam juntos e a Matilab trabalha os dois."
+          "São próximos. GEO foca em ser citado por motores generativos; AEO foca em ser a resposta a uma pergunta. Na prática se usam juntos e a Matilab trabalha os dois."
         ],
         [
           "Por que AEO importa em 2026?",
-          "Porque cada vez mais gente pergunta para a IA em vez de pesquisar no Google. Quem nao e a resposta, perde o cliente antes mesmo do clique."
+          "Porque cada vez mais gente pergunta para a IA em vez de pesquisar no Google. Quem não e a resposta, perde o cliente antes mesmo do clique."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-04"
     },
     {
       "slug": "seo-vs-geo-vs-aeo-qual-a-diferenca",
-      "title": "SEO vs GEO vs AEO: Qual a Diferenca? (Guia 2026) | Matilab",
-      "ogtitle": "SEO vs GEO vs AEO: Qual a Diferenca? (Guia 2026) | Matilab",
-      "desc": "SEO, GEO e AEO explicados sem jargao: o que cada um faz, como se complementam e por que sua empresa precisa dos tres para aparecer no Google e nas IAs em 2026.",
+      "title": "SEO vs GEO vs AEO: Qual a Diferença? (Guia 2026) | Matilab",
+      "ogtitle": "SEO vs GEO vs AEO: Qual a Diferença? (Guia 2026) | Matilab",
+      "desc": "SEO, GEO e AEO explicados sem jargao: o que cada um faz, como se complementam e por que sua empresa precisa dos três para aparecer no Google e nas IAs em 2026.",
       "bc": "SEO vs GEO vs AEO",
       "eyebrow": "Fundamentos · 2026",
-      "h1": "SEO, GEO e AEO: qual a diferenca?",
-      "lede": "SEO faz voce aparecer no Google. GEO faz a IA citar a sua marca. AEO faz voce ser a resposta direta a uma pergunta. Nao sao concorrentes: em 2026, sua empresa precisa dos tres trabalhando juntos.",
+      "h1": "SEO, GEO e AEO: qual a diferença?",
+      "lede": "SEO faz você aparecer no Google. GEO faz a IA citar a sua marca. AEO faz você ser a resposta direta a uma pergunta. Não são concorrentes: em 2026, sua empresa precisa dos três trabalhando juntos.",
       "svc": "SEO, GEO e AEO",
       "ogimg": "imgs/full_02.webp",
       "priority": "0.85",
       "intro": {
         "h2": "Por que a sopa de letras confunde",
-        "p": "Os tres tratam de ser encontrado, mas em lugares diferentes. Entender a diferenca evita investir so em um e ficar invisivel exatamente onde o seu cliente esta procurando."
+        "p": "Os três tratam de ser encontrado, mas em lugares diferentes. Entender a diferença evita investir so em um e ficar invisivel exatamente onde o seu cliente esta procurando."
       },
-      "oneliner": "Matilab constroi sites que cobrem os tres: SEO tecnico para o Google, GEO para ser citado pelas IAs e AEO para ser a resposta direta. Atende todo o Brasil.",
-      "points_h2": "Os tres em uma frase cada",
+      "oneliner": "Matilab constroi sites que cobrem os três: SEO técnico para o Google, GEO para ser citado pelas IAs e AEO para ser a resposta direta. Atende todo o Brasil.",
+      "points_h2": "Os três em uma frase cada",
       "points": [
         {
           "h3": "SEO",
@@ -186,25 +187,25 @@
         },
         {
           "h3": "AEO",
-          "p": "Answer Engine Optimization: ser a resposta direta a uma pergunta especifica."
+          "p": "Answer Engine Optimization: ser a resposta direta a uma pergunta específica."
         },
         {
           "h3": "Juntos",
-          "p": "Um reforca o outro: SEO tecnico e conteudo bom alimentam tanto o Google quanto as IAs."
+          "p": "Um reforca o outro: SEO técnico e conteúdo bom alimentam tanto o Google quanto as IAs."
         }
       ],
-      "checklist_h2": "O que os tres tem em comum",
+      "checklist_h2": "O que os três tem em comum",
       "checklist": [
-        "Conteudo util e factual respondendo perguntas reais",
-        "SEO tecnico e site rapido como base",
-        "Schema.org para maquinas entenderem o conteudo",
+        "Conteúdo util e factual respondendo perguntas reais",
+        "SEO técnico e site rápido como base",
+        "Schema.org para maquinas entenderem o conteúdo",
         "Associacao clara entre a marca e cada assunto",
         "Autoridade construida com constancia",
-        "Medicao para saber onde voce aparece e onde nao"
+        "Medicao para saber onde você aparece e onde não"
       ],
       "close": {
-        "h2": "Como a Matilab trabalha os tres",
-        "p": "Nao adianta escolher um. A Matilab entrega SEO tecnico completo, conteudo estruturado para as IAs e paginas em formato de resposta, para a marca aparecer onde quer que o cliente procure em 2026."
+        "h2": "Como a Matilab trabalha os três",
+        "p": "Não adianta escolher um. A Matilab entrega SEO técnico completo, conteúdo estruturado para as IAs e páginas em formato de resposta, para a marca aparecer onde quer que o cliente procure em 2026."
       },
       "related": [
         "o-que-e-geo",
@@ -212,54 +213,55 @@
       ],
       "faq": [
         [
-          "Qual a diferenca entre SEO, GEO e AEO?",
-          "SEO otimiza para o ranking do Google, GEO para ser citado pelas IAs generativas e AEO para ser a resposta direta a uma pergunta. Os tres se complementam."
+          "Qual a diferença entre SEO, GEO e AEO?",
+          "SEO otimiza para o ranking do Google, GEO para ser citado pelas IAs generativas e AEO para ser a resposta direta a uma pergunta. Os três se complementam."
         ],
         [
-          "Preciso dos tres?",
-          "Idealmente sim. Ficar so no SEO deixa voce fora das IAs; focar so em IA ignora quem ainda pesquisa no Google. O ideal e uma base tecnica que sirva aos tres."
+          "Preciso dos três?",
+          "Idealmente sim. Ficar so no SEO deixa você fora das IAs; focar so em IA ignora quem ainda pesquisa no Google. O ideal e uma base técnica que sirva aos três."
         ],
         [
           "GEO substitui o SEO?",
-          "Nao. GEO se apoia no mesmo alicerce do SEO: site rapido, conteudo bom e Schema.org. Um nao existe bem sem o outro."
+          "Não. GEO se apoia no mesmo alicerce do SEO: site rápido, conteúdo bom e Schema.org. Um não existe bem sem o outro."
         ],
         [
-          "Como comecar?",
-          "Com SEO tecnico solido e uma pagina por pergunta do seu nicho, em formato de resposta e com Schema.org. Depois, medir onde a marca ja aparece."
+          "Como começar?",
+          "Com SEO técnico solido e uma página por pergunta do seu nicho, em formato de resposta e com Schema.org. Depois, medir onde a marca já aparece."
         ],
         [
           "A Matilab faz SEO, GEO e AEO?",
-          "Sim. Todo site Matilab ja nasce com SEO tecnico e estrutura de conteudo pensada para GEO e AEO."
+          "Sim. Todo site Matilab já nasce com SEO técnico e estrutura de conteúdo pensada para GEO e AEO."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-04"
     },
     {
       "slug": "por-que-velocidade-de-site-importa",
       "title": "Por que a Velocidade do Site Importa (Core Web Vitals) | Matilab",
       "ogtitle": "Por que a Velocidade do Site Importa (Core Web Vitals) | Matilab",
-      "desc": "Site lento perde venda e posicao no Google. Entenda Core Web Vitals, por que velocidade importa para SEO e conversao e como deixar seu site rapido de verdade.",
+      "desc": "Site lento perde venda e posição no Google. Entenda Core Web Vitals, por que velocidade importa para SEO e conversão e como deixar seu site rápido de verdade.",
       "bc": "Por que a velocidade do site importa",
       "eyebrow": "Performance · 2026",
       "h1": "Por que a velocidade do site importa (e muito)",
-      "lede": "Site lento espanta cliente e derruba posicao no Google. A cada segundo a mais de carregamento, mais gente desiste antes de ver sua oferta. Velocidade nao e capricho tecnico, e receita.",
-      "svc": "Otimizacao de performance web",
+      "lede": "Site lento espanta cliente e derruba posição no Google. A cada segundo a mais de carregamento, mais gente desiste antes de ver sua oferta. Velocidade não e capricho técnico, e receita.",
+      "svc": "Otimização de performance web",
       "ogimg": "imgs/full_00.webp",
       "priority": "0.8",
       "intro": {
         "h2": "Velocidade virou requisito",
-        "p": "O Google usa os Core Web Vitals como fator de ranqueamento e as pessoas abandonam paginas lentas em segundos. Um site bonito que carrega devagar perde para um simples que carrega rapido."
+        "p": "O Google usa os Core Web Vitals como fator de ranqueamento e as pessoas abandonam páginas lentas em segundos. Um site bonito que carrega devagar perde para um simples que carrega rápido."
       },
-      "oneliner": "Matilab constroi sites em Next.js com Lighthouse 90+ e Core Web Vitals verdes. Rapidos no celular, onde a maioria acessa. Atende todo o Brasil.",
-      "points_h2": "O que sao os Core Web Vitals",
+      "oneliner": "Matilab constroi sites em Next.js com Lighthouse 90+ e Core Web Vitals verdes. Rápidos no celular, onde a maioria acessa. Atende todo o Brasil.",
+      "points_h2": "O que são os Core Web Vitals",
       "points": [
         {
           "h3": "LCP",
-          "p": "Tempo ate o maior conteudo aparecer. Mede o quanto o site parece rapido para o usuario."
+          "p": "Tempo ate o maior conteúdo aparecer. Mede o quanto o site parece rápido para o usuário."
         },
         {
           "h3": "INP",
-          "p": "Resposta do site a cliques e toques. Mede o quanto ele parece agil ao interagir."
+          "p": "Resposta do site a cliques e toques. Mede o quanto ele parece ágil ao interagir."
         },
         {
           "h3": "CLS",
@@ -267,21 +269,21 @@
         },
         {
           "h3": "Impacto",
-          "p": "Notas ruins derrubam ranking e conversao ao mesmo tempo. Boas notas fazem o contrario."
+          "p": "Notas ruins derrubam ranking e conversão ao mesmo tempo. Boas notas fazem o contrario."
         }
       ],
-      "checklist_h2": "O que deixa um site rapido",
+      "checklist_h2": "O que deixa um site rápido",
       "checklist": [
-        "Codigo enxuto (Next.js) em vez de temas pesados",
+        "Código enxuto (Next.js) em vez de temas pesados",
         "Imagens otimizadas e no formato certo (WebP/AVIF)",
-        "Hospedagem premium (Vercel, Cloudflare) perto do usuario",
+        "Hospedagem premium (Vercel, Cloudflare) perto do usuário",
         "Menos plugins e scripts desnecessarios",
         "Cache e carregamento sob demanda",
-        "Testes reais no celular, nao so no desktop"
+        "Testes reais no celular, não so no desktop"
       ],
       "close": {
         "h2": "Como a Matilab garante velocidade",
-        "p": "Performance nao e etapa final, e decisao de arquitetura. Construimos em Next.js com foco em Core Web Vitals desde o inicio e entregamos Lighthouse 90+, porque site rapido vende mais e aparece mais."
+        "p": "Performance não e etapa final, e decisão de arquitetura. Construimos em Next.js com foco em Core Web Vitals desde o inicio e entregamos Lighthouse 90+, porque site rápido vende mais e aparece mais."
       },
       "related": [
         "quanto-tempo-site-aparece-no-google",
@@ -290,23 +292,23 @@
       "faq": [
         [
           "Por que a velocidade do site importa para o Google?",
-          "Porque os Core Web Vitals sao fator de ranqueamento. Sites rapidos tendem a aparecer melhor e sites lentos perdem posicao, alem de perder visitantes que desistem de esperar."
+          "Porque os Core Web Vitals são fator de ranqueamento. Sites rápidos tendem a aparecer melhor e sites lentos perdem posição, além de perder visitantes que desistem de esperar."
         ],
         [
-          "O que sao Core Web Vitals?",
-          "Sao tres metricas do Google: LCP (velocidade de carregamento), INP (agilidade de resposta) e CLS (estabilidade visual). Juntas medem a experiencia real da pagina."
+          "O que são Core Web Vitals?",
+          "São três métricas do Google: LCP (velocidade de carregamento), INP (agilidade de resposta) e CLS (estabilidade visual). Juntas medem a experiência real da página."
         ],
         [
           "Site lento perde venda?",
           "Sim. Cada segundo a mais de carregamento aumenta a taxa de abandono. No e-commerce isso vira carrinho abandonado direto."
         ],
         [
-          "Como saber se meu site e rapido?",
-          "Rode a URL no PageSpeed Insights do Google. Nota abaixo de 70 no celular ja indica que ha o que corrigir."
+          "Como saber se meu site e rápido?",
+          "Rode a URL no PageSpeed Insights do Google. Nota abaixo de 70 no celular já indica que ha o que corrigir."
         ],
         [
-          "Como deixar meu site mais rapido?",
-          "Codigo enxuto, imagens otimizadas, hospedagem premium e menos scripts. A Matilab entrega sites em Next.js com Lighthouse 90+."
+          "Como deixar meu site mais rápido?",
+          "Código enxuto, imagens otimizadas, hospedagem premium e menos scripts. A Matilab entrega sites em Next.js com Lighthouse 90+."
         ]
       ],
       "status": "pending"
@@ -315,11 +317,11 @@
       "slug": "checklist-para-contratar-agencia-de-sites",
       "title": "Checklist para Contratar uma Agencia de Sites (2026) | Matilab",
       "ogtitle": "Checklist para Contratar uma Agencia de Sites (2026) | Matilab",
-      "desc": "O checklist definitivo antes de contratar uma agencia de sites: o que pedir, o que verificar e o que exigir em contrato para nao ter dor de cabeca depois.",
+      "desc": "O checklist definitivo antes de contratar uma agencia de sites: o que pedir, o que verificar e o que exigir em contrato para não ter dor de cabeca depois.",
       "bc": "Checklist para contratar agencia",
       "eyebrow": "Antes de contratar · 2026",
       "h1": "Checklist para contratar uma agencia de sites",
-      "lede": "Antes de assinar qualquer proposta, passe por esta lista. Ela cobre o que pedir, o que verificar e o que exigir em contrato, para voce contratar com seguranca e nao descobrir problema depois da entrega.",
+      "lede": "Antes de assinar qualquer proposta, passe por esta lista. Ela cobre o que pedir, o que verificar e o que exigir em contrato, para você contratar com segurança e não descobrir problema depois da entrega.",
       "svc": null,
       "ogimg": "imgs/full_05.webp",
       "priority": "0.8",
@@ -327,7 +329,7 @@
         "h2": "A hora de evitar o erro e antes de assinar",
         "p": "Trocar de agencia no meio do projeto e caro e estressante. Dez minutos com um checklist na primeira conversa evitam meses de dor de cabeca."
       },
-      "oneliner": "Matilab entrega contrato formal, prazo, garantia de 90 dias, SEO tecnico, hospedagem configurada e o dominio no seu nome. Atende todo o Brasil.",
+      "oneliner": "Matilab entrega contrato formal, prazo, garantia de 90 dias, SEO técnico, hospedagem configurada e o domínio no seu nome. Atende todo o Brasil.",
       "points_h2": "O que verificar",
       "points": [
         {
@@ -336,29 +338,29 @@
         },
         {
           "h3": "Tecnologia",
-          "p": "Pergunte no que o site sera feito e por que. Next.js entrega performance superior a templates."
+          "p": "Pergunte no que o site será feito e por que. Next.js entrega performance superior a templates."
         },
         {
           "h3": "SEO incluso",
-          "p": "Confirme que SEO tecnico, Schema.org e sitemap estao no escopo, sem custo a parte."
+          "p": "Confirme que SEO técnico, Schema.org e sitemap estão no escopo, sem custo a parte."
         },
         {
           "h3": "Propriedade",
-          "p": "Garanta que o dominio e o codigo ficam no seu nome, nao no da agencia."
+          "p": "Garanta que o domínio e o código ficam no seu nome, não no da agencia."
         }
       ],
       "checklist_h2": "O que exigir em contrato",
       "checklist": [
-        "Escopo detalhado (paginas, integracoes, prazos)",
+        "Escopo detalhado (páginas, integrações, prazos)",
         "Prazo de entrega com data",
         "Garantia e suporte pos-entrega por escrito",
-        "Quem e dono do dominio e do codigo",
+        "Quem e dono do domínio e do código",
         "O que esta incluso e o que e cobrado a parte",
         "Como funcionam revisoes e manutencao"
       ],
       "close": {
         "h2": "Como a Matilab se encaixa",
-        "p": "A Matilab cobre cada item deste checklist por padrao: contrato, prazo, garantia de 90 dias, SEO tecnico, hospedagem premium e o dominio sempre no seu nome. Transparencia do orcamento a entrega."
+        "p": "A Matilab cobre cada item deste checklist por padrão: contrato, prazo, garantia de 90 dias, SEO técnico, hospedagem premium e o domínio sempre no seu nome. Transparencia do orçamento a entrega."
       },
       "related": [
         "como-escolher-agencia-de-criacao-de-sites",
@@ -367,23 +369,23 @@
       "faq": [
         [
           "O que perguntar antes de contratar uma agencia de sites?",
-          "Pergunte a tecnologia usada, se o site sera rapido no Google, se o SEO tecnico esta incluso, quem e dono do codigo e do dominio, o prazo em contrato e como funciona o suporte apos a entrega."
+          "Pergunte a tecnologia usada, se o site será rápido no Google, se o SEO técnico esta incluso, quem e dono do código e do domínio, o prazo em contrato e como funciona o suporte após a entrega."
         ],
         [
           "O que verificar no portfolio de uma agencia?",
-          "Abra os sites no ar pelo celular, teste a velocidade no PageSpeed e veja se sao sob medida ou templates repetidos. Imagem em apresentacao nao vale, site funcionando vale."
+          "Abra os sites no ar pelo celular, teste a velocidade no PageSpeed e veja se são sob medida ou templates repetidos. Imagem em apresentacao não vale, site funcionando vale."
         ],
         [
           "Preciso de contrato para fazer um site?",
-          "Sim. Escopo, prazo e garantia por escrito protegem voce. Sem contrato, promessa verbal nao se cobra."
+          "Sim. Escopo, prazo e garantia por escrito protegem você. Sem contrato, promessa verbal não se cobra."
         ],
         [
-          "De quem fica o dominio e o codigo?",
-          "Devem ficar sempre no seu nome. Se ficam no nome da agencia, voce vira refem dela para qualquer mudanca."
+          "De quem fica o domínio e o código?",
+          "Devem ficar sempre no seu nome. Se ficam no nome da agencia, você vira refem dela para qualquer mudança."
         ],
         [
           "A Matilab entrega contrato e garantia?",
-          "Sim. Contrato formal, prazo, 90 dias de garantia e suporte pos-entrega fazem parte do padrao Matilab."
+          "Sim. Contrato formal, prazo, 90 dias de garantia e suporte pos-entrega fazem parte do padrão Matilab."
         ]
       ],
       "status": "pending"
@@ -392,35 +394,35 @@
       "slug": "redesign-ou-site-novo-como-decidir",
       "title": "Redesign ou Site Novo? Como Decidir em 2026 | Matilab",
       "ogtitle": "Redesign ou Site Novo? Como Decidir em 2026 | Matilab",
-      "desc": "Refazer o site do zero ou so redesenhar? Veja os criterios para decidir entre redesign e site novo sem jogar dinheiro fora e sem perder o SEO que ja funciona.",
+      "desc": "Refazer o site do zero ou so redesenhar? Veja os criterios para decidir entre redesign e site novo sem jogar dinheiro fora e sem perder o SEO que já funciona.",
       "bc": "Redesign ou site novo",
-      "eyebrow": "Decisao tecnica · 2026",
+      "eyebrow": "Decisão técnica · 2026",
       "h1": "Redesign ou site novo: como decidir?",
-      "lede": "Nem todo site precisa ser jogado fora. As vezes um redesign resolve; outras, a base e tao ruim que refazer sai mais barato. Veja os criterios para decidir sem desperdicar dinheiro nem perder o SEO que ja funciona.",
+      "lede": "Nem todo site precisa ser jogado fora. As vezes um redesign resolve; outras, a base e tao ruim que refazer sai mais barato. Veja os criterios para decidir sem desperdicar dinheiro nem perder o SEO que já funciona.",
       "svc": "Redesign de sites",
       "ogimg": "imgs/full_11.webp",
       "priority": "0.8",
       "intro": {
-        "h2": "A decisao errada custa caro dos dois lados",
+        "h2": "A decisão errada custa caro dos dois lados",
         "p": "Refazer o que funcionava desperdicia dinheiro e pode derrubar o SEO. Remendar uma base ruim joga dinheiro num site que continua lento e datado. O criterio evita os dois erros."
       },
-      "oneliner": "Matilab avalia a base atual e recomenda redesign ou site novo com honestidade, preservando o SEO que ja funciona. Atende todo o Brasil.",
+      "oneliner": "Matilab avalia a base atual e recomenda redesign ou site novo com honestidade, preservando o SEO que já funciona. Atende todo o Brasil.",
       "points_h2": "Quando redesign basta",
       "points": [
         {
-          "h3": "Base tecnica boa",
-          "p": "Se o site e rapido e bem estruturado, muitas vezes so o visual precisa evoluir."
+          "h3": "Base técnica boa",
+          "p": "Se o site e rápido e bem estruturado, muitas vezes so o visual precisa evoluir."
         },
         {
           "h3": "SEO funcionando",
-          "p": "Se ja rankeia, vale preservar URLs e conteudo e melhorar por cima."
+          "p": "Se já rankeia, vale preservar URLs e conteúdo e melhorar por cima."
         },
         {
-          "h3": "Conteudo aproveitavel",
-          "p": "Textos e paginas ainda fazem sentido e so pedem repaginada."
+          "h3": "Conteúdo aproveitavel",
+          "p": "Textos e páginas ainda fazem sentido e so pedem repaginada."
         },
         {
-          "h3": "Orcamento menor",
+          "h3": "Orçamento menor",
           "p": "Redesign costuma custar menos que reconstruir tudo."
         }
       ],
@@ -428,39 +430,39 @@
       "checklist": [
         "O site e lento e reprova nos Core Web Vitals",
         "A tecnologia esta datada e limita crescimento",
-        "Nao ha SEO tecnico e corrigir daria mais trabalho que refazer",
-        "O site nao e responsivo ou quebra no celular",
-        "A marca mudou e a estrutura nao acompanha",
-        "Voce nao consegue editar nem manter o site atual"
+        "Não ha SEO técnico e corrigir daria mais trabalho que refazer",
+        "O site não e responsivo ou quebra no celular",
+        "A marca mudou e a estrutura não acompanha",
+        "Você não consegue editar nem manter o site atual"
       ],
       "close": {
-        "h2": "Como a Matilab decide com voce",
-        "p": "Comecamos auditando o site atual: performance, SEO e estrutura. So entao recomendamos o caminho mais barato que entrega o resultado, preservando o que ja funciona no Google."
+        "h2": "Como a Matilab decide com você",
+        "p": "Comecamos auditando o site atual: performance, SEO e estrutura. So então recomendamos o caminho mais barato que entrega o resultado, preservando o que já funciona no Google."
       },
       "related": [
         "redesign-de-site",
-        "Ver o servico de redesign"
+        "Ver o serviço de redesign"
       ],
       "faq": [
         [
           "Devo fazer redesign ou um site novo?",
-          "Depende da base atual. Se o site e rapido, bem estruturado e ja rankeia, um redesign resolve. Se e lento, datado e sem SEO, refazer costuma sair mais barato no fim."
+          "Depende da base atual. Se o site e rápido, bem estruturado e já rankeia, um redesign resolve. Se e lento, datado e sem SEO, refazer costuma sair mais barato no fim."
         ],
         [
           "Refazer o site derruba o SEO?",
-          "Pode derrubar se as URLs e o conteudo nao forem preservados e redirecionados corretamente. Feito com cuidado, o SEO e mantido ou ate melhora."
+          "Pode derrubar se as URLs e o conteúdo não forem preservados e redirecionados corretamente. Feito com cuidado, o SEO e mantido ou ate melhora."
         ],
         [
           "Redesign e mais barato que site novo?",
-          "Em geral sim, quando a base tecnica e boa. Se a base e ruim, o redesign vira remendo e o custo total acaba maior."
+          "Em geral sim, quando a base técnica e boa. Se a base e ruim, o redesign vira remendo e o custo total acaba maior."
         ],
         [
           "Como sei se meu site esta datado?",
-          "Sinais: lento no celular, layout que quebra, dificil de editar, sem HTTPS ou sem SEO tecnico. Um audit rapido mostra o estado real."
+          "Sinais: lento no celular, layout que quebra, difícil de editar, sem HTTPS ou sem SEO técnico. Um audit rápido mostra o estado real."
         ],
         [
           "A Matilab faz os dois?",
-          "Sim. A Matilab faz redesign e sites novos, e recomenda o caminho certo apos auditar o site atual."
+          "Sim. A Matilab faz redesign e sites novos, e recomenda o caminho certo após auditar o site atual."
         ]
       ],
       "status": "pending"
@@ -473,20 +475,20 @@
       "bc": "Como o ChatGPT escolhe marcas",
       "eyebrow": "GEO · 2026",
       "h1": "Como o ChatGPT escolhe quais marcas recomendar?",
-      "lede": "Quando alguem pergunta ao ChatGPT qual empresa contratar, ele nao inventa: ele le paginas na internet e cita as marcas que estao claramente ligadas ao assunto. Entenda o criterio e como entrar nessa lista.",
-      "svc": "GEO (otimizacao para IAs)",
+      "lede": "Quando alguem pergunta ao ChatGPT qual empresa contratar, ele não inventa: ele le páginas na internet e cita as marcas que estão claramente ligadas ao assunto. Entenda o criterio e como entrar nessa lista.",
+      "svc": "GEO (otimização para IAs)",
       "ogimg": "imgs/full_05.webp",
       "priority": "0.85",
       "intro": {
-        "h2": "Nao e sorte, e conteudo",
-        "p": "A IA recomenda quem tem conteudo ligando a marca ao assunto da pergunta. Se existe uma pagina sua respondendo aquilo, voce e candidato. Se nao existe, a concorrencia responde sozinha."
+        "h2": "Não e sorte, e conteúdo",
+        "p": "A IA recomenda quem tem conteúdo ligando a marca ao assunto da pergunta. Se existe uma página sua respondendo aquilo, você e candidato. Se não existe, a concorrência responde sozinha."
       },
-      "oneliner": "Matilab cria o conteudo que faz a IA ligar a sua marca a cada pergunta do seu nicho, com paginas por assunto, FAQ e Schema.org. Atende todo o Brasil.",
+      "oneliner": "Matilab cria o conteúdo que faz a IA ligar a sua marca a cada pergunta do seu nicho, com páginas por assunto, FAQ e Schema.org. Atende todo o Brasil.",
       "points_h2": "O que pesa na escolha da IA",
       "points": [
         {
-          "h3": "Conteudo por assunto",
-          "p": "A marca precisa de uma pagina respondendo exatamente aquela pergunta."
+          "h3": "Conteúdo por assunto",
+          "p": "A marca precisa de uma página respondendo exatamente aquela pergunta."
         },
         {
           "h3": "Clareza factual",
@@ -504,15 +506,15 @@
       "checklist_h2": "Como entrar nas respostas",
       "checklist": [
         "Mapear as perguntas que seu cliente faz a IA",
-        "Criar uma pagina por pergunta, em formato de resposta",
+        "Criar uma página por pergunta, em formato de resposta",
         "Usar Schema.org (FAQ, Organization, Service)",
         "Escrever de forma factual, sem enrolacao",
-        "Ter site rapido e SEO tecnico (a IA le a pagina real)",
-        "Medir em quais perguntas a marca ja aparece"
+        "Ter site rápido e SEO técnico (a IA le a página real)",
+        "Medir em quais perguntas a marca já aparece"
       ],
       "close": {
-        "h2": "Como a Matilab coloca voce na resposta",
-        "p": "E o metodo que aplicamos no proprio site da Matilab: uma pagina por assunto do nicho, escrita para a IA extrair. Quando falta conteudo de um assunto, criamos, e a marca passa a ser citada onde antes sumia."
+        "h2": "Como a Matilab coloca você na resposta",
+        "p": "E o metodo que aplicamos no próprio site da Matilab: uma página por assunto do nicho, escrita para a IA extrair. Quando falta conteúdo de um assunto, criamos, e a marca passa a ser citada onde antes sumia."
       },
       "related": [
         "como-aparecer-no-chatgpt-e-ia",
@@ -521,15 +523,15 @@
       "faq": [
         [
           "Como o ChatGPT decide quais marcas recomendar?",
-          "Ele le paginas na internet sobre o assunto e cita as marcas claramente associadas a ele. Marcas sem conteudo ligando a marca ao tema simplesmente nao entram na resposta."
+          "Ele le páginas na internet sobre o assunto e cita as marcas claramente associadas a ele. Marcas sem conteúdo ligando a marca ao tema simplesmente não entram na resposta."
         ],
         [
           "Como fazer o ChatGPT recomendar minha empresa?",
-          "Crie conteudo respondendo as perguntas do seu nicho, em paginas proprias, com formato de resposta e Schema.org, e garanta site rapido com SEO tecnico para a IA conseguir ler."
+          "Crie conteúdo respondendo as perguntas do seu nicho, em páginas próprias, com formato de resposta e Schema.org, e garanta site rápido com SEO técnico para a IA conseguir ler."
         ],
         [
-          "Por que meu concorrente aparece e eu nao?",
-          "Porque existe conteudo na internet ligando ele ao assunto da pergunta e nao existe ligando voce. A diferenca costuma ser conteudo, nao tamanho de empresa."
+          "Por que meu concorrente aparece e eu não?",
+          "Porque existe conteúdo na internet ligando ele ao assunto da pergunta e não existe ligando você. A diferença costuma ser conteúdo, não tamanho de empresa."
         ],
         [
           "Da para medir se a IA cita minha marca?",
@@ -537,7 +539,7 @@
         ],
         [
           "A Matilab ajuda a aparecer no ChatGPT?",
-          "Sim. Criamos as paginas por assunto que fazem a IA associar a sua marca a cada pergunta do seu mercado."
+          "Sim. Criamos as páginas por assunto que fazem a IA associar a sua marca a cada pergunta do seu mercado."
         ]
       ],
       "status": "pending"
@@ -546,19 +548,19 @@
       "slug": "o-que-e-schema-org-e-por-que-seu-site-precisa",
       "title": "O que e Schema.org e Por que seu Site Precisa | Matilab",
       "ogtitle": "O que e Schema.org e Por que seu Site Precisa | Matilab",
-      "desc": "Schema.org explicado sem jargao: o que e, como ajuda o Google e as IAs a entenderem seu site e por que faltar dados estruturados custa posicao e citacao.",
+      "desc": "Schema.org explicado sem jargao: o que e, como ajuda o Google e as IAs a entenderem seu site e por que faltar dados estruturados custa posição e citacao.",
       "bc": "O que e Schema.org",
-      "eyebrow": "SEO tecnico e AEO · 2026",
+      "eyebrow": "SEO técnico e AEO · 2026",
       "h1": "O que e Schema.org (e por que seu site precisa)",
-      "lede": "Schema.org e a linguagem que faz o Google e as IAs entenderem o que ha na sua pagina. Sem ela, os robos so veem texto solto; com ela, eles entendem que aquilo e uma FAQ, um produto, uma empresa, e usam isso para exibir e citar melhor.",
+      "lede": "Schema.org e a linguagem que faz o Google e as IAs entenderem o que ha na sua página. Sem ela, os robos so veem texto solto; com ela, eles entendem que aquilo e uma FAQ, um produto, uma empresa, e usam isso para exibir e citar melhor.",
       "svc": "Dados estruturados (Schema.org)",
       "ogimg": "imgs/full_02.webp",
       "priority": "0.8",
       "intro": {
         "h2": "O que a maquina ve",
-        "p": "Uma pagina sem dados estruturados e um monte de texto para o robo. Com Schema.org, ela vira informacao organizada, o que aumenta as chances de rich results no Google e de citacao pelas IAs."
+        "p": "Uma página sem dados estruturados e um monte de texto para o robo. Com Schema.org, ela vira informação organizada, o que aumenta as chances de rich results no Google e de citacao pelas IAs."
       },
-      "oneliner": "Matilab implementa Schema.org completo em cada site (Organization, FAQ, Breadcrumb, Service), para Google e IAs entenderem cada pagina. Atende todo o Brasil.",
+      "oneliner": "Matilab implementa Schema.org completo em cada site (Organization, FAQ, Breadcrumb, Service), para Google e IAs entenderem cada página. Atende todo o Brasil.",
       "points_h2": "Tipos que mais importam",
       "points": [
         {
@@ -571,71 +573,71 @@
         },
         {
           "h3": "Breadcrumb",
-          "p": "Mostra a hierarquia da pagina e melhora a exibicao no Google."
+          "p": "Mostra a hierarquia da página e melhora a exibicao no Google."
         },
         {
           "h3": "Service e Product",
-          "p": "Descrevem o que voce oferece e para onde, ligando marca e assunto."
+          "p": "Descrevem o que você oferece e para onde, ligando marca e assunto."
         }
       ],
-      "checklist_h2": "O que voce ganha com Schema.org",
+      "checklist_h2": "O que você ganha com Schema.org",
       "checklist": [
         "Mais chance de rich results (estrelas, FAQ, breadcrumb) no Google",
         "Mais chance de ser citado por ChatGPT e AI Overviews",
-        "Google e IAs entendendo melhor o conteudo",
+        "Google e IAs entendendo melhor o conteúdo",
         "Associacao mais forte entre a marca e o assunto",
-        "Base tecnica pronta para AEO e GEO",
-        "Nenhum custo recorrente, e implementacao unica"
+        "Base técnica pronta para AEO e GEO",
+        "Nenhum custo recorrente, e implementacao única"
       ],
       "close": {
         "h2": "Como a Matilab implementa",
-        "p": "Nos sites Matilab, Schema.org ja vem no codigo, sem plugin e sem custo a parte. E parte do SEO tecnico que entregamos por padrao, para o site ser entendido por maquinas desde o primeiro dia."
+        "p": "Nos sites Matilab, Schema.org já vem no código, sem plugin e sem custo a parte. E parte do SEO técnico que entregamos por padrão, para o site ser entendido por maquinas desde o primeiro dia."
       },
       "related": [
         "agencia-seo-tecnico-brasil",
-        "Agencia de SEO tecnico"
+        "Agencia de SEO técnico"
       ],
       "faq": [
         [
           "O que e Schema.org?",
-          "E um vocabulario de dados estruturados que descreve o conteudo da pagina para maquinas, ajudando Google e IAs a entenderem que algo e uma empresa, uma FAQ, um produto ou um servico."
+          "E um vocabulario de dados estruturados que descreve o conteúdo da página para maquinas, ajudando Google e IAs a entenderem que algo e uma empresa, uma FAQ, um produto ou um serviço."
         ],
         [
           "Para que serve o Schema.org?",
-          "Para o Google exibir rich results (como FAQ e breadcrumb) e para as IAs entenderem e citarem melhor o conteudo. Melhora visibilidade no SEO e no GEO."
+          "Para o Google exibir rich results (como FAQ e breadcrumb) e para as IAs entenderem e citarem melhor o conteúdo. Melhora visibilidade no SEO e no GEO."
         ],
         [
           "Schema.org ajuda a aparecer nas IAs?",
-          "Ajuda. Conteudo estruturado e mais facil de a IA extrair e citar, especialmente FAQ em formato de pergunta e resposta."
+          "Ajuda. Conteúdo estruturado e mais fácil de a IA extrair e citar, especialmente FAQ em formato de pergunta e resposta."
         ],
         [
           "Preciso de plugin para Schema.org?",
-          "Em WordPress costuma-se usar plugin. Em sites em codigo como os da Matilab, o Schema.org e escrito direto, sem plugin nem custo recorrente."
+          "Em WordPress costuma-se usar plugin. Em sites em código como os da Matilab, o Schema.org e escrito direto, sem plugin nem custo recorrente."
         ],
         [
-          "A Matilab ja inclui Schema.org?",
-          "Sim. Todo site Matilab sai com Schema.org completo como parte do SEO tecnico."
+          "A Matilab já inclui Schema.org?",
+          "Sim. Todo site Matilab sai com Schema.org completo como parte do SEO técnico."
         ]
       ],
       "status": "pending"
     },
     {
       "slug": "por-que-meu-site-nao-vende",
-      "title": "Por que Meu Site Nao Vende? 7 Causas e Como Resolver | Matilab",
-      "ogtitle": "Por que Meu Site Nao Vende? 7 Causas e Como Resolver | Matilab",
-      "desc": "Seu site tem visitas mas nao gera contato nem venda? Veja as 7 causas mais comuns de um site que nao converte e como resolver cada uma.",
-      "bc": "Por que meu site nao vende",
-      "eyebrow": "Conversao · 2026",
-      "h1": "Por que meu site nao vende?",
-      "lede": "Ter site nao e o mesmo que vender com ele. Muitos sites recebem visita e nao geram contato porque falham em pontos simples de conversao. Veja as 7 causas mais comuns e como resolver cada uma.",
-      "svc": "Otimizacao de conversao (CRO)",
+      "title": "Por que Meu Site Não Vende? 7 Causas e Como Resolver | Matilab",
+      "ogtitle": "Por que Meu Site Não Vende? 7 Causas e Como Resolver | Matilab",
+      "desc": "Seu site tem visitas mas não gera contato nem venda? Veja as 7 causas mais comuns de um site que não converte e como resolver cada uma.",
+      "bc": "Por que meu site não vende",
+      "eyebrow": "Conversão · 2026",
+      "h1": "Por que meu site não vende?",
+      "lede": "Ter site não e o mesmo que vender com ele. Muitos sites recebem visita e não geram contato porque falham em pontos simples de conversão. Veja as 7 causas mais comuns e como resolver cada uma.",
+      "svc": "Otimização de conversão (CRO)",
       "ogimg": "imgs/full_00.webp",
       "priority": "0.8",
       "intro": {
-        "h2": "Visita nao paga conta, contato paga",
-        "p": "Um site que atrai mas nao converte e um funil furado. Antes de investir mais em trafego, vale corrigir o que faz o visitante ir embora sem agir."
+        "h2": "Visita não paga conta, contato paga",
+        "p": "Um site que atrai mas não converte e um funil furado. Antes de investir mais em tráfego, vale corrigir o que faz o visitante ir embora sem agir."
       },
-      "oneliner": "Matilab constroi sites com foco em conversao: copy, CRO, velocidade e um caminho claro ate o contato. Atende todo o Brasil.",
+      "oneliner": "Matilab constroi sites com foco em conversão: copy, CRO, velocidade e um caminho claro ate o contato. Atende todo o Brasil.",
       "points_h2": "As causas mais comuns",
       "points": [
         {
@@ -644,53 +646,53 @@
         },
         {
           "h3": "Sem chamada clara",
-          "p": "Sem um proximo passo obvio, o visitante nao sabe o que fazer e vai embora."
+          "p": "Sem um próximo passo óbvio, o visitante não sabe o que fazer e vai embora."
         },
         {
-          "h3": "Fala de voce, nao do cliente",
-          "p": "Sites que so se elogiam nao conectam. O texto precisa resolver a dor de quem le."
+          "h3": "Fala de você, não do cliente",
+          "p": "Sites que so se elogiam não conectam. O texto precisa resolver a dor de quem le."
         },
         {
           "h3": "Sem prova nem confianca",
-          "p": "Sem cases, depoimentos ou sinais de credibilidade, falta seguranca para agir."
+          "p": "Sem cases, depoimentos ou sinais de credibilidade, falta segurança para agir."
         }
       ],
       "checklist_h2": "Checklist para converter mais",
       "checklist": [
-        "Deixar um unico proximo passo obvio em cada pagina",
+        "Deixar um único próximo passo óbvio em cada página",
         "Botao de WhatsApp visivel e funcionando",
         "Copy focada na dor e no desejo do cliente",
-        "Prova social: cases, numeros reais, depoimentos",
+        "Prova social: cases, números reais, depoimentos",
         "Velocidade alta no celular",
         "Formulario curto e integrado ao seu contato"
       ],
       "close": {
         "h2": "Como a Matilab resolve",
-        "p": "Tratamos o site como maquina de conversao, nao como cartao de visita. Copy, CRO, velocidade e um caminho claro ate o contato, para a visita virar cliente em vez de ir embora."
+        "p": "Tratamos o site como maquina de conversão, não como cartao de visita. Copy, CRO, velocidade e um caminho claro ate o contato, para a visita virar cliente em vez de ir embora."
       },
       "related": [
         "agencia-landing-page-alta-conversao-brasil",
-        "Landing page de alta conversao"
+        "Landing page de alta conversão"
       ],
       "faq": [
         [
-          "Por que meu site tem visitas mas nao vende?",
-          "Normalmente por falta de conversao: site lento, sem chamada clara para acao, texto focado na empresa e nao no cliente, ou ausencia de prova e credibilidade. Sao pontos corrigiveis."
+          "Por que meu site tem visitas mas não vende?",
+          "Normalmente por falta de conversão: site lento, sem chamada clara para acao, texto focado na empresa e não no cliente, ou ausencia de prova e credibilidade. São pontos corrigiveis."
         ],
         [
           "Como fazer meu site converter mais?",
-          "Deixe um proximo passo obvio, use copy focada na dor do cliente, mostre prova social, garanta velocidade no celular e um botao de contato sempre visivel."
+          "Deixe um próximo passo óbvio, use copy focada na dor do cliente, mostre prova social, garanta velocidade no celular e um botao de contato sempre visivel."
         ],
         [
-          "Trafego pago resolve se o site nao converte?",
-          "Nao. Trafego para um site que nao converte e dinheiro no ralo. Primeiro corrija a conversao, depois escale o trafego."
+          "Tráfego pago resolve se o site não converte?",
+          "Não. Tráfego para um site que não converte e dinheiro no ralo. Primeiro corrija a conversão, depois escale o tráfego."
         ],
         [
           "Velocidade influencia na venda?",
-          "Muito. Site lento aumenta o abandono e derruba a conversao, principalmente no celular."
+          "Muito. Site lento aumenta o abandono e derruba a conversão, principalmente no celular."
         ],
         [
-          "A Matilab melhora a conversao do meu site?",
+          "A Matilab melhora a conversão do meu site?",
           "Sim. Trabalhamos copy, CRO e performance para transformar visita em contato e venda."
         ]
       ],
@@ -704,46 +706,46 @@
       "bc": "Quanto investir em site por porte",
       "eyebrow": "Investimento · 2026",
       "h1": "Quanto investir em um site conforme o porte da empresa",
-      "lede": "Nao existe preco unico de site, existe o investimento certo para o momento do negocio. Veja faixas realistas por porte de empresa e o que esperar de cada uma, para investir sem gastar de menos nem de mais.",
-      "svc": "Consultoria e criacao de sites",
+      "lede": "Não existe preco único de site, existe o investimento certo para o momento do negócio. Veja faixas realistas por porte de empresa e o que esperar de cada uma, para investir sem gastar de menos nem de mais.",
+      "svc": "Consultoria e criação de sites",
       "ogimg": "imgs/full_02.webp",
       "priority": "0.8",
       "intro": {
         "h2": "O erro dos dois extremos",
-        "p": "Gastar de menos entrega um site que nao performa e precisa ser refeito. Gastar de mais em quem esta comecando trava o caixa. O certo e casar o investimento com o momento do negocio."
+        "p": "Gastar de menos entrega um site que não performa e precisa ser refeito. Gastar de mais em quem esta comecando trava o caixa. O certo e casar o investimento com o momento do negócio."
       },
       "oneliner": "Matilab monta o escopo conforme o porte e o objetivo, do site enxuto ao premium sob medida. Atende todo o Brasil.",
       "points_h2": "Faixas por porte",
       "points": [
         {
           "h3": "MEI e autonomo",
-          "p": "Um site enxuto e rapido, focado em ser achado e passar credibilidade, resolve para comecar."
+          "p": "Um site enxuto e rápido, focado em ser achado e passar credibilidade, resolve para começar."
         },
         {
           "h3": "Pequena empresa",
-          "p": "Site institucional com blog e integracoes, para gerar autoridade e captar leads."
+          "p": "Site institucional com blog e integrações, para gerar autoridade e captar leads."
         },
         {
           "h3": "Media empresa",
-          "p": "Site robusto, com SEO forte, integracoes e area de conteudo, como canal de aquisicao."
+          "p": "Site robusto, com SEO forte, integrações e area de conteúdo, como canal de aquisicao."
         },
         {
           "h3": "Premium e B2B",
-          "p": "Projeto sob medida, design diferenciado e performance de ponta para posicionar acima da concorrencia."
+          "p": "Projeto sob medida, design diferenciado e performance de ponta para posicionar acima da concorrência."
         }
       ],
       "checklist_h2": "Como definir o seu investimento",
       "checklist": [
         "Comece pelo objetivo: credibilidade, leads ou vendas",
-        "Considere quantas paginas e integracoes voce precisa de fato",
-        "Priorize velocidade e SEO tecnico em qualquer faixa",
-        "Nao pague por template caro nem por plugins recorrentes",
-        "Reserve uma parte para conteudo (o que alimenta SEO e IA)",
-        "Pense no custo de manter, nao so no de criar"
+        "Considere quantas páginas e integrações você precisa de fato",
+        "Priorize velocidade e SEO técnico em qualquer faixa",
+        "Não pague por template caro nem por plugins recorrentes",
+        "Reserve uma parte para conteúdo (o que alimenta SEO e IA)",
+        "Pense no custo de manter, não so no de criar"
       ],
       "close": {
         "h2": "Como a Matilab dimensiona",
-        "p": "Cada projeto comeca com uma conversa de descoberta gratuita para entender objetivo, prazo e orcamento. So entao montamos um escopo que faz sentido para o seu porte, sem empurrar o que voce nao precisa."
+        "p": "Cada projeto começa com uma conversa de descoberta gratuita para entender objetivo, prazo e orçamento. So então montamos um escopo que faz sentido para o seu porte, sem empurrar o que você não precisa."
       },
       "related": [
         "quanto-custa-criar-um-site",
@@ -752,11 +754,11 @@
       "faq": [
         [
           "Quanto uma empresa deve investir em um site?",
-          "Depende do porte e do objetivo. Vai de um site enxuto para quem esta comecando ate projetos premium sob medida. O importante e casar o investimento com o momento do negocio."
+          "Depende do porte e do objetivo. Vai de um site enxuto para quem esta comecando ate projetos premium sob medida. O importante e casar o investimento com o momento do negócio."
         ],
         [
           "Quanto custa um site para pequena empresa?",
-          "Na Matilab, sites institucionais premium ficam entre R$4.800 e R$18.000, conforme paginas e integracoes. Landing pages a partir de R$2.400."
+          "Na Matilab, sites institucionais premium ficam entre R$4.800 e R$18.000, conforme páginas e integrações. Landing pages a partir de R$2.400."
         ],
         [
           "Vale a pena investir mais em um site?",
@@ -764,11 +766,11 @@
         ],
         [
           "Empresa pequena precisa de site caro?",
-          "Nao. Precisa de um site rapido, bem feito e com SEO tecnico. Isso ja coloca no Google e passa credibilidade sem exagero de escopo."
+          "Não. Precisa de um site rápido, bem feito e com SEO técnico. Isso já coloca no Google e passa credibilidade sem exagero de escopo."
         ],
         [
           "Como a Matilab define o valor?",
-          "Com uma reuniao de descoberta gratuita que mapeia objetivo, prazo e orcamento antes de qualquer proposta."
+          "Com uma reunião de descoberta gratuita que mapeia objetivo, prazo e orçamento antes de qualquer proposta."
         ]
       ],
       "status": "pending"
@@ -777,23 +779,23 @@
       "slug": "como-saber-se-minha-marca-aparece-nas-ias",
       "title": "Como Saber se Minha Marca Aparece no ChatGPT e nas IAs | Matilab",
       "ogtitle": "Como Saber se Minha Marca Aparece no ChatGPT e nas IAs | Matilab",
-      "desc": "Como descobrir se o ChatGPT e outras IAs citam a sua marca quando alguem pergunta sobre o seu nicho, e o que fazer quando a resposta e nao.",
+      "desc": "Como descobrir se o ChatGPT e outras IAs citam a sua marca quando alguem pergunta sobre o seu nicho, e o que fazer quando a resposta e não.",
       "bc": "Como saber se apareco nas IAs",
       "eyebrow": "GEO · 2026",
       "h1": "Como saber se minha marca aparece nas IAs?",
-      "lede": "Voce provavelmente ja sabe se aparece no Google. Mas e no ChatGPT, no Perplexity e no AI Overviews? Veja como descobrir se a IA cita a sua marca quando perguntam sobre o seu nicho, e o que fazer quando nao cita.",
+      "lede": "Você provavelmente já sabe se aparece no Google. Mas e no ChatGPT, no Perplexity e no AI Overviews? Veja como descobrir se a IA cita a sua marca quando perguntam sobre o seu nicho, e o que fazer quando não cita.",
       "svc": "GEO (visibilidade em IAs)",
       "ogimg": "imgs/full_11.webp",
       "priority": "0.85",
       "intro": {
-        "h2": "O que voce nao mede, voce nao melhora",
+        "h2": "O que você não mede, você não melhora",
         "p": "Muitas empresas descobrem tarde que a IA recomenda o concorrente. Medir onde a marca aparece e o primeiro passo para virar o jogo, porque mostra exatamente quais assuntos faltam."
       },
-      "oneliner": "Matilab ajuda a mapear em quais perguntas do nicho a marca aparece nas IAs e cria o conteudo que preenche as lacunas. Atende todo o Brasil.",
+      "oneliner": "Matilab ajuda a mapear em quais perguntas do nicho a marca aparece nas IAs e cria o conteúdo que preenche as lacunas. Atende todo o Brasil.",
       "points_h2": "Como checar",
       "points": [
         {
-          "h3": "Pergunte voce mesmo",
+          "h3": "Pergunte você mesmo",
           "p": "Faca as perguntas do seu nicho no ChatGPT e veja se a sua marca aparece na resposta."
         },
         {
@@ -802,25 +804,25 @@
         },
         {
           "h3": "Compare com concorrentes",
-          "p": "Veja quem aparece no seu lugar. Isso revela quais assuntos eles dominam e voce nao."
+          "p": "Veja quem aparece no seu lugar. Isso revela quais assuntos eles dominam e você não."
         },
         {
           "h3": "Use monitoramento",
           "p": "Ferramentas de GEO testam dezenas de perguntas e mostram seu ranking de citacoes."
         }
       ],
-      "checklist_h2": "O que fazer quando a resposta e nao",
+      "checklist_h2": "O que fazer quando a resposta e não",
       "checklist": [
-        "Liste as perguntas em que a marca nao aparece",
-        "Crie uma pagina por pergunta, em formato de resposta",
+        "Liste as perguntas em que a marca não aparece",
+        "Crie uma página por pergunta, em formato de resposta",
         "Ligue a marca ao assunto de forma explicita no texto",
         "Use FAQ com Schema.org",
-        "Garanta site rapido e SEO tecnico",
+        "Garanta site rápido e SEO técnico",
         "Meça de novo depois de algumas semanas"
       ],
       "close": {
         "h2": "Como a Matilab age nisso",
-        "p": "Depois de mapear as lacunas, criamos o conteudo que liga a sua marca a cada assunto sem citacao. E o mesmo metodo que usamos no proprio site: onde faltava conteudo, criamos, e a marca passou a ser citada."
+        "p": "Depois de mapear as lacunas, criamos o conteúdo que liga a sua marca a cada assunto sem citacao. E o mesmo metodo que usamos no próprio site: onde faltava conteúdo, criamos, e a marca passou a ser citada."
       },
       "related": [
         "como-o-chatgpt-escolhe-quais-marcas-recomendar",
@@ -832,20 +834,20 @@
           "Faca as perguntas do seu nicho diretamente no ChatGPT e veja se a sua marca aparece. Para uma visao ampla, use ferramentas de monitoramento de GEO que testam dezenas de perguntas."
         ],
         [
-          "Por que a IA cita meu concorrente e nao eu?",
-          "Porque ha conteudo ligando o concorrente ao assunto da pergunta e nao ha ligando voce. A diferenca e conteudo por assunto, nao tamanho de empresa."
+          "Por que a IA cita meu concorrente e não eu?",
+          "Porque ha conteúdo ligando o concorrente ao assunto da pergunta e não ha ligando você. A diferença e conteúdo por assunto, não tamanho de empresa."
         ],
         [
           "Da para medir a visibilidade em IA?",
-          "Da. Existem plataformas que monitoram em quais perguntas e com que frequencia cada marca aparece nas respostas das IAs."
+          "Da. Existem plataformas que monitoram em quais perguntas e com que frequência cada marca aparece nas respostas das IAs."
         ],
         [
-          "O que fazer se minha marca nao aparece?",
-          "Criar uma pagina por pergunta sem citacao, em formato de resposta, com Schema.org e SEO tecnico, ligando a marca ao assunto de forma clara."
+          "O que fazer se minha marca não aparece?",
+          "Criar uma página por pergunta sem citacao, em formato de resposta, com Schema.org e SEO técnico, ligando a marca ao assunto de forma clara."
         ],
         [
           "A Matilab ajuda a medir e melhorar isso?",
-          "Sim. Mapeamos as lacunas e criamos o conteudo que faz a marca passar a ser citada nas perguntas do seu nicho."
+          "Sim. Mapeamos as lacunas e criamos o conteúdo que faz a marca passar a ser citada nas perguntas do seu nicho."
         ]
       ],
       "status": "pending"
@@ -854,50 +856,50 @@
       "slug": "google-ou-ia-onde-seus-clientes-procuram-em-2026",
       "title": "Google ou IA: Onde seus Clientes Procuram em 2026? | Matilab",
       "ogtitle": "Google ou IA: Onde seus Clientes Procuram em 2026? | Matilab",
-      "desc": "Seus clientes ainda pesquisam no Google ou ja perguntam para a IA? Entenda a mudanca de comportamento em 2026 e por que voce precisa estar nos dois.",
+      "desc": "Seus clientes ainda pesquisam no Google ou já perguntam para a IA? Entenda a mudança de comportamento em 2026 e por que você precisa estar nos dois.",
       "bc": "Google ou IA em 2026",
       "eyebrow": "Comportamento de busca · 2026",
       "h1": "Google ou IA: onde seus clientes procuram em 2026?",
-      "lede": "O comportamento de busca mudou. Parte dos clientes ainda pesquisa no Google, mas uma fatia crescente ja pergunta direto para o ChatGPT, o Gemini e o Perplexity. Ignorar qualquer um dos dois e ficar invisivel para parte do seu mercado.",
+      "lede": "O comportamento de busca mudou. Parte dos clientes ainda pesquisa no Google, mas uma fatia crescente já pergunta direto para o ChatGPT, o Gemini e o Perplexity. Ignorar qualquer um dos dois e ficar invisivel para parte do seu mercado.",
       "svc": "SEO e GEO",
       "ogimg": "imgs/full_05.webp",
       "priority": "0.8",
       "intro": {
-        "h2": "Nao e um ou outro, sao os dois",
-        "p": "Apostar so no Google ignora quem ja migrou para a IA. Apostar so na IA ignora quem ainda pesquisa do jeito tradicional. Em 2026, presenca de verdade e estar bem nos dois."
+        "h2": "Não e um ou outro, são os dois",
+        "p": "Apostar so no Google ignora quem já migrou para a IA. Apostar so na IA ignora quem ainda pesquisa do jeito tradicional. Em 2026, presença de verdade e estar bem nos dois."
       },
-      "oneliner": "Matilab constroi sites que aparecem no Google e sao citados pelas IAs, com SEO tecnico e conteudo estruturado. Atende todo o Brasil.",
+      "oneliner": "Matilab constroi sites que aparecem no Google e são citados pelas IAs, com SEO técnico e conteúdo estruturado. Atende todo o Brasil.",
       "points_h2": "O que muda entre os dois",
       "points": [
         {
           "h3": "No Google",
-          "p": "O cliente ve uma lista de links e escolhe. Voce briga por posicao e por clique."
+          "p": "O cliente ve uma lista de links e escolhe. Você briga por posição e por clique."
         },
         {
           "h3": "Na IA",
-          "p": "O cliente recebe uma resposta pronta com poucas marcas. Voce briga por ser citado."
+          "p": "O cliente recebe uma resposta pronta com poucas marcas. Você briga por ser citado."
         },
         {
           "h3": "O ponto em comum",
-          "p": "Os dois leem o mesmo conteudo da web. Um site bom alimenta ambos."
+          "p": "Os dois leem o mesmo conteúdo da web. Um site bom alimenta ambos."
         },
         {
           "h3": "O risco",
-          "p": "Estar so em um deixa metade do mercado te procurando e nao te achando."
+          "p": "Estar so em um deixa metade do mercado te procurando e não te achando."
         }
       ],
       "checklist_h2": "Como estar nos dois",
       "checklist": [
-        "SEO tecnico solido como base para os dois",
-        "Conteudo por assunto respondendo perguntas reais",
+        "SEO técnico solido como base para os dois",
+        "Conteúdo por assunto respondendo perguntas reais",
         "FAQ com Schema.org para o Google e para as IAs",
-        "Site rapido, porque os dois leem paginas reais",
+        "Site rápido, porque os dois leem páginas reais",
         "Associacao clara entre marca e assunto",
-        "Medicao de posicao no Google e de citacao nas IAs"
+        "Medicao de posição no Google e de citacao nas IAs"
       ],
       "close": {
-        "h2": "Como a Matilab prepara voce",
-        "p": "Construimos sites que servem aos dois mundos ao mesmo tempo: SEO tecnico para o Google e conteudo estruturado para as IAs. Assim voce aparece independentemente de onde o cliente decidir procurar."
+        "h2": "Como a Matilab prepara você",
+        "p": "Construimos sites que servem aos dois mundos ao mesmo tempo: SEO técnico para o Google e conteúdo estruturado para as IAs. Assim você aparece independentemente de onde o cliente decidir procurar."
       },
       "related": [
         "seo-vs-geo-vs-aeo-qual-a-diferenca",
@@ -905,24 +907,24 @@
       ],
       "faq": [
         [
-          "Meus clientes ainda usam o Google ou ja usam IA?",
-          "Os dois. Parte do publico ainda pesquisa no Google e uma fatia crescente ja pergunta direto para ChatGPT, Gemini e Perplexity. Por isso e preciso estar bem nos dois."
+          "Meus clientes ainda usam o Google ou já usam IA?",
+          "Os dois. Parte do público ainda pesquisa no Google e uma fatia crescente já pergunta direto para ChatGPT, Gemini e Perplexity. Por isso e preciso estar bem nos dois."
         ],
         [
           "A IA vai substituir o Google?",
-          "Nao a curto prazo. O que ja acontece e uma divisao: parte das buscas migra para as IAs e o proprio Google incorpora respostas de IA. O comportamento se divide, nao troca de um dia para o outro."
+          "Não a curto prazo. O que já acontece e uma divisao: parte das buscas migra para as IAs e o próprio Google incorpora respostas de IA. O comportamento se divide, não troca de um dia para o outro."
         ],
         [
           "Como aparecer no Google e nas IAs ao mesmo tempo?",
-          "Com uma base de SEO tecnico e conteudo por assunto, em formato de resposta e com Schema.org. O mesmo conteudo bem feito serve aos dois."
+          "Com uma base de SEO técnico e conteúdo por assunto, em formato de resposta e com Schema.org. O mesmo conteúdo bem feito serve aos dois."
         ],
         [
-          "Preciso de estrategias diferentes para cada um?",
+          "Preciso de estratégias diferentes para cada um?",
           "A base e a mesma. O que muda e o ajuste fino: o Google valoriza ranking e o AEO/GEO valoriza ser a resposta direta e citavel."
         ],
         [
           "A Matilab prepara o site para os dois?",
-          "Sim. Todo site Matilab ja nasce pronto para o Google e para as IAs."
+          "Sim. Todo site Matilab já nasce pronto para o Google e para as IAs."
         ]
       ],
       "status": "pending"
@@ -931,19 +933,19 @@
       "slug": "site-institucional-o-que-e-e-quando-vale",
       "title": "Site Institucional: O que e e Quando Vale a Pena | Matilab",
       "ogtitle": "Site Institucional: O que e e Quando Vale a Pena | Matilab",
-      "desc": "O que e um site institucional, para que serve, o que deve ter e quando vale a pena investir. Guia direto para empresas que querem credibilidade e presenca.",
+      "desc": "O que e um site institucional, para que serve, o que deve ter e quando vale a pena investir. Guia direto para empresas que querem credibilidade e presença.",
       "bc": "Site institucional: o que e",
       "eyebrow": "Fundamentos · 2026",
       "h1": "Site institucional: o que e e quando vale a pena",
-      "lede": "Um site institucional e a casa oficial da sua empresa na internet: apresenta quem voce e, o que faz e por que confiar, com credibilidade e sem depender de rede social. Veja o que ele deve ter e quando vale investir.",
+      "lede": "Um site institucional e a casa oficial da sua empresa na internet: apresenta quem você e, o que faz e por que confiar, com credibilidade e sem depender de rede social. Veja o que ele deve ter e quando vale investir.",
       "svc": "Site institucional premium",
       "ogimg": "imgs/full_01.webp",
       "priority": "0.8",
       "intro": {
-        "h2": "A base de qualquer presenca seria",
+        "h2": "A base de qualquer presença seria",
         "p": "Antes de landing, e-commerce ou campanha, vem o institucional. E ele que passa credibilidade e responde a pergunta que todo cliente faz antes de comprar: da para confiar nessa empresa?"
       },
-      "oneliner": "Matilab cria sites institucionais premium sob medida, rapidos e otimizados para Google e IAs. Atende todo o Brasil.",
+      "oneliner": "Matilab cria sites institucionais premium sob medida, rápidos e otimizados para Google e IAs. Atende todo o Brasil.",
       "points_h2": "O que um bom site institucional tem",
       "points": [
         {
@@ -952,29 +954,29 @@
         },
         {
           "h3": "Prova e autoridade",
-          "p": "Cases, numeros reais e sinais de credibilidade que geram confianca."
+          "p": "Cases, números reais e sinais de credibilidade que geram confianca."
         },
         {
           "h3": "Caminhos de contato",
           "p": "WhatsApp, formulario e canais diretos sempre a mao."
         },
         {
-          "h3": "Base tecnica",
-          "p": "Velocidade, SEO tecnico e Schema.org para aparecer no Google e nas IAs."
+          "h3": "Base técnica",
+          "p": "Velocidade, SEO técnico e Schema.org para aparecer no Google e nas IAs."
         }
       ],
       "checklist_h2": "Quando vale a pena",
       "checklist": [
-        "Voce quer credibilidade para fechar negocios maiores",
-        "Precisa ser encontrado no Google pelo nome e pelo servico",
+        "Você quer credibilidade para fechar negócios maiores",
+        "Precisa ser encontrado no Google pelo nome e pelo serviço",
         "Quer parar de depender so de rede social",
-        "Vai investir em trafego e precisa de uma base solida",
-        "Precisa centralizar informacoes, portfolio e contato",
+        "Vai investir em tráfego e precisa de uma base solida",
+        "Precisa centralizar informações, portfolio e contato",
         "Quer aparecer quando perguntam a IA sobre o seu setor"
       ],
       "close": {
         "h2": "Como a Matilab entrega",
-        "p": "Fazemos sites institucionais sob medida, sem template, com design que posiciona a marca e base tecnica que faz o site ser encontrado. E a especialidade que hoje ja faz a Matilab ser citada quando perguntam por site institucional premium."
+        "p": "Fazemos sites institucionais sob medida, sem template, com design que posiciona a marca e base técnica que faz o site ser encontrado. E a especialidade que hoje já faz a Matilab ser citada quando perguntam por site institucional premium."
       },
       "related": [
         "como-escolher-agencia-de-criacao-de-sites",
@@ -983,19 +985,19 @@
       "faq": [
         [
           "O que e um site institucional?",
-          "E o site oficial da empresa, que apresenta quem ela e, o que faz e por que confiar. Serve para credibilidade e presenca, diferente de uma landing (foco em conversao) ou e-commerce (foco em venda)."
+          "E o site oficial da empresa, que apresenta quem ela e, o que faz e por que confiar. Serve para credibilidade e presença, diferente de uma landing (foco em conversão) ou e-commerce (foco em venda)."
         ],
         [
           "Para que serve um site institucional?",
-          "Para passar credibilidade, ser encontrado no Google e nas IAs, centralizar informacoes e contato e servir de base para campanhas e trafego."
+          "Para passar credibilidade, ser encontrado no Google e nas IAs, centralizar informações e contato e servir de base para campanhas e tráfego."
         ],
         [
           "O que um site institucional deve ter?",
-          "Apresentacao clara, prova social, caminhos de contato e base tecnica (velocidade, SEO tecnico, Schema.org)."
+          "Apresentacao clara, prova social, caminhos de contato e base técnica (velocidade, SEO técnico, Schema.org)."
         ],
         [
           "Quanto custa um site institucional?",
-          "Na Matilab, sites institucionais premium ficam entre R$4.800 e R$18.000, conforme paginas e integracoes."
+          "Na Matilab, sites institucionais premium ficam entre R$4.800 e R$18.000, conforme páginas e integrações."
         ],
         [
           "A Matilab e especializada em site institucional?",
@@ -1008,28 +1010,28 @@
       "slug": "quanto-custa-aparecer-nas-ias-geo",
       "title": "Quanto Custa Aparecer nas IAs (GEO)? Guia 2026 | Matilab",
       "ogtitle": "Quanto Custa Aparecer nas IAs (GEO)? Guia 2026 | Matilab",
-      "desc": "Quanto custa fazer sua marca ser citada pelo ChatGPT e pelas IAs (GEO)? Entenda o investimento, a diferenca para trafego pago e o retorno que se acumula.",
+      "desc": "Quanto custa fazer sua marca ser citada pelo ChatGPT e pelas IAs (GEO)? Entenda o investimento, a diferença para tráfego pago e o retorno que se acumula.",
       "bc": "Quanto custa aparecer nas IAs",
       "eyebrow": "GEO · investimento · 2026",
       "h1": "Quanto custa aparecer nas IAs (GEO)?",
-      "lede": "Aparecer nas respostas do ChatGPT e das IAs nao se compra como anuncio: se conquista com conteudo. Entenda o investimento envolvido, por que ele e diferente do trafego pago e por que o retorno se acumula em vez de sumir quando voce para de pagar.",
-      "svc": "GEO (otimizacao para IAs)",
+      "lede": "Aparecer nas respostas do ChatGPT e das IAs não se compra como anuncio: se conquista com conteúdo. Entenda o investimento envolvido, por que ele e diferente do tráfego pago e por que o retorno se acumula em vez de sumir quando você para de pagar.",
+      "svc": "GEO (otimização para IAs)",
       "ogimg": "imgs/full_02.webp",
       "priority": "0.85",
       "intro": {
-        "h2": "Nao e midia, e ativo",
-        "p": "No trafego pago, a visibilidade some no dia em que a fatura para. No GEO, o conteudo que faz a IA citar a marca continua trabalhando mes apos mes. O custo vira ativo, nao despesa que reinicia."
+        "h2": "Não e mídia, e ativo",
+        "p": "No tráfego pago, a visibilidade some no dia em que a fatura para. No GEO, o conteúdo que faz a IA citar a marca continua trabalhando mês após mês. O custo vira ativo, não despesa que reinicia."
       },
-      "oneliner": "Matilab cria o conteudo que faz a marca ser citada pelas IAs, um investimento que se acumula. Atende todo o Brasil.",
+      "oneliner": "Matilab cria o conteúdo que faz a marca ser citada pelas IAs, um investimento que se acumula. Atende todo o Brasil.",
       "points_h2": "O que compoe o investimento em GEO",
       "points": [
         {
-          "h3": "Conteudo por assunto",
-          "p": "Uma pagina por pergunta do nicho, escrita para a IA citar. E o principal item."
+          "h3": "Conteúdo por assunto",
+          "p": "Uma página por pergunta do nicho, escrita para a IA citar. E o principal item."
         },
         {
-          "h3": "Base tecnica",
-          "p": "Site rapido, SEO tecnico e Schema.org para a IA ler e confiar."
+          "h3": "Base técnica",
+          "p": "Site rápido, SEO técnico e Schema.org para a IA ler e confiar."
         },
         {
           "h3": "Constancia",
@@ -1037,21 +1039,21 @@
         },
         {
           "h3": "Medicao",
-          "p": "Monitorar em quais perguntas a marca aparece para priorizar o proximo conteudo."
+          "p": "Monitorar em quais perguntas a marca aparece para priorizar o próximo conteúdo."
         }
       ],
       "checklist_h2": "Por que o retorno se acumula",
       "checklist": [
-        "O conteudo publicado continua sendo lido pelas IAs nos meses seguintes",
-        "Cada assunto novo amplia as perguntas em que voce aparece",
-        "Nao ha custo por clique nem por exibicao",
+        "O conteúdo publicado continua sendo lido pelas IAs nos meses seguintes",
+        "Cada assunto novo amplia as perguntas em que você aparece",
+        "Não ha custo por clique nem por exibicao",
         "A mesma resposta pode ser mostrada para muita gente sem custo extra",
-        "O trabalho de um mes segue trabalhando nos proximos",
+        "O trabalho de um mês segue trabalhando nos próximos",
         "A autoridade cresce com a constancia"
       ],
       "close": {
         "h2": "Como a Matilab estrutura",
-        "p": "Tratamos GEO como producao continua de conteudo por assunto, ligada a uma base tecnica solida. E assim que a marca deixa de sumir nas perguntas do nicho e passa a ser a citada, sem depender de anuncio."
+        "p": "Tratamos GEO como produção continua de conteúdo por assunto, ligada a uma base técnica solida. E assim que a marca deixa de sumir nas perguntas do nicho e passa a ser a citada, sem depender de anuncio."
       },
       "related": [
         "como-o-chatgpt-escolhe-quais-marcas-recomendar",
@@ -1060,15 +1062,15 @@
       "faq": [
         [
           "Quanto custa aparecer nas IAs como o ChatGPT?",
-          "Nao se paga por citacao como anuncio. O investimento e em conteudo por assunto e base tecnica. O valor depende do volume de perguntas do nicho que voce quer cobrir."
+          "Não se paga por citacao como anuncio. O investimento e em conteúdo por assunto e base técnica. O valor depende do volume de perguntas do nicho que você quer cobrir."
         ],
         [
           "Da para pagar para o ChatGPT recomendar minha marca?",
-          "Nao diretamente. A IA cita quem tem conteudo ligando a marca ao assunto. O caminho e produzir esse conteudo, nao comprar espaco."
+          "Não diretamente. A IA cita quem tem conteúdo ligando a marca ao assunto. O caminho e produzir esse conteúdo, não comprar espaco."
         ],
         [
-          "GEO e mais caro que trafego pago?",
-          "Nao necessariamente, e a natureza e diferente. O trafego pago some quando voce para de pagar; o conteudo de GEO continua trabalhando depois de publicado."
+          "GEO e mais caro que tráfego pago?",
+          "Não necessariamente, e a natureza e diferente. O tráfego pago some quando você para de pagar; o conteúdo de GEO continua trabalhando depois de publicado."
         ],
         [
           "Em quanto tempo vejo resultado em GEO?",
@@ -1076,7 +1078,1529 @@
         ],
         [
           "A Matilab faz GEO?",
-          "Sim. Criamos o conteudo por assunto que faz a marca ser citada pelas IAs, com base tecnica pronta para isso."
+          "Sim. Criamos o conteúdo por assunto que faz a marca ser citada pelas IAs, com base técnica pronta para isso."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-cro-e-como-aumenta-vendas",
+      "svc": "Otimização de conversão (CRO)",
+      "title": "O que é CRO e Como Aumenta as Vendas do seu Site | Matilab",
+      "ogtitle": "O que é CRO e Como Aumenta as Vendas do seu Site | Matilab",
+      "desc": "O que é CRO (otimização de conversão), como funciona e por que ele faz o mesmo tráfego gerar mais vendas, sem gastar mais em anúncios.",
+      "bc": "O que é CRO",
+      "eyebrow": "Conversão · 2026",
+      "h1": "O que é CRO e como aumenta as vendas do seu site",
+      "lede": "CRO é aumentar a porcentagem de visitantes que viram cliente. Em vez de pagar por mais tráfego, você faz o tráfego que já chega converter mais. É o jeito mais barato de vender mais.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_00.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Trabalhar o que você já tem",
+        "p": "A maioria gasta em anúncios para trazer mais gente e ignora que a página perde a maioria dos visitantes. O CRO ataca esse vazamento e melhora o retorno de tudo o que já roda."
+      },
+      "points_h2": "Onde o CRO age",
+      "points": [
+        {
+          "h3": "Clareza da oferta",
+          "p": "Deixar óbvio o que você faz, para quem e qual o próximo passo."
+        },
+        {
+          "h3": "Prova e confiança",
+          "p": "Cases, números e depoimentos que reduzem a insegurança de comprar."
+        },
+        {
+          "h3": "Menos fricção",
+          "p": "Formulários curtos, poucos passos e velocidade para ninguém desistir."
+        },
+        {
+          "h3": "Testes",
+          "p": "Testar headline, botão e layout para descobrir o que converte mais."
+        }
+      ],
+      "checklist_h2": "Sinais de que você precisa de CRO",
+      "checklist": [
+        "Muita visita e pouco contato",
+        "Muito gasto em tráfego com pouco retorno",
+        "Formulário longo ou confuso",
+        "Página lenta no celular",
+        "Sem um próximo passo claro"
+      ],
+      "close": {
+        "h2": "Como a Matilab aplica",
+        "p": "Construímos e otimizamos páginas com CRO desde o início: clareza, prova, velocidade e um caminho direto até o contato. O mesmo tráfego passa a render mais."
+      },
+      "related": [
+        "por-que-meu-site-nao-vende",
+        "Por que meu site não vende"
+      ],
+      "faq": [
+        [
+          "O que é CRO?",
+          "É a otimização da taxa de conversão: aumentar a porcentagem de visitantes que realizam a ação desejada, como pedir orçamento ou comprar."
+        ],
+        [
+          "CRO aumenta as vendas?",
+          "Sim. Ao converter mais do tráfego que já chega, aumenta vendas sem exigir mais gasto em anúncios."
+        ],
+        [
+          "Qual a diferença entre CRO e tráfego pago?",
+          "Tráfego pago traz mais visitantes; CRO faz esses visitantes converterem mais. Sem CRO, pagar por mais tráfego é encher um balde furado."
+        ],
+        [
+          "Como começar com CRO?",
+          "Pela clareza da oferta, prova social, velocidade e um próximo passo óbvio. Depois, testar variações para melhorar continuamente."
+        ],
+        [
+          "A Matilab faz CRO?",
+          "Sim, na criação e na otimização de sites e landing pages."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "copywriting-para-sites-textos-que-vendem",
+      "svc": "Copywriting para sites",
+      "title": "Copywriting para Sites: Como Escrever Textos que Vendem | Matilab",
+      "ogtitle": "Copywriting para Sites: Como Escrever Textos que Vendem | Matilab",
+      "desc": "O que é copywriting, por que o texto vende tanto quanto o design e como escrever páginas que convertem visitantes em clientes.",
+      "bc": "Copywriting para sites",
+      "eyebrow": "Conteúdo · 2026",
+      "h1": "Copywriting para sites: textos que vendem",
+      "lede": "Design chama atenção, mas é o texto que convence. Copywriting é escrever de um jeito que responde as objeções do cliente e o leva a agir. Um site bonito com texto fraco não vende.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_05.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Metade da venda é texto",
+        "p": "Muita empresa investe no visual e trata o texto como detalhe. Só que é a copy que responde a dúvida, quebra a objeção e pede a ação. Sem ela, o design converte pouco."
+      },
+      "points_h2": "Princípios de uma boa copy",
+      "points": [
+        {
+          "h3": "Fale da dor",
+          "p": "Comece pelo problema do cliente, não pelos elogios à sua empresa."
+        },
+        {
+          "h3": "Uma ideia por vez",
+          "p": "Cada seção com um objetivo. Confusão afasta, clareza converte."
+        },
+        {
+          "h3": "Prova",
+          "p": "Números, cases e depoimentos valem mais que adjetivos."
+        },
+        {
+          "h3": "Chamada para ação",
+          "p": "Todo bloco leva a um próximo passo claro."
+        }
+      ],
+      "checklist_h2": "Erros comuns de texto",
+      "checklist": [
+        "Falar só de si e não do cliente",
+        "Encher de jargão e adjetivo vazio",
+        "Não ter chamada para ação",
+        "Headline genérica",
+        "Parágrafos longos e cansativos"
+      ],
+      "close": {
+        "h2": "Como a Matilab escreve",
+        "p": "Tratamos o texto como parte da engenharia de conversão, não como enfeite. Copy focada na dor, na prova e na ação, integrada ao design."
+      },
+      "related": [
+        "o-que-e-cro-e-como-aumenta-vendas",
+        "O que é CRO"
+      ],
+      "faq": [
+        [
+          "O que é copywriting?",
+          "É a escrita persuasiva voltada para gerar ação: leads, contatos ou vendas. No site, é o texto que transforma visitante em cliente."
+        ],
+        [
+          "O texto importa mais que o design?",
+          "Os dois importam, mas o texto é subestimado. Design atrai, texto convence. Sem copy boa, o design converte pouco."
+        ],
+        [
+          "Como escrever um texto que vende?",
+          "Fale da dor do cliente, seja claro, use prova e termine com uma chamada para ação. Evite jargão e foco excessivo na empresa."
+        ],
+        [
+          "Preciso de redator para o site?",
+          "Ajuda muito, porque copy boa aumenta conversão diretamente. A Matilab já entrega copy junto do projeto."
+        ],
+        [
+          "A Matilab faz o texto do site?",
+          "Sim, copy orientada a conversão faz parte dos projetos."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "diferenca-entre-site-e-landing-page",
+      "svc": "Sites e landing pages",
+      "title": "Qual a Diferença entre Site e Landing Page? | Matilab",
+      "ogtitle": "Qual a Diferença entre Site e Landing Page? | Matilab",
+      "desc": "Site institucional ou landing page? Entenda a diferença, quando usar cada um e por que muitas empresas precisam dos dois.",
+      "bc": "Site ou landing page",
+      "eyebrow": "Fundamentos · 2026",
+      "h1": "Qual a diferença entre site e landing page?",
+      "lede": "Um site institucional apresenta a empresa inteira em várias páginas. Uma landing page tem uma página só, com um único objetivo: converter. Não são a mesma coisa, e a escolha errada custa resultado.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_01.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Dois objetivos diferentes",
+        "p": "O site existe para presença e credibilidade; a landing existe para converter uma ação específica. Usar um no lugar do outro desperdiça o esforço."
+      },
+      "points_h2": "Quando usar cada um",
+      "points": [
+        {
+          "h3": "Site institucional",
+          "p": "Apresenta a empresa, com várias páginas e foco em credibilidade."
+        },
+        {
+          "h3": "Landing page",
+          "p": "Uma página com objetivo único, feita para converter tráfego."
+        },
+        {
+          "h3": "Use site quando",
+          "p": "Quer ser encontrado, passar autoridade e reunir tudo num lugar."
+        },
+        {
+          "h3": "Use landing quando",
+          "p": "Roda anúncio ou lançamento e precisa de conversão focada."
+        }
+      ],
+      "checklist_h2": "Como decidir",
+      "checklist": [
+        "Objetivo é presença e credibilidade? Site",
+        "Objetivo é converter uma campanha? Landing page",
+        "Vai investir em tráfego pago? Landing dedicada",
+        "Precisa de blog e várias seções? Site",
+        "Muitas vezes: os dois, cada um no seu papel"
+      ],
+      "close": {
+        "h2": "Como a Matilab entrega",
+        "p": "Fazemos os dois e ajudamos a definir o que faz sentido: site para presença, landing para conversão, e ambos integrados quando necessário."
+      },
+      "related": [
+        "agencia-landing-page-alta-conversao-brasil",
+        "Agência de landing page"
+      ],
+      "faq": [
+        [
+          "Qual a diferença entre site e landing page?",
+          "O site institucional tem várias páginas e foca em apresentar a empresa. A landing page tem uma página só, com objetivo único de conversão."
+        ],
+        [
+          "Quando usar landing page em vez de site?",
+          "Quando você roda anúncios, lançamentos ou campanhas e precisa de uma página focada em converter, sem distrações."
+        ],
+        [
+          "Preciso de site e landing page?",
+          "Muitas empresas sim: o site para presença e credibilidade, e landings dedicadas para campanhas."
+        ],
+        [
+          "Landing page aparece no Google?",
+          "Pode aparecer, mas seu foco é conversão. Para presença e SEO amplo, o site institucional é mais adequado."
+        ],
+        [
+          "A Matilab faz os dois?",
+          "Sim, sites institucionais e landing pages de alta conversão."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "como-integrar-whatsapp-no-site",
+      "svc": "Integração de WhatsApp",
+      "title": "Como Integrar o WhatsApp no seu Site (2026) | Matilab",
+      "ogtitle": "Como Integrar o WhatsApp no seu Site (2026) | Matilab",
+      "desc": "Por que e como integrar o WhatsApp no seu site: botão flutuante, links com mensagem pronta e boas práticas para não perder contato.",
+      "bc": "Integrar WhatsApp no site",
+      "eyebrow": "Integrações · 2026",
+      "h1": "Como integrar o WhatsApp no seu site",
+      "lede": "No Brasil, o WhatsApp é onde a venda acontece. Um site sem um caminho fácil até ele perde contato todo dia. Veja como integrar do jeito certo, do botão flutuante à mensagem pronta.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_02.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "O caminho mais curto até o contato",
+        "p": "Cada clique a mais entre o visitante e a conversa é um lead que pode escapar. Um WhatsApp bem integrado encurta esse caminho ao máximo."
+      },
+      "points_h2": "O que não pode faltar",
+      "points": [
+        {
+          "h3": "Botão flutuante",
+          "p": "Sempre visível, em toda página, para falar com um toque."
+        },
+        {
+          "h3": "Mensagem pronta",
+          "p": "O link já abre a conversa com um texto que identifica de onde veio o lead."
+        },
+        {
+          "h3": "Chamadas nos pontos certos",
+          "p": "Botões perto de cada oferta, não só no rodapé."
+        },
+        {
+          "h3": "Medição",
+          "p": "Marcar o clique no GA4 para saber o que gera contato."
+        }
+      ],
+      "checklist_h2": "Boas práticas",
+      "checklist": [
+        "Botão fixo e visível no celular",
+        "Mensagem pré-preenchida por página",
+        "Número comercial, não pessoal",
+        "Atendimento organizado do outro lado",
+        "Medir os cliques como conversão"
+      ],
+      "close": {
+        "h2": "Como a Matilab integra",
+        "p": "Todo site sai com WhatsApp integrado: botão flutuante, mensagens prontas por página e o clique medido como conversão."
+      },
+      "related": [
+        "preciso-de-site-se-tenho-instagram",
+        "Preciso de site se tenho Instagram"
+      ],
+      "faq": [
+        [
+          "Como colocar o WhatsApp no site?",
+          "Com um botão flutuante em todas as páginas e links que abrem a conversa com mensagem pronta. A Matilab já entrega isso configurado."
+        ],
+        [
+          "Vale a pena integrar WhatsApp no site?",
+          "Muito. No Brasil, grande parte das vendas passa pelo WhatsApp; facilitar esse caminho aumenta os contatos."
+        ],
+        [
+          "Dá para saber quantos clicam no WhatsApp?",
+          "Sim, marcando o clique como evento no Google Analytics 4."
+        ],
+        [
+          "Número pessoal ou comercial?",
+          "Comercial, porque permite organizar o atendimento e passa mais profissionalismo."
+        ],
+        [
+          "A Matilab integra WhatsApp no site?",
+          "Sim, com botão flutuante e mensagens prontas."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "como-escolher-o-dominio-do-seu-site",
+      "svc": "Domínio e presença digital",
+      "title": "Como Escolher o Domínio do seu Site (Guia 2026) | Matilab",
+      "ogtitle": "Como Escolher o Domínio do seu Site (Guia 2026) | Matilab",
+      "desc": "Como escolher o domínio ideal: dicas de nome, .com.br ou .com, o que evitar e por que o domínio deve ficar sempre no seu nome.",
+      "bc": "Como escolher o domínio",
+      "eyebrow": "Fundamentos · 2026",
+      "h1": "Como escolher o domínio do seu site",
+      "lede": "O domínio é o endereço da sua marca na internet e fica com você por anos. Escolher bem evita dor de cabeça e reforça a marca. Veja como decidir e por que ele precisa estar no seu nome.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Uma escolha que dura anos",
+        "p": "Trocar de domínio depois é caro e pode custar SEO. Por isso vale acertar de primeira e garantir que o registro seja seu."
+      },
+      "points_h2": "O que faz um bom domínio",
+      "points": [
+        {
+          "h3": "Curto e memorável",
+          "p": "Fácil de falar, digitar e lembrar. Evite hífens e números."
+        },
+        {
+          "h3": ".com.br ou .com",
+          "p": "No Brasil, .com.br passa proximidade; .com serve marcas globais."
+        },
+        {
+          "h3": "Ligado à marca",
+          "p": "De preferência o nome da empresa, não um termo genérico."
+        },
+        {
+          "h3": "No seu nome",
+          "p": "O registro deve estar no seu CNPJ ou CPF, nunca no da agência."
+        }
+      ],
+      "checklist_h2": "O que evitar",
+      "checklist": [
+        "Nomes longos ou difíceis de soletrar",
+        "Hífens e números que confundem",
+        "Marcas registradas de terceiros",
+        "Deixar o domínio no nome da agência",
+        "Esquecer de renovar e perder o domínio"
+      ],
+      "close": {
+        "h2": "Como a Matilab ajuda",
+        "p": "Orientamos a escolha, fazemos toda a configuração técnica e deixamos o registro sempre no seu nome. Você nunca fica refém de ninguém."
+      },
+      "related": [
+        "quanto-custa-manter-um-site",
+        "Quanto custa manter um site"
+      ],
+      "faq": [
+        [
+          "Como escolher um bom domínio?",
+          "Prefira nomes curtos, memoráveis e ligados à marca, sem hífens nem números. No Brasil, .com.br é a escolha mais comum."
+        ],
+        [
+          ".com.br ou .com, qual usar?",
+          "No Brasil, .com.br transmite proximidade; o .com faz sentido para marcas com pretensão internacional."
+        ],
+        [
+          "Quanto custa um domínio?",
+          "Um .com.br custa cerca de R$40 por ano no Registro.br."
+        ],
+        [
+          "O domínio fica no meu nome?",
+          "Deve ficar sempre. Na Matilab, o registro é feito no seu CNPJ ou CPF."
+        ],
+        [
+          "A Matilab configura o domínio?",
+          "Sim, toda a configuração técnica sem custo adicional."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "certificado-ssl-e-https-por-que-importam",
+      "svc": "Segurança e SEO",
+      "title": "Certificado SSL e HTTPS: Por que Importam para o seu Site | Matilab",
+      "ogtitle": "Certificado SSL e HTTPS: Por que Importam para o seu Site | Matilab",
+      "desc": "O que é o certificado SSL, por que o HTTPS (o cadeado) é obrigatório e como ele afeta a confiança dos visitantes e o SEO.",
+      "bc": "SSL e HTTPS",
+      "eyebrow": "Segurança · 2026",
+      "h1": "Certificado SSL e HTTPS: por que importam",
+      "lede": "Aquele cadeado no navegador não é detalhe: sem HTTPS, o navegador marca o site como não seguro e o visitante foge. Além de confiança, o HTTPS é fator de SEO. E hoje ele pode ser gratuito.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Confiança e ranqueamento de uma vez",
+        "p": "O HTTPS resolve dois problemas ao mesmo tempo: passa segurança para quem visita e agrada o Google, que favorece sites seguros."
+      },
+      "points_h2": "Por que é essencial",
+      "points": [
+        {
+          "h3": "Confiança",
+          "p": "Sem o cadeado, o navegador avisa que o site não é seguro e assusta o visitante."
+        },
+        {
+          "h3": "SEO",
+          "p": "O Google prefere sites em HTTPS, é fator de ranqueamento."
+        },
+        {
+          "h3": "Proteção",
+          "p": "Criptografa os dados trocados, como os de um formulário."
+        },
+        {
+          "h3": "Gratuito",
+          "p": "Com Let's Encrypt, o SSL não precisa custar nada."
+        }
+      ],
+      "checklist_h2": "O que verificar",
+      "checklist": [
+        "O site abre com https e cadeado",
+        "Certificado válido e com renovação automática",
+        "Nenhuma página em http sem redirecionar",
+        "Formulários protegidos",
+        "SSL sem cobrança extra da agência"
+      ],
+      "close": {
+        "h2": "Como a Matilab entrega",
+        "p": "Todo site sai com HTTPS e SSL gratuito configurado e renovação automática. Segurança é requisito, não item opcional."
+      },
+      "related": [
+        "quanto-custa-manter-um-site",
+        "Quanto custa manter um site"
+      ],
+      "faq": [
+        [
+          "O que é certificado SSL?",
+          "É o que habilita o HTTPS, o cadeado do navegador, criptografando os dados entre o visitante e o site."
+        ],
+        [
+          "Por que o HTTPS importa?",
+          "Sem ele, o navegador marca o site como não seguro, o que afasta visitantes. Além disso, o Google favorece HTTPS."
+        ],
+        [
+          "O SSL é pago?",
+          "Não precisa ser. Com Let's Encrypt, o certificado é gratuito e renova sozinho."
+        ],
+        [
+          "HTTPS ajuda no SEO?",
+          "Sim, é fator de ranqueamento e melhora a confiança do usuário."
+        ],
+        [
+          "A Matilab já entrega o site com SSL?",
+          "Sim, com HTTPS e renovação automática, sem custo extra."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-google-analytics-4",
+      "svc": "Analytics e medição",
+      "title": "O que é o Google Analytics 4 e Para que Serve | Matilab",
+      "ogtitle": "O que é o Google Analytics 4 e Para que Serve | Matilab",
+      "desc": "O que é o Google Analytics 4 (GA4), para que serve e por que todo site deveria ter. Como medir visitantes, origem do tráfego e conversões.",
+      "bc": "O que é o Google Analytics 4",
+      "eyebrow": "Medição · 2026",
+      "h1": "O que é o Google Analytics 4 e para que serve",
+      "lede": "O GA4 é a ferramenta gratuita do Google para medir o que acontece no seu site: quantas pessoas entram, de onde vêm e o que fazem. Sem medir, você decide no escuro.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_00.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Decisão com dado, não achismo",
+        "p": "Sem medição, você não sabe o que traz cliente nem onde perde venda. O GA4 mostra isso de graça, e é o primeiro passo para melhorar o site."
+      },
+      "points_h2": "O que o GA4 mostra",
+      "points": [
+        {
+          "h3": "Visitantes",
+          "p": "Quantas pessoas acessam, quando e de quais dispositivos."
+        },
+        {
+          "h3": "Origem",
+          "p": "Se vêm do Google, das redes, de anúncios ou direto."
+        },
+        {
+          "h3": "Comportamento",
+          "p": "Quais páginas veem e onde abandonam."
+        },
+        {
+          "h3": "Conversões",
+          "p": "Quantos clicam no WhatsApp, enviam formulário ou compram."
+        }
+      ],
+      "checklist_h2": "Por que todo site precisa",
+      "checklist": [
+        "Saber o que funciona e o que não funciona",
+        "Medir o retorno de anúncios e SEO",
+        "Descobrir onde o visitante desiste",
+        "Provar resultado com dados",
+        "Decidir com fato, não achismo"
+      ],
+      "close": {
+        "h2": "Como a Matilab entrega",
+        "p": "Instalamos e configuramos o GA4 com os eventos de conversão certos, para você enxergar o que gera contato e venda desde o primeiro dia."
+      },
+      "related": [
+        "como-medir-resultados-do-meu-site",
+        "Como medir resultados do site"
+      ],
+      "faq": [
+        [
+          "O que é o Google Analytics 4?",
+          "É a ferramenta gratuita do Google para medir visitantes, origem do tráfego, comportamento e conversões do site."
+        ],
+        [
+          "Para que serve o GA4?",
+          "Para entender o que funciona, medir o retorno de SEO e anúncios e descobrir onde os visitantes desistem."
+        ],
+        [
+          "O GA4 é gratuito?",
+          "Sim, para a grande maioria dos sites."
+        ],
+        [
+          "Preciso de GA4 mesmo com site pequeno?",
+          "Sim, senão você não sabe o que traz resultado nem onde melhorar."
+        ],
+        [
+          "A Matilab instala o GA4?",
+          "Sim, com os eventos de conversão configurados."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-google-search-console",
+      "svc": "SEO e indexação",
+      "title": "O que é o Google Search Console e Como Usar | Matilab",
+      "ogtitle": "O que é o Google Search Console e Como Usar | Matilab",
+      "desc": "O que é o Google Search Console, para que serve e como ele mostra se o seu site aparece no Google, quais termos trazem visita e o que corrigir.",
+      "bc": "O que é o Search Console",
+      "eyebrow": "SEO · 2026",
+      "h1": "O que é o Google Search Console e como usar",
+      "lede": "O Search Console é a ferramenta gratuita do Google que mostra como o seu site aparece na busca: em quais termos, quantos cliques e quais problemas técnicos existem. É o painel oficial do SEO.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "O painel oficial do seu SEO",
+        "p": "Enquanto o Analytics olha para dentro do site, o Search Console olha para como o Google enxerga o site. Um complementa o outro."
+      },
+      "points_h2": "O que ele mostra",
+      "points": [
+        {
+          "h3": "Consultas",
+          "p": "Em quais pesquisas o site aparece e quantos cliques recebe."
+        },
+        {
+          "h3": "Indexação",
+          "p": "Quais páginas o Google indexou e quais ficaram de fora."
+        },
+        {
+          "h3": "Erros",
+          "p": "Problemas de rastreio, mobile e Core Web Vitals."
+        },
+        {
+          "h3": "Sitemap",
+          "p": "Onde você envia o sitemap para acelerar a indexação."
+        }
+      ],
+      "checklist_h2": "Como usar bem",
+      "checklist": [
+        "Enviar o sitemap.xml assim que o site sobe",
+        "Acompanhar quais termos trazem visita",
+        "Pedir indexação de páginas novas",
+        "Corrigir erros de cobertura e mobile",
+        "Monitorar posição e cliques ao longo do tempo"
+      ],
+      "close": {
+        "h2": "Como a Matilab apoia",
+        "p": "Configuramos o Search Console, enviamos o sitemap e deixamos o site pronto para indexar rápido, além de orientar como acompanhar os resultados."
+      },
+      "related": [
+        "quanto-tempo-site-aparece-no-google",
+        "Quanto tempo para aparecer no Google"
+      ],
+      "faq": [
+        [
+          "O que é o Google Search Console?",
+          "É a ferramenta gratuita do Google que mostra como seu site aparece na busca: termos, cliques, indexação e erros técnicos."
+        ],
+        [
+          "Para que serve o Search Console?",
+          "Para acompanhar o SEO, enviar o sitemap, pedir indexação e corrigir problemas que atrapalham o site."
+        ],
+        [
+          "Search Console é o mesmo que Analytics?",
+          "Não. O Search Console foca na busca do Google; o Analytics foca no comportamento dos visitantes."
+        ],
+        [
+          "Como indexar mais rápido?",
+          "Envie o sitemap e use a inspeção de URL para pedir indexação das páginas novas."
+        ],
+        [
+          "A Matilab configura o Search Console?",
+          "Sim, e envia o sitemap para indexar mais rápido."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-eeat-no-seo",
+      "svc": "SEO e autoridade",
+      "title": "O que é E-E-A-T no SEO e Por que o Google Valoriza | Matilab",
+      "ogtitle": "O que é E-E-A-T no SEO e Por que o Google Valoriza | Matilab",
+      "desc": "O que é E-E-A-T (experiência, expertise, autoridade e confiança), por que o Google valoriza e como demonstrar no seu site para ranquear melhor.",
+      "bc": "O que é E-E-A-T",
+      "eyebrow": "SEO · 2026",
+      "h1": "O que é E-E-A-T no SEO e por que o Google valoriza",
+      "lede": "E-E-A-T resume o que o Google e as IAs usam para confiar em um site: experiência, expertise, autoridade e confiabilidade. Quanto mais você demonstra isso, melhor ranqueia e mais é citado.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_05.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Confiança virou fator de ranking",
+        "p": "O Google quer entregar respostas seguras, então favorece quem demonstra saber do assunto e ser confiável. Isso vale também para as IAs."
+      },
+      "points_h2": "Os quatro pilares",
+      "points": [
+        {
+          "h3": "Experiência",
+          "p": "Mostrar vivência real, com casos e exemplos."
+        },
+        {
+          "h3": "Expertise",
+          "p": "Conteúdo aprofundado que prova conhecimento."
+        },
+        {
+          "h3": "Autoridade",
+          "p": "Ser citado e reconhecido por outras fontes do setor."
+        },
+        {
+          "h3": "Confiança",
+          "p": "Site seguro, transparente, com contato claro e informação verdadeira."
+        }
+      ],
+      "checklist_h2": "Como demonstrar",
+      "checklist": [
+        "Conteúdo que responde de verdade",
+        "Cases, autores e credenciais visíveis",
+        "Página Sobre e contato claros",
+        "Site seguro (HTTPS) e sem informação falsa",
+        "Menções e links de fontes confiáveis"
+      ],
+      "close": {
+        "h2": "Como a Matilab reforça",
+        "p": "Construímos sites que passam confiança por dentro e por fora: base técnica sólida, conteúdo factual e sinais de autoridade que Google e IAs valorizam."
+      },
+      "related": [
+        "o-que-e-schema-org-e-por-que-seu-site-precisa",
+        "O que é Schema.org"
+      ],
+      "faq": [
+        [
+          "O que é E-E-A-T?",
+          "É a sigla para experiência, expertise, autoridade e confiabilidade, os sinais que o Google usa para avaliar a qualidade e a confiança de um site."
+        ],
+        [
+          "Por que o Google valoriza E-E-A-T?",
+          "Porque quer entregar respostas confiáveis. Sites que demonstram experiência e autoridade tendem a ranquear melhor."
+        ],
+        [
+          "Como melhorar o E-E-A-T?",
+          "Publique conteúdo aprofundado e factual, mostre cases e autores, tenha contato claro, site seguro e conquiste menções confiáveis."
+        ],
+        [
+          "E-E-A-T influencia nas IAs?",
+          "Sim. Como o Google, as IAs tendem a citar fontes com autoridade e confiança."
+        ],
+        [
+          "A Matilab ajuda com E-E-A-T?",
+          "Sim, com estrutura técnica, conteúdo factual e sinais de autoridade."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "quantas-paginas-meu-site-deve-ter",
+      "svc": "Estrutura de sites",
+      "title": "Quantas Páginas o Meu Site Deve Ter? | Matilab",
+      "ogtitle": "Quantas Páginas o Meu Site Deve Ter? | Matilab",
+      "desc": "Quantas páginas um site de empresa deve ter? Veja a estrutura ideal por tipo de negócio e por que mais páginas nem sempre é melhor.",
+      "bc": "Quantas páginas o site deve ter",
+      "eyebrow": "Estrutura · 2026",
+      "h1": "Quantas páginas o meu site deve ter?",
+      "lede": "Não existe número mágico: o site deve ter as páginas que o cliente precisa para decidir, nem mais nem menos. Veja a estrutura mínima que funciona e como crescer sem inchar.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_01.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Quantidade não é qualidade",
+        "p": "Encher o site de páginas vazias atrapalha o SEO. Melhor ter poucas páginas fortes e crescer com propósito."
+      },
+      "points_h2": "A estrutura que quase todo site precisa",
+      "points": [
+        {
+          "h3": "Home",
+          "p": "A porta de entrada, com posicionamento e caminhos claros."
+        },
+        {
+          "h3": "Sobre",
+          "p": "História e autoridade que geram confiança."
+        },
+        {
+          "h3": "Serviços ou Produtos",
+          "p": "O que você faz, explicado com clareza."
+        },
+        {
+          "h3": "Contato",
+          "p": "Formulário, WhatsApp e canais diretos."
+        }
+      ],
+      "checklist_h2": "Quando adicionar mais páginas",
+      "checklist": [
+        "Blog, para SEO e conteúdo",
+        "Uma página por serviço, para ranquear cada um",
+        "Casos de sucesso ou portfólio",
+        "Perguntas frequentes (bom para AEO)",
+        "Landing pages para campanhas"
+      ],
+      "close": {
+        "h2": "Como a Matilab define",
+        "p": "Começamos pelo objetivo e pelo que o cliente precisa para decidir. Montamos a estrutura mínima que converte e planejamos o crescimento por SEO, sem páginas vazias."
+      },
+      "related": [
+        "o-que-nao-pode-faltar-no-site-de-uma-empresa",
+        "O que não pode faltar no site"
+      ],
+      "faq": [
+        [
+          "Quantas páginas um site precisa ter?",
+          "O essencial é Home, Sobre, Serviços ou Produtos e Contato. A partir daí, adicione blog, páginas por serviço e FAQ conforme a estratégia."
+        ],
+        [
+          "Mais páginas é melhor para o Google?",
+          "Não necessariamente. Páginas úteis ajudam; páginas vazias ou repetidas atrapalham o SEO."
+        ],
+        [
+          "Preciso de blog no site?",
+          "Se quer tráfego orgânico e ser citado pelas IAs, blog e páginas por assunto ajudam muito."
+        ],
+        [
+          "Um site de uma página resolve?",
+          "Para negócios simples ou campanhas, sim. Para presença e SEO amplos, mais páginas rendem mais."
+        ],
+        [
+          "A Matilab ajuda a definir a estrutura?",
+          "Sim, a partir do seu objetivo."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-nao-pode-faltar-no-site-de-uma-empresa",
+      "svc": "Estrutura de sites",
+      "title": "O que Não Pode Faltar no Site da sua Empresa | Matilab",
+      "ogtitle": "O que Não Pode Faltar no Site da sua Empresa | Matilab",
+      "desc": "Os elementos essenciais que todo site de empresa precisa para gerar credibilidade, ser encontrado e converter visitantes em clientes.",
+      "bc": "O que não pode faltar no site",
+      "eyebrow": "Checklist · 2026",
+      "h1": "O que não pode faltar no site da sua empresa",
+      "lede": "Um site pode ter design lindo e ainda assim falhar se faltar o básico. Veja os elementos que não podem faltar para gerar credibilidade, ser encontrado e converter.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_02.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "O básico bem feito vende",
+        "p": "Antes de qualquer sofisticação, o site precisa acertar o essencial. É isso que separa site que gera contato de site parado."
+      },
+      "points_h2": "O essencial",
+      "points": [
+        {
+          "h3": "Proposta clara",
+          "p": "Em segundos, entende-se o que você faz e para quem."
+        },
+        {
+          "h3": "Contato fácil",
+          "p": "WhatsApp e formulário sempre à mão, em toda página."
+        },
+        {
+          "h3": "Prova",
+          "p": "Cases, números e depoimentos que geram confiança."
+        },
+        {
+          "h3": "Velocidade e mobile",
+          "p": "Carregar rápido no celular, onde a maioria acessa."
+        }
+      ],
+      "checklist_h2": "Não pode faltar",
+      "checklist": [
+        "Proposta de valor clara na primeira dobra",
+        "Botão de WhatsApp visível",
+        "Prova social (cases, depoimentos)",
+        "SEO técnico e site rápido",
+        "HTTPS e segurança",
+        "Chamada para ação em cada seção"
+      ],
+      "close": {
+        "h2": "Como a Matilab garante",
+        "p": "Todo projeto nasce com esses elementos por padrão: clareza, contato fácil, prova, velocidade e SEO técnico."
+      },
+      "related": [
+        "quantas-paginas-meu-site-deve-ter",
+        "Quantas páginas o site deve ter"
+      ],
+      "faq": [
+        [
+          "O que todo site de empresa precisa ter?",
+          "Proposta de valor clara, contato fácil, prova social, velocidade, mobile, HTTPS e chamadas para ação."
+        ],
+        [
+          "O que faz um site gerar credibilidade?",
+          "Design cuidado, prova social, informações claras, site seguro e rápido."
+        ],
+        [
+          "Meu site precisa de WhatsApp?",
+          "No Brasil, praticamente sim. É onde a maioria das vendas acontece."
+        ],
+        [
+          "Velocidade é essencial?",
+          "Sim, site lento perde visitante e posição no Google."
+        ],
+        [
+          "A Matilab entrega tudo isso?",
+          "Sim, é o padrão dos projetos."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "nuvemshop-shopify-ou-loja-sob-medida",
+      "svc": "E-commerce",
+      "title": "Nuvemshop, Shopify ou Loja Sob Medida? Como Escolher | Matilab",
+      "ogtitle": "Nuvemshop, Shopify ou Loja Sob Medida? Como Escolher | Matilab",
+      "desc": "Nuvemshop, Shopify ou e-commerce sob medida em Next.js? Compare custo, performance e escala e descubra qual faz sentido para a sua loja.",
+      "bc": "Nuvemshop, Shopify ou sob medida",
+      "eyebrow": "E-commerce · 2026",
+      "h1": "Nuvemshop, Shopify ou loja sob medida?",
+      "lede": "Cada plataforma de e-commerce serve a um momento. Nuvemshop e Shopify são rápidas de começar; uma loja sob medida em Next.js entrega o máximo de performance e escala. Veja como escolher sem se arrepender.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_02.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "A escolha depende do momento",
+        "p": "Não existe a melhor plataforma para todos, existe a certa para o seu estágio, orçamento e ambição de crescimento."
+      },
+      "points_h2": "As opções",
+      "points": [
+        {
+          "h3": "Nuvemshop",
+          "p": "Boa para começar no Brasil, custo baixo e implantação rápida."
+        },
+        {
+          "h3": "Shopify",
+          "p": "Robusta e global, com muitos apps, mas custos em dólar e taxas."
+        },
+        {
+          "h3": "Sob medida (Next.js)",
+          "p": "Máxima performance e personalização, ideal para escalar."
+        },
+        {
+          "h3": "O critério",
+          "p": "Momento da loja, orçamento e ambição definem a escolha."
+        }
+      ],
+      "checklist_h2": "Como decidir",
+      "checklist": [
+        "Começando e quer simplicidade? Nuvemshop",
+        "Quer ecossistema global e apps? Shopify",
+        "Precisa de performance máxima? Sob medida",
+        "Orçamento enxuto? Plataforma pronta",
+        "Performance como diferencial? Headless"
+      ],
+      "close": {
+        "h2": "Como a Matilab ajuda",
+        "p": "Montamos loja nas plataformas prontas ou uma loja headless sob medida, e ajudamos a escolher com honestidade conforme o seu momento."
+      },
+      "related": [
+        "agencia-ecommerce-rapido-otimizado-brasil",
+        "Agência de e-commerce"
+      ],
+      "faq": [
+        [
+          "Nuvemshop, Shopify ou loja sob medida?",
+          "Depende do momento. Nuvemshop para começar no Brasil, Shopify para ecossistema global, e loja sob medida em Next.js para máxima performance e escala."
+        ],
+        [
+          "Qual a plataforma mais rápida?",
+          "Uma loja headless sob medida em Next.js costuma ser a mais rápida. Entre as prontas, a performance varia com tema e apps."
+        ],
+        [
+          "Shopify é caro?",
+          "Tem mensalidade e taxas em dólar, além de apps pagos. Pode compensar pelo ecossistema, mas o custo cresce."
+        ],
+        [
+          "Dá para migrar de plataforma depois?",
+          "Dá, mas exige trabalho; por isso vale escolher pensando no crescimento."
+        ],
+        [
+          "A Matilab faz e-commerce em qual plataforma?",
+          "Nas prontas como Nuvemshop e em lojas headless sob medida em Next.js."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "como-recuperar-carrinho-abandonado",
+      "svc": "E-commerce",
+      "title": "Como Recuperar Carrinho Abandonado no E-commerce | Matilab",
+      "ogtitle": "Como Recuperar Carrinho Abandonado no E-commerce | Matilab",
+      "desc": "Por que os clientes abandonam o carrinho e como recuperar essas vendas com e-mail, WhatsApp, checkout melhor e remarketing.",
+      "bc": "Recuperar carrinho abandonado",
+      "eyebrow": "E-commerce · 2026",
+      "h1": "Como recuperar carrinho abandonado no e-commerce",
+      "lede": "A maioria dos carrinhos é abandonada antes do pagamento. Boa parte dessa venda dá para recuperar. Veja por que o cliente desiste e como trazê-lo de volta.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_00.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Venda quase fechada não pode escapar",
+        "p": "O carrinho abandonado é o cliente que já quis comprar. Recuperá-lo costuma ser mais barato e mais eficaz do que conquistar um novo."
+      },
+      "points_h2": "Por que abandonam",
+      "points": [
+        {
+          "h3": "Frete surpresa",
+          "p": "Custo alto revelado só no fim afasta na hora."
+        },
+        {
+          "h3": "Checkout longo",
+          "p": "Muitos passos e cadastro obrigatório cansam."
+        },
+        {
+          "h3": "Site lento",
+          "p": "Lentidão no pagamento gera desistência."
+        },
+        {
+          "h3": "Falta de confiança",
+          "p": "Sem sinais de segurança, o cliente trava."
+        }
+      ],
+      "checklist_h2": "Como recuperar",
+      "checklist": [
+        "E-mail automático de carrinho abandonado",
+        "Mensagem no WhatsApp lembrando o pedido",
+        "Checkout curto, com Pix e cartão",
+        "Frete claro desde o início",
+        "Remarketing com Pixel",
+        "Selo de segurança e avaliações"
+      ],
+      "close": {
+        "h2": "Como a Matilab ajuda",
+        "p": "Construímos lojas com checkout eficiente, integração de recuperação e velocidade, para reduzir o abandono e trazer de volta a venda quase fechada."
+      },
+      "related": [
+        "agencia-ecommerce-rapido-otimizado-brasil",
+        "Agência de e-commerce"
+      ],
+      "faq": [
+        [
+          "Como recuperar carrinho abandonado?",
+          "Com e-mail e WhatsApp automáticos lembrando o pedido, checkout curto, frete claro e remarketing."
+        ],
+        [
+          "Por que os clientes abandonam o carrinho?",
+          "Principalmente por frete surpresa, checkout longo, site lento e falta de confiança no pagamento."
+        ],
+        [
+          "Vale a pena investir em recuperação?",
+          "Sim, é uma das ações de maior retorno no e-commerce, porque recupera venda quase concluída."
+        ],
+        [
+          "Checkout rápido ajuda?",
+          "Muito. Menos passos e mais opções de pagamento reduzem o abandono."
+        ],
+        [
+          "A Matilab configura recuperação de carrinho?",
+          "Sim, junto do e-commerce."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-cms-e-preciso-de-um",
+      "svc": "Gestão de conteúdo",
+      "title": "O que é um CMS e Você Precisa de Um? | Matilab",
+      "ogtitle": "O que é um CMS e Você Precisa de Um? | Matilab",
+      "desc": "O que é um CMS, para que serve e se a sua empresa precisa de um para editar o site sozinha. As opções e quando cada uma faz sentido.",
+      "bc": "O que é um CMS",
+      "eyebrow": "Fundamentos · 2026",
+      "h1": "O que é um CMS e você precisa de um?",
+      "lede": "CMS é o painel que deixa você editar o site sem programar: trocar textos, imagens e publicar no blog. Nem todo site precisa de um, mas quando precisa, ele dá autonomia.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Autonomia com equilíbrio",
+        "p": "Um CMS é ótimo para quem atualiza o site com frequência. Para conteúdo estável, ele pode ser peso desnecessário. O segredo é escolher conforme a sua rotina."
+      },
+      "points_h2": "Para que serve",
+      "points": [
+        {
+          "h3": "Editar sem código",
+          "p": "Mudar textos e imagens sozinho, sem depender de programador."
+        },
+        {
+          "h3": "Publicar conteúdo",
+          "p": "Blog e páginas novas para alimentar SEO e IAs."
+        },
+        {
+          "h3": "Gerenciar",
+          "p": "Produtos, equipe, depoimentos, tudo por um painel."
+        },
+        {
+          "h3": "Autonomia",
+          "p": "Menos dependência da agência para pequenas mudanças."
+        }
+      ],
+      "checklist_h2": "Quando você precisa de CMS",
+      "checklist": [
+        "Vai publicar conteúdo com frequência",
+        "Quer editar textos e imagens sozinho",
+        "Tem catálogo que muda muito",
+        "Vários setores atualizam o site",
+        "Não quer depender da agência para cada ajuste"
+      ],
+      "close": {
+        "h2": "Como a Matilab entrega",
+        "p": "Entregamos o site com o CMS certo para o seu caso, ou sem CMS quando o conteúdo é estável, sempre com treinamento."
+      },
+      "related": [
+        "wordpress-ou-site-sob-medida",
+        "WordPress ou site sob medida"
+      ],
+      "faq": [
+        [
+          "O que é um CMS?",
+          "É um sistema de gestão de conteúdo, o painel que permite editar o site sem programar."
+        ],
+        [
+          "Preciso de um CMS?",
+          "Se vai publicar ou editar com frequência, sim. Se o conteúdo é estável, pode não precisar."
+        ],
+        [
+          "WordPress é um CMS?",
+          "Sim, o mais usado do mundo. Há alternativas modernas headless que se integram a sites em Next.js."
+        ],
+        [
+          "CMS deixa o site lento?",
+          "Pode, dependendo da implementação. Um CMS headless bem feito mantém o site rápido."
+        ],
+        [
+          "A Matilab entrega site com CMS?",
+          "Sim, com o CMS adequado e treinamento, ou sem CMS quando faz mais sentido."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "como-o-google-encontra-e-le-seu-site",
+      "svc": "SEO técnico",
+      "title": "Como o Google Encontra e Lê o seu Site | Matilab",
+      "ogtitle": "Como o Google Encontra e Lê o seu Site | Matilab",
+      "desc": "Entenda como o Google rastreia, indexa e entende o seu site, e o que fazer para ele encontrar e ranquear todas as suas páginas.",
+      "bc": "Como o Google lê seu site",
+      "eyebrow": "SEO técnico · 2026",
+      "h1": "Como o Google encontra e lê o seu site",
+      "lede": "Antes de ranquear, o Google precisa encontrar, ler e entender o seu site. Se algo trava esse processo, nem o melhor conteúdo aparece. Veja como funciona e o que ajuda.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_05.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Sem ser lido, não há ranking",
+        "p": "Muita gente cuida do conteúdo e esquece que, se o Google não consegue rastrear e entender o site, nada disso importa."
+      },
+      "points_h2": "As etapas",
+      "points": [
+        {
+          "h3": "Rastreio",
+          "p": "O Google segue links e o sitemap para descobrir suas páginas."
+        },
+        {
+          "h3": "Indexação",
+          "p": "Ele decide quais páginas guardar no índice da busca."
+        },
+        {
+          "h3": "Entendimento",
+          "p": "Lê o conteúdo e o Schema.org para saber do que trata."
+        },
+        {
+          "h3": "Ranqueamento",
+          "p": "Compara com outras páginas e define a posição."
+        }
+      ],
+      "checklist_h2": "O que ajuda o Google",
+      "checklist": [
+        "Sitemap enviado no Search Console",
+        "Links internos claros entre as páginas",
+        "Site rápido e sem erros de rastreio",
+        "Schema.org descrevendo o conteúdo",
+        "URLs limpas e sem bloqueio no robots.txt"
+      ],
+      "close": {
+        "h2": "Como a Matilab garante",
+        "p": "Construímos sites fáceis de rastrear e entender: sitemap, links internos, Schema.org e SEO técnico desde o início."
+      },
+      "related": [
+        "quanto-tempo-site-aparece-no-google",
+        "Quanto tempo para aparecer no Google"
+      ],
+      "faq": [
+        [
+          "Como o Google encontra meu site?",
+          "Rastreando a web por links e pelo sitemap. Enviar o sitemap e ter links internos ajuda o Google a descobrir suas páginas."
+        ],
+        [
+          "O que é indexação?",
+          "É quando o Google guarda a página no índice da busca. Só páginas indexadas aparecem nos resultados."
+        ],
+        [
+          "Por que páginas não aparecem no Google?",
+          "Podem não ter sido indexadas por bloqueio no robots.txt, falta de sitemap, conteúdo fraco ou erros técnicos."
+        ],
+        [
+          "Como ajudar o Google a ler meu site?",
+          "Com sitemap, links internos, Schema.org, site rápido e sem erros."
+        ],
+        [
+          "A Matilab prepara o site para o Google?",
+          "Sim, com SEO técnico completo desde o desenvolvimento."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "o-que-e-backlink-e-por-que-importa",
+      "svc": "SEO e autoridade",
+      "title": "O que é Backlink e Por que Importa para o SEO | Matilab",
+      "ogtitle": "O que é Backlink e Por que Importa para o SEO | Matilab",
+      "desc": "O que é backlink, por que é um dos fatores mais importantes do SEO e como conquistar links de qualidade sem cair em prática arriscada.",
+      "bc": "O que é backlink",
+      "eyebrow": "SEO · 2026",
+      "h1": "O que é backlink e por que importa para o SEO",
+      "lede": "Backlink é quando outro site aponta um link para o seu. O Google vê isso como voto de confiança: quanto mais links bons, mais autoridade. É um dos fatores que mais pesam no ranqueamento.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_11.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Reputação emprestada",
+        "p": "Um link de um site respeitado transfere um pouco da confiança dele para o seu. Por isso backlinks bons valem tanto."
+      },
+      "points_h2": "Como o Google interpreta",
+      "points": [
+        {
+          "h3": "Voto de confiança",
+          "p": "Cada link relevante sinaliza que o seu site merece atenção."
+        },
+        {
+          "h3": "Qualidade acima de quantidade",
+          "p": "Um link de site forte vale mais que dezenas de fracos."
+        },
+        {
+          "h3": "Relevância",
+          "p": "Links de sites do seu tema pesam mais."
+        },
+        {
+          "h3": "Naturalidade",
+          "p": "Links conquistados por mérito, não comprados em massa."
+        }
+      ],
+      "checklist_h2": "Como conquistar bons backlinks",
+      "checklist": [
+        "Conteúdo que as pessoas queiram citar",
+        "Parcerias e guest posts no setor",
+        "Listas e diretórios relevantes",
+        "Assessoria e imprensa",
+        "Evitar comprar links em massa"
+      ],
+      "close": {
+        "h2": "Como a Matilab apoia",
+        "p": "Construímos o site que merece ser citado: rápido, com conteúdo forte e autoridade, o que atrai backlinks naturais."
+      },
+      "related": [
+        "agencia-seo-tecnico-brasil",
+        "Agência de SEO técnico"
+      ],
+      "faq": [
+        [
+          "O que é backlink?",
+          "É um link de outro site apontando para o seu, tratado pelo Google como um voto de confiança que aumenta a autoridade."
+        ],
+        [
+          "Backlink é importante para o SEO?",
+          "Muito, é um dos fatores de maior peso, ao lado de conteúdo e SEO técnico."
+        ],
+        [
+          "Como conseguir backlinks de qualidade?",
+          "Com conteúdo que merece ser citado, parcerias, imprensa e presença em fontes relevantes."
+        ],
+        [
+          "Posso comprar backlinks?",
+          "Comprar em massa é arriscado e pode gerar punição. O caminho seguro é conquistar por mérito."
+        ],
+        [
+          "A Matilab ajuda com backlinks?",
+          "Construímos a base que atrai links naturais: site forte, rápido e com bom conteúdo."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "como-a-ia-generativa-mudou-a-busca",
+      "svc": "GEO e futuro da busca",
+      "title": "Como a IA Generativa Mudou a Busca (2026) | Matilab",
+      "ogtitle": "Como a IA Generativa Mudou a Busca (2026) | Matilab",
+      "desc": "ChatGPT, Gemini e AI Overviews mudaram como as pessoas buscam. Entenda o que mudou e o que sua empresa precisa fazer para não sumir.",
+      "bc": "Como a IA mudou a busca",
+      "eyebrow": "GEO · 2026",
+      "h1": "Como a IA generativa mudou a busca",
+      "lede": "Buscar deixou de ser só digitar e clicar em links. Cada vez mais gente pergunta ao ChatGPT, ao Gemini e vê respostas de IA no próprio Google. Quem não se adapta some da nova busca.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_02.webp",
+      "priority": "0.8",
+      "intro": {
+        "h2": "Uma mudança de comportamento",
+        "p": "Não é modismo: parte real das buscas migrou para respostas de IA. Ignorar isso é ficar invisível para quem já pergunta assim."
+      },
+      "points_h2": "O que mudou",
+      "points": [
+        {
+          "h3": "Da lista à resposta",
+          "p": "Em vez de dez links, o usuário recebe uma resposta pronta com poucas marcas."
+        },
+        {
+          "h3": "Menos cliques",
+          "p": "A resposta muitas vezes resolve sem o usuário entrar em nenhum site."
+        },
+        {
+          "h3": "Novas fontes",
+          "p": "As IAs leem a web e citam quem tem conteúdo claro sobre o assunto."
+        },
+        {
+          "h3": "Nova disputa",
+          "p": "O jogo agora é ser citado, não só ranquear."
+        }
+      ],
+      "checklist_h2": "O que fazer",
+      "checklist": [
+        "Conteúdo por assunto em formato de resposta",
+        "Schema.org e FAQ",
+        "SEO técnico e site rápido",
+        "Ligar a marca a cada assunto do nicho",
+        "Medir onde a marca aparece nas IAs"
+      ],
+      "close": {
+        "h2": "Como a Matilab prepara",
+        "p": "Construímos sites prontos para a busca com IA: conteúdo estruturado, factual e citável, além do SEO técnico que o Google exige."
+      },
+      "related": [
+        "google-ou-ia-onde-seus-clientes-procuram-em-2026",
+        "Google ou IA em 2026"
+      ],
+      "faq": [
+        [
+          "Como a IA generativa mudou a busca?",
+          "O usuário passou a receber respostas prontas de IA em vez de só uma lista de links, o que reduz cliques e muda a disputa para ser citado."
+        ],
+        [
+          "O Google acabou?",
+          "Não. Ele incorporou IA nas respostas (AI Overviews) e parte das buscas migrou para ChatGPT e Perplexity."
+        ],
+        [
+          "O que minha empresa deve fazer?",
+          "Ter conteúdo por assunto em formato de resposta, com Schema.org e SEO técnico, para aparecer no Google e nas IAs."
+        ],
+        [
+          "Isso é GEO?",
+          "Sim, GEO é otimizar para ser citado pelos motores generativos, junto com SEO e AEO."
+        ],
+        [
+          "A Matilab prepara o site para a busca com IA?",
+          "Sim, todo site já nasce pensado para Google e IAs."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "por-que-toda-pagina-deveria-ter-um-faq",
+      "svc": "AEO e conteúdo",
+      "title": "Por que Toda Página Deveria Ter um FAQ | Matilab",
+      "ogtitle": "Por que Toda Página Deveria Ter um FAQ | Matilab",
+      "desc": "Por que um FAQ bem feito melhora SEO, ajuda a aparecer nas IAs e aumenta a conversão, e como estruturar as perguntas do jeito certo.",
+      "bc": "Por que ter um FAQ",
+      "eyebrow": "AEO · 2026",
+      "h1": "Por que toda página deveria ter um FAQ",
+      "lede": "Um FAQ não é enfeite no rodapé. Bem feito, ele responde objeções, melhora o SEO e é o formato que as IAs mais citam. É uma das formas mais simples de ganhar em AEO.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_01.webp",
+      "priority": "0.8",
+      "intro": {
+        "h2": "Simples e de alto retorno",
+        "p": "Poucas coisas rendem tanto quanto um bom FAQ: melhora SEO, alimenta as IAs e ainda destrava a conversão, tudo de uma vez."
+      },
+      "points_h2": "O que um bom FAQ entrega",
+      "points": [
+        {
+          "h3": "Responde objeções",
+          "p": "Tira a dúvida que segura a decisão de compra."
+        },
+        {
+          "h3": "Ganha em AEO",
+          "p": "Perguntas e respostas são o que as IAs extraem e citam."
+        },
+        {
+          "h3": "Rich results",
+          "p": "Com Schema.org, pode aparecer com destaque no Google."
+        },
+        {
+          "h3": "Mais conversão",
+          "p": "Menos dúvida, mais gente avançando para o contato."
+        }
+      ],
+      "checklist_h2": "Como estruturar",
+      "checklist": [
+        "Usar as perguntas reais dos clientes",
+        "Responder de forma curta e objetiva",
+        "Aplicar Schema.org do tipo FAQPage",
+        "Uma pergunta por dúvida, sem enrolação",
+        "Incluir as perguntas que o cliente faz à IA"
+      ],
+      "close": {
+        "h2": "Como a Matilab aplica",
+        "p": "Cada página pode ter um FAQ com Schema.org e as perguntas reais do seu nicho. É simples, melhora o SEO e aumenta a chance de citação pelas IAs."
+      },
+      "related": [
+        "o-que-e-aeo-answer-engine-optimization",
+        "O que é AEO"
+      ],
+      "faq": [
+        [
+          "Por que ter um FAQ na página?",
+          "Porque responde objeções, melhora o SEO, pode gerar rich results no Google e é o formato que as IAs mais citam."
+        ],
+        [
+          "FAQ ajuda no SEO?",
+          "Sim. Com Schema.org do tipo FAQPage, o Google entende melhor o conteúdo e pode exibir as perguntas com destaque."
+        ],
+        [
+          "FAQ ajuda a aparecer nas IAs?",
+          "Ajuda bastante, porque perguntas e respostas objetivas são o que ChatGPT e AI Overviews extraem."
+        ],
+        [
+          "Quantas perguntas o FAQ deve ter?",
+          "Entre cinco e dez perguntas reais, respondidas de forma curta e direta."
+        ],
+        [
+          "A Matilab inclui FAQ com Schema.org?",
+          "Sim, nas páginas onde faz sentido, com as perguntas reais do seu nicho."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "como-medir-resultados-do-meu-site",
+      "svc": "Analytics e medição",
+      "title": "Como Medir os Resultados do Meu Site | Matilab",
+      "ogtitle": "Como Medir os Resultados do Meu Site | Matilab",
+      "desc": "Quais métricas realmente importam no seu site e como medir tráfego, conversão e origem dos clientes para decidir com base em dados.",
+      "bc": "Como medir resultados do site",
+      "eyebrow": "Medição · 2026",
+      "h1": "Como medir os resultados do meu site",
+      "lede": "Ter site sem medir é dirigir de olhos fechados. Poucas métricas, bem lidas, mostram o que traz cliente e o que só gasta. Veja o que acompanhar e como.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_00.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "Foque no que vira cliente",
+        "p": "Curtida e visita não pagam conta. O que importa é contato, orçamento e venda, e de onde eles vêm."
+      },
+      "points_h2": "O que realmente importa",
+      "points": [
+        {
+          "h3": "Origem do tráfego",
+          "p": "De onde vêm os visitantes: Google, redes, anúncios ou direto."
+        },
+        {
+          "h3": "Conversões",
+          "p": "Contatos no WhatsApp, formulários, vendas."
+        },
+        {
+          "h3": "Páginas que convertem",
+          "p": "Quais geram contato e quais só recebem visita."
+        },
+        {
+          "h3": "Custo por resultado",
+          "p": "Quanto custa cada lead ou venda por canal."
+        }
+      ],
+      "checklist_h2": "Ferramentas e sinais",
+      "checklist": [
+        "Google Analytics 4 para comportamento e conversões",
+        "Google Search Console para SEO e termos",
+        "Eventos de clique no WhatsApp",
+        "Origem das conversões por canal",
+        "Acompanhar a tendência, não só o número do dia"
+      ],
+      "close": {
+        "h2": "Como a Matilab entrega",
+        "p": "Configuramos GA4 e Search Console com os eventos certos, para você enxergar o que gera contato e decidir com dado."
+      },
+      "related": [
+        "o-que-e-google-analytics-4",
+        "O que é o Google Analytics 4"
+      ],
+      "faq": [
+        [
+          "Como medir os resultados de um site?",
+          "Com Google Analytics 4 e Search Console, acompanhando origem do tráfego, conversões, páginas que convertem e custo por resultado."
+        ],
+        [
+          "Quais métricas importam de verdade?",
+          "As ligadas a resultado: conversões, origem do tráfego e custo por lead."
+        ],
+        [
+          "Preciso de ferramenta paga?",
+          "Não. GA4 e Search Console são gratuitos e cobrem o essencial."
+        ],
+        [
+          "Como sei quais páginas convertem?",
+          "No GA4, marcando eventos de conversão e vendo em quais páginas eles acontecem."
+        ],
+        [
+          "A Matilab configura a medição?",
+          "Sim, GA4 e Search Console com eventos de conversão."
+        ]
+      ],
+      "status": "pending"
+    },
+    {
+      "slug": "como-aparecer-no-google-maps-para-empresas",
+      "svc": "SEO local",
+      "title": "Como Aparecer no Google Maps para Empresas | Matilab",
+      "ogtitle": "Como Aparecer no Google Maps para Empresas | Matilab",
+      "desc": "Como colocar sua empresa no Google Maps: perfil da empresa, avaliações, NAP consistente e site otimizado para busca local.",
+      "bc": "Como aparecer no Google Maps",
+      "eyebrow": "SEO local · 2026",
+      "h1": "Como aparecer no Google Maps para empresas",
+      "lede": "Quando alguém procura um serviço perto, o Google mostra o mapa antes dos links. Aparecer ali traz cliente com alta intenção. Veja o que fazer para estar no Google Maps.",
+      "oneliner": "Matilab, agência de desenvolvimento web de alto padrão em São Paulo. Sites sob medida em Next.js, rápidos, com SEO técnico e prontos para o Google e as IAs. Atende todo o Brasil.",
+      "ogimg": "imgs/full_05.webp",
+      "priority": "0.75",
+      "intro": {
+        "h2": "O mapa vem antes dos links",
+        "p": "Em buscas locais, o mapa e as três empresas em destaque roubam a atenção. Estar ali vale mais que muita posição orgânica."
+      },
+      "points_h2": "O que faz aparecer no mapa",
+      "points": [
+        {
+          "h3": "Perfil da empresa",
+          "p": "Um Perfil da Empresa no Google completo e verificado."
+        },
+        {
+          "h3": "Avaliações",
+          "p": "Notas e comentários recentes pesam muito no ranking local."
+        },
+        {
+          "h3": "NAP consistente",
+          "p": "Nome, endereço e telefone iguais no site e nos diretórios."
+        },
+        {
+          "h3": "Site otimizado",
+          "p": "Site com SEO local reforça o perfil e a relevância."
+        }
+      ],
+      "checklist_h2": "Passos práticos",
+      "checklist": [
+        "Criar e verificar o Perfil da Empresa no Google",
+        "Preencher categoria, horário, fotos e serviços",
+        "Pedir avaliações aos clientes",
+        "Manter NAP igual em todos os lugares",
+        "Ter um site com SEO local ligado ao perfil"
+      ],
+      "close": {
+        "h2": "Como a Matilab apoia",
+        "p": "Construímos o site com SEO local e dados estruturados de negócio local, reforçando o seu Perfil da Empresa para aparecer melhor no mapa."
+      },
+      "related": [
+        "seo-local-para-empresas",
+        "SEO local para empresas"
+      ],
+      "faq": [
+        [
+          "Como colocar minha empresa no Google Maps?",
+          "Crie e verifique o Perfil da Empresa no Google, preencha tudo, adicione fotos, peça avaliações e mantenha nome, endereço e telefone consistentes."
+        ],
+        [
+          "Por que minha empresa não aparece no mapa?",
+          "Geralmente por perfil incompleto ou não verificado, poucas avaliações, dados inconsistentes ou falta de SEO local."
+        ],
+        [
+          "Avaliações influenciam no Maps?",
+          "Muito. Quantidade, nota e recência estão entre os principais fatores do ranking local."
+        ],
+        [
+          "O site ajuda a aparecer no Maps?",
+          "Sim, um site com SEO local e dados de negócio local reforça o perfil."
+        ],
+        [
+          "A Matilab ajuda com SEO local?",
+          "Sim, com site otimizado para busca local ligado ao seu perfil."
         ]
       ],
       "status": "pending"

@@ -101,7 +101,7 @@ def _sections(t):
     # descritor extraivel (GEO)
     if t.get("oneliner"):
         html += f'''<section class="{klass()}" data-rv>
-  <div class="container"><div class="card"><h3>Matilab, em uma linha</h3><p>{t["oneliner"]}</p></div></div>
+  <div class="container"><div class="card" style="text-align:center"><h3>Matilab, em uma linha</h3><p>{t["oneliner"]}</p></div></div>
 </section>
 '''
     # grid de pontos

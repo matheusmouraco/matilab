@@ -577,4 +577,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/o-que-e-aeo-answer-engine-optimization</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/seo-vs-geo-vs-aeo-qual-a-diferenca</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
 </urlset>
