@@ -529,4 +529,31 @@
     <priority>0.8</priority>
   </url>
 
+
+  <!-- GEO/AEO: perguntas do relatorio Promptado -->
+  <url>
+    <loc>https://matilab.com.br/agencia-landing-page-alta-conversao-brasil</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://matilab.com.br/agencia-seo-tecnico-brasil</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://matilab.com.br/agencia-boutique-digital-brasil</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://matilab.com.br/agencia-ecommerce-rapido-otimizado-brasil</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
 </urlset>
