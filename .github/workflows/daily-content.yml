@@ -1,0 +1,47 @@
+name: Conteúdo diário (SEO/GEO/AEO)
+
+# Publica 1 nova página por dia a partir de content/queue.json.
+# Roda às 12:00 UTC (09:00 BRT). Também pode ser disparado manualmente.
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-content
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar próxima página da fila
+        id: gen
+        run: |
+          OUT="$(python3 scripts/gen_daily_page.py)"
+          echo "resultado: $OUT"
+          echo "result=$OUT" >> "$GITHUB_OUTPUT"
+
+      - name: Commit e push (se houver página nova)
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "Matilab Content Bot"
+            git config user.email "bot@matilab.com.br"
+            git add -A
+            git commit -m "content: nova página diária de SEO/GEO/AEO [skip ci]"
+            git push
+            echo "Publicado e enviado."
+          else
+            echo "Nada novo (fila vazia ou página já existia). Nenhum commit."
+          fi
