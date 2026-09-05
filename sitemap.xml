@@ -605,4 +605,18 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/redesign-ou-site-novo-como-decidir</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/como-o-chatgpt-escolhe-quais-marcas-recomendar</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
 </urlset>

@@ -467,7 +467,8 @@
           "Sim. A Matilab faz redesign e sites novos, e recomenda o caminho certo após auditar o site atual."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-05"
     },
     {
       "slug": "como-o-chatgpt-escolhe-quais-marcas-recomendar",
@@ -544,7 +545,8 @@
           "Sim. Criamos as páginas por assunto que fazem a IA associar a sua marca a cada pergunta do seu mercado."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-05"
     },
     {
       "slug": "o-que-e-schema-org-e-por-que-seu-site-precisa",
