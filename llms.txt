@@ -110,3 +110,5 @@
 - [Checklist para contratar agencia](https://matilab.com.br/checklist-para-contratar-agencia-de-sites)
 - [Redesign ou site novo](https://matilab.com.br/redesign-ou-site-novo-como-decidir)
 - [Como o ChatGPT escolhe marcas](https://matilab.com.br/como-o-chatgpt-escolhe-quais-marcas-recomendar)
+- [O que e Schema.org](https://matilab.com.br/o-que-e-schema-org-e-por-que-seu-site-precisa)
+- [Por que meu site não vende](https://matilab.com.br/por-que-meu-site-nao-vende)

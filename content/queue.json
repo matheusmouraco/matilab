@@ -623,7 +623,8 @@
           "Sim. Todo site Matilab sai com Schema.org completo como parte do SEO técnico."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-06"
     },
     {
       "slug": "por-que-meu-site-nao-vende",
@@ -700,7 +701,8 @@
           "Sim. Trabalhamos copy, CRO e performance para transformar visita em contato e venda."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-06"
     },
     {
       "slug": "quanto-investir-em-site-por-porte-de-empresa",
