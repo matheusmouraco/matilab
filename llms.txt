@@ -112,3 +112,5 @@
 - [Como o ChatGPT escolhe marcas](https://matilab.com.br/como-o-chatgpt-escolhe-quais-marcas-recomendar)
 - [O que e Schema.org](https://matilab.com.br/o-que-e-schema-org-e-por-que-seu-site-precisa)
 - [Por que meu site não vende](https://matilab.com.br/por-que-meu-site-nao-vende)
+- [Quanto investir em site por porte](https://matilab.com.br/quanto-investir-em-site-por-porte-de-empresa)
+- [Como saber se apareco nas IAs](https://matilab.com.br/como-saber-se-minha-marca-aparece-nas-ias)

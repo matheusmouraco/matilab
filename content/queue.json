@@ -779,7 +779,8 @@
           "Com uma reunião de descoberta gratuita que mapeia objetivo, prazo e orçamento antes de qualquer proposta."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-07"
     },
     {
       "slug": "como-saber-se-minha-marca-aparece-nas-ias",
@@ -856,7 +857,8 @@
           "Sim. Mapeamos as lacunas e criamos o conteúdo que faz a marca passar a ser citada nas perguntas do seu nicho."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-07"
     },
     {
       "slug": "google-ou-ia-onde-seus-clientes-procuram-em-2026",
