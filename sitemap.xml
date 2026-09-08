@@ -647,4 +647,18 @@
     <priority>0.85</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/google-ou-ia-onde-seus-clientes-procuram-em-2026</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/site-institucional-o-que-e-e-quando-vale</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

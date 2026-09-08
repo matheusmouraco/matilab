@@ -935,7 +935,8 @@
           "Sim. Todo site Matilab já nasce pronto para o Google e para as IAs."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-08"
     },
     {
       "slug": "site-institucional-o-que-e-e-quando-vale",
@@ -1012,7 +1013,8 @@
           "Sim. Site institucional premium sob medida e uma das especialidades da Matilab."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-08"
     },
     {
       "slug": "quanto-custa-aparecer-nas-ias-geo",
