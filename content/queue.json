@@ -1091,7 +1091,8 @@
           "Sim. Criamos o conteúdo por assunto que faz a marca ser citada pelas IAs, com base técnica pronta para isso."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-09"
     },
     {
       "slug": "o-que-e-cro-e-como-aumenta-vendas",
@@ -1167,7 +1168,8 @@
           "Sim, na criação e na otimização de sites e landing pages."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-09"
     },
     {
       "slug": "copywriting-para-sites-textos-que-vendem",
