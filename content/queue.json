@@ -1245,7 +1245,8 @@
           "Sim, copy orientada a conversão faz parte dos projetos."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-10"
     },
     {
       "slug": "diferenca-entre-site-e-landing-page",
@@ -1321,7 +1322,8 @@
           "Sim, sites institucionais e landing pages de alta conversão."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-10"
     },
     {
       "slug": "como-integrar-whatsapp-no-site",
