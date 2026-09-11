@@ -1399,7 +1399,8 @@
           "Sim, com botão flutuante e mensagens prontas."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-11"
     },
     {
       "slug": "como-escolher-o-dominio-do-seu-site",
@@ -1475,7 +1476,8 @@
           "Sim, toda a configuração técnica sem custo adicional."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-11"
     },
     {
       "slug": "certificado-ssl-e-https-por-que-importam",

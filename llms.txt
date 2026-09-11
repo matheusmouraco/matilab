@@ -120,3 +120,5 @@
 - [O que é CRO](https://matilab.com.br/o-que-e-cro-e-como-aumenta-vendas)
 - [Copywriting para sites](https://matilab.com.br/copywriting-para-sites-textos-que-vendem)
 - [Site ou landing page](https://matilab.com.br/diferenca-entre-site-e-landing-page)
+- [Integrar WhatsApp no site](https://matilab.com.br/como-integrar-whatsapp-no-site)
+- [Como escolher o domínio](https://matilab.com.br/como-escolher-o-dominio-do-seu-site)
