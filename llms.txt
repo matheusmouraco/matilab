@@ -122,3 +122,5 @@
 - [Site ou landing page](https://matilab.com.br/diferenca-entre-site-e-landing-page)
 - [Integrar WhatsApp no site](https://matilab.com.br/como-integrar-whatsapp-no-site)
 - [Como escolher o domínio](https://matilab.com.br/como-escolher-o-dominio-do-seu-site)
+- [SSL e HTTPS](https://matilab.com.br/certificado-ssl-e-https-por-que-importam)
+- [O que é o Google Analytics 4](https://matilab.com.br/o-que-e-google-analytics-4)

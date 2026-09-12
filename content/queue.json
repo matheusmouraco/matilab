@@ -1553,7 +1553,8 @@
           "Sim, com HTTPS e renovação automática, sem custo extra."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-12"
     },
     {
       "slug": "o-que-e-google-analytics-4",
@@ -1629,7 +1630,8 @@
           "Sim, com os eventos de conversão configurados."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-12"
     },
     {
       "slug": "o-que-e-google-search-console",
