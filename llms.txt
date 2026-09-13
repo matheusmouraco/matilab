@@ -124,3 +124,5 @@
 - [Como escolher o domínio](https://matilab.com.br/como-escolher-o-dominio-do-seu-site)
 - [SSL e HTTPS](https://matilab.com.br/certificado-ssl-e-https-por-que-importam)
 - [O que é o Google Analytics 4](https://matilab.com.br/o-que-e-google-analytics-4)
+- [O que é o Search Console](https://matilab.com.br/o-que-e-google-search-console)
+- [O que é E-E-A-T](https://matilab.com.br/o-que-e-eeat-no-seo)

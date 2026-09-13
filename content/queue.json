@@ -1707,7 +1707,8 @@
           "Sim, e envia o sitemap para indexar mais rápido."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-13"
     },
     {
       "slug": "o-que-e-eeat-no-seo",
@@ -1783,7 +1784,8 @@
           "Sim, com estrutura técnica, conteúdo factual e sinais de autoridade."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-13"
     },
     {
       "slug": "quantas-paginas-meu-site-deve-ter",
