@@ -731,4 +731,18 @@
     <priority>0.75</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/quantas-paginas-meu-site-deve-ter</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/o-que-nao-pode-faltar-no-site-de-uma-empresa</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
 </urlset>

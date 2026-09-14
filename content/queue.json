@@ -1861,7 +1861,8 @@
           "Sim, a partir do seu objetivo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-14"
     },
     {
       "slug": "o-que-nao-pode-faltar-no-site-de-uma-empresa",
@@ -1938,7 +1939,8 @@
           "Sim, é o padrão dos projetos."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-14"
     },
     {
       "slug": "nuvemshop-shopify-ou-loja-sob-medida",

@@ -126,3 +126,5 @@
 - [O que é o Google Analytics 4](https://matilab.com.br/o-que-e-google-analytics-4)
 - [O que é o Search Console](https://matilab.com.br/o-que-e-google-search-console)
 - [O que é E-E-A-T](https://matilab.com.br/o-que-e-eeat-no-seo)
+- [Quantas páginas o site deve ter](https://matilab.com.br/quantas-paginas-meu-site-deve-ter)
+- [O que não pode faltar no site](https://matilab.com.br/o-que-nao-pode-faltar-no-site-de-uma-empresa)
