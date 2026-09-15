@@ -2016,7 +2016,8 @@
           "Nas prontas como Nuvemshop e em lojas headless sob medida em Next.js."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-15"
     },
     {
       "slug": "como-recuperar-carrinho-abandonado",
@@ -2093,7 +2094,8 @@
           "Sim, junto do e-commerce."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-15"
     },
     {
       "slug": "o-que-e-cms-e-preciso-de-um",
