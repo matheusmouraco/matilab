@@ -130,3 +130,5 @@
 - [O que não pode faltar no site](https://matilab.com.br/o-que-nao-pode-faltar-no-site-de-uma-empresa)
 - [Nuvemshop, Shopify ou sob medida](https://matilab.com.br/nuvemshop-shopify-ou-loja-sob-medida)
 - [Recuperar carrinho abandonado](https://matilab.com.br/como-recuperar-carrinho-abandonado)
+- [O que é um CMS](https://matilab.com.br/o-que-e-cms-e-preciso-de-um)
+- [Como o Google lê seu site](https://matilab.com.br/como-o-google-encontra-e-le-seu-site)

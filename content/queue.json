@@ -2171,7 +2171,8 @@
           "Sim, com o CMS adequado e treinamento, ou sem CMS quando faz mais sentido."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-16"
     },
     {
       "slug": "como-o-google-encontra-e-le-seu-site",
@@ -2247,7 +2248,8 @@
           "Sim, com SEO técnico completo desde o desenvolvimento."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-16"
     },
     {
       "slug": "o-que-e-backlink-e-por-que-importa",
