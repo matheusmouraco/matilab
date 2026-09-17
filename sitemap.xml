@@ -773,4 +773,18 @@
     <priority>0.75</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/o-que-e-backlink-e-por-que-importa</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/como-a-ia-generativa-mudou-a-busca</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

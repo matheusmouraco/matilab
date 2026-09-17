@@ -2325,7 +2325,8 @@
           "Construímos a base que atrai links naturais: site forte, rápido e com bom conteúdo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-17"
     },
     {
       "slug": "como-a-ia-generativa-mudou-a-busca",
@@ -2401,7 +2402,8 @@
           "Sim, todo site já nasce pensado para Google e IAs."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-17"
     },
     {
       "slug": "por-que-toda-pagina-deveria-ter-um-faq",

@@ -132,3 +132,5 @@
 - [Recuperar carrinho abandonado](https://matilab.com.br/como-recuperar-carrinho-abandonado)
 - [O que é um CMS](https://matilab.com.br/o-que-e-cms-e-preciso-de-um)
 - [Como o Google lê seu site](https://matilab.com.br/como-o-google-encontra-e-le-seu-site)
+- [O que é backlink](https://matilab.com.br/o-que-e-backlink-e-por-que-importa)
+- [Como a IA mudou a busca](https://matilab.com.br/como-a-ia-generativa-mudou-a-busca)
