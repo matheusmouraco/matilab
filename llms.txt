@@ -134,3 +134,5 @@
 - [Como o Google lê seu site](https://matilab.com.br/como-o-google-encontra-e-le-seu-site)
 - [O que é backlink](https://matilab.com.br/o-que-e-backlink-e-por-que-importa)
 - [Como a IA mudou a busca](https://matilab.com.br/como-a-ia-generativa-mudou-a-busca)
+- [Por que ter um FAQ](https://matilab.com.br/por-que-toda-pagina-deveria-ter-um-faq)
+- [Como medir resultados do site](https://matilab.com.br/como-medir-resultados-do-meu-site)
