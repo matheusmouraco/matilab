@@ -136,3 +136,5 @@
 - [Como a IA mudou a busca](https://matilab.com.br/como-a-ia-generativa-mudou-a-busca)
 - [Por que ter um FAQ](https://matilab.com.br/por-que-toda-pagina-deveria-ter-um-faq)
 - [Como medir resultados do site](https://matilab.com.br/como-medir-resultados-do-meu-site)
+- [Como aparecer no Google Maps](https://matilab.com.br/como-aparecer-no-google-maps-para-empresas)
+- [O que é o llms.txt](https://matilab.com.br/o-que-e-llms-txt-e-para-que-serve)

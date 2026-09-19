@@ -2633,7 +2633,8 @@
           "Sim, com site otimizado para busca local ligado ao seu perfil."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-19"
     },
     {
       "slug": "o-que-e-llms-txt-e-para-que-serve",
@@ -2709,7 +2710,8 @@
           "Sim, já entregamos os sites com llms.txt e Schema.org."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-19"
     },
     {
       "slug": "o-que-e-chatgpt-search-e-como-aparecer",
