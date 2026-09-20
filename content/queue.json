@@ -2787,7 +2787,8 @@
           "Sim, todo site já nasce pronto para os buscadores com IA."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-20"
     },
     {
       "slug": "o-que-e-google-ai-mode",
@@ -2863,7 +2864,8 @@
           "Sim, é parte do que fazemos em SEO e GEO."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-20"
     },
     {
       "slug": "o-que-e-perplexity-e-como-ser-citado",
