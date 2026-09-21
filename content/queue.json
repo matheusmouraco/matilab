@@ -2941,7 +2941,8 @@
           "Sim, faz parte do nosso trabalho de GEO."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-21"
     },
     {
       "slug": "o-que-e-zero-click-search",
@@ -3017,7 +3018,8 @@
           "Sim, criando conteúdo que aparece na resposta e atrai clique quando o tema pede."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-21"
     },
     {
       "slug": "busca-por-voz-e-o-seo",

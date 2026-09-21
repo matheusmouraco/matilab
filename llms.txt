@@ -140,3 +140,5 @@
 - [O que é o llms.txt](https://matilab.com.br/o-que-e-llms-txt-e-para-que-serve)
 - [O que é o ChatGPT Search](https://matilab.com.br/o-que-e-chatgpt-search-e-como-aparecer)
 - [O que é o Google AI Mode](https://matilab.com.br/o-que-e-google-ai-mode)
+- [O que é o Perplexity](https://matilab.com.br/o-que-e-perplexity-e-como-ser-citado)
+- [O que é zero-click search](https://matilab.com.br/o-que-e-zero-click-search)
