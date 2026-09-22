@@ -843,4 +843,18 @@
     <priority>0.75</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/busca-por-voz-e-o-seo</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/o-que-e-vibe-coding</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
 </urlset>

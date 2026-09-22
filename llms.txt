@@ -142,3 +142,5 @@
 - [O que é o Google AI Mode](https://matilab.com.br/o-que-e-google-ai-mode)
 - [O que é o Perplexity](https://matilab.com.br/o-que-e-perplexity-e-como-ser-citado)
 - [O que é zero-click search](https://matilab.com.br/o-que-e-zero-click-search)
+- [Busca por voz e SEO](https://matilab.com.br/busca-por-voz-e-o-seo)
+- [O que é vibe coding](https://matilab.com.br/o-que-e-vibe-coding)

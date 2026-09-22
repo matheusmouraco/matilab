@@ -3095,7 +3095,8 @@
           "Sim, com conteúdo em Q&A, Schema.org e SEO local."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-22"
     },
     {
       "slug": "o-que-e-vibe-coding",
@@ -3171,7 +3172,8 @@
           "É uma ferramenta poderosa que veio para ficar, desde que usada com critério técnico."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-22"
     },
     {
       "slug": "o-que-e-web-agentica",
