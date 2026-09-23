@@ -144,3 +144,5 @@
 - [O que é zero-click search](https://matilab.com.br/o-que-e-zero-click-search)
 - [Busca por voz e SEO](https://matilab.com.br/busca-por-voz-e-o-seo)
 - [O que é vibe coding](https://matilab.com.br/o-que-e-vibe-coding)
+- [O que é a web agêntica](https://matilab.com.br/o-que-e-web-agentica)
+- [O que é RAG](https://matilab.com.br/o-que-e-rag-e-por-que-importa-para-conteudo)

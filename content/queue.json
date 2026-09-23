@@ -3249,7 +3249,8 @@
           "Sim, com Schema.org, conteúdo estruturado e base técnica sólida."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-23"
     },
     {
       "slug": "o-que-e-rag-e-por-que-importa-para-conteudo",
@@ -3325,7 +3326,8 @@
           "Sim, é o que fazemos em GEO e AEO."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-23"
     },
     {
       "slug": "o-que-e-headless-cms",
