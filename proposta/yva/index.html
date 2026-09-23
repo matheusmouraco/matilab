@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Proposta · Site Yvá Gastronomia · Matilab</title>
+<meta name="description" content="Proposta comercial da Matilab para o Yvá Gastronomia: site sob medida, bilíngue PT/EN, integrado ao TagMe, com painel administrativo para a equipe atualizar cardápio, fotos e horários.">
+<meta property="og:title" content="Proposta · Site Yvá Gastronomia · Matilab">
+<meta property="og:description" content="Site sob medida, bilíngue PT/EN, integrado ao TagMe e com painel administrativo próprio. Proposta da Matilab.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#5c4033">
+<link rel="icon" type="image/png" href="assets/yva-monograma.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   YVÁ GASTRONOMIA · Proposta comercial Matilab
+   Cores, tipografia, padrões e marcas conforme o Branding Guide
+   ============================================================ */
+
+:root{
+  /* Paleta oficial Yvá */
+  --verde-escuro:#5e7052;
+  --verde-claro:#abb58a;
+  --areia:#e5d8c6;
+  --caramelo:#b4916f;
+  --marrom:#825e4a;
+  --marrom-escuro:#5c4033;
+  --laranja:#f05022;
+
+  /* Superfícies derivadas */
+  --creme:#faf6f0;
+  --creme-2:#f3ece2;
+  --breu:#281b15;
+  --tinta:#3d2b22;
+  --tinta-suave:#6b5648;
+  --linha:rgba(92,64,51,.16);
+
+  --sans:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --serif:'Playfair Display',Georgia,serif;
+
+  --gutter:24px;
+  --max:1180px;
+  --secao:clamp(88px,13vw,180px);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+
+body{
+  margin:0;
+  background:var(--creme);
+  color:var(--tinta);
+  font-family:var(--sans);
+  font-weight:300;
+  font-size:17px;
+  line-height:1.72;
+  letter-spacing:.008em;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.secao{padding:var(--secao) 0;position:relative;overflow:hidden}
+.secao > .wrap{position:relative;z-index:2}
+
+/* ---------- Tipografia ---------- */
+h1,h2,h3,h4{font-weight:300;margin:0;letter-spacing:-.005em;line-height:1.14}
+
+.display{font-size:clamp(2.6rem,8.4vw,5.6rem);font-weight:200;line-height:1.03;letter-spacing:-.02em}
+.titulo{font-size:clamp(1.95rem,4.6vw,3.3rem);font-weight:200;line-height:1.12;letter-spacing:-.015em}
+.titulo em{font-family:var(--serif);font-style:italic}
+
+.eyebrow{font-size:.7rem;font-weight:500;letter-spacing:.34em;text-transform:uppercase;line-height:1.6}
+.lead{font-size:clamp(1.08rem,2.1vw,1.3rem);line-height:1.68;font-weight:300}
+.texto{max-width:62ch}
+.texto p + p{margin-top:1.1em}
+
+/* ---------- Marcas ---------- */
+.marca-yva{height:clamp(32px,5.4vw,46px);width:auto}
+.marca-matilab{height:15px;width:auto;display:block}
+
+/* ---------- Camadas de padrão ---------- */
+.padrao{position:absolute;inset:0;pointer-events:none;z-index:0}
+.padrao-chevron{background:url('assets/padrao-chevron.png') repeat;background-size:118px auto}
+.padrao-diamante{background:url('assets/padrao-diamante.png') repeat;background-size:190px auto}
+.padrao-chevron-claro{background:url('assets/padrao-chevron-claro.png') repeat;background-size:104px auto}
+.padrao-y-claro{background:url('assets/padrao-y-claro.png') repeat;background-size:132px auto}
+
+.veu{position:absolute;inset:0;pointer-events:none;z-index:1}
+
+/* ============================================================
+   NAVEGAÇÃO
+   ============================================================ */
+.topo{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:20px var(--gutter);
+  transition:background .5s ease,box-shadow .5s ease,padding .5s ease;
+}
+.topo.fixo{
+  background:rgba(250,246,240,.94);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  box-shadow:0 1px 0 var(--linha);
+  padding:14px var(--gutter);
+}
+.topo .logo-escuro{display:none}
+.topo.fixo .logo-branco{display:none}
+.topo.fixo .logo-escuro{display:block}
+
+.topo-tag{
+  font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--verde-claro);transition:color .5s ease;
+}
+.topo.fixo .topo-tag{color:var(--tinta-suave)}
+
+/* ============================================================
+   01 · HERO
+   ============================================================ */
+.hero{
+  position:relative;min-height:100svh;
+  display:flex;align-items:flex-end;
+  background:var(--breu);color:var(--areia);
+  overflow:hidden;
+  padding:120px 0 clamp(48px,8vh,88px);
+}
+.hero-foto{
+  position:absolute;inset:0;
+  background:url('assets/chef-finalizacao.jpg') center 45% / cover no-repeat;
+  filter:brightness(.62) saturate(1.08);
+}
+.hero-veu{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,rgba(40,27,21,.8) 0%,rgba(40,27,21,.38) 32%,rgba(40,27,21,.82) 74%,rgba(40,27,21,.96) 100%),
+    linear-gradient(95deg,rgba(40,27,21,.9) 0%,rgba(40,27,21,.55) 52%,rgba(40,27,21,.16) 100%);
+}
+.hero-padrao{
+  position:absolute;left:0;right:0;bottom:0;height:150px;opacity:.11;
+  -webkit-mask-image:linear-gradient(180deg,transparent,#000 70%);
+  mask-image:linear-gradient(180deg,transparent,#000 70%);
+}
+.hero .wrap{position:relative;z-index:3;text-shadow:0 2px 30px rgba(40,27,21,.6)}
+
+.hero .marca-yva{
+  height:clamp(38px,6.4vw,58px);
+  margin-bottom:clamp(30px,6vh,54px);
+}
+.hero h1{margin:.28em 0 0}
+.hero .assin{
+  margin-top:1.6rem;
+  display:flex;align-items:center;gap:12px;
+  font-size:clamp(1.05rem,2.2vw,1.3rem);
+  color:var(--verde-claro);
+}
+.hero .assin .marca-matilab{height:17px;filter:drop-shadow(0 2px 14px rgba(40,27,21,.5))}
+.hero-frase{
+  margin-top:clamp(30px,5vh,46px);
+  max-width:30ch;
+  font-size:clamp(1.05rem,2.2vw,1.32rem);
+  line-height:1.58;
+  color:rgba(229,216,198,.86);
+  padding-left:22px;
+  border-left:1px solid rgba(171,181,138,.55);
+}
+.hero-meta{
+  margin-top:clamp(40px,7vh,70px);padding-top:22px;
+  border-top:1px solid rgba(229,216,198,.2);
+  display:flex;flex-wrap:wrap;gap:10px 34px;
+  color:rgba(229,216,198,.62);
+}
+
+/* ============================================================
+   02 · ENTENDIMENTO
+   ============================================================ */
+.entendimento{background:var(--creme)}
+.entendimento .eyebrow{color:var(--caramelo)}
+.entendimento .titulo{margin:22px 0 40px;max-width:19ch}
+.entendimento .titulo em{color:var(--marrom)}
+.entendimento .texto{color:var(--tinta-suave)}
+
+.marca-dagua{
+  position:absolute;z-index:0;pointer-events:none;
+  right:-90px;top:8%;
+  width:min(46vw,440px);
+  opacity:.06;
+}
+
+.pontos{
+  margin-top:clamp(52px,8vw,84px);
+  display:grid;gap:1px;background:var(--linha);
+  border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);
+}
+.ponto{background:var(--creme);padding:30px 4px}
+.ponto dt{font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--caramelo);margin-bottom:12px}
+.ponto dd{margin:0;font-size:1.02rem;line-height:1.5;color:var(--tinta)}
+
+/* ============================================================
+   03 · ESCOPO
+   ============================================================ */
+.escopo{background:var(--creme-2)}
+.escopo .padrao{opacity:.36}
+.escopo .veu{background:linear-gradient(180deg,rgba(250,246,240,.9) 0%,rgba(250,246,240,.7) 50%,rgba(250,246,240,.9) 100%)}
+.escopo .eyebrow{color:var(--marrom)}
+.escopo .titulo{margin:22px 0 14px}
+.escopo .sub{color:var(--tinta-suave);max-width:54ch}
+
+.grade{margin-top:clamp(48px,7vw,76px);display:grid;grid-template-columns:1fr;gap:14px}
+.card{
+  background:rgba(250,246,240,.92);
+  border:1px solid rgba(92,64,51,.12);
+  padding:30px 26px 32px;
+  transition:transform .55s cubic-bezier(.16,1,.3,1),box-shadow .55s ease,border-color .55s ease;
+}
+.card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(94,112,82,.42);
+  box-shadow:0 18px 44px -26px rgba(92,64,51,.5);
+}
+.card .num{font-size:.68rem;letter-spacing:.2em;color:var(--verde-escuro);display:block;margin-bottom:16px}
+.card h3{font-size:1.2rem;font-weight:400;letter-spacing:.005em;margin-bottom:9px}
+.card p{margin:0;font-size:.95rem;line-height:1.6;color:var(--tinta-suave)}
+
+/* ============================================================
+   FAIXA DE FOTOS
+   ============================================================ */
+.faixa{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--breu)}
+.faixa figure{margin:0;overflow:hidden;aspect-ratio:1/1}
+.faixa img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.16,1,.3,1)}
+.faixa figure:hover img{transform:scale(1.06)}
+
+/* ============================================================
+   04 · DIFERENCIAIS
+   ============================================================ */
+.diferenciais{background:var(--marrom-escuro);color:var(--areia)}
+.diferenciais .padrao{opacity:.05}
+.diferenciais .eyebrow{color:var(--verde-claro)}
+.diferenciais .titulo{margin:22px 0 0;max-width:17ch}
+.diferenciais .titulo em{color:var(--verde-claro)}
+.diferenciais .marca-dagua{opacity:.05;right:-60px;top:auto;bottom:6%}
+
+.lista-dif{margin-top:clamp(52px,8vw,84px);display:grid;gap:0}
+.dif{padding:34px 0;border-top:1px solid rgba(229,216,198,.18);display:grid;gap:12px}
+.dif:last-child{border-bottom:1px solid rgba(229,216,198,.18)}
+.dif h3{font-size:1.35rem;font-weight:300;color:var(--verde-claro);letter-spacing:.01em}
+.dif p{margin:0;color:rgba(229,216,198,.78);max-width:58ch;font-size:1rem}
+
+/* ============================================================
+   05 · PROCESSO
+   ============================================================ */
+.processo{background:var(--creme)}
+.processo .eyebrow{color:var(--caramelo)}
+.processo .titulo{margin:22px 0 0;max-width:16ch}
+
+.linha-tempo{margin-top:clamp(52px,8vw,84px);position:relative;padding-left:34px}
+.linha-tempo::before{
+  content:'';position:absolute;left:5px;top:8px;bottom:8px;width:1px;
+  background:linear-gradient(180deg,var(--verde-claro),var(--caramelo),rgba(180,145,111,0));
+}
+.etapa{position:relative;padding-bottom:40px}
+.etapa:last-child{padding-bottom:0}
+.etapa::before{
+  content:'';position:absolute;left:-34px;top:9px;width:11px;height:11px;border-radius:50%;
+  background:var(--creme);border:1px solid var(--verde-escuro);
+}
+.etapa .passo{font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:var(--caramelo);display:block;margin-bottom:8px}
+.etapa h3{font-size:1.28rem;font-weight:400;margin-bottom:7px}
+.etapa p{margin:0;color:var(--tinta-suave);font-size:.97rem;max-width:56ch}
+
+/* ============================================================
+   06 · TECNOLOGIA
+   ============================================================ */
+.tecnologia{background:var(--areia);color:var(--marrom-escuro)}
+.tecnologia .padrao{opacity:.42}
+.tecnologia .veu{background:linear-gradient(180deg,rgba(229,216,198,.92),rgba(229,216,198,.78) 50%,rgba(229,216,198,.92))}
+.tecnologia .eyebrow{color:var(--marrom)}
+.tecnologia .titulo{margin:22px 0 0;max-width:18ch}
+
+.pilares{margin-top:clamp(52px,8vw,84px);display:grid;gap:34px}
+.pilar{padding-top:24px;border-top:1px solid rgba(92,64,51,.26)}
+.pilar h3{font-size:1.18rem;font-weight:400;margin-bottom:10px}
+.pilar p{margin:0;font-size:.96rem;line-height:1.62;color:rgba(61,43,34,.8)}
+
+.nota-tec{
+  margin-top:clamp(48px,7vw,72px);
+  padding:28px 30px;
+  background:rgba(250,246,240,.72);
+  border-left:2px solid var(--verde-escuro);
+  font-size:1rem;line-height:1.66;max-width:64ch;
+}
+
+/* ============================================================
+   07 · INVESTIMENTO
+   ============================================================ */
+.investimento{background:var(--verde-escuro);color:var(--creme)}
+.investimento .padrao{opacity:.08}
+.investimento .eyebrow{color:var(--areia)}
+.investimento .titulo{margin:22px 0 0;max-width:16ch}
+
+.selo{
+  position:absolute;z-index:2;pointer-events:none;
+  right:var(--gutter);top:clamp(70px,10vw,120px);
+  width:clamp(86px,12vw,132px);
+  opacity:.34;
+  filter:brightness(0) invert(1);
+  animation:gira 44s linear infinite;
+}
+@keyframes gira{to{transform:rotate(360deg)}}
+
+.valores{
+  margin-top:clamp(52px,8vw,80px);
+  display:grid;gap:2px;
+  background:rgba(250,246,240,.26);
+  border:1px solid rgba(250,246,240,.26);
+}
+.valor{background:var(--verde-escuro);padding:38px 30px}
+.valor .rotulo{font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--areia);opacity:.84;display:block;margin-bottom:18px}
+.valor .numero{font-size:clamp(2.5rem,7vw,3.6rem);font-weight:200;line-height:1;letter-spacing:-.02em;display:block}
+.valor .numero small{font-size:.38em;font-weight:300;letter-spacing:.02em;opacity:.82}
+.valor .detalhe{margin:16px 0 0;font-size:.95rem;line-height:1.6;color:rgba(250,246,240,.84)}
+
+.condicoes{margin-top:clamp(48px,7vw,72px);display:grid;gap:0}
+.condicao{display:grid;gap:6px;padding:22px 0;border-bottom:1px solid rgba(250,246,240,.22)}
+.condicao:first-child{border-top:1px solid rgba(250,246,240,.22)}
+.condicao dt{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--areia);opacity:.82}
+.condicao dd{margin:0;font-size:1rem;line-height:1.58;color:rgba(250,246,240,.96)}
+
+.validade{margin-top:30px;font-size:.86rem;letter-spacing:.04em;color:rgba(250,246,240,.64)}
+
+/* ============================================================
+   08 · CTA
+   ============================================================ */
+.cta{background:var(--breu);color:var(--areia);text-align:center}
+.cta-foto{
+  position:absolute;inset:0;
+  background:url('assets/ambiente-terraco.jpg') center 42% / cover no-repeat;
+  filter:brightness(.62) saturate(1.05);
+}
+.cta-veu{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(120% 90% at 50% 42%,rgba(40,27,21,.68) 0%,rgba(40,27,21,.93) 72%),
+    linear-gradient(180deg,rgba(40,27,21,.68),rgba(40,27,21,.92));
+}
+.cta .marca-yva{margin:0 auto clamp(30px,5vw,44px);height:clamp(30px,4.6vw,40px)}
+.cta .eyebrow{color:var(--verde-claro)}
+.cta .titulo{margin:24px auto 0;max-width:17ch}
+.cta .titulo em{color:var(--verde-claro)}
+.cta p{margin:26px auto 0;max-width:46ch;color:rgba(229,216,198,.8)}
+
+.botao{
+  display:inline-flex;align-items:center;gap:13px;
+  margin-top:clamp(38px,6vw,52px);
+  padding:19px 38px;
+  background:var(--verde-claro);color:var(--marrom-escuro);
+  font-size:.82rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+  border-radius:999px;
+  transition:background .4s ease,transform .4s cubic-bezier(.16,1,.3,1),box-shadow .4s ease;
+}
+.botao:hover{background:var(--areia);transform:translateY(-3px);box-shadow:0 16px 36px -18px rgba(0,0,0,.6)}
+.botao svg{width:19px;height:19px;flex:none}
+
+.contato{
+  margin-top:clamp(36px,5vw,50px);
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  font-size:.92rem;color:rgba(229,216,198,.66);
+}
+
+/* ============================================================
+   RODAPÉ
+   ============================================================ */
+.rodape{
+  background:var(--breu);color:rgba(229,216,198,.5);
+  border-top:1px solid rgba(229,216,198,.14);
+  padding:38px 0;font-size:.78rem;letter-spacing:.08em;
+}
+.rodape .wrap{display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center}
+.rodape .marca-matilab{height:16px}
+
+/* ============================================================
+   ANIMAÇÕES
+   ============================================================ */
+.reveal{
+  opacity:0;transform:translateY(26px);
+  transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1);
+  transition-delay:var(--d,0ms);
+}
+.reveal.visivel{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .selo{animation:none}
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+
+/* ============================================================
+   RESPONSIVO
+   ============================================================ */
+@media (min-width:640px){
+  :root{--gutter:40px}
+  .grade{grid-template-columns:repeat(2,1fr)}
+  .pontos{grid-template-columns:repeat(2,1fr)}
+  .ponto{padding:34px 28px}
+  .faixa{grid-template-columns:repeat(4,1fr)}
+  .faixa figure{aspect-ratio:3/4}
+  .pilares{grid-template-columns:repeat(3,1fr);gap:30px}
+  .valores{grid-template-columns:repeat(2,1fr)}
+  .condicao{grid-template-columns:200px 1fr;gap:24px;align-items:baseline}
+  .rodape .wrap{flex-direction:row;justify-content:space-between;text-align:left}
+}
+
+@media (max-height:780px) and (min-width:640px){
+  .hero{padding-top:92px;padding-bottom:44px}
+  .hero .marca-yva{height:40px;margin-bottom:20px}
+  .hero h1{font-size:clamp(2.2rem,5.4vw,3.5rem)}
+  .hero .assin{margin-top:1rem;font-size:1.06rem}
+  .hero-frase{margin-top:22px;font-size:1.02rem}
+  .hero-meta{margin-top:26px;padding-top:16px}
+  .hero-padrao{height:96px}
+}
+
+@media (min-width:1000px){
+  :root{--gutter:56px}
+  body{font-size:18px}
+  .grade{grid-template-columns:repeat(3,1fr);gap:18px}
+  .pontos{grid-template-columns:repeat(4,1fr)}
+  .dif{grid-template-columns:.85fr 1.15fr;gap:40px;padding:40px 0;align-items:baseline}
+  .valores{grid-template-columns:repeat(3,1fr)}
+  .linha-tempo{padding-left:0}
+  .linha-tempo::before{left:calc(22% + 5px)}
+  .etapa{display:grid;grid-template-columns:22% 1fr;gap:56px}
+  .etapa::before{left:calc(22% - 5px)}
+  .etapa .passo{margin-bottom:0;padding-top:5px}
+  .hero-frase{max-width:34ch}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============ NAVEGAÇÃO ============ -->
+<header class="topo" id="topo">
+  <a href="https://matilab.com.br" target="_blank" rel="noopener" aria-label="Matilab">
+    <img class="marca-matilab logo-branco" src="assets/matilab-logo-branco.svg" alt="Matilab">
+    <img class="marca-matilab logo-escuro" src="assets/matilab-logo-escuro.svg" alt="Matilab">
+  </a>
+  <span class="topo-tag">Proposta comercial</span>
+</header>
+
+<!-- ============ 01 · HERO ============ -->
+<section class="hero">
+  <div class="hero-foto" aria-hidden="true"></div>
+  <div class="hero-veu" aria-hidden="true"></div>
+  <div class="hero-padrao padrao-chevron-claro" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <img class="marca-yva reveal" src="assets/yva-logo-branco.png" alt="Yvá Gastronomia" width="900" height="228">
+
+    <p class="eyebrow reveal" style="--d:80ms;color:var(--verde-claro)">Proposta</p>
+    <h1 class="display reveal" style="--d:160ms">Site Yvá<br>Gastronomia</h1>
+
+    <p class="assin reveal" style="--d:240ms">
+      por <img class="marca-matilab" src="assets/matilab-logo-branco.svg" alt="Matilab">
+    </p>
+
+    <p class="hero-frase reveal" style="--d:320ms">
+      Um site que desperta o mesmo desejo que um prato bem servido.
+    </p>
+
+    <div class="hero-meta eyebrow reveal" style="--d:400ms">
+      <span>São Paulo</span>
+      <span>Setembro de 2026</span>
+      <span>Documento confidencial</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 · ENTENDIMENTO ============ -->
+<section class="secao entendimento">
+  <img class="marca-dagua" src="assets/yva-monograma.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <p class="eyebrow reveal">01 · Entendimento</p>
+    <h2 class="titulo reveal" style="--d:80ms">O que vocês pediram, <em>traduzido</em> em projeto.</h2>
+
+    <div class="texto lead reveal" style="--d:160ms">
+      <p>
+        O Yvá não precisa de um site que apenas exista. Precisa de uma vitrine digital tão cuidada
+        quanto a louça, o empratamento e a luz do salão. Lemos o escopo enviado e ele é claro:
+        uma página moderna e sofisticada, fiel ao brandbook, com a fotografia dos pratos no centro
+        da experiência e leitura impecável no celular, que é onde a decisão de reservar acontece.
+      </p>
+      <p>
+        Entendemos também as camadas menos visíveis do pedido. A navegação precisa conduzir o visitante
+        até a reserva no TagMe sem atrito. O conteúdo em português e inglês precisa conversar com o
+        hóspede do Wyndham Ibirapuera e com o público da cidade. E a equipe de marketing precisa
+        de autonomia real para atualizar cardápio, preços, horários, fotos e textos sem depender de
+        desenvolvedor a cada ajuste.
+      </p>
+    </div>
+
+    <dl class="pontos">
+      <div class="ponto reveal">
+        <dt>Experiência</dt>
+        <dd>Mobile-first, com a fotografia conduzindo a leitura</dd>
+      </div>
+      <div class="ponto reveal" style="--d:80ms">
+        <dt>Idiomas</dt>
+        <dd>Português e inglês, com troca em um toque</dd>
+      </div>
+      <div class="ponto reveal" style="--d:160ms">
+        <dt>Reservas</dt>
+        <dd>Integração direta com o TagMe já utilizado</dd>
+      </div>
+      <div class="ponto reveal" style="--d:240ms">
+        <dt>Autonomia</dt>
+        <dd>Painel próprio para a equipe atualizar tudo</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 03 · ESCOPO ============ -->
+<section class="secao escopo">
+  <div class="padrao padrao-chevron" aria-hidden="true"></div>
+  <div class="veu" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow reveal">02 · Escopo</p>
+    <h2 class="titulo reveal" style="--d:80ms">Tudo o que o site entrega.</h2>
+    <p class="sub lead reveal" style="--d:160ms">
+      Cada item abaixo estava na lista enviada por vocês. Todos entram no projeto, de ponta a ponta,
+      sem módulos cobrados à parte.
+    </p>
+
+    <div class="grade">
+      <article class="card reveal">
+        <span class="num">01</span>
+        <h3>Página inicial</h3>
+        <p>Abertura cinematográfica com a marca, os pratos em destaque e o caminho para a reserva já na primeira dobra.</p>
+      </article>
+
+      <article class="card reveal" style="--d:60ms">
+        <span class="num">02</span>
+        <h3>Conceito do Yvá</h3>
+        <p>O manifesto da marca traduzido para a tela: terra, origem, cozinha contemporânea e sabores afetivos.</p>
+      </article>
+
+      <article class="card reveal" style="--d:120ms">
+        <span class="num">03</span>
+        <h3>Cardápio</h3>
+        <p>Menu navegável por categorias, com descrições, preços e destaques do chef. Atualizável pela equipe.</p>
+      </article>
+
+      <article class="card reveal" style="--d:180ms">
+        <span class="num">04</span>
+        <h3>Galeria</h3>
+        <p>Pratos e ambiente em alta qualidade, com carregamento otimizado para não pesar no celular.</p>
+      </article>
+
+      <article class="card reveal" style="--d:240ms">
+        <span class="num">05</span>
+        <h3>Horários</h3>
+        <p>Funcionamento por dia da semana, com espaço para feriados e alterações pontuais.</p>
+      </article>
+
+      <article class="card reveal" style="--d:300ms">
+        <span class="num">06</span>
+        <h3>Localização</h3>
+        <p>Endereço, referências do entorno e mapa do Google integrado, com rota em um clique.</p>
+      </article>
+
+      <article class="card reveal" style="--d:360ms">
+        <span class="num">07</span>
+        <h3>WhatsApp e redes</h3>
+        <p>Botão flutuante de WhatsApp e links para Instagram e demais canais, sempre ao alcance do polegar.</p>
+      </article>
+
+      <article class="card reveal" style="--d:420ms">
+        <span class="num">08</span>
+        <h3>Reservas via TagMe</h3>
+        <p>Integração com a plataforma já utilizada pelo restaurante, sem tirar o visitante da experiência do site.</p>
+      </article>
+
+      <article class="card reveal" style="--d:480ms">
+        <span class="num">09</span>
+        <h3>Eventos e novidades</h3>
+        <p>Área editorial para menus sazonais, jantares especiais, datas comemorativas e ações com o hotel.</p>
+      </article>
+
+      <article class="card reveal" style="--d:540ms">
+        <span class="num">10</span>
+        <h3>Versão PT e EN</h3>
+        <p>Site completo nos dois idiomas, com conteúdo adaptado e não apenas traduzido ao pé da letra.</p>
+      </article>
+
+      <article class="card reveal" style="--d:600ms">
+        <span class="num">11</span>
+        <h3>Painel administrativo</h3>
+        <p>Ambiente simples para a equipe editar cardápio, preços, horários, fotos e textos quando quiser.</p>
+      </article>
+
+      <article class="card reveal" style="--d:660ms">
+        <span class="num">12</span>
+        <h3>Presença no Google</h3>
+        <p>SEO técnico, dados estruturados de restaurante e alinhamento com o perfil no Google local.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAIXA DE FOTOS ============ -->
+<div class="faixa" aria-hidden="true">
+  <figure><img src="assets/prato-carpaccio.jpg" alt="" loading="lazy"></figure>
+  <figure><img src="assets/prato-carne.jpg" alt="" loading="lazy"></figure>
+  <figure><img src="assets/prato-polvo.jpg" alt="" loading="lazy"></figure>
+  <figure><img src="assets/prato-salada.jpg" alt="" loading="lazy"></figure>
+</div>
+
+<!-- ============ 04 · DIFERENCIAIS ============ -->
+<section class="secao diferenciais">
+  <div class="padrao padrao-chevron-claro" aria-hidden="true"></div>
+  <img class="marca-dagua" src="assets/yva-monograma.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <p class="eyebrow reveal">03 · Diferenciais</p>
+    <h2 class="titulo reveal" style="--d:80ms">O que separa um site bonito de um site que <em>funciona</em>.</h2>
+
+    <div class="lista-dif">
+      <article class="dif reveal">
+        <h3>Assessoria de conteúdo</h3>
+        <p>
+          Vocês não precisam entregar tudo pronto. Conduzimos a construção dos textos em português e inglês
+          a partir do brandbook, do manifesto e de uma conversa com a equipe. O tom de voz definido pela
+          marca, emotivo e acolhedor, atravessa cada página.
+        </p>
+      </article>
+
+      <article class="dif reveal" style="--d:80ms">
+        <h3>UX pensada para a reserva</h3>
+        <p>
+          Desenhamos o percurso do visitante com um objetivo claro: chegar ao TagMe. Hierarquia de
+          informação, posicionamento dos botões, densidade de texto e ordem das seções são decididos
+          a partir de como as pessoas realmente escolhem onde jantar.
+        </p>
+      </article>
+
+      <article class="dif reveal" style="--d:160ms">
+        <h3>Painel para a equipe</h3>
+        <p>
+          Cardápio, preços, horários, fotos, textos e novidades ficam editáveis em um painel simples,
+          feito para quem não é técnico. Entregamos com treinamento gravado, para que a equipe atualize
+          o site sem abrir chamado.
+        </p>
+      </article>
+
+      <article class="dif reveal" style="--d:240ms">
+        <h3>Fidelidade ao brandbook</h3>
+        <p>
+          Paleta, tipografia, padrão gráfico e área de não-interferência da logomarca são respeitados
+          integralmente. O site é uma extensão natural da identidade, não uma releitura livre dela.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 · PROCESSO ============ -->
+<section class="secao processo">
+  <div class="wrap">
+    <p class="eyebrow reveal">04 · Como trabalhamos</p>
+    <h2 class="titulo reveal" style="--d:80ms">Sete etapas, nenhuma surpresa.</h2>
+
+    <div class="linha-tempo">
+      <article class="etapa reveal">
+        <span class="passo">Etapa 01</span>
+        <div>
+          <h3>Imersão</h3>
+          <p>Reunião com a equipe de marketing para alinhar público, objetivos, referências e prioridades do Yvá e do Wyndham Ibirapuera.</p>
+        </div>
+      </article>
+
+      <article class="etapa reveal" style="--d:60ms">
+        <span class="passo">Etapa 02</span>
+        <div>
+          <h3>Estrutura e UX</h3>
+          <p>Arquitetura de informação e wireframes das telas principais, já pensando na leitura mobile e no caminho até a reserva.</p>
+        </div>
+      </article>
+
+      <article class="etapa reveal" style="--d:120ms">
+        <span class="passo">Etapa 03</span>
+        <div>
+          <h3>Conteúdo</h3>
+          <p>Redação dos textos em português, adaptação para o inglês e curadoria das fotos que entram em cada seção.</p>
+        </div>
+      </article>
+
+      <article class="etapa reveal" style="--d:180ms">
+        <span class="passo">Etapa 04</span>
+        <div>
+          <h3>Design</h3>
+          <p>Layout completo de todas as páginas, em versão desktop e mobile, aplicando a identidade visual do brandbook.</p>
+        </div>
+      </article>
+
+      <article class="etapa reveal" style="--d:240ms">
+        <span class="passo">Etapa 05</span>
+        <div>
+          <h3>Desenvolvimento</h3>
+          <p>Código sob medida, integração com o TagMe, montagem do painel administrativo e inserção de todo o conteúdo.</p>
+        </div>
+      </article>
+
+      <article class="etapa reveal" style="--d:300ms">
+        <span class="passo">Etapa 06</span>
+        <div>
+          <h3>Revisões</h3>
+          <p>Rodadas de ajuste com a equipe, testes em diferentes aparelhos e navegadores e validação final antes do ar.</p>
+        </div>
+      </article>
+
+      <article class="etapa reveal" style="--d:360ms">
+        <span class="passo">Etapa 07</span>
+        <div>
+          <h3>Publicação e suporte</h3>
+          <p>Configuração de domínio e hospedagem, publicação, treinamento do painel e acompanhamento nos meses seguintes.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 · TECNOLOGIA ============ -->
+<section class="secao tecnologia">
+  <div class="padrao padrao-diamante" aria-hidden="true"></div>
+  <div class="veu" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow reveal">05 · Tecnologia</p>
+    <h2 class="titulo reveal" style="--d:80ms">Sob medida. <em>Nada de template pronto.</em></h2>
+
+    <div class="pilares">
+      <article class="pilar reveal">
+        <h3>Performance</h3>
+        <p>
+          Site construído com Next.js e publicado em infraestrutura de borda. Imagens servidas em formato
+          moderno e no tamanho exato de cada tela, para que as fotos dos pratos abram rápido mesmo em 4G.
+        </p>
+      </article>
+
+      <article class="pilar reveal" style="--d:80ms">
+        <h3>Velocidade real</h3>
+        <p>
+          Trabalhamos com metas de Core Web Vitals, os indicadores que o Google usa para medir experiência.
+          Site rápido não é detalhe técnico: é menos gente desistindo antes de ver o cardápio.
+        </p>
+      </article>
+
+      <article class="pilar reveal" style="--d:160ms">
+        <h3>SEO e Google local</h3>
+        <p>
+          Estrutura semântica, dados estruturados de restaurante, versões PT e EN corretamente sinalizadas
+          e alinhamento com o perfil do Google, para quem busca por restaurante na região do Ibirapuera.
+        </p>
+      </article>
+    </div>
+
+    <p class="nota-tec reveal">
+      O painel administrativo roda sobre um CMS headless. Na prática, a equipe acessa uma tela limpa,
+      edita o que precisa e publica. Sem plugins que quebram, sem atualizações obrigatórias
+      e sem risco de derrubar o layout por engano.
+    </p>
+  </div>
+</section>
+
+<!-- ============ 07 · INVESTIMENTO ============ -->
+<section class="secao investimento">
+  <div class="padrao padrao-y-claro" aria-hidden="true"></div>
+  <img class="selo" src="assets/yva-selo.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <p class="eyebrow reveal">06 · Investimento e prazo</p>
+    <h2 class="titulo reveal" style="--d:80ms">Valores claros, do começo ao fim.</h2>
+
+    <div class="valores">
+      <div class="valor reveal">
+        <span class="rotulo">Investimento</span>
+        <span class="numero"><small>R$</small> 12.900</span>
+        <p class="detalhe">Projeto completo, à vista.<br>Ou 3x de R$ 4.500 sem juros.</p>
+      </div>
+
+      <div class="valor reveal" style="--d:80ms">
+        <span class="rotulo">Prazo</span>
+        <span class="numero">35 <small>dias úteis</small></span>
+        <p class="detalhe">A partir da aprovação da proposta e do recebimento das fotos em alta.</p>
+      </div>
+
+      <div class="valor reveal" style="--d:160ms">
+        <span class="rotulo">Mensalidade</span>
+        <span class="numero"><small>R$</small> 390<small>/mês</small></span>
+        <p class="detalhe">Hospedagem, manutenção e suporte.<br>Os três primeiros meses por nossa conta.</p>
+      </div>
+    </div>
+
+    <dl class="condicoes">
+      <div class="condicao reveal">
+        <dt>O que está incluso</dt>
+        <dd>Estratégia, UX, redação em PT e EN, design de todas as telas, desenvolvimento sob medida, integração com o TagMe, painel administrativo, SEO técnico, configuração de domínio e publicação.</dd>
+      </div>
+
+      <div class="condicao reveal" style="--d:60ms">
+        <dt>Revisões</dt>
+        <dd>Três rodadas de ajuste por etapa em conteúdo, design e desenvolvimento. Na prática, revisamos até o resultado ficar certo.</dd>
+      </div>
+
+      <div class="condicao reveal" style="--d:120ms">
+        <dt>Produção de conteúdo</dt>
+        <dd>Por nossa conta. Vocês entregam as fotos em alta e as informações de cardápio, horários e serviços. O restante escrevemos e inserimos.</dd>
+      </div>
+
+      <div class="condicao reveal" style="--d:180ms">
+        <dt>Tecnologia</dt>
+        <dd>Next.js com CMS headless, publicado na Vercel. Código próprio, sem tema de prateleira e sem dependência de plataforma fechada.</dd>
+      </div>
+
+      <div class="condicao reveal" style="--d:240ms">
+        <dt>Suporte após a publicação</dt>
+        <dd>90 dias de acompanhamento incluso, com ajustes finos e resposta em até um dia útil. Depois disso, segue pela mensalidade.</dd>
+      </div>
+
+      <div class="condicao reveal" style="--d:300ms">
+        <dt>Pagamento</dt>
+        <dd>40% na assinatura do contrato e 60% na publicação do site. Nota fiscal em todas as etapas.</dd>
+      </div>
+    </dl>
+
+    <p class="validade reveal">Proposta válida por 15 dias a partir do envio.</p>
+  </div>
+</section>
+
+<!-- ============ 08 · CTA ============ -->
+<section class="secao cta">
+  <div class="cta-foto" aria-hidden="true"></div>
+  <div class="cta-veu" aria-hidden="true"></div>
+  <div class="wrap">
+    <img class="marca-yva reveal" src="assets/yva-logo-branco.png" alt="Yvá Gastronomia" width="900" height="228">
+    <p class="eyebrow reveal" style="--d:80ms">07 · Próximo passo</p>
+    <h2 class="titulo reveal" style="--d:160ms">Vamos <em>conversar</em> sobre o Yvá.</h2>
+    <p class="reveal" style="--d:240ms">
+      Trinta minutos são suficientes para alinhar expectativas, ajustar o escopo ao que faz mais
+      sentido para vocês e definir a data de início. Escolha o melhor horário e nos chame.
+    </p>
+
+    <a class="botao reveal" style="--d:320ms" href="https://wa.me/5511992644010?text=Ol%C3%A1%2C%20Matheus!%20Vi%20a%20proposta%20do%20site%20do%20Yv%C3%A1%20e%20gostaria%20de%20marcar%20uma%20conversa." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.05 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.2 8.2 0 01-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.98-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+      Falar no WhatsApp
+    </a>
+
+    <div class="contato reveal" style="--d:400ms">
+      <span>Matheus Moura · Matilab</span>
+      <span>11 99264-4010 · matilab.com.br</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="rodape">
+  <div class="wrap">
+    <a href="https://matilab.com.br" target="_blank" rel="noopener" aria-label="Matilab">
+      <img class="marca-matilab" src="assets/matilab-logo-branco.svg" alt="Matilab">
+    </a>
+    <span>Proposta comercial · Yvá Gastronomia · Setembro de 2026</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* Revelação progressiva ao rolar */
+  var alvos = document.querySelectorAll('.reveal');
+
+  if (!('IntersectionObserver' in window)) {
+    alvos.forEach(function (el) { el.classList.add('visivel'); });
+  } else {
+    var observador = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (entrada) {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add('visivel');
+          observador.unobserve(entrada.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+    alvos.forEach(function (el) { observador.observe(el); });
+  }
+
+  /* Barra superior ganha fundo claro depois do hero */
+  var topo = document.getElementById('topo');
+  var ultimo = null;
+
+  function atualizarTopo() {
+    var passou = window.scrollY > window.innerHeight * 0.85;
+    if (passou !== ultimo) {
+      topo.classList.toggle('fixo', passou);
+      ultimo = passou;
+    }
+  }
+
+  window.addEventListener('scroll', function () {
+    window.requestAnimationFrame(atualizarTopo);
+  }, { passive: true });
+
+  atualizarTopo();
+})();
+</script>
+
+</body>
+</html>
