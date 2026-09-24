@@ -3403,7 +3403,8 @@
           "Sim, em sites Next.js quando o cliente precisa de autonomia de edição."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-24"
     },
     {
       "slug": "o-que-e-jamstack",
@@ -3479,7 +3480,8 @@
           "Sim, nossos sites em Next.js seguem esses princípios."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-24"
     },
     {
       "slug": "o-que-e-edge-computing-para-sites",

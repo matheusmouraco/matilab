@@ -146,3 +146,5 @@
 - [O que é vibe coding](https://matilab.com.br/o-que-e-vibe-coding)
 - [O que é a web agêntica](https://matilab.com.br/o-que-e-web-agentica)
 - [O que é RAG](https://matilab.com.br/o-que-e-rag-e-por-que-importa-para-conteudo)
+- [O que é headless CMS](https://matilab.com.br/o-que-e-headless-cms)
+- [O que é Jamstack](https://matilab.com.br/o-que-e-jamstack)
