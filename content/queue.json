@@ -3557,7 +3557,8 @@
           "Sim, hospedamos na Vercel com entrega na borda."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-25"
     },
     {
       "slug": "o-que-e-pwa-progressive-web-app",
@@ -3633,7 +3634,8 @@
           "Sim, quando faz sentido para o projeto, sobre um site rápido em Next.js."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-25"
     },
     {
       "slug": "o-que-e-e-commerce-headless",
