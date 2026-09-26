@@ -899,4 +899,18 @@
     <priority>0.75</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/o-que-e-e-commerce-headless</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/first-party-data-e-o-fim-dos-cookies</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
 </urlset>

@@ -150,3 +150,5 @@
 - [O que é Jamstack](https://matilab.com.br/o-que-e-jamstack)
 - [O que é edge computing](https://matilab.com.br/o-que-e-edge-computing-para-sites)
 - [O que é PWA](https://matilab.com.br/o-que-e-pwa-progressive-web-app)
+- [O que é e-commerce headless](https://matilab.com.br/o-que-e-e-commerce-headless)
+- [First-party data e o fim dos cookies](https://matilab.com.br/first-party-data-e-o-fim-dos-cookies)

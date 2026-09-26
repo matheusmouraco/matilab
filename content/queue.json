@@ -3711,7 +3711,8 @@
           "Sim, em Next.js, com SEO técnico e checkout eficiente."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-26"
     },
     {
       "slug": "first-party-data-e-o-fim-dos-cookies",
@@ -3787,7 +3788,8 @@
           "Sim, construímos o site como central de captação e medição, integrado ao CRM e ao WhatsApp."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-26"
     },
     {
       "slug": "o-que-e-inp-nova-metrica-do-google",
