@@ -3865,7 +3865,8 @@
           "Sim, faz parte do nosso padrão de performance em Next.js."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-27"
     },
     {
       "slug": "o-que-e-core-update-do-google",
@@ -3941,7 +3942,8 @@
           "Sim, com qualidade técnica, conteúdo por assunto e autoridade."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-27"
     },
     {
       "slug": "o-que-e-multimodalidade-e-busca-por-imagem",

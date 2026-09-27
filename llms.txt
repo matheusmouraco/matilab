@@ -152,3 +152,5 @@
 - [O que é PWA](https://matilab.com.br/o-que-e-pwa-progressive-web-app)
 - [O que é e-commerce headless](https://matilab.com.br/o-que-e-e-commerce-headless)
 - [First-party data e o fim dos cookies](https://matilab.com.br/first-party-data-e-o-fim-dos-cookies)
+- [O que é INP](https://matilab.com.br/o-que-e-inp-nova-metrica-do-google)
+- [O que é um core update](https://matilab.com.br/o-que-e-core-update-do-google)
