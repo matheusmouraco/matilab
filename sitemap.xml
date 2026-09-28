@@ -927,4 +927,18 @@
     <priority>0.75</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/o-que-e-multimodalidade-e-busca-por-imagem</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/o-que-e-next-js-e-por-que-a-matilab-usa</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
 </urlset>

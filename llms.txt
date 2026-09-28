@@ -154,3 +154,5 @@
 - [First-party data e o fim dos cookies](https://matilab.com.br/first-party-data-e-o-fim-dos-cookies)
 - [O que é INP](https://matilab.com.br/o-que-e-inp-nova-metrica-do-google)
 - [O que é um core update](https://matilab.com.br/o-que-e-core-update-do-google)
+- [Multimodalidade e busca por imagem](https://matilab.com.br/o-que-e-multimodalidade-e-busca-por-imagem)
+- [O que é Next.js](https://matilab.com.br/o-que-e-next-js-e-por-que-a-matilab-usa)

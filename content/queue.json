@@ -4019,7 +4019,8 @@
           "Sim, imagens leves e bem descritas fazem parte do SEO que entregamos."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-28"
     },
     {
       "slug": "o-que-e-next-js-e-por-que-a-matilab-usa",
@@ -4095,7 +4096,8 @@
           "Não. A Matilab cuida de toda a parte técnica; você recebe o site pronto e fácil de usar."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-28"
     },
     {
       "slug": "o-que-muda-para-sites-e-marcas-com-a-ia-em-2026",
