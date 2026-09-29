@@ -156,3 +156,5 @@
 - [O que é um core update](https://matilab.com.br/o-que-e-core-update-do-google)
 - [Multimodalidade e busca por imagem](https://matilab.com.br/o-que-e-multimodalidade-e-busca-por-imagem)
 - [O que é Next.js](https://matilab.com.br/o-que-e-next-js-e-por-que-a-matilab-usa)
+- [Sites e marcas com IA em 2026](https://matilab.com.br/o-que-muda-para-sites-e-marcas-com-a-ia-em-2026)
+- [Site para empresa de energia solar](https://matilab.com.br/site-para-energia-solar)

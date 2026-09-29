@@ -4173,7 +4173,8 @@
           "Sim, é o foco do nosso trabalho de SEO e GEO."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-29"
     },
     {
       "slug": "site-para-energia-solar",
@@ -4250,7 +4251,8 @@
           "Sim, o atendimento é remoto e digital, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-29"
     },
     {
       "slug": "site-para-industria",
