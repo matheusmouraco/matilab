@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Proposta Matilab · Vertria</title>
+<meta name="description" content="Proposta comercial da Matilab para a Vertria Incorporadora: site do empreendimento, espelho de vendas integrado ao CV CRM e Área do Cliente.">
+<meta property="og:title" content="Proposta Matilab · Vertria">
+<meta property="og:description" content="Site, espelho de vendas e área do cliente Vertria. Proposta comercial da Matilab.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 280'%3E%3Crect width='280' height='280' rx='56' fill='%230A0A0A'/%3E%3Cpath fill='%23B5FB67' d='M54 56c-2 1-4 4-4 6v23c0 3 0 7-2 9-3 3-6 3-9 3l-31-1c-4 0-8-5-8-9V58c0-3 2-7 2-9 2 0 5-2 6-2h27c5 0 10-4 10-9l1-28c0-2 4-7 7-7L222 2c7 0 11 5 12 12v25c0 3 5 8 8 8l29 1c3 0 7 4 7 7v73c0 6-9 7-13 7l-96 10c-5 1-12 1-13-6-1-5 0-13-1-19-1-7 2-11 9-13l58-12c3-1 7-4 7-7V60c0-2-4-7-7-7H59c-3 0-4 1-5 3Z'/%3E%3Cpath fill='%23B5FB67' d='M275 171l3 6v35c0 5-8 7-12 7l-25 1c-5 0-8 6-8 11v25l-2 5c-3 1-6 3-9 3H55c-3 0-9-3-9-6l-1-27c0-4-3-10-8-11l-29-1c-4 0-8-6-8-10v-65c0-3 2-6 2-8 4-2 7-3 11-4l101-10c5-1 11 2 11 8v21c0 5-5 7-9 8l-54 11c-7 1-12 4-12 12 0 7 0 15 0 23 0 3 4 9 8 9h164c3 0 7-4 7-7l1-29c0-5 7-8 12-8l28 1 7 2Z'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* Matilab · Proposta Vertria Incorporadora */
+:root{
+  --preto:#111111;
+  --texto:#1A1A1A;
+  --claro:#F7F7F5;
+  --branco:#FFFFFF;
+  --lima:#90E765;
+  --verde:#3FAE2A;
+  --cinza:#6B6B68;
+  --cinza-claro:#A3A39F;
+  --borda:#E4E4DF;
+  --borda-escura:#2A2A2A;
+  --card-escuro:#1A1A1A;
+  --reservada:#F2B84B;
+  --vendida:#C9C9C4;
+  --raio:20px;
+  --raio-sm:12px;
+  --max:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Poppins',system-ui,-apple-system,sans-serif;font-weight:400;color:var(--texto);background:var(--claro);line-height:1.6;font-size:16px;overflow-x:hidden}
+img,svg{display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.escopo-list>*,.demo-body>*,.planos>*,.sim>*,.grid-obj>*,.suportes>*,.contexto-grid>*,.porque>*{min-width:0}
+h1,h2,h3,h4{font-weight:700;line-height:1.15;letter-spacing:-.02em}
+h3,h4{font-weight:600}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+section{padding:88px 0;scroll-margin-top:64px}
+.dark{background:var(--preto);color:#EDEDEA}
+.dark .muted{color:#9A9A95}
+.muted{color:var(--cinza)}
+
+/* Tag e títulos de seção */
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--verde);margin-bottom:18px}
+.tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lima);box-shadow:0 0 0 4px rgba(144,231,101,.18)}
+.dark .tag{color:var(--lima)}
+.sec-title{font-size:clamp(28px,5vw,44px);max-width:760px}
+.sec-lead{margin-top:16px;max-width:640px;font-size:17px}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .2s ease,background .2s ease,box-shadow .2s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-lima{background:var(--lima);color:var(--preto)}
+.btn-lima:hover{box-shadow:0 10px 30px -10px rgba(144,231,101,.8)}
+.btn-ghost{border:1px solid rgba(255,255,255,.22);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.06)}
+.btn-dark{background:var(--preto);color:#fff}
+.btn-outline{border:1px solid var(--borda);color:var(--texto);background:var(--branco)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* Header */
+.header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s ease,border-color .3s ease;border-bottom:1px solid transparent}
+.header.solid{background:rgba(17,17,17,.88);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom-color:rgba(255,255,255,.08)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;font-size:22px;letter-spacing:-.03em;color:#fff;display:flex;align-items:center;gap:2px}
+.logo span{color:var(--lima)}
+.header .btn{padding:10px 18px;font-size:14px}
+
+/* Hero */
+.hero{background:var(--preto);color:#fff;padding:140px 0 80px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:720px;height:720px;right:-240px;top:-260px;border-radius:50%;background:radial-gradient(circle,rgba(144,231,101,.22),rgba(144,231,101,0) 65%);pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(to bottom,#000,transparent 85%);-webkit-mask-image:linear-gradient(to bottom,#000,transparent 85%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(36px,7vw,72px);max-width:900px}
+.hero h1 em{font-style:normal;color:var(--lima)}
+.hero p.sub{margin-top:22px;font-size:clamp(17px,2.2vw,20px);color:#BDBDB8;max-width:640px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.meta{margin-top:56px;display:grid;grid-template-columns:repeat(2,1fr);border:1px solid rgba(255,255,255,.1);border-radius:var(--raio);overflow:hidden;background:rgba(255,255,255,.02)}
+.meta div{padding:18px 20px;border-right:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
+.meta small{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#8A8A85;margin-bottom:4px}
+.meta strong{font-weight:600;font-size:15px;color:#fff}
+.meta div:last-child{grid-column:1/-1}
+
+/* Contexto */
+.contexto-grid{display:grid;gap:40px}
+.contexto-text p{font-size:18px;margin-top:18px}
+.contexto-text p:first-child{margin-top:0}
+.stats-mini{display:grid;gap:14px}
+.stat-mini{background:var(--branco);border:1px solid var(--borda);border-radius:var(--raio);padding:22px 24px;display:flex;align-items:center;gap:18px}
+.stat-mini .num{font-size:30px;font-weight:700;color:var(--texto);min-width:88px;letter-spacing:-.03em}
+.stat-mini .num.l{color:var(--verde)}
+.stat-mini p{font-size:15px;color:var(--cinza)}
+.bar{height:6px;background:var(--borda);border-radius:6px;margin-top:10px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--lima);border-radius:6px;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.in .bar i{width:60%}
+
+/* Cards genéricos */
+.grid-obj{display:grid;gap:16px;margin-top:48px}
+.card{background:var(--branco);border:1px solid var(--borda);border-radius:var(--raio);padding:28px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-4px);border-color:#d3d3cc;box-shadow:0 20px 40px -24px rgba(0,0,0,.18)}
+.ico{width:48px;height:48px;border-radius:14px;background:var(--preto);display:grid;place-items:center;margin-bottom:20px}
+.ico svg{width:22px;height:22px;stroke:var(--lima);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:18px;line-height:1.35}
+.card .n{font-size:12px;font-weight:600;color:var(--cinza-claro);float:right}
+
+/* Escopo */
+.escopo-list{display:grid;gap:18px;margin-top:48px}
+.bloco{background:var(--branco);border:1px solid var(--borda);border-radius:var(--raio);padding:30px}
+.bloco-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+.bloco-head h3{font-size:22px;display:flex;align-items:center;gap:12px}
+.bloco-head h3 .ico{margin:0;width:40px;height:40px;border-radius:12px}
+.bloco-head h3 .ico svg{width:19px;height:19px}
+.selo{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:6px 12px;border-radius:999px;background:#EEF9E7;color:#2E7F1E;border:1px solid #CBEDB8}
+.selo.full{background:var(--preto);color:var(--lima);border-color:var(--preto)}
+.checks{list-style:none;display:grid;gap:10px 28px}
+.checks li{position:relative;padding-left:28px;font-size:15px}
+.checks li::before{content:"";position:absolute;left:0;top:4px;width:18px;height:18px;border-radius:50%;background:var(--lima) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/11px no-repeat}
+.dark .checks li::before{background-color:var(--lima)}
+
+/* Demo espelho */
+.demo{margin-top:28px;background:var(--preto);color:#EDEDEA;border-radius:24px;padding:24px;border:1px solid var(--borda-escura);overflow:hidden}
+.demo-top{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:flex-start;margin-bottom:20px}
+.demo-top h4{font-size:18px;color:#fff}
+.demo-top p{font-size:13px;color:#8F8F8A}
+.demo-badge{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--lima);border:1px solid rgba(144,231,101,.35);padding:5px 10px;border-radius:999px;display:inline-flex;align-items:center;gap:6px}
+.demo-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lima);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.chip{padding:8px 14px;border-radius:999px;font-size:13px;font-weight:500;border:1px solid #333;color:#CFCFCA;transition:all .2s ease}
+.chip:hover{border-color:#555}
+.chip.on{background:var(--lima);border-color:var(--lima);color:var(--preto)}
+.filters .sep{width:1px;background:#2E2E2E;margin:0 4px}
+.demo-body{display:grid;gap:18px}
+.torre{display:grid;gap:6px}
+.andar{display:grid;grid-template-columns:40px repeat(4,minmax(0,1fr));gap:6px;align-items:center}
+.andar .lbl{font-size:11px;color:#77776F;font-weight:500;text-align:right;padding-right:6px}
+.un{height:40px;border-radius:9px;font-size:12px;font-weight:600;display:grid;place-items:center;transition:opacity .25s ease,transform .2s ease,outline-color .2s;outline:2px solid transparent;outline-offset:2px}
+.un[data-s="d"]{background:var(--lima);color:var(--preto)}
+.un[data-s="r"]{background:var(--reservada);color:var(--preto)}
+.un[data-s="v"]{background:#2C2C2C;color:#666}
+.un:hover{transform:scale(1.05)}
+.un.dim{opacity:.12;pointer-events:none}
+.un.sel{outline-color:#fff}
+.torre-foot{display:flex;justify-content:space-between;margin-top:6px;font-size:11px;color:#77776F;padding-left:50px}
+.painel{background:#1A1A1A;border:1px solid #2A2A2A;border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:16px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:#BDBDB8}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend i{width:12px;height:12px;border-radius:4px;display:inline-block}
+.counts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.counts div{background:#111;border-radius:12px;padding:12px;text-align:center}
+.counts strong{display:block;font-size:22px;color:#fff}
+.counts small{font-size:11px;color:#8A8A85}
+.detalhe{border-top:1px solid #2A2A2A;padding-top:16px;min-height:132px}
+.detalhe .vazio{font-size:13px;color:#77776F}
+.detalhe h5{font-size:16px;color:#fff;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.detalhe dl{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;margin:12px 0 14px;font-size:13px}
+.detalhe dt{color:#77776F;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.detalhe dd{color:#EDEDEA;font-weight:500}
+.st{font-size:11px;padding:4px 9px;border-radius:999px;font-weight:600}
+.st.d{background:var(--lima);color:#111}.st.r{background:var(--reservada);color:#111}.st.v{background:#2C2C2C;color:#999}
+.detalhe .btn{padding:10px 16px;font-size:13px;width:100%}
+.detalhe .btn[disabled]{opacity:.4;pointer-events:none}
+
+/* Notas */
+.nota{display:flex;gap:16px;border-radius:var(--raio);padding:22px 24px;margin-top:18px}
+.nota.info{background:#EEF9E7;border:1px solid #CBEDB8}
+.nota.info .ni{background:var(--verde)}
+.nota.neutra{background:var(--branco);border:1px dashed #CFCFC8}
+.nota.neutra .ni{background:var(--cinza-claro)}
+.ni{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;flex:none}
+.ni svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.4;stroke-linecap:round}
+.nota strong{display:block;font-weight:600;margin-bottom:4px}
+.nota p{font-size:14px;color:#3D3D3A}
+
+/* Investimento */
+.toggle{display:inline-flex;background:#1C1C1C;border:1px solid #2C2C2C;border-radius:999px;padding:5px;margin-top:32px;position:relative}
+.toggle button{padding:10px 20px;border-radius:999px;font-size:14px;font-weight:500;color:#AFAFAA;position:relative;z-index:1;transition:color .25s ease}
+.toggle button.on{color:var(--preto)}
+.toggle .pill{position:absolute;top:5px;bottom:5px;left:5px;border-radius:999px;background:var(--lima);transition:transform .35s cubic-bezier(.2,.8,.2,1),width .35s cubic-bezier(.2,.8,.2,1)}
+.planos{display:grid;gap:18px;margin-top:32px}
+.plano{background:var(--card-escuro);border:1px solid var(--borda-escura);border-radius:24px;padding:32px;display:flex;flex-direction:column;position:relative}
+.plano.dest{border:2px solid var(--lima);background:linear-gradient(180deg,#1C2418 0%,#1A1A1A 45%);box-shadow:0 30px 60px -30px rgba(144,231,101,.35)}
+.plano .rec{position:absolute;top:-13px;left:28px;background:var(--lima);color:var(--preto);font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;letter-spacing:.02em}
+.plano h3{font-size:22px;color:#fff}
+.plano .desc{font-size:14px;color:#9A9A95;margin-top:6px}
+.preco{margin:26px 0 6px;min-height:92px}
+.preco .de{font-size:14px;color:#8A8A85}
+.preco .de s{color:#6A6A65}
+.preco .val{font-size:clamp(38px,6vw,48px);font-weight:700;color:#fff;letter-spacing:-.03em;line-height:1.1;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.preco .val small{font-size:16px;font-weight:500;color:#AFAFAA;letter-spacing:0}
+.preco .obs{font-size:13px;color:var(--lima);margin-top:6px;font-weight:500}
+.preco.swap{animation:swap .35s ease}
+@keyframes swap{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.plano .total{font-size:13px;color:#8A8A85;padding-bottom:22px;border-bottom:1px solid #2A2A2A;margin-bottom:22px}
+.plano .checks{margin-bottom:28px;gap:12px}
+.plano .checks li{color:#D6D6D1}
+.plano .btn{margin-top:auto;width:100%}
+.plano:not(.dest) .btn{background:#fff;color:var(--preto)}
+.formas{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:24px}
+.formas div{border:1px solid #2A2A2A;border-radius:12px;padding:10px;font-size:12px;color:#8F8F8A;text-align:center;transition:border-color .25s,color .25s}
+.formas div b{display:block;color:#DADAD5;font-size:13px;font-weight:600}
+.formas div.on{border-color:rgba(144,231,101,.5);color:#BDBDB8}
+.formas div.on b{color:var(--lima)}
+
+/* Custos mensais */
+.infra{margin-top:48px;background:var(--branco);border:1px solid var(--borda);border-radius:24px;padding:30px;display:grid;gap:22px;position:relative;overflow:hidden}
+.infra::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(144,231,101,.25),transparent 70%)}
+.infra-head{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.infra h3{font-size:22px}
+.selo.obr{background:var(--preto);color:#fff;border-color:var(--preto)}
+.infra .preco-m{font-size:40px;font-weight:700;letter-spacing:-.03em}
+.infra .preco-m small{font-size:16px;font-weight:500;color:var(--cinza)}
+.infra p{color:var(--cinza);max-width:620px}
+.sub-h{margin-top:56px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.sub-h h3{font-size:22px}
+.sub-h span{font-size:13px;color:var(--cinza);font-weight:500}
+.suportes{display:grid;gap:18px;margin-top:22px}
+.sup{background:var(--branco);border:1px solid var(--borda);border-radius:24px;padding:30px;position:relative}
+.sup.dest{border:2px solid var(--lima);box-shadow:0 24px 50px -30px rgba(63,174,42,.45)}
+.sup .rec{position:absolute;top:-13px;left:26px;background:var(--lima);color:var(--preto);font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px}
+.sup h4{font-size:20px}
+.sup .pm{font-size:34px;font-weight:700;letter-spacing:-.03em;margin:12px 0 10px}
+.sup .pm small{font-size:15px;font-weight:500;color:var(--cinza)}
+.sup p{font-size:15px;color:var(--cinza)}
+.sup .horas{display:flex;gap:6px;margin-top:18px}
+.sup .horas i{flex:1;height:8px;border-radius:4px;background:var(--lima)}
+.sup .horas i.off{background:var(--borda)}
+.sup .horas-lbl{font-size:12px;color:var(--cinza);margin-top:8px}
+
+/* Simulador */
+.sim{margin-top:56px;background:var(--preto);color:#EDEDEA;border-radius:28px;padding:30px;display:grid;gap:28px}
+.sim h3{font-size:24px;color:#fff}
+.sim .muted{font-size:14px;margin-top:6px}
+.grupo{margin-top:20px}
+.grupo > span{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8A8A85;font-weight:600;margin-bottom:10px}
+.opcoes{display:grid;gap:8px}
+.op{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border:1px solid #2C2C2C;border-radius:14px;cursor:pointer;transition:border-color .2s,background .2s;font-size:14px}
+.op:hover{border-color:#444}
+.op input{position:absolute;opacity:0;pointer-events:none}
+.op .r{width:18px;height:18px;border-radius:50%;border:2px solid #555;flex:none;display:grid;place-items:center;transition:border-color .2s}
+.op .r::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--lima);transform:scale(0);transition:transform .2s}
+.op .l{display:flex;align-items:center;gap:12px;color:#DADAD5}
+.op em{font-style:normal;font-size:13px;color:#8A8A85;white-space:nowrap}
+.op:has(input:checked){border-color:var(--lima);background:rgba(144,231,101,.06)}
+.op:has(input:checked) .r{border-color:var(--lima)}
+.op:has(input:checked) .r::after{transform:scale(1)}
+.op input:focus-visible ~ .l .r{outline:2px solid var(--lima);outline-offset:2px}
+.op-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.op-row .op{justify-content:center;text-align:center;padding:12px 8px}
+.op-row .op .l{gap:8px}
+.resumo{background:#1A1A1A;border:1px solid #2A2A2A;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:18px;align-self:start}
+.resumo .linha{padding-bottom:18px;border-bottom:1px solid #2A2A2A}
+.resumo .linha:last-of-type{border-bottom:0;padding-bottom:0}
+.resumo small{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#8A8A85;font-weight:600}
+.resumo .big{font-size:34px;font-weight:700;color:#fff;letter-spacing:-.03em;margin-top:4px;line-height:1.15}
+.resumo .big.l{color:var(--lima)}
+.resumo .det{font-size:13px;color:#9A9A95;margin-top:4px}
+.resumo .btn{width:100%}
+
+/* Cronograma */
+.timeline{margin-top:52px;display:grid;gap:0;position:relative}
+.etapa{position:relative;padding:0 0 36px 44px}
+.etapa::before{content:"";position:absolute;left:11px;top:26px;bottom:0;width:2px;background:var(--borda)}
+.etapa:last-child::before{display:none}
+.etapa .dot{position:absolute;left:0;top:2px;width:24px;height:24px;border-radius:50%;background:var(--claro);border:2px solid var(--verde);display:grid;place-items:center}
+.etapa .dot::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--verde)}
+.etapa:last-child .dot{background:var(--lima);border-color:var(--lima)}
+.etapa:last-child .dot::after{background:var(--preto)}
+.etapa .sem{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--verde)}
+.etapa h3{font-size:20px;margin:4px 0 6px}
+.etapa p{font-size:15px;color:var(--cinza)}
+.prazos{display:grid;gap:12px;margin-top:8px}
+.prazo{display:flex;align-items:center;gap:14px;background:var(--branco);border:1px solid var(--borda);border-radius:16px;padding:16px 20px}
+.prazo b{font-size:26px;font-weight:700;letter-spacing:-.03em;min-width:48px}
+.prazo span{font-size:14px;color:var(--cinza)}
+.prazo span strong{color:var(--texto);font-weight:600;display:block;font-size:15px}
+
+/* Condições */
+.cond{display:grid;gap:14px;margin-top:44px}
+.cond .card{padding:24px;display:flex;gap:16px;align-items:flex-start}
+.cond .card .ico{margin:0;flex:none;width:44px;height:44px}
+.cond .card h3{font-size:16px}
+.cond .card p{font-size:14px;color:var(--cinza);margin-top:4px}
+
+/* Por que */
+.porque{display:grid;gap:40px}
+.porque p.txt{font-size:18px;color:#BDBDB8;margin-top:18px}
+.porque p.txt strong{color:#fff;font-weight:600}
+.nums{display:grid;gap:14px}
+.num-card{border:1px solid var(--borda-escura);border-radius:var(--raio);padding:26px;background:var(--card-escuro)}
+.num-card b{display:block;font-size:clamp(40px,6vw,56px);font-weight:700;color:var(--lima);letter-spacing:-.04em;line-height:1}
+.num-card b.txt-num{font-size:clamp(26px,3.6vw,32px);line-height:1.15;color:#fff}
+.num-card span{display:block;margin-top:10px;font-size:14px;color:#9A9A95}
+.pilares{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.pilares span{font-size:13px;padding:8px 14px;border-radius:999px;border:1px solid #2E2E2E;color:#CFCFCA}
+
+/* CTA final */
+.cta{text-align:center;padding:110px 0}
+.cta-box{background:var(--preto);color:#fff;border-radius:32px;padding:64px 24px;position:relative;overflow:hidden}
+.cta-box::before{content:"";position:absolute;left:50%;top:-50%;width:700px;height:700px;transform:translateX(-50%);background:radial-gradient(circle,rgba(144,231,101,.22),transparent 65%);pointer-events:none}
+.cta-box > *{position:relative}
+.cta h2{font-size:clamp(30px,5.4vw,52px);max-width:760px;margin:0 auto}
+.cta h2 em{font-style:normal;color:var(--lima)}
+.cta p{color:#BDBDB8;margin:18px auto 34px;max-width:520px;font-size:17px}
+.cta .btn{padding:18px 32px;font-size:16px}
+
+/* Rodapé */
+footer{background:var(--preto);color:#8A8A85;font-size:13px;padding:36px 0;border-top:1px solid #222}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:space-between;align-items:center}
+footer .logo{font-size:18px}
+footer a:hover{color:var(--lima)}
+footer .info{display:flex;flex-wrap:wrap;gap:6px 14px}
+
+/* WhatsApp flutuante */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.45);transition:transform .2s ease}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:ring 2.4s infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.5);opacity:0}}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}.rv.d4{transition-delay:.32s}.rv.d5{transition-delay:.4s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .wa-float::before,.demo-badge::before{animation:none}
+  .in .bar i,.bar i{width:60%;transition:none}
+}
+
+/* Tablet e desktop */
+@media (min-width:640px){
+  .meta{grid-template-columns:repeat(3,1fr)}
+  .meta div:last-child{grid-column:auto}
+  .grid-obj{grid-template-columns:repeat(2,1fr)}
+  .checks{grid-template-columns:repeat(2,1fr)}
+  .plano .checks{grid-template-columns:1fr}
+  .cond{grid-template-columns:repeat(2,1fr)}
+  .nums{grid-template-columns:repeat(3,1fr)}
+  .prazos{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:900px){
+  section{padding:120px 0}
+  .wrap{padding:0 32px}
+  .meta{grid-template-columns:repeat(5,1fr)}
+  .meta div{border-bottom:0}
+  .meta div:last-child{border-right:0}
+  .contexto-grid{grid-template-columns:1.25fr 1fr;align-items:center;gap:64px}
+  .grid-obj{grid-template-columns:repeat(3,1fr)}
+  .bloco{padding:40px}
+  .checks.c3{grid-template-columns:repeat(3,1fr)}
+  .demo{padding:36px}
+  .demo-body{grid-template-columns:1.5fr 1fr;align-items:start}
+  .andar{grid-template-columns:52px repeat(4,minmax(0,1fr))}
+  .un{height:44px;font-size:13px}
+  .planos{grid-template-columns:1fr 1fr;align-items:stretch}
+  .plano{padding:40px}
+  .infra{grid-template-columns:1.2fr 1fr;align-items:center;padding:40px}
+  .suportes{grid-template-columns:1fr 1fr}
+  .sim{grid-template-columns:1.3fr 1fr;padding:44px;gap:40px}
+  .timeline{grid-template-columns:repeat(4,1fr);gap:20px}
+  .etapa{padding:44px 0 0}
+  .etapa::before{left:24px;right:-20px;top:11px;bottom:auto;width:auto;height:2px}
+  .etapa:last-child::before{display:none}
+  .etapa .dot{top:0}
+  .cond{grid-template-columns:repeat(4,1fr)}
+  .cond .card{flex-direction:column}
+  .porque{grid-template-columns:1.1fr 1fr;align-items:center;gap:64px}
+  .nums{grid-template-columns:1fr}
+  .cta-box{padding:90px 40px}
+}
+</style>
+</head>
+<body>
+
+<!-- 1. Header -->
+<header class="header" id="header">
+  <div class="wrap">
+    <a href="#topo" class="logo" aria-label="Matilab">Matilab<span>.</span></a>
+    <a class="btn btn-lima wa-link" data-msg="Olá Matheus, quero fechar a proposta da Vertria" href="https://wa.me/5511945459017" target="_blank" rel="noopener">Aprovar proposta</a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- 2. Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div class="tag rv">Proposta comercial</div>
+    <h1 class="rv d1">Site, espelho de vendas e área do cliente <em>Vertria</em></h1>
+    <p class="sub rv d2">Uma plataforma digital pensada para vender as unidades restantes e dar suporte a quem já comprou.</p>
+    <div class="hero-actions rv d3">
+      <a href="#investimento" class="btn btn-lima">Ver investimento
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+      <a class="btn btn-ghost wa-link" data-msg="Olá Matheus, quero fechar a proposta da Vertria" href="https://wa.me/5511945459017" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+    <div class="meta rv d4">
+      <div><small>Cliente</small><strong>Vertria Incorporadora</strong></div>
+      <div><small>A/C</small><strong>Darci</strong></div>
+      <div><small>Proposta</small><strong>MTL-2026-0929</strong></div>
+      <div><small>Data</small><strong>29/09/2026</strong></div>
+      <div><small>Validade</small><strong>15 dias</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Contexto -->
+<section id="contexto">
+  <div class="wrap contexto-grid">
+    <div class="contexto-text">
+      <div class="tag rv">Contexto</div>
+      <h2 class="sec-title rv d1">O momento comercial da Vertria pede um digital à altura.</h2>
+      <div class="rv d2" style="margin-top:24px">
+        <p>A Vertria está com o empreendimento perto de <strong>60% vendido</strong> e em fase de entrega de obra, com o CV CRM em implantação.</p>
+        <p class="muted">O site atual está desatualizado e não acompanha o momento comercial da empresa. O digital precisa acelerar a venda das unidades disponíveis e dar segurança e informação a quem já é cliente.</p>
+      </div>
+    </div>
+    <div class="stats-mini">
+      <div class="stat-mini rv d1">
+        <div class="num l">~60%</div>
+        <div style="flex:1"><p>das unidades já vendidas</p><div class="bar"><i></i></div></div>
+      </div>
+      <div class="stat-mini rv d2">
+        <div class="num">Obra</div>
+        <p>em fase de entrega, com clientes que precisam de informação e segurança</p>
+      </div>
+      <div class="stat-mini rv d3">
+        <div class="num">CV</div>
+        <p>CRM em implantação, pronto para ser a fonte única de disponibilidade e leads</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Objetivos -->
+<section id="objetivos" style="background:var(--branco);border-top:1px solid var(--borda);border-bottom:1px solid var(--borda)">
+  <div class="wrap">
+    <div class="tag rv">Objetivos</div>
+    <h2 class="sec-title rv d1">O que a nova plataforma precisa entregar</h2>
+    <div class="grid-obj">
+      <article class="card rv d1" style="background:var(--claro)"><span class="n">01</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.3v.2"/></svg></div>
+        <h3>Site que tira praticamente todas as dúvidas do comprador</h3>
+      </article>
+      <article class="card rv d2" style="background:var(--claro)"><span class="n">02</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></div>
+        <h3>Maquete virtual e tour 360 integrados à navegação</h3>
+      </article>
+      <article class="card rv d3" style="background:var(--claro)"><span class="n">03</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 17.5l2.5 2.5L21 15"/></svg></div>
+        <h3>Disponibilidade das unidades sempre atualizada</h3>
+      </article>
+      <article class="card rv d1" style="background:var(--claro)"><span class="n">04</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5M10.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5"/></svg></div>
+        <h3>Corretores e clientes vendo a mesma disponibilidade da central</h3>
+      </article>
+      <article class="card rv d2" style="background:var(--claro)"><span class="n">05</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"/><path d="M9 12h6"/></svg></div>
+        <h3>Menos demanda no atendimento pós-venda</h3>
+      </article>
+      <article class="card rv d3" style="background:var(--claro)"><span class="n">06</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.7L20 8.5M20 4v4.5h-4.5M20 12a8 8 0 0 1-13.7 5.7L4 15.5M4 20v-4.5h4.5"/></svg></div>
+        <h3>Sistema integrado ao CV CRM, sem atualização manual</h3>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Escopo -->
+<section id="escopo">
+  <div class="wrap">
+    <div class="tag rv">Escopo</div>
+    <h2 class="sec-title rv d1">Três frentes, uma plataforma</h2>
+    <p class="sec-lead muted rv d2">O site é a base dos dois planos. O Plano Completo adiciona o espelho de vendas conectado ao CV CRM e a Área do Cliente.</p>
+
+    <div class="escopo-list">
+      <!-- Site -->
+      <article class="bloco rv">
+        <div class="bloco-head">
+          <h3><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></span>Site do empreendimento</h3>
+          <span class="selo">Incluso nos dois planos</span>
+        </div>
+        <ul class="checks c3">
+          <li>Home institucional e página do empreendimento</li>
+          <li>Plantas e diferenciais</li>
+          <li>Ficha técnica</li>
+          <li>Galeria</li>
+          <li>Localização com mapa</li>
+          <li>Andamento de obra gerenciável</li>
+          <li>Integração da maquete virtual e tour 360 fornecidos pela Vertria</li>
+          <li>FAQ</li>
+          <li>Formulários e WhatsApp com captação de leads</li>
+          <li>Design exclusivo e responsivo</li>
+          <li>SEO técnico e LGPD</li>
+          <li>Painel de edição</li>
+        </ul>
+      </article>
+
+      <!-- Espelho -->
+      <article class="bloco rv">
+        <div class="bloco-head">
+          <h3><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>Espelho de vendas integrado ao CV CRM</h3>
+          <span class="selo full">Plano Completo</span>
+        </div>
+        <ul class="checks">
+          <li>Unidades por torre, andar e tipologia com status disponível, reservada e vendida</li>
+          <li>Sincronização via API do CV, sem atualização manual</li>
+          <li>Filtros por metragem, valor e tipologia</li>
+          <li>Pedido de proposta por unidade</li>
+          <li>Leads direto no funil do CV</li>
+        </ul>
+
+        <!-- Demo interativa -->
+        <div class="demo" id="demo">
+          <div class="demo-top">
+            <div>
+              <h4>Demonstração do espelho de vendas</h4>
+              <p>Dados fictícios, só para ilustrar. Toque em uma unidade.</p>
+            </div>
+            <span class="demo-badge">Sincronizado com o CV</span>
+          </div>
+          <div class="filters" role="group" aria-label="Filtros do espelho">
+            <button class="chip on" data-f="tip" data-v="all">Todas</button>
+            <button class="chip" data-f="tip" data-v="2">2 dorms</button>
+            <button class="chip" data-f="tip" data-v="3">3 dorms</button>
+            <span class="sep" aria-hidden="true"></span>
+            <button class="chip" data-f="disp" data-v="1">Só disponíveis</button>
+          </div>
+          <div class="demo-body">
+            <div>
+              <div class="torre" id="torre" aria-label="Torre A"></div>
+              <div class="torre-foot"><span>Torre A</span><span>Finais 01 a 04</span></div>
+            </div>
+            <aside class="painel">
+              <div class="legend">
+                <span><i style="background:var(--lima)"></i>Disponível</span>
+                <span><i style="background:var(--reservada)"></i>Reservada</span>
+                <span><i style="background:#2C2C2C;border:1px solid #444"></i>Vendida</span>
+              </div>
+              <div class="counts">
+                <div><strong id="cD">0</strong><small>Disponíveis</small></div>
+                <div><strong id="cR">0</strong><small>Reservadas</small></div>
+                <div><strong id="cV">0</strong><small>Vendidas</small></div>
+              </div>
+              <div class="detalhe" id="detalhe" aria-live="polite">
+                <p class="vazio">Selecione uma unidade para ver metragem, valor e pedir uma proposta.</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </article>
+
+      <!-- Área do cliente -->
+      <article class="bloco rv">
+        <div class="bloco-head">
+          <h3><span class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14.5v2.5"/></svg></span>Área do Cliente</h3>
+          <span class="selo full">Plano Completo</span>
+        </div>
+        <ul class="checks">
+          <li>Acesso exclusivo para quem já comprou</li>
+          <li>Acompanhamento da obra e cronograma de entrega</li>
+          <li>Documentos, manuais e comunicados</li>
+          <li>Canal de atendimento organizado</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="nota info rv">
+      <span class="ni"><svg viewBox="0 0 24 24"><path d="M12 11v6M12 7.5v.2"/></svg></span>
+      <div>
+        <strong>Sobre a integração com o CV CRM</strong>
+        <p>O espelho de vendas e a sincronização de dados dependem da API disponibilizada pela CV. O escopo da integração fica condicionado aos recursos, permissões e limites que a API oferece e à liberação do acesso pela Vertria junto à CV.</p>
+      </div>
+    </div>
+    <div class="nota neutra rv">
+      <span class="ni"><svg viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17"/></svg></span>
+      <div>
+        <strong>Não inclusos</strong>
+        <p>Produção da maquete virtual e do tour 360, fotografia e vídeo de obra, licença e implantação do CV CRM.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Investimento -->
+<section id="investimento" class="dark">
+  <div class="wrap">
+    <div class="tag rv">Investimento</div>
+    <h2 class="sec-title rv d1">Escolha o plano e a forma de pagamento</h2>
+    <div class="toggle rv d2" role="tablist" aria-label="Forma de pagamento" id="toggle">
+      <span class="pill" aria-hidden="true"></span>
+      <button class="on" role="tab" aria-selected="true" data-p="avista">À vista</button>
+      <button role="tab" aria-selected="false" data-p="boleto">Boleto</button>
+      <button role="tab" aria-selected="false" data-p="cartao">Cartão</button>
+    </div>
+
+    <div class="planos">
+      <article class="plano rv d1">
+        <h3>Plano Site</h3>
+        <p class="desc">Para renovar a presença digital e captar leads qualificados.</p>
+        <div class="preco" data-plano="site"></div>
+        <p class="total">Valor total do projeto: R$ 4.500</p>
+        <div class="formas" data-formas="site"></div>
+        <ul class="checks">
+          <li>Site do empreendimento completo</li>
+          <li>Maquete virtual e tour 360 integrados</li>
+          <li>Captação de leads</li>
+        </ul>
+        <a class="btn wa-link" data-msg="Olá Matheus, quero fechar a proposta da Vertria com o Plano Site (R$ 4.500)." href="https://wa.me/5511945459017" target="_blank" rel="noopener">Quero este plano</a>
+      </article>
+
+      <article class="plano dest rv d2">
+        <span class="rec">Recomendado</span>
+        <h3>Plano Completo</h3>
+        <p class="desc">Para vender as unidades restantes e cuidar de quem já comprou.</p>
+        <div class="preco" data-plano="completo"></div>
+        <p class="total">Valor total do projeto: R$ 8.000</p>
+        <div class="formas" data-formas="completo"></div>
+        <ul class="checks">
+          <li>Tudo do Plano Site</li>
+          <li>Espelho de vendas via API do CV CRM</li>
+          <li>Área do Cliente</li>
+        </ul>
+        <a class="btn btn-lima wa-link" data-msg="Olá Matheus, quero fechar a proposta da Vertria com o Plano Completo (R$ 8.000)." href="https://wa.me/5511945459017" target="_blank" rel="noopener">Quero este plano</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Custos mensais -->
+<section id="mensal">
+  <div class="wrap">
+    <div class="tag rv">Custos mensais</div>
+    <h2 class="sec-title rv d1">O que mantém a plataforma no ar e evoluindo</h2>
+
+    <div class="infra rv">
+      <div>
+        <div class="infra-head"><h3>Infraestrutura · Supabase</h3><span class="selo obr">Obrigatório</span></div>
+        <p style="margin-top:12px">Banco de dados, autenticação e armazenamento que sustentam a plataforma. Necessário para o funcionamento do site, do espelho de vendas e da Área do Cliente. Contratação mensal, cobrada a partir da publicação.</p>
+      </div>
+      <div class="preco-m">R$ 145<small>/mês</small></div>
+    </div>
+
+    <div class="sub-h rv"><h3>Planos de suporte recorrente</h3><span>Opcional</span></div>
+    <div class="suportes">
+      <article class="sup rv d1">
+        <h4>Suporte Essencial</h4>
+        <div class="pm">R$ 250<small>/mês</small></div>
+        <p>2 horas mensais de suporte, ajustes, atualizações de conteúdo e correções, acompanhamento da integração com o CV CRM.</p>
+        <div class="horas" aria-hidden="true"><i></i><i></i><i class="off"></i><i class="off"></i></div>
+        <div class="horas-lbl">2 horas por mês</div>
+      </article>
+      <article class="sup dest rv d2">
+        <span class="rec">Recomendado</span>
+        <h4>Suporte Pro</h4>
+        <div class="pm">R$ 450<small>/mês</small></div>
+        <p>4 horas mensais de suporte divididas semanalmente, 1 hora por semana, com ajustes contínuos, novas publicações e evolução da plataforma.</p>
+        <div class="horas" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="horas-lbl">1 hora por semana, 4 horas por mês</div>
+      </article>
+    </div>
+
+    <!-- Simulador -->
+    <div class="sim rv" id="simulador">
+      <div>
+        <h3>Simule seu investimento</h3>
+        <p class="muted">Escolha o plano do projeto, a forma de pagamento e o suporte.</p>
+
+        <div class="grupo">
+          <span>Plano do projeto</span>
+          <div class="opcoes">
+            <label class="op"><input type="radio" name="sPlano" value="site"><span class="l"><span class="r"></span>Plano Site</span><em>R$ 4.500</em></label>
+            <label class="op"><input type="radio" name="sPlano" value="completo" checked><span class="l"><span class="r"></span>Plano Completo</span><em>R$ 8.000</em></label>
+          </div>
+        </div>
+
+        <div class="grupo">
+          <span>Forma de pagamento</span>
+          <div class="op-row">
+            <label class="op"><input type="radio" name="sPag" value="avista" checked><span class="l"><span class="r"></span>À vista</span></label>
+            <label class="op"><input type="radio" name="sPag" value="boleto"><span class="l"><span class="r"></span>Boleto</span></label>
+            <label class="op"><input type="radio" name="sPag" value="cartao"><span class="l"><span class="r"></span>Cartão</span></label>
+          </div>
+        </div>
+
+        <div class="grupo">
+          <span>Plano de suporte</span>
+          <div class="opcoes">
+            <label class="op"><input type="radio" name="sSup" value="nenhum"><span class="l"><span class="r"></span>Sem suporte</span><em>R$ 0</em></label>
+            <label class="op"><input type="radio" name="sSup" value="essencial"><span class="l"><span class="r"></span>Suporte Essencial</span><em>R$ 250/mês</em></label>
+            <label class="op"><input type="radio" name="sSup" value="pro" checked><span class="l"><span class="r"></span>Suporte Pro</span><em>R$ 450/mês</em></label>
+          </div>
+        </div>
+      </div>
+
+      <aside class="resumo" aria-live="polite">
+        <div class="linha">
+          <small>Projeto</small>
+          <div class="big" id="rProjeto">R$ 6.800</div>
+          <div class="det" id="rProjetoDet">Plano Completo · 1x à vista com 15% de desconto</div>
+        </div>
+        <div class="linha">
+          <small>Total mensal</small>
+          <div class="big l" id="rMensal">R$ 595/mês</div>
+          <div class="det" id="rMensalDet">Supabase R$ 145 + Suporte Pro R$ 450</div>
+        </div>
+        <a class="btn btn-lima" id="rBtn" href="https://wa.me/5511945459017" target="_blank" rel="noopener">Fechar com esta configuração</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Cronograma -->
+<section id="cronograma" style="background:var(--branco);border-top:1px solid var(--borda);border-bottom:1px solid var(--borda)">
+  <div class="wrap">
+    <div class="tag rv">Cronograma</div>
+    <h2 class="sec-title rv d1">Do briefing ao lançamento em 8 semanas</h2>
+    <div class="timeline">
+      <div class="etapa rv d1"><span class="dot"></span><div class="sem">Semana 1</div><h3>Imersão</h3><p>Briefing, conteúdo e alinhamento com o CV CRM</p></div>
+      <div class="etapa rv d2"><span class="dot"></span><div class="sem">Semanas 2 e 3</div><h3>Design</h3><p>Layout e protótipo para aprovação</p></div>
+      <div class="etapa rv d3"><span class="dot"></span><div class="sem">Semanas 4 a 7</div><h3>Desenvolvimento</h3><p>Site, espelho, área do cliente e integrações</p></div>
+      <div class="etapa rv d4"><span class="dot"></span><div class="sem">Semana 8</div><h3>Lançamento</h3><p>Testes, treinamento da equipe e publicação</p></div>
+    </div>
+    <div class="prazos">
+      <div class="prazo rv d1"><b>4</b><span><strong>semanas · Plano Site</strong>prazo estimado</span></div>
+      <div class="prazo rv d2"><b>8</b><span><strong>semanas · Plano Completo</strong>prazo estimado</span></div>
+    </div>
+    <p class="muted rv" style="font-size:14px;margin-top:16px">Prazos contados a partir do envio dos materiais e do acesso à API do CV CRM.</p>
+  </div>
+</section>
+
+<!-- 9. Condições -->
+<section id="condicoes">
+  <div class="wrap">
+    <div class="tag rv">Condições de pagamento</div>
+    <h2 class="sec-title rv d1">Flexível para o seu fluxo de caixa</h2>
+    <div class="cond">
+      <div class="card rv d1">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M20 12l-8 8-9-9V3h8l9 9z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg></div>
+        <div><h3>À vista em 1x</h3><p>Com 15% de desconto</p></div>
+      </div>
+      <div class="card rv d2">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 5v14M7 5v14M10 5v14M14 5v14M16 5v14M20 5v14"/></svg></div>
+        <div><h3>Boleto em 2x</h3><p>Sem juros</p></div>
+      </div>
+      <div class="card rv d3">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19M6 15h4"/></svg></div>
+        <div><h3>Cartão de crédito</h3><p>Em até 12x</p></div>
+      </div>
+      <div class="card rv d4">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+        <div><h3>Mensalidades</h3><p>Supabase e plano de suporte cobrados mensalmente a partir da publicação</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Por que a Matilab -->
+<section id="porque" class="dark">
+  <div class="wrap porque">
+    <div>
+      <div class="tag rv">Por que a Matilab</div>
+      <h2 class="sec-title rv d1">Aqui o site não é só vitrine.</h2>
+      <p class="txt rv d2">Sites sob medida em código, com foco em performance e conversão, experiência com incorporadoras e com o mercado de arquitetura e construção, mais de 500 projetos entregues. <strong>Aqui o site é uma ferramenta comercial conectada ao seu CRM e ao seu time comercial.</strong></p>
+      <div class="pilares rv d3"><span>Código sob medida</span><span>Performance</span><span>Conversão</span><span>Incorporadoras</span><span>Arquitetura e construção</span></div>
+    </div>
+    <div class="nums">
+      <div class="num-card rv d1"><b data-count="500" data-prefix="+">+500</b><span>projetos entregues</span></div>
+      <div class="num-card rv d2"><b data-count="9">9</b><span>anos de mercado</span></div>
+      <div class="num-card rv d3"><b class="txt-num">Integração nativa</b><span>com CRM, do lead ao funil de vendas</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. CTA final -->
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-box rv">
+      <div class="tag" style="justify-content:center">Próximo passo</div>
+      <h2>Vamos colocar a Vertria no <em>próximo nível?</em></h2>
+      <p>Proposta válida por 15 dias. Aprovando, iniciamos a imersão na mesma semana.</p>
+      <a class="btn btn-lima wa-link" data-msg="Olá Matheus, quero fechar a proposta da Vertria" href="https://wa.me/5511945459017" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Aprovar proposta no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 12. Rodapé -->
+<footer>
+  <div class="wrap">
+    <span class="logo">Matilab<span>.</span></span>
+    <div class="info">
+      <span>Mati Studio Digital ME</span>
+      <span>CNPJ 40.283.248/0001-21</span>
+      <span>Osasco/SP</span>
+      <a href="mailto:hello@matilab.com.br">hello@matilab.com.br</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float wa-link" data-msg="Olá Matheus, quero fechar a proposta da Vertria" href="https://wa.me/5511945459017" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.4 5 5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+</a>
+
+<script>
+(function(){
+  var WA = 'https://wa.me/5511945459017?text=';
+  function wa(msg){ return WA + encodeURIComponent(msg); }
+  document.querySelectorAll('.wa-link').forEach(function(a){ a.href = wa(a.dataset.msg); });
+
+  /* Header sólido ao rolar */
+  var header = document.getElementById('header');
+  function onScroll(){ header.classList.toggle('solid', window.scrollY > 20); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* Reveal no scroll */
+  var els = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+  requestAnimationFrame(function(){ document.querySelectorAll('.hero .rv').forEach(function(el){ el.classList.add('in'); }); });
+
+  /* Preços */
+  var PRECOS = {
+    site:     {total:'R$ 4.500', avista:['R$ 3.825','1x à vista','15% de desconto'], boleto:['R$ 2.250','2x no boleto','Sem juros'], cartao:['R$ 375','até 12x no cartão','Total R$ 4.500']},
+    completo: {total:'R$ 8.000', avista:['R$ 6.800','1x à vista','15% de desconto'], boleto:['R$ 4.000','2x no boleto','Sem juros'], cartao:['R$ 666,67','até 12x no cartão','Total R$ 8.000']}
+  };
+  var FORMA_LBL = {avista:'1x à vista com 15% de desconto', boleto:'2x no boleto sem juros', cartao:'até 12x no cartão'};
+  var PREFIX = {avista:'', boleto:'2x ', cartao:'12x '};
+
+  function renderPreco(forma, animar){
+    Object.keys(PRECOS).forEach(function(k){
+      var p = PRECOS[k], f = p[forma], box = document.querySelector('.preco[data-plano="'+k+'"]');
+      var de = forma === 'avista' ? '<div class="de">de <s>'+p.total+'</s> por</div>' : '<div class="de">'+f[1]+'</div>';
+      var val = forma === 'avista' ? f[0] : f[0]+'<small>/parcela</small>';
+      box.innerHTML = de + '<div class="val">'+(forma==='avista'?'':'<small style="font-size:22px;color:#fff;font-weight:600">'+PREFIX[forma].trim()+'</small>')+val+'</div><div class="obs">'+f[2]+'</div>';
+      if (animar){ box.classList.remove('swap'); void box.offsetWidth; box.classList.add('swap'); }
+      var fm = document.querySelector('.formas[data-formas="'+k+'"]');
+      fm.innerHTML = ['avista','boleto','cartao'].map(function(x){
+        var t = x==='avista' ? '1x' : (x==='boleto' ? '2x' : '12x');
+        return '<div class="'+(x===forma?'on':'')+'"><b>'+t+' '+p[x][0]+'</b>'+(x==='avista'?'à vista':(x==='boleto'?'boleto':'cartão'))+'</div>';
+      }).join('');
+    });
+  }
+
+  var toggle = document.getElementById('toggle');
+  var pill = toggle.querySelector('.pill');
+  var tbtns = toggle.querySelectorAll('button');
+  function movePill(btn){ pill.style.width = btn.offsetWidth+'px'; pill.style.transform = 'translateX('+(btn.offsetLeft-5)+'px)'; }
+  tbtns.forEach(function(b){
+    b.addEventListener('click', function(){
+      tbtns.forEach(function(x){ x.classList.remove('on'); x.setAttribute('aria-selected','false'); });
+      b.classList.add('on'); b.setAttribute('aria-selected','true');
+      movePill(b); renderPreco(b.dataset.p, true);
+    });
+  });
+  renderPreco('avista', false);
+  function syncPill(){ movePill(toggle.querySelector('button.on')); }
+  window.addEventListener('resize', syncPill);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncPill);
+  syncPill();
+
+  /* Simulador */
+  var SUP = {nenhum:{v:0,n:'Sem suporte'}, essencial:{v:250,n:'Suporte Essencial'}, pro:{v:450,n:'Suporte Pro'}};
+  var NOME = {site:'Plano Site', completo:'Plano Completo'};
+  function val(name){ return document.querySelector('input[name="'+name+'"]:checked').value; }
+  function sim(){
+    var pl = val('sPlano'), pg = val('sPag'), sp = val('sSup');
+    var f = PRECOS[pl][pg];
+    var proj = pg==='avista' ? f[0] : (pg==='boleto' ? '2x '+f[0] : '12x '+f[0]);
+    document.getElementById('rProjeto').textContent = proj;
+    document.getElementById('rProjetoDet').textContent = NOME[pl]+' · '+FORMA_LBL[pg]+(pg==='avista'?'':' · total '+PRECOS[pl].total);
+    var m = 145 + SUP[sp].v;
+    document.getElementById('rMensal').textContent = 'R$ '+m+'/mês';
+    document.getElementById('rMensalDet').textContent = sp==='nenhum' ? 'Somente Supabase R$ 145' : 'Supabase R$ 145 + '+SUP[sp].n+' R$ '+SUP[sp].v;
+    var msg = 'Olá Matheus, quero fechar a proposta da Vertria. Configuração: '+NOME[pl]+' ('+PRECOS[pl].total+'), pagamento '+FORMA_LBL[pg]+' ('+proj+'), '+SUP[sp].n+'. Total mensal R$ '+m+'/mês.';
+    document.getElementById('rBtn').href = wa(msg);
+  }
+  document.querySelectorAll('#simulador input').forEach(function(i){ i.addEventListener('change', sim); });
+  sim();
+
+  /* Espelho de vendas (dados fictícios) */
+  var torre = document.getElementById('torre');
+  var ANDARES = 10, FINAIS = 4;
+  var TIPO = {1:{d:3,m:92,base:780000}, 2:{d:2,m:68,base:560000}, 3:{d:2,m:68,base:560000}, 4:{d:3,m:92,base:780000}};
+  var seed = 7;
+  function rnd(){ seed = (seed*9301+49297)%233280; return seed/233280; }
+  var unidades = [];
+  for (var a = ANDARES; a >= 1; a--){
+    var row = document.createElement('div'); row.className = 'andar';
+    row.innerHTML = '<span class="lbl">'+a+'º</span>';
+    for (var f = 1; f <= FINAIS; f++){
+      var r = rnd(), s = r < .58 ? 'v' : (r < .7 ? 'r' : 'd');
+      var t = TIPO[f], preco = t.base + a*9500 + Math.round(rnd()*6)*1000;
+      var u = {n:a*100+f, s:s, d:t.d, m:t.m, p:preco, andar:a};
+      var b = document.createElement('button');
+      b.className = 'un'; b.dataset.s = s; b.textContent = u.n;
+      b.setAttribute('aria-label','Unidade '+u.n+', '+({d:'disponível',r:'reservada',v:'vendida'})[s]);
+      u.el = b; unidades.push(u);
+      (function(u){ b.addEventListener('click', function(){ select(u); }); })(u);
+      row.appendChild(b);
+    }
+    torre.appendChild(row);
+  }
+  var filtro = {tip:'all', disp:false};
+  var fmt = function(n){ return 'R$ '+n.toLocaleString('pt-BR'); };
+  function aplicar(){
+    var c = {d:0,r:0,v:0};
+    unidades.forEach(function(u){
+      var ok = (filtro.tip==='all' || String(u.d)===filtro.tip) && (!filtro.disp || u.s==='d');
+      u.el.classList.toggle('dim', !ok);
+      if (ok) c[u.s]++;
+    });
+    document.getElementById('cD').textContent = c.d;
+    document.getElementById('cR').textContent = c.r;
+    document.getElementById('cV').textContent = c.v;
+  }
+  var det = document.getElementById('detalhe');
+  function select(u){
+    unidades.forEach(function(x){ x.el.classList.remove('sel'); });
+    u.el.classList.add('sel');
+    var st = {d:['d','Disponível'], r:['r','Reservada'], v:['v','Vendida']}[u.s];
+    det.innerHTML = '<h5>Unidade '+u.n+' <span class="st '+st[0]+'">'+st[1]+'</span></h5>'+
+      '<dl><div><dt>Tipologia</dt><dd>'+u.d+' dormitórios</dd></div><div><dt>Área privativa</dt><dd>'+u.m+' m²</dd></div>'+
+      '<div><dt>Andar</dt><dd>'+u.andar+'º</dd></div><div><dt>Valor</dt><dd>'+(u.s==='v'?'Vendida':fmt(u.p))+'</dd></div></dl>'+
+      '<button class="btn btn-lima" '+(u.s!=='d'?'disabled':'')+' type="button">'+(u.s==='d'?'Pedir proposta desta unidade':'Indisponível')+'</button>';
+    var bt = det.querySelector('button');
+    bt.addEventListener('click', function(){
+      bt.textContent = 'Lead enviado ao funil do CV ✓';
+      bt.disabled = true;
+    });
+  }
+  document.querySelectorAll('.chip').forEach(function(ch){
+    ch.addEventListener('click', function(){
+      if (ch.dataset.f === 'tip'){
+        document.querySelectorAll('.chip[data-f="tip"]').forEach(function(x){ x.classList.remove('on'); });
+        ch.classList.add('on'); filtro.tip = ch.dataset.v;
+      } else {
+        filtro.disp = !filtro.disp; ch.classList.toggle('on', filtro.disp);
+      }
+      aplicar();
+    });
+  });
+  aplicar();
+
+  /* Contadores */
+  var cnt = document.querySelectorAll('[data-count]');
+  var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if ('IntersectionObserver' in window && !reduz){
+    var co = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (!e.isIntersecting) return;
+        var el = e.target, alvo = +el.dataset.count, pre = el.dataset.prefix || '', t0 = null;
+        function step(ts){
+          if (!t0) t0 = ts;
+          var k = Math.min((ts-t0)/1400, 1), v = Math.round(alvo*(1-Math.pow(1-k,3)));
+          el.textContent = pre+v;
+          if (k < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step); co.unobserve(el);
+      });
+    }, {threshold:.5});
+    cnt.forEach(function(el){ co.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
