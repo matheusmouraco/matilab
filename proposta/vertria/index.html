@@ -74,7 +74,8 @@ section{padding:88px 0;scroll-margin-top:64px}
 .header.solid{background:rgba(17,17,17,.88);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom-color:rgba(255,255,255,.08)}
 .header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
 .logo{font-weight:700;font-size:22px;letter-spacing:-.03em;color:#fff;display:flex;align-items:center;gap:2px}
-.logo span{color:var(--lima)}
+.logo img{height:22px;width:auto}
+footer .logo img{height:18px}
 .header .btn{padding:10px 18px;font-size:14px}
 
 /* Hero */
@@ -388,7 +389,7 @@ footer .info{display:flex;flex-wrap:wrap;gap:6px 14px}
 <!-- 1. Header -->
 <header class="header" id="header">
   <div class="wrap">
-    <a href="#topo" class="logo" aria-label="Matilab">Matilab<span>.</span></a>
+    <a href="#topo" class="logo" aria-label="Matilab"><img src="/proposta/vertria/assets/matilab-logo-branco.svg" alt="Matilab" width="119" height="22"></a>
     <a class="btn btn-lima wa-link" data-msg="Olá Matheus, quero fechar a proposta da Vertria" href="https://wa.me/5511945459017" target="_blank" rel="noopener">Aprovar proposta</a>
   </div>
 </header>
@@ -486,7 +487,7 @@ footer .info{display:flex;flex-wrap:wrap;gap:6px 14px}
 <section id="escopo">
   <div class="wrap">
     <div class="tag rv">Escopo</div>
-    <h2 class="sec-title rv d1">Três frentes, uma plataforma</h2>
+    <h2 class="sec-title rv d1">O que será entregue</h2>
     <p class="sec-lead muted rv d2">O site é a base dos dois planos. O Plano Completo adiciona o espelho de vendas conectado ao CV CRM e a Área do Cliente.</p>
 
     <div class="escopo-list">
@@ -510,60 +511,6 @@ footer .info{display:flex;flex-wrap:wrap;gap:6px 14px}
           <li>SEO técnico e LGPD</li>
           <li>Painel de edição</li>
         </ul>
-      </article>
-
-      <!-- Espelho -->
-      <article class="bloco rv">
-        <div class="bloco-head">
-          <h3><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>Espelho de vendas integrado ao CV CRM</h3>
-          <span class="selo full">Plano Completo</span>
-        </div>
-        <ul class="checks">
-          <li>Unidades por torre, andar e tipologia com status disponível, reservada e vendida</li>
-          <li>Sincronização via API do CV, sem atualização manual</li>
-          <li>Filtros por metragem, valor e tipologia</li>
-          <li>Pedido de proposta por unidade</li>
-          <li>Leads direto no funil do CV</li>
-        </ul>
-
-        <!-- Demo interativa -->
-        <div class="demo" id="demo">
-          <div class="demo-top">
-            <div>
-              <h4>Demonstração do espelho de vendas</h4>
-              <p>Dados fictícios, só para ilustrar. Toque em uma unidade.</p>
-            </div>
-            <span class="demo-badge">Sincronizado com o CV</span>
-          </div>
-          <div class="filters" role="group" aria-label="Filtros do espelho">
-            <button class="chip on" data-f="tip" data-v="all">Todas</button>
-            <button class="chip" data-f="tip" data-v="2">2 dorms</button>
-            <button class="chip" data-f="tip" data-v="3">3 dorms</button>
-            <span class="sep" aria-hidden="true"></span>
-            <button class="chip" data-f="disp" data-v="1">Só disponíveis</button>
-          </div>
-          <div class="demo-body">
-            <div>
-              <div class="torre" id="torre" aria-label="Torre A"></div>
-              <div class="torre-foot"><span>Torre A</span><span>Finais 01 a 04</span></div>
-            </div>
-            <aside class="painel">
-              <div class="legend">
-                <span><i style="background:var(--lima)"></i>Disponível</span>
-                <span><i style="background:var(--reservada)"></i>Reservada</span>
-                <span><i style="background:#2C2C2C;border:1px solid #444"></i>Vendida</span>
-              </div>
-              <div class="counts">
-                <div><strong id="cD">0</strong><small>Disponíveis</small></div>
-                <div><strong id="cR">0</strong><small>Reservadas</small></div>
-                <div><strong id="cV">0</strong><small>Vendidas</small></div>
-              </div>
-              <div class="detalhe" id="detalhe" aria-live="polite">
-                <p class="vazio">Selecione uma unidade para ver metragem, valor e pedir uma proposta.</p>
-              </div>
-            </aside>
-          </div>
-        </div>
       </article>
 
       <!-- Área do cliente -->
@@ -808,7 +755,7 @@ footer .info{display:flex;flex-wrap:wrap;gap:6px 14px}
 <!-- 12. Rodapé -->
 <footer>
   <div class="wrap">
-    <span class="logo">Matilab<span>.</span></span>
+    <span class="logo"><img src="/proposta/vertria/assets/matilab-logo-branco.svg" alt="Matilab" width="97" height="18"></span>
     <div class="info">
       <span>Mati Studio Digital ME</span>
       <span>CNPJ 40.283.248/0001-21</span>
@@ -903,70 +850,6 @@ footer .info{display:flex;flex-wrap:wrap;gap:6px 14px}
   }
   document.querySelectorAll('#simulador input').forEach(function(i){ i.addEventListener('change', sim); });
   sim();
-
-  /* Espelho de vendas (dados fictícios) */
-  var torre = document.getElementById('torre');
-  var ANDARES = 10, FINAIS = 4;
-  var TIPO = {1:{d:3,m:92,base:780000}, 2:{d:2,m:68,base:560000}, 3:{d:2,m:68,base:560000}, 4:{d:3,m:92,base:780000}};
-  var seed = 7;
-  function rnd(){ seed = (seed*9301+49297)%233280; return seed/233280; }
-  var unidades = [];
-  for (var a = ANDARES; a >= 1; a--){
-    var row = document.createElement('div'); row.className = 'andar';
-    row.innerHTML = '<span class="lbl">'+a+'º</span>';
-    for (var f = 1; f <= FINAIS; f++){
-      var r = rnd(), s = r < .58 ? 'v' : (r < .7 ? 'r' : 'd');
-      var t = TIPO[f], preco = t.base + a*9500 + Math.round(rnd()*6)*1000;
-      var u = {n:a*100+f, s:s, d:t.d, m:t.m, p:preco, andar:a};
-      var b = document.createElement('button');
-      b.className = 'un'; b.dataset.s = s; b.textContent = u.n;
-      b.setAttribute('aria-label','Unidade '+u.n+', '+({d:'disponível',r:'reservada',v:'vendida'})[s]);
-      u.el = b; unidades.push(u);
-      (function(u){ b.addEventListener('click', function(){ select(u); }); })(u);
-      row.appendChild(b);
-    }
-    torre.appendChild(row);
-  }
-  var filtro = {tip:'all', disp:false};
-  var fmt = function(n){ return 'R$ '+n.toLocaleString('pt-BR'); };
-  function aplicar(){
-    var c = {d:0,r:0,v:0};
-    unidades.forEach(function(u){
-      var ok = (filtro.tip==='all' || String(u.d)===filtro.tip) && (!filtro.disp || u.s==='d');
-      u.el.classList.toggle('dim', !ok);
-      if (ok) c[u.s]++;
-    });
-    document.getElementById('cD').textContent = c.d;
-    document.getElementById('cR').textContent = c.r;
-    document.getElementById('cV').textContent = c.v;
-  }
-  var det = document.getElementById('detalhe');
-  function select(u){
-    unidades.forEach(function(x){ x.el.classList.remove('sel'); });
-    u.el.classList.add('sel');
-    var st = {d:['d','Disponível'], r:['r','Reservada'], v:['v','Vendida']}[u.s];
-    det.innerHTML = '<h5>Unidade '+u.n+' <span class="st '+st[0]+'">'+st[1]+'</span></h5>'+
-      '<dl><div><dt>Tipologia</dt><dd>'+u.d+' dormitórios</dd></div><div><dt>Área privativa</dt><dd>'+u.m+' m²</dd></div>'+
-      '<div><dt>Andar</dt><dd>'+u.andar+'º</dd></div><div><dt>Valor</dt><dd>'+(u.s==='v'?'Vendida':fmt(u.p))+'</dd></div></dl>'+
-      '<button class="btn btn-lima" '+(u.s!=='d'?'disabled':'')+' type="button">'+(u.s==='d'?'Pedir proposta desta unidade':'Indisponível')+'</button>';
-    var bt = det.querySelector('button');
-    bt.addEventListener('click', function(){
-      bt.textContent = 'Lead enviado ao funil do CV ✓';
-      bt.disabled = true;
-    });
-  }
-  document.querySelectorAll('.chip').forEach(function(ch){
-    ch.addEventListener('click', function(){
-      if (ch.dataset.f === 'tip'){
-        document.querySelectorAll('.chip[data-f="tip"]').forEach(function(x){ x.classList.remove('on'); });
-        ch.classList.add('on'); filtro.tip = ch.dataset.v;
-      } else {
-        filtro.disp = !filtro.disp; ch.classList.toggle('on', filtro.disp);
-      }
-      aplicar();
-    });
-  });
-  aplicar();
 
   /* Contadores */
   var cnt = document.querySelectorAll('[data-count]');
