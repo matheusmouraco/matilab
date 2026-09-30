@@ -4329,7 +4329,8 @@
           "Sim, de forma remota, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-30"
     },
     {
       "slug": "site-para-franquia",
@@ -4406,7 +4407,8 @@
           "Sim, de forma remota, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-09-30"
     },
     {
       "slug": "site-para-startup",

@@ -955,4 +955,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/site-para-industria</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/site-para-franquia</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
