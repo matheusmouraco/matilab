@@ -4485,7 +4485,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-01"
     },
     {
       "slug": "site-para-infoprodutor",
@@ -4562,7 +4563,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-01"
     },
     {
       "slug": "site-para-barbearia",
