@@ -4641,7 +4641,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-02"
     },
     {
       "slug": "site-para-petshop",
@@ -4718,7 +4719,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-02"
     },
     {
       "slug": "site-para-oficina-mecanica",

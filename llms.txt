@@ -162,3 +162,5 @@
 - [Site para franquia](https://matilab.com.br/site-para-franquia)
 - [Site para startup](https://matilab.com.br/site-para-startup)
 - [Site para infoprodutor](https://matilab.com.br/site-para-infoprodutor)
+- [Site para barbearia](https://matilab.com.br/site-para-barbearia)
+- [Site para petshop](https://matilab.com.br/site-para-petshop)
