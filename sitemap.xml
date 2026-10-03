@@ -997,4 +997,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/site-para-oficina-mecanica</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/site-para-empresa-de-limpeza</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

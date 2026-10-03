@@ -4797,7 +4797,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-03"
     },
     {
       "slug": "site-para-empresa-de-limpeza",
@@ -4874,7 +4875,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-03"
     },
     {
       "slug": "site-para-dedetizadora",
