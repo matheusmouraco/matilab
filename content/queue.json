@@ -4953,7 +4953,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-04"
     },
     {
       "slug": "site-para-marceneiro",
@@ -5030,7 +5031,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-04"
     },
     {
       "slug": "site-para-climatizacao-ar-condicionado",
