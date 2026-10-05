@@ -1025,4 +1025,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/site-para-climatizacao-ar-condicionado</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/site-para-dermatologista</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

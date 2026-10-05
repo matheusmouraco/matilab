@@ -5109,7 +5109,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-05"
     },
     {
       "slug": "site-para-dermatologista",
@@ -5186,7 +5187,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-05"
     },
     {
       "slug": "site-para-pediatra",
