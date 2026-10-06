@@ -170,3 +170,5 @@
 - [Site para marceneiro](https://matilab.com.br/site-para-marceneiro)
 - [Site para empresa de ar-condicionado](https://matilab.com.br/site-para-climatizacao-ar-condicionado)
 - [Site para dermatologista](https://matilab.com.br/site-para-dermatologista)
+- [Site para pediatra](https://matilab.com.br/site-para-pediatra)
+- [Site para coach](https://matilab.com.br/site-para-coach)

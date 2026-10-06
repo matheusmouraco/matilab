@@ -1039,4 +1039,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/site-para-pediatra</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/site-para-coach</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
