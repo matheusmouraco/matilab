@@ -5421,7 +5421,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-07"
     },
     {
       "slug": "site-para-pizzaria",
@@ -5498,7 +5499,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-07"
     },
     {
       "slug": "site-para-distribuidora",
