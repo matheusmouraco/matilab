@@ -414,6 +414,9 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
 .team-info{padding:18px 22px}
 .team-name{font-size:16px;font-weight:700;color:#080808;letter-spacing:-.4px;line-height:1.2}
 .team-role{font-size:12px;font-weight:400;color:#888;margin-top:4px}
+.founder-grid{display:grid;grid-template-columns:440px 1fr;gap:60px;align-items:center}
+.team-grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:880px){.founder-grid{grid-template-columns:1fr;gap:32px}.team-grid4{grid-template-columns:1fr 1fr}}
 
 /* ── CTA ── */
 .cta-sec{background:#0A0A0A;border-top:1px solid var(--ld);padding:104px 0;position:relative;overflow:hidden;text-align:center}
@@ -692,7 +695,7 @@ body.menu-open{overflow:hidden}
 
   <!-- centered text content -->
   <div style="position:relative;z-index:2;text-align:center;padding:0 max(calc(50% - 600px),48px) 48px;width:100%">
-    <div class="hero-badge" style="display:inline-flex;margin-bottom:36px"><span class="badge-pip"></span>Site Institucional de Alto Padrão · São Paulo</div>
+    <div class="hero-badge" style="display:inline-flex;margin-bottom:36px"><span class="badge-pip"></span>Site Institucional de Alto Padrão · Todo o Brasil</div>
 
     <h1 class="hero-h1" id="hero-h1" style="opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s cubic-bezier(.16,1,.3,1)">
       O site institucional<br>
@@ -1685,76 +1688,52 @@ body.menu-open{overflow:hidden}
   </div>
 </section>
 
-<!-- NOSSO TIME -->
-<section style="background:#F5F4F2;border-top:1px solid rgba(0,0,0,0.07);padding:80px 0;display:none">
+<!-- SOBRE O FUNDADOR + NOSSO TIME -->
+<section style="background:#F5F4F2;border-top:1px solid rgba(0,0,0,0.07);padding:88px 0">
   <div class="w">
-    <div data-rv style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end;margin-bottom:64px">
-      <div>
-        <div class="ey ey-single light">Nosso Time</div>
-        <h2 style="font-size:clamp(26px,3.2vw,44px);font-weight:700;letter-spacing:-2px;line-height:1.1;color:#080808">As pessoas por trás<br>de cada projeto.</h2>
+
+    <!-- Fundador -->
+    <div data-rv class="founder-grid" style="margin-bottom:88px">
+      <div style="border-radius:22px;overflow:hidden;aspect-ratio:4/5;background:linear-gradient(160deg,#1A1A1A,#0A0A0A)">
+        <img src="/imgs/team-matheus.jpg" alt="Matheus Moura, fundador da Matilab" width="440" height="550" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
-      <p style="font-size:15px;font-weight:300;color:#777;line-height:1.8;align-self:flex-end">Um time pequeno e altamente especializado. Cada projeto recebe atenção total — do briefing à entrega.</p>
+      <div>
+        <div class="ey ey-single light">Quem está por trás</div>
+        <h2 style="font-size:clamp(26px,3.2vw,44px);font-weight:700;letter-spacing:-2px;line-height:1.08;color:#080808;margin:0 0 24px">Matheus Moura,<br>fundador da Matilab.</h2>
+        <p style="font-size:16px;font-weight:300;color:#555;line-height:1.85;margin:0 0 16px">Comecei a Matilab com uma convicção simples: a maioria dos sites é esquecível, e isso custa caro para quem está por trás da marca. Transformei a obsessão por design, performance e resultado em uma agência de alto padrão em São Paulo.</p>
+        <p style="font-size:16px;font-weight:300;color:#555;line-height:1.85;margin:0 0 30px">À frente da Matilab, já conduzi mais de 500 projetos para empresas de todo o Brasil e do exterior, sempre com a mesma régua: nada de template, nada de mediocridade. Para mim, um site não é custo. É o melhor vendedor que a sua empresa pode ter, e cada projeto é construído para provar isso.</p>
+        <a href="https://api.whatsapp.com/send/?phone=5511992644010&text=Ol%C3%A1%2C%20quero%20conversar%20com%20a%20Matilab" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#080808;text-decoration:none;border-bottom:1px solid #B5FB67;padding-bottom:4px">Falar comigo no WhatsApp
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
     </div>
 
-    <div data-rv style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
-
-      <!-- Matheus -->
-      <div class="team-card">
-        <div class="team-photo">
-          <div class="team-photo-placeholder">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <div class="team-upload-hint">Adicionar foto</div>
-          </div>
-          <!-- Replace the div above with: <img src="foto-matheus.jpg" alt="Matheus" style="width:100%;height:100%;object-fit:cover"> -->
-        </div>
-        <div class="team-info">
-          <div class="team-name">Matheus Moura</div>
-          <div class="team-role">Founder & Dev</div>
-        </div>
+    <!-- Time -->
+    <div data-rv style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end;margin-bottom:40px">
+      <div>
+        <div class="ey ey-single light">Nosso Time</div>
+        <h2 style="font-size:clamp(24px,2.8vw,38px);font-weight:700;letter-spacing:-1.5px;line-height:1.1;color:#080808;margin:0">As pessoas por trás<br>de cada projeto.</h2>
       </div>
+      <p style="font-size:15px;font-weight:300;color:#777;line-height:1.8;align-self:flex-end;margin:0">Um time pequeno e altamente especializado. Cada projeto recebe atenção total, do briefing à entrega.</p>
+    </div>
 
-      <!-- Mick -->
+    <div data-rv class="team-grid4">
       <div class="team-card">
-        <div class="team-photo">
-          <div class="team-photo-placeholder">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <div class="team-upload-hint">Adicionar foto</div>
-          </div>
-        </div>
-        <div class="team-info">
-          <div class="team-name">Mick Marinho</div>
-          <div class="team-role">Design Lead</div>
-        </div>
+        <div class="team-photo"><img src="/imgs/team-matheus.jpg" alt="Matheus Moura" width="320" height="400" loading="lazy"></div>
+        <div class="team-info"><div class="team-name">Matheus Moura</div><div class="team-role">Fundador</div></div>
       </div>
-
-      <!-- Beatriz -->
       <div class="team-card">
-        <div class="team-photo">
-          <div class="team-photo-placeholder">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <div class="team-upload-hint">Adicionar foto</div>
-          </div>
-        </div>
-        <div class="team-info">
-          <div class="team-name">Beatriz Pinheiro</div>
-          <div class="team-role">Estratégia & Projetos</div>
-        </div>
+        <div class="team-photo"><img src="/imgs/team-mick.jpg" alt="Mick Marinho" width="320" height="400" loading="lazy"></div>
+        <div class="team-info"><div class="team-name">Mick Marinho</div><div class="team-role">Designer</div></div>
       </div>
-
-      <!-- Bruno -->
       <div class="team-card">
-        <div class="team-photo">
-          <div class="team-photo-placeholder">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <div class="team-upload-hint">Adicionar foto</div>
-          </div>
-        </div>
-        <div class="team-info">
-          <div class="team-name">Bruno Sanches</div>
-          <div class="team-role">Desenvolvimento</div>
-        </div>
+        <div class="team-photo"><img src="/imgs/team-beatriz.jpg" alt="Beatriz Pinheiro" width="320" height="400" loading="lazy"></div>
+        <div class="team-info"><div class="team-name">Beatriz Pinheiro</div><div class="team-role">Account Manager</div></div>
       </div>
-
+      <div class="team-card">
+        <div class="team-photo"><img src="/imgs/team-bruno.jpg" alt="Bruno Sanches" width="320" height="400" loading="lazy"></div>
+        <div class="team-info"><div class="team-name">Bruno Sanches</div><div class="team-role">Comercial</div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -2019,6 +1998,7 @@ body.menu-open{overflow:hidden}
     </div>
   </div>
   <div class="ft-bot">
+    <img src="/imgs/selo-qualidade.png" alt="Selo de qualidade Matilab" width="104" height="42" loading="lazy" style="height:42px;width:auto;flex:0 0 auto">
     <span class="ft-copy">© 2026 Matilab Creative House — CNPJ 40.283.248/0001-21</span>
     <span class="ft-copy">Todos os direitos reservados</span>
   </div>
