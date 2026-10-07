@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-19M8EDN553"></script>
+<!-- Google tag (gtag.js) — carregamento adiado p/ performance -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-19M8EDN553');
+  (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-19M8EDN553';document.head.appendChild(s);}
+  var ev=['scroll','mousemove','touchstart','click','keydown'];function t(){ev.forEach(function(e){window.removeEventListener(e,t)});g();}
+  ev.forEach(function(e){window.addEventListener(e,t,{passive:true})});
+  window.addEventListener('load',function(){setTimeout(g,3500);});})();
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -150,6 +152,12 @@ body.big #ring{width:50px;height:50px;border-color:rgba(181,251,103,.55)}
 #loader.out{opacity:0;pointer-events:none}
 #loader-logo{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
 #loader-logo.in{opacity:1;transform:none}
+#loader-logo svg path{fill:#fff;fill-opacity:0;stroke:#B5FB67;stroke-width:6;stroke-dasharray:6000;stroke-dashoffset:6000}
+#loader-logo.in svg path{animation:lgdraw 1.15s ease forwards,lgfill .55s ease .95s forwards,lgstroke .45s ease 1.35s forwards}
+@keyframes lgdraw{to{stroke-dashoffset:0}}
+@keyframes lgfill{to{fill-opacity:1}}
+@keyframes lgstroke{to{stroke-opacity:0}}
+@media(prefers-reduced-motion:reduce){#loader-logo.in svg path{animation:none;fill-opacity:1;stroke-opacity:0}}
 #loader-bar-wrap{width:180px;height:1.5px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden;margin-top:36px}
 #loader-bar{height:100%;background:var(--lime);width:0;border-radius:2px;transition:width .04s linear}
 #loader-pct{margin-top:12px;font-size:10px;font-weight:600;color:rgba(255,255,255,.2);letter-spacing:2px;font-variant-numeric:tabular-nums}
@@ -604,7 +612,7 @@ body.menu-open{overflow:hidden}
 .hgeo-ic{width:46px;height:46px;border-radius:13px;background:rgba(181,251,103,.12);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
 .hgeo-t{font-size:15px;font-weight:700;color:#fff;margin-bottom:9px}
 .hgeo-d{font-size:13px;font-weight:300;color:#8a8a8a;line-height:1.7}
-.hguias{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));gap:14px}
+.hguias{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .hguia{display:flex;flex-direction:column;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:24px;text-decoration:none;transition:transform .25s,background .25s,border-color .25s;min-height:158px}
 .hguia:hover{transform:translateY(-4px);background:rgba(255,255,255,.05);border-color:rgba(181,251,103,.3)}
 .hguia-tag{align-self:flex-start;font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#B5FB67;background:rgba(181,251,103,.1);border:1px solid rgba(181,251,103,.2);padding:4px 10px;border-radius:100px}
@@ -613,7 +621,7 @@ body.menu-open{overflow:hidden}
 .hguia:hover .hguia-go{color:#B5FB67}
 .hlink{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:rgba(255,255,255,.6);text-decoration:none;border:1px solid rgba(255,255,255,.12);border-radius:100px;padding:11px 24px;transition:all .25s}
 .hlink:hover{color:#0A0A0A;background:#B5FB67;border-color:#B5FB67}
-@media(max-width:900px){.hsec{padding:60px 24px}.hpill{flex-basis:130px}.hsegs{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}}
+@media(max-width:900px){.hsec{padding:60px 24px}.hpill{flex-basis:130px}.hsegs{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}.hguias{grid-template-columns:repeat(2,1fr)}}
 
 </style>
 </head>
@@ -622,7 +630,7 @@ body.menu-open{overflow:hidden}
 <!-- LOADER -->
 <div id="loader">
   <div id="loader-logo">
-    <svg height="28" viewBox="0 0 1439 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg height="44" viewBox="0 0 1439 266" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill="white" d="M1260.27 4.14H1308.67V92.29C1322.15 74.32 1340.47 64.98 1363.98 64.98C1388.87 64.98 1407.89 73.63 1420.33 90.57C1432.78 107.85 1439 131.01 1439 160.74C1439 175.26 1436.93 188.06 1433.47 199.81C1430.01 211.56 1424.83 221.93 1417.91 230.23C1411 238.53 1403.05 245.1 1393.37 249.59C1383.69 254.43 1372.62 256.5 1360.53 256.5C1350.85 256.5 1341.51 254.78 1332.52 250.97C1323.53 247.52 1314.89 240.6 1307.29 230.92V250.97H1260.27V4.14ZM1308.32 162.13C1308.32 173.88 1309.02 183.56 1311.09 190.48C1313.16 197.39 1316.27 203.27 1320.77 207.41C1325.26 211.56 1329.76 214.33 1334.6 215.71C1339.44 217.09 1344.28 217.44 1349.12 217.44C1354.3 217.44 1359.49 216.4 1364.33 214.33C1369.17 212.25 1373.32 209.14 1376.77 204.65C1380.23 200.16 1383.34 194.28 1385.42 187.02C1387.49 180.1 1388.53 171.46 1388.53 161.09C1388.53 150.72 1387.49 141.73 1385.42 134.47C1383.34 127.56 1380.92 121.68 1377.46 117.19C1374.01 112.69 1369.86 109.58 1365.02 107.51C1360.18 105.43 1355.34 104.39 1350.15 104.39C1343.93 104.39 1338.75 105.43 1334.6 106.81C1330.1 108.54 1325.95 110.96 1321.81 114.42C1316.97 118.91 1313.51 124.45 1311.44 131.01C1309.36 137.93 1308.32 146.23 1308.32 156.6V162.13Z"/>
       <path fill="white" d="M1187.48 228.16C1180.22 236.45 1172.27 243.02 1163.28 247.86C1154.3 253.05 1142.89 255.47 1129.06 255.47C1120.76 255.47 1113.16 254.43 1105.9 252.36C1098.64 250.28 1092.42 247.17 1086.88 242.68C1081.35 238.53 1077.2 233 1074.09 226.08C1070.64 219.17 1069.25 211.22 1069.25 201.54C1069.25 189.09 1072.02 179.07 1077.55 171.12C1083.08 163.51 1090.34 157.29 1099.33 152.79C1108.32 148.65 1118.34 145.53 1129.41 143.46C1140.47 141.73 1151.88 140.69 1163.63 140L1186.79 138.97V129.98C1186.79 118.91 1183.68 111.31 1177.46 107.16C1171.24 103.01 1164.32 100.94 1156.02 100.94C1136.67 100.94 1125.95 108.2 1123.18 122.72L1078.93 118.57C1082.04 99.9 1090.34 86.07 1103.82 77.78C1116.96 69.48 1134.94 64.98 1157.75 64.98C1171.58 64.98 1183.34 66.71 1193.02 70.17C1202.69 73.63 1210.3 78.12 1216.18 84.34C1222.05 90.57 1226.2 98.17 1228.97 107.16C1231.73 116.15 1233.12 125.83 1233.12 136.89V250.97H1187.48V228.16ZM1186.45 170.42L1165.01 171.46C1154.64 172.15 1146.69 173.19 1140.47 174.57C1134.25 176.3 1129.41 178.38 1125.95 180.8C1122.49 183.22 1120.42 185.98 1119.38 189.09C1118 192.55 1117.65 196.01 1117.65 199.81C1117.65 206.03 1119.73 210.53 1123.87 213.98C1128.02 217.44 1133.55 219.17 1141.16 219.17C1153.6 219.17 1163.63 216.4 1171.58 210.53C1175.73 207.42 1179.53 203.27 1182.3 198.43C1185.06 193.59 1186.45 187.36 1186.45 179.76V170.42Z"/>
       <path fill="white" d="M1002.66 4.14H1051.06V250.97H1002.66V4.14Z"/>
@@ -1355,7 +1363,7 @@ body.menu-open{overflow:hidden}
         </div>
       </div>
       <div id="pf-modal-right">
-        <img id="pf-modal-img" src="" alt="" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:10px;display:block;border:1px solid rgba(255,255,255,0.06)">
+        <img id="pf-modal-img" src="" alt="" loading="lazy" decoding="async" width="1200" height="750" style="width:100%;height:auto;border-radius:10px;display:block;border:1px solid rgba(255,255,255,0.06)">
       </div>
     </div>
   </div>
@@ -1797,6 +1805,8 @@ body.menu-open{overflow:hidden}
       <a href="/site-para-imobiliaria" class="hseg"><div class="hseg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B5FB67" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5M5 9v11h14V9"/></svg></div><div class="hseg-t">Imobiliárias</div><div class="hseg-d">Portfólio + busca</div></a>
       <a href="/site-para-saas" class="hseg"><div class="hseg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B5FB67" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-3 3 3 3m8-6 3 3-3 3M14 5l-4 14"/></svg></div><div class="hseg-t">SaaS</div><div class="hseg-d">Performance + integrações</div></a>
       <a href="/site-para-construtora" class="hseg"><div class="hseg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B5FB67" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 5-10 5L2 7l10-5ZM2 12l10 5 10-5M2 17l10 5 10-5"/></svg></div><div class="hseg-t">Construtoras</div><div class="hseg-d">Lançamentos + VGV</div></a>
+      <a href="/site-para-estetica" class="hseg"><div class="hseg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B5FB67" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1.4 3.1 3.5 5.2 6.6 6.6-3.1 1.4-5.2 3.5-6.6 6.6-1.4-3.1-3.5-5.2-6.6-6.6C8.5 7.2 10.6 5.1 12 2ZM18 16l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3Z"/></svg></div><div class="hseg-t">Estética &amp; Beleza</div><div class="hseg-d">Antes/depois + agendamento</div></a>
+      <a href="/site-para-consultoria" class="hseg"><div class="hseg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B5FB67" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div><div class="hseg-t">Consultoria</div><div class="hseg-d">Autoridade + captação B2B</div></a>
     </div>
   </div>
 </section>
