@@ -1081,4 +1081,18 @@
     <priority>0.3</priority>
   </url>
 
+  <url>
+    <loc>https://matilab.com.br/site-para-distribuidora</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://matilab.com.br/site-para-designer-de-interiores</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

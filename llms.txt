@@ -174,3 +174,5 @@
 - [Site para coach](https://matilab.com.br/site-para-coach)
 - [Site para cafeteria](https://matilab.com.br/site-para-cafeteria)
 - [Site para pizzaria](https://matilab.com.br/site-para-pizzaria)
+- [Site para distribuidora](https://matilab.com.br/site-para-distribuidora)
+- [Site para designer de interiores](https://matilab.com.br/site-para-designer-de-interiores)

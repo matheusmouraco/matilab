@@ -5577,7 +5577,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-08"
     },
     {
       "slug": "site-para-designer-de-interiores",
@@ -5654,7 +5655,8 @@
           "Sim, remotamente, a partir de São Paulo."
         ]
       ],
-      "status": "pending"
+      "status": "published",
+      "published_at": "2026-10-08"
     },
     {
       "slug": "site-para-curso-online",
