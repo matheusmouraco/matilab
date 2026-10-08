@@ -51,6 +51,7 @@ def _head(t):
   gtag('js', new Date());
 
   gtag('config', 'G-19M8EDN553');
+  gtag('config', 'AW-16963228465');
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
