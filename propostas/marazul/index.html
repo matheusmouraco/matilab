@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Proposta Comercial | Marketplace Marazul Pescados</title>
+<meta name="description" content="Proposta da Matilab para o marketplace Marazul Pescados: uma plataforma onde vendedores de peixes e frutos do mar de Feira de Santana montam sua vitrine e vendem direto para o cliente." />
+<meta name="theme-color" content="#0D2E6E" />
+<meta property="og:title" content="Proposta Comercial | Marketplace Marazul Pescados" />
+<meta property="og:description" content="O marketplace de pescados de Feira de Santana. Proposta preparada pela Matilab para Arleys Conceição." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://matilab.com.br/propostas/marazul" />
+<meta property="og:image" content="https://matilab.com.br/propostas/marazul/assets/og-marazul.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<link rel="icon" href="/propostas/marazul/assets/marazul-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --deep:#0D2E6E;        /* azul profundo Marazul */
+    --deep-2:#0A2457;
+    --royal:#1E4FA8;       /* azul royal */
+    --cyan:#1FA3E0;        /* ciano, só destaque */
+    --sun:#F5C518;         /* amarelo sol */
+    --shrimp:#F26B1D;      /* laranja camarão, acento */
+    --lime:#90E765;        /* assinatura Matilab */
+    --ink:#1A1A1A;
+    --ink-2:#4A5568;
+    --ink-3:#718096;
+    --line:#E2E8F0;
+    --soft:#F4F7FB;
+    --blue-50:#EAF2FB;
+    --white:#FFFFFF;
+    --r:18px;
+    --shadow:0 1px 2px rgba(13,46,110,.06), 0 8px 24px -12px rgba(13,46,110,.18);
+    --head:"Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+    --body:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --brand:"Baloo 2", "Fredoka", system-ui, sans-serif;
+    color-scheme: light;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
+  body{margin:0;background:var(--white);color:var(--ink);font:16px/1.6 var(--body);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  img,svg{display:block;max-width:100%}
+  h1,h2,h3,h4{font-family:var(--head);margin:0;line-height:1.15;letter-spacing:-.02em}
+  p{margin:0}
+  a{color:inherit}
+  .wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 20px}
+  .sec{padding:64px 0}
+  .soft{background:var(--soft)}
+
+  .head{max-width:680px}
+  .eyebrow{display:flex;align-items:center;gap:10px;font:700 12px/1.35 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--royal);margin-bottom:14px}
+  .eyebrow b{font-family:var(--head);color:var(--deep);background:var(--blue-50);border-radius:8px;padding:6px 8px;letter-spacing:.02em}
+  .h2{font-size:clamp(27px,6.6vw,40px);color:var(--deep)}
+  .lead{font-size:16.5px;color:var(--ink-2);margin-top:14px}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:14px 22px;border-radius:12px;font:700 15px/1 var(--body);text-decoration:none;transition:transform .2s ease, background .2s ease, box-shadow .2s ease}
+  .btn:hover{transform:translateY(-1px)}
+  .btn:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+  .btn-sun{background:var(--sun);color:var(--deep);box-shadow:0 10px 24px -12px rgba(245,197,24,.9)}
+  .btn-sun:hover{background:#FFD23A}
+  .btn-ghost{background:rgba(255,255,255,.08);color:var(--white);border:1px solid rgba(255,255,255,.28)}
+  .btn-ghost:hover{background:rgba(255,255,255,.14)}
+  .btn-deep{background:var(--deep);color:var(--white)}
+  .btn-sm{min-height:38px;padding:10px 14px;font-size:13px;border-radius:10px}
+  .btn svg{width:20px;height:20px}
+
+  /* NAV */
+  .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:12px;height:62px}
+  .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+  .nav-brand img{width:38px;height:38px;border-radius:50%}
+  .nav-brand span{font:800 15px/1.1 var(--head);color:var(--deep);white-space:nowrap}
+  .nav-r{display:flex;align-items:center;gap:14px}
+  .nav-by{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-3);white-space:nowrap}
+  .nav-by img{height:15px;width:auto}
+  @media (max-width:420px){.nav-by .t{display:none}.nav-r .btn{display:none}}
+
+  /* CAPA */
+  .cover{position:relative;color:var(--white);overflow:hidden;
+    background:radial-gradient(90% 60% at 80% 10%, rgba(31,163,224,.28), rgba(31,163,224,0) 60%),
+               linear-gradient(165deg, var(--royal) 0%, var(--deep) 55%, var(--deep-2) 100%)}
+  .cover-grid{display:grid;gap:26px;padding-top:32px;padding-bottom:30px;position:relative;z-index:1}
+  .cover-art{order:-1}
+  .seal{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--lime);color:var(--lime);background:rgba(144,231,101,.1);font:700 11px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;padding:9px 13px;border-radius:999px}
+  .seal i{width:7px;height:7px;border-radius:50%;background:var(--lime)}
+  .cover h1{font-size:clamp(30px,8.4vw,54px);font-weight:800;margin-top:18px}
+  .cover h1 span{color:var(--sun)}
+  .cover .lead{color:#D3E1F5;font-size:17px;max-width:560px}
+  .cover-meta{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:26px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);border-radius:14px;overflow:hidden}
+  .cover-meta div{background:rgba(10,36,87,.55);padding:12px 14px}
+  .cover-meta div:first-child{grid-column:1 / -1}
+  .cover-meta small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9FB6DA}
+  .cover-meta span{display:block;font-weight:600;font-size:15px;margin-top:2px}
+  .cover-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .cover-actions .btn{flex:1 1 180px}
+  .cover-art{position:relative;display:grid;place-items:center}
+  .cover-art .ring{position:absolute;width:min(62vw,250px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(255,255,255,.12)}
+  .cover-art .ring.r2{width:min(80vw,320px);border-color:rgba(255,255,255,.06)}
+  .cover-art img{position:relative;width:min(48vw,190px);height:auto;border-radius:50%;box-shadow:0 30px 60px -20px rgba(0,0,0,.55);animation:float 7s ease-in-out infinite}
+  .cover-by{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:22px;position:relative;font-size:12px;color:#9FB6DA;letter-spacing:.06em}
+  .cover-by img{height:16px;width:auto}
+  .wave{line-height:0;position:relative;z-index:1}
+  .wave svg{width:100%;height:46px}
+
+  /* RESUMO */
+  .summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+  .sum{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+  .sum small{display:block;font-size:12px;color:var(--ink-3);font-weight:600;letter-spacing:.04em}
+  .sum strong{display:block;font:800 21px/1.2 var(--head);color:var(--deep);margin-top:6px}
+  .sum span{display:block;font-size:13px;color:var(--ink-2);margin-top:4px;line-height:1.4}
+  .sum.hl{background:var(--deep);border-color:var(--deep)}
+  .sum.hl small{color:#9FB6DA}
+  .sum.hl strong{color:var(--sun)}
+  .sum.hl span{color:#D3E1F5}
+
+  /* IDEIA */
+  .compare-grid{display:grid;gap:14px;margin-top:30px}
+  .compare{border-radius:var(--r);padding:22px}
+  .compare h3{font-size:18px;display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .compare h3 svg{width:22px;height:22px}
+  .compare ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .compare li{display:flex;gap:10px;font-size:15px;line-height:1.5}
+  .compare li svg{flex:none;width:18px;height:18px;margin-top:3px}
+  .before{background:var(--soft);border:1px solid var(--line);color:#2D3748}
+  .before h3{color:var(--ink-2)}
+  .before li svg{color:#C53030}
+  .after{background:linear-gradient(160deg,var(--royal),var(--deep));color:var(--white)}
+  .after h3{color:var(--white)}
+  .after li svg{color:var(--sun)}
+  .flow{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .flow li{display:flex;align-items:center;gap:10px;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font:600 14px/1.3 var(--body);color:var(--deep)}
+  .flow b{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--deep);color:var(--sun);font:800 13px/1 var(--head)}
+  .slogan{margin-top:30px;border-radius:var(--r);background:var(--sun);color:var(--deep);padding:26px 22px;text-align:center;position:relative;overflow:hidden}
+  .slogan small{display:block;font:700 11px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;opacity:.7;margin-bottom:10px}
+  .slogan p{font:800 clamp(26px,7.4vw,40px)/1.05 var(--brand)}
+
+  /* COMO FUNCIONA: pagamento e entrega */
+  .deal{margin-top:30px;display:grid;gap:14px}
+  .deal-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:var(--shadow)}
+  .deal-card .ico{margin-bottom:14px}
+  .deal-card h3{font-size:19px;color:var(--deep)}
+  .deal-card p{font-size:15px;color:var(--ink-2);margin-top:8px}
+  .deal-card .pill{display:inline-block;margin-top:12px;font:700 12px/1.4 var(--body);color:var(--deep);background:var(--blue-50);padding:7px 10px;border-radius:8px}
+  .note-box{margin-top:14px;display:flex;gap:12px;align-items:flex-start;background:#FFF8E1;border:1px solid #F8E08E;border-radius:14px;padding:16px;font-size:14.5px;color:#4A3B00}
+  .note-box svg{flex:none;width:22px;height:22px;color:#B7791F;margin-top:1px}
+
+  /* ESCOPO */
+  .block{margin-top:40px}
+  .block-head{display:flex;align-items:center;gap:14px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+  .block-num{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--deep);color:var(--sun);font:800 17px/1 var(--head)}
+  .block-head h3{font-size:clamp(19px,5vw,23px);color:var(--deep)}
+  .block-head p{font-size:13.5px;color:var(--ink-3);margin-top:2px}
+  .cards{display:grid;gap:12px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;gap:14px;align-items:flex-start;box-shadow:var(--shadow);transition:transform .25s ease, box-shadow .25s ease}
+  .card:hover{transform:translateY(-2px);box-shadow:0 1px 2px rgba(13,46,110,.06), 0 16px 32px -16px rgba(13,46,110,.28)}
+  .ico{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--blue-50);color:var(--royal)}
+  .ico svg{width:22px;height:22px}
+  .card h4{font:700 15.5px/1.3 var(--body);letter-spacing:0;color:var(--deep)}
+  .card p{font-size:14.5px;color:var(--ink-2);margin-top:4px;line-height:1.5}
+  .card .tip{display:inline-block;margin-top:8px;font-size:12px;font-weight:600;color:var(--royal);background:var(--blue-50);border-radius:6px;padding:3px 8px}
+  .next{margin-top:40px;border-radius:var(--r);padding:22px;border:1.5px dashed #A9C2E0;background:var(--white)}
+  .next-tag{display:inline-flex;align-items:center;gap:6px;font:700 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--royal);background:var(--blue-50);padding:7px 10px;border-radius:999px}
+  .next-tag svg{width:14px;height:14px}
+  .next h3{font-size:20px;color:var(--deep);margin-top:12px}
+  .next ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
+  .next li{display:flex;gap:10px;font-size:15px;color:#2D3748}
+  .next li::before{content:"";flex:none;width:8px;height:8px;margin-top:9px;border-radius:50%;background:var(--cyan)}
+  .next .quote{margin-top:16px;font-weight:600;color:var(--deep);border-left:3px solid var(--sun);padding-left:12px}
+
+  /* PROCESSO */
+  .timeline{list-style:none;margin:32px 0 0;padding:0;display:grid;position:relative}
+  .timeline::before{content:"";position:absolute;left:21px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--cyan),var(--royal))}
+  .step{position:relative;padding:0 0 24px 62px}
+  .step:last-child{padding-bottom:0}
+  .dot{position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--white);border:2px solid var(--cyan);display:grid;place-items:center;font:800 16px/1 var(--head);color:var(--deep)}
+  .step:last-child .dot{background:var(--sun);border-color:var(--sun)}
+  .step h3{font-size:18px;color:var(--deep);padding-top:2px}
+  .step p{font-size:14.5px;color:var(--ink-2);margin-top:4px}
+  .deadline{margin-top:30px;display:flex;gap:14px;align-items:center;background:var(--deep);color:var(--white);border-radius:16px;padding:18px 20px}
+  .deadline svg{flex:none;width:34px;height:34px;color:var(--sun)}
+  .deadline strong{display:block;font:800 20px/1.2 var(--head);color:var(--sun)}
+  .deadline span{font-size:14px;color:#D3E1F5}
+
+  /* INVESTIMENTO */
+  .invest{background:linear-gradient(170deg,var(--deep),var(--deep-2));color:var(--white)}
+  .invest .eyebrow{color:#8FD3F3}
+  .invest .eyebrow b{background:rgba(255,255,255,.1);color:var(--sun)}
+  .invest .h2{color:var(--white)}
+  .invest .lead{color:#C4D4EC}
+  .price-grid{display:grid;gap:16px;margin-top:30px}
+  .price{border-radius:20px;padding:26px 22px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14)}
+  .price.main{background:linear-gradient(160deg,rgba(30,79,168,.75),rgba(13,46,110,.75));border:1.5px solid var(--sun)}
+  .price .tag{display:inline-block;font:700 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;background:var(--sun);color:var(--deep);padding:7px 10px;border-radius:999px}
+  .price.alt .tag{background:rgba(31,163,224,.16);color:#BFE6F8;border:1px solid rgba(31,163,224,.45)}
+  .price h3{font-size:20px;margin-top:14px;color:var(--white)}
+  .amount{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 8px;margin-top:12px;color:var(--sun)}
+  .amount .cur{font:800 22px/1 var(--head)}
+  .amount .val{font:800 clamp(50px,15vw,68px)/1 var(--head);letter-spacing:-.03em}
+  .amount .per{font:600 15px/1 var(--body);color:#FBE7A0}
+  .price .note{margin-top:12px;font-size:14.5px;color:#D3E1F5}
+  .price ul{list-style:none;padding:16px 0 0;margin:16px 0 0;display:grid;gap:8px;font-size:14.5px;color:#E3ECF8;border-top:1px solid rgba(255,255,255,.12)}
+  .price li{display:flex;gap:8px}
+  .price li svg{flex:none;width:17px;height:17px;color:var(--sun);margin-top:3px}
+  .domain{margin-top:16px;display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#C4D4EC;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px 16px}
+  .domain svg{flex:none;width:20px;height:20px;color:#8FD3F3;margin-top:1px}
+
+  /* PAGAMENTO */
+  .pay-grid{display:grid;gap:14px;margin-top:28px}
+  .pay{border-radius:var(--r);padding:22px;background:var(--white);border:1px solid var(--line);box-shadow:var(--shadow)}
+  .pay-top{display:flex;align-items:center;gap:12px}
+  .pay .opt{font:700 11px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--royal)}
+  .pay h3{font-size:20px;color:var(--deep);margin-top:4px}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+  .split div{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px}
+  .split small{display:block;font-size:12px;color:var(--ink-3)}
+  .split b{display:block;font:800 20px/1.25 var(--head);color:var(--deep);margin-top:2px}
+  .pay p{margin-top:14px;font-size:14.5px;color:var(--ink-2)}
+  .pay .big{font:800 40px/1 var(--head);color:var(--deep);margin-top:16px;letter-spacing:-.02em}
+
+  /* CONDIÇÕES GERAIS */
+  .terms{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--white)}
+  .terms li{display:flex;gap:14px;padding:16px 18px;border-bottom:1px solid var(--line)}
+  .terms li:last-child{border-bottom:0}
+  .terms .n{flex:none;font:800 13px/1 var(--head);color:var(--royal);background:var(--blue-50);border-radius:8px;width:30px;height:30px;display:grid;place-items:center}
+  .terms h4{font:700 15px/1.35 var(--body);letter-spacing:0;color:var(--deep)}
+  .terms p{font-size:14.5px;color:var(--ink-2);margin-top:3px;line-height:1.5}
+
+  /* POR QUE */
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+  .stat{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px 16px;box-shadow:var(--shadow)}
+  .stat b{display:block;font:800 clamp(30px,9vw,40px)/1 var(--head);color:var(--deep);letter-spacing:-.02em}
+  .stat b em{font-style:normal;color:var(--royal);font-size:.6em;letter-spacing:0}
+  .stat p{font-size:13.5px;color:var(--ink-2);margin-top:8px;line-height:1.45}
+  .stat.wide{grid-column:1 / -1;display:flex;gap:14px;align-items:center}
+  .stat.wide h4{font:700 16px/1.3 var(--body);letter-spacing:0;color:var(--deep)}
+  .stat.wide p{margin-top:2px}
+
+  /* CTA */
+  .cta{background:linear-gradient(170deg,var(--royal),var(--deep) 70%);color:var(--white)}
+  .cta-grid{display:grid;gap:30px}
+  .cta .eyebrow{color:var(--sun)}
+  .cta .eyebrow b{background:rgba(255,255,255,.1);color:var(--sun)}
+  .cta .h2{color:var(--white)}
+  .cta .lead{color:#D3E1F5}
+  .cta-actions{display:grid;gap:10px;margin-top:26px;max-width:420px}
+  .cta-actions .btn-sun{min-height:60px;font-size:18px;border-radius:14px}
+  .valid{margin-top:14px;font-size:14px;color:#C4D4EC}
+  .valid b{color:var(--sun)}
+  .sign{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:24px;display:grid;gap:10px;align-content:start}
+  .sign > img{height:24px;width:auto;margin-bottom:8px}
+  .sign .who{font:700 18px/1.2 var(--head)}
+  .sign .role{font-size:13px;color:#9FB6DA;margin-bottom:6px}
+  .sign a,.sign .l{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#E3ECF8;text-decoration:none;line-height:1.45}
+  .sign a:hover{color:var(--sun)}
+  .sign svg{flex:none;width:16px;height:16px;margin-top:2px;color:#8FD3F3}
+
+  /* FOOTER */
+  footer{background:var(--deep-2);color:#9FB6DA;border-top:3px solid var(--lime);padding:26px 0 96px;font-size:12.5px;line-height:1.6}
+  .foot{display:grid;gap:14px;justify-items:start}
+  .foot img{height:20px;width:auto}
+  .foot .nw{white-space:nowrap}
+  .foot .made{color:var(--lime)}
+
+  .wa-float{color:#fff;position:fixed;right:16px;bottom:16px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.4)}
+  .wa-float svg{width:28px;height:28px}
+
+  /* REVEAL */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal[data-d="1"]{transition-delay:.07s}
+  .reveal[data-d="2"]{transition-delay:.14s}
+  .reveal[data-d="3"]{transition-delay:.21s}
+  .reveal[data-d="4"]{transition-delay:.28s}
+  .no-js .reveal{opacity:1;transform:none}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+  /* TABLET */
+  @media (min-width:640px){
+    .wrap{padding:0 28px}
+    .summary{grid-template-columns:repeat(4,1fr)}
+    .compare-grid,.deal,.pay-grid{grid-template-columns:1fr 1fr}
+    .cards{grid-template-columns:1fr 1fr}
+    .flow{grid-template-columns:repeat(4,1fr)}
+    .why-grid{grid-template-columns:repeat(2,1fr)}
+    .cover-meta{grid-template-columns:repeat(3,1fr)}
+    .cover-meta div:first-child{grid-column:auto}
+    .foot{grid-template-columns:auto 1fr;align-items:center;column-gap:24px}
+    .foot .r{text-align:right}
+    footer{padding-bottom:30px}
+  }
+  /* DESKTOP */
+  @media (min-width:960px){
+    .sec{padding:96px 0}
+    .cover-grid{grid-template-columns:1.15fr .85fr;align-items:center;padding-top:72px;padding-bottom:40px}
+    .cover-art{order:0}
+    .cover-art img{width:min(32vw,320px)}
+    .cover-art .ring{width:400px}
+    .cover-art .ring.r2{width:480px}
+    .cards{grid-template-columns:repeat(3,1fr)}
+    .price-grid{grid-template-columns:1.2fr 1fr}
+    .why-grid{grid-template-columns:repeat(4,1fr)}
+    .stat.wide{grid-column:auto;display:block}
+    .stat.wide .ico{margin-bottom:12px}
+    .cta-grid{grid-template-columns:1.3fr .9fr;align-items:center;gap:56px}
+    .timeline{grid-template-columns:repeat(5,1fr);gap:18px}
+    .timeline::before{left:22px;right:22px;top:21px;bottom:auto;width:auto;height:2px;background:linear-gradient(90deg,var(--cyan),var(--royal))}
+    .step{padding:62px 0 0}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+  }
+
+  /* IMPRESSÃO / PDF */
+  @media print{
+    @page{size:A4;margin:12mm}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    body{font-size:11pt}
+    .nav,.wa-float,.wave,.cover-actions{display:none!important}
+    .reveal{opacity:1!important;transform:none!important}
+    .sec{padding:28px 0}
+    .cover-grid{grid-template-columns:1.2fr .8fr;align-items:center;padding-top:28px;padding-bottom:28px}
+    .cover-art{order:0}
+    .cover-art img{width:200px;box-shadow:none}
+    .cover-art .ring{display:none}
+    .summary{grid-template-columns:repeat(4,1fr)}
+    .cards{grid-template-columns:1fr 1fr}
+    .compare-grid,.deal,.pay-grid,.price-grid{grid-template-columns:1fr 1fr}
+    .why-grid{grid-template-columns:repeat(4,1fr)}
+    .stat.wide{grid-column:auto;display:block}
+    .cta-grid{grid-template-columns:1.2fr 1fr}
+    .card,.compare,.deal-card,.price,.pay,.stat,.step,.next,.slogan,.deadline,.terms li,.sign,.sum{break-inside:avoid;box-shadow:none}
+    .block-head,.head{break-after:avoid}
+    .invest,#escopo{break-before:page}
+  }
+</style>
+</head>
+<body class="no-js">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><circle cx="12" cy="14" r="2.5"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1.5-5h-13z"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></symbol>
+    <symbol id="i-fish" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c3-5 9-7 14-4l4-3v14l-4-3c-5 3-11 1-14-4z"/><circle cx="7.5" cy="11" r=".8" fill="currentColor"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12h11.5l2-8H6.2"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 2 3.1-.3.9 3 2.6 1.8-1 3 1 3-2.6 1.8-.9 3-3.1-.3L12 22l-2.4-2-3.1.3-.9-3L3 15.5l1-3-1-3 2.6-1.8.9-3 3.1.3z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10 21a2 2 0 0 0 4 0"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15v2M11 11v6M15 7v10M19 12v5"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c1-3.5 3.5-5 6.5-5s5.5 1.5 6.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.5 0 4 1.5 4.5 4"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-5A8 8 0 1 1 21 12z"/></symbol>
+    <symbol id="i-pix" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 21.5 12 12 21.5 2.5 12z"/><path d="m7.5 12 2.5-2.5 2 2 2-2 2.5 2.5-2.5 2.5-2-2-2 2z"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20M6 15h4"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3"/><path d="M21 9h-5a3 3 0 0 0 0 6h5z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/><path d="m9 15 2 2 4-4"/></symbol>
+    <symbol id="i-tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7l10 10M17 7 7 17"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></symbol>
+    <symbol id="i-support" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2" y="14" width="5" height="6" rx="2"/><rect x="17" y="14" width="5" height="6" rx="2"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2"/><path d="M14.5 4.5C17 2 21 3 21 3s1 4-1.5 6.5L13 16l-5-5z"/><path d="M8 11 5 10l3-3h4M13 16l1 3 3-3v-4"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+    <symbol id="i-whats" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.8.4 3.6 3.6 0 0 0-1.1 2.6 6.2 6.2 0 0 0 1.3 3.3 14 14 0 0 0 5.4 4.8c2 .9 2.8.9 3.8.8a3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zM12 0a12 12 0 0 0-10.3 18L0 24l6.2-1.6A12 12 0 1 0 12 0z"/></symbol>
+  </defs>
+</svg>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="nav-brand" href="#topo"><img src="/propostas/marazul/assets/marazul-icon.png" alt="" width="38" height="38" /><span>Marazul Pescados</span></a>
+    <div class="nav-r">
+      <span class="nav-by"><span class="t">Proposta por</span><img src="/propostas/marazul/assets/matilab-logo-dark.svg" alt="Matilab" width="82" height="15" /></span>
+      <a class="btn btn-deep btn-sm" href="#investimento">Investimento</a>
+    </div>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- 1. CAPA -->
+<section class="cover">
+  <div class="wrap cover-grid">
+    <div>
+      <span class="seal"><i></i>Proposta comercial • Matilab</span>
+      <h1>Marazul: o marketplace de pescados de <span>Feira de Santana</span></h1>
+      <p class="lead">Uma plataforma onde pequenos vendedores de peixes e frutos do mar se cadastram, montam sua vitrine e vendem direto para o cliente final.</p>
+      <div class="cover-meta">
+        <div><small>Preparada para</small><span>Arleys Conceição</span></div>
+        <div><small>Data</small><span>Outubro de 2026</span></div>
+        <div><small>Validade</small><span>15 dias</span></div>
+      </div>
+      <div class="cover-actions">
+        <a class="btn btn-sun" href="#resumo">Ver resumo da proposta</a>
+        <a class="btn btn-ghost" href="#investimento">Ir para o investimento</a>
+      </div>
+    </div>
+    <div class="cover-art">
+      <div class="ring r2" aria-hidden="true"></div>
+      <div class="ring" aria-hidden="true"></div>
+      <img src="/propostas/marazul/assets/marazul-logo.webp" alt="Marazul Pescados: Frescor que você pode confiar" width="480" height="480" fetchpriority="high" />
+    </div>
+  </div>
+  <div class="cover-by" style="padding-bottom:6px">uma proposta <img src="/propostas/marazul/assets/matilab-logo-white.svg" alt="Matilab" width="87" height="16" /></div>
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 46" preserveAspectRatio="none"><path fill="#1FA3E0" fill-opacity=".25" d="M0 18c160 18 320 22 480 10S800 0 960 6s320 22 480 14v26H0z"/><path fill="#F4F7FB" d="M0 30c180 12 360 14 540 4s360-20 540-12 270 14 360 10v14H0z"/></svg>
+  </div>
+</section>
+
+<!-- RESUMO -->
+<section class="sec soft" id="resumo" style="padding-top:44px">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Resumo da proposta</div>
+      <h2 class="h2">Tudo o que importa, em 30 segundos</h2>
+    </div>
+    <div class="summary">
+      <div class="sum hl reveal"><small>Investimento</small><strong>R$&nbsp;4.200</strong><span>pagamento único</span></div>
+      <div class="sum reveal" data-d="1"><small>Prazo</small><strong>35 a 45 dias</strong><span>úteis, após aprovação</span></div>
+      <div class="sum reveal" data-d="2"><small>Mensal</small><strong>R$&nbsp;150</strong><span>só após o lançamento</span></div>
+      <div class="sum reveal" data-d="3"><small>Pagamento</small><strong>Pix ou cartão</strong><span>50% + 50% ou até 10x</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. A IDEIA -->
+<section class="sec" id="ideia">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow"><b>01</b>A ideia</div>
+      <h2 class="h2">Todo o pescado da cidade num lugar só</h2>
+      <p class="lead">Hoje o pequeno vendedor de pescado depende do boca a boca e de grupo de WhatsApp. A Marazul junta todo mundo num só lugar, com a mesma lógica do iFood: o cliente entra, escolhe o vendedor, monta o pedido e recebe. A Marazul vira a marca de confiança que conecta os dois lados.</p>
+    </div>
+
+    <div class="compare-grid">
+      <div class="compare before reveal" data-d="1">
+        <h3><svg><use href="#i-chat"/></svg>Como é hoje</h3>
+        <ul>
+          <li><svg><use href="#i-x"/></svg>Venda presa ao boca a boca e a grupos de WhatsApp</li>
+          <li><svg><use href="#i-x"/></svg>O cliente não sabe quem vende perto dele nem se o peixe é fresco</li>
+          <li><svg><use href="#i-x"/></svg>Cada vendedor se vira sozinho para ser encontrado</li>
+        </ul>
+      </div>
+      <div class="compare after reveal" data-d="2">
+        <h3><svg><use href="#i-fish"/></svg>Com a Marazul</h3>
+        <ul>
+          <li><svg><use href="#i-tick"/></svg>Todos os vendedores numa vitrine só, fácil de achar no celular</li>
+          <li><svg><use href="#i-tick"/></svg>Avaliações reais que mostram quem entrega qualidade</li>
+          <li><svg><use href="#i-tick"/></svg>Uma marca de confiança conectando quem vende e quem compra</li>
+        </ul>
+      </div>
+    </div>
+
+    <ol class="flow reveal" aria-label="Como o cliente compra">
+      <li><b>1</b>Entra no site</li><li><b>2</b>Escolhe o vendedor</li><li><b>3</b>Monta o pedido</li><li><b>4</b>Combina e recebe</li>
+    </ol>
+
+    <div class="slogan reveal">
+      <small>A promessa da marca</small>
+      <p>“Frescor que você pode confiar”</p>
+    </div>
+  </div>
+</section>
+
+<!-- PAGAMENTO E ENTREGA -->
+<section class="sec soft" id="como-funciona">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow"><b>02</b>Pagamento e entrega dos pedidos</div>
+      <h2 class="h2">A plataforma conecta. O acerto é direto entre vendedor e cliente.</h2>
+      <p class="lead">Nesta primeira fase, o site organiza a vitrine e o pedido. O pagamento e a entrega acontecem por fora da plataforma, combinados entre o vendedor e o cliente.</p>
+    </div>
+    <div class="deal">
+      <div class="deal-card reveal" data-d="1">
+        <div class="ico"><svg><use href="#i-wallet"/></svg></div>
+        <h3>Pagamento por fora da plataforma</h3>
+        <p>O site não recebe nem processa pagamentos. O cliente paga direto ao vendedor, do jeito que os dois combinarem: Pix, dinheiro ou cartão na entrega.</p>
+        <span class="pill">Sem taxa de intermediação sobre as vendas</span>
+      </div>
+      <div class="deal-card reveal" data-d="2">
+        <div class="ico"><svg><use href="#i-truck"/></svg></div>
+        <h3>Entrega a combinar</h3>
+        <p>A entrega ou retirada é combinada entre vendedor e cliente. Cada pedido chega com um botão que abre o WhatsApp do cliente, para acertar endereço, horário e frete na hora.</p>
+        <span class="pill">Cada vendedor mantém o seu jeito de entregar</span>
+      </div>
+    </div>
+    <div class="note-box reveal">
+      <svg><use href="#i-info"/></svg>
+      <p>Esse formato deixa o lançamento mais simples e rápido: o vendedor recebe o dinheiro direto, como já está acostumado, e a Marazul valida o modelo sem custo de pagamento online. Quando fizer sentido, o pagamento dentro do site entra numa próxima fase.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ESCOPO -->
+<section class="sec" id="escopo">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow"><b>03</b>O que está incluído</div>
+      <h2 class="h2">Uma plataforma completa para os três lados do negócio</h2>
+      <p class="lead">O cliente que compra, o vendedor que vende e a Marazul, que organiza tudo. Cada um com a sua área, pensada para ser simples de usar.</p>
+    </div>
+
+    <div class="block">
+      <div class="block-head reveal"><div class="block-num">A</div><div><h3>Para o cliente final</h3><p>Quem compra o pescado</p></div></div>
+      <div class="cards">
+        <article class="card reveal"><div class="ico"><svg><use href="#i-home"/></svg></div><div><h4>Página inicial</h4><p>Destaques, categorias (peixes, camarão, mariscos, frutos do mar) e busca.</p></div></article>
+        <article class="card reveal" data-d="1"><div class="ico"><svg><use href="#i-store"/></svg></div><div><h4>Lista de vendedores</h4><p>Com foto, bairro, avaliação e horário de atendimento.</p></div></article>
+        <article class="card reveal" data-d="2"><div class="ico"><svg><use href="#i-fish"/></svg></div><div><h4>Vitrine de cada vendedor</h4><p>Produtos com foto e preço por kg ou por unidade.</p></div></article>
+        <article class="card reveal"><div class="ico"><svg><use href="#i-cart"/></svg></div><div><h4>Carrinho e pedido</h4><p>O cliente monta o pedido e indica se prefere entrega ou retirada. O resto é combinado com o vendedor.</p></div></article>
+        <article class="card reveal" data-d="1"><div class="ico"><svg><use href="#i-user"/></svg></div><div><h4>Cadastro e login</h4><p>Cada cliente tem sua conta, com o histórico de pedidos.</p></div></article>
+        <article class="card reveal" data-d="2"><div class="ico"><svg><use href="#i-star"/></svg></div><div><h4>Avaliação do vendedor</h4><p>Depois da compra o cliente dá a nota. Isso gera confiança para os próximos.</p></div></article>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head reveal"><div class="block-num">B</div><div><h3>Para os vendedores</h3><p>Quem vende o pescado</p></div></div>
+      <div class="cards">
+        <article class="card reveal"><div class="ico"><svg><use href="#i-badge"/></svg></div><div><h4>Cadastro com aprovação</h4><p>O vendedor só aparece no site depois que a Marazul aprova. Assim a qualidade fica garantida.</p></div></article>
+        <article class="card reveal" data-d="1"><div class="ico"><svg><use href="#i-box"/></svg></div><div><h4>Painel próprio</h4><p>Uma área só dele para cadastrar produtos, fotos, preços e estoque.</p></div></article>
+        <article class="card reveal" data-d="2"><div class="ico"><svg><use href="#i-bell"/></svg></div><div><h4>Pedido com aviso na hora</h4><p>Chegou pedido, ele fica sabendo. E tem um botão direto para o WhatsApp do cliente.</p></div></article>
+        <article class="card reveal"><div class="ico"><svg><use href="#i-truck"/></svg></div><div><h4>Status do pedido</h4><p>Recebido, separando, saiu para entrega, entregue. O cliente acompanha cada etapa.</p></div></article>
+        <article class="card reveal" data-d="1"><div class="ico"><svg><use href="#i-pin"/></svg></div><div><h4>Bairros e horários</h4><p>Ele informa os bairros que atende e os horários. Entrega e frete são combinados com o cliente.</p></div></article>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head reveal"><div class="block-num">C</div><div><h3>Para a Marazul</h3><p>Painel administrativo: o controle do negócio</p></div></div>
+      <div class="cards">
+        <article class="card reveal"><div class="ico"><svg><use href="#i-shield"/></svg></div><div><h4>Controle dos vendedores</h4><p>Aprovar, pausar ou remover vendedores quando precisar.</p></div></article>
+        <article class="card reveal" data-d="1"><div class="ico"><svg><use href="#i-chart"/></svg></div><div><h4>Pedidos e volume</h4><p>Veja todos os pedidos e o volume de pedidos de cada vendedor.</p></div></article>
+        <article class="card reveal" data-d="2"><div class="ico"><svg><use href="#i-layout"/></svg></div><div><h4>Vitrine da página inicial</h4><p>Gerencie categorias, banners e os destaques que aparecem primeiro.</p></div></article>
+        <article class="card reveal"><div class="ico"><svg><use href="#i-users"/></svg></div><div><h4>Base de cadastros</h4><p>Lista de todos os clientes e vendedores cadastrados.</p></div></article>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-head reveal"><div class="block-num">D</div><div><h3>Estrutura e tecnologia</h3><p>O que faz a plataforma rodar bem, explicado sem complicação</p></div></div>
+      <div class="cards">
+        <article class="card reveal"><div class="ico"><svg><use href="#i-phone"/></svg></div><div><h4>Site 100% sob medida</h4><p>Rápido e pensado primeiro para o celular, que é onde o cliente compra.</p></div></article>
+        <article class="card reveal" data-d="1"><div class="ico"><svg><use href="#i-db"/></svg></div><div><h4>Dados e login seguros</h4><p>Vendedores, produtos, pedidos e clientes guardados num banco de dados profissional, com acesso protegido por senha.</p><span class="tip">Usamos o Supabase</span></div></article>
+        <article class="card reveal" data-d="2"><div class="ico"><svg><use href="#i-lock"/></svg></div><div><h4>Site no ar com cadeado</h4><p>Hospedagem configurada, certificado de segurança (o cadeado do navegador) e ligação com o endereço do site.</p></div></article>
+        <article class="card reveal"><div class="ico"><svg><use href="#i-search"/></svg></div><div><h4>Aparecer no Google</h4><p>Ajustes para o site ser encontrado em buscas como “peixe fresco Feira de Santana”.</p><span class="tip">Nome técnico: SEO básico</span></div></article>
+        <article class="card reveal" data-d="1"><div class="ico"><svg><use href="#i-play"/></svg></div><div><h4>Treinamento</h4><p>Vídeo de treinamento para a Marazul e um guia simples para os vendedores.</p></div></article>
+        <article class="card reveal" data-d="2"><div class="ico"><svg><use href="#i-support"/></svg></div><div><h4>30 dias de suporte</h4><p>Depois da entrega, seguimos juntos por 30 dias para ajustes.</p></div></article>
+      </div>
+    </div>
+
+    <div class="next reveal">
+      <span class="next-tag"><svg><use href="#i-rocket"/></svg>Próxima fase</span>
+      <h3>Quando a Marazul crescer, a plataforma cresce junto</h3>
+      <ul>
+        <li><span><strong>Pagamento online dentro do site</strong>, com o valor dividido automaticamente entre a Marazul e o vendedor (o chamado split de pagamento).</span></li>
+        <li><span><strong>Aplicativo próprio</strong> na App Store e no Google Play.</span></li>
+        <li><span><strong>Cobrança automática</strong> de comissão ou mensalidade dos vendedores.</span></li>
+      </ul>
+      <p class="quote">Começamos validando o modelo com o site. Quando a operação ganhar tração, evoluímos para o app.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PROCESSO -->
+<section class="sec soft" id="processo">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow"><b>04</b>Como funciona o processo</div>
+      <h2 class="h2">Do primeiro papo ao site no ar</h2>
+      <p class="lead">Cinco etapas claras. Você acompanha e aprova antes de seguirmos para a próxima.</p>
+    </div>
+    <ol class="timeline">
+      <li class="step reveal"><div class="dot">1</div><h3>Alinhamento</h3><p>Reunião para fechar as regras, as categorias e o fluxo do pedido.</p></li>
+      <li class="step reveal" data-d="1"><div class="dot">2</div><h3>Design</h3><p>Você aprova o visual das telas principais antes de começarmos a programar.</p></li>
+      <li class="step reveal" data-d="2"><div class="dot">3</div><h3>Desenvolvimento</h3><p>Construímos o site, os painéis e o banco de dados.</p></li>
+      <li class="step reveal" data-d="3"><div class="dot">4</div><h3>Testes</h3><p>Você e alguns vendedores testam fazendo pedidos reais.</p></li>
+      <li class="step reveal" data-d="4"><div class="dot">5</div><h3>Lançamento</h3><p>Site no ar, treinamento e suporte.</p></li>
+    </ol>
+    <div class="deadline reveal">
+      <svg><use href="#i-calendar"/></svg>
+      <div><strong>35 a 45 dias úteis</strong><span>Prazo estimado, contado a partir da aprovação e do envio dos materiais.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. INVESTIMENTO -->
+<section class="sec invest" id="investimento">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow"><b>05</b>Investimento</div>
+      <h2 class="h2">Valor fechado, sem surpresa no caminho</h2>
+      <p class="lead">Um valor único para construir a plataforma e um valor mensal para manter tudo funcionando depois do lançamento.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price main reveal">
+        <span class="tag">Projeto completo</span>
+        <h3>Desenvolvimento da plataforma Marazul</h3>
+        <div class="amount"><span class="cur">R$</span><span class="val">4.200</span></div>
+        <p class="note">Pagamento único. Inclui todo o escopo descrito nesta proposta.</p>
+        <ul>
+          <li><svg><use href="#i-tick"/></svg>Área do cliente, dos vendedores e da Marazul</li>
+          <li><svg><use href="#i-tick"/></svg>Site sob medida, rápido e pensado para celular</li>
+          <li><svg><use href="#i-tick"/></svg>Treinamento e 30 dias de suporte</li>
+        </ul>
+      </div>
+      <div class="price alt reveal" data-d="1">
+        <span class="tag">Mensal</span>
+        <h3>Banco de dados e infraestrutura (Supabase)</h3>
+        <div class="amount"><span class="cur">R$</span><span class="val">150</span><span class="per">por mês</span></div>
+        <p class="note">É onde ficam guardados os vendedores, produtos, pedidos e clientes. A Matilab gerencia, faz backup (cópia de segurança) e mantém tudo funcionando.</p>
+        <ul>
+          <li><svg><use href="#i-tick"/></svg>Começa a ser cobrado só após o lançamento</li>
+        </ul>
+      </div>
+    </div>
+    <div class="domain reveal">
+      <svg><use href="#i-globe"/></svg>
+      <p>O domínio, que é o endereço do site (ex: marazul.com.br), não está incluso. Custa cerca de R$&nbsp;40 por ano e fica registrado no nome do cliente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. CONDIÇÕES DE PAGAMENTO -->
+<section class="sec" id="pagamento">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow"><b>06</b>Condições de pagamento</div>
+      <h2 class="h2">Escolha o formato que fica melhor para você</h2>
+    </div>
+    <div class="pay-grid">
+      <div class="pay reveal">
+        <div class="pay-top"><div class="ico"><svg><use href="#i-pix"/></svg></div><div><span class="opt">Opção 1 • Pix</span><h3>50% + 50%</h3></div></div>
+        <div class="split">
+          <div><small>Na aprovação</small><b>R$&nbsp;2.100</b></div>
+          <div><small>Na entrega</small><b>R$&nbsp;2.100</b></div>
+        </div>
+        <p>Metade para começar, metade quando a plataforma for entregue.</p>
+      </div>
+      <div class="pay reveal" data-d="1">
+        <div class="pay-top"><div class="ico"><svg><use href="#i-card"/></svg></div><div><span class="opt">Opção 2 • Cartão</span><h3>Parcelado</h3></div></div>
+        <div class="big">até 10x</div>
+        <p>No cartão de crédito, com as taxas da operadora.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. CONDIÇÕES GERAIS -->
+<section class="sec soft" id="condicoes">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow"><b>07</b>Condições gerais</div>
+      <h2 class="h2">Combinados claros desde o início</h2>
+    </div>
+    <ul class="terms reveal">
+      <li><span class="n">1</span><div><h4>Pagamento e entrega dos pedidos</h4><p>Acontecem por fora da plataforma e são combinados diretamente entre vendedor e cliente. O site não recebe valores nem faz entregas.</p></div></li>
+      <li><span class="n">2</span><div><h4>Materiais</h4><p>Logo, textos, categorias e regras de funcionamento são enviados pela Marazul. O prazo começa a contar a partir desse envio e da aprovação.</p></div></li>
+      <li><span class="n">3</span><div><h4>A plataforma é sua</h4><p>Tudo é feito sob medida para a Marazul, sem template pronto, e pode crescer com novas funções no futuro.</p></div></li>
+      <li><span class="n">4</span><div><h4>Domínio</h4><p>Registrado no nome do cliente, com custo à parte de cerca de R$&nbsp;40 por ano.</p></div></li>
+      <li><span class="n">5</span><div><h4>Mensalidade de infraestrutura</h4><p>R$&nbsp;150 por mês, cobrada somente depois que o site estiver no ar.</p></div></li>
+      <li><span class="n">6</span><div><h4>Validade</h4><p>Esta proposta é válida por 15 dias a partir do envio.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 8. POR QUE A MATILAB -->
+<section class="sec" id="matilab">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow"><b>08</b>Por que a Matilab</div>
+      <h2 class="h2">Quem vai construir a Marazul com você</h2>
+    </div>
+    <div class="why-grid">
+      <div class="stat reveal"><b>9 <em>anos</em></b><p>desenvolvendo sites, sistemas e plataformas</p></div>
+      <div class="stat reveal" data-d="1"><b>+500</b><p>projetos entregues para clientes do Brasil todo</p></div>
+      <div class="stat wide reveal" data-d="2"><div class="ico"><svg><use href="#i-layout"/></svg></div><div><h4>Feito sob medida</h4><p>Sem template pronto. A plataforma é sua e cresce com você.</p></div></div>
+      <div class="stat wide reveal" data-d="3"><div class="ico"><svg><use href="#i-chat"/></svg></div><div><h4>Direto com quem desenvolve</h4><p>Você fala com quem constrói, sem intermediário.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. PRÓXIMO PASSO -->
+<section class="sec cta" id="contato">
+  <div class="wrap cta-grid">
+    <div class="reveal">
+      <div class="eyebrow"><b>09</b>Próximo passo</div>
+      <h2 class="h2">Gostou da proposta?</h2>
+      <p class="lead">Bora marcar uma conversa rápida de 20 minutos para tirar dúvidas e alinhar os detalhes.</p>
+      <div class="cta-actions">
+        <a class="btn btn-sun" data-wa href="https://wa.me/5511992644010?text=Oi%20Matheus%2C%20vi%20a%20proposta%20da%20Marazul"><svg><use href="#i-whats"/></svg>Quero conversar</a>
+      </div>
+      <p class="valid">Proposta válida por <b>15 dias</b>.</p>
+    </div>
+    <div class="sign reveal" data-d="1">
+      <img src="/propostas/marazul/assets/matilab-logo-white.svg" alt="Matilab" width="130" height="24" />
+      <div class="who">Matheus Moura</div>
+      <div class="role">Fundador · Matilab</div>
+      <a data-wa href="https://wa.me/5511992644010?text=Oi%20Matheus%2C%20vi%20a%20proposta%20da%20Marazul"><svg><use href="#i-whats"/></svg>(11) 99264-4010</a>
+      <a href="mailto:contato@matilab.com.br?subject=Proposta%20Marazul%20Pescados"><svg><use href="#i-mail"/></svg>contato@matilab.com.br</a>
+      <a href="https://matilab.com.br"><svg><use href="#i-globe"/></svg>matilab.com.br</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <img src="/propostas/marazul/assets/matilab-logo-white.svg" alt="Matilab" width="108" height="20" />
+    <div class="r">
+      <div><span class="nw">Mati Studio Digital ME</span> · <span class="nw">CNPJ 40.283.248/0001-21</span> · <span class="nw">Osasco/SP</span></div>
+      <div class="made">Proposta preparada para <span class="nw">Marazul Pescados</span> · <span class="nw">Feira de Santana/BA</span></div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="https://wa.me/5511992644010?text=Oi%20Matheus%2C%20vi%20a%20proposta%20da%20Marazul" aria-label="Falar com a Matilab no WhatsApp"><svg><use href="#i-whats" style="color:#fff"/></svg></a>
+
+<script>
+  document.body.classList.remove("no-js");
+  document.querySelectorAll("[data-wa]").forEach(function(a){ a.target = "_blank"; a.rel = "noopener"; });
+  (function(){
+    var els = document.querySelectorAll(".reveal");
+    if (!("IntersectionObserver" in window)) { els.forEach(function(e){ e.classList.add("in"); }); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+    }, { threshold: .12, rootMargin: "0px 0px -40px 0px" });
+    els.forEach(function(e){ io.observe(e); });
+    window.addEventListener("beforeprint", function(){ els.forEach(function(e){ e.classList.add("in"); }); });
+  })();
+</script>
+</body>
+</html>
