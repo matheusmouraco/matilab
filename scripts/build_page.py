@@ -28,13 +28,13 @@ def _head(t):
     faq_ld = {"@type":"FAQPage","mainEntity":[
         {"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in t.get("faq",[])]}
     bc = {"@type":"BreadcrumbList","itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Matilab","item":"https://matilab.com.br/"},
-        {"@type":"ListItem","position":2,"name":"Guias","item":"https://matilab.com.br/guias"},
-        {"@type":"ListItem","position":3,"name":t.get("bc",t["h1"]),"item":f"https://matilab.com.br/{t['slug']}"}]}
+        {"@type":"ListItem","position":1,"name":"Matilab","item":"https://www.matilab.com.br/"},
+        {"@type":"ListItem","position":2,"name":"Guias","item":"https://www.matilab.com.br/guias"},
+        {"@type":"ListItem","position":3,"name":t.get("bc",t["h1"]),"item":f"https://www.matilab.com.br/{t['slug']}"}]}
     graph=[bc]
     if t.get("svc"):
         graph.append({"@type":"Service","serviceType":t["svc"],
-            "provider":{"@type":"Organization","name":"Matilab","url":"https://matilab.com.br/"},
+            "provider":{"@type":"Organization","name":"Matilab","url":"https://www.matilab.com.br/"},
             "areaServed":{"@type":"Country","name":"Brasil"},"description":t["desc"]})
     if faq_ld["mainEntity"]:
         graph.append(faq_ld)
@@ -57,12 +57,12 @@ def _head(t):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{t["title"]}</title>
 <meta name="description" content="{esc(t["desc"])}">
-<link rel="canonical" href="https://matilab.com.br/{t["slug"]}">
+<link rel="canonical" href="https://www.matilab.com.br/{t["slug"]}">
 <meta property="og:title" content="{esc(t.get("ogtitle",t["title"]))}">
 <meta property="og:description" content="{esc(t["desc"])}">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://matilab.com.br/{t["slug"]}">
-<meta property="og:image" content="https://matilab.com.br/{ogimg}">
+<meta property="og:url" content="https://www.matilab.com.br/{t["slug"]}">
+<meta property="og:image" content="https://www.matilab.com.br/{ogimg}">
 <meta name="robots" content="index,follow">
 <link rel="icon" type="image/svg+xml" href="{FAVICON}">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=optional" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=optional" rel="stylesheet"></noscript>
@@ -163,11 +163,11 @@ def render(topic):
 def add_to_sitemap(slug, priority="0.8"):
     p = os.path.join(ROOT, "sitemap.xml")
     sm = open(p, encoding="utf-8").read()
-    if f"/{slug}<" in sm or f"/{slug}\"" in sm or f">https://matilab.com.br/{slug}<" in sm:
+    if f"/{slug}<" in sm or f"/{slug}\"" in sm or f">https://www.matilab.com.br/{slug}<" in sm:
         return False
     from datetime import date
     block = f'''  <url>
-    <loc>https://matilab.com.br/{slug}</loc>
+    <loc>https://www.matilab.com.br/{slug}</loc>
     <lastmod>{date.today().isoformat()}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>{priority}</priority>
@@ -180,6 +180,6 @@ def add_to_llms(slug, name):
     p = os.path.join(ROOT, "llms.txt")
     lt = open(p, encoding="utf-8").read()
     if slug in lt: return False
-    lt = lt.rstrip() + f"\n- [{name}](https://matilab.com.br/{slug})\n"
+    lt = lt.rstrip() + f"\n- [{name}](https://www.matilab.com.br/{slug})\n"
     open(p, "w", encoding="utf-8").write(lt)
     return True

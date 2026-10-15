@@ -23,7 +23,7 @@ except Exception:
 
 def li(s):
     nome = titulo.get(s, s)
-    url = f"https://matilab.com.br/{s}"
+    url = f"https://www.matilab.com.br/{s}"
     return (f'<li style="margin:0 0 14px">'
             f'<a href="{url}" style="color:#0b7;font-weight:600;text-decoration:none;font-size:16px">{nome}</a>'
             f'<br><a href="{url}" style="color:#888;font-size:12px;text-decoration:none">{url}</a></li>')

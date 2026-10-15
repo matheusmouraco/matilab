@@ -36,4 +36,4 @@ Allow: /
 # Propostas comerciais (área privada) — não indexar
 Disallow: /proposta/
 
-Sitemap: https://matilab.com.br/sitemap.xml
+Sitemap: https://www.matilab.com.br/sitemap.xml
