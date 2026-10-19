@@ -2054,9 +2054,9 @@ var CFG={
   supaUrl:'https://bzarlpqkbbvhuwmmdzem.supabase.co',
   supaKey:'sb_publishable_4BpKH3O85rLb9HRQT0Jyew_Ha9sl4Z_',
   wa:'5511992644010',
-  convLead:'',  /* <- rotulo "Lead formulario" do Google Ads: 'AW-16963228465/XXXX'. Vazio = nao dispara ainda */
+  convLead:'AW-16963228465/NZ87CMWgzqIdELGm2Zg_', /* Lead formulário (site), conversao primaria */
   convWpp:'AW-16963228465/vifACJD2-JQdELGm2Zg_', /* secundaria: Lead por WhatsApp */
-  notifyUrl:'', /* <- webhook (n8n) para avisar na hora. Vazio = desligado */
+  notifyUrl:'https://webh.matilab.cloud/webhook/MatiLab', /* n8n -> Evolution MatiLab */
   leadDefault:'Landing page'
 };
 try{var qs=new URLSearchParams(location.search),s={};['gclid','utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){var v=qs.get(k);if(v)s[k]=v;});if(Object.keys(s).length)localStorage.setItem('mt_attr',JSON.stringify(Object.assign(JSON.parse(localStorage.getItem('mt_attr')||'{}'),s)));}catch(_){}
@@ -2083,7 +2083,7 @@ form.addEventListener('submit',function(e){e.preventDefault();var err=document.g
   var a=attr(),lead={nome:nome,whatsapp:wpp.value,necessidade:need,investimento:budget,pagina:location.pathname,gclid:a.gclid||null,utm:{source:a.utm_source||null,medium:a.utm_medium||null,campaign:a.utm_campaign||null,term:a.utm_term||null,content:a.utm_content||null},referrer:document.referrer||null,user_agent:navigator.userAgent};
   try{fetch(CFG.supaUrl+'/rest/v1/matilab_leads',{method:'POST',keepalive:true,headers:{'apikey':CFG.supaKey,'Authorization':'Bearer '+CFG.supaKey,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(lead)});}catch(_){}
   try{if(typeof gtag==='function'){gtag('set','user_data',{phone_number:'+55'+dg});if(CFG.convLead)gtag('event','conversion',{'send_to':CFG.convLead});}}catch(_){}
-  try{if(CFG.notifyUrl)fetch(CFG.notifyUrl,{method:'POST',keepalive:true,headers:{'Content-Type':'application/json'},body:JSON.stringify(lead)});}catch(_){}
+  try{if(CFG.notifyUrl){var _m='\uD83D\uDD14 Novo lead Matilab\n'+nome+' \u00b7 '+wpp.value+'\nQuer: '+need+' \u00b7 Investimento: '+budget+'\nP\u00e1gina: '+location.pathname+(a.gclid?'\ngclid: '+a.gclid:'');var _p=new URLSearchParams({mensagem:_m,nome:nome,whatsapp:wpp.value,necessidade:need,investimento:budget,pagina:location.pathname,gclid:a.gclid||'',utm_source:a.utm_source||'',utm_campaign:a.utm_campaign||''});if(!(navigator.sendBeacon&&navigator.sendBeacon(CFG.notifyUrl,_p)))fetch(CFG.notifyUrl,{method:'POST',mode:'no-cors',keepalive:true,body:_p});}}catch(_){}
   var nm={'Site institucional':'um site institucional','Landing page':'uma landing page','Loja virtual':'uma loja virtual','Outro':'um projeto'};
   var bm={'Até R$1.500':'até R$1.500','R$1.500 a 3.000':'de R$1.500 a R$3.000','Acima de 3.000':'acima de R$3.000','Ainda não sei':'a definir'};
   var msg='Oi, sou o(a) '+nome+', quero '+(nm[need]||need)+', investimento '+(bm[budget]||budget)+'.';
