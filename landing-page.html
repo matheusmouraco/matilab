@@ -1987,7 +1987,111 @@ navigateModal=function(d){const n=Math.max(0,Math.min(mIdx+d,PF.length-1));showM
 })();
 },0);
 </script>
-<!-- matilab-ads-conv -->
-<script>(function(){function w(a){if(!a||!a.getAttribute)return false;var h=a.getAttribute('href')||'';return h.indexOf('api.whatsapp.com')>-1||h.indexOf('wa.me')>-1;}document.addEventListener('click',function(e){var a=e.target;while(a&&a.nodeType===1&&a.tagName!=='A')a=a.parentElement;if(a&&a.tagName==='A'&&w(a)&&typeof gtag==='function'){try{gtag('event','conversion',{'send_to':'AW-16963228465/vifACJD2-JQdELGm2Zg_'});}catch(_){}}},true);})();</script>
+<!-- LEAD FORM (captura por formulario) -->
+<style>
+.lf-overlay{position:fixed;inset:0;z-index:9000;display:none;background:rgba(0,0,0,.72);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);align-items:center;justify-content:center}
+.lf-overlay.open{display:flex}
+.lf-panel{background:#0E0E10;border:1px solid rgba(255,255,255,.08);width:100%;max-width:460px;border-radius:18px;padding:26px 24px 22px;position:relative;max-height:92vh;overflow:auto;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+@media(max-width:560px){.lf-overlay{align-items:flex-end}.lf-panel{max-width:none;border-radius:20px 20px 0 0;padding-bottom:28px;animation:lfup .3s cubic-bezier(.16,1,.3,1)}}
+@keyframes lfup{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.lf-x{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.06);border:none;color:#fff;font-size:20px;line-height:1;cursor:pointer}
+.lf-ey{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#B5FB67;margin-bottom:8px}
+.lf-panel h3{font-size:22px;font-weight:700;letter-spacing:-.5px;color:#fff;margin:0 0 6px;line-height:1.15}
+.lf-sub{font-size:13px;color:#999;margin:0 0 20px}
+.lf-lbl{display:block;font-size:12px;font-weight:600;color:#ccc;margin-bottom:7px;letter-spacing:.2px}
+.lf-inp{width:100%;background:#17171A;border:1px solid rgba(255,255,255,.1);border-radius:11px;padding:13px 14px;color:#fff;font-size:16px;font-family:inherit;margin-bottom:16px;outline:none;transition:border-color .2s}
+.lf-inp:focus{border-color:#B5FB67}
+.lf-field{margin-bottom:16px}
+.lf-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
+.lf-chip{background:#17171A;border:1px solid rgba(255,255,255,.1);border-radius:100px;padding:9px 15px;color:#bbb;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;transition:all .18s}
+.lf-chip:hover{border-color:rgba(255,255,255,.25)}
+.lf-chip.sel{background:#B5FB67;border-color:#B5FB67;color:#0A0A0A;font-weight:700}
+.lf-err{color:#ff6b6b;font-size:12.5px;min-height:16px;margin:2px 0 10px}
+.lf-submit{width:100%;background:#B5FB67;color:#0A0A0A;border:none;border-radius:12px;padding:15px;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.lf-submit:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(181,251,103,.28)}
+.lf-lgpd{font-size:11px;color:#777;text-align:center;margin:12px 0 0;line-height:1.5}
+.lf-lgpd a{color:#aaa;text-decoration:underline}
+.lf-ok{text-align:center;padding:14px 0}
+body.lf-lock{overflow:hidden}
+</style>
+<div id="lf-overlay" class="lf-overlay" aria-hidden="true">
+  <div class="lf-panel" role="dialog" aria-modal="true" aria-labelledby="lf-title">
+    <button class="lf-x" type="button" aria-label="Fechar">&times;</button>
+    <div class="lf-ey">Orçamento rápido</div>
+    <h3 id="lf-title">Receba seu orçamento no WhatsApp</h3>
+    <p class="lf-sub">Resposta em até 2h, sem compromisso.</p>
+    <form id="lf-form" novalidate>
+      <label class="lf-lbl" for="lf-nome">Nome</label>
+      <input class="lf-inp" id="lf-nome" type="text" autocomplete="name" required>
+      <label class="lf-lbl" for="lf-wpp">WhatsApp</label>
+      <input class="lf-inp" id="lf-wpp" type="tel" inputmode="numeric" placeholder="(11) 99999-9999" autocomplete="tel" required>
+      <div class="lf-field">
+        <span class="lf-lbl">O que você precisa</span>
+        <div class="lf-chips" id="lf-need">
+          <button type="button" class="lf-chip" data-v="Site institucional">Site institucional</button>
+          <button type="button" class="lf-chip" data-v="Landing page">Landing page</button>
+          <button type="button" class="lf-chip" data-v="Loja virtual">Loja virtual</button>
+          <button type="button" class="lf-chip" data-v="Outro">Outro</button>
+        </div>
+      </div>
+      <div class="lf-field">
+        <span class="lf-lbl">Investimento previsto</span>
+        <div class="lf-chips" id="lf-budget">
+          <button type="button" class="lf-chip" data-v="Até R$1.500">Até R$1.500</button>
+          <button type="button" class="lf-chip" data-v="R$1.500 a 3.000">R$1.500 a 3.000</button>
+          <button type="button" class="lf-chip" data-v="Acima de 3.000">Acima de 3.000</button>
+          <button type="button" class="lf-chip" data-v="Ainda não sei">Ainda não sei</button>
+        </div>
+      </div>
+      <div class="lf-err" id="lf-err"></div>
+      <button class="lf-submit" type="submit">Receber orçamento no WhatsApp</button>
+      <p class="lf-lgpd">Ao enviar, você concorda com a nossa <a href="/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>.</p>
+    </form>
+  </div>
+</div>
+<script>(function(){
+var CFG={
+  supaUrl:'https://bzarlpqkbbvhuwmmdzem.supabase.co',
+  supaKey:'sb_publishable_4BpKH3O85rLb9HRQT0Jyew_Ha9sl4Z_',
+  wa:'5511992644010',
+  convLead:'',  /* <- rotulo "Lead formulario" do Google Ads: 'AW-16963228465/XXXX'. Vazio = nao dispara ainda */
+  convWpp:'AW-16963228465/vifACJD2-JQdELGm2Zg_', /* secundaria: Lead por WhatsApp */
+  notifyUrl:'', /* <- webhook (n8n) para avisar na hora. Vazio = desligado */
+  leadDefault:'Landing page'
+};
+try{var qs=new URLSearchParams(location.search),s={};['gclid','utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){var v=qs.get(k);if(v)s[k]=v;});if(Object.keys(s).length)localStorage.setItem('mt_attr',JSON.stringify(Object.assign(JSON.parse(localStorage.getItem('mt_attr')||'{}'),s)));}catch(_){}
+function attr(){try{return JSON.parse(localStorage.getItem('mt_attr')||'{}');}catch(_){return{};}}
+var ov=document.getElementById('lf-overlay'),form=document.getElementById('lf-form'),need='',budget='';
+function openLF(){ov.classList.add('open');document.body.classList.add('lf-lock');ov.setAttribute('aria-hidden','false');if(CFG.leadDefault){var c=document.querySelector('#lf-need .lf-chip[data-v="'+CFG.leadDefault+'"]');if(c)pick(c,'need');}setTimeout(function(){var n=document.getElementById('lf-nome');if(n)n.focus();},120);}
+function closeLF(){ov.classList.remove('open');document.body.classList.remove('lf-lock');ov.setAttribute('aria-hidden','true');}
+document.addEventListener('click',function(e){var a=e.target;while(a&&a.nodeType===1&&a.tagName!=='A')a=a.parentElement;if(a&&a.tagName==='A'){var h=a.getAttribute('href')||'';if(h.indexOf('api.whatsapp.com')>-1||h.indexOf('wa.me')>-1){e.preventDefault();openLF();}}},true);
+ov.addEventListener('click',function(e){if(e.target===ov)closeLF();});
+document.querySelector('.lf-x').addEventListener('click',closeLF);
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ov.classList.contains('open'))closeLF();});
+function pick(btn,g){btn.parentElement.querySelectorAll('.lf-chip').forEach(function(c){c.classList.remove('sel');});btn.classList.add('sel');if(g==='need')need=btn.dataset.v;else budget=btn.dataset.v;}
+document.getElementById('lf-need').addEventListener('click',function(e){if(e.target.classList.contains('lf-chip'))pick(e.target,'need');});
+document.getElementById('lf-budget').addEventListener('click',function(e){if(e.target.classList.contains('lf-chip'))pick(e.target,'budget');});
+var wpp=document.getElementById('lf-wpp');
+wpp.addEventListener('input',function(){var d=this.value.replace(/\D/g,'').slice(0,11),o='';if(d.length>0)o='('+d.slice(0,2);if(d.length>=3)o+=') '+d.slice(2,7);if(d.length>=8)o+='-'+d.slice(7,11);this.value=o;});
+function digits(s){return(s||'').replace(/\D/g,'');}
+form.addEventListener('submit',function(e){e.preventDefault();var err=document.getElementById('lf-err');err.textContent='';
+  var nome=document.getElementById('lf-nome').value.trim(),dg=digits(wpp.value);
+  if(nome.length<2){err.textContent='Digite o seu nome.';return;}
+  if(dg.length<10||dg.length>11){err.textContent='Digite um WhatsApp válido com DDD.';return;}
+  if(!need){err.textContent='Escolha o que você precisa.';return;}
+  if(!budget){err.textContent='Escolha o investimento previsto.';return;}
+  var a=attr(),lead={nome:nome,whatsapp:wpp.value,necessidade:need,investimento:budget,pagina:location.pathname,gclid:a.gclid||null,utm:{source:a.utm_source||null,medium:a.utm_medium||null,campaign:a.utm_campaign||null,term:a.utm_term||null,content:a.utm_content||null},referrer:document.referrer||null,user_agent:navigator.userAgent};
+  try{fetch(CFG.supaUrl+'/rest/v1/matilab_leads',{method:'POST',keepalive:true,headers:{'apikey':CFG.supaKey,'Authorization':'Bearer '+CFG.supaKey,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(lead)});}catch(_){}
+  try{if(typeof gtag==='function'){gtag('set','user_data',{phone_number:'+55'+dg});if(CFG.convLead)gtag('event','conversion',{'send_to':CFG.convLead});}}catch(_){}
+  try{if(CFG.notifyUrl)fetch(CFG.notifyUrl,{method:'POST',keepalive:true,headers:{'Content-Type':'application/json'},body:JSON.stringify(lead)});}catch(_){}
+  var nm={'Site institucional':'um site institucional','Landing page':'uma landing page','Loja virtual':'uma loja virtual','Outro':'um projeto'};
+  var bm={'Até R$1.500':'até R$1.500','R$1.500 a 3.000':'de R$1.500 a R$3.000','Acima de 3.000':'acima de R$3.000','Ainda não sei':'a definir'};
+  var msg='Oi, sou o(a) '+nome+', quero '+(nm[need]||need)+', investimento '+(bm[budget]||budget)+'.';
+  try{if(typeof gtag==='function'&&CFG.convWpp)gtag('event','conversion',{'send_to':CFG.convWpp});}catch(_){}
+  window.open('https://api.whatsapp.com/send/?phone='+CFG.wa+'&text='+encodeURIComponent(msg),'_blank');
+  document.querySelector('.lf-panel').innerHTML='<div class="lf-ok"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#B5FB67" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><h3>Tudo certo, '+nome.split(' ')[0]+'!</h3><p class="lf-sub">Abrimos o seu WhatsApp com a mensagem pronta. É só enviar que respondemos em até 2h.</p><button class="lf-submit" type="button" onclick="document.getElementById(\'lf-overlay\').classList.remove(\'open\');document.body.classList.remove(\'lf-lock\')">Fechar</button></div>';
+});
+})();</script>
+
 </body>
 </html>
