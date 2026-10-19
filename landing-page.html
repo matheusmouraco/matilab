@@ -2056,7 +2056,7 @@ var CFG={
   wa:'5511992644010',
   convLead:'AW-16963228465/NZ87CMWgzqIdELGm2Zg_', /* Lead formulário (site), conversao primaria */
   convWpp:'AW-16963228465/vifACJD2-JQdELGm2Zg_', /* secundaria: Lead por WhatsApp */
-  notifyUrl:'https://webh.matilab.cloud/webhook/MatiLab', /* n8n -> Evolution MatiLab */
+  notifyUrl:'https://webh.matilab.cloud/webhook/lead-site-matilab', /* n8n: Avisar Lead Site -> Evolution instancia matilab -> 5511992644010 */
   leadDefault:'Landing page'
 };
 try{var qs=new URLSearchParams(location.search),s={};['gclid','utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){var v=qs.get(k);if(v)s[k]=v;});if(Object.keys(s).length)localStorage.setItem('mt_attr',JSON.stringify(Object.assign(JSON.parse(localStorage.getItem('mt_attr')||'{}'),s)));}catch(_){}
