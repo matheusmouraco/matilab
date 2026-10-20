@@ -91,7 +91,6 @@
   .topbar.hide{transform:translateY(-100%);opacity:0}
   .tb-in{display:flex;align-items:center;gap:18px;height:58px}
   .tb-logo{width:84px;color:#fff}
-  .tb-status{display:inline-flex;align-items:center;gap:7px;font:500 10.5px/1 var(--mono);letter-spacing:.1em;color:var(--amber);padding-left:18px;border-left:1px solid var(--line-d2)}
   .tb-nav{margin-left:auto;display:flex;gap:22px;font-size:13.5px}
   .tb-nav a{text-decoration:none;color:var(--txt-d2);transition:color .2s}
   .tb-nav a:hover{color:#fff}
@@ -105,7 +104,7 @@
   .grid-bg::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(11,22,34,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(11,22,34,.04) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 78%);mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 78%)}
   .dark.grid-bg::after{background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px)}
   .sec > .wrap{z-index:1}
-  .sec::before{content:"";position:absolute;top:0;height:84px;left:calc(50% - var(--wrap) / 2 + 10px);border-left:2px dashed var(--signal);opacity:.5;z-index:1}
+  .sec::before{content:"";position:absolute;top:0;height:84px;left:calc(50% - 1px);border-left:2px dashed var(--signal);opacity:.5;z-index:1}
   .sec.tight::before{display:none}
   .sec.tight{padding-top:0}
   .sec.join{padding-bottom:0}
@@ -115,7 +114,10 @@
   .stop .pin{width:22px;height:22px;color:var(--signal);flex:none}
   .stop b{color:var(--signal);font-weight:500}
   .stop .ln{flex:0 0 28px;height:1px;background:currentColor;opacity:.35}
-  .sh{margin-bottom:44px}
+  .sh{margin-bottom:44px;text-align:center}
+  .sh .stop{justify-content:center}
+  .sh h2,.sh .lead{margin-left:auto;margin-right:auto}
+  .sh .stamp{margin-top:22px}
   .sh-row{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:40px}
 
   .chip{display:inline-flex;align-items:center;gap:10px;margin-bottom:14px}
@@ -125,7 +127,7 @@
   .armed .reveal:not(.in){opacity:0;transform:translateY(16px)}
   .reveal{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
 
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
   .split > *,.diag > *,.host > *,.why > *,.cta > *,.cv-main > *{min-width:0}
 
   /* =========================================================
@@ -195,7 +197,7 @@
   /* =========================================================
      DIAGNÓSTICO
      ========================================================= */
-  .diag{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .diag{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
   .diag-text p{font-size:17px;line-height:1.7;color:var(--ink-2)}
   .diag-text p + p{margin-top:16px}
   .diag-text p b{color:var(--ink)}
@@ -226,7 +228,7 @@
   .feat li{display:grid;grid-template-columns:32px 1fr;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
   .feat li:first-child{border-top:0;padding-top:0}
   .dark .feat li{border-color:var(--line-d)}
-  .feat .ib{width:32px;height:32px;border-radius:8px;background:var(--signal-soft);color:var(--signal)}
+  .feat .ib{margin-top:-5px;width:32px;height:32px;border-radius:8px;background:var(--signal-soft);color:var(--signal)}
   .dark .feat .ib{background:rgba(255,107,0,.12)}
   .feat .ib .ico{width:16px;height:16px}
   .feat b{display:block;font-size:15.5px;line-height:1.35;margin-bottom:3px}
@@ -489,7 +491,7 @@
 
   /* HOSPEDAGEM */
   .host{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-  .host-panel{background:var(--asphalt-2);border:1px solid var(--line-d2);border-radius:var(--r-lg);overflow:hidden}
+  .host-panel{max-width:640px;margin:0 auto;background:var(--asphalt-2);border:1px solid var(--line-d2);border-radius:var(--r-lg);overflow:hidden}
   .hp-h{display:flex;justify-content:space-between;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line-d);font:500 10.5px/1 var(--mono);letter-spacing:.1em;color:var(--txt-d2)}
   .hp-h b{color:var(--ok-l);font-weight:500;display:inline-flex;gap:7px;align-items:center}
   .hp-r{display:grid;grid-template-columns:34px 1fr auto;gap:14px;align-items:center;padding:13px 18px;border-bottom:1px solid var(--line-d)}
@@ -563,7 +565,6 @@
   /* =========================================================
      RESPONSIVO
      ========================================================= */
-  @media screen and (min-width:1081px){.split .stick{position:sticky;top:90px}}
   @media screen and (max-width:1080px){
     .tb-nav{display:none}
     .tb-in .btn{margin-left:auto}
@@ -892,7 +893,6 @@
 <header class="topbar hide" id="topbar">
   <div class="wrap tb-in">
     <svg class="tb-logo" viewBox="0 0 1439 266" role="img" aria-label="Matilab"><use href="#mtl-logo"/></svg>
-    <span class="tb-status"><span class="dot warn pulse"></span>EM ANÁLISE</span>
     <nav class="tb-nav" aria-label="Seções">
       <a href="#diagnostico">Diagnóstico</a>
       <a href="#site">O site</a>
@@ -1093,13 +1093,11 @@
 <!-- 02.C VELOCIDADE -->
 <section class="sec pb" id="velocidade">
   <div class="wrap">
-    <div class="sh-row reveal">
-      <div>
-        <div class="chip"><span class="c">02.C</span><span class="lbl">Velocidade · PageSpeed acima de 90</span></div>
-        <h2>Velocidade não é detalhe técnico. <em>É cliente.</em></h2>
-      </div>
+    <header class="sh reveal">
+      <div class="chip"><span class="c">02.C</span><span class="lbl">Velocidade · PageSpeed acima de 90</span></div>
+      <h2>Velocidade não é detalhe técnico. <em>É cliente.</em></h2>
       <div class="stamp">Meta garantida<small>ACIMA DE 90</small></div>
-    </div>
+    </header>
 
     <div class="lh reveal">
       <div class="lh-top">
@@ -1340,14 +1338,13 @@
 <section class="sec dark grid-bg tight pb" id="hospedagem">
   <div class="wrap">
     <div class="sub">
-      <div class="host">
-        <div class="reveal">
-          <div class="stop"><svg class="pin"><use href="#i-pin"/></svg><b>PARADA 05</b><span class="ln"></span>Infraestrutura</div>
-          <h2 style="color:#fff">O motor que mantém o site <em>rápido, seguro e no ar.</em></h2>
-          <p class="lead">Servidor profissional, banco de dados e backups automáticos. É essa infraestrutura que sustenta a velocidade do PageSpeed acima de 90, por isso ela faz parte do projeto e não é opcional.</p>
-          <span class="must"><svg class="ico"><use href="#i-lock"/></svg>OBRIGATÓRIA</span>
-        </div>
-        <div class="host-panel reveal">
+      <header class="sh reveal">
+        <div class="stop"><svg class="pin"><use href="#i-pin"/></svg><b>PARADA 05</b><span class="ln"></span>Infraestrutura</div>
+        <h2>O motor que mantém o site <em>rápido, seguro e no ar.</em></h2>
+        <p class="lead">Servidor profissional, banco de dados e backups automáticos. É essa infraestrutura que sustenta a velocidade do PageSpeed acima de 90, por isso ela faz parte do projeto e não é opcional.</p>
+        <span class="must"><svg class="ico"><use href="#i-lock"/></svg>OBRIGATÓRIA</span>
+      </header>
+      <div class="host-panel reveal">
           <div class="hp-h"><span>INFRAESTRUTURA · SUPABASE</span><b><span class="dot ok"></span>OPERACIONAL</b></div>
           <div class="hp-r"><span class="ib"><svg class="ico"><use href="#i-server"/></svg></span><b>Servidor profissional</b><span class="s"><span class="dot ok"></span>ONLINE</span></div>
           <div class="hp-r"><span class="ib"><svg class="ico"><use href="#i-db"/></svg></span><b>Banco de dados</b><span class="s"><span class="dot ok"></span>ATIVO</span></div>
@@ -1355,7 +1352,6 @@
           <div class="hp-r"><span class="ib"><svg class="ico"><use href="#i-gauge"/></svg></span><b>Velocidade sustentada</b><span class="s"><span class="dot ok"></span>ACIMA DE 90</span></div>
           <div class="hp-f"><span class="pr">US$ 25<small>/mês</small></span><span class="x">Cobrado em reais,<br>pela cotação do mês.</span></div>
         </div>
-      </div>
     </div>
   </div>
 </section>
