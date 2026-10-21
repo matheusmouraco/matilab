@@ -270,17 +270,11 @@
   /* reuniao */
   .meet{display:grid;grid-template-columns:1fr 1fr;gap:96px}
   .meet h3{font-size:32px;margin-bottom:24px}
-  .ag{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line-l)}
-  .ag:first-of-type{border-top:1px solid var(--ink)}
-  .ag .t{font-size:15px;color:var(--orange-d)}
-  .ag b{display:block;font-size:17px}
-  .ag span{font-size:15.5px}
   .dec{list-style:none;counter-reset:d;border-top:1px solid var(--ink)}
   .dec li{counter-increment:d;display:grid;grid-template-columns:40px 1fr;gap:12px;padding:18px 0;border-bottom:1px solid var(--line-l);font-size:16px}
   .dec li::before{content:counter(d);font-family:var(--display);font-size:24px;line-height:1.1;color:var(--orange-d)}
-  .need{margin-top:96px}
   .need h3{font-size:32px;margin-bottom:24px}
-  .need-g{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
+  .need-g{display:grid;grid-template-columns:1fr 1fr;column-gap:24px;border-top:1px solid var(--ink)}
   .need-g div{padding:18px 18px 18px 0;border-bottom:1px solid var(--line-l);font-size:15px}
   .need-g b{display:block;font-size:16px}
 
@@ -290,6 +284,9 @@
   .cta h2{font-size:clamp(48px,7vw,96px);color:var(--ink);line-height:.95}
   .cta p{font-size:20px;margin-top:28px;max-width:560px;color:#2B160C}
   .cta .valid{font-size:15px;margin-top:20px;color:#2B160C}
+  .slots{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);margin-top:32px;border-top:1.5px solid var(--ink);max-width:640px}
+  .slots li{padding:16px 16px 0 0;font-size:15px;color:#2B160C}
+  .slots b{display:block;font-family:var(--display);font-weight:400;font-size:26px;color:var(--ink)}
   .cta-a{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
   .card-sig{border-top:1.5px solid var(--ink);padding-top:24px;font-size:16px;display:grid;gap:8px}
   .card-sig img{height:22px;width:auto;margin-bottom:16px}
@@ -328,7 +325,6 @@
     .weeks{grid-template-columns:1fr 1fr;row-gap:32px}
     .wk+.wk{border-left:0;padding-left:0}
     .wk{padding-right:24px}
-    .need-g{grid-template-columns:1fr 1fr}
   }
   @media (max-width:720px){
     body{font-size:17px}
@@ -362,7 +358,8 @@
     .mi{grid-template-columns:1fr auto}
     .mi .d{grid-column:2;text-align:right}
     .need-g{grid-template-columns:1fr}
-    .ag{grid-template-columns:80px 1fr}
+    .slots{grid-template-columns:1fr}
+    .slots li{padding:14px 0;border-bottom:1px solid rgba(10,11,9,.2)}
     .cta{padding:88px 0}
   }
 
@@ -708,11 +705,11 @@
         <p>Importação e soluções em comércio exterior.</p>
         <p class="st">Site institucional</p>
       </a>
-      <a class="case rv" href="https://www.inovapoxi.com.br/" target="_blank" rel="noopener">
-        <div class="shot"><img src="/proposta/ubiminds/assets/case-inovapoxi.jpg" alt="Home da Inovapoxi" width="960" height="600" loading="lazy" /></div>
-        <div class="meta"><h4>Inovapoxi</h4></div>
-        <p>Revestimentos industriais, com foco em pedidos de orçamento.</p>
-        <p class="st">Site institucional</p>
+      <a class="case rv" href="https://www.inovapoxi.com/" target="_blank" rel="noopener">
+        <div class="shot"><img src="/proposta/ubiminds/assets/case-inovapoxi.jpg" alt="Home da InovaPoxi" width="960" height="600" loading="lazy" /></div>
+        <div class="meta"><h4>InovaPoxi</h4></div>
+        <p>Material para piso epóxi industrial, com catálogo de produtos e venda no atacado.</p>
+        <p class="st">Vercel · catálogo e orçamentos</p>
       </a>
     </div>
   </div>
@@ -787,7 +784,6 @@
           <div><div class="top"><b>Supabase Pro</b><span class="v">US$ 25/mês</span></div><p><span class="req">Obrigatório.</span> Guarda o conteúdo do painel de edição e os envios dos formulários, com backup diário.</p></div>
           <div><div class="top"><b>Vercel Pro</b><span class="v">US$ 20/mês</span></div><p><span class="req">Obrigatório.</span> Hospedagem do site. O plano gratuito não permite uso comercial. O valor é por pessoa com acesso.</p></div>
           <div><div class="top"><b>GitHub</b><span class="v">US$ 0</span></div><p>Repositório privado na organização de vocês.</p></div>
-          <div><div class="top"><b>WordPress na AWS</b><span class="v">sem mudança</span></div><p>A VM atual continua servindo o blog.</p></div>
         </div>
       </div>
     </div>
@@ -838,17 +834,10 @@
   <div class="wrap">
     <div class="sh rv">
       <p class="k">Próximo passo</p>
-      <h2>Uma pauta para os 45 minutos</h2>
-      <p>Para a conversa render, sugerimos este roteiro. As decisões ao lado são as que mais mudam o mapa de redirects.</p>
+      <h2>O que levar para a reunião</h2>
+      <p>Estas são as decisões que mais mudam o mapa de redirects. Vale chegar com elas em mente.</p>
     </div>
     <div class="meet">
-      <div class="rv">
-        <h3>Pauta sugerida</h3>
-        <div class="ag"><span class="t">0 a 10 min</span><div><b>O projeto, por vocês</b><span>Layout aprovado, metas do site e o que não funciona no atual.</span></div></div>
-        <div class="ag"><span class="t">10 a 25 min</span><div><b>Migração de SEO</b><span>Método, blog no mesmo domínio e as decisões ao lado.</span></div></div>
-        <div class="ag"><span class="t">25 a 35 min</span><div><b>Processo, prazo e painel</b><span>Semanas, aprovações e o que o time vai editar.</span></div></div>
-        <div class="ag"><span class="t">35 a 45 min</span><div><b>Suporte e próximos passos</b><span>Catálogo de entregas e data de início.</span></div></div>
-      </div>
       <div class="rv">
         <h3>Decisões para a mesa</h3>
         <ol class="dec">
@@ -859,8 +848,7 @@
           <li><span><b>Formulário:</b> envio direto para o ActiveCampaign, substituindo o Contact Form 7.</span></li>
         </ol>
       </div>
-    </div>
-    <div class="need rv">
+      <div class="need rv">
       <h3>O que precisamos para começar</h3>
       <div class="need-g">
         <div><b>HTML/CSS final</b>Das 11 páginas, com imagens</div>
@@ -872,6 +860,7 @@
         <div><b>Lever</b>Nome da conta pública</div>
         <div><b>GitHub, Vercel e Supabase</b>Convite para a organização</div>
       </div>
+      </div>
     </div>
   </div>
 </section>
@@ -881,7 +870,12 @@
   <div class="wrap cta-g">
     <div class="rv">
       <h2>Vamos marcar os 45 minutos?</h2>
-      <p>Temos horários nesta semana e na próxima. Respondam com duas opções que funcionem para vocês três e mandamos o convite.</p>
+      <p>Separamos três tardes na semana que vem. É só escolher a que funciona para vocês três e mandamos o convite.</p>
+      <ul class="slots">
+        <li><b>Terça-feira</b><span>27 de outubro, à tarde</span></li>
+        <li><b>Quarta-feira</b><span>28 de outubro, à tarde</span></li>
+        <li><b>Quinta-feira</b><span>29 de outubro, à tarde</span></li>
+      </ul>
       <p class="valid">Proposta válida até 20 de novembro de 2026.</p>
       <div class="cta-a">
         <a class="btn btn-ink" data-mail href="mailto:contato@matilab.com.br">Responder por e-mail</a>
