@@ -5,382 +5,378 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex, nofollow" />
 <title>Proposta Comercial | Implantação do novo site Ubiminds</title>
-<meta name="description" content="Proposta da Matilab para implantar o novo ubiminds.com em Next.js na Vercel, com migração de SEO, tracking, integrações e suporte mensal." />
+<meta name="description" content="Proposta da Matilab para implantar o novo ubiminds.com em Next.js na Vercel, com migração de SEO, painel de edição, tracking e suporte mensal." />
 <meta property="og:title" content="Proposta Comercial | Implantação do novo site Ubiminds" />
-<meta property="og:description" content="11 páginas em Next.js, cada URL antiga com destino definido e o blog no mesmo endereço. Prazo de 4 semanas." />
+<meta property="og:description" content="11 páginas em Next.js, cada URL antiga com destino definido, o blog no mesmo endereço e um painel para o time editar o site." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://www.matilab.com.br/proposta/ubiminds/assets/ubiminds-icon.png" />
 <link rel="icon" href="/proposta/ubiminds/assets/ubiminds-icon.png" />
+<link rel="preload" href="/proposta/ubiminds/assets/fonts/SKConcretica-Regular.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/proposta/ubiminds/assets/fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
 <style>
+  /* Fontes da marca Ubiminds */
+  @font-face{font-family:"SK Concretica";src:url("/proposta/ubiminds/assets/fonts/SKConcretica-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+  @font-face{font-family:"Gilroy";src:url("/proposta/ubiminds/assets/fonts/Gilroy-Medium.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+  @font-face{font-family:"Gilroy";src:url("/proposta/ubiminds/assets/fonts/Gilroy-Bold.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+
   :root{
-    --orange:#FF6C37;      /* laranja da marca Ubiminds */
+    --orange:#FF6C37;
     --orange-d:#CC5829;
-    --tint:#FFD5C8;
     --ink:#0A0B09;
-    --ink-2:#1A1B19;
+    --ink-2:#161714;
     --paper:#F3F2F1;
     --sand:#E0DDDA;
     --text:#434343;
-    --muted:#6E6E6E;
-    --white:#FFFFFF;
-    --ok:#2E9E6B;
-    --maxw:1160px;
-    --r:14px;
+    --mute-d:#8F8B86;
+    --mute-l:#76726D;
+    --line-d:rgba(224,221,218,.14);
+    --line-l:#D9D5D1;
+    --maxw:1200px;
     --ease:cubic-bezier(0.16,1,0.3,1);
-    --display:"Archivo",system-ui,sans-serif;
-    --body:"Plus Jakarta Sans",system-ui,sans-serif;
+    --display:"SK Concretica",system-ui,sans-serif;
+    --body:"Gilroy",system-ui,sans-serif;
     --mono:"JetBrains Mono",ui-monospace,monospace;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;overflow-x:hidden}
-  body{background:var(--white);color:var(--text);font-family:var(--body);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-  h1,h2,h3,h4{font-family:var(--display);font-stretch:118%;font-weight:600;letter-spacing:-0.025em;line-height:1.08;color:var(--ink)}
+  body{background:var(--ink);color:var(--sand);font-family:var(--body);font-weight:500;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:var(--display);font-weight:400;line-height:1.02;letter-spacing:-0.01em;color:#fff}
   img{max-width:100%;display:block}
   a{color:inherit}
-  b,strong{color:var(--ink);font-weight:700}
-  code,.mono{font-family:var(--mono);font-size:.86em;letter-spacing:-0.01em}
-  :focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:4px}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  b,strong{font-weight:800;color:#fff}
+  :focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+  .url{font-family:var(--mono);font-size:.8em;letter-spacing:-0.02em}
 
-  /* ---------- seções ---------- */
-  section{padding:112px 0;position:relative}
-  .paper{background:var(--paper)}
-  .dark{background:var(--ink);color:#BDBAB6}
-  .dark h1,.dark h2,.dark h3,.dark h4,.dark b,.dark strong{color:var(--white)}
-  .head{max-width:760px;margin-bottom:56px}
-  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12.5px;font-weight:500;letter-spacing:.02em;color:var(--orange-d);margin-bottom:18px}
-  .dark .eyebrow{color:var(--orange)}
-  .eyebrow::before{content:"";width:18px;height:2px;background:currentColor}
-  .head h2{font-size:clamp(32px,4.4vw,52px)}
-  .head p{font-size:18px;margin-top:18px;max-width:640px}
+  /* temas de secao */
+  .s{padding:128px 0}
+  .ink{background:var(--ink);color:var(--sand)}
+  .light{background:var(--paper);color:var(--text)}
+  .light h1,.light h2,.light h3,.light h4,.light b,.light strong{color:var(--ink)}
 
-  /* ---------- botoes ---------- */
-  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;transition:transform .25s var(--ease),background .2s,color .2s,border-color .2s;border:1.5px solid transparent;cursor:pointer}
-  .btn:hover{transform:translateY(-2px)}
+  /* titulo de secao: titulo grande a esquerda, texto de apoio a direita */
+  .sh{display:grid;grid-template-columns:7fr 5fr;gap:48px;align-items:end;margin-bottom:72px}
+  .sh h2{font-size:clamp(40px,5.4vw,72px)}
+  .sh p{font-size:18px;max-width:440px}
+  .sh .k{grid-column:1/-1;font-size:15px;color:var(--orange);margin-bottom:-24px}
+
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;font-family:var(--body);font-weight:800;font-size:15px;text-decoration:none;border:1.5px solid transparent;transition:background .2s,color .2s,border-color .2s}
   .btn-o{background:var(--orange);color:var(--ink)}
-  .btn-o:hover{background:#ff8152}
-  .btn-line{border-color:currentColor;color:inherit}
-  .btn-ink{background:var(--ink);color:var(--white)}
-  .btn-sm{padding:9px 16px;font-size:13.5px}
+  .btn-o:hover{background:#ff8457}
+  .btn-ink{background:var(--ink);color:#fff}
+  .btn-ink:hover{background:#26271f}
+  .btn-ghost{border-color:currentColor}
 
-  /* ---------- nav ---------- */
-  header.nav{position:sticky;top:0;z-index:50;background:rgba(10,11,9,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(255,255,255,.07)}
-  .nav-in{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(10,11,9,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-d)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
   .nav-in .ul{height:26px;width:auto}
-  .nav-r{display:flex;align-items:center;gap:22px}
-  .nav-by{display:flex;align-items:center;gap:9px;font-size:12.5px;color:#8D8A86}
-  .nav-by img{height:15px;width:auto}
+  .nav-r{display:flex;align-items:center;gap:28px;font-size:14px}
+  .nav-r a.t{text-decoration:none;color:var(--mute-d)}
+  .nav-r a.t:hover{color:#fff}
+  .nav-r .btn{padding:10px 18px;font-size:14px}
 
-  /* ---------- capa ---------- */
-  .cover{background:var(--ink);color:#BDBAB6;padding:88px 0 104px;overflow:hidden}
-  .cover::after{content:"";position:absolute;inset:auto -10% -40% auto;width:720px;height:720px;background:radial-gradient(closest-side,rgba(255,108,55,.16),transparent);pointer-events:none}
-  .cover-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
-  .cover-tag{font-family:var(--mono);font-size:12.5px;color:var(--orange);display:inline-flex;gap:10px;align-items:center;margin-bottom:26px}
-  .cover-tag i{width:7px;height:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 5px rgba(255,108,55,.18)}
-  .cover h1{font-size:clamp(40px,5.6vw,70px);color:var(--white);font-stretch:122%;font-weight:600}
-  .cover h1 em{font-style:normal;color:var(--orange)}
-  .cover .lead{font-size:19px;margin-top:26px;max-width:540px;color:#CFCCC8}
-  .cover-meta{display:grid;grid-template-columns:repeat(3,auto);gap:30px;margin-top:40px;padding-top:26px;border-top:1px solid rgba(255,255,255,.1);max-width:540px}
-  .cover-meta small{display:block;font-family:var(--mono);font-size:11.5px;color:#7F7C78;margin-bottom:4px}
-  .cover-meta span{color:var(--white);font-weight:600;font-size:15px}
-  .cover-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
-  .cover-actions .btn-line{color:var(--white);border-color:rgba(255,255,255,.3)}
+  /* capa */
+  .cover{position:relative;overflow:hidden;padding:120px 0 96px;min-height:calc(100vh - 72px);display:flex;align-items:flex-end}
+  .cover .mark{position:absolute;right:-7vw;top:50%;transform:translateY(-54%);width:min(42vw,620px);height:auto}
+  .cover .wrap{position:relative;z-index:1;width:100%}
+  .cover h1{font-size:clamp(54px,7vw,104px);line-height:.95;max-width:780px}
+  .cover h1 span{color:var(--orange)}
+  .cover-foot{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:56px;margin-top:72px;padding-top:28px;border-top:1px solid var(--line-d);font-size:15px}
+  .cover-foot small{display:block;color:var(--mute-d);font-size:13px;margin-bottom:2px}
+  .cover-foot span{color:#fff}
 
-  /* ---------- assinatura: livro de redirects ---------- */
-  .ledger{background:#121311;border:1px solid rgba(255,255,255,.09);border-radius:16px;box-shadow:0 40px 80px -30px rgba(0,0,0,.7);overflow:hidden;font-family:var(--mono);font-size:12.5px}
-  .ledger-top{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;border-bottom:1px solid rgba(255,255,255,.07);color:#8D8A86}
-  .ledger-top .dots{display:flex;gap:6px}
-  .ledger-top .dots i{width:9px;height:9px;border-radius:50%;background:#2B2C29}
-  .ledger-top .dots i:first-child{background:var(--orange)}
-  .ledger-body{padding:8px 0;height:384px;overflow:hidden;position:relative}
-  .ledger-body::after{content:"";position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(transparent,#121311);pointer-events:none}
-  .lrow{display:grid;grid-template-columns:1fr auto;gap:4px 14px;padding:10px 18px;border-bottom:1px dashed rgba(255,255,255,.05);animation:lin .6s var(--ease) both}
-  .lrow .from{color:#8D8A86;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .lrow .to{color:#E9E6E2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .lrow .to::before{content:"→ ";color:var(--orange)}
-  .lrow .st{grid-row:1/3;grid-column:2;align-self:center;padding:3px 8px;border-radius:6px;font-size:11.5px;font-weight:500}
-  .st.s301{background:rgba(255,108,55,.14);color:var(--orange)}
-  .st.s200{background:rgba(46,158,107,.16);color:#5FD39C}
-  .st.s410{background:rgba(255,255,255,.07);color:#A9A6A2}
-  .st.proxy{background:rgba(120,160,255,.13);color:#9DB6FF}
-  @keyframes lin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-  .ledger-foot{display:flex;justify-content:space-between;gap:12px;padding:13px 18px;border-top:1px solid rgba(255,255,255,.07);color:#8D8A86}
-  .ledger-foot b{color:var(--white);font-weight:500}
-  .ledger-foot .z{color:#5FD39C}
+  /* carta */
+  .letter{display:grid;grid-template-columns:7fr 4fr;gap:96px}
+  .letter .body{font-size:21px;line-height:1.6;color:var(--ink)}
+  .letter .body p+p{margin-top:22px}
+  .letter .hi{font-family:var(--display);font-size:44px;line-height:1;margin-bottom:32px;color:var(--ink)}
+  .sig{display:flex;align-items:center;gap:16px;margin-top:40px;padding-top:28px;border-top:1px solid var(--line-l)}
+  .sig b{display:block;font-size:17px}
+  .sig span{font-size:15px;color:var(--mute-l)}
+  .sig img{height:18px;width:auto;margin-left:auto}
+  .side h4{font-family:var(--body);font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute-l);margin-bottom:18px}
+  .terms{list-style:none;border-top:1px solid var(--line-l)}
+  .terms li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line-l);font-size:16px}
+  .terms li b{font-family:var(--display);font-weight:400;font-size:22px;color:var(--ink);text-align:right}
+  .answers{list-style:none;margin-top:48px;display:grid;gap:4px}
+  .answers a{display:grid;grid-template-columns:1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid var(--line-l);text-decoration:none;font-size:16px;color:var(--ink);transition:color .2s}
+  .answers a:hover{color:var(--orange-d)}
+  .answers a::after{content:"↓";color:var(--orange-d)}
 
-  /* ---------- resumo ---------- */
-  .summary{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--sand);border:1px solid var(--sand);border-radius:var(--r);overflow:hidden}
-  .sum{background:var(--white);padding:28px 26px}
-  .sum small{font-family:var(--mono);font-size:12px;color:var(--muted)}
-  .sum .v{font-family:var(--display);font-stretch:118%;font-size:30px;font-weight:600;color:var(--ink);margin:10px 0 8px;letter-spacing:-0.02em;line-height:1.1}
-  .sum p{font-size:14.5px;line-height:1.55}
-  .asks{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-  .ask{background:var(--white);border-radius:var(--r);padding:26px;text-decoration:none;border:1px solid var(--sand);transition:border-color .2s,transform .3s var(--ease);display:flex;flex-direction:column;gap:10px}
-  .ask:hover{border-color:var(--orange);transform:translateY(-3px)}
-  .ask q{font-family:var(--display);font-stretch:112%;font-weight:600;font-size:19px;color:var(--ink);line-height:1.25;quotes:"“" "”"}
-  .ask span{font-size:14.5px}
-  .ask em{font-style:normal;font-family:var(--mono);font-size:12.5px;color:var(--orange-d);margin-top:auto}
-  .asks-h{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin:64px 0 -44px}
+  /* diagnostico */
+  .score{display:grid;grid-template-columns:repeat(2,1fr);gap:64px;margin-bottom:88px}
+  .bar-l{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;font-size:16px}
+  .bar-l b{font-family:var(--display);font-weight:400;font-size:64px;line-height:1}
+  .bar{height:10px;background:var(--line-d);border-radius:10px;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:10px;background:var(--orange);width:0;transition:width 1.4s var(--ease)}
+  .bar.w i{background:#fff}
+  .in .bar i{width:var(--v)}
+  .bar-n{font-size:14px;color:var(--mute-d);margin-top:12px}
 
-  .about{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:88px;align-items:start}
-  .about h3{font-size:30px;margin-bottom:16px}
-  .about p+p{margin-top:12px}
-  .facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--sand);border-radius:var(--r);overflow:hidden;border:1px solid var(--sand)}
-  .facts div{background:var(--paper);padding:22px}
-  .facts b{display:block;font-family:var(--display);font-stretch:118%;font-size:26px;font-weight:600;letter-spacing:-0.02em}
-  .facts span{font-size:14px}
+  .cwv{width:100%;border-collapse:collapse;font-size:16px}
+  .cwv th{font-family:var(--body);font-weight:500;font-size:14px;color:var(--mute-d);text-align:right;padding:0 0 14px;border-bottom:1px solid var(--line-d)}
+  .cwv th:first-child,.cwv td:first-child{text-align:left}
+  .cwv td{padding:18px 0;border-bottom:1px solid var(--line-d);text-align:right;color:#fff}
+  .cwv td:first-child{color:var(--sand)}
+  .cwv th+th,.cwv td+td{padding-left:16px}
+  .cwv td+td{white-space:nowrap}
+  .cwv td small{display:block;font-size:13px;color:var(--mute-d)}
+  .cwv td.bad{color:var(--orange)}
+  .cwv-h{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:24px;flex-wrap:wrap}
+  .cwv-h h3{font-size:30px}
+  .cwv-h span{font-size:14px;color:var(--mute-d)}
+  .verdict{display:inline-block;margin-top:24px;font-size:15px;color:var(--orange)}
 
-  /* ---------- diagnostico ---------- */
-  .diag{border-top:1px solid var(--sand)}
-  .dg{display:grid;grid-template-columns:200px 1fr 1fr;gap:32px;padding:28px 0;border-bottom:1px solid var(--sand);align-items:start}
-  .dg .num{font-family:var(--display);font-stretch:120%;font-weight:600;font-size:34px;color:var(--ink);letter-spacing:-0.03em;line-height:1}
-  .dg .num small{display:block;font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:0;margin-top:8px;font-weight:400}
-  .dg h4{font-size:19px;font-stretch:110%;margin-bottom:6px}
-  .dg p{font-size:15px}
-  .dg .fix{font-size:15px;padding-left:18px;border-left:2px solid var(--orange)}
-  .dg .fix b{display:block;font-family:var(--mono);font-size:11.5px;font-weight:500;color:var(--orange-d);margin-bottom:4px}
-  .note{font-size:14px;color:var(--muted);margin-top:22px}
+  .finds{margin-top:104px;display:grid;grid-template-columns:1fr 1fr;gap:0 64px;border-top:1px solid var(--line-d)}
+  .fd{padding:32px 0;border-bottom:1px solid var(--line-d)}
+  .fd h4{font-size:26px;margin-bottom:12px}
+  .fd p{font-size:16.5px}
+  .fd p.do{margin-top:12px;color:#fff}
+  .fd p.do::before{content:"Na proposta: ";color:var(--orange)}
+  .src{font-size:14px;color:var(--mute-d);margin-top:28px}
 
-  /* ---------- migracao ---------- */
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);overflow:hidden}
-  .step{background:var(--ink);padding:30px 28px}
-  .step .n{font-family:var(--mono);font-size:12.5px;color:var(--orange)}
-  .step h4{font-size:21px;margin:12px 0 10px}
-  .step p{font-size:15px}
-  .step ul{list-style:none;margin-top:14px;display:grid;gap:7px}
-  .step li{font-size:14px;padding-left:16px;position:relative}
-  .step li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:2px;background:var(--orange)}
+  /* migracao */
+  .steps{list-style:none;counter-reset:st;border-top:1px solid var(--line-l)}
+  .steps li{counter-increment:st;display:grid;grid-template-columns:96px 4fr 6fr;gap:32px;padding:32px 0;border-bottom:1px solid var(--line-l);align-items:start}
+  .steps li::before{content:counter(st,decimal-leading-zero);font-family:var(--display);font-size:44px;line-height:1;color:var(--orange-d)}
+  .steps h4{font-size:28px}
+  .steps h4 small{display:block;font-family:var(--body);font-weight:500;font-size:14px;color:var(--mute-l);margin-top:10px;letter-spacing:0}
+  .steps p{font-size:17px}
 
-  .decision{margin-top:72px;display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center;background:var(--ink-2);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:44px}
-  .decision .tag{font-family:var(--mono);font-size:12px;color:var(--ink);background:var(--orange);padding:4px 10px;border-radius:6px;display:inline-block;margin-bottom:18px}
-  .decision h3{font-size:30px;margin-bottom:16px}
-  .decision p+p{margin-top:12px}
-  .flow{display:grid;gap:12px;font-family:var(--mono);font-size:13px}
-  .fl{border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 16px;color:#E9E6E2;background:#121311}
-  .fl small{display:block;color:#8D8A86;font-size:11.5px;margin-bottom:4px}
-  .fl.hub{border-color:var(--orange);background:rgba(255,108,55,.08)}
-  .fl-split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  .fl-arrow{text-align:center;color:var(--orange);line-height:1}
-  .opts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
-  .opt{border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px;font-size:14px}
-  .opt.rec{border-color:var(--orange)}
-  .opt b{display:block;margin-bottom:4px}
-  .opt .r{font-family:var(--mono);font-size:11.5px;color:var(--orange)}
+  .blog{margin-top:120px;display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center}
+  .blog .tag{font-size:15px;color:var(--orange-d);margin-bottom:16px}
+  .blog h3{font-size:clamp(34px,4vw,52px);margin-bottom:24px}
+  .blog p{font-size:17px}
+  .blog p+p{margin-top:14px}
+  .choice{margin-top:32px;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-l)}
+  .choice div{padding:20px 20px 0 0;font-size:15.5px}
+  .choice div+div{padding-left:20px;border-left:1px solid var(--line-l);color:var(--mute-l)}
+  .choice b{display:block;font-size:16px;margin-bottom:4px}
+  .choice div:first-child b::after{content:" · recomendado";font-weight:500;color:var(--orange-d)}
 
-  /* mapa de redirects */
-  .map{margin-top:72px}
-  .map-h{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:20px}
-  .map-h h3{font-size:28px}
-  .map-h p{font-size:15px;max-width:560px;margin-top:8px}
-  .tabs{display:flex;gap:6px;flex-wrap:wrap}
-  .tab{font-family:var(--mono);font-size:12.5px;padding:8px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:transparent;color:#BDBAB6;cursor:pointer;transition:all .2s}
-  .tab[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:var(--ink)}
-  .tbl{border:1px solid rgba(255,255,255,.1);border-radius:var(--r);overflow:hidden;font-family:var(--mono);font-size:13px}
-  .tr{display:grid;grid-template-columns:1.25fr 74px 1fr 1.1fr;gap:16px;padding:12px 18px;border-bottom:1px solid rgba(255,255,255,.06);align-items:center}
-  .tr:last-child{border-bottom:0}
-  .tr.th{background:#121311;color:#7F7C78;font-size:11.5px}
-  .tr .a{color:#BDBAB6;word-break:break-all}
-  .tr .b{color:var(--white);word-break:break-all}
-  .tr .c{font-family:var(--body);font-size:13.5px;color:#9C9995}
-  .tr .st{justify-self:start}
+  .diagram{background:var(--ink);border-radius:20px;padding:40px;color:var(--sand);font-size:15px}
+  .node{border:1px solid var(--line-d);border-radius:12px;padding:16px 18px}
+  .node small{display:block;font-size:13px;color:var(--mute-d);margin-bottom:4px}
+  .node .url{color:#fff;font-size:13px}
+  .node.hub{border-color:var(--orange);background:rgba(255,108,55,.07)}
+  .node.hub b{color:var(--orange)}
+  .link{width:1px;height:28px;background:var(--orange);margin:0 auto}
+  .fork{display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative;padding-top:28px}
+  .fork::before{content:"";position:absolute;top:0;left:25%;right:25%;height:28px;border:1px solid var(--orange);border-bottom:0;border-radius:12px 12px 0 0}
+
+  .map{margin-top:120px}
+  .map-h{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+  .map-h h3{font-size:clamp(32px,3.6vw,46px)}
+  .map-h p{font-size:16.5px;max-width:560px;margin-top:12px}
+  .filters{display:flex;gap:4px;flex-wrap:wrap}
+  .filters button{font-family:var(--body);font-weight:500;font-size:14px;padding:8px 14px;border-radius:999px;border:0;background:transparent;color:var(--mute-l);cursor:pointer}
+  .filters button[aria-pressed="true"]{background:var(--ink);color:#fff}
+  .tbl{border-top:1px solid var(--ink)}
+  .tr{display:grid;grid-template-columns:1.3fr 70px 1fr 1.25fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line-l);align-items:baseline;font-size:15px}
+  .tr.th{font-size:13px;color:var(--mute-l);padding:12px 0}
+  .tr .a{font-family:var(--mono);font-size:13px;color:var(--text);word-break:break-all}
+  .tr .b{font-family:var(--mono);font-size:13px;color:var(--ink);word-break:break-all}
+  .tr .c{font-size:14.5px;color:var(--mute-l)}
+  .code{font-family:var(--mono);font-size:13px}
+  .code.c301{color:var(--orange-d)}
+  .code.c200{color:#24834F}
+  .code.c410{color:var(--mute-l)}
+  .code.proxy{color:#3B5BDB}
   .tr[hidden]{display:none}
 
-  /* ---------- escopo ---------- */
-  .scope{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-  .sc{background:var(--white);border:1px solid var(--sand);border-radius:var(--r);padding:30px}
-  .sc-h{display:flex;align-items:baseline;gap:12px;margin-bottom:18px}
-  .sc-h span{font-family:var(--mono);font-size:12.5px;color:var(--orange-d)}
-  .sc-h h3{font-size:23px}
-  .chk{list-style:none;display:grid;gap:10px}
-  .chk li{display:grid;grid-template-columns:18px 1fr;gap:10px;font-size:15px;line-height:1.5}
-  .chk li svg{margin-top:4px;color:var(--orange-d)}
-  .chk li.plus{color:var(--ink)}
-  .chk li.plus::after{content:"incluso a mais";grid-column:2;font-family:var(--mono);font-size:11px;color:var(--orange-d);margin-top:-6px}
-  .out{margin-top:28px;display:grid;grid-template-columns:200px 1fr;gap:24px;padding:24px 28px;border-radius:var(--r);border:1px dashed #C9C5C1}
-  .out h4{font-size:16px;font-stretch:108%}
-  .out p{font-size:14.5px}
+  /* escopo */
+  .scope{display:grid;grid-template-columns:1fr 1fr;gap:0 72px}
+  .grp{padding:36px 0;border-top:1px solid var(--line-d)}
+  .grp h3{font-size:32px;margin-bottom:20px}
+  .grp ul{list-style:none;display:grid;gap:12px}
+  .grp li{font-size:16.5px;padding-left:22px;position:relative}
+  .grp li::before{content:"";position:absolute;left:0;top:.66em;width:8px;height:2px;background:var(--orange)}
+  .grp li.new::before{background:#fff}
+  .panel{margin-top:80px;display:grid;grid-template-columns:5fr 7fr;gap:72px;align-items:center;padding:56px;border-radius:24px;background:var(--orange);color:var(--ink)}
+  .panel h3{font-size:clamp(34px,4vw,52px);color:var(--ink)}
+  .panel p{font-size:18px;color:#2B160C}
+  .panel ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;margin-top:24px}
+  .panel li{font-size:16px;border-top:1px solid rgba(10,11,9,.25);padding-top:10px;color:var(--ink)}
+  .outside{margin-top:64px;font-size:15.5px;color:var(--mute-d);max-width:820px}
+  .outside b{color:var(--sand)}
 
-  /* ---------- cases ---------- */
-  .cases{display:grid;grid-template-columns:repeat(12,1fr);gap:40px 20px}
-  .case{grid-column:span 3;text-decoration:none;display:flex;flex-direction:column;gap:12px}
-  .case .shot{aspect-ratio:16/10;border-radius:12px;overflow:hidden;background:var(--paper);border:1px solid var(--sand)}
-  .case .shot img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .8s var(--ease)}
-  .case:hover .shot img{transform:scale(1.04)}
-  .case h4{font-size:17px;font-stretch:110%}
-  .case p{font-size:13.5px;line-height:1.5;margin-top:-6px}
-  .case .tags{display:flex;gap:6px;flex-wrap:wrap}
-  .case .tags span{font-family:var(--mono);font-size:11px;padding:3px 8px;border-radius:6px;background:var(--paper);color:var(--text)}
-  .case .tags span.nx{background:var(--ink);color:var(--white)}
-  .case .tags span.lh{background:rgba(46,158,107,.12);color:#1F7A50}
-  .case.wide{grid-column:span 4}
+  /* cases */
+  .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:56px 28px}
+  .case{text-decoration:none;color:inherit;display:block}
+  .case .shot{aspect-ratio:16/10;border-radius:10px;overflow:hidden;background:#ddd}
+  .case .shot img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform 1s var(--ease)}
+  .case:hover .shot img{transform:scale(1.03)}
+  .case .meta{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:18px}
+  .case h4{font-size:26px;color:var(--ink)}
+  .case .lh{font-size:14px;color:#24834F;white-space:nowrap}
+  .case p{font-size:15.5px;margin-top:6px}
+  .case .st{font-size:13.5px;color:var(--mute-l);margin-top:8px}
 
-  /* ---------- cronograma ---------- */
-  .tl{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
-  .tl::before{content:"";position:absolute;left:0;right:0;top:15px;height:2px;background:linear-gradient(90deg,var(--ink) 80%,var(--orange) 80%)}
-  .wk{padding-right:22px;position:relative}
-  .wk .dot{width:32px;height:32px;border-radius:50%;background:var(--ink);color:var(--white);display:grid;place-items:center;font-family:var(--mono);font-size:12px;position:relative;z-index:1;margin-bottom:22px}
-  .wk.after .dot{background:var(--orange);color:var(--ink)}
-  .wk small{font-family:var(--mono);font-size:12px;color:var(--muted)}
-  .wk h4{font-size:19px;font-stretch:110%;margin:6px 0 10px}
-  .wk ul{list-style:none;display:grid;gap:7px}
-  .wk li{font-size:14px;line-height:1.5}
-  .wk .gate{margin-top:14px;font-family:var(--mono);font-size:11.5px;color:var(--orange-d);border-top:1px solid var(--sand);padding-top:10px}
-  .tl-note{margin-top:40px;font-size:14.5px;max-width:760px}
+  /* cronograma */
+  .weeks{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line-d)}
+  .wk{padding:32px 24px 0 0}
+  .wk+.wk{padding-left:24px;border-left:1px solid var(--line-d)}
+  .wk .w{font-family:var(--display);font-size:40px;color:#fff;line-height:1}
+  .wk.after .w{color:var(--orange)}
+  .wk h4{font-family:var(--body);font-weight:800;font-size:17px;margin:14px 0 12px}
+  .wk ul{list-style:none;display:grid;gap:8px}
+  .wk li{font-size:15px}
+  .wk .ok{margin-top:18px;font-size:14px;color:var(--orange)}
+  .note{margin-top:56px;font-size:15.5px;color:var(--mute-d);max-width:760px}
 
-  /* ---------- investimento ---------- */
-  .inv{display:grid;grid-template-columns:1.25fr 1fr;gap:24px;align-items:stretch}
-  .card{border-radius:18px;padding:36px;border:1px solid var(--sand);background:var(--white)}
-  .card.main{background:var(--ink);color:#BDBAB6;border-color:var(--ink)}
-  .card.main h3,.card.main b{color:var(--white)}
-  .lbl{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 12px;font-family:var(--mono);font-size:12px;margin-bottom:20px}
-  .badge{padding:4px 10px;border-radius:6px;background:var(--orange);color:var(--ink);white-space:nowrap}
-  .badge.soft{background:var(--paper);color:var(--text)}
-  .card h3{font-size:24px}
-  .price{display:flex;align-items:baseline;gap:8px;margin:14px 0 6px;color:var(--white)}
-  .price .cur{font-family:var(--mono);font-size:16px;color:var(--orange)}
-  .price .val{font-family:var(--display);font-stretch:122%;font-size:clamp(52px,6vw,72px);font-weight:600;letter-spacing:-0.04em;line-height:1}
-  .card:not(.main) .price{color:var(--ink)}
-  .card:not(.main) .price .val{font-size:44px}
-  .price .per{font-size:14px;color:var(--muted)}
-  .milestones{margin-top:28px;display:grid;gap:1px;background:rgba(255,255,255,.08);border-radius:12px;overflow:hidden}
-  .ms{display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:center;background:var(--ink-2);padding:15px 18px}
-  .ms .p{font-family:var(--mono);color:var(--orange);font-size:13px}
-  .ms span{font-size:14.5px}
-  .ms b{font-family:var(--mono);font-weight:500;font-size:14px}
-  .pay-note{font-size:13.5px;margin-top:16px}
-  .third{list-style:none;display:grid;gap:14px;margin-top:20px}
-  .third li{display:grid;grid-template-columns:1fr auto;gap:4px 14px;padding-bottom:14px;border-bottom:1px solid var(--sand);font-size:14.5px}
-  .third li:last-child{border-bottom:0;padding-bottom:0}
-  .third li b{font-size:15px}
-  .third li span.m{font-family:var(--mono);font-size:13px;color:var(--ink);text-align:right}
-  .third li small{grid-column:1/-1;font-size:13.5px;color:var(--muted)}
+  /* investimento */
+  .inv{display:grid;grid-template-columns:6fr 5fr;gap:96px;align-items:start}
+  .big{font-family:var(--display);font-size:clamp(88px,12vw,168px);line-height:.9;color:var(--ink);letter-spacing:-0.03em}
+  .big small{font-size:.28em;vertical-align:top;margin-right:8px;color:var(--orange-d)}
+  .inv .lead{font-size:19px;margin-top:28px;max-width:520px;color:var(--ink)}
+  .parc{margin-top:40px;border-top:1px solid var(--ink)}
+  .parc div{display:grid;grid-template-columns:1fr auto;gap:16px;padding:18px 0;border-bottom:1px solid var(--line-l);font-size:17px}
+  .parc b{font-family:var(--display);font-weight:400;font-size:26px}
+  .inv .pay{font-size:15px;color:var(--mute-l);margin-top:18px}
+  .infra h3{font-size:30px;margin-bottom:8px}
+  .infra > p{font-size:16px}
+  .cost{margin-top:28px;border-top:1px solid var(--line-l)}
+  .cost div{padding:20px 0;border-bottom:1px solid var(--line-l)}
+  .cost .top{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+  .cost b{font-size:18px}
+  .cost .v{font-family:var(--display);font-size:22px;color:var(--ink);white-space:nowrap}
+  .cost p{font-size:15px;margin-top:6px}
+  .cost .req{color:var(--orange-d);font-size:14px}
 
-  /* ---------- suporte ---------- */
-  .sup{display:grid;grid-template-columns:1fr 1.35fr;gap:24px;align-items:start}
-  .sup .card{background:var(--ink-2);border-color:rgba(255,255,255,.08);color:#BDBAB6}
-  .sup .card h3{color:var(--white)}
-  .sup .card .price{color:var(--white)}
-  .sup .card .price .val{font-size:56px}
-  .sup .chk li{color:#CFCCC8}
-  .sup .chk li svg{color:var(--orange)}
-  .menu{border:1px solid rgba(255,255,255,.1);border-radius:18px;overflow:hidden}
-  .menu-h{padding:22px 26px;border-bottom:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
-  .menu-h h3{font-size:22px}
-  .menu-h span{font-family:var(--mono);font-size:12px;color:#8D8A86}
-  .mi{display:grid;grid-template-columns:1fr auto;gap:4px 20px;padding:18px 26px;border-bottom:1px solid rgba(255,255,255,.06)}
-  .mi:last-child{border-bottom:0}
-  .mi b{font-size:16px}
-  .mi .pr{font-family:var(--mono);color:var(--white);font-size:15px;text-align:right;white-space:nowrap}
-  .mi p{font-size:14px;color:#9C9995}
-  .mi .dl{font-family:var(--mono);font-size:11.5px;color:var(--orange);text-align:right;white-space:nowrap}
-  .rules{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
-  .rule{border-top:2px solid var(--orange);padding-top:16px}
-  .rule h4{font-size:17px;font-stretch:108%;margin-bottom:6px}
-  .rule p{font-size:14.5px}
+  /* suporte */
+  .sup{display:grid;grid-template-columns:4fr 7fr;gap:80px;align-items:start}
+  .base .big{color:#fff;font-size:clamp(72px,8vw,112px)}
+  .base .big small{color:var(--orange)}
+  .base .per{font-size:16px;color:var(--mute-d);margin-top:8px}
+  .base ul{list-style:none;margin-top:32px;border-top:1px solid var(--line-d)}
+  .base li{padding:14px 0;border-bottom:1px solid var(--line-d);font-size:16px}
+  .menu-h{display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-bottom:8px}
+  .menu-h h3{font-size:30px}
+  .menu-h span{font-size:14px;color:var(--mute-d)}
+  .menu{border-top:1px solid var(--line-d)}
+  .mi{display:grid;grid-template-columns:1fr auto auto;gap:6px 32px;padding:22px 0;border-bottom:1px solid var(--line-d);align-items:baseline}
+  .mi b{font-size:18px}
+  .mi .p{font-family:var(--display);font-size:26px;color:#fff;white-space:nowrap;text-align:right}
+  .mi .d{font-size:14px;color:var(--mute-d);white-space:nowrap;text-align:right;min-width:64px}
+  .mi p{grid-column:1/-1;font-size:15px;color:var(--mute-d)}
+  .rules{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:88px}
+  .rules h4{font-size:26px;margin-bottom:10px}
+  .rules p{font-size:16px}
 
-  /* ---------- reuniao ---------- */
-  .meet{display:grid;grid-template-columns:1fr 1fr;gap:48px}
-  .agenda{border:1px solid var(--sand);border-radius:var(--r);background:var(--white);overflow:hidden}
-  .ag{display:grid;grid-template-columns:76px 1fr;gap:16px;padding:18px 22px;border-bottom:1px solid var(--sand)}
-  .ag:last-child{border-bottom:0}
-  .ag .t{font-family:var(--mono);font-size:13px;color:var(--orange-d)}
-  .ag b{display:block;font-size:15.5px}
-  .ag span{font-size:14px}
-  .dec{list-style:none;counter-reset:d;display:grid;gap:14px}
-  .dec li{counter-increment:d;display:grid;grid-template-columns:30px 1fr;gap:12px;font-size:15px}
-  .dec li::before{content:counter(d);width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--white);font-family:var(--mono);font-size:12px;display:grid;place-items:center}
-  .meet h3{font-size:24px;margin-bottom:20px}
-  .need{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--sand);border:1px solid var(--sand);border-radius:var(--r);overflow:hidden;margin-top:56px}
-  .need div{background:var(--white);padding:20px}
-  .need b{display:block;font-size:14.5px;margin-bottom:2px}
-  .need span{font-size:13.5px}
+  /* reuniao */
+  .meet{display:grid;grid-template-columns:1fr 1fr;gap:96px}
+  .meet h3{font-size:32px;margin-bottom:24px}
+  .ag{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line-l)}
+  .ag:first-of-type{border-top:1px solid var(--ink)}
+  .ag .t{font-size:15px;color:var(--orange-d)}
+  .ag b{display:block;font-size:17px}
+  .ag span{font-size:15.5px}
+  .dec{list-style:none;counter-reset:d;border-top:1px solid var(--ink)}
+  .dec li{counter-increment:d;display:grid;grid-template-columns:40px 1fr;gap:12px;padding:18px 0;border-bottom:1px solid var(--line-l);font-size:16px}
+  .dec li::before{content:counter(d);font-family:var(--display);font-size:24px;line-height:1.1;color:var(--orange-d)}
+  .need{margin-top:96px}
+  .need h3{font-size:32px;margin-bottom:24px}
+  .need-g{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
+  .need-g div{padding:18px 18px 18px 0;border-bottom:1px solid var(--line-l);font-size:15px}
+  .need-g b{display:block;font-size:16px}
 
-  /* ---------- cta ---------- */
-  .cta{background:var(--orange);color:var(--ink);padding:96px 0}
-  .cta-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:center}
-  .cta h2{font-size:clamp(34px,4.6vw,56px);font-stretch:122%}
-  .cta p{font-size:18px;margin-top:18px;max-width:560px;color:#2A1A12}
-  .valid{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12.5px;margin-top:24px;color:#2A1A12}
-  .valid i{width:7px;height:7px;border-radius:50%;background:var(--ink)}
-  .cta-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-  .sign{background:var(--ink);color:#BDBAB6;border-radius:18px;padding:32px;display:grid;gap:10px;font-size:14.5px}
-  .sign img{height:20px;width:auto;margin-bottom:12px}
-  .sign .who{font-family:var(--display);font-stretch:116%;font-weight:600;font-size:22px;color:var(--white)}
-  .sign .role{font-family:var(--mono);font-size:12px;color:var(--orange);margin-bottom:10px}
-  .sign a,.sign .l{display:flex;gap:10px;align-items:flex-start;text-decoration:none}
-  .sign a:hover{color:var(--white)}
-  .sign svg{flex:none;margin-top:3px}
+  /* cta */
+  .cta{background:var(--orange);color:var(--ink);padding:120px 0}
+  .cta-g{display:grid;grid-template-columns:7fr 4fr;gap:80px;align-items:end}
+  .cta h2{font-size:clamp(48px,7vw,96px);color:var(--ink);line-height:.95}
+  .cta p{font-size:20px;margin-top:28px;max-width:560px;color:#2B160C}
+  .cta .valid{font-size:15px;margin-top:20px;color:#2B160C}
+  .cta-a{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
+  .card-sig{border-top:1.5px solid var(--ink);padding-top:24px;font-size:16px;display:grid;gap:8px}
+  .card-sig img{height:22px;width:auto;margin-bottom:16px}
+  .card-sig b{font-family:var(--display);font-weight:400;font-size:30px;color:var(--ink)}
+  .card-sig a{text-decoration:none}
+  .card-sig a:hover{text-decoration:underline}
 
-  footer{background:var(--ink);color:#7F7C78;font-size:12.5px;padding:26px 0}
+  footer{padding:28px 0;font-size:13px;color:var(--mute-d)}
   .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
-  /* ---------- motion ---------- */
-  .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
-  .reveal.in{opacity:1;transform:none}
+  /* motion */
+  .rv{opacity:0;transform:translateY(24px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+  .rv.in{opacity:1;transform:none}
+  .cover h1,.cover .mark,.cover-foot{animation:up 1.2s var(--ease) both}
+  .cover .mark{animation-name:mk;animation-duration:1.6s}
+  .cover-foot{animation-delay:.25s}
+  @keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+  @keyframes mk{from{opacity:0;transform:translateY(-50%) rotate(-8deg) scale(.92)}to{transform:translateY(-54%)}}
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
-    .reveal{opacity:1;transform:none;transition:none}
-    .lrow{animation:none}
-    .btn:hover,.ask:hover{transform:none}
+    .rv{opacity:1;transform:none;transition:none}
+    .cover h1,.cover .mark,.cover-foot{animation:none}
+    .bar i{transition:none}
   }
 
-  /* ---------- responsivo ---------- */
+  /* responsivo */
+  @media (max-width:1240px){
+    .cover .mark{opacity:.16;right:-24vw;width:80vw}
+  }
   @media (max-width:1020px){
-    .cover-grid,.about,.decision,.inv,.sup,.meet,.cta-grid{grid-template-columns:1fr}
-    .summary{grid-template-columns:1fr 1fr}
-    .steps{grid-template-columns:1fr 1fr}
-    .case,.case.wide{grid-column:span 6}
-    .tl{grid-template-columns:1fr 1fr;gap:36px 0}
-    .tl::before{display:none}
-    .need{grid-template-columns:1fr 1fr}
-    .dg{grid-template-columns:150px 1fr}
-    .dg .fix{grid-column:2}
+    .s{padding:96px 0}
+    .sh,.letter,.blog,.inv,.sup,.meet,.cta-g,.panel{grid-template-columns:1fr}
+    .sh{gap:20px}
+    .letter,.inv,.sup,.meet{gap:64px}
+    .cases{grid-template-columns:1fr 1fr}
+    .weeks{grid-template-columns:1fr 1fr;row-gap:32px}
+    .wk+.wk{border-left:0;padding-left:0}
+    .wk{padding-right:24px}
+    .need-g{grid-template-columns:1fr 1fr}
   }
   @media (max-width:720px){
-    section{padding:76px 0}
+    body{font-size:17px}
     .wrap{padding:0 16px}
-    .nav-by{display:none}
-    .cover{padding:56px 0 72px}
-    .cover-meta{grid-template-columns:1fr 1fr;gap:18px}
-    .summary,.asks,.steps,.scope,.rules,.need,.facts{grid-template-columns:1fr}
-    .asks-h{margin:48px 0 -28px}
-    .case,.case.wide{grid-column:span 12}
-    .tl{grid-template-columns:1fr}
-    .dg{grid-template-columns:1fr;gap:12px}
-    .dg .fix{grid-column:auto}
-    .decision{padding:26px}
-    .opts,.fl-split{grid-template-columns:1fr}
+    .s{padding:80px 0}
+    .nav-r a.t{display:none}
+    .cover{padding:80px 0 56px;min-height:auto}
+    .cover-foot{grid-template-columns:1fr 1fr;gap:20px 24px;margin-top:48px}
+    .sh{margin-bottom:48px}
+    .sh .k{margin-bottom:-8px}
+    .letter .body{font-size:18.5px}
+    .letter .hi{font-size:36px}
+    .score,.finds,.scope,.rules,.choice,.fork,.panel ul{grid-template-columns:1fr}
+    .score{gap:40px}
+    .bar-l b{font-size:52px}
+    .cwv{font-size:14.5px}
+    .cwv th{font-size:12px}
+    .cwv th+th,.cwv td+td{padding-left:10px}
+    .finds{margin-top:72px}
+    .steps li{grid-template-columns:1fr;gap:10px}
+    .choice div+div{border-left:0;padding-left:0;border-top:1px solid var(--line-l);margin-top:16px}
+    .fork::before{display:none}
+    .fork{padding-top:16px}
+    .diagram{padding:24px}
     .tr{grid-template-columns:1fr auto;gap:4px 12px}
-    .tr .a{grid-column:1}
-    .tr .st{grid-column:2;grid-row:1}
-    .tr .b{grid-column:1/-1}
-    .tr .c{grid-column:1/-1}
+    .tr .b,.tr .c{grid-column:1/-1}
     .tr.th{display:none}
-    .out{grid-template-columns:1fr;gap:8px}
-    .card{padding:26px}
-    .ms{grid-template-columns:44px 1fr;}
-    .ms b{grid-column:2}
-    .mi{padding:16px 18px}
-    .ledger-body{height:330px}
+    .panel{padding:32px 24px;gap:32px}
+    .cases{grid-template-columns:1fr;gap:44px}
+    .weeks{grid-template-columns:1fr}
+    .mi{grid-template-columns:1fr auto}
+    .mi .d{grid-column:2;text-align:right}
+    .need-g{grid-template-columns:1fr}
+    .ag{grid-template-columns:80px 1fr}
+    .cta{padding:88px 0}
   }
 
-  /* ---------- impressao / PDF ---------- */
   @media print{
     @page{size:A4;margin:0}
     html,body{font-size:12px}
     *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-    header.nav,.cover-actions,.cta-actions,.tabs{display:none!important}
-    .reveal{opacity:1!important;transform:none!important}
-    .lrow{animation:none!important}
-    .wrap{max-width:none;padding:0 14mm}
-    section{padding:14mm 0 8mm}
-    .page{break-before:page}
-    .cover{min-height:297mm;display:flex;align-items:center}
+    header.nav,.cta-a,.filters{display:none!important}
+    .rv{opacity:1!important;transform:none!important}
+    .bar i{width:var(--v)!important}
     .tr[hidden]{display:grid!important}
-    .sc,.step,.dg,.case,.wk,.mi,.card,.ag{break-inside:avoid}
+    .s{padding:14mm 0}
+    .pg{break-before:page}
+    .fd,.steps li,.case,.wk,.mi,.grp{break-inside:avoid}
   }
 </style>
 </head>
@@ -389,544 +385,526 @@
 <header class="nav">
   <div class="wrap nav-in">
     <img class="ul" src="/proposta/ubiminds/assets/ubiminds-logo-white.svg" alt="Ubiminds" width="141" height="26" />
-    <div class="nav-r">
-      <span class="nav-by">Proposta por <img src="/proposta/ubiminds/assets/matilab-logo-white.svg" alt="Matilab" /></span>
-      <a class="btn btn-o btn-sm" href="#investimento">Ver investimento</a>
-    </div>
+    <nav class="nav-r" aria-label="Seções">
+      <a class="t" href="#diagnostico">Diagnóstico</a>
+      <a class="t" href="#migracao">Migração</a>
+      <a class="t" href="#cases">Cases</a>
+      <a class="btn btn-o" href="#investimento">Investimento</a>
+    </nav>
   </div>
 </header>
 
 <main>
 
 <!-- CAPA -->
-<section class="cover">
-  <div class="wrap cover-grid">
-    <div>
-      <span class="cover-tag"><i></i>Proposta comercial · implantação do novo ubiminds.com</span>
-      <h1>Site novo no ar, <em>sem perder dez anos</em> de Google.</h1>
-      <p class="lead">Implantamos as 11 páginas aprovadas em Next.js na Vercel, damos um destino para cada URL do site atual e deixamos o tracking pronto para mídia. O blog continua no WordPress, no mesmo endereço.</p>
-      <div class="cover-meta">
-        <div><small>Para</small><span>Gustavo Gomez e diretoria</span></div>
-        <div><small>Data</small><span>21/10/2026</span></div>
-        <div><small>Validade</small><span>30 dias</span></div>
-      </div>
-      <div class="cover-actions">
-        <a class="btn btn-o" href="#resumo">Ver o resumo</a>
-        <a class="btn btn-line" href="#migracao">Como migramos o SEO</a>
-      </div>
-    </div>
-
-    <div class="ledger" aria-label="Amostra do mapa de redirects do ubiminds.com">
-      <div class="ledger-top">
-        <span class="dots"><i></i><i></i><i></i></span>
-        <span>redirect-map.csv · rascunho</span>
-      </div>
-      <div class="ledger-body" id="ledger"></div>
-      <div class="ledger-foot">
-        <span><b>645</b> URLs no sitemap hoje</span>
-        <span class="z">0 sem destino</span>
-      </div>
+<section class="cover ink">
+  <svg class="mark" viewBox="0 0 55 55" aria-hidden="true"><path d="M47.1007 0H24.2796C23.7847 0 23.3876 0.400209 23.3876 0.898833V21.7099C23.3876 22.3922 22.5672 22.7399 22.0854 22.2544L1.3022 1.31217C0.820388 0.826667 0 1.16788 0 1.85677V30.9344C0 43.9774 10.2874 54.5929 23.1336 54.9996C23.5503 55.0128 23.8954 54.665 23.8954 54.2451V27.9689C23.8954 27.2866 24.7158 26.9389 25.1976 27.4244L35.4395 37.7446C35.778 38.0857 36.3315 38.0857 36.67 37.7446L47.1658 27.1685C47.6997 26.6305 47.9992 25.9023 47.9992 25.1412V0.911967C47.9992 0.413343 47.602 0.0131345 47.1072 0.0131345L47.1007 0Z" fill="#FF6C37"/></svg>
+  <div class="wrap">
+    <h1>O novo ubiminds.com no ar, <span>com dez anos de Google</span> intactos.</h1>
+    <div class="cover-foot">
+      <div><small>Proposta para</small><span>Gustavo Gomez e diretoria</span></div>
+      <div><small>Preparada por</small><span>Matilab</span></div>
+      <div><small>Data</small><span>21 de outubro de 2026</span></div>
+      <div><small>Válida até</small><span>20 de novembro de 2026</span></div>
     </div>
   </div>
 </section>
 
-<!-- RESUMO -->
-<section id="resumo" class="paper page">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Resumo</span>
-      <h2>A proposta em 30 segundos</h2>
-      <p>Os quatro números que importam. O detalhe de cada um está nas seções seguintes.</p>
-    </div>
-    <div class="summary reveal">
-      <div class="sum"><small>Projeto</small><div class="v">R$ 12.900</div><p>Valor fechado para todo o escopo do e-mail, do código ao go-live.</p></div>
-      <div class="sum"><small>Prazo</small><div class="v">4 semanas</div><p>Até o site no ar, com mais 30 dias de acompanhamento no Search Console já incluídos.</p></div>
-      <div class="sum"><small>Suporte mensal</small><div class="v">R$ 990/mês</div><p>Manutenção mais um catálogo de entregas com preço fixo, como landing pages novas.</p></div>
-      <div class="sum"><small>Infraestrutura</small><div class="v">Na conta de vocês</div><p>GitHub e Vercel em nome da Ubiminds. O código é de vocês desde o primeiro commit.</p></div>
-    </div>
-
-    <p class="asks-h reveal">No e-mail, vocês pediram três respostas para a reunião:</p>
-    <div class="asks">
-      <a class="ask reveal" href="#migracao"><q>Como vocês conduzem uma migração de SEO, e um ou dois cases.</q><span>Método em seis etapas, a decisão sobre o blog e um rascunho do mapa de redirects com URLs reais de vocês.</span><em>→ Migração de SEO e Cases</em></a>
-      <a class="ask reveal" href="#cronograma"><q>Como seria o processo e o prazo estimado.</q><span>Quatro semanas, uma entrega por semana e um staging para o CEO e o CTO aprovarem antes da virada.</span><em>→ Cronograma</em></a>
-      <a class="ask reveal" href="#suporte"><q>Como funciona o suporte mensal e se há limite.</q><span>Sem limite de pedidos. Cada tipo de entrega tem preço e prazo fixos, aprovados antes de começar.</span><em>→ Suporte</em></a>
-    </div>
-
-    <div class="about">
-      <div class="reveal">
-        <span class="eyebrow">Quem somos</span>
-        <h3>Matilab, estúdio de sites em São Paulo</h3>
-        <p>Desenvolvemos sites em código próprio, com foco em velocidade, SEO técnico e geração de contatos. Next.js na Vercel é a nossa stack padrão para sites institucionais.</p>
-        <p>Em um projeto como este, vocês falam direto com quem implementa. A mesma pessoa que monta o mapa de redirects acompanha o Search Console depois do go-live.</p>
+<!-- CARTA -->
+<section class="s light pg" id="resumo">
+  <div class="wrap letter">
+    <div class="rv">
+      <p class="hi">Olá, Gustavo.</p>
+      <div class="body">
+        <p>Obrigado pelo briefing. Ele chegou com o que quase nunca chega: layout aprovado, escopo fechado e uma prioridade clara, que é não perder o SEO construído em dez anos.</p>
+        <p>Por isso, antes da reunião, abrimos o ubiminds.com por dentro. Confirmamos por que o Core Web Vitals reprova e achamos um detalhe que muda o plano de migração: os 615 posts do blog dividem o endereço com as páginas do site.</p>
+        <p>A proposta parte desses dois pontos. Em resumo, são <b>R$ 8.500 em duas parcelas</b>, <b>quatro semanas</b> até o site no ar e um <b>painel de edição</b> para o time atualizar o site sem depender de ninguém. Isso resolve a outra queixa do e-mail, de que o site atual é difícil de editar.</p>
       </div>
-      <div class="facts reveal">
-        <div><b>2017</b><span>Desde quando fazemos sites</span></div>
-        <div><b>+500</b><span>Projetos entregues</span></div>
-        <div><b>Next.js</b><span>Stack padrão, com deploy na Vercel</span></div>
-        <div><b>Vila Olímpia</b><span>São Paulo, SP</span></div>
+      <div class="sig">
+        <div><b>Matheus Moura</b><span>Fundador da Matilab</span></div>
+        <img src="/proposta/ubiminds/assets/matilab-logo-dark.svg" alt="Matilab" />
       </div>
     </div>
+    <aside class="side rv">
+      <h4>Os números</h4>
+      <ul class="terms">
+        <li>Projeto <b>R$ 8.500</b></li>
+        <li>Pagamento <b>2 × R$ 4.250</b></li>
+        <li>Prazo até o go-live <b>4 semanas</b></li>
+        <li>Acompanhamento <b>30 dias</b></li>
+        <li>Suporte mensal <b>R$ 990</b></li>
+      </ul>
+      <ul class="answers">
+        <li><a href="#migracao">Como conduzimos a migração de SEO</a></li>
+        <li><a href="#cases">Cases parecidos, em Next.js</a></li>
+        <li><a href="#cronograma">Processo e prazo</a></li>
+        <li><a href="#suporte">Como funciona o suporte mensal</a></li>
+      </ul>
+    </aside>
   </div>
 </section>
 
 <!-- DIAGNOSTICO -->
-<section id="diagnostico" class="page">
+<section class="s ink pg" id="diagnostico">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">O que vimos no ubiminds.com</span>
-      <h2>Antes da reunião, já lemos o site atual</h2>
-      <p>Levantamos o sitemap, o código da home e os redirects de hoje. Estes são os pontos que mudam o plano de migração.</p>
+    <div class="sh rv">
+      <p class="k">Diagnóstico</p>
+      <h2>O que o Google vê hoje no ubiminds.com</h2>
+      <p>Rodamos o PageSpeed Insights na home e lemos o sitemap, o código e os redirects. O resultado explica a reprovação e mostra onde a migração pode tropeçar.</p>
     </div>
-    <div class="diag">
-      <div class="dg reveal">
-        <div class="num">31<small>de 100 no Lighthouse mobile</small></div>
-        <div><h4>A home leva 14,5 s para mostrar o conteúdo principal</h4><p>No teste de celular, o LCP fica em 14,5 s e o bloqueio da página em 1,1 s. O limite do Google para o verde é 2,5 s de LCP. Por isso o Core Web Vitals reprova.</p></div>
-        <div class="fix"><b>no plano</b>Os três sites em Next.js dos nossos cases marcam entre 95 e 97 no mesmo teste, feito no mesmo dia.</div>
+
+    <div class="score rv">
+      <div>
+        <div class="bar-l"><span>Desempenho no celular, home atual</span><b>52</b></div>
+        <div class="bar"><i style="--v:52%"></i></div>
+        <p class="bar-n">PageSpeed Insights. No computador, a nota é 63.</p>
       </div>
-      <div class="dg reveal">
-        <div class="num">645<small>URLs no sitemap</small></div>
-        <div><h4>517 em inglês, 128 em português</h4><p>São 19 páginas, 615 posts e 11 categorias. Os posts ficam soltos na pasta do idioma, como <code>/en-us/job-dissatisfaction/</code>, no mesmo domínio das páginas.</p></div>
-        <div class="fix"><b>no plano</b>Cada uma das 645 URLs entra no mapa com um destino. Nenhuma fica para o 404 por esquecimento.</div>
-      </div>
-      <div class="dg reveal">
-        <div class="num">615<small>posts no mesmo domínio</small></div>
-        <div><h4>O blog divide o endereço com as páginas</h4><p>Como os posts não estão em <code>/blog/</code>, apontar o domínio para a Vercel derrubaria todos eles se nada fosse feito.</p></div>
-        <div class="fix"><b>no plano</b>A Vercel repassa ao WordPress tudo o que não for página nova. Os posts mantêm a URL exata. Detalhes <a href="#decisao">na seção de migração</a>.</div>
-      </div>
-      <div class="dg reveal">
-        <div class="num">97 + 37<small>CSS e scripts na home</small></div>
-        <div><h4>O peso vem do construtor do tema</h4><p>O tema Avada com Fusion Builder carrega um CSS de 1 MB e um JS de 750 KB, mais 23 imagens sem carregamento sob demanda. O servidor leva cerca de 0,9 s para responder.</p></div>
-        <div class="fix"><b>no plano</b>Páginas geradas no build e servidas da borda da Vercel, com imagens e fontes otimizadas. Meta: Core Web Vitals no verde no celular.</div>
-      </div>
-      <div class="dg reveal">
-        <div class="num">302<small>na raiz do domínio</small></div>
-        <div><h4>A home responde com redirect temporário</h4><p><code>ubiminds.com</code> manda para <code>/en-us/</code> com 302. Para o Google, isso diz que a página principal pode mudar a qualquer momento.</p></div>
-        <div class="fix"><b>no plano</b>A home passa a responder direto em <code>ubiminds.com</code> com 200, ou com um único 301, conforme a estrutura de URLs escolhida.</div>
-      </div>
-      <div class="dg reveal">
-        <div class="num">2<small>erros de dados estruturados</small></div>
-        <div><h4>A empresa aparece como "Person"</h4><p>O schema marca a Ubiminds como Organization e Person ao mesmo tempo, e trata a home como um artigo assinado pelo usuário "labbo". A página <code>/pt-br/teste-labbo/</code> está no sitemap e pode ser indexada.</p></div>
-        <div class="fix"><b>no plano</b>JSON-LD revisado em todas as páginas: Organization, WebSite, Service, Person para a liderança e BreadcrumbList. A página de teste sai com 410.</div>
-      </div>
-      <div class="dg reveal">
-        <div class="num">3<small>domínios para os serviços</small></div>
-        <div><h4>Os serviços hoje estão fora do site</h4><p>As páginas de serviço vivem em <code>edu.ubiminds.com</code>, como landing pages do ActiveCampaign. Quando as três páginas novas entrarem no ar, as duas versões vão competir pela mesma busca.</p></div>
-        <div class="fix"><b>no plano</b>Definimos com vocês quais landing pages do <code>edu.</code> redirecionam para as páginas novas e quais seguem para campanhas, com canonical.</div>
-      </div>
-      <div class="dg reveal">
-        <div class="num">1<small>contêiner do GTM</small></div>
-        <div><h4>Tracking parcial e sem consentimento</h4><p>O GTM <code>GTM-WGNS5HX</code> já existe. Não encontramos LinkedIn Insight, Clarity nem banner de cookies. Os formulários vão para o ActiveCampaign.</p></div>
-        <div class="fix"><b>no plano</b>Reaproveitamos o contêiner, adicionamos as tags que faltam e o Consent Mode v2, e o formulário passa a enviar a página de origem para o ActiveCampaign.</div>
+      <div>
+        <div class="bar-l"><span>Nossos sites em Next.js, no celular</span><b>95–100</b></div>
+        <div class="bar w"><i style="--v:97%"></i></div>
+        <p class="bar-n">Lighthouse mobile dos cases desta proposta, medido no mesmo dia.</p>
       </div>
     </div>
-    <p class="note reveal">Levantamento feito em 21/10/2026 a partir do sitemap público (Rank Math), do HTML da home, dos cabeçalhos HTTP e do Lighthouse 12 em modo mobile. Os dados do Search Console entram na primeira semana do projeto.</p>
+
+    <div class="rv">
+      <div class="cwv-h"><h3>Core Web Vitals, usuários reais</h3><span>Chrome UX Report · últimos 28 dias</span></div>
+      <table class="cwv">
+        <thead><tr><th>Métrica</th><th>Celular</th><th>Computador</th><th>Limite do Google</th></tr></thead>
+        <tbody>
+          <tr><td>LCP<small>Tempo até o conteúdo principal aparecer</small></td><td class="bad">3,3 s</td><td class="bad">2,6 s</td><td>2,5 s</td></tr>
+          <tr><td>INP<small>Resposta a cliques e toques</small></td><td>184 ms</td><td>55 ms</td><td>200 ms</td></tr>
+          <tr><td>CLS<small>Estabilidade do layout</small></td><td>0,04</td><td>0,01</td><td>0,1</td></tr>
+          <tr><td>TTFB<small>Resposta do servidor</small></td><td class="bad">1,7 s</td><td class="bad">1,2 s</td><td>0,8 s</td></tr>
+        </tbody>
+      </table>
+      <p class="verdict">Avaliação: reprovado no celular e no computador. O LCP passa do limite nos dois.</p>
+    </div>
+
+    <div class="finds">
+      <div class="fd rv">
+        <h4>4,8 MB para abrir a home</h4>
+        <p>No teste de celular, o conteúdo principal leva 8,6 s para aparecer. Há 1,1 MB de JavaScript que a página não usa e arquivos que bloqueiam a renderização por quase 5 s. A origem é o tema Avada com Fusion Builder.</p>
+        <p class="do">páginas geradas no build e servidas da borda da Vercel, com imagens, fontes e scripts otimizados.</p>
+      </div>
+      <div class="fd rv">
+        <h4>645 URLs no sitemap</h4>
+        <p>São 517 em inglês e 128 em português, entre 19 páginas, 615 posts e 11 categorias.</p>
+        <p class="do">cada uma das 645 entra no mapa de redirects com um destino. Nenhuma vai para o 404 por esquecimento.</p>
+      </div>
+      <div class="fd rv">
+        <h4>O blog divide o endereço com as páginas</h4>
+        <p>Os posts não ficam em <span class="url">/blog/</span>, e sim soltos na pasta do idioma, como <span class="url">/en-us/job-dissatisfaction/</span>. Apontar o domínio para a Vercel sem cuidado derrubaria todos eles.</p>
+        <p class="do">a Vercel repassa ao WordPress tudo o que não for página nova, e os posts mantêm a URL exata.</p>
+      </div>
+      <div class="fd rv">
+        <h4>A home responde com 302</h4>
+        <p><span class="url">ubiminds.com</span> leva a <span class="url">/en-us/</span> com um redirect temporário, que diz ao Google que a página principal pode mudar a qualquer momento.</p>
+        <p class="do">a home passa a responder direto, ou com um único 301, conforme a estrutura de URLs escolhida.</p>
+      </div>
+      <div class="fd rv">
+        <h4>A empresa aparece como "Person"</h4>
+        <p>Os dados estruturados marcam a Ubiminds como Organization e Person ao mesmo tempo, e tratam a home como um artigo do usuário "labbo". A página <span class="url">/pt-br/teste-labbo/</span> pode ser indexada.</p>
+        <p class="do">JSON-LD revisado em todas as páginas, e a página de teste sai com 410.</p>
+      </div>
+      <div class="fd rv">
+        <h4>Os serviços estão em outro domínio</h4>
+        <p>Hoje as páginas de serviço são landing pages do ActiveCampaign em <span class="url">edu.ubiminds.com</span>. Com as páginas novas no ar, as duas versões vão disputar a mesma busca.</p>
+        <p class="do">definimos com vocês quais delas viram redirect e quais seguem só para campanhas.</p>
+      </div>
+    </div>
+    <p class="src">PageSpeed Insights de 21/10/2026, 02h37 (Lighthouse 13.5). O restante vem do sitemap público, do HTML da home e dos cabeçalhos HTTP.</p>
   </div>
 </section>
 
-<!-- MIGRACAO DE SEO -->
-<section id="migracao" class="dark page">
+<!-- MIGRACAO -->
+<section class="s light pg" id="migracao">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Migração de SEO · a prioridade do projeto</span>
-      <h2>Como migramos sem perder posição</h2>
-      <p>Uma migração dá errado por URLs esquecidas, redirects em cadeia e conteúdo que muda de lugar sem aviso ao Google. O método abaixo existe para fechar cada uma dessas portas, nesta ordem.</p>
+    <div class="sh rv">
+      <p class="k">Migração de SEO</p>
+      <h2>Como trocamos o site sem perder posição</h2>
+      <p>Migrações dão errado por três motivos: URLs esquecidas, redirects em cadeia e conteúdo que muda de lugar sem aviso. Cada etapa abaixo existe para evitar um deles, e a ordem importa.</p>
     </div>
 
-    <div class="steps">
-      <div class="step reveal">
-        <span class="n">Etapa 1 · semana 1</span>
-        <h4>Inventário completo</h4>
-        <p>Juntamos todas as URLs que o Google conhece, não só as do sitemap.</p>
-        <ul><li>Crawl completo do site atual</li><li>16 meses de páginas com impressão no Search Console</li><li>Páginas de entrada no GA4 e URLs com backlinks</li></ul>
-      </div>
-      <div class="step reveal">
-        <span class="n">Etapa 2 · semana 1</span>
-        <h4>Mapa de redirects</h4>
-        <p>Uma planilha com cada URL antiga, o destino e o motivo. Vocês aprovam antes de qualquer código.</p>
-        <ul><li>301 para o equivalente mais próximo, nunca tudo para a home</li><li>Um salto só, sem cadeias</li><li>410 para o que deve sumir de vez</li></ul>
-      </div>
-      <div class="step reveal">
-        <span class="n">Etapa 3 · semana 2</span>
-        <h4>Paridade on-page</h4>
-        <p>Nenhuma página perde o que a fazia ranquear.</p>
-        <ul><li>Title, meta description e canonical por página</li><li>H1 e headings conferidos contra o site atual</li><li>Dados estruturados, sitemap.xml e robots.txt</li></ul>
-      </div>
-      <div class="step reveal">
-        <span class="n">Etapa 4 · semanas 3 e 4</span>
-        <h4>Staging blindado</h4>
-        <p>O site completo em um endereço de aprovação, invisível para o Google.</p>
-        <ul><li>Protegido por senha e com noindex</li><li>Teste automático de 100% do mapa: 301 → 200 em um salto</li><li>Lighthouse mobile em todas as páginas</li></ul>
-      </div>
-      <div class="step reveal">
-        <span class="n">Etapa 5 · fim da semana 4</span>
-        <h4>Go-live controlado</h4>
-        <p>A virada acontece com plano de volta pronto.</p>
-        <ul><li>TTL do DNS reduzido dias antes</li><li>Crawl de produção logo após a virada</li><li>Sitemap reenviado e páginas-chave inspecionadas</li><li>VM atual preservada por 30 dias</li></ul>
-      </div>
-      <div class="step reveal">
-        <span class="n">Etapa 6 · 30 dias depois</span>
-        <h4>Acompanhamento</h4>
-        <p>Olhamos o Search Console toda semana e corrigimos o que aparecer.</p>
-        <ul><li>Cobertura, 404 e redirects que o Google encontrou</li><li>Cliques e impressões por página contra a base anterior</li><li>Relatório semanal curto para o time</li></ul>
-      </div>
-    </div>
+    <ol class="steps">
+      <li class="rv"><h4>Inventário completo<small>Semana 1</small></h4><p>Juntamos tudo o que o Google conhece, não só o sitemap: crawl do site atual, 16 meses de páginas com impressão no Search Console, páginas de entrada no GA4 e URLs com backlinks.</p></li>
+      <li class="rv"><h4>Mapa de redirects<small>Semana 1, com aprovação de vocês</small></h4><p>Uma planilha com cada URL antiga, o destino e o motivo. Usamos 301 para o equivalente mais próximo, nunca tudo para a home, sempre em um salto só. O que deve sumir de vez recebe 410.</p></li>
+      <li class="rv"><h4>Paridade on-page<small>Semana 2</small></h4><p>Title, meta description, canonical e headings conferidos contra o site atual, página por página. Dados estruturados, sitemap.xml e robots.txt novos.</p></li>
+      <li class="rv"><h4>Staging fechado<small>Semana 3</small></h4><p>O site completo em um endereço protegido por senha e com noindex. Um script testa 100% do mapa: cada URL antiga precisa chegar ao destino em um salto e responder 200.</p></li>
+      <li class="rv"><h4>Go-live controlado<small>Fim da semana 4</small></h4><p>TTL do DNS reduzido dias antes, virada, crawl de produção na mesma hora, sitemap reenviado e páginas-chave inspecionadas. A VM atual fica intacta por 30 dias, caso seja preciso voltar.</p></li>
+      <li class="rv"><h4>Acompanhamento<small>30 dias depois do go-live</small></h4><p>Search Console toda semana: cobertura, 404, redirects que o Google encontrou e cliques por página contra a base anterior. Um relatório curto por semana para o time.</p></li>
+    </ol>
 
-    <!-- decisao do blog -->
-    <div class="decision reveal" id="decisao">
-      <div>
-        <span class="tag">Decisão para a reunião</span>
-        <h3>O blog fica no mesmo endereço</h3>
-        <p>Os 615 posts estão em URLs como <code>/en-us/&lt;post&gt;/</code>, misturados às páginas. Nossa recomendação é a Vercel virar a porta de entrada do domínio: ela entrega as 11 páginas novas e repassa qualquer outra URL ao WordPress, que continua na VM da AWS.</p>
-        <p>Para o Google e para quem chega por um link antigo, nada muda no blog. Não há nenhum redirect de post e o WordPress continua sendo editado como hoje.</p>
-        <div class="opts">
-          <div class="opt rec"><span class="r">recomendado</span><b>Proxy no mesmo domínio</b>0 redirects de posts. O WordPress ganha um endereço interno e sai do índice.</div>
-          <div class="opt"><span class="r" style="color:#8D8A86">alternativa</span><b>Subdomínio blog.</b>615 redirects 301 e autoridade dividida entre dois hosts. Mais risco, sem ganho.</div>
+    <div class="blog" id="decisao">
+      <div class="rv">
+        <p class="tag">A decisão mais importante da reunião</p>
+        <h3>O blog continua no mesmo endereço</h3>
+        <p>Nossa recomendação é a Vercel virar a porta de entrada do domínio. Ela entrega as páginas novas e repassa qualquer outra URL ao WordPress, que continua na VM da AWS.</p>
+        <p>Para o Google e para quem chega por um link antigo, nada muda no blog. Nenhum post precisa de redirect, e o WordPress continua sendo editado como hoje.</p>
+        <div class="choice">
+          <div><b>Mesmo domínio</b>0 redirects de posts. O WordPress ganha um endereço interno e sai do índice.</div>
+          <div><b>Subdomínio blog.</b>615 redirects e a autoridade dividida entre dois endereços.</div>
         </div>
       </div>
-      <div class="flow" aria-hidden="true">
-        <div class="fl"><small>visitante ou Googlebot</small>GET ubiminds.com/…</div>
-        <div class="fl-arrow">↓</div>
-        <div class="fl hub"><small>Vercel · porta de entrada</small>redirects 301 → páginas novas → rewrite</div>
-        <div class="fl-arrow">↓</div>
-        <div class="fl-split">
-          <div class="fl"><small>Next.js · 11 páginas</small>/ · /contact · /careers …</div>
-          <div class="fl"><small>WordPress na AWS · blog</small>/en-us/&lt;post&gt;/ · 200</div>
+      <div class="diagram rv" aria-label="Fluxo: a Vercel recebe a visita, entrega as páginas novas e repassa o blog ao WordPress">
+        <div class="node"><small>Visitante ou Googlebot</small><span class="url">ubiminds.com/…</span></div>
+        <div class="link"></div>
+        <div class="node hub"><small>Vercel</small><b>Redirects 301, páginas novas, repasse do resto</b></div>
+        <div class="fork">
+          <div class="node"><small>Next.js · páginas novas</small><span class="url">/ · /contact · /careers</span></div>
+          <div class="node"><small>WordPress na AWS · blog</small><span class="url">/en-us/&lt;post&gt;/</span></div>
         </div>
       </div>
     </div>
 
-    <!-- mapa de redirects -->
-    <div class="map reveal">
-      <div class="map-h">
+    <div class="map">
+      <div class="map-h rv">
         <div>
-          <h3>Rascunho do mapa, com URLs reais</h3>
-          <p>Uma amostra do que vai para aprovação na semana 1. Os destinos usam slugs provisórios: a estrutura final de URLs é uma das decisões da reunião.</p>
+          <h3>Um rascunho do mapa, com URLs reais</h3>
+          <p>Uma amostra do que vai para aprovação na semana 1. Os destinos usam endereços provisórios, porque a estrutura final de URLs é uma das decisões da reunião.</p>
         </div>
-        <div class="tabs" role="group" aria-label="Filtrar o mapa">
-          <button class="tab" aria-pressed="true" data-f="all">Todas</button>
-          <button class="tab" aria-pressed="false" data-f="en">Páginas EN</button>
-          <button class="tab" aria-pressed="false" data-f="pt">Páginas PT</button>
-          <button class="tab" aria-pressed="false" data-f="edu">Serviços</button>
-          <button class="tab" aria-pressed="false" data-f="blog">Blog</button>
+        <div class="filters" role="group" aria-label="Filtrar o mapa">
+          <button aria-pressed="true" data-f="all">Todas</button>
+          <button aria-pressed="false" data-f="en">Páginas em inglês</button>
+          <button aria-pressed="false" data-f="pt">Em português</button>
+          <button aria-pressed="false" data-f="edu">Serviços</button>
+          <button aria-pressed="false" data-f="blog">Blog</button>
         </div>
       </div>
-      <div class="tbl" id="map">
-        <div class="tr th"><span>URL atual</span><span>Status</span><span>Destino</span><span>Por quê</span></div>
+      <div class="tbl rv" id="map">
+        <div class="tr th"><span>URL atual</span><span>Resposta</span><span>Destino</span><span>Motivo</span></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ESCOPO -->
-<section id="escopo" class="paper page">
+<section class="s ink pg" id="escopo">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Escopo</span>
-      <h2>O que está incluído, na ordem do e-mail de vocês</h2>
-      <p>Tudo o que vocês listaram está aqui. O que adicionamos por conta própria aparece marcado como "incluso a mais", sem custo extra.</p>
+    <div class="sh rv">
+      <p class="k">Escopo</p>
+      <h2>Tudo o que o e-mail pediu, e um pouco mais</h2>
+      <p>Seguimos os quatro blocos do briefing de vocês. Os itens com traço branco são acréscimos nossos, sem custo extra.</p>
     </div>
     <div class="scope">
-      <div class="sc reveal">
-        <div class="sc-h"><span>1</span><h3>Implementação</h3></div>
-        <ul class="chk">
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>11 páginas em inglês a partir do HTML/CSS aprovado: Home, Staff Augmentation, Software Outsourcing, Furiosa, Our Story, Leadership, Customer Stories, Partners, Data Security, Careers e Contact</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Next.js gerado no build, em repositório GitHub da Ubiminds, hospedado na Vercel</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Versão mobile revisada página a página, em aparelhos reais</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Links do site novo para o blog no WordPress</li>
-          <li class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>Privacy Policy e Cookie Policy, que o banner de consentimento exige, com o texto fornecido por vocês</li>
-          <li class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>Página 404 com o layout do site e um link de preview para cada alteração</li>
+      <div class="grp rv">
+        <h3>Implementação</h3>
+        <ul>
+          <li>As 11 páginas em inglês, a partir do HTML/CSS aprovado: Home, Staff Augmentation, Software Outsourcing, Furiosa, Our Story, Leadership, Customer Stories, Partners, Data Security, Careers e Contact</li>
+          <li>Next.js gerado no build, em repositório GitHub da Ubiminds, hospedado na Vercel</li>
+          <li>Versão mobile revisada página por página, em aparelhos reais</li>
+          <li>Links do site novo para o blog no WordPress</li>
+          <li class="new">Privacy Policy e Cookie Policy, que o banner de consentimento exige</li>
+          <li class="new">Link de preview para cada alteração, para aprovar antes de publicar</li>
         </ul>
       </div>
-      <div class="sc reveal">
-        <div class="sc-h"><span>2</span><h3>Migração de SEO</h3></div>
-        <ul class="chk">
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Mapeamento de todas as URLs, inclusive as páginas em português que vão sair, com redirects 301</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Title, meta description e canonical por página, sitemap.xml e robots.txt</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Dados estruturados em JSON-LD, com os erros atuais corrigidos</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Core Web Vitals no verde: LCP até 2,5 s, INP até 200 ms e CLS até 0,1</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Acompanhamento no Search Console por 30 dias depois do go-live</li>
-          <li class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>Proxy do blog no mesmo domínio, para os 615 posts não precisarem de redirect</li>
+      <div class="grp rv">
+        <h3>Migração de SEO</h3>
+        <ul>
+          <li>Mapeamento de todas as URLs, inclusive as páginas em português que vão sair, com redirects 301</li>
+          <li>Title, meta description e canonical por página, sitemap.xml e robots.txt</li>
+          <li>Dados estruturados, com os erros atuais corrigidos</li>
+          <li>Core Web Vitals no verde: LCP até 2,5 s, INP até 200 ms e CLS até 0,1</li>
+          <li>Acompanhamento no Search Console por 30 dias depois do go-live</li>
+          <li class="new">Blog servido no mesmo domínio, sem redirect de nenhum post</li>
         </ul>
       </div>
-      <div class="sc reveal">
-        <div class="sc-h"><span>3</span><h3>Tracking e integrações</h3></div>
-        <ul class="chk">
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>GA4, Google Ads, LinkedIn Insight Tag e Microsoft Clarity pelo GTM, disparando só depois do consentimento</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Banner de consentimento leve, integrado ao Consent Mode v2 do Google</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>reCAPTCHA v3 carregado apenas onde há formulário, para não pesar nas outras páginas</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Formulário integrado ao ActiveCampaign, com a página de serviço de origem preenchida automaticamente</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Vagas do Lever na página Careers</li>
-          <li class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>UTMs e gclid gravados no contato e evento de conversão para Google Ads e LinkedIn</li>
-          <li class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>Vagas do Lever renderizadas em HTML pela API pública, atualizadas a cada hora, em vez de um widget que o Google não lê</li>
+      <div class="grp rv">
+        <h3>Tracking e integrações</h3>
+        <ul>
+          <li>GA4, Google Ads, LinkedIn Insight Tag e Microsoft Clarity pelo GTM atual, disparando só depois do consentimento</li>
+          <li>Banner de consentimento leve, integrado ao Consent Mode v2</li>
+          <li>reCAPTCHA carregado só onde há formulário, para não pesar nas outras páginas</li>
+          <li>Formulário integrado ao ActiveCampaign, com a página de serviço de origem preenchida automaticamente</li>
+          <li>Vagas do Lever na página Careers</li>
+          <li class="new">UTMs e gclid gravados em cada contato, para saber qual campanha gerou o lead</li>
+          <li class="new">Vagas do Lever escritas na página em HTML, que o Google lê, em vez de um widget</li>
         </ul>
       </div>
-      <div class="sc reveal">
-        <div class="sc-h"><span>4</span><h3>Go-live</h3></div>
-        <ul class="chk">
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Ambiente de staging para aprovação</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Migração do DNS, com o Cloudflare atual ajustado para a Vercel</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>SSL emitido e renovado automaticamente pela Vercel</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Checagem de todos os redirects depois da publicação</li>
-          <li class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>Plano de volta documentado, com a VM atual intacta por 30 dias</li>
-          <li class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>Documentação curta no repositório: como publicar, onde mexer em textos e como reverter um deploy</li>
+      <div class="grp rv">
+        <h3>Go-live</h3>
+        <ul>
+          <li>Ambiente de staging para aprovação</li>
+          <li>Migração do DNS, com o Cloudflare atual ajustado para a Vercel</li>
+          <li>SSL emitido e renovado automaticamente</li>
+          <li>Checagem de todos os redirects depois da publicação</li>
+          <li class="new">Plano de volta documentado, com a VM atual intacta por 30 dias</li>
         </ul>
       </div>
     </div>
-    <div class="out reveal">
-      <h4>Fora do escopo</h4>
-      <p>Design e redação, como combinado. Migração ou redesenho do blog. Gerenciador de conteúdo (CMS) para edição pelo time: os textos ficam em arquivos simples no repositório, e se fizer sentido depois, orçamos um CMS à parte. Licenças de terceiros, como as fontes da marca para uso na web e o plano da Vercel.</p>
+
+    <div class="panel rv">
+      <div>
+        <h3>Um painel para o time editar o site</h3>
+      </div>
+      <div>
+        <p>O site novo vem com um painel próprio, com login para o time de marketing. Ao salvar, a página é regenerada em segundos e continua estática, sem perder velocidade. Os dados ficam no Supabase, na conta da Ubiminds.</p>
+        <ul>
+          <li>Textos e imagens das páginas</li>
+          <li>Customer Stories</li>
+          <li>Leadership e Partners</li>
+          <li>Title e description de cada página</li>
+        </ul>
+      </div>
     </div>
+
+    <p class="outside rv"><b>Fora do escopo:</b> design e redação, como combinado; migração ou redesenho do blog; licenças de terceiros, como as fontes da marca para uso na web.</p>
   </div>
 </section>
 
 <!-- CASES -->
-<section id="cases" class="page">
+<section class="s light pg" id="cases">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Cases</span>
+    <div class="sh rv">
+      <p class="k">Cases</p>
       <h2>Sites que implantamos e mantemos</h2>
-      <p>Empresas B2B com venda consultiva, como a Ubiminds. Os três primeiros rodam em Next.js na Vercel, a mesma stack proposta aqui. A nota é do Lighthouse mobile, medida em 21/10/2026. Contamos os bastidores de cada um na reunião.</p>
+      <p>Os cinco primeiros rodam na Vercel, como o site novo da Ubiminds. A nota em verde é do Lighthouse mobile, medida em 21/10/2026. Contamos os bastidores de cada um na reunião.</p>
     </div>
     <div class="cases">
-      <a class="case wide reveal" href="https://www.nexoleum.com.br/" target="_blank" rel="noopener">
-        <div class="shot"><img src="/proposta/ubiminds/assets/case-nexoleum.jpg" alt="Home do site da Nexoleum" width="960" height="600" loading="lazy" /></div>
-        <div class="tags"><span class="nx">Next.js · Vercel</span><span class="lh">Lighthouse 95</span><span>Indústria química</span></div>
-        <h4>Nexoleum</h4>
-        <p>Site institucional da fabricante de resinas do Grupo OCQ.</p>
+      <a class="case rv" href="https://arqui.studio/" target="_blank" rel="noopener">
+        <div class="shot"><img src="/proposta/ubiminds/assets/case-arquistudio.jpg" alt="Home do ArquiStudio" width="960" height="600" loading="lazy" /></div>
+        <div class="meta"><h4>ArquiStudio</h4><span class="lh">100</span></div>
+        <p>Plataforma SaaS de gestão para escritórios de arquitetura, com painel próprio.</p>
+        <p class="st">Vercel · SaaS</p>
       </a>
-      <a class="case wide reveal" href="https://www.oficialepoxi.com.br/" target="_blank" rel="noopener">
-        <div class="shot"><img src="/proposta/ubiminds/assets/case-oficialepoxi.jpg" alt="Home do site da Oficial Epóxi" width="960" height="600" loading="lazy" /></div>
-        <div class="tags"><span class="nx">Next.js · Vercel</span><span class="lh">Lighthouse 96</span><span>Pisos industriais</span></div>
-        <h4>Oficial Epóxi</h4>
-        <p>Site da fabricante de pisos industriais, construído para gerar orçamentos.</p>
+      <a class="case rv" href="https://www.helpwin.com.br/" target="_blank" rel="noopener">
+        <div class="shot"><img src="/proposta/ubiminds/assets/case-helpwin.jpg" alt="Home da HelpWin" width="960" height="600" loading="lazy" /></div>
+        <div class="meta"><h4>HelpWin</h4><span class="lh">100</span></div>
+        <p>Manutenção de esquadrias de alto padrão, com foco em pedidos de orçamento.</p>
+        <p class="st">Vercel · serviços</p>
       </a>
-      <a class="case wide reveal" href="https://albacor.com.br/" target="_blank" rel="noopener">
-        <div class="shot"><img src="/proposta/ubiminds/assets/case-albacor.jpg" alt="Home do site da Albacor Química" width="960" height="600" loading="lazy" /></div>
-        <div class="tags"><span class="nx">Next.js · Vercel</span><span class="lh">Lighthouse 97</span></div>
-        <h4>Albacor Química</h4>
-        <p>Site de conversão para revestimentos industriais.</p>
+      <a class="case rv" href="https://albacor.com.br/" target="_blank" rel="noopener">
+        <div class="shot"><img src="/proposta/ubiminds/assets/case-albacor.jpg" alt="Home da Albacor Química" width="960" height="600" loading="lazy" /></div>
+        <div class="meta"><h4>Albacor Química</h4><span class="lh">97</span></div>
+        <p>Revestimentos industriais. Site de conversão para orçamentos.</p>
+        <p class="st">Next.js · Vercel</p>
       </a>
-      <a class="case reveal" href="https://grupoocq.com.br/" target="_blank" rel="noopener">
-        <div class="shot"><img src="/proposta/ubiminds/assets/case-grupoocq.jpg" alt="Home do site do Grupo OCQ" width="960" height="600" loading="lazy" /></div>
-        <div class="tags"><span>Grupo químico · LatAm</span></div>
-        <h4>Grupo OCQ</h4>
-        <p>Site do grupo, com várias empresas sob a mesma marca.</p>
+      <a class="case rv" href="https://www.oficialepoxi.com.br/" target="_blank" rel="noopener">
+        <div class="shot"><img src="/proposta/ubiminds/assets/case-oficialepoxi.jpg" alt="Home da Oficial Epóxi" width="960" height="600" loading="lazy" /></div>
+        <div class="meta"><h4>Oficial Epóxi</h4><span class="lh">96</span></div>
+        <p>Fabricante de pisos industriais.</p>
+        <p class="st">Next.js · Vercel</p>
       </a>
-      <a class="case reveal" href="https://www.medrec.com.br/" target="_blank" rel="noopener">
-        <div class="shot"><img src="/proposta/ubiminds/assets/case-medrec.jpg" alt="Home do site da MedRec" width="960" height="600" loading="lazy" /></div>
-        <div class="tags"><span>Saúde · audiovisual</span></div>
-        <h4>MedRec</h4>
-        <p>Site com blog e páginas por especialidade para busca orgânica.</p>
+      <a class="case rv" href="https://www.nexoleum.com.br/" target="_blank" rel="noopener">
+        <div class="shot"><img src="/proposta/ubiminds/assets/case-nexoleum.jpg" alt="Home da Nexoleum" width="960" height="600" loading="lazy" /></div>
+        <div class="meta"><h4>Nexoleum</h4><span class="lh">95</span></div>
+        <p>Fabricante de resinas do Grupo OCQ. Site institucional.</p>
+        <p class="st">Next.js · Vercel</p>
       </a>
-      <a class="case reveal" href="https://hayadobrasil.com.br/" target="_blank" rel="noopener">
-        <div class="shot"><img src="/proposta/ubiminds/assets/case-haya.jpg" alt="Home do site da Haya do Brasil" width="960" height="600" loading="lazy" /></div>
-        <div class="tags"><span>Comércio exterior</span></div>
-        <h4>Haya do Brasil</h4>
-        <p>Site institucional de importação e soluções em comércio exterior.</p>
+      <a class="case rv" href="https://rentalmaster.com.br/" target="_blank" rel="noopener">
+        <div class="shot"><img src="/proposta/ubiminds/assets/case-rentalmaster.jpg" alt="Home da Rental Master" width="960" height="539" loading="lazy" /></div>
+        <div class="meta"><h4>Rental Master</h4></div>
+        <p>Locação de plataformas elevatórias, com unidades em seis cidades.</p>
+        <p class="st">Site institucional · geração de leads</p>
       </a>
-      <a class="case reveal" href="https://www.inovapoxi.com.br/" target="_blank" rel="noopener">
-        <div class="shot"><img src="/proposta/ubiminds/assets/case-inovapoxi.jpg" alt="Home do site da Inovapoxi" width="960" height="600" loading="lazy" /></div>
-        <div class="tags"><span>Revestimentos</span></div>
-        <h4>Inovapoxi</h4>
-        <p>Site de revestimentos industriais com foco em pedidos de orçamento.</p>
+      <a class="case rv" href="https://www.medrec.com.br/" target="_blank" rel="noopener">
+        <div class="shot"><img src="/proposta/ubiminds/assets/case-medrec.jpg" alt="Home da MedRec" width="960" height="600" loading="lazy" /></div>
+        <div class="meta"><h4>MedRec</h4></div>
+        <p>Conteúdo audiovisual para saúde, com blog e páginas por especialidade.</p>
+        <p class="st">Site institucional · SEO</p>
+      </a>
+      <a class="case rv" href="https://hayadobrasil.com.br/" target="_blank" rel="noopener">
+        <div class="shot"><img src="/proposta/ubiminds/assets/case-haya.jpg" alt="Home da Haya do Brasil" width="960" height="600" loading="lazy" /></div>
+        <div class="meta"><h4>Haya do Brasil</h4></div>
+        <p>Importação e soluções em comércio exterior.</p>
+        <p class="st">Site institucional</p>
+      </a>
+      <a class="case rv" href="https://www.inovapoxi.com.br/" target="_blank" rel="noopener">
+        <div class="shot"><img src="/proposta/ubiminds/assets/case-inovapoxi.jpg" alt="Home da Inovapoxi" width="960" height="600" loading="lazy" /></div>
+        <div class="meta"><h4>Inovapoxi</h4></div>
+        <p>Revestimentos industriais, com foco em pedidos de orçamento.</p>
+        <p class="st">Site institucional</p>
       </a>
     </div>
   </div>
 </section>
 
 <!-- CRONOGRAMA -->
-<section id="cronograma" class="paper page">
+<section class="s ink pg" id="cronograma">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Processo e prazo</span>
+    <div class="sh rv">
+      <p class="k">Processo e prazo</p>
       <h2>Quatro semanas até o site no ar</h2>
       <p>Uma entrega visível por semana, sempre em um link de preview. O CEO e o CTO aprovam o staging antes da virada, não depois.</p>
     </div>
-    <div class="tl">
-      <div class="wk reveal">
-        <div class="dot">S1</div>
-        <small>Semana 1</small>
+    <div class="weeks">
+      <div class="wk rv">
+        <div class="w">S1</div>
         <h4>Inventário e base</h4>
-        <ul><li>Kickoff e acessos</li><li>Crawl e export do Search Console</li><li>Mapa de redirects v1</li><li>Repositório, Vercel e staging</li></ul>
-        <div class="gate">vocês aprovam: mapa de redirects</div>
+        <ul><li>Kickoff e acessos</li><li>Crawl e export do Search Console</li><li>Mapa de redirects</li><li>Repositório, Vercel e Supabase</li></ul>
+        <p class="ok">Vocês aprovam o mapa</p>
       </div>
-      <div class="wk reveal">
-        <div class="dot">S2</div>
-        <small>Semana 2</small>
+      <div class="wk rv">
+        <div class="w">S2</div>
         <h4>Páginas</h4>
-        <ul><li>11 páginas mais as duas páginas legais</li><li>Mobile revisado</li><li>Metas, canonical e schema</li></ul>
-        <div class="gate">vocês veem: preview das páginas</div>
+        <ul><li>11 páginas e as duas páginas legais</li><li>Mobile revisado</li><li>Metas, canonical e schema</li></ul>
+        <p class="ok">Vocês veem o preview</p>
       </div>
-      <div class="wk reveal">
-        <div class="dot">S3</div>
-        <small>Semana 3</small>
-        <h4>Integrações</h4>
-        <ul><li>GTM, tags e consentimento</li><li>Formulário → ActiveCampaign</li><li>Vagas do Lever</li><li>Proxy do blog testado</li></ul>
-        <div class="gate">vocês aprovam: staging completo</div>
+      <div class="wk rv">
+        <div class="w">S3</div>
+        <h4>Painel e integrações</h4>
+        <ul><li>Painel de edição</li><li>GTM, tags e consentimento</li><li>ActiveCampaign e Lever</li><li>Blog no mesmo domínio</li></ul>
+        <p class="ok">Vocês aprovam o staging</p>
       </div>
-      <div class="wk reveal">
-        <div class="dot">S4</div>
-        <small>Semana 4</small>
-        <h4>QA e go-live</h4>
-        <ul><li>Teste de 100% dos redirects</li><li>Ajustes da aprovação</li><li>Virada do DNS e SSL</li><li>Crawl de produção</li></ul>
-        <div class="gate">site no ar</div>
+      <div class="wk rv">
+        <div class="w">S4</div>
+        <h4>Testes e go-live</h4>
+        <ul><li>Teste de 100% dos redirects</li><li>Ajustes da aprovação</li><li>Treinamento do painel</li><li>Virada do DNS</li></ul>
+        <p class="ok">Site no ar</p>
       </div>
-      <div class="wk after reveal">
-        <div class="dot">+30</div>
-        <small>30 dias seguintes</small>
+      <div class="wk after rv">
+        <div class="w">+30</div>
         <h4>Acompanhamento</h4>
-        <ul><li>Search Console semanal</li><li>Correções de redirect inclusas</li><li>Core Web Vitals de campo</li><li>Relatório de fechamento</li></ul>
-        <div class="gate">incluso no projeto</div>
+        <ul><li>Search Console semanal</li><li>Correções de redirect</li><li>Core Web Vitals de campo</li><li>Relatório final</li></ul>
+        <p class="ok">Incluso no projeto</p>
       </div>
     </div>
-    <p class="tl-note reveal">O prazo começa quando recebermos o HTML/CSS final e os acessos listados no fim da proposta. Se uma aprovação demorar, o go-live anda o mesmo número de dias.</p>
+    <p class="note rv">O prazo começa quando recebermos o HTML/CSS final e os acessos listados no fim desta página. Se uma aprovação atrasar, o go-live anda o mesmo número de dias.</p>
   </div>
 </section>
 
 <!-- INVESTIMENTO -->
-<section id="investimento" class="page">
+<section class="s light pg" id="investimento">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Investimento</span>
-      <h2>Um valor fechado para o projeto</h2>
-      <p>Sem cobrança por hora e sem surpresa no fim. O pagamento acompanha as entregas.</p>
+    <div class="sh rv">
+      <p class="k">Investimento</p>
+      <h2>Um valor fechado, em duas parcelas</h2>
+      <p>Sem cobrança por hora e sem surpresa no fim. A segunda parcela só vence com o site no ar.</p>
     </div>
     <div class="inv">
-      <div class="card main reveal">
-        <div class="lbl"><span>Implantação do novo site</span><span class="badge">Valor fechado</span></div>
-        <h3>Escopo completo desta proposta</h3>
-        <div class="price"><span class="cur">R$</span><span class="val">12.900</span></div>
-        <p>Inclui implementação, migração de SEO, tracking, integrações, go-live e os 30 dias de acompanhamento.</p>
-        <div class="milestones">
-          <div class="ms"><span class="p">40%</span><span>Na aprovação da proposta</span><b>R$ 5.160</b></div>
-          <div class="ms"><span class="p">30%</span><span>Na entrega do staging completo</span><b>R$ 3.870</b></div>
-          <div class="ms"><span class="p">30%</span><span>No go-live</span><b>R$ 3.870</b></div>
+      <div class="rv">
+        <div class="big"><small>R$</small>8.500</div>
+        <p class="lead">Todo o escopo desta proposta: implementação, painel de edição, migração de SEO, tracking, integrações, go-live e os 30 dias de acompanhamento.</p>
+        <div class="parc">
+          <div><span>1ª parcela, na aprovação</span><b>R$ 4.250</b></div>
+          <div><span>2ª parcela, no go-live</span><b>R$ 4.250</b></div>
         </div>
-        <p class="pay-note">Pagamento por PIX ou transferência, com nota fiscal. Se preferirem cartão, parcelamos com as taxas da operadora.</p>
+        <p class="pay">PIX ou transferência, com nota fiscal.</p>
       </div>
-      <div class="card reveal">
-        <div class="lbl"><span>Custos de terceiros</span><span class="badge soft">Pagos direto por vocês</span></div>
-        <h3>O que roda na conta da Ubiminds</h3>
-        <ul class="third">
-          <li><b>Vercel Pro</b><span class="m">a partir de US$ 20/mês</span><small>Uso comercial exige o plano Pro. O valor é por membro do time com acesso.</small></li>
-          <li><b>GitHub</b><span class="m">US$ 0</span><small>Repositório privado na organização de vocês.</small></li>
-          <li><b>Fontes da marca</b><span class="m">licença atual</span><small>Se a licença atual não cobrir uso na web, ajudamos a regularizar.</small></li>
-          <li><b>WordPress na AWS</b><span class="m">sem mudança</span><small>A VM continua servindo o blog, agora por trás da Vercel.</small></li>
-        </ul>
+      <div class="infra rv">
+        <h3>Custos de terceiros</h3>
+        <p>Ficam na conta da Ubiminds e são pagos direto aos fornecedores.</p>
+        <div class="cost">
+          <div><div class="top"><b>Supabase Pro</b><span class="v">US$ 25/mês</span></div><p><span class="req">Obrigatório.</span> Guarda o conteúdo do painel de edição e os envios dos formulários, com backup diário.</p></div>
+          <div><div class="top"><b>Vercel Pro</b><span class="v">US$ 20/mês</span></div><p><span class="req">Obrigatório.</span> Hospedagem do site. O plano gratuito não permite uso comercial. O valor é por pessoa com acesso.</p></div>
+          <div><div class="top"><b>GitHub</b><span class="v">US$ 0</span></div><p>Repositório privado na organização de vocês.</p></div>
+          <div><div class="top"><b>WordPress na AWS</b><span class="v">sem mudança</span></div><p>A VM atual continua servindo o blog.</p></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- SUPORTE -->
-<section id="suporte" class="dark page">
+<section class="s ink pg" id="suporte">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Suporte depois do lançamento · cotado à parte</span>
+    <div class="sh rv">
+      <p class="k">Suporte depois do lançamento</p>
       <h2>Uma base mensal e um catálogo com preço fixo</h2>
-      <p>A mensalidade cobre manutenção e ajustes pequenos. Landing pages e mudanças maiores têm preço e prazo definidos antes, então vocês sabem o custo de cada pedido.</p>
+      <p>Com o painel, o dia a dia fica com o time de vocês. O suporte cobre manutenção e o que o painel não faz, com preço e prazo definidos antes de cada pedido.</p>
     </div>
     <div class="sup">
-      <div class="card reveal">
-        <div class="lbl"><span>Plano de manutenção</span><span class="badge">Mensal</span></div>
-        <h3>Base</h3>
-        <div class="price"><span class="cur">R$</span><span class="val">990</span><span class="per">por mês</span></div>
-        <ul class="chk" style="margin-top:20px">
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Até 4 ajustes de conteúdo por mês: texto, imagem, link ou meta</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Search Console, Core Web Vitals e disponibilidade monitorados</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Atualizações de segurança do Next.js e das dependências</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Resposta em até 1 dia útil, com relatório mensal</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Sem fidelidade. Cancelamento com 30 dias de aviso</li>
+      <div class="base rv">
+        <div class="big"><small>R$</small>990</div>
+        <p class="per">por mês, sem fidelidade</p>
+        <ul>
+          <li>Até 4 ajustes por mês feitos por nós</li>
+          <li>Search Console, Core Web Vitals e disponibilidade monitorados</li>
+          <li>Atualizações de segurança do Next.js e das dependências</li>
+          <li>Resposta em até 1 dia útil</li>
+          <li>Relatório mensal</li>
         </ul>
       </div>
-      <div class="menu reveal">
-        <div class="menu-h"><h3>Catálogo de entregas</h3><span>preço fixo · prazo em dias úteis</span></div>
-        <div class="mi"><b>Landing page nova</b><span class="pr">R$ 1.490</span><p>A partir de layout aprovado, com formulário no ActiveCampaign, tags, evento de conversão e SEO.</p><span class="dl">5 dias</span></div>
-        <div class="mi"><b>Página nova no site</b><span class="pr">R$ 990</span><p>Página institucional no padrão do site, com metas, schema e entrada no sitemap.</p><span class="dl">4 dias</span></div>
-        <div class="mi"><b>Seção ou componente novo</b><span class="pr">R$ 390</span><p>Um bloco novo, ou uma mudança de layout em página existente.</p><span class="dl">2 dias</span></div>
-        <div class="mi"><b>Tag ou integração</b><span class="pr">R$ 290</span><p>Novo pixel, evento de conversão ou campo no CRM.</p><span class="dl">2 dias</span></div>
-        <div class="mi"><b>Ajuste de conteúdo extra</b><span class="pr">R$ 120</span><p>Além dos 4 incluídos no mês.</p><span class="dl">1 dia</span></div>
+      <div class="rv">
+        <div class="menu-h"><h3>Catálogo de entregas</h3><span>prazo em dias úteis</span></div>
+        <div class="menu">
+          <div class="mi"><b>Landing page nova</b><span class="p">R$ 1.490</span><span class="d">5 dias</span><p>A partir de layout aprovado, com formulário no ActiveCampaign, tags, evento de conversão e SEO.</p></div>
+          <div class="mi"><b>Página nova no site</b><span class="p">R$ 990</span><span class="d">4 dias</span><p>No padrão do site, editável pelo painel, com metas, schema e entrada no sitemap.</p></div>
+          <div class="mi"><b>Seção ou componente novo</b><span class="p">R$ 390</span><span class="d">2 dias</span><p>Um bloco novo ou uma mudança de layout em página existente.</p></div>
+          <div class="mi"><b>Tag ou integração</b><span class="p">R$ 290</span><span class="d">2 dias</span><p>Novo pixel, evento de conversão ou campo no CRM.</p></div>
+          <div class="mi"><b>Ajuste extra</b><span class="p">R$ 120</span><span class="d">1 dia</span><p>Além dos 4 incluídos no mês.</p></div>
+        </div>
       </div>
     </div>
     <div class="rules">
-      <div class="rule reveal"><h4>Sem limite de pedidos</h4><p>Vocês pedem quantas entregas quiserem. Cada uma tem o preço do catálogo, e o que estiver fora dele recebe orçamento em até 1 dia útil.</p></div>
-      <div class="rule reveal"><h4>Nada começa sem o ok</h4><p>Todo pedido recebe preço e prazo por escrito antes de começar. Não existe banco de horas para conferir no fim do mês.</p></div>
-      <div class="rule reveal"><h4>Cobrança mensal única</h4><p>A base e as entregas do mês saem em uma nota só, com a lista do que foi feito.</p></div>
+      <div class="rv"><h4>Sem limite de pedidos</h4><p>Vocês pedem quantas entregas quiserem. O que estiver fora do catálogo recebe orçamento em até 1 dia útil.</p></div>
+      <div class="rv"><h4>Nada começa sem o ok</h4><p>Cada pedido tem preço e prazo por escrito antes de começar. Não existe banco de horas para conferir no fim do mês.</p></div>
+      <div class="rv"><h4>Uma nota por mês</h4><p>A base e as entregas do mês saem juntas, com a lista do que foi feito.</p></div>
     </div>
   </div>
 </section>
 
 <!-- REUNIAO -->
-<section id="reuniao" class="paper page">
+<section class="s light pg" id="reuniao">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Próximo passo</span>
+    <div class="sh rv">
+      <p class="k">Próximo passo</p>
       <h2>Uma pauta para os 45 minutos</h2>
       <p>Para a conversa render, sugerimos este roteiro. As decisões ao lado são as que mais mudam o mapa de redirects.</p>
     </div>
     <div class="meet">
-      <div class="reveal">
+      <div class="rv">
         <h3>Pauta sugerida</h3>
-        <div class="agenda">
-          <div class="ag"><span class="t">0–10 min</span><div><b>O projeto, por vocês</b><span>Layout aprovado, metas do site e o que não funcionou no atual.</span></div></div>
-          <div class="ag"><span class="t">10–25 min</span><div><b>Migração de SEO</b><span>Método, o proxy do blog e as decisões ao lado.</span></div></div>
-          <div class="ag"><span class="t">25–35 min</span><div><b>Processo e prazo</b><span>Semanas, aprovações e quem aprova cada etapa.</span></div></div>
-          <div class="ag"><span class="t">35–45 min</span><div><b>Suporte e próximos passos</b><span>Catálogo de entregas e data de início.</span></div></div>
-        </div>
+        <div class="ag"><span class="t">0 a 10 min</span><div><b>O projeto, por vocês</b><span>Layout aprovado, metas do site e o que não funciona no atual.</span></div></div>
+        <div class="ag"><span class="t">10 a 25 min</span><div><b>Migração de SEO</b><span>Método, blog no mesmo domínio e as decisões ao lado.</span></div></div>
+        <div class="ag"><span class="t">25 a 35 min</span><div><b>Processo, prazo e painel</b><span>Semanas, aprovações e o que o time vai editar.</span></div></div>
+        <div class="ag"><span class="t">35 a 45 min</span><div><b>Suporte e próximos passos</b><span>Catálogo de entregas e data de início.</span></div></div>
       </div>
-      <div class="reveal">
-        <h3>Decisões que levamos para a mesa</h3>
+      <div class="rv">
+        <h3>Decisões para a mesa</h3>
         <ol class="dec">
-          <li><span><b>Blog:</b> proxy no mesmo domínio, como recomendamos, ou subdomínio.</span></li>
-          <li><span><b>URLs novas:</b> manter o prefixo <code>/en-us/</code>, o que reduz redirects, ou usar a raiz limpa.</span></li>
-          <li><span><b>Conteúdo em português:</b> os 107 posts e as 11 categorias em PT ficam no WordPress ou recebem 301.</span></li>
+          <li><span><b>Blog:</b> mesmo domínio, como recomendamos, ou subdomínio.</span></li>
+          <li><span><b>URLs novas:</b> manter o prefixo <span class="url">/en-us/</span>, o que reduz redirects, ou usar a raiz limpa.</span></li>
+          <li><span><b>Conteúdo em português:</b> os 107 posts e as 11 categorias ficam no WordPress ou recebem 301.</span></li>
           <li><span><b>edu.ubiminds.com:</b> quais landing pages viram redirect para as páginas de serviço novas.</span></li>
-          <li><span><b>Formulário:</b> envio direto pela API do ActiveCampaign, substituindo o Contact Form 7.</span></li>
+          <li><span><b>Formulário:</b> envio direto para o ActiveCampaign, substituindo o Contact Form 7.</span></li>
         </ol>
       </div>
     </div>
-    <div class="need reveal">
-      <div><b>HTML/CSS final</b><span>Das 11 páginas, com imagens</span></div>
-      <div><b>Search Console e GA4</b><span>Acesso de leitura</span></div>
-      <div><b>GTM e Google Ads</b><span>Acesso de edição</span></div>
-      <div><b>Cloudflare / DNS</b><span>Para a virada, no dia</span></div>
-      <div><b>WordPress</b><span>Admin, para o proxy do blog</span></div>
-      <div><b>ActiveCampaign</b><span>Chave de API e campos</span></div>
-      <div><b>Lever</b><span>Nome da conta pública</span></div>
-      <div><b>GitHub e Vercel</b><span>Convite para a organização</span></div>
+    <div class="need rv">
+      <h3>O que precisamos para começar</h3>
+      <div class="need-g">
+        <div><b>HTML/CSS final</b>Das 11 páginas, com imagens</div>
+        <div><b>Search Console e GA4</b>Acesso de leitura</div>
+        <div><b>GTM e Google Ads</b>Acesso de edição</div>
+        <div><b>Cloudflare</b>Para a virada do DNS</div>
+        <div><b>WordPress</b>Admin, para o blog no mesmo domínio</div>
+        <div><b>ActiveCampaign</b>Chave de API e campos</div>
+        <div><b>Lever</b>Nome da conta pública</div>
+        <div><b>GitHub, Vercel e Supabase</b>Convite para a organização</div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta">
-  <div class="wrap cta-grid">
-    <div class="reveal">
+  <div class="wrap cta-g">
+    <div class="rv">
       <h2>Vamos marcar os 45 minutos?</h2>
-      <p>Temos horários nesta semana e na próxima. É só responder com duas opções que funcionem para o Gustavo, o CEO e o CTO, e mandamos o convite.</p>
-      <div class="valid"><i></i>Proposta válida por 30 dias, até 20/11/2026</div>
-      <div class="cta-actions">
+      <p>Temos horários nesta semana e na próxima. Respondam com duas opções que funcionem para vocês três e mandamos o convite.</p>
+      <p class="valid">Proposta válida até 20 de novembro de 2026.</p>
+      <div class="cta-a">
         <a class="btn btn-ink" data-mail href="mailto:contato@matilab.com.br">Responder por e-mail</a>
-        <a class="btn btn-line" data-wa href="https://wa.me/5511992644010">Falar no WhatsApp</a>
+        <a class="btn btn-ghost" data-wa href="https://wa.me/5511992644010">Falar no WhatsApp</a>
       </div>
     </div>
-    <div class="sign reveal">
-      <img src="/proposta/ubiminds/assets/matilab-logo-white.svg" alt="Matilab" />
-      <div class="who">Matheus Moura</div>
-      <div class="role">Fundador · Matilab</div>
-      <a data-mail href="mailto:contato@matilab.com.br"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>contato@matilab.com.br</a>
-      <a data-wa href="https://wa.me/5511992644010"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>+55 11 99264-4010</a>
-      <a href="https://matilab.com.br"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>matilab.com.br</a>
-      <div class="l"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Alameda Vicente Pinzon, 173, 1º andar<br>Vila Olímpia, São Paulo/SP</div>
+    <div class="card-sig rv">
+      <img src="/proposta/ubiminds/assets/matilab-logo-dark.svg" alt="Matilab" />
+      <b>Matheus Moura</b>
+      <span>Fundador da Matilab</span>
+      <a data-mail href="mailto:contato@matilab.com.br">contato@matilab.com.br</a>
+      <a data-wa href="https://wa.me/5511992644010">+55 11 99264-4010</a>
+      <a href="https://matilab.com.br">matilab.com.br</a>
+      <span>Alameda Vicente Pinzon, 173 · Vila Olímpia, São Paulo</span>
     </div>
   </div>
 </section>
 
 </main>
 
-<footer>
+<footer class="ink">
   <div class="wrap foot">
-    <span>Mati Studio Digital ME · CNPJ 40.283.248/0001-21 · Vila Olímpia, São Paulo/SP</span>
+    <span>Mati Studio Digital ME · CNPJ 40.283.248/0001-21 · São Paulo/SP</span>
     <span>Proposta preparada para a Ubiminds</span>
   </div>
 </footer>
@@ -945,7 +923,7 @@
   document.querySelectorAll("[data-wa]").forEach(a => { a.href = wa; a.target = "_blank"; a.rel = "noopener"; });
   document.querySelectorAll("[data-mail]").forEach(a => { a.href = mail; });
 
-  /* Mapa de redirects (rascunho). Destinos com slugs provisorios. */
+  /* Mapa de redirects (rascunho, destinos provisorios) */
   const MAP = [
     ["en", "ubiminds.com/", "200", "/", "Hoje é 302 para /en-us/. A home passa a responder na raiz."],
     ["en", "/en-us/", "301", "/", "Antiga home em inglês."],
@@ -962,60 +940,35 @@
     ["pt", "/pt-br/para-talentos/", "301", "/careers", "Equivalente em inglês."],
     ["pt", "/pt-br/seguranca-de-dados/", "301", "/data-security", "Equivalente em inglês."],
     ["pt", "/pt-br/teste-labbo/", "410", "—", "Página de teste indexável. Sai do índice de vez."],
-    ["edu", "edu.ubiminds.com/talent-as-a-service", "301", "/staff-augmentation", "A definir: concentra a busca na página nova."],
-    ["edu", "edu.ubiminds.com/build", "301", "/software-outsourcing", "A definir: concentra a busca na página nova."],
-    ["edu", "edu.ubiminds.com/ai-strategy", "301", "/furiosa", "A definir: concentra a busca na página nova."],
-    ["blog", "/en-us/job-dissatisfaction/", "proxy", "WordPress · 200", "Post em inglês. Mesma URL, servido pelo WordPress."],
-    ["blog", "/en-us/applying-ai-to-education/", "proxy", "WordPress · 200", "Post em inglês. Mesma URL, servido pelo WordPress."],
-    ["blog", "/en-us/content-resources/", "proxy", "WordPress · 200", "Índice do blog, linkado pelo site novo."],
-    ["blog", "/pt-br/software-terceirizado/", "proxy", "WordPress · 200", "Post em PT: fica no WordPress ou vira 301. Decisão da reunião."]
+    ["edu", "edu.ubiminds.com/talent-as-a-service", "301", "/staff-augmentation", "A decidir na reunião."],
+    ["edu", "edu.ubiminds.com/build", "301", "/software-outsourcing", "A decidir na reunião."],
+    ["edu", "edu.ubiminds.com/ai-strategy", "301", "/furiosa", "A decidir na reunião."],
+    ["blog", "/en-us/job-dissatisfaction/", "proxy", "WordPress", "Post em inglês. Mesma URL, servido pelo WordPress."],
+    ["blog", "/en-us/applying-ai-to-education/", "proxy", "WordPress", "Post em inglês. Mesma URL, servido pelo WordPress."],
+    ["blog", "/en-us/content-resources/", "proxy", "WordPress", "Índice do blog, com link no site novo."],
+    ["blog", "/pt-br/software-terceirizado/", "proxy", "WordPress", "Post em português: fica ou vira 301. A decidir."]
   ];
-  const stClass = s => s === "proxy" ? "proxy" : "s" + s;
-
+  const label = s => s === "proxy" ? "mesma URL" : s;
   const tbl = document.getElementById("map");
   MAP.forEach(([g, from, st, to, why]) => {
     const r = document.createElement("div");
     r.className = "tr"; r.dataset.g = g;
-    r.innerHTML = `<span class="a"></span><span class="st ${stClass(st)}">${st}</span><span class="b"></span><span class="c"></span>`;
+    r.innerHTML = `<span class="a"></span><span class="code c${st} ${st === "proxy" ? "proxy" : ""}"></span><span class="b"></span><span class="c"></span>`;
     r.querySelector(".a").textContent = from;
+    r.querySelector(".code").textContent = label(st);
     r.querySelector(".b").textContent = to;
     r.querySelector(".c").textContent = why;
     tbl.appendChild(r);
   });
-  document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => {
-    document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-pressed", x === b));
+  document.querySelectorAll(".filters button").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll(".filters button").forEach(x => x.setAttribute("aria-pressed", x === b));
     const f = b.dataset.f;
     tbl.querySelectorAll(".tr:not(.th)").forEach(r => { r.hidden = f !== "all" && r.dataset.g !== f; });
   }));
 
-  /* Livro de redirects da capa */
-  const ledger = document.getElementById("ledger");
-  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const row = ([, from, st, to]) => {
-    const r = document.createElement("div");
-    r.className = "lrow";
-    r.innerHTML = `<span class="from"></span><span class="st ${stClass(st)}">${st}</span><span class="to"></span>`;
-    r.querySelector(".from").textContent = from;
-    r.querySelector(".to").textContent = to;
-    return r;
-  };
-  const order = [2, 9, 15, 18, 0, 11, 14, 16, 3, 19, 12, 5, 17, 10, 21, 6, 13, 1, 20, 4, 7, 8];
-  if (reduce) {
-    order.slice(0, 7).forEach(i => ledger.appendChild(row(MAP[i])));
-  } else {
-    let k = 0;
-    const tick = () => {
-      ledger.prepend(row(MAP[order[k % order.length]]));
-      while (ledger.children.length > 8) ledger.lastElementChild.remove();
-      k++;
-    };
-    for (let i = 0; i < 6; i++) tick();
-    setInterval(tick, 1700);
-  }
-
   const io = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 }) : null;
-  document.querySelectorAll(".reveal").forEach(el => io ? io.observe(el) : el.classList.add("in"));
-  window.addEventListener("beforeprint", () => document.querySelectorAll(".reveal").forEach(el => el.classList.add("in")));
+  document.querySelectorAll(".rv").forEach(el => io ? io.observe(el) : el.classList.add("in"));
+  window.addEventListener("beforeprint", () => document.querySelectorAll(".rv").forEach(el => el.classList.add("in")));
 </script>
 </body>
 </html>
