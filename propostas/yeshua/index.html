@@ -283,6 +283,54 @@
   .per-day span{font-size:14px;color:var(--t3)}
   @media(max-width:900px){.offer{grid-template-columns:1fr}.offer-left{min-height:0}.offer-left,.offer-right{padding:40px 26px}}
 
+  /* ---------- BUSCA NAS IAs ---------- */
+  #busca{background:var(--bg-2)}
+  .busca{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center}
+  .ai-logos{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+  .ai-logos span{display:inline-flex;align-items:center;gap:9px;padding:8px 13px 8px 9px;border-radius:999px;background:#fff;color:#16163a;font-size:14px;font-weight:600}
+  .ai-logos img{width:18px;height:18px}
+  .busca-pts{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:28px 32px}
+  .busca-pts i{font-size:24px;color:var(--sky);display:block;margin-bottom:12px}
+  .busca-pts h4{font-size:17px;margin-bottom:6px}
+  .busca-pts p{font-size:15px;color:var(--t2)}
+  .busca-pts img{width:22px;height:22px;display:block;margin-bottom:12px}
+  .chat-wrap{position:relative;padding-bottom:110px}
+  .chat{background:#fff;color:#1d1d2e;border-radius:24px;padding:26px;box-shadow:0 40px 90px rgba(2,2,14,.55)}
+  .chat-top{display:flex;align-items:center;justify-content:space-between;padding-bottom:18px;border-bottom:1px solid #eceef3;font-size:13px;color:#6b7186}
+  .chat-top .who{display:flex;gap:6px}
+  .chat-top .who img{width:22px;height:22px;padding:3px;border-radius:7px;background:#f3f4f8}
+  .q-bub{margin:22px 0 18px auto;max-width:82%;padding:14px 18px;border-radius:18px 18px 4px 18px;background:#eef1f7;font-size:15.5px}
+  .a-bub{display:grid;grid-template-columns:30px 1fr;gap:12px;font-size:15.5px;line-height:1.6;color:#2a2d3e}
+  .a-bub .spark{width:30px;height:30px;border-radius:50%;background:#f3f4f8;display:grid;place-items:center}
+  .a-bub .spark img{width:18px;height:18px}
+  .a-bub b{color:#101030}
+  .src{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:7px 12px 7px 8px;border-radius:999px;border:1px solid #e3e6ee;font-size:13px;color:#3b4157}
+  .src img{width:20px;height:20px;border-radius:5px}
+  .chat-note{max-width:52%;margin-top:16px;font-size:12.5px;color:#8a90a3}
+  .speed{position:absolute;right:-18px;bottom:0;width:230px;padding:20px;border-radius:20px;background:var(--surface-2);box-shadow:0 0 0 1px var(--line-2),0 30px 60px rgba(2,2,14,.5);display:grid;grid-template-columns:76px 1fr;gap:16px;align-items:center}
+  .gauge{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#0cce6b 0 92%,rgba(12,206,107,.18) 0);position:relative}
+  .gauge::before{content:"";position:absolute;inset:7px;border-radius:50%;background:var(--surface-2)}
+  .gauge b{position:relative;font-size:22px;color:#0cce6b;letter-spacing:-.03em}
+  .speed .lbl{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--t2);margin-bottom:4px}
+  .speed .lbl img{width:16px;height:16px}
+  .speed strong{font-size:15px;line-height:1.3;display:block}
+  @media(max-width:960px){.busca{grid-template-columns:1fr;gap:48px}.speed{right:8px}}
+  @media(max-width:520px){.busca-pts{grid-template-columns:1fr}.chat{padding:20px}.speed{width:210px}}
+
+  /* ---------- ADS (opcional) ---------- */
+  .addon{margin-top:24px;display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center;padding:30px 36px;border-radius:24px;border:1px dashed var(--line-2);background:rgba(255,255,255,.02)}
+  .addon .logos{display:flex;gap:10px}
+  .addon .logos span{width:52px;height:52px;border-radius:14px;background:#fff;display:grid;place-items:center}
+  .addon .logos img{width:28px;height:28px}
+  .addon small{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--sky)}
+  .addon h4{font-size:20px;margin:6px 0 4px}
+  .addon p{font-size:15px;color:var(--t2);max-width:56ch}
+  .addon .val{text-align:right;white-space:nowrap}
+  .addon .val b{font-size:34px;font-weight:800;letter-spacing:-.04em}
+  .addon .val b sup{font-size:.42em;font-weight:600;vertical-align:top;position:relative;top:.35em;margin-right:4px;color:var(--t2)}
+  .addon .val span{display:block;font-size:14px;color:var(--t3)}
+  @media(max-width:900px){.addon{grid-template-columns:1fr;gap:20px;padding:26px}.addon .val{text-align:left}}
+
   /* ---------- CONDIÇÕES ---------- */
   .terms{margin-top:48px;display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
   .term i{font-size:28px;color:var(--sky);display:block;margin-bottom:18px}
@@ -349,7 +397,7 @@
     <div class="reveal">
       <span class="eyebrow">Proposta Matilab para a Yeshua</span>
       <h1>Site novo e Instagram <em>ativo</em> para a Yeshua.</h1>
-      <p class="lead">O site refeito do zero e 3 postagens por semana, cuidados pela Matilab por R$ 897 por mês.</p>
+      <p class="lead">O site refeito do zero, pensado para ser encontrado nas buscas com IA, e 3 postagens por semana. Tudo cuidado pela Matilab por R$ 897 por mês.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#site">Ver o site novo <i class="ph ph-arrow-right"></i></a>
         <a class="btn btn-ghost" href="#investimento">Ver o investimento</a>
@@ -380,6 +428,47 @@
       <div><div class="n">12</div><div class="l">posts no Instagram</div></div>
       <div><div class="n">75</div><div class="l">seguidores hoje</div></div>
       <p><b>Pouca gente vê esse trabalho.</b> Sem postagem constante o perfil não cresce, e o site atual não mostra o principal diferencial de vocês: o isolamento acústico.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BUSCA NAS IAs -->
+<section id="busca">
+  <div class="wrap busca">
+    <div class="reveal">
+      <span class="eyebrow">Prioridade do site novo</span>
+      <h2 class="h2">Hoje o cliente pergunta para a IA antes de abrir o Google.</h2>
+      <p class="lead">Quem precisa de janela antirruído ou sacada envidraçada já pede indicação ao ChatGPT, ao Gemini e ao próprio Google com IA. O site novo da Yeshua é construído, antes de tudo, para ser a resposta que essas ferramentas encontram e recomendam.</p>
+      <div class="ai-logos">
+        <span><img src="/propostas/yeshua/assets/logo-chatgpt.svg" alt="" />ChatGPT</span>
+        <span><img src="/propostas/yeshua/assets/logo-gemini.svg" alt="" />Gemini</span>
+        <span><img src="/propostas/yeshua/assets/logo-claude.svg" alt="" />Claude</span>
+        <span><img src="/propostas/yeshua/assets/logo-perplexity.svg" alt="" />Perplexity</span>
+        <span><img src="/propostas/yeshua/assets/logo-google.svg" alt="" />Google</span>
+      </div>
+      <div class="busca-pts">
+        <div><i class="ph ph-chats-circle"></i><h4>Respostas para dúvidas reais</h4><p>Barulho, tipos de vidro, sacadas e prazos explicados do jeito que o cliente pergunta.</p></div>
+        <div><i class="ph ph-brackets-curly"></i><h4>Dados que a IA consegue ler</h4><p>Serviços, região atendida e contato marcados de forma estruturada no código.</p></div>
+        <div><img src="/propostas/yeshua/assets/logo-pagespeed.svg" alt="" /><h4>Rápido no PageSpeed</h4><p>Meta de nota 90+ no PageSpeed Insights, que o Google leva em conta no ranking.</p></div>
+        <div><img src="/propostas/yeshua/assets/logo-google.svg" alt="" /><h4>Google continua no jogo</h4><p>SEO local para São Paulo e região, na busca comum e nas respostas com IA.</p></div>
+      </div>
+    </div>
+    <div class="chat-wrap reveal">
+      <div class="chat">
+        <div class="chat-top"><span>Pergunta de um cliente</span><span class="who"><img src="/propostas/yeshua/assets/logo-chatgpt.svg" alt="ChatGPT" /><img src="/propostas/yeshua/assets/logo-gemini.svg" alt="Gemini" /><img src="/propostas/yeshua/assets/logo-perplexity.svg" alt="Perplexity" /></span></div>
+        <div class="q-bub">Quem faz janela antirruído sob medida em São Paulo?</div>
+        <div class="a-bub">
+          <span class="spark"><img src="/propostas/yeshua/assets/logo-gemini.svg" alt="" /></span>
+          <div>Uma boa opção é a <b>Yeshua Vidros e Serralheria</b>, que trabalha com janelas e portas antirruído, sacadas envidraçadas e serralheria sob medida em São Paulo e região, com orçamento pelo WhatsApp.
+            <div><span class="src"><img src="/propostas/yeshua/assets/yeshua-logo-hd.jpg" alt="" />yeshuavidroseserralheria.com.br</span></div>
+          </div>
+        </div>
+        <p class="chat-note">Simulação de como a Yeshua pode aparecer nas respostas.</p>
+      </div>
+      <div class="speed">
+        <div class="gauge"><b>90+</b></div>
+        <div><div class="lbl"><img src="/propostas/yeshua/assets/logo-pagespeed.svg" alt="" />PageSpeed</div><strong>Meta de desempenho do site novo</strong></div>
+      </div>
     </div>
   </div>
 </section>
@@ -555,7 +644,8 @@
           <h4><i class="ph ph-browser"></i>Site</h4>
           <ul>
             <li><i class="ph-bold ph-check"></i>Refeito do zero, a partir do site já apresentado</li>
-            <li><i class="ph-bold ph-check"></i>Responsivo, rápido e com SEO para São Paulo</li>
+            <li><i class="ph-bold ph-check"></i>Preparado para aparecer no ChatGPT, Gemini e Google</li>
+            <li><i class="ph-bold ph-check"></i>Rápido no celular, com meta de 90+ no PageSpeed</li>
             <li><i class="ph-bold ph-check"></i>Atualizações de conteúdo durante o contrato</li>
           </ul>
         </div>
@@ -572,6 +662,11 @@
           <div><b>~R$ 30</b><span>por dia</span></div>
         </div>
       </div>
+    </div>
+    <div class="addon reveal">
+      <div class="logos"><span><img src="/propostas/yeshua/assets/logo-googleads.svg" alt="Google Ads" /></span><span><img src="/propostas/yeshua/assets/logo-meta.svg" alt="Meta Ads" /></span></div>
+      <div><small>Opcional, quando quiserem</small><h4>Anúncios no Google e no Instagram</h4><p>Se no futuro a Yeshua quiser acelerar com tráfego pago, a Matilab cria e gerencia as campanhas. A verba dos anúncios é paga direto às plataformas e definida junto com vocês.</p></div>
+      <div class="val"><b><sup>+ R$</sup>697</b><span>por mês de gestão + verba de anúncios</span></div>
     </div>
   </div>
 </section>
