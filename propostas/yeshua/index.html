@@ -150,8 +150,10 @@
   }
 
   /* ---------- INSTAGRAM ---------- */
-  .ig{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
-  .ig-side{position:sticky;top:110px}
+  .ig{display:grid;gap:56px}
+  .ig-side{display:grid;grid-template-columns:1fr 1fr;gap:24px 64px;align-items:end}
+  .ig-side .pillars{margin-top:0}
+  .ig-side .ig-note{grid-column:1/-1;margin-top:0}
   .pillars{margin-top:40px;display:grid;gap:0;border-top:1px solid var(--line)}
   .pillar{display:grid;grid-template-columns:72px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
   .pillar .day{font-family:var(--mono);font-size:13px;color:var(--sky);padding-top:3px}
@@ -159,8 +161,7 @@
   .pillar span{color:var(--t2);font-size:15px}
   .ig-note{margin-top:24px;font-size:14px;color:var(--t3);display:flex;gap:10px;align-items:center}
   .ig-note i{font-size:18px;color:var(--sky)}
-  .feed{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-  .feed > div:nth-child(even){transform:translateY(56px)}
+  .feed{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
   .post-wrap figcaption{margin-top:12px;display:flex;justify-content:space-between;font-size:13.5px;color:var(--t3)}
   .post-wrap figcaption b{color:var(--t2);font-weight:500}
 
@@ -171,6 +172,36 @@
   .p-handle img{width:8cqw;height:8cqw;border-radius:2cqw}
   .p-tag{display:inline-block;font-family:var(--mono);font-size:3cqw;letter-spacing:.14em;text-transform:uppercase;padding:1.6cqw 3cqw;border-radius:1.8cqw;background:var(--accent)}
   .p-title{font-size:8.6cqw;font-weight:700;letter-spacing:-.035em;line-height:1.02}
+
+  /* P3 especialidade: foto cheia + specs */
+  .p3::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(12,12,38,.55) 0%,transparent 24%,transparent 42%,rgba(12,12,38,.96) 82%)}
+  .p3 .p-body{position:absolute;left:5.5cqw;right:5.5cqw;bottom:5.5cqw}
+  .p3 .p-title{font-size:9.6cqw;margin:3cqw 0 4.4cqw}
+  .p3 .specs{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.24)}
+  .p3 .specs div{padding:3cqw 0 0;font-size:3.2cqw;color:rgba(255,255,255,.78);line-height:1.3}
+  .p3 .specs div + div{padding-left:3cqw;border-left:1px solid rgba(255,255,255,.24)}
+  .p3 .specs i{display:block;font-size:5.4cqw;color:var(--sky);margin-bottom:1.4cqw}
+
+  /* P4 detalhe técnico: foto anotada */
+  .p4::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(12,12,38,.85) 0%,rgba(12,12,38,.35) 30%,rgba(12,12,38,.1) 55%,rgba(12,12,38,.55) 100%)}
+  .p4 .p-head{position:absolute;left:5.5cqw;right:5.5cqw;top:17cqw}
+  .p4 .p-head small{font-family:var(--mono);font-size:3cqw;letter-spacing:.14em;text-transform:uppercase;color:var(--sky)}
+  .p4 .p-title{font-size:8cqw;margin-top:1.6cqw}
+  .p4 .pin{position:absolute;display:flex;align-items:center;gap:2cqw;font-size:3.3cqw;font-weight:600;white-space:nowrap}
+  .p4 .pin b{width:6.4cqw;height:6.4cqw;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;font-family:var(--mono);font-size:3cqw;box-shadow:0 0 0 1.6cqw rgba(255,255,255,.25)}
+  .p4 .pin span{padding:1.4cqw 2.6cqw;border-radius:1.6cqw;background:rgba(12,12,38,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+  .p4 .pin.r{flex-direction:row-reverse}
+
+  /* P6 mosaico de obras */
+  .p6{background:var(--navy);display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1.2cqw;padding:1.2cqw}
+  .p6 .tile{position:relative;overflow:hidden;border-radius:1.6cqw}
+  .p6 .tile img{width:100%;height:100%;object-fit:cover}
+  .p6 .tile span{position:absolute;left:2.4cqw;top:2.4cqw;font-family:var(--mono);font-size:2.8cqw;letter-spacing:.08em;text-transform:uppercase;padding:1cqw 2cqw;border-radius:1.2cqw;background:rgba(12,12,38,.7)}
+  .p6 .tile span.b{top:auto;bottom:2.4cqw}
+  .p6 .center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:50cqw;padding:4.4cqw 4cqw;border-radius:3cqw;background:var(--accent);text-align:center;box-shadow:0 3cqw 8cqw rgba(2,2,14,.5)}
+  .p6 .center img{width:10cqw;height:10cqw;border-radius:2.2cqw;margin:0 auto 2.6cqw}
+  .p6 .p-title{font-size:5.8cqw}
+  .p6 .center p{white-space:nowrap;display:flex;align-items:center;justify-content:center;gap:1.4cqw;margin-top:2.4cqw;font-family:var(--mono);font-size:2.7cqw;letter-spacing:.06em;color:rgba(255,255,255,.85)}
 
   /* P1 obra entregue */
   .p1::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(12,12,38,.35) 0%,transparent 26%,transparent 46%,rgba(12,12,38,.94) 86%)}
@@ -193,28 +224,11 @@
   .p2 .dots i:first-child{background:#fff;width:5cqw;border-radius:1cqw}
 
   /* P3 produto (foto + painel claro) */
-  .p3{background:var(--tint);color:var(--navy)}
-  .p3 .bgimg{height:62%;z-index:0;position:absolute}
-  .p3 .p-handle{color:#fff}
-  .p3 .p-panel{position:absolute;left:0;right:0;bottom:0;height:38%;padding:5.5cqw;display:flex;flex-direction:column;justify-content:space-between}
-  .p3 .p-title{font-size:7.6cqw;color:var(--navy)}
-  .p3 .p-sub{font-size:3.9cqw;color:#4a5470;margin-top:1.6cqw}
-  .p3 .p-cta{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:3.7cqw;color:var(--accent)}
-  .p3 .p-cta i{width:8cqw;height:8cqw;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:4.4cqw}
 
   /* P4 pergunta frequente */
-  .p4{background:var(--tint);color:var(--navy)}
-  .p4 .p-handle{color:var(--navy)}
-  .p4 .q{position:absolute;left:6cqw;right:6cqw;top:22cqw}
-  .p4 .q .mark{font-size:22cqw;font-weight:800;line-height:.6;color:var(--accent);display:block;height:10cqw}
-  .p4 .q h4{font-size:8cqw;letter-spacing:-.035em;margin-top:2cqw}
-  .p4 .a{position:absolute;left:6cqw;right:6cqw;bottom:6cqw;padding:4.4cqw;border-radius:3.4cqw;background:#fff;font-size:3.8cqw;line-height:1.45;color:#4a5470;box-shadow:0 2cqw 6cqw rgba(16,16,48,.08)}
-  .p4 .a b{display:block;color:var(--navy);font-size:4.2cqw;margin-bottom:1cqw}
 
   /* P5 serralheria */
   .p5::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(12,12,38,.95) 0%,rgba(12,12,38,.8) 40%,rgba(12,12,38,.1) 68%,rgba(12,12,38,.45) 100%)}
-  .p3::before{content:"";position:absolute;left:0;right:0;top:0;height:30%;z-index:1;background:linear-gradient(180deg,rgba(12,12,38,.82),rgba(12,12,38,.35) 55%,transparent)}
-  .p3 .p-handle{z-index:2}
   .p5 .p-body{position:absolute;left:5.5cqw;right:5.5cqw;top:19cqw}
   .p5 .p-title{font-size:10.4cqw}
   .p5 .p-sub{margin-top:3cqw;font-size:4cqw;color:rgba(255,255,255,.82);max-width:30ch}
@@ -222,17 +236,11 @@
   .p5 .chips span{font-size:3.3cqw;padding:1.8cqw 3cqw;border-radius:5cqw;background:rgba(12,12,38,.55);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 
   /* P6 chamada para orçamento */
-  .p6{background:var(--accent)}
-  .p6 .bgimg{opacity:.22;mix-blend-mode:luminosity}
-  .p6 .p-body{position:absolute;left:5.5cqw;right:5.5cqw;bottom:6cqw}
-  .p6 .p-title{font-size:10cqw}
-  .p6 .wa{margin-top:5cqw;display:flex;align-items:center;gap:3cqw;padding:3.6cqw 4cqw;border-radius:3cqw;background:#fff;color:var(--navy);font-weight:700;font-size:5cqw;letter-spacing:-.01em}
-  .p6 .wa i{font-size:7cqw;color:#1faa53}
 
   @media(max-width:960px){
-    .ig{grid-template-columns:1fr;gap:48px}
-    .ig-side{position:static}
-    .feed > div:nth-child(even){transform:none}
+    .ig{gap:40px}
+    .ig-side{grid-template-columns:1fr}
+    .feed{grid-template-columns:1fr 1fr;gap:18px}
   }
   @media(max-width:520px){.feed{grid-template-columns:1fr;width:100%;max-width:400px;margin:0 auto}}
 
@@ -307,11 +315,7 @@
   @media(prefers-reduced-motion:no-preference){
     .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
     .reveal.in{opacity:1;transform:none}
-    .feed > div:nth-child(even).reveal.in{transform:translateY(56px)}
     .hero .reveal:nth-child(2){transition-delay:.12s}
-  }
-  @media(prefers-reduced-motion:no-preference) and (max-width:960px){
-    .feed > div:nth-child(even).reveal.in{transform:none}
   }
   @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
@@ -415,9 +419,11 @@
 <section id="instagram">
   <div class="wrap ig">
     <div class="ig-side reveal">
-      <span class="eyebrow">3 postagens por semana</span>
-      <h2 class="h2">Um Instagram que mostra obra toda semana.</h2>
-      <p class="lead">Planejado por mês, aprovado por vocês e publicado pela Matilab.</p>
+      <div>
+        <span class="eyebrow">3 postagens por semana</span>
+        <h2 class="h2">Um Instagram que mostra obra toda semana.</h2>
+        <p class="lead">Planejado por mês, aprovado por vocês e publicado pela Matilab.</p>
+      </div>
       <div class="pillars">
         <div class="pillar"><span class="day">SEG</span><div><b>Obra entregue</b><span>Fotos reais das obras, com acabamento em destaque.</span></div></div>
         <div class="pillar"><span class="day">QUA</span><div><b>Dica e dúvida</b><span>Isolamento, vidros e vedação explicados sem complicação.</span></div></div>
@@ -459,11 +465,16 @@
 
       <div class="post-wrap reveal">
         <div class="post p3">
-          <img class="bgimg" src="/propostas/yeshua/assets/obra-porta-canelado.jpg" alt="" loading="lazy" />
+          <img class="bgimg" src="/propostas/yeshua/assets/obra-janela.jpg" alt="" loading="lazy" />
           <div class="p-handle"><img src="/propostas/yeshua/assets/yeshua-logo-hd.jpg" alt="" />yeshuavidrosserralheria</div>
-          <div class="p-panel">
-            <div><h4 class="p-title">Porta com vidro canelado</h4><p class="p-sub">Privacidade sem perder a luz.</p></div>
-            <div class="p-cta">Peça seu orçamento <i class="ph-bold ph-arrow-right"></i></div>
+          <div class="p-body">
+            <span class="p-tag">Especialidade</span>
+            <h4 class="p-title">Janela que fecha de verdade.</h4>
+            <div class="specs">
+              <div><i class="ph ph-waveform"></i>Menos ruído da rua</div>
+              <div><i class="ph ph-ruler"></i>Feita sob medida</div>
+              <div><i class="ph ph-drop"></i>Vedação contra chuva</div>
+            </div>
           </div>
         </div>
         <figcaption><b>Sexta</b><span>Post único</span></figcaption>
@@ -471,11 +482,14 @@
 
       <div class="post-wrap reveal">
         <div class="post p4">
+          <img class="bgimg" src="/propostas/yeshua/assets/obra-porta-vidro.jpg" alt="" loading="lazy" />
           <div class="p-handle"><img src="/propostas/yeshua/assets/yeshua-logo-hd.jpg" alt="" />yeshuavidrosserralheria</div>
-          <div class="q"><span class="mark">“</span><h4>Sacada envidraçada protege da chuva?</h4></div>
-          <div class="a"><b>Protege, sim.</b>As cortinas de vidro com roldanas de alta resistência seguram vento e chuva sem fechar a vista.</div>
+          <div class="p-head"><small>Detalhe da obra</small><h4 class="p-title">O que faz uma porta de correr durar.</h4></div>
+          <div class="pin" style="left:8cqw;top:58cqw"><b>1</b><span>Perfil em alumínio</span></div>
+          <div class="pin r" style="right:8cqw;top:78cqw"><b>2</b><span>Vidro sob medida</span></div>
+          <div class="pin" style="left:12cqw;top:104cqw"><b>3</b><span>Trilho bem nivelado</span></div>
         </div>
-        <figcaption><b>Segunda</b><span>Dúvida frequente</span></figcaption>
+        <figcaption><b>Segunda</b><span>Carrossel</span></figcaption>
       </div>
 
       <div class="post-wrap reveal">
@@ -486,21 +500,24 @@
             <h4 class="p-title">Gradis e portões sob medida.</h4>
             <p class="p-sub">Modelos, acabamentos e cores para o seu imóvel.</p>
           </div>
-          <div class="chips"><span>Portões</span><span>Grades</span><span>Gradis</span></div>
+          <div class="chips"><span>Portões</span><span>Grades</span><span class="b">Gradis</span></div>
         </div>
         <figcaption><b>Quarta</b><span>Post único</span></figcaption>
       </div>
 
       <div class="post-wrap reveal">
         <div class="post p6">
-          <img class="bgimg" src="/propostas/yeshua/assets/obra-divisoria.jpg" alt="" loading="lazy" />
-          <div class="p-handle"><img src="/propostas/yeshua/assets/yeshua-logo-hd.jpg" alt="" />yeshuavidrosserralheria</div>
-          <div class="p-body">
-            <h4 class="p-title">Seu orçamento começa por uma mensagem.</h4>
-            <div class="wa"><i class="ph-fill ph-whatsapp-logo"></i>(11) 94780-9401</div>
+          <div class="tile"><img src="/propostas/yeshua/assets/obra-fachada.jpg" alt="" loading="lazy" /><span>Fachadas</span></div>
+          <div class="tile"><img src="/propostas/yeshua/assets/obra-portao.jpg" alt="" loading="lazy" /><span>Portões</span></div>
+          <div class="tile"><img src="/propostas/yeshua/assets/obra-divisoria.jpg" alt="" loading="lazy" /><span class="b">Divisórias</span></div>
+          <div class="tile"><img src="/propostas/yeshua/assets/obra-gradil.jpg" alt="" loading="lazy" /><span class="b">Gradis</span></div>
+          <div class="center">
+            <img src="/propostas/yeshua/assets/yeshua-logo-hd.jpg" alt="" />
+            <h4 class="p-title">Vidro e serralheria no mesmo lugar.</h4>
+            <p><i class="ph-fill ph-whatsapp-logo"></i>(11) 94780-9401</p>
           </div>
         </div>
-        <figcaption><b>Sexta</b><span>Chamada</span></figcaption>
+        <figcaption><b>Sexta</b><span>Post único</span></figcaption>
       </div>
     </div>
   </div>
