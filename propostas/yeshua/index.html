@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Proposta site + Instagram | Yeshua Vidros e Serralheria x Matilab</title>
+<meta name="description" content="Proposta da Matilab para a Yeshua Vidros e Serralheria: site novo e 3 postagens semanais no Instagram, por R$ 897 por mês." />
+<meta property="og:title" content="Proposta site + Instagram | Yeshua Vidros e Serralheria x Matilab" />
+<meta property="og:description" content="Site novo e Instagram ativo com 3 postagens por semana. Tudo em uma mensalidade de R$ 897." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="/propostas/yeshua/assets/yeshua-logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    /* paleta do esboço do novo site da Yeshua */
+    --navy:#101030;
+    --navy-2:#15152f;
+    --navy-3:#1c1c40;
+    --steel:#405070;
+    --slate:#5b6987;
+    --accent:#0873ad;
+    --accent-2:#4cb8ea;
+    --tint:#eef6f7;
+    --cinza:#f5f6f8;
+    --linha:#e2e6ec;
+    --ink:#15152f;
+    --ink-2:#4a5470;
+    --ink-3:#7b849b;
+    --d-1:#f3f5fa;
+    --d-2:#b7bfd3;
+    --d-3:#8790aa;
+    --d-line:rgba(255,255,255,.1);
+    --maxw:1180px;
+    --ease:cubic-bezier(0.16,1,0.3,1);
+    --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;overflow-x:hidden}
+  body{background:#fff;color:var(--ink);font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-weight:700;letter-spacing:-0.025em;line-height:1.06}
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .mono{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+
+  /* ---------- NAV ---------- */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(16,16,48,.82);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid var(--d-line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+  .nav-left{display:flex;align-items:center;gap:14px;min-width:0}
+  .nav-left img{width:38px;height:38px;border-radius:9px}
+  .nav-word{font-weight:700;font-size:16px;color:#fff;line-height:1.1}
+  .nav-word small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--d-3);font-weight:400;margin-top:3px}
+  .nav-right{display:flex;align-items:center;gap:18px}
+  .nav-by{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--d-3);white-space:nowrap}
+  .nav-by img{height:14px;width:auto}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-weight:600;font-size:14px;padding:11px 20px;border-radius:12px;transition:background .25s var(--ease),transform .25s var(--ease)}
+  .nav-cta:hover{background:#0a84c6;transform:translateY(-1px)}
+  @media(max-width:760px){.nav-by{display:none}}
+
+  /* ---------- BUTTONS ---------- */
+  .btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px;padding:16px 26px;border-radius:14px;border:1px solid transparent;transition:transform .25s var(--ease),background .25s var(--ease),border-color .25s var(--ease)}
+  .btn svg{transition:transform .25s var(--ease)}
+  .btn:hover svg{transform:translateX(3px)}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-primary:hover{background:#0a84c6;transform:translateY(-2px)}
+  .btn-primary:active{transform:translateY(0) scale(.99)}
+  .btn-ghost{background:rgba(255,255,255,.04);border-color:var(--d-line);color:#fff}
+  .btn-ghost:hover{border-color:rgba(255,255,255,.35);transform:translateY(-2px)}
+  .light .btn-ghost{background:#fff;border-color:var(--linha);color:var(--ink)}
+  .light .btn-ghost:hover{border-color:var(--steel)}
+
+  /* ---------- SECTIONS ---------- */
+  section{position:relative;padding:112px 0;overflow:hidden}
+  .dark{background:var(--navy);color:var(--d-1)}
+  .dark.deep{background:var(--navy-2)}
+  .light{background:#fff}
+  .light.gray{background:var(--cinza)}
+  .light.tint{background:var(--tint)}
+  .sec-head{max-width:760px;margin-bottom:56px;position:relative;z-index:2}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .kicker{display:inline-flex;align-items:center;gap:12px;color:var(--accent);margin-bottom:20px}
+  .kicker b{font-weight:500;color:var(--ink-3)}
+  .dark .kicker{color:var(--accent-2)}
+  .dark .kicker b{color:var(--d-3)}
+  .sec-head h2{font-size:clamp(30px,4vw,50px)}
+  .sec-head p{margin-top:18px;font-size:17.5px;color:var(--ink-2)}
+  .dark .sec-head p{color:var(--d-2)}
+  .dark h2,.dark h3,.dark h4{color:#fff}
+
+  /* ---------- HERO ---------- */
+  .hero{min-height:92vh;display:flex;align-items:center;padding:96px 0 110px;background:
+    radial-gradient(90% 70% at 85% 10%,rgba(8,115,173,.32),transparent 60%),
+    linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%)}
+  .hero-waves{position:absolute;left:0;right:0;bottom:0;height:52%;z-index:0;pointer-events:none}
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+  .hero .kicker{margin-bottom:26px}
+  .hero h1{font-size:clamp(38px,5.6vw,70px);font-weight:700;color:#fff;letter-spacing:-.035em}
+  .hero h1 span{color:var(--accent-2)}
+  .hero p.sub{margin-top:26px;font-size:clamp(16px,1.5vw,19px);color:var(--d-2);max-width:56ch}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
+  .hero-card{border-radius:24px;padding:30px;background:rgba(255,255,255,.05);border:1px solid var(--d-line);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 30px 80px rgba(0,0,0,.35)}
+  .hc-top{display:flex;align-items:center;gap:14px;padding-bottom:22px;border-bottom:1px solid var(--d-line)}
+  .hc-top img{width:58px;height:58px;border-radius:14px}
+  .hc-top b{display:block;color:#fff;font-size:17px;font-weight:700}
+  .hc-top span{color:var(--d-3)}
+  .hc-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:16px 0;border-bottom:1px solid var(--d-line);font-size:15px;color:var(--d-2)}
+  .hc-row b{color:#fff;font-weight:600;text-align:right}
+  .hc-price{padding-top:20px;display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  .hc-price .v{font-size:40px;font-weight:800;color:#fff;letter-spacing:-.03em;line-height:1}
+  .hc-price .v small{font-size:15px;font-weight:500;color:var(--d-3);letter-spacing:0;margin-left:4px}
+  @media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:44px}.hero{min-height:auto}}
+
+  /* ---------- DIAGNOSTICO ---------- */
+  .diag{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .stat{border-radius:20px;padding:30px;background:#fff;border:1px solid var(--linha)}
+  .stat .n{font-size:clamp(40px,4.4vw,56px);font-weight:800;letter-spacing:-.04em;color:var(--navy);line-height:1}
+  .stat .n small{font-size:.42em;font-weight:600;color:var(--ink-3);letter-spacing:0;margin-left:4px}
+  .stat .mono{color:var(--accent);margin:16px 0 10px;display:block}
+  .stat p{font-size:15px;color:var(--ink-2)}
+  .diag-note{margin-top:26px;border-radius:20px;padding:30px 32px;background:var(--navy);color:var(--d-2);display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center}
+  .diag-note .ic{width:52px;height:52px;border-radius:14px;background:rgba(76,184,234,.14);color:var(--accent-2);display:flex;align-items:center;justify-content:center}
+  .diag-note p{font-size:16.5px}
+  .diag-note b{color:#fff;font-weight:600}
+  @media(max-width:860px){.diag{grid-template-columns:1fr}.diag-note{grid-template-columns:1fr}}
+
+  /* ---------- ESBOCO ---------- */
+  .preview{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+  .browser{border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--linha);box-shadow:0 40px 90px rgba(16,16,48,.18)}
+  .b-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;background:var(--cinza);border-bottom:1px solid var(--linha)}
+  .b-bar i{width:10px;height:10px;border-radius:50%;background:#d5dae3}
+  .b-url{margin-left:10px;flex:1;min-width:0;font-family:var(--mono);font-size:11.5px;color:var(--ink-3);background:#fff;border:1px solid var(--linha);border-radius:8px;padding:6px 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .b-nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:12px}
+  .b-nav .bl{display:flex;align-items:center;gap:10px;font-weight:700;font-size:13px}
+  .b-nav .bl img{width:26px;height:26px;border-radius:6px}
+  .b-nav .bb{background:var(--accent);color:#fff;font-size:11px;font-weight:600;padding:7px 12px;border-radius:9px}
+  .b-hero{position:relative;margin:0 12px 12px;border-radius:14px;overflow:hidden;aspect-ratio:16/9;background:#1c1c40 url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=75") center/cover}
+  .b-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,16,48,.88) 0%,rgba(16,16,48,.35) 70%,rgba(16,16,48,.15) 100%)}
+  .b-hero-in{position:absolute;left:7%;bottom:12%;right:30%;color:#fff}
+  .b-hero-in .mono{font-size:9px;color:var(--d-2);display:block;margin-bottom:10px}
+  .b-hero-in h3{font-size:clamp(20px,3vw,36px);color:#fff;font-weight:700;letter-spacing:-.03em}
+  .b-hero-in .bbtn{display:inline-block;margin-top:14px;background:var(--accent);font-size:10.5px;font-weight:600;padding:8px 14px;border-radius:9px}
+  .b-chip{position:absolute;right:5%;top:10%;border-radius:12px;padding:10px 12px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;font-family:var(--mono);font-size:8.5px;letter-spacing:.1em;text-transform:uppercase}
+  .b-chip svg{margin-top:6px}
+  .pv-text h3{font-size:clamp(26px,2.8vw,36px)}
+  .pv-text p{margin-top:16px;color:var(--ink-2);font-size:16.5px}
+  .pv-list{list-style:none;margin:24px 0 30px;display:grid;gap:12px}
+  .pv-list li{display:flex;gap:12px;font-size:15px;color:var(--ink)}
+  .pv-list li svg{flex:none;color:var(--accent);margin-top:3px}
+  @media(max-width:900px){.preview{grid-template-columns:1fr}.b-hero-in{right:10%}.b-chip{display:none}}
+
+  /* ---------- O QUE ESTA INCLUIDO ---------- */
+  .pillars{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .pillar{border-radius:24px;padding:40px 38px;background:var(--navy-3);border:1px solid var(--d-line);transition:border-color .3s var(--ease),transform .3s var(--ease)}
+  .pillar:hover{border-color:rgba(76,184,234,.4);transform:translateY(-3px)}
+  .pl-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:26px}
+  .pl-ic{width:54px;height:54px;border-radius:15px;background:rgba(76,184,234,.12);color:var(--accent-2);display:flex;align-items:center;justify-content:center}
+  .pl-top .mono{color:var(--d-3)}
+  .pillar h3{font-size:26px;margin-bottom:12px}
+  .pillar > p{color:var(--d-2);font-size:15.5px;margin-bottom:26px}
+  .pillar ul{list-style:none;display:grid;gap:13px;padding-top:24px;border-top:1px solid var(--d-line)}
+  .pillar li{display:flex;gap:12px;font-size:15px;color:var(--d-1)}
+  .pillar li svg{flex:none;color:var(--accent-2);margin-top:3px}
+  @media(max-width:860px){.pillars{grid-template-columns:1fr}.pillar{padding:32px 26px}}
+
+  /* ---------- SEMANA ---------- */
+  .week{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .day{border-radius:22px;background:#fff;border:1px solid var(--linha);overflow:hidden;display:flex;flex-direction:column}
+  .day-head{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid var(--linha)}
+  .day-head b{font-size:17px;font-weight:700}
+  .day-head .mono{color:var(--accent)}
+  .post{margin:18px;border-radius:16px;aspect-ratio:4/5;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:20px;color:#fff}
+  .post.p1{background:linear-gradient(180deg,rgba(16,16,48,0) 30%,rgba(16,16,48,.9) 100%),url("https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=700&q=70") center/cover}
+  .post.p2{background:var(--navy)}
+  .post.p3{background:linear-gradient(180deg,rgba(16,16,48,0) 30%,rgba(16,16,48,.9) 100%),url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=70") center/cover}
+  .post .mono{font-size:9.5px;color:var(--accent-2);margin-bottom:8px}
+  .post h4{font-size:clamp(18px,1.9vw,22px);color:#fff;letter-spacing:-.02em}
+  .post .split{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr}
+  .post .split span{display:flex;align-items:flex-start;padding:14px;font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase}
+  .post .split span:first-child{background:linear-gradient(180deg,rgba(16,16,48,.15),rgba(16,16,48,.75)),url("https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=500&q=60") center/cover;filter:grayscale(.85)}
+  .post .split span:last-child{background:linear-gradient(180deg,rgba(16,16,48,.05),rgba(16,16,48,.75)),url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=60") center/cover}
+  .post.p2 .wave{position:absolute;left:20px;right:20px;top:28px}
+  .post .in{position:relative;z-index:1}
+  .day-foot{padding:0 22px 22px;font-size:14.5px;color:var(--ink-2)}
+  .day-foot b{color:var(--ink);font-weight:600;display:block;margin-bottom:4px}
+  .week-note{margin-top:24px;text-align:center;font-size:14.5px;color:var(--ink-3)}
+  @media(max-width:860px){.week{grid-template-columns:1fr;max-width:420px;margin:0 auto}}
+
+  /* ---------- ETAPAS ---------- */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+  .step{position:relative;border-radius:20px;padding:28px 24px;background:#fff;border:1px solid var(--linha)}
+  .step .mono{color:var(--accent);display:block;margin-bottom:18px}
+  .step h4{font-size:18px;margin-bottom:8px}
+  .step p{font-size:14.5px;color:var(--ink-2)}
+  .step.loop{background:var(--navy);border-color:var(--navy)}
+  .step.loop h4{color:#fff}
+  .step.loop p{color:var(--d-2)}
+  .step.loop .mono{color:var(--accent-2)}
+  @media(max-width:960px){.steps{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.steps{grid-template-columns:1fr}}
+
+  /* ---------- INVESTIMENTO ---------- */
+  .offer{display:grid;grid-template-columns:.95fr 1.05fr;border-radius:28px;overflow:hidden;border:1px solid var(--d-line);background:var(--navy-3)}
+  .offer-left{padding:52px 44px;background:radial-gradient(120% 90% at 0% 0%,rgba(8,115,173,.35),transparent 60%),var(--navy-3);border-right:1px solid var(--d-line)}
+  .offer-tag{display:inline-block;color:#fff;background:var(--accent);padding:8px 14px;border-radius:10px;margin-bottom:28px}
+  .offer-price{font-size:clamp(58px,7vw,84px);font-weight:800;color:#fff;line-height:1;letter-spacing:-.045em}
+  .offer-price .cur{font-size:.36em;color:var(--d-3);vertical-align:super;margin-right:6px;font-weight:600;letter-spacing:0}
+  .offer-price .per{font-size:.26em;color:var(--d-3);font-weight:500;letter-spacing:0;margin-left:6px}
+  .offer-sub{color:var(--d-2);font-size:15.5px;margin:20px 0 30px;max-width:38ch}
+  .offer-left .btn{width:100%;justify-content:center}
+  .offer-eq{margin-top:30px;padding-top:26px;border-top:1px solid var(--d-line);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .offer-eq div{border-radius:14px;padding:16px;background:rgba(255,255,255,.04);border:1px solid var(--d-line)}
+  .offer-eq b{display:block;color:#fff;font-size:22px;font-weight:700;letter-spacing:-.02em}
+  .offer-eq span{font-size:13px;color:var(--d-3)}
+  .offer-right{padding:52px 44px}
+  .offer-right .mono{color:var(--d-3);margin-bottom:22px;display:block}
+  .offer-right ul{list-style:none;display:grid;gap:15px}
+  .offer-right li{display:flex;gap:12px;font-size:15.5px;color:var(--d-1)}
+  .offer-right li svg{flex:none;margin-top:3px;color:var(--accent-2)}
+  .offer-right li.grp{margin-top:10px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-2)}
+  .offer-right li.grp:first-child{margin-top:0}
+  @media(max-width:860px){.offer{grid-template-columns:1fr}.offer-left{border-right:0;border-bottom:1px solid var(--d-line)}.offer-left,.offer-right{padding:36px 26px}}
+
+  /* ---------- CONDICOES ---------- */
+  .cond-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .cond{display:flex;gap:16px;padding:26px 28px;border-radius:20px;background:#fff;border:1px solid var(--linha)}
+  .cond .ci{flex:none;width:42px;height:42px;border-radius:12px;background:var(--tint);color:var(--accent);display:flex;align-items:center;justify-content:center}
+  .cond h4{font-size:17px;margin-bottom:6px}
+  .cond p{color:var(--ink-2);font-size:14.5px}
+  @media(max-width:720px){.cond-grid{grid-template-columns:1fr}}
+
+  /* ---------- CTA ---------- */
+  .cta-card{position:relative;overflow:hidden;border-radius:30px;padding:72px 44px;text-align:center;background:radial-gradient(80% 90% at 50% 0%,rgba(8,115,173,.4),transparent 65%),var(--navy-3);border:1px solid var(--d-line)}
+  .cta-card .cw{position:absolute;left:0;right:0;bottom:0;height:60%;opacity:.55;pointer-events:none}
+  .cta-card > *:not(.cw){position:relative}
+  .cta-card .kicker{justify-content:center}
+  .cta-card h2{font-size:clamp(32px,4.6vw,56px);font-weight:700;color:#fff}
+  .cta-card p{margin:20px auto 0;color:var(--d-2);font-size:18px;max-width:58ch}
+  .cta-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+  .cta-contacts{margin-top:38px;padding-top:28px;border-top:1px solid var(--d-line);display:flex;flex-wrap:wrap;justify-content:center;gap:12px 28px;font-size:14px;color:var(--d-2)}
+  .cta-contacts a{display:inline-flex;align-items:center;gap:8px}
+  .cta-contacts a:hover{color:#fff}
+  .cta-contacts svg{color:var(--accent-2)}
+  .cta-sign{margin-top:30px;font-size:14px;color:var(--d-2)}
+  .cta-sign b{color:#fff;font-weight:600}
+  .valid{margin-top:24px;text-align:center;font-size:13px;color:var(--d-3)}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:44px 0;background:var(--navy-2);border-top:1px solid var(--d-line);color:var(--d-3)}
+  .foot-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+  .foot-left{display:flex;align-items:center;gap:16px}
+  .foot-left img{height:22px}
+  .foot-left .fdiv{width:1px;height:30px;background:var(--d-line)}
+  .foot-left .ftxt{font-size:13px;line-height:1.5}
+  .foot-left .ftxt b{color:var(--d-1);font-weight:600;display:block;font-size:13.5px}
+  .foot-right{font-size:13px;display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+  .foot-right a:hover{color:#fff}
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}*{transition:none!important}}
+
+  /* ---------- PRINT ---------- */
+  @media print{
+    @page{margin:14mm}
+    header.nav,.hero-actions,.hero-waves,.cw,.cta-actions{display:none!important}
+    section{padding:26px 0!important;page-break-inside:avoid}
+    .reveal{opacity:1!important;transform:none!important}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="nav-left">
+      <img src="/propostas/yeshua/assets/yeshua-logo.jpg" alt="Yeshua Vidros e Serralheria" />
+      <span class="nav-word">Yeshua<small>Proposta Matilab</small></span>
+    </div>
+    <div class="nav-right">
+      <span class="nav-by">Por <img src="/propostas/yeshua/assets/matilab-logo-white.svg" alt="Matilab" /></span>
+      <a class="nav-cta" data-wa href="#">Falar agora</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero dark">
+  <svg class="hero-waves" viewBox="0 0 1440 420" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="none" stroke-width="1.3">
+      <path d="M0 210 C 90 90, 180 330, 270 210 S 450 90, 540 210 S 630 300, 720 210" stroke="rgba(76,184,234,.38)"/>
+      <path d="M0 210 C 90 130, 180 290, 270 210 S 450 130, 540 210 S 630 260, 720 210" stroke="rgba(76,184,234,.22)"/>
+      <line x1="720" y1="40" x2="720" y2="380" stroke="rgba(255,255,255,.28)" stroke-width="1.6"/>
+      <line x1="734" y1="40" x2="734" y2="380" stroke="rgba(255,255,255,.14)" stroke-width="1"/>
+      <path d="M734 210 C 820 196, 900 224, 990 210 S 1170 200, 1260 210 S 1380 214, 1440 210" stroke="rgba(76,184,234,.3)"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker mono">Proposta <b>/ site + Instagram</b></div>
+      <h1>A Yeshua deixa o barulho lá fora. <span>Agora é hora de fazer barulho aqui dentro.</span></h1>
+      <p class="sub">Um site novo, à altura das esquadrias que vocês entregam, e um Instagram que mostra trabalho toda semana. Tudo cuidado pela Matilab, em uma mensalidade só.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#investimento">Ver a proposta <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#esboco">Ver o esboço do site</a>
+      </div>
+    </div>
+    <aside class="hero-card reveal">
+      <div class="hc-top">
+        <img src="/propostas/yeshua/assets/yeshua-logo.jpg" alt="" />
+        <div><b>Yeshua Vidros e Serralheria</b><span class="mono">São Paulo e região</span></div>
+      </div>
+      <div class="hc-row"><span>Site</span><b>Refeito do zero</b></div>
+      <div class="hc-row"><span>Instagram</span><b>3 postagens por semana</b></div>
+      <div class="hc-row"><span>Gestão</span><b>Matilab, todo mês</b></div>
+      <div class="hc-price"><span class="mono" style="color:var(--d-3)">Mensal</span><span class="v">R$ 897<small>/mês</small></span></div>
+    </aside>
+  </div>
+</section>
+
+<!-- DIAGNOSTICO -->
+<section class="light gray" id="hoje">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker mono">01 <b>/ Onde a Yeshua está hoje</b></div>
+      <h2>O trabalho é de alto padrão. A presença online ainda não.</h2>
+      <p>Quem procura janela antirruído ou sacada envidraçada pesquisa antes de chamar. Hoje, o que essa pessoa encontra não mostra o nível das obras que a Yeshua entrega.</p>
+    </div>
+    <div class="diag">
+      <div class="stat reveal">
+        <div class="n">12<small>posts</small></div>
+        <span class="mono">Instagram</span>
+        <p>Pouco conteúdo publicado e sem frequência. Quem visita o perfil não vê obras recentes nem entende o que a Yeshua faz de diferente.</p>
+      </div>
+      <div class="stat reveal">
+        <div class="n">75<small>seguidores</small></div>
+        <span class="mono">Alcance</span>
+        <p>Público ainda pequeno para uma empresa que atende São Paulo e região inteira. Sem postagem constante, o perfil não cresce.</p>
+      </div>
+      <div class="stat reveal">
+        <div class="n">1<small>página</small></div>
+        <span class="mono">Site atual</span>
+        <p>O site apresenta a empresa, mas o visual é genérico e não destaca o principal diferencial: o isolamento acústico.</p>
+      </div>
+    </div>
+    <div class="diag-note reveal">
+      <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h3l3-8 4 16 3-8h5"/></svg></span>
+      <p><b>A ideia é simples:</b> um site que convence e um Instagram que mantém a Yeshua na cabeça de quem está reformando. Um leva para o outro, e os dois levam para o WhatsApp.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ESBOCO -->
+<section class="light" id="esboco">
+  <div class="wrap preview">
+    <div class="browser reveal">
+      <div class="b-bar"><i></i><i></i><i></i><span class="b-url">yeshuavidroseserralheria.com.br</span></div>
+      <div class="b-nav">
+        <span class="bl"><img src="/propostas/yeshua/assets/yeshua-logo.jpg" alt="" />Yeshua</span>
+        <span class="bb">Pedir orçamento</span>
+      </div>
+      <div class="b-hero">
+        <div class="b-chip">Isolamento acústico
+          <svg width="96" height="18" viewBox="0 0 96 18" fill="none" stroke="#fff" stroke-width="1.4"><path d="M2 9h6l3-6 4 12 4-10 3 8 3-4h6"/><path d="M38 9h56" stroke-opacity=".6"/></svg>
+        </div>
+        <div class="b-hero-in">
+          <span class="mono">Vidros e esquadrias de alto padrão</span>
+          <h3>O barulho fica do lado de fora.</h3>
+          <span class="bbtn">Pedir orçamento</span>
+        </div>
+      </div>
+    </div>
+    <div class="pv-text reveal">
+      <div class="kicker mono">02 <b>/ O novo site</b></div>
+      <h3>O esboço já está pronto para vocês verem.</h3>
+      <p>Antes de qualquer contrato, a Matilab já montou uma prévia do novo site da Yeshua. Ele é o ponto de partida do projeto.</p>
+      <ul class="pv-list">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Isolamento acústico como protagonista</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Cada especialidade com seu botão de orçamento</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Perguntas frequentes e WhatsApp em todo lugar</li>
+      </ul>
+      <a class="btn btn-primary" href="https://analise.matilab.com.br/yeshuavidroseserralheria" target="_blank" rel="noopener">Abrir o esboço <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE ESTA INCLUIDO -->
+<section class="dark" id="incluido">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker mono">03 <b>/ O que está incluído</b></div>
+      <h2>Duas frentes, uma equipe cuidando das duas.</h2>
+      <p>O site é a vitrine que fecha o orçamento. O Instagram é o que faz a pessoa lembrar da Yeshua quando chega a hora de trocar a janela.</p>
+    </div>
+    <div class="pillars">
+      <article class="pillar reveal">
+        <div class="pl-top">
+          <span class="pl-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="M2 9h20M6 6.5h.01M9 6.5h.01"/></svg></span>
+          <span class="mono">Frente 01</span>
+        </div>
+        <h3>Site novo</h3>
+        <p>O site da Yeshua refeito do zero, a partir do esboço aprovado por vocês.</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Design novo com a identidade da Yeshua</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Janelas, portas, sacadas, serralheria, box e guarda-corpos</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Perfeito no celular, tablet e computador</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Carregamento rápido e SEO para buscas em São Paulo</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Botões de orçamento direto no WhatsApp</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Atualizações de conteúdo enquanto durar o contrato</li>
+        </ul>
+      </article>
+      <article class="pillar reveal">
+        <div class="pl-top">
+          <span class="pl-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span>
+          <span class="mono">Frente 02</span>
+        </div>
+        <h3>Instagram ativo</h3>
+        <p>3 postagens por semana, cerca de 12 por mês, planejadas e criadas pela Matilab.</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>3 postagens semanais com arte e legenda</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Calendário do mês enviado para aprovação</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Fotos das obras viram antes e depois e portfólio</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Visual padronizado, com a cara do novo site</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Hashtags e localização para alcançar São Paulo e região</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Publicação feita pela Matilab</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SEMANA TIPICA -->
+<section class="light tint" id="semana">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="kicker mono">04 <b>/ Uma semana no Instagram</b></div>
+      <h2>Segunda, quarta e sexta. Toda semana.</h2>
+      <p>Um exemplo de como o conteúdo se divide, para o perfil mostrar obra, ensinar e vender sem parecer anúncio o tempo todo.</p>
+    </div>
+    <div class="week">
+      <div class="day reveal">
+        <div class="day-head"><b>Segunda</b><span class="mono">Obra</span></div>
+        <div class="post p1">
+          <div class="split"><span>Antes</span><span>Depois</span></div>
+          <div class="in"><span class="mono">Antes e depois</span><h4>Sacada envidraçada em São Paulo</h4></div>
+        </div>
+        <div class="day-foot"><b>Prova de trabalho</b>Obras entregues, antes e depois e detalhes de acabamento.</div>
+      </div>
+      <div class="day reveal">
+        <div class="day-head"><b>Quarta</b><span class="mono">Dica</span></div>
+        <div class="post p2">
+          <svg class="wave" viewBox="0 0 200 60" fill="none" aria-hidden="true"><path d="M0 30 C 15 5, 30 55, 45 30 S 75 5, 90 30" stroke="#4cb8ea" stroke-width="2"/><line x1="96" y1="6" x2="96" y2="54" stroke="#fff" stroke-width="2"/><path d="M102 30 C 125 27, 150 33, 200 30" stroke="#4cb8ea" stroke-opacity=".6" stroke-width="2"/></svg>
+          <div class="in"><span class="mono">Você sabia?</span><h4>Por que a janela comum deixa o barulho passar</h4></div>
+        </div>
+        <div class="day-foot"><b>Educação</b>Isolamento acústico, vidros, vedação e cuidados, explicados de um jeito simples.</div>
+      </div>
+      <div class="day reveal">
+        <div class="day-head"><b>Sexta</b><span class="mono">Produto</span></div>
+        <div class="post p3">
+          <div class="in"><span class="mono">Especialidade</span><h4>Portas antirruído sob medida</h4></div>
+        </div>
+        <div class="day-foot"><b>Oferta</b>Uma especialidade por vez, com chamada para pedir orçamento no WhatsApp.</div>
+      </div>
+    </div>
+    <p class="week-note reveal">Exemplos ilustrativos. As postagens reais usam as fotos das obras da Yeshua.</p>
+  </div>
+</section>
+
+<!-- ETAPAS -->
+<section class="light gray" id="etapas">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker mono">05 <b>/ Como começa</b></div>
+      <h2>Do sim ao perfil rodando.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="mono">Passo 01</span><h4>Alinhamento</h4><p>Conversa rápida para ajustar o esboço, receber as fotos das obras e entender os serviços que mais vendem.</p></div>
+      <div class="step reveal"><span class="mono">Passo 02</span><h4>Site no ar</h4><p>Ajustes finais no design, revisão com vocês e publicação no domínio da Yeshua.</p></div>
+      <div class="step reveal"><span class="mono">Passo 03</span><h4>Calendário</h4><p>Planejamento do primeiro mês de postagens e padrão visual do Instagram para aprovação.</p></div>
+      <div class="step loop reveal"><span class="mono">Todo mês</span><h4>Rotina</h4><p>3 postagens por semana, novo calendário a cada mês e o site sempre atualizado.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTIMENTO -->
+<section class="dark deep" id="investimento">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="kicker mono">06 <b>/ Investimento</b></div>
+      <h2>Site e Instagram em uma mensalidade.</h2>
+      <p>Um valor fixo por mês, sem surpresa, cobrindo o site novo e a gestão do Instagram.</p>
+    </div>
+    <div class="offer reveal">
+      <div class="offer-left">
+        <span class="offer-tag mono">Site + Instagram</span>
+        <div class="offer-price"><span class="cur">R$</span>897<span class="per">/mês</span></div>
+        <p class="offer-sub">O site novo da Yeshua e 3 postagens semanais no Instagram, cuidados pela Matilab todo mês.</p>
+        <a class="btn btn-primary" data-wa href="#">Quero começar <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="offer-eq">
+          <div><b>~12</b><span>postagens por mês</span></div>
+          <div><b>~R$ 30</b><span>por dia de investimento</span></div>
+        </div>
+      </div>
+      <div class="offer-right">
+        <span class="mono">O que a mensalidade inclui</span>
+        <ul>
+          <li class="grp">Site</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Site da Yeshua refeito do zero, a partir do esboço</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Responsivo, rápido e com SEO para São Paulo</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Atualizações de conteúdo durante o contrato</li>
+          <li class="grp">Instagram</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>3 postagens por semana, com arte e legenda</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Calendário mensal para aprovação</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Publicação feita pela Matilab</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDICOES -->
+<section class="light" id="condicoes">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker mono">07 <b>/ Condições</b></div>
+      <h2>Combinado claro, sem letra miúda.</h2>
+    </div>
+    <div class="cond-grid">
+      <div class="cond reveal">
+        <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+        <div><h4>Cobrança mensal</h4><p>R$ 897 por mês. A primeira mensalidade inicia o projeto do site e o planejamento do Instagram.</p></div>
+      </div>
+      <div class="cond reveal">
+        <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg></span>
+        <div><h4>Fotos das obras</h4><p>A Yeshua envia fotos e vídeos das obras pelo WhatsApp. Quanto mais material real, melhor o resultado.</p></div>
+      </div>
+      <div class="cond reveal">
+        <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 1 1-9-9"/><path d="m9 11 3 3L22 4"/></svg></span>
+        <div><h4>Aprovação</h4><p>Nada é publicado sem o ok de vocês: o site passa por revisão e o calendário do mês é aprovado antes.</p></div>
+      </div>
+      <div class="cond reveal">
+        <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg></span>
+        <div><h4>Domínio</h4><p>O site é publicado no domínio atual, yeshuavidroseserralheria.com.br, que continua sendo da Yeshua.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="dark" id="proximos">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <svg class="cw" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke-width="1.3"><path d="M0 150 C 75 40, 150 260, 225 150 S 375 40, 450 150 S 525 230, 600 150" stroke="rgba(76,184,234,.4)"/><line x1="600" y1="20" x2="600" y2="280" stroke="rgba(255,255,255,.25)"/><path d="M612 150 C 760 140, 900 160, 1200 150" stroke="rgba(76,184,234,.3)"/></g></svg>
+      <div class="kicker mono">Próximos passos</div>
+      <h2>Vamos colocar a Yeshua no ar?</h2>
+      <p>Para começar, basta confirmar esta proposta. Na sequência alinhamos o esboço, recebemos as fotos das obras e montamos o primeiro mês do Instagram.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" data-wa href="#">Falar no WhatsApp <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" data-email href="#">Enviar e-mail</a>
+      </div>
+      <div class="cta-contacts">
+        <a data-wa href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg><span id="wa-txt"></span></a>
+        <a data-email href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span id="mail-txt"></span></a>
+        <a href="https://matilab.com.br" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg>matilab.com.br</a>
+      </div>
+      <div class="cta-sign">Proposta preparada por <b>Matheus Moura</b> · Matilab</div>
+    </div>
+    <p class="valid">Proposta enviada em 27/10/2026 e válida por 15 dias, até 11/11/2026.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-left">
+      <img src="/propostas/yeshua/assets/matilab-logo-white.svg" alt="Matilab" />
+      <div class="fdiv"></div>
+      <div class="ftxt"><b>Matilab</b>Proposta preparada para a Yeshua Vidros e Serralheria</div>
+    </div>
+    <div class="foot-right">
+      <a href="https://matilab.com.br" target="_blank" rel="noopener">matilab.com.br</a>
+      <a data-wa href="#">WhatsApp</a>
+      <a data-email href="#">E-mail</a>
+      <span id="ano"></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ====== CONFIGURE AQUI ANTES DE ENVIAR ====== */
+  const CONFIG = {
+    whatsapp: "5511992644010",    // so numeros, com DDI 55
+    whatsappLabel: "(11) 99264-4010",
+    email: "contato@matilab.com.br",
+    saudacao: "Olá! Vi a proposta de site e Instagram para a Yeshua e gostaria de conversar.",
+    assunto: "Proposta site + Instagram - Yeshua Vidros e Serralheria"
+  };
+  /* ============================================= */
+  const waHref = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(CONFIG.saudacao);
+  const mailHref = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent(CONFIG.assunto);
+  document.querySelectorAll("[data-wa]").forEach(a=>{a.href=waHref;a.target="_blank";a.rel="noopener";});
+  document.querySelectorAll("[data-email]").forEach(a=>{a.href=mailHref;});
+  const set = (id,v)=>{const el=document.getElementById(id); if(el&&v) el.textContent=v;};
+  set("wa-txt", CONFIG.whatsappLabel);
+  set("mail-txt", CONFIG.email);
+  document.getElementById("ano").textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:0.1,rootMargin:"0px 0px -8% 0px"});
+  document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
