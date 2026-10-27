@@ -294,7 +294,7 @@
   .busca-pts h4{font-size:17px;margin-bottom:6px}
   .busca-pts p{font-size:15px;color:var(--t2)}
   .busca-pts img{width:22px;height:22px;display:block;margin-bottom:12px}
-  .chat-wrap{position:relative;padding-bottom:110px}
+  .chat-wrap{position:relative}
   .chat{background:#fff;color:#1d1d2e;border-radius:24px;padding:26px;box-shadow:0 40px 90px rgba(2,2,14,.55)}
   .chat-top{display:flex;align-items:center;justify-content:space-between;padding-bottom:18px;border-bottom:1px solid #eceef3;font-size:13px;color:#6b7186}
   .chat-top .who{display:flex;gap:6px}
@@ -307,14 +307,14 @@
   .src{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:7px 12px 7px 8px;border-radius:999px;border:1px solid #e3e6ee;font-size:13px;color:#3b4157}
   .src img{width:20px;height:20px;border-radius:5px}
   .chat-note{max-width:52%;margin-top:16px;font-size:12.5px;color:#8a90a3}
-  .speed{position:absolute;right:-18px;bottom:0;width:230px;padding:20px;border-radius:20px;background:var(--surface-2);box-shadow:0 0 0 1px var(--line-2),0 30px 60px rgba(2,2,14,.5);display:grid;grid-template-columns:76px 1fr;gap:16px;align-items:center}
+  .speed{position:absolute;right:-18px;bottom:-64px;width:230px;padding:20px;border-radius:20px;background:var(--surface-2);box-shadow:0 0 0 1px var(--line-2),0 30px 60px rgba(2,2,14,.5);display:grid;grid-template-columns:76px 1fr;gap:16px;align-items:center}
   .gauge{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#0cce6b 0 92%,rgba(12,206,107,.18) 0);position:relative}
   .gauge::before{content:"";position:absolute;inset:7px;border-radius:50%;background:var(--surface-2)}
   .gauge b{position:relative;font-size:22px;color:#0cce6b;letter-spacing:-.03em}
   .speed .lbl{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--t2);margin-bottom:4px}
   .speed .lbl img{width:16px;height:16px}
   .speed strong{font-size:15px;line-height:1.3;display:block}
-  @media(max-width:960px){.busca{grid-template-columns:1fr;gap:48px}.speed{right:8px}}
+  @media(max-width:960px){.busca{grid-template-columns:1fr;gap:48px}.speed{right:8px}.chat-wrap{margin-bottom:80px}}
   @media(max-width:520px){.busca-pts{grid-template-columns:1fr}.chat{padding:20px}.speed{width:210px}}
 
   /* ---------- ADS (opcional) ---------- */
