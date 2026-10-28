@@ -183,6 +183,9 @@ h1,h2,h3{font-weight:600;letter-spacing:-.03em;text-wrap:balance}
 .q-val strong{display:block;font-size:clamp(34px,3.4vw,46px);font-weight:600;letter-spacing:-.045em;line-height:1;white-space:nowrap}
 .q-val strong small{font-size:.42em;font-weight:550;letter-spacing:-.01em;margin-right:4px;color:var(--muted)}
 .q-val span{display:block;margin-top:8px;font-size:14px;color:var(--muted)}
+.q-val del{display:block;margin-bottom:6px;font-size:15px;color:var(--muted);text-decoration-thickness:1.5px}
+.q-note{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px clamp(20px,3vw,36px);background:var(--orange-soft);border-bottom:1px solid var(--line);font-size:15px;color:var(--ink-2)}
+.q-note b{color:var(--orange-ink);font-weight:600}
 .q-row.req{background:linear-gradient(90deg,var(--orange-soft),rgba(255,241,234,0) 65%)}
 .q-total{display:grid;grid-template-columns:repeat(2,1fr);background:var(--dark);color:#fff}
 .q-total div{padding:clamp(22px,2.6vw,30px) clamp(20px,3vw,36px)}
@@ -543,6 +546,7 @@ footer img{height:18px;width:auto}
       <p>O projeto é pago uma vez. A manutenção e a infraestrutura começam depois que o site novo estiver no ar.</p>
     </div>
     <div class="quote rv">
+      <div class="q-note"><b>Condição especial:</b> metade do valor no projeto e metade na mensalidade, válida para fechamento até 11/11/2026.</div>
       <div class="q-head"><span>Item</span><span>O que inclui</span><span>Valor</span></div>
       <div class="q-row">
         <div><h3>Novo site EngeAjuda</h3><p class="d">Projeto completo, do layout à virada do domínio.</p></div>
@@ -553,7 +557,7 @@ footer img{height:18px;width:auto}
           <li><b>Rastreamento</b> reimplantado com a agência de tráfego</li>
           <li><b>Painel de edição</b> e treinamento de uso</li>
         </ul>
-        <div class="q-val"><strong><small>R$</small>5.500</strong><span>valor único, em 3 etapas</span></div>
+        <div class="q-val"><del>R$ 5.500</del><strong><small>R$</small>2.750</strong><span>valor único, em 3 etapas</span></div>
       </div>
       <div class="q-row">
         <div><h3>Manutenção e evolução</h3><p class="d">Um só responsável pelo site depois da virada.</p><span class="tag">Landing pages inclusas</span></div>
@@ -563,7 +567,7 @@ footer img{height:18px;width:auto}
           <li>Acompanhamento de SEO e Search Console</li>
           <li><b>Landing pages de campanha</b> sob demanda, com layout próprio se a campanha pedir</li>
         </ul>
-        <div class="q-val"><strong><small>R$</small>697</strong><span>por mês</span></div>
+        <div class="q-val"><del>R$ 697</del><strong><small>R$</small>348,50</strong><span>por mês</span></div>
       </div>
       <div class="q-row req">
         <div><h3>Supabase</h3><p class="d">A infraestrutura que faz o site funcionar.</p><span class="tag">Obrigatório</span></div>
@@ -576,8 +580,8 @@ footer img{height:18px;width:auto}
         <div class="q-val"><strong><small>US$</small>25</strong><span>por mês, plano Pro</span></div>
       </div>
       <div class="q-total">
-        <div><span>Para começar</span><strong>R$ 5.500 <em>em 3 etapas</em></strong></div>
-        <div><span>Depois da virada, todo mês</span><strong>R$ 697 + US$ 25</strong></div>
+        <div><span>Para começar</span><strong>R$ 2.750 <em>em 3 etapas</em></strong></div>
+        <div><span>Depois da virada, todo mês</span><strong>R$ 348,50 + US$ 25</strong></div>
       </div>
     </div>
     <dl class="terms rv">
