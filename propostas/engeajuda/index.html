@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Proposta Matilab | Novo site EngeAjuda</title>
+<meta name="description" content="Proposta comercial da Matilab para o novo site da EngeAjuda Engenharia e Arquitetura.">
+<link rel="icon" href="/propostas/engeajuda/site/assets/logo/cropped-icone-270x270.png">
+<link rel="preload" href="/propostas/engeajuda/site/assets/fonts/SchibstedGrotesk-normal-400-900-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Schibsted Grotesk';font-style:normal;font-weight:400 900;font-display:swap;src:url(/propostas/engeajuda/site/assets/fonts/SchibstedGrotesk-normal-400-900-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Schibsted Grotesk';font-style:normal;font-weight:400 900;font-display:swap;src:url(/propostas/engeajuda/site/assets/fonts/SchibstedGrotesk-normal-400-900-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Schibsted Grotesk';font-style:italic;font-weight:500;font-display:swap;src:url(/propostas/engeajuda/site/assets/fonts/SchibstedGrotesk-italic-500-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url(/propostas/engeajuda/site/assets/fonts/JetBrainsMono-normal-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+  --ink:#16120c;--ink-2:#1e1810;--ink-3:#2a231a;
+  --paper:#f4f0ec;--paper-2:#ebe5df;--white:#fffdfb;
+  --line-d:rgba(244,240,236,.12);--line-l:rgba(30,24,16,.14);
+  --muted-d:#a39a91;--muted-l:#645b53;
+  --orange:#fc4c02;--orange-2:#ff7a3d;--orange-ink:#b83700;
+  --good:#0cce6b;--mid:#ffa400;--bad:#ff4e42;
+  --mono:"JetBrains Mono",ui-monospace,monospace;--sans:"Schibsted Grotesk",system-ui,sans-serif;
+  --pad:clamp(20px,4vw,56px);--max:1280px;--ease:cubic-bezier(.2,.7,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--orange);color:#fff}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.07em;text-transform:uppercase}
+.dark{background:var(--ink);color:var(--paper)}
+.sec{padding:clamp(84px,10vw,150px) 0;position:relative}
+.btn{display:inline-flex;align-items:center;gap:12px;height:56px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .4s var(--ease),background .3s,border-color .3s;white-space:nowrap}
+.btn svg{width:18px;height:18px;transition:transform .4s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-o{background:var(--orange);color:#fff}
+.btn-o:hover{background:#e04300}
+.btn-g{border:1px solid var(--line-d);color:var(--paper)}
+.btn-g:hover{border-color:var(--paper)}
+.btn-l{border:1px solid var(--line-l);color:var(--ink)}
+.btn-l:hover{border-color:var(--ink)}
+
+/* cabeçalho de seção estilo prancha */
+.head{display:grid;grid-template-columns:220px 1fr;gap:clamp(20px,4vw,60px);margin-bottom:clamp(44px,6vw,76px)}
+.tag{border-top:1.5px solid currentColor;padding-top:12px;display:flex;flex-direction:column;gap:6px}
+.tag .mono:first-child{color:var(--orange-ink)}
+.dark .tag .mono:first-child{color:var(--orange)}
+.tag .mono:last-child{color:var(--muted-l)}
+.dark .tag .mono:last-child{color:var(--muted-d)}
+.h2{font-size:clamp(36px,5vw,72px);line-height:.96;letter-spacing:-.045em;font-weight:800;max-width:17ch}
+.h2 em{font-style:italic;font-weight:500;color:var(--orange-ink)}
+.dark .h2 em{color:var(--orange)}
+.lead{margin-top:22px;max-width:640px;font-size:clamp(17px,1.3vw,19px);color:var(--muted-l)}
+.dark .lead{color:var(--muted-d)}
+.lead b{color:var(--ink);font-weight:600}
+.dark .lead b{color:var(--paper)}
+
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+
+/* ---------- topo ---------- */
+.top{position:fixed;inset:0 0 auto;z-index:40;transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
+.top.s{background:rgba(22,18,12,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line-d)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px}
+.brands{display:flex;align-items:center;gap:16px}
+.brands img{height:34px;width:auto}
+.brands .x{color:var(--muted-d);font-family:var(--mono);font-size:13px}
+.brands .mt{height:22px;opacity:.95}
+.top nav{display:flex;gap:4px}
+.top nav a{padding:9px 14px;border-radius:999px;font-size:14.5px;color:rgba(244,240,236,.8)}
+.top nav a:hover{background:rgba(244,240,236,.07);color:#fff}
+.top .btn{height:44px;padding:0 18px;font-size:14.5px}
+
+/* ---------- hero ---------- */
+.hero{background:var(--ink);color:var(--paper);padding:140px 0 0;position:relative;overflow:hidden;isolation:isolate}
+.grid-bg{position:absolute;inset:0;z-index:-1;background-image:linear-gradient(var(--line-d) 1px,transparent 1px),linear-gradient(90deg,var(--line-d) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 70% 60% at 25% 30%,#000,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 60% at 25% 30%,#000,transparent 75%);opacity:.6}
+.glow{position:absolute;z-index:-1;width:1000px;height:1000px;right:-360px;top:-300px;background:radial-gradient(circle,rgba(252,76,2,.24),transparent 60%)}
+.hero-in{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(30px,5vw,80px);align-items:end}
+.kick{display:inline-flex;align-items:center;gap:10px;padding:8px 14px 8px 10px;border:1px solid var(--line-d);border-radius:999px;color:var(--muted-d);margin-bottom:30px}
+.kick i{width:8px;height:8px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 4px rgba(252,76,2,.2)}
+.hero h1{font-size:clamp(42px,6.4vw,96px);line-height:.92;letter-spacing:-.05em;font-weight:800}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--orange)}
+.hero p.sub{margin-top:28px;max-width:600px;font-size:clamp(17px,1.4vw,20px);color:rgba(244,240,236,.78)}
+.hero p.sub b{color:#fff;font-weight:600}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+/* carimbo / legenda de prancha */
+.stamp{border:1.5px solid rgba(244,240,236,.5);border-radius:6px;display:grid;grid-template-columns:1fr 1fr;font-size:14px;background:rgba(22,18,12,.6);backdrop-filter:blur(6px)}
+.stamp>div{padding:14px 16px;border-bottom:1px solid var(--line-d)}
+.stamp>div:nth-child(odd){border-right:1px solid var(--line-d)}
+.stamp .full{grid-column:1/-1;border-right:0!important}
+.stamp .mono{display:block;color:var(--muted-d);font-size:10.5px;margin-bottom:4px}
+.stamp strong{font-weight:600;font-size:15px;line-height:1.3;display:block}
+.stamp .logo-cell{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.stamp .logo-cell img{height:30px;width:auto}
+.stamp>div:last-child,.stamp>div:nth-last-child(2):not(.full){border-bottom:0}
+.stamp .o{color:var(--orange)}
+.hero-shot{margin-top:clamp(60px,8vw,100px);position:relative;perspective:1600px}
+.browser{border-radius:16px 16px 0 0;overflow:hidden;border:1px solid var(--line-d);border-bottom:0;background:var(--ink-2);transform-origin:50% 100%;transform:rotateX(14deg) scale(.94);transition:transform .2s linear;box-shadow:0 -40px 120px rgba(252,76,2,.12)}
+.bar{display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid var(--line-d)}
+.bar i{width:10px;height:10px;border-radius:50%;background:rgba(244,240,236,.18)}
+.bar span{margin-left:14px;flex:1;max-width:420px;background:rgba(244,240,236,.06);border-radius:8px;padding:5px 12px;font-family:var(--mono);font-size:11.5px;color:var(--muted-d);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.browser img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.shot-cta{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);z-index:2}
+
+/* ---------- diagnóstico ---------- */
+.diag{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,70px);align-items:start}
+.gauges{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.g{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px}
+.ring{width:100%;max-width:96px;aspect-ratio:1;position:relative}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:7}
+.ring .bg{stroke:rgba(30,24,16,.08)}
+.dark .ring .bg{stroke:rgba(244,240,236,.1)}
+.ring .fg{stroke-linecap:round;stroke-dasharray:283;stroke-dashoffset:283;transition:stroke-dashoffset 1.6s var(--ease)}
+.ring b{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--mono);font-size:clamp(18px,2vw,24px);font-weight:500}
+.g .mono{font-size:10.5px;color:var(--muted-l);line-height:1.35}
+.dark .g .mono{color:var(--muted-d)}
+.lcp{margin-top:40px;background:var(--white);border:1px solid var(--line-l);border-radius:22px;padding:26px}
+.lcp h3{font-size:20px;letter-spacing:-.02em;font-weight:700}
+.lcp p{color:var(--muted-l);font-size:15.5px;margin-top:6px}
+.lbar{margin-top:22px;display:flex;flex-direction:column;gap:14px}
+.lrow{display:grid;grid-template-columns:120px 1fr 64px;gap:14px;align-items:center;font-size:14.5px}
+.track{height:12px;border-radius:12px;background:var(--paper-2);position:relative;overflow:hidden}
+.track span{position:absolute;inset:0 auto 0 0;width:0;border-radius:12px;transition:width 1.6s var(--ease)}
+.lrow b{font-family:var(--mono);font-weight:500;text-align:right}
+.diag-txt p{color:var(--muted-l);margin-top:18px}
+.diag-txt p b{color:var(--ink);font-weight:600}
+.print{margin-top:30px;border-radius:18px;overflow:hidden;border:1px solid var(--line-l);box-shadow:0 30px 70px rgba(30,24,16,.12)}
+.print figcaption{padding:12px 16px;background:var(--white);font-size:13.5px;color:var(--muted-l);border-top:1px solid var(--line-l)}
+.keep{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;border:1px solid var(--line-l);font-size:14.5px;background:var(--white)}
+.chip i{width:8px;height:8px;border-radius:50%}
+
+/* ---------- antes x depois ---------- */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.vs-card{border:1px solid var(--line-d);border-radius:26px;padding:clamp(24px,3vw,38px);background:var(--ink-2)}
+.vs-card.new{background:linear-gradient(160deg,rgba(252,76,2,.14),rgba(252,76,2,.02) 60%),var(--ink-2);border-color:rgba(252,76,2,.45)}
+.vs-card header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:28px}
+.vs-card header strong{font-size:22px;letter-spacing:-.02em}
+.pill{padding:6px 12px;border-radius:999px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line-d);color:var(--muted-d)}
+.new .pill{background:var(--orange);color:#fff;border-color:var(--orange)}
+.vs-card .gauges{grid-template-columns:repeat(4,1fr)}
+.big-metric{display:flex;align-items:baseline;gap:14px;margin-top:34px;padding-top:26px;border-top:1px solid var(--line-d)}
+.big-metric strong{font-size:clamp(56px,7vw,96px);letter-spacing:-.05em;line-height:.85;font-weight:800}
+.big-metric span{color:var(--muted-d);font-size:15px;line-height:1.35}
+.new .big-metric strong{color:var(--orange)}
+.vs-note{margin-top:22px;color:var(--muted-d);font-size:14px;max-width:880px}
+
+/* ---------- prévia ---------- */
+.preview{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,.55fr);gap:24px;align-items:end}
+.pv-desk{border-radius:16px;overflow:hidden;border:1px solid var(--line-l);background:var(--ink-2);box-shadow:0 40px 90px rgba(30,24,16,.18)}
+.pv-desk .bar{border-color:rgba(244,240,236,.1)}
+.pv-desk .viewport{height:clamp(360px,42vw,560px);overflow:hidden;position:relative}
+.pv-desk .viewport img{width:100%;position:absolute;top:0;left:0;transition:opacity .7s}
+.pv-desk .viewport img:not(.on){opacity:0}
+.phone{border-radius:42px;border:10px solid var(--ink);background:var(--ink);overflow:hidden;aspect-ratio:9/19.5;box-shadow:0 40px 90px rgba(30,24,16,.25);position:relative}
+.phone::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:34%;height:22px;border-radius:20px;background:var(--ink);z-index:2}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top}
+.pv-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px;align-items:center}
+.pv-tabs button{font:inherit;font-size:14.5px;padding:10px 16px;border-radius:999px;border:1px solid var(--line-l);background:var(--white);cursor:pointer;color:var(--ink);transition:.25s}
+.pv-tabs button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.pv-tabs .btn{margin-left:auto}
+.feat{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-l);border:1px solid var(--line-l);border-radius:22px;overflow:hidden;margin-top:44px}
+.feat div{background:var(--paper);padding:24px}
+.feat .mono{color:var(--orange-ink)}
+.feat strong{display:block;font-size:19px;letter-spacing:-.02em;margin:8px 0 6px;line-height:1.2}
+.feat p{font-size:15px;color:var(--muted-l)}
+
+/* ---------- por que importa ---------- */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.wcard{border:1px solid var(--line-d);border-radius:24px;padding:30px;background:var(--ink-2);display:flex;flex-direction:column;gap:14px}
+.wcard .ico{width:48px;height:48px;border-radius:14px;background:rgba(252,76,2,.14);display:grid;place-items:center;color:var(--orange)}
+.wcard .ico svg{width:24px;height:24px}
+.wcard h3{font-size:24px;letter-spacing:-.03em;line-height:1.1;font-weight:700}
+.wcard p{color:var(--muted-d);font-size:15.5px}
+.wcard p b{color:var(--paper);font-weight:600}
+.logos{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:8px}
+.logos span{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:999px;background:rgba(244,240,236,.06);border:1px solid var(--line-d);font-size:13px}
+.logos img{width:15px;height:15px}
+.logos img[src*="chatgpt"],.ids img[src*="chatgpt"]{filter:invert(1)}
+.ask{margin-top:16px;border:1px solid var(--line-d);border-radius:24px;padding:clamp(22px,3vw,34px);display:grid;grid-template-columns:1fr 1.2fr;gap:30px;align-items:center;background:var(--ink-2)}
+.ask h3{font-size:clamp(24px,2.4vw,34px);letter-spacing:-.035em;line-height:1.05}
+.ask h3 em{font-style:italic;font-weight:500;color:var(--orange)}
+.ask p{color:var(--muted-d);margin-top:10px;font-size:15.5px}
+.chat{display:flex;flex-direction:column;gap:10px}
+.msg{padding:14px 16px;border-radius:18px;font-size:15px;max-width:90%;line-height:1.45}
+.msg.u{align-self:flex-end;background:var(--paper);color:var(--ink);border-bottom-right-radius:6px}
+.msg.a{background:var(--ink-3);border:1px solid var(--line-d);border-bottom-left-radius:6px}
+.msg.a b{color:var(--orange-2);font-weight:600}
+.msg small{display:block;margin-top:8px;font-family:var(--mono);font-size:10.5px;color:var(--muted-d);letter-spacing:.05em;text-transform:uppercase}
+
+/* ---------- seo / migração ---------- */
+.mig{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.mcol{border-radius:24px;padding:clamp(24px,3vw,36px);border:1px solid var(--line-l);background:var(--white)}
+.mcol.bad{background:transparent}
+.mcol h3{font-size:22px;letter-spacing:-.025em;display:flex;align-items:center;gap:10px}
+.mcol h3 i{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:15px;color:#fff;flex:0 0 auto}
+.mcol ol{list-style:none;margin-top:20px;display:flex;flex-direction:column}
+.mcol li{display:grid;grid-template-columns:34px 1fr;gap:6px;padding:13px 0;border-top:1px solid var(--line-l);font-size:15.5px}
+.mcol li span{font-family:var(--mono);font-size:12px;color:var(--orange-ink);padding-top:3px}
+.mcol.bad li span{color:var(--muted-l)}
+.mcol li b{font-weight:600}
+.counts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.count{border-radius:24px;padding:28px;background:var(--ink);color:var(--paper)}
+.count strong{display:block;font-size:clamp(48px,5vw,72px);letter-spacing:-.05em;line-height:.9;font-weight:800}
+.count strong sup{font-size:.4em;color:var(--orange);vertical-align:top;position:relative;top:.4em;margin-left:4px}
+.count span{display:block;color:var(--muted-d);font-size:15px;margin-top:10px}
+.tl{margin-top:16px;border:1px solid var(--line-l);border-radius:24px;padding:clamp(24px,3vw,36px);background:var(--white)}
+.tl h3{font-size:20px;letter-spacing:-.02em}
+.tl-bar{display:grid;grid-template-columns:1fr 2fr 3fr;margin-top:24px;gap:4px}
+.tl-bar div{padding:14px 16px;border-radius:12px;font-size:14.5px;line-height:1.35}
+.tl-bar div .mono{display:block;margin-bottom:6px;font-size:10.5px}
+.tl-bar .t1{background:var(--ink);color:var(--paper)}
+.tl-bar .t1 .mono{color:var(--orange)}
+.tl-bar .t2{background:#fde3d4}
+.tl-bar .t3{background:#dff5e8}
+.tl p.note{margin-top:16px;color:var(--muted-l);font-size:15px}
+
+/* ---------- tracking ---------- */
+.trk{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:stretch}
+.side{border:1px solid var(--line-d);border-radius:24px;padding:28px;background:var(--ink-2)}
+.side h3{font-size:22px;letter-spacing:-.025em}
+.side .mono{color:var(--orange)}
+.side ul{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:10px}
+.side li{display:flex;gap:10px;font-size:15.5px;color:rgba(244,240,236,.82)}
+.side li::before{content:"";flex:0 0 6px;height:6px;margin-top:9px;background:var(--orange);transform:rotate(45deg)}
+.link{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;color:var(--muted-d);min-width:120px}
+.link .line{width:2px;flex:1;background:repeating-linear-gradient(var(--orange) 0 6px,transparent 6px 12px)}
+.link .node{width:64px;height:64px;border-radius:50%;border:1.5px solid var(--orange);display:grid;place-items:center;font-family:var(--mono);font-size:11px;color:var(--orange);text-align:center;line-height:1.2}
+.ids{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+.ids span{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border:1px solid var(--line-d);border-radius:999px;font-size:14px}
+.ids img{width:16px;height:16px}
+
+/* ---------- escopo ---------- */
+.scope{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sc{border:1px solid var(--line-l);border-radius:22px;padding:26px;background:var(--white);display:flex;flex-direction:column;gap:8px}
+.sc .mono{color:var(--orange-ink)}
+.sc h3{font-size:20px;letter-spacing:-.02em;line-height:1.2}
+.sc p{color:var(--muted-l);font-size:15px}
+.sc.wide{grid-column:span 2;background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.sc.wide .mono{color:var(--orange)}
+.sc.wide p{color:var(--muted-d)}
+.pages{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.pages span{padding:8px 13px;border-radius:999px;border:1px solid var(--line-d);font-size:14px}
+.pages span.o{border-color:var(--orange);color:var(--orange-2)}
+
+/* ---------- cronograma ---------- */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(7,1fr);gap:0;border-top:1.5px solid var(--ink);counter-reset:s}
+.steps li{padding:22px 16px 0 0;position:relative}
+.steps li::before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--paper);border:1.5px solid var(--ink)}
+.steps li.hl::before{background:var(--orange);border-color:var(--orange)}
+.steps .mono{color:var(--orange-ink)}
+.steps strong{display:block;font-size:17px;letter-spacing:-.015em;line-height:1.2;margin:8px 0 6px}
+.steps p{font-size:14.5px;color:var(--muted-l)}
+.dur{margin-top:44px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;border:1px solid var(--line-l);border-radius:22px;padding:22px 26px;background:var(--white)}
+.dur strong{font-size:clamp(30px,3vw,42px);letter-spacing:-.04em;line-height:1}
+.dur p{color:var(--muted-l);font-size:15.5px;max-width:640px}
+
+/* ---------- investimento ---------- */
+.price{display:grid;grid-template-columns:1.1fr 1fr;gap:16px;align-items:stretch}
+.pc{border-radius:28px;padding:clamp(28px,3.4vw,44px);display:flex;flex-direction:column;border:1px solid var(--line-d);background:var(--ink-2)}
+.pc.main{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.pc .mono{color:var(--orange)}
+.pc.main .mono{color:var(--orange-ink)}
+.pc h3{font-size:clamp(26px,2.4vw,34px);letter-spacing:-.035em;line-height:1.05;margin-top:10px}
+.amount{display:flex;align-items:baseline;gap:8px;margin:26px 0 6px;flex-wrap:wrap}
+.amount small{font-size:20px;font-weight:600}
+.amount strong{font-size:clamp(60px,7vw,92px);letter-spacing:-.055em;line-height:.85;font-weight:800}
+.amount span{font-size:18px;color:var(--muted-d);font-weight:500}
+.pc.main .amount span{color:var(--muted-l)}
+.pc .sub{color:var(--muted-d);font-size:15px}
+.pc.main .sub{color:var(--muted-l)}
+.pc ul{list-style:none;margin-top:26px;padding-top:22px;border-top:1px solid var(--line-d);display:flex;flex-direction:column;gap:11px}
+.pc.main ul{border-color:var(--line-l)}
+.pc li{display:grid;grid-template-columns:22px 1fr;gap:10px;font-size:15.5px;line-height:1.45}
+.pc li svg{width:18px;height:18px;margin-top:3px;color:var(--orange)}
+.pc.main li svg{color:var(--orange-ink)}
+.pc li b{font-weight:600}
+.pay{margin-top:auto;padding-top:24px}
+.pay-in{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:22px}
+.pay-in div{border:1px solid var(--line-l);border-radius:14px;padding:14px;background:var(--white)}
+.pay-in .mono{font-size:10.5px}
+.pay-in strong{display:block;font-size:15px;margin-top:4px;line-height:1.3}
+.lp-badge{margin-top:22px;border-radius:18px;padding:18px;background:rgba(252,76,2,.12);border:1px solid rgba(252,76,2,.4)}
+.lp-badge strong{display:block;font-size:17px;letter-spacing:-.01em}
+.lp-badge p{color:rgba(244,240,236,.78);font-size:14.5px;margin-top:4px}
+.terms{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:16px}
+.terms div{border:1px solid var(--line-d);border-radius:20px;padding:22px}
+.terms .mono{color:var(--orange)}
+.terms strong{display:block;font-size:17px;margin:8px 0 4px;letter-spacing:-.01em}
+.terms p{color:var(--muted-d);font-size:14.5px}
+
+/* ---------- quem faz ---------- */
+.who{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:start}
+.who-card{background:var(--ink);color:var(--paper);border-radius:28px;padding:clamp(28px,3vw,40px)}
+.who-card img{height:30px;width:auto}
+.who-card p{color:var(--muted-d);margin-top:20px}
+.who-card p b{color:var(--paper);font-weight:600}
+.who-card dl{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-d);border:1px solid var(--line-d);border-radius:16px;overflow:hidden;margin-top:26px}
+.who-card dl div{background:var(--ink);padding:16px}
+.who-card dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--orange)}
+.who-card dd{font-size:15px;margin-top:4px}
+.port{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+.port a{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:15px 18px;border:1px solid var(--line-l);border-radius:14px;background:var(--white);font-weight:600;font-size:15.5px;transition:border-color .3s,transform .4s var(--ease)}
+.port a:hover{border-color:var(--orange);transform:translateY(-2px)}
+.port a small{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-l);font-weight:400}
+
+/* ---------- faq ---------- */
+.faq{max-width:900px}
+.faq details{border-top:1px solid var(--line-d)}
+.faq details:last-child{border-bottom:1px solid var(--line-d)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:24px 0;font-size:clamp(18px,1.5vw,21px);font-weight:600;letter-spacing:-.015em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:0 0 30px;height:30px;border-radius:50%;border:1px solid var(--line-d);position:relative;transition:transform .4s var(--ease),background .3s}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;background:currentColor;transform:translate(-50%,-50%)}
+.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq details[open] summary i{transform:rotate(45deg);background:var(--orange);border-color:var(--orange)}
+.faq .ans{padding:0 50px 26px 0;color:var(--muted-d)}
+.faq .ans p+p{margin-top:10px}
+.faq .ans b{color:var(--paper);font-weight:600}
+
+/* ---------- final ---------- */
+.final{position:relative;overflow:hidden;padding:clamp(100px,12vw,170px) 0;isolation:isolate;background:var(--ink);color:var(--paper)}
+.final>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;object-position:50% 35%;opacity:.5}
+.final::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--ink) 15%,rgba(22,18,12,.6) 70%,rgba(22,18,12,.3))}
+.final h2{font-size:clamp(44px,7vw,104px);line-height:.9;letter-spacing:-.055em;font-weight:800;max-width:12ch}
+.final h2 em{font-style:italic;font-weight:500;color:var(--orange)}
+.final p{margin:24px 0 34px;max-width:540px;color:rgba(244,240,236,.82);font-size:19px}
+.final .btn-g{border-color:rgba(244,240,236,.4)}
+.sign{margin-top:56px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;color:var(--muted-d);font-size:14.5px}
+.sign img{height:24px}
+.sign b{color:var(--paper);font-weight:600}
+footer{background:var(--ink);color:var(--muted-d);border-top:1px solid var(--line-d);padding:26px 0;font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* ---------- responsivo ---------- */
+@media (max-width:1080px){
+  .top nav{display:none}
+  .gauges{grid-template-columns:repeat(5,1fr)}
+  .steps{grid-template-columns:repeat(4,1fr);row-gap:30px}
+  .terms{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .head{grid-template-columns:1fr;gap:18px}
+  .tag{flex-direction:row;justify-content:space-between}
+  .hero-in,.diag,.vs,.preview,.why,.ask,.mig,.who,.price,.trk{grid-template-columns:1fr}
+  .hero{padding-top:118px}
+  .browser{transform:none}
+  .phone{max-width:300px;margin:0 auto}
+  .feat{grid-template-columns:1fr 1fr}
+  .counts{grid-template-columns:1fr}
+  .tl-bar{grid-template-columns:1fr}
+  .scope{grid-template-columns:1fr}
+  .sc.wide{grid-column:auto}
+  .link{flex-direction:row;min-width:0}
+  .link .line{width:auto;height:2px;flex:1;background:repeating-linear-gradient(90deg,var(--orange) 0 6px,transparent 6px 12px)}
+  .steps{grid-template-columns:1fr;border-top:0;border-left:1.5px solid var(--ink);padding-left:22px}
+  .steps li{padding:0 0 26px}
+  .steps li::before{top:4px;left:-29px}
+  .pv-tabs .btn{margin-left:0}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .top .wrap{height:66px}
+  .brands img{height:28px}
+  .brands .mt,.brands .x{display:none}
+  .top .btn span{display:none}
+  .top .btn{width:44px;padding:0;justify-content:center}
+  .acts .btn{flex:1;justify-content:center}
+  .gauges,.vs-card .gauges{grid-template-columns:repeat(3,1fr);row-gap:20px}
+  .lrow{grid-template-columns:92px 1fr 52px;gap:10px;font-size:13.5px}
+  .feat{grid-template-columns:1fr}
+  .pay-in{grid-template-columns:1fr}
+  .terms{grid-template-columns:1fr}
+  .port{grid-template-columns:1fr}
+  .who-card dl{grid-template-columns:1fr}
+  .faq .ans{padding-right:0}
+  .stamp{font-size:13px}
+  .stamp strong{font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <div class="brands">
+      <img src="/propostas/engeajuda/site/assets/logo/engeajuda-engenharia-e-arquitetura-preto-e-laranja.svg" alt="EngeAjuda" width="136" height="34">
+      <span class="x">×</span>
+      <img class="mt" src="/propostas/engeajuda/assets/matilab-logo-white.svg" alt="Matilab" width="96" height="22">
+    </div>
+    <nav aria-label="Seções">
+      <a href="#diagnostico">Diagnóstico</a>
+      <a href="#previa">Prévia</a>
+      <a href="#seo">SEO</a>
+      <a href="#escopo">Escopo</a>
+      <a href="#investimento">Investimento</a>
+    </nav>
+    <a class="btn btn-o" href="/propostas/engeajuda/site" target="_blank" rel="noopener" aria-label="Ver o site novo"><span>Ver o site novo</span><svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="grid-bg"></div><div class="glow"></div>
+  <div class="wrap">
+    <div class="hero-in">
+      <div>
+        <span class="kick mono"><i></i>Proposta comercial · Rev. 01</span>
+        <h1>O site que a EngeAjuda <em>já merece,</em> sem perder o que já conquistou.</h1>
+        <p class="sub">Um site novo, mais rápido no celular, pronto para o Google e para as IAs, com <b>migração que preserva o SEO</b> e <b>o rastreamento das campanhas</b> que vocês já rodam.</p>
+        <div class="acts">
+          <a class="btn btn-o" href="#previa">Ver a prévia <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
+          <a class="btn btn-g" href="#investimento">Ir para o investimento</a>
+        </div>
+      </div>
+      <div class="stamp rv d1" aria-label="Dados da proposta">
+        <div class="full logo-cell"><div><span class="mono">Cliente</span><strong>EngeAjuda Engenharia e Arquitetura</strong></div></div>
+        <div><span class="mono">Aos cuidados de</span><strong>Eng. Kauê Chiavegati</strong></div>
+        <div><span class="mono">Sócio</span><strong>Eng. Felipe Fidelis</strong></div>
+        <div class="full"><span class="mono">Objeto</span><strong>Novo site institucional, migração de SEO e manutenção</strong></div>
+        <div><span class="mono">Emissão</span><strong>27/10/2026</strong></div>
+        <div><span class="mono">Validade</span><strong class="o">11/11/2026</strong></div>
+        <div><span class="mono">Responsável</span><strong>Matheus Moura</strong></div>
+        <div><span class="mono">Agência</span><strong>Matilab</strong></div>
+      </div>
+    </div>
+    <div class="hero-shot">
+      <div class="browser" id="browser">
+        <div class="bar"><i></i><i></i><i></i><span>engeajuda.com.br</span></div>
+        <img src="/propostas/engeajuda/assets/shot-desktop.webp" alt="Prévia da nova página inicial da EngeAjuda" fetchpriority="high">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 DIAGNÓSTICO -->
+<section class="sec" id="diagnostico">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag rv"><span class="mono">01 · Diagnóstico</span><span class="mono">Site atual, celular</span></div>
+      <div>
+        <h2 class="h2 rv">O site de hoje é honesto. <em>A base é que chegou no limite.</em></h2>
+        <p class="lead rv d1">O trabalho atual tem mérito: fotos de qualidade, conteúdo bem pensado e SEO técnico em 100. O gargalo está na estrutura WordPress com Elementor, que pesa justamente onde vocês investem em tráfego: <b>no celular</b>.</p>
+      </div>
+    </div>
+    <div class="diag">
+      <div>
+        <div class="gauges rv" data-gauges>
+          <div class="g"><div class="ring" data-v="64"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>64</b></div><span class="mono">Desempenho</span></div>
+          <div class="g"><div class="ring" data-v="84"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>84</b></div><span class="mono">Acessibili&shy;dade</span></div>
+          <div class="g"><div class="ring" data-v="100"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>100</b></div><span class="mono">Boas práticas</span></div>
+          <div class="g"><div class="ring" data-v="100"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>100</b></div><span class="mono">SEO</span></div>
+          <div class="g"><div class="ring" data-v="67" data-label="2/3"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>2/3</b></div><span class="mono">Navegação agêntica</span></div>
+        </div>
+        <div class="lcp rv d1">
+          <h3>6,7 segundos até o conteúdo principal aparecer</h3>
+          <p>É o LCP (Largest Contentful Paint), a métrica que o Google usa para medir quando a página fica útil. O recomendado é até 2,5 s.</p>
+          <div class="lbar" data-bars>
+            <div class="lrow"><span>Site atual</span><div class="track"><span style="background:var(--bad)" data-w="100"></span></div><b>6,7 s</b></div>
+            <div class="lrow"><span>Meta do Google</span><div class="track"><span style="background:var(--good)" data-w="37"></span></div><b>2,5 s</b></div>
+            <div class="lrow"><span>Site novo</span><div class="track"><span style="background:var(--orange)" data-w="34"></span></div><b>2,3 s</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="diag-txt">
+        <figure class="print rv">
+          <img src="/propostas/engeajuda/assets/pagespeed-atual.jpg" alt="Relatório do PageSpeed Insights do site atual da EngeAjuda no celular: desempenho 64, acessibilidade 84, práticas recomendadas 100, SEO 100, navegação agêntica 2 de 3" loading="lazy">
+          <figcaption>PageSpeed Insights, versão celular, engeajuda.com.br. Medido em 27/10/2026.</figcaption>
+        </figure>
+        <p class="rv d1"><b>O que fica:</b> a estrutura de SEO e as boas práticas, que já estão em 100. É patrimônio de vocês e vai junto.</p>
+        <p class="rv d1"><b>O que muda:</b> velocidade no celular, contraste e leitura (acessibilidade) e a camada que deixa o site legível para agentes de IA, que hoje atende 2 de 3 critérios.</p>
+        <div class="keep rv d2">
+          <span class="chip"><i style="background:var(--good)"></i>SEO 100 preservado</span>
+          <span class="chip"><i style="background:var(--good)"></i>Boas práticas 100</span>
+          <span class="chip"><i style="background:var(--mid)"></i>Desempenho a recuperar</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 ANTES x DEPOIS -->
+<section class="sec dark" id="comparativo">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag rv"><span class="mono">02 · Antes e depois</span><span class="mono">Medição real, não promessa</span></div>
+      <div>
+        <h2 class="h2 rv">A prévia do site novo <em>já está no ar e já foi medida.</em></h2>
+        <p class="lead rv d1">Antes de pedir qualquer decisão, montamos a nova página inicial com o conteúdo, o logo e as fotos de vocês e rodamos a mesma ferramenta do Google. Os números abaixo são dessa página publicada.</p>
+      </div>
+    </div>
+    <div class="vs">
+      <div class="vs-card rv">
+        <header><strong>Site atual</strong><span class="pill">WordPress + Elementor</span></header>
+        <div class="gauges" data-gauges>
+          <div class="g"><div class="ring" data-v="64"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>64</b></div><span class="mono">Desempenho</span></div>
+          <div class="g"><div class="ring" data-v="84"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>84</b></div><span class="mono">Acessibili&shy;dade</span></div>
+          <div class="g"><div class="ring" data-v="100"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>100</b></div><span class="mono">Boas práticas</span></div>
+          <div class="g"><div class="ring" data-v="100"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>100</b></div><span class="mono">SEO</span></div>
+        </div>
+        <div class="big-metric"><strong>6,7s</strong><span>até o conteúdo<br>principal aparecer</span></div>
+      </div>
+      <div class="vs-card new rv d1">
+        <header><strong>Site novo</strong><span class="pill">Prévia publicada</span></header>
+        <div class="gauges" data-gauges>
+          <div class="g"><div class="ring" data-v="94"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>94</b></div><span class="mono">Desempenho</span></div>
+          <div class="g"><div class="ring" data-v="100"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>100</b></div><span class="mono">Acessibili&shy;dade</span></div>
+          <div class="g"><div class="ring" data-v="100"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>100</b></div><span class="mono">Boas práticas</span></div>
+          <div class="g"><div class="ring" data-v="100"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle class="fg" cx="50" cy="50" r="45"/></svg><b>100</b></div><span class="mono">SEO</span></div>
+        </div>
+        <div class="big-metric"><strong>2,3s</strong><span>até o conteúdo<br>principal aparecer</span></div>
+      </div>
+    </div>
+    <p class="vs-note rv">Lighthouse, versão celular, medido em 27/10/2026 na página inicial. A prévia está marcada para não aparecer no Google (para não competir com o site oficial), por isso o SEO dela foi medido sem essa marcação. A meta de entrega é acima de 90 nas quatro categorias, em todas as páginas, com acompanhamento para manter.</p>
+  </div>
+</section>
+
+<!-- 03 PRÉVIA -->
+<section class="sec" id="previa">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag rv"><span class="mono">03 · A prévia</span><span class="mono">Navegável agora</span></div>
+      <div>
+        <h2 class="h2 rv">Mesmo conteúdo, <em>outra presença.</em></h2>
+        <p class="lead rv d1">A direção visual nasce do próprio universo de vocês: o preto e o laranja do logo, a linguagem de prancha técnica de engenharia e as fotos reais da equipe em destaque. É um ponto de partida para ajustarmos juntos, não um layout fechado.</p>
+      </div>
+    </div>
+    <div class="preview rv">
+      <div class="pv-desk">
+        <div class="bar"><i></i><i></i><i></i><span>engeajuda.com.br</span></div>
+        <div class="viewport" id="pvdesk">
+          <img class="on" src="/propostas/engeajuda/assets/shot-desktop.webp" alt="Página inicial" loading="lazy">
+          <img src="/propostas/engeajuda/assets/shot-bento.webp" alt="Destaques dos serviços" loading="lazy">
+          <img src="/propostas/engeajuda/assets/shot-servicos.webp" alt="Índice de serviços" loading="lazy">
+          <img src="/propostas/engeajuda/assets/shot-equipe.webp" alt="Equipe" loading="lazy">
+        </div>
+      </div>
+      <div class="phone"><img src="/propostas/engeajuda/assets/shot-mobile.webp" alt="Página inicial no celular" loading="lazy"></div>
+    </div>
+    <div class="pv-tabs rv" id="pvtabs">
+      <button class="on" data-i="0">Abertura</button>
+      <button data-i="1">Destaques</button>
+      <button data-i="2">Serviços</button>
+      <button data-i="3">Equipe</button>
+      <a class="btn btn-o" href="/propostas/engeajuda/site" target="_blank" rel="noopener">Abrir o site completo <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
+    </div>
+    <div class="feat rv">
+      <div><span class="mono">01</span><strong>Painel de edição</strong><p>Vocês trocam texto, imagem e publicam no blog sem mexer em código.</p></div>
+      <div><span class="mono">02</span><strong>Uma página por serviço</strong><p>Cada serviço com endereço e palavra-chave próprios, pronta para receber tráfego.</p></div>
+      <div><span class="mono">03</span><strong>Conversão no celular</strong><p>WhatsApp sempre à mão, formulário enxuto e prova social perto do botão.</p></div>
+      <div><span class="mono">04</span><strong>Sem plugin empilhado</strong><p>Entra só o que precisa existir. Menos peso, menos porta para ataque.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 POR QUE IMPORTA -->
+<section class="sec dark" id="porque">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag rv"><span class="mono">04 · Por que importa</span><span class="mono">Ads, Google e IAs</span></div>
+      <div>
+        <h2 class="h2 rv">Velocidade aqui <em>vira dinheiro na conta de anúncio.</em></h2>
+        <p class="lead rv d1">O Google não pontua estética. Ele pontua experiência, velocidade e conteúdo. Para quem roda Google Ads e Meta Ads apontando para as páginas de serviço, isso aparece primeiro no custo por lead.</p>
+      </div>
+    </div>
+    <div class="why">
+      <div class="wcard rv">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+        <h3>Tráfego pago mais eficiente</h3>
+        <p>A <b>experiência na página de destino</b> é um dos componentes do Índice de Qualidade do Google Ads. Página que abre rápido no 4G perde menos clique pago antes do formulário carregar.</p>
+        <div class="logos"><span><img src="/propostas/engeajuda/assets/logo-googleads.svg" alt="">Google Ads</span><span><img src="/propostas/engeajuda/assets/logo-meta.svg" alt="">Meta Ads</span></div>
+      </div>
+      <div class="wcard rv d1">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <h3>Busca local em Campinas</h3>
+        <p>Vocês têm escritório desde 2018 e <b>280 avaliações no Google</b>. O site novo sustenta esse patrimônio com uma página por serviço, dados estruturados da empresa e conteúdo de Campinas e região.</p>
+        <div class="logos"><span><img src="/propostas/engeajuda/assets/logo-google.svg" alt="">Google Search</span><span><img src="/propostas/engeajuda/assets/logo-pagespeed.svg" alt="">Core Web Vitals</span></div>
+      </div>
+      <div class="wcard rv d2">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg></div>
+        <h3>GEO, o SEO das IAs</h3>
+        <p>Cada vez mais gente pergunta para a IA antes de abrir o Google. Estruturamos o site para que <b>ChatGPT, Gemini, Claude e Perplexity</b> consigam ler, entender e citar a EngeAjuda.</p>
+        <div class="logos"><span><img src="/propostas/engeajuda/assets/logo-chatgpt.svg" alt="">ChatGPT</span><span><img src="/propostas/engeajuda/assets/logo-gemini.svg" alt="">Gemini</span><span><img src="/propostas/engeajuda/assets/logo-claude.svg" alt="">Claude</span><span><img src="/propostas/engeajuda/assets/logo-perplexity.svg" alt="">Perplexity</span></div>
+      </div>
+    </div>
+    <div class="ask rv">
+      <div>
+        <span class="mono" style="color:var(--orange)">O cenário que queremos ganhar</span>
+        <h3 style="margin-top:12px">Quando alguém perguntar, a resposta <em>precisa citar vocês.</em></h3>
+        <p>Isso depende de conteúdo claro por serviço, perguntas frequentes bem respondidas e dados da empresa organizados. É exatamente o que o site novo entrega.</p>
+      </div>
+      <div class="chat">
+        <div class="msg u">Preciso regularizar uma edícula e tirar o habite-se em Campinas. Quem faz isso?</div>
+        <div class="msg a">Em Campinas, a <b>EngeAjuda</b> é especializada em regularização de imóveis e habite-se junto à Secretaria de Urbanismo, com escritório na Av. Dr. Alberto Sarmento, 890...<small>Exemplo ilustrativo de resposta de IA</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 SEO -->
+<section class="sec" id="seo">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag rv"><span class="mono">05 · SEO</span><span class="mono">Migração sem recomeçar</span></div>
+      <div>
+        <h2 class="h2 rv">Vocês não começam do zero. <em>O histórico mora no domínio.</em></h2>
+        <p class="lead rv d1">A autoridade construída desde 2018 está no domínio e no conteúdo das páginas, não no WordPress. A migração é feita para o Google entender que é o mesmo site, mais rápido. Não prometemos perda zero, ninguém sério promete. Prometemos método.</p>
+      </div>
+    </div>
+    <div class="mig">
+      <div class="mcol rv">
+        <h3><i style="background:var(--good)">✓</i>O que fazemos para preservar</h3>
+        <ol>
+          <li><span>01</span><div><b>Mesmo domínio</b>, sem troca de endereço principal.</div></li>
+          <li><span>02</span><div><b>Mesmas URLs.</b> /sobre continua /sobre, mesmo que o menu mude de nome.</div></li>
+          <li><span>03</span><div><b>Redirecionamento 301 um a um</b> para qualquer página que mudar ou sair, sempre para o serviço mais próximo, nunca para a home.</div></li>
+          <li><span>04</span><div><b>Conteúdo preservado e melhorado</b>, mantendo a base de cada texto que já posiciona.</div></li>
+          <li><span>05</span><div><b>Título e H1 alinhados</b> ao termo de cada serviço.</div></li>
+          <li><span>06</span><div><b>Site novo validado antes da virada</b>, sem nenhum minuto fora do ar.</div></li>
+          <li><span>07</span><div><b>Sitemap reenviado e Search Console monitorado</b> diariamente no primeiro mês.</div></li>
+        </ol>
+      </div>
+      <div class="mcol bad rv d1">
+        <h3><i style="background:var(--bad)">×</i>O que faz perder (e evitamos)</h3>
+        <ol>
+          <li><span>01</span><div>Trocar de domínio sem necessidade.</div></li>
+          <li><span>02</span><div>Mudar os endereços das páginas sem redirecionar.</div></li>
+          <li><span>03</span><div>Juntar vários serviços numa página só.</div></li>
+          <li><span>04</span><div>Apagar artigos longos que já traziam visita.</div></li>
+          <li><span>05</span><div>Deixar o site fora do ar durante a troca.</div></li>
+        </ol>
+      </div>
+    </div>
+    <div class="counts">
+      <div class="count rv"><strong data-n="27">0</strong><span>páginas atuais mapeadas uma a uma</span></div>
+      <div class="count rv d1"><strong data-n="111">0</strong><span>artigos do blog migrados nas mesmas URLs</span></div>
+      <div class="count rv d2"><strong>0<sup>min</sup></strong><span>fora do ar na virada</span></div>
+    </div>
+    <div class="tl rv">
+      <h3>O que esperar depois da virada</h3>
+      <div class="tl-bar">
+        <div class="t1"><span class="mono">Dia 0</span>Virada do domínio, 301 ativos, sitemap reenviado</div>
+        <div class="t2"><span class="mono">Semanas 1 a 4</span>Oscilação normal: o Google relê o site. Termo que sobe, termo que cai um pouco</div>
+        <div class="t3"><span class="mono">Dias 30 a 60</span>Tendência de estabilizar, com a vantagem de velocidade e experiência a favor</div>
+      </div>
+      <p class="note">Os termos em que vocês caíram nos últimos tempos tendem a ter mais relação com conteúdo desatualizado e mudanças de algoritmo do que com a plataforma. Por isso o plano mensal inclui acompanhamento de SEO e conteúdo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 06 RASTREAMENTO -->
+<section class="sec dark" id="rastreamento">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag rv"><span class="mono">06 · Rastreamento</span><span class="mono">A quatro mãos</span></div>
+      <div>
+        <h2 class="h2 rv">O histórico de conversão <em>continua no mesmo lugar.</em></h2>
+        <p class="lead rv d1">As tags atuais vivem dentro do Elementor e não viajam sozinhas. O que importa são as contas e os IDs: mantendo os mesmos, nada de conta nova e nada de dado perdido. Como a agência de vocês tem os acessos das contas de anúncio, fazemos junto com ela. Ninguém precisa ser substituído.</p>
+      </div>
+    </div>
+    <div class="trk">
+      <div class="side rv">
+        <span class="mono">Matilab</span>
+        <h3 style="margin-top:8px">No site</h3>
+        <ul>
+          <li>Levantamento do que dispara hoje: GA4, GTM, Google Ads e Meta</li>
+          <li>Reimplantação com os mesmos IDs e nomes de evento</li>
+          <li>Teste de cada conversão antes da virada</li>
+          <li>Novo teste depois da virada, com evento de teste</li>
+          <li>Relatório de validação para a agência</li>
+        </ul>
+      </div>
+      <div class="link rv d1"><span class="line"></span><span class="node">call de<br>20 min</span><span class="line"></span></div>
+      <div class="side rv d2">
+        <span class="mono">Agência de tráfego</span>
+        <h3 style="margin-top:8px">Nas contas</h3>
+        <ul>
+          <li>Acesso de leitura ao Gerenciador de Tags, Google Ads e Meta</li>
+          <li>Lista dos eventos de conversão usados hoje</li>
+          <li>Um responsável técnico para alinhar a validação</li>
+          <li>Conferência das conversões nas plataformas após a virada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ids rv">
+      <span><img src="/propostas/engeajuda/assets/logo-google.svg" alt="">Google Analytics 4</span>
+      <span><img src="/propostas/engeajuda/assets/logo-google.svg" alt="">Gerenciador de Tags</span>
+      <span><img src="/propostas/engeajuda/assets/logo-googleads.svg" alt="">Google Ads</span>
+      <span><img src="/propostas/engeajuda/assets/logo-meta.svg" alt="">Meta Pixel e API de Conversões</span>
+    </div>
+  </div>
+</section>
+
+<!-- 07 ESCOPO -->
+<section class="sec" id="escopo">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag rv"><span class="mono">07 · Escopo</span><span class="mono">O que está incluído</span></div>
+      <div>
+        <h2 class="h2 rv">Tudo o que entra <em>no projeto.</em></h2>
+        <p class="lead rv d1">A lista final de serviços vocês definem: hoje são mais páginas do que o necessário, e algumas estão obsoletas. Trabalhamos com 6 a 8 serviços, e o que sair é redirecionado.</p>
+      </div>
+    </div>
+    <div class="scope">
+      <div class="sc wide rv">
+        <span class="mono">Páginas</span>
+        <h3>Estrutura do site novo</h3>
+        <div class="pages">
+          <span class="o">Home</span><span class="o">6 a 8 páginas de serviço</span><span>Sobre</span><span>Equipe</span><span>Blog</span><span>111 artigos migrados</span><span>Depoimentos</span><span>Fale conosco</span><span>Páginas especiais atuais, como a calculadora de CND, avaliadas na lista final</span>
+        </div>
+      </div>
+      <div class="sc rv d1"><span class="mono">Design</span><h3>Layout exclusivo</h3><p>Desktop e celular, na identidade da EngeAjuda, com até 2 rodadas de ajuste.</p></div>
+      <div class="sc rv"><span class="mono">Conteúdo</span><h3>Organização e revisão dos textos</h3><p>Reaproveitamos a base que já posiciona e melhoramos clareza e conversão.</p></div>
+      <div class="sc rv d1"><span class="mono">SEO</span><h3>SEO técnico, local e GEO</h3><p>Títulos, descrições, dados estruturados, sitemap, robots e preparo para as IAs.</p></div>
+      <div class="sc rv d2"><span class="mono">Migração</span><h3>301 e Search Console</h3><p>Mapa de URLs antigas e novas, redirecionamentos e acompanhamento no primeiro mês.</p></div>
+      <div class="sc rv"><span class="mono">Rastreamento</span><h3>Tags e conversões</h3><p>Reimplantação a quatro mãos com a agência de tráfego, testada antes e depois.</p></div>
+      <div class="sc rv d1"><span class="mono">Autonomia</span><h3>Painel de edição</h3><p>Texto, imagem e blog editáveis por vocês, com treinamento rápido de uso.</p></div>
+      <div class="sc rv d2"><span class="mono">Propriedade</span><h3>Tudo no nome de vocês</h3><p>Domínio, conteúdo, código e acessos documentados. Se um dia quiserem sair, levam tudo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 CRONOGRAMA -->
+<section class="sec" style="padding-top:0" id="cronograma">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag rv"><span class="mono">08 · Cronograma</span><span class="mono">Com o site atual no ar</span></div>
+      <div>
+        <h2 class="h2 rv">O site novo nasce em paralelo. <em>A virada só acontece com tudo validado.</em></h2>
+      </div>
+    </div>
+    <ol class="steps rv">
+      <li><span class="mono">01</span><strong>Lista de serviços</strong><p>Vocês definem o que fica e o que sai.</p></li>
+      <li><span class="mono">02</span><strong>Aprovação</strong><p>Entrada e reserva do período de produção.</p></li>
+      <li><span class="mono">03</span><strong>Conteúdo e fotos</strong><p>Reaproveitamos o que existe e completamos.</p></li>
+      <li><span class="mono">04</span><strong>Produção</strong><p>Páginas, painel, blog e SEO técnico.</p></li>
+      <li><span class="mono">05</span><strong>Validação</strong><p>Página por página, com vocês.</p></li>
+      <li class="hl"><span class="mono">06</span><strong>Virada</strong><p>301, rastreamento e testes, sem sair do ar.</p></li>
+      <li><span class="mono">07</span><strong>Primeiro mês</strong><p>Search Console e conversões acompanhados.</p></li>
+    </ol>
+    <div class="dur rv">
+      <strong>4 a 6 semanas</strong>
+      <p>a partir do conteúdo e das fotos em mãos. O gargalo costuma ser texto e imagem, não programação: se o conteúdo atrasar, o prazo acompanha.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 09 INVESTIMENTO -->
+<section class="sec dark" id="investimento">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag rv"><span class="mono">09 · Investimento</span><span class="mono">Escopo e valor fechados</span></div>
+      <div>
+        <h2 class="h2 rv">Um projeto, <em>e quem cuida depois.</em></h2>
+        <p class="lead rv d1">O site é um valor único, com escopo fechado. A manutenção é mensal e começa depois da virada, com as landing pages de campanha já incluídas.</p>
+      </div>
+    </div>
+    <div class="price">
+      <div class="pc main rv">
+        <span class="mono">Projeto</span>
+        <h3>Novo site EngeAjuda</h3>
+        <div class="amount"><small>R$</small><strong>5.500</strong><span>valor único</span></div>
+        <p class="sub">Migração, SEO e rastreamento inclusos. Sem cobrança à parte.</p>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10.5l4 4 8-9"/></svg><span><b>Site completo</b> com home, 6 a 8 serviços, sobre, equipe, depoimentos, blog e contato</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10.5l4 4 8-9"/></svg><span><b>111 artigos do blog</b> migrados mantendo as URLs</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10.5l4 4 8-9"/></svg><span><b>Migração de SEO</b> com mapa de URLs, 301 e Search Console</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10.5l4 4 8-9"/></svg><span><b>Rastreamento</b> reimplantado com a agência de tráfego</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10.5l4 4 8-9"/></svg><span><b>SEO técnico, local e GEO</b>, com meta acima de 90 no PageSpeed</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10.5l4 4 8-9"/></svg><span><b>Painel de edição</b> e treinamento de uso</span></li>
+        </ul>
+        <div class="pay">
+          <span class="mono">Pagamento em 3 etapas</span>
+          <div class="pay-in">
+            <div><span class="mono">01</span><strong>Na aprovação</strong></div>
+            <div><span class="mono">02</span><strong>Na entrega das páginas</strong></div>
+            <div><span class="mono">03</span><strong>Na virada do site</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="pc rv d1">
+        <span class="mono">Plano mensal</span>
+        <h3>Manutenção e evolução</h3>
+        <div class="amount"><small>R$</small><strong>697</strong><span>/mês</span></div>
+        <p class="sub">Começa depois da virada. Um só responsável pelo site, sem empurra-empurra.</p>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10.5l4 4 8-9"/></svg><span>Monitoramento do site no ar, atualizações e segurança</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10.5l4 4 8-9"/></svg><span>Troca de textos e imagens, publicação de conteúdo</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10.5l4 4 8-9"/></svg><span>Ajustes técnicos e de performance</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10.5l4 4 8-9"/></svg><span>Acompanhamento de SEO e Search Console</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10.5l4 4 8-9"/></svg><span>Suporte de servidor e domínio</span></li>
+        </ul>
+        <div class="lp-badge">
+          <strong>Landing pages de campanha inclusas</strong>
+          <p>Serviço novo ou campanha nova: vocês mandam o conteúdo e a gente cria. Se a campanha pedir, a LP pode ter layout e cores próprios, diferentes do site oficial.</p>
+        </div>
+      </div>
+    </div>
+    <div class="terms">
+      <div class="rv"><span class="mono">Prazo</span><strong>4 a 6 semanas</strong><p>após conteúdo e fotos em mãos.</p></div>
+      <div class="rv d1"><span class="mono">Ajustes</span><strong>2 rodadas</strong><p>de ajuste no layout, antes da produção das páginas.</p></div>
+      <div class="rv d2"><span class="mono">Início</span><strong>Agora ou em janeiro</strong><p>Reservamos o período de produção que fizer sentido para o caixa de vocês.</p></div>
+      <div class="rv d3"><span class="mono">Validade</span><strong>11/11/2026</strong><p>Proposta válida por 15 dias.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 QUEM FAZ -->
+<section class="sec" id="quem">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag rv"><span class="mono">10 · Quem faz</span><span class="mono">Matilab</span></div>
+      <div>
+        <h2 class="h2 rv">Agência com dono <em>na conversa.</em></h2>
+      </div>
+    </div>
+    <div class="who">
+      <div class="who-card rv">
+        <img src="/propostas/engeajuda/assets/matilab-logo-white.svg" alt="Matilab" width="130" height="30">
+        <p>A Matilab é uma agência de <b>sites, sistemas, landing pages, identidade visual, ads e social media</b>, com foco em desenvolvimento. O atendimento e a parte técnica ficam com o Matheus, dono da agência, com time de comercial, design e gestão por trás.</p>
+        <dl>
+          <div><dt>Responsável</dt><dd>Matheus Moura</dd></div>
+          <div><dt>Escritório</dt><dd>Alameda Vicente Pinzón, 173, Vila Olímpia, São Paulo</dd></div>
+          <div><dt>WhatsApp</dt><dd>(11) 99264-4010</dd></div>
+          <div><dt>Site</dt><dd>matilab.com.br</dd></div>
+        </dl>
+        <p style="font-size:15px">O convite está de pé: se quiserem conhecer o escritório e tomar um café, vai ser um prazer receber vocês.</p>
+      </div>
+      <div class="rv d1">
+        <p class="lead" style="margin-top:0">Alguns projetos recentes, vários deles do setor de construção, para vocês navegarem no celular e no computador:</p>
+        <div class="port">
+          <a href="https://www.inovapoxi.com/" target="_blank" rel="noopener">InovaPoxi <small>Pisos</small></a>
+          <a href="https://www.oficialepoxi.com.br/" target="_blank" rel="noopener">Oficial Epóxi <small>Pisos</small></a>
+          <a href="https://albacor.com.br/" target="_blank" rel="noopener">Albacor <small>Química</small></a>
+          <a href="https://nivelogroup.com.br/" target="_blank" rel="noopener">Nivelo Group <small>Construção</small></a>
+          <a href="https://www.inovaobra.com/" target="_blank" rel="noopener">InovaObra <small>Gestão de obras</small></a>
+          <a href="https://rgbarquitetos.com/" target="_blank" rel="noopener">RGB Arquitetos <small>Arquitetura</small></a>
+          <a href="https://arqui.studio/" target="_blank" rel="noopener">ArquiStudio <small>Software</small></a>
+          <a href="https://creditsbrasil.com.br/" target="_blank" rel="noopener">Credits Brasil <small>Institucional</small></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 FAQ -->
+<section class="sec dark" id="duvidas">
+  <div class="wrap">
+    <div class="head">
+      <div class="tag rv"><span class="mono">11 · Dúvidas</span><span class="mono">O que já conversamos</span></div>
+      <div><h2 class="h2 rv">Respostas <em>diretas.</em></h2></div>
+    </div>
+    <div class="faq rv">
+      <details open><summary>WordPress ainda funciona? Por que não continuar nele?<i></i></summary><div class="ans"><p>Funciona, e roda boa parte da web. O ponto não é o WordPress, é a combinação com o Elementor: página pesada, código inflado e otimização trabalhosa, com teto baixo. Para chegar acima de 90 nele é muito esforço e nem sempre se chega. Na base nova, velocidade, acessibilidade e GEO já nascem resolvidos, e testar duas versões de uma página leva horas, não dias.</p></div></details>
+      <details><summary>Vou perder o SEO que construí desde 2018?<i></i></summary><div class="ans"><p>Não começa do zero. Mantemos o domínio, as URLs e a base do conteúdo, redirecionamos um a um o que mudar e acompanhamos o Search Console no primeiro mês. Uma oscilação nas primeiras semanas é normal; o objetivo é estabilizar em 30 a 60 dias com o site mais rápido a favor.</p></div></details>
+      <details><summary>E o rastreamento de Google Ads e Meta Ads?<i></i></summary><div class="ans"><p>Está incluso. Reimplantamos com os mesmos IDs e eventos, a quatro mãos com a agência de tráfego de vocês, que tem os acessos das contas. Testamos antes e depois da virada e entregamos um relatório de validação.</p></div></details>
+      <details><summary>Consigo editar o site sozinho?<i></i></summary><div class="ans"><p>Sim. O site vem com painel para trocar textos, imagens e publicar artigos no blog, sem tocar em código. E, se preferirem, o plano mensal cobre essas alterações para vocês.</p></div></details>
+      <details><summary>E quando surgir um serviço novo ou uma campanha?<i></i></summary><div class="ans"><p>As landing pages de campanha estão inclusas no plano mensal. Vocês mandam a oferta e o conteúdo e a gente cria, com rastreamento para a agência acompanhar. Ela não precisa seguir o layout do site: se a campanha pedir outra cara, outras cores, dá para fazer.</p></div></details>
+      <details><summary>O fim de ano está apertado no caixa. Como fica?<i></i></summary><div class="ans"><p>O pagamento do projeto é dividido em três etapas: aprovação, entrega das páginas e virada do site. E se fizer mais sentido, reservamos a produção para começar em janeiro.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <img src="/propostas/engeajuda/site/assets/img/respiro-02-1400.webp" alt="" loading="lazy">
+  <div class="wrap">
+    <span class="mono" style="color:var(--orange)">Próximo passo</span>
+    <h2 style="margin-top:18px">Vamos <em>tirar do papel?</em></h2>
+    <p>Me mandem a lista de serviços que ficam e eu reservo o período de produção. Qualquer ajuste na proposta, a gente conversa.</p>
+    <div class="acts">
+      <a class="btn btn-o" id="wa" href="https://wa.me/5511992644010" target="_blank" rel="noopener">Aprovar pelo WhatsApp <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      <a class="btn btn-g" href="/propostas/engeajuda/site" target="_blank" rel="noopener">Rever o site novo</a>
+    </div>
+    <div class="sign"><img src="/propostas/engeajuda/assets/matilab-logo-white.svg" alt="Matilab" width="104" height="24"><span><b>Matheus Moura</b> · Matilab · (11) 99264-4010 · contato@matilab.com.br</span></div>
+  </div>
+</section>
+
+</main>
+
+<footer><div class="wrap"><span>Proposta Matilab para EngeAjuda Engenharia e Arquitetura · Emitida em 27/10/2026</span><span>Válida até 11/11/2026</span></div></footer>
+
+<script>
+(()=>{
+  const CONFIG={whatsapp:"5511992644010",saudacao:"Oi Matheus! Vi a proposta do novo site da EngeAjuda e quero seguir."};
+  document.getElementById('wa').href="https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(CONFIG.saudacao);
+
+  const top=document.getElementById('top');
+  const onS=()=>{top.classList.toggle('s',scrollY>30)};
+  addEventListener('scroll',onS,{passive:true});onS();
+
+  // navegador do hero endireita ao rolar
+  const br=document.getElementById('browser');
+  const tilt=()=>{if(innerWidth<900){br.style.transform='none';return}
+    const r=br.getBoundingClientRect(),p=Math.min(Math.max(1-(r.top-innerHeight*.25)/(innerHeight*.6),0),1);
+    br.style.transform=`rotateX(${14*(1-p)}deg) scale(${.94+.06*p})`};
+  addEventListener('scroll',tilt,{passive:true});tilt();
+
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target)}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+  // anéis do PageSpeed
+  const col=v=>v>=90?'var(--good)':v>=50?'var(--mid)':'var(--bad)';
+  const gio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;gio.unobserve(e.target);
+    e.target.querySelectorAll('.ring').forEach(r=>{const v=+r.dataset.v,c=r.querySelector('.fg');c.style.stroke=col(v);r.querySelector('b').style.color=col(v);requestAnimationFrame(()=>c.style.strokeDashoffset=283*(1-v/100))});
+  }),{threshold:.3});
+  document.querySelectorAll('[data-gauges]').forEach(g=>gio.observe(g));
+
+  const bio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;bio.unobserve(e.target);e.target.querySelectorAll('[data-w]').forEach(s=>s.style.width=s.dataset.w+'%')}),{threshold:.4});
+  document.querySelectorAll('[data-bars]').forEach(b=>bio.observe(b));
+
+  const nio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;nio.unobserve(e.target);
+    const el=e.target,to=+el.dataset.n,t0=performance.now();
+    const tick=t=>{const p=Math.min((t-t0)/1500,1);el.textContent=Math.round(to*(1-Math.pow(1-p,4)));if(p<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)}),{threshold:.5});
+  document.querySelectorAll('[data-n]').forEach(n=>nio.observe(n));
+
+  // abas da prévia
+  const imgs=[...document.querySelectorAll('#pvdesk img')],btns=[...document.querySelectorAll('#pvtabs button')];
+  let cur=0,timer;
+  const show=i=>{cur=i;imgs.forEach((im,k)=>im.classList.toggle('on',k===i));btns.forEach((b,k)=>b.classList.toggle('on',k===i));clearTimeout(timer);timer=setTimeout(()=>show((cur+1)%imgs.length),4500)};
+  btns.forEach(b=>b.addEventListener('click',()=>show(+b.dataset.i)));
+  timer=setTimeout(()=>show(1),4500);
+})();
+</script>
+</body>
+</html>
