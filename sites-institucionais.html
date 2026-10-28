@@ -639,12 +639,10 @@
   #voices .voices__stats .m-text-6 { color: var(--color-5); }
   #voices .voices__num { font-size: clamp(3rem, 5.6vw, 5.25rem); font-weight: 300; line-height: 0.9; letter-spacing: -0.055em; }
   #voices .voices__logos { display: flex; gap: 0.75rem; overflow: hidden; margin-bottom: clamp(4rem, 8vw, 7rem); -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
-  #voices .voices__logos ul { display: flex; flex: none; gap: 0.75rem; animation: logos-run 45s ease-in-out infinite alternate; }
+  #voices .voices__logos ul { display: flex; flex: none; gap: 0.75rem; animation: logos-run 70s linear infinite; }
   #voices .voices__logos li { display: grid; place-items: center; width: 9.5rem; height: 5rem; }
   #voices .voices__logos img { max-width: 78%; max-height: 64%; object-fit: contain; mix-blend-mode: multiply; filter: grayscale(1) contrast(1.15); opacity: .72; transition: filter .3s, opacity .3s; }
-  #voices .voices__logos li:hover img { filter: none; opacity: 1; }
-  #voices .voices__logos:hover ul { animation-play-state: paused; }
-  @keyframes logos-run { to { translate: calc(-100% + 100vw) 0; } }
+  @keyframes logos-run { to { translate: calc(-100% - 0.75rem) 0; } }
   @media (prefers-reduced-motion: reduce) { #voices .voices__logos ul { animation: none; } }
   @media (max-width: 47.99rem) { #voices .voices__stats { grid-template-columns: 1fr 1fr; } #voices .voices__stats li { min-height: 8.5rem; gap: 1.5rem; } }
   /* portfolio: grade de molduras de navegador, rola a pagina inteira no hover */
@@ -685,7 +683,6 @@
   #hero .hero__trust li { display: inline-flex; align-items: center; gap: 0.4375rem; font-size: 0.8125rem; font-weight: 500; color: color-mix(in srgb, #fff 88%, transparent); white-space: nowrap; }
   #hero .hero__trust .ic { width: 1.0625rem; height: 1.0625rem; fill: currentColor; flex: none; }
   @media (max-width: 47.99rem) {
-    #hero .hero__copy { padding-bottom: 12.5rem; }
     #hero .hero__trust { padding: 0.875rem 1rem; border-radius: 1rem; background: rgba(10,10,10,.62); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
     #hero .hero__trust > p { color: rgba(255,255,255,.78); }
   }
@@ -838,6 +835,64 @@
 }
 </style>
 
+<style data-8b-part="matilab-mobile">
+/* Bloco sem @layer: precisa vencer o CSS de motion nativo. */
+/* Voce pede / A Matilab entrega */
+#listen .listen__panels { height: auto; min-height: 0; gap: 0; }
+#listen .listen__panel { display: flex; flex-direction: column; justify-content: space-between; gap: 2.5rem; min-height: clamp(20rem, 46vh, 28rem); padding: clamp(1.5rem, 3vw, 2.5rem); }
+#listen .listen__label, #listen .listen__panel--read .listen__label { position: static; inset: auto; opacity: .7; }
+#listen .listen__ask { display: grid; gap: 1.5rem; }
+#listen .listen__quote { max-width: 18em; font-size: clamp(1.5rem, 2.6vw, 2.25rem); font-weight: 500; line-height: 1.15; letter-spacing: -0.025em; text-wrap: balance; }
+#listen .listen__note { display: flex; align-items: center; gap: 0.875rem; max-width: 24rem; padding: 0.75rem 1rem; border-radius: 99px; background: color-mix(in srgb, var(--color-2) 9%, transparent); }
+#listen .listen__play { flex: none; width: 2.25rem; height: 2.25rem; border-radius: 50%; background: var(--color-4) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 7l8 5-8 5z' fill='%230a0a0a'/%3E%3C/svg%3E") 55% 50% / 1.25rem no-repeat; }
+#listen .listen__note .listen__wave { position: static; inset: auto; flex: 1; height: 1.75rem; gap: 0.1875rem; }
+#listen .listen__note .listen__wave i { background: color-mix(in srgb, var(--color-2) 55%, transparent); }
+#listen .listen__time { flex: none; font-size: 0.8125rem; opacity: .7; }
+#listen .listen__list { display: grid; gap: 0.875rem; }
+#listen .listen__list li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: clamp(1.0625rem, 1.5vw, 1.375rem); font-weight: 500; line-height: 1.3; letter-spacing: -0.01em; }
+#listen .listen__list li::before { content: ""; flex: none; width: 1.5rem; height: 1.5rem; margin-top: 0.0625rem; border-radius: 50%; background: var(--color-1) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%23b5fb67' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% 50% / 1rem no-repeat; }
+#hero .lbl-sm { display: none; }
+
+@media (max-width: 47.99rem) {
+  /* Voce pede / A Matilab entrega empilhado */
+  #listen .listen__panels { grid-template-columns: 1fr; grid-template-rows: auto auto; height: auto; }
+  #listen .listen__panel { min-height: 0; gap: 1.75rem; padding: 1.5rem 1.25rem; }
+  #listen .listen__panel--voice { grid-row: 1; border-radius: var(--radius-2) var(--radius-2) 0 0; }
+  #listen .listen__panel--read { grid-row: 2; border-radius: 0 0 var(--radius-2) var(--radius-2); }
+  #listen .listen__quote { font-size: 1.5rem; }
+
+  /* hero: foto em cima, texto embaixo sobre degrade */
+  #hero { min-height: 0; }
+  #hero .hero__media { top: 0; bottom: auto; left: 0; right: 0; width: 100%; height: 34rem; aspect-ratio: auto; -webkit-mask-image: linear-gradient(180deg, #000 58%, transparent 96%); mask-image: linear-gradient(180deg, #000 58%, transparent 96%); }
+  #hero .hero__media img { object-position: 64% 18%; }
+  #hero .hero__shade { inset: 0 0 auto; height: 34rem; background: linear-gradient(180deg, rgba(10,10,10,.55), transparent 22%, transparent 48%, rgba(10,10,10,.35) 70%, transparent); }
+  #hero .hero__lines { display: none; }
+  #hero .hero__chip--1 { top: 12.5rem; bottom: auto; left: 1rem; }
+  #hero .hero__chip--3 { top: 16rem; bottom: auto; right: 1rem; }
+  #hero .hero__copy { padding-top: 22rem; padding-bottom: 2.5rem; }
+  #hero .hero__title { font-size: clamp(2.375rem, 10.5vw, 3rem); text-shadow: 0 0.125rem 1.5rem rgba(0,0,0,.45); }
+  #hero .hero__lead { font-size: 1rem; }
+  #hero .hero__actions { margin-top: 0.25rem; }
+  #hero .hero__actions .m-btn { width: 100%; min-height: 3.5rem; padding-inline: 1rem; font-size: 1rem; }
+  #hero .lbl-lg { display: none; }
+  #hero .lbl-sm { display: inline; white-space: nowrap; }
+  #hero .hero__trust { margin-top: 0.75rem; padding: 0; background: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  #hero .hero__trust ul { gap: 0.625rem 1rem; }
+
+  /* O que voce recebe: cartoes + celular completo no fim */
+  #calls .calls__grid { display: flex; flex-direction: column; gap: 2.5rem; }
+  #calls .calls__list { display: grid; gap: 0.75rem; }
+  #calls .calls__item { min-height: 0; padding: 1.25rem 1.25rem 1.25rem 1.125rem; border-left: 0.1875rem solid var(--color-4); border-radius: 0 1rem 1rem 0; background: color-mix(in srgb, var(--color-2) 6%, transparent); opacity: 1 !important; transform: none !important; }
+  #calls .calls__aside { display: block; z-index: auto; }
+  #calls .calls__sticky { position: static; }
+  #calls .calls__device { transform: none !important; }
+  #calls .phone { font-size: 0.875rem; height: 37.5em; margin-inline: auto; }
+  #calls .phone [data-step] { opacity: 1 !important; transform: none !important; }
+
+  /* cases: rolagem automatica mais lenta no celular */
+  #rooms .pf__item.is-play .pf__screen img { transition-duration: calc(var(--h) * 6ms) !important; }
+}
+</style>
 </head>
 <body class="m-text">
 <a class="skip-link m-text-6" href="#main">Pular para o conteúdo</a>
@@ -907,7 +962,7 @@
           <li><svg viewBox="0 0 16 16" aria-hidden="true"><path class="hero__tick" d="M3 8.5l3 3 7-7"/></svg>Resposta em 2h no WhatsApp</li>
         </ul>
         <div class="hero__actions">
-          <a class="m-btn" href="https://api.whatsapp.com/send/?phone=5511992644010&amp;text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20Sites%20Institucionais%20da%20Matilab%20%28LP%20nova%29%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener"><span class="m-btn__label">Receber orçamento em 2h no WhatsApp</span><span class="m-btn__wave" aria-hidden="true"><i></i><i></i><i></i></span></a>
+          <a class="m-btn" href="https://api.whatsapp.com/send/?phone=5511992644010&amp;text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20Sites%20Institucionais%20da%20Matilab%20%28LP%20nova%29%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener"><span class="m-btn__label"><span class="lbl-lg">Receber orçamento em 2h no WhatsApp</span><span class="lbl-sm">Orçamento em 2h no WhatsApp</span></span><span class="m-btn__wave" aria-hidden="true"><i></i><i></i><i></i></span></a>
         </div>
         <div class="hero__trust">
           <p class="m-text-7">Otimizado para ser encontrado e aprovado por</p>
@@ -936,16 +991,19 @@
       <div class="listen__panels">
         <div class="listen__panel listen__panel--voice">
           <p class="m-text-6 listen__label">Você pede</p>
-          <div class="listen__wave" aria-hidden="true"><i style="--h:.32"></i><i style="--h:.5"></i><i style="--h:.74"></i><i style="--h:.58"></i><i style="--h:.9"></i><i style="--h:.66"></i><i style="--h:.42"></i><i style="--h:.3"></i><i style="--h:.54"></i><i style="--h:.82"></i><i style="--h:1"></i><i style="--h:.7"></i><i style="--h:.46"></i><i style="--h:.36"></i><i style="--h:.6"></i><i style="--h:.86"></i><i style="--h:.64"></i><i style="--h:.4"></i><i style="--h:.28"></i><i style="--h:.48"></i><i style="--h:.72"></i><i style="--h:.94"></i><i style="--h:.62"></i><i style="--h:.38"></i><i style="--h:.52"></i><i style="--h:.78"></i><i style="--h:.56"></i><i style="--h:.34"></i></div>
-          <div class="listen__track listen__track--voice" aria-hidden="true"></div>
+          <div class="listen__ask">
+            <p class="listen__quote">“Quero um site que passe confiança, apareça no Google e traga cliente.”</p>
+            <div class="listen__note" aria-hidden="true"><span class="listen__play"></span><div class="listen__wave"><i style="--h:.32"></i><i style="--h:.5"></i><i style="--h:.74"></i><i style="--h:.58"></i><i style="--h:.9"></i><i style="--h:.66"></i><i style="--h:.42"></i><i style="--h:.3"></i><i style="--h:.54"></i><i style="--h:.82"></i><i style="--h:1"></i><i style="--h:.7"></i><i style="--h:.46"></i><i style="--h:.36"></i><i style="--h:.6"></i><i style="--h:.86"></i><i style="--h:.64"></i><i style="--h:.4"></i><i style="--h:.28"></i><i style="--h:.48"></i><i style="--h:.72"></i><i style="--h:.94"></i></div><span class="listen__time">0:12</span></div>
+          </div>
         </div>
         <div class="listen__panel listen__panel--read">
           <p class="m-text-6 listen__label">A Matilab entrega</p>
-          <div class="listen__track listen__track--read">
-            <div class="listen__row"><p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Design editorial sob medida, sem template.</span></p></div>
-            <div class="listen__row"><p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">SEO técnico e GEO: no Google e nas IAs.</span></p></div>
-            <div class="listen__row"><p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Lighthouse 90+ e rápido no celular.</span></p></div>
-          </div>
+          <ul class="listen__list">
+            <li>Design editorial sob medida, sem template.</li>
+            <li>SEO técnico e GEO: no Google e nas IAs.</li>
+            <li>PageSpeed 90+ e rápido no celular.</li>
+            <li>Painel para você editar sozinho.</li>
+          </ul>
         </div>
       </div>
     </div>
