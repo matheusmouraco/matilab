@@ -1,0 +1,7 @@
+{
+  "name": "matilab-cases-tools",
+  "private": true,
+  "type": "module",
+  "description": "Captura de screenshots e cadastro de sites no portfólio /cases",
+  "dependencies": { "playwright": "1.56.1", "sharp": "0.34.4" }
+}

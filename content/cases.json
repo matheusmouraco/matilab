@@ -4,1140 +4,1303 @@
   "nome": "UniPorto",
   "setor": "Logística e Comércio Exterior",
   "tipo": "Site",
-  "url": "https://uniportobr.com.br/"
+  "url": "https://uniportobr.com.br/",
+  "h": 2159
  },
  {
   "id": "appulse-com-br-home",
   "nome": "Appulse",
   "setor": "Logística e Comércio Exterior",
   "tipo": "Site",
-  "url": "https://appulse.com.br/home/"
+  "url": "https://appulse.com.br/home/",
+  "h": 1317
  },
  {
   "id": "fnxlogistics-com",
   "nome": "FNX Logistics",
   "setor": "Logística e Comércio Exterior",
   "tipo": "Site",
-  "url": "https://fnxlogistics.com/"
+  "url": "https://fnxlogistics.com/",
+  "h": 2262
  },
  {
   "id": "hayadobrasil-lovable-app",
   "nome": "Haya do Brasil",
   "setor": "Logística e Comércio Exterior",
   "tipo": "Site",
-  "url": "https://hayadobrasil.lovable.app/"
+  "url": "https://hayadobrasil.lovable.app/",
+  "h": 2506
  },
  {
   "id": "dioika-mouraclientes-com-br",
   "nome": "Dioika Ambiental",
   "setor": "Ambiental e Sustentabilidade",
   "tipo": "Site",
-  "url": "https://dioika.mouraclientes.com.br/"
+  "url": "https://dioika.mouraclientes.com.br/",
+  "h": 2937
  },
  {
   "id": "plenaplant-com-br",
   "nome": "Plena Plant",
   "setor": "Ambiental e Sustentabilidade",
   "tipo": "Site",
-  "url": "https://plenaplant.com.br/"
+  "url": "https://plenaplant.com.br/",
+  "h": 2905
  },
  {
   "id": "hopesustentabilidade-com-br",
   "nome": "Hope Sustentabilidade",
   "setor": "Ambiental e Sustentabilidade",
   "tipo": "Site",
-  "url": "https://hopesustentabilidade.com.br/"
+  "url": "https://hopesustentabilidade.com.br/",
+  "h": 3000
  },
  {
   "id": "hopesustentabilidade-com-br-lp-ebook-checklist-pratico-com",
   "nome": "Hope · E-book Checklist",
   "setor": "Ambiental e Sustentabilidade",
   "tipo": "Landing page",
-  "url": "https://hopesustentabilidade.com.br/lp-ebook-checklist-pratico-como-saber-se-um-projeto-pode-ser-aprovado-antes-de-comecar-a-projetar/"
+  "url": "https://hopesustentabilidade.com.br/lp-ebook-checklist-pratico-como-saber-se-um-projeto-pode-ser-aprovado-antes-de-comecar-a-projetar/",
+  "h": 3000
  },
  {
   "id": "casafirme-com-br",
   "nome": "Igreja Casa Firme",
   "setor": "Igrejas e Projetos Sociais",
   "tipo": "Site",
-  "url": "https://casafirme.com.br/"
+  "url": "https://casafirme.com.br/",
+  "h": 1757
  },
  {
   "id": "minalfaeomega-com-br",
   "nome": "Ministério Alfa e Ômega",
   "setor": "Igrejas e Projetos Sociais",
   "tipo": "Site",
-  "url": "https://minalfaeomega.com.br/"
+  "url": "https://minalfaeomega.com.br/",
+  "h": 3000
  },
  {
   "id": "joychurch-ca",
   "nome": "Joy Reformed Church",
   "setor": "Igrejas e Projetos Sociais",
   "tipo": "Site",
-  "url": "https://joychurch.ca/"
+  "url": "https://joychurch.ca/",
+  "h": 2508
  },
  {
   "id": "minpedraangular-com-br",
   "nome": "Ministério Pedra Angular",
   "setor": "Igrejas e Projetos Sociais",
   "tipo": "Site",
-  "url": "https://minpedraangular.com.br/"
+  "url": "https://minpedraangular.com.br/",
+  "h": 3000
  },
  {
   "id": "org-crossmissions-com",
   "nome": "CrossMissions.Org",
   "setor": "Igrejas e Projetos Sociais",
   "tipo": "Site",
-  "url": "https://org.crossmissions.com/"
+  "url": "https://org.crossmissions.com/",
+  "h": 3000
  },
  {
   "id": "crossmissions-com-2-2",
   "nome": "CrossMissions",
   "setor": "Igrejas e Projetos Sociais",
   "tipo": "Site",
-  "url": "https://crossmissions.com/2-2/"
+  "url": "https://crossmissions.com/2-2/",
+  "h": 1324
  },
  {
   "id": "crossmissions2-base44-app",
   "nome": "CrossMissions · Formação",
   "setor": "Igrejas e Projetos Sociais",
   "tipo": "Site",
-  "url": "https://crossmissions2.base44.app/"
+  "url": "https://crossmissions2.base44.app/",
+  "h": 2507
  },
  {
   "id": "filhascafi-com-br",
   "nome": "Filhas da Visão 2026",
   "setor": "Igrejas e Projetos Sociais",
   "tipo": "Landing page",
-  "url": "https://filhascafi.com.br/"
+  "url": "https://filhascafi.com.br/",
+  "h": 3000
  },
  {
   "id": "emcafi-base44-app",
   "nome": "EmCafi · Formação",
   "setor": "Igrejas e Projetos Sociais",
   "tipo": "Plataforma",
-  "url": "https://emcafi.base44.app/"
+  "url": "https://emcafi.base44.app/",
+  "h": 2355
  },
  {
   "id": "cavalosdoben-com-br",
   "nome": "Cavalos do Ben · Equoterapia",
   "setor": "Igrejas e Projetos Sociais",
   "tipo": "Site",
-  "url": "https://cavalosdoben.com.br"
+  "url": "https://cavalosdoben.com.br",
+  "h": 2894
  },
  {
   "id": "gilbertonascimentojr-com-br",
   "nome": "Gilberto Nascimento Jr.",
   "setor": "Política e Gestão Pública",
   "tipo": "Site",
-  "url": "https://gilbertonascimentojr.com.br/"
+  "url": "https://gilbertonascimentojr.com.br/",
+  "h": 3000
  },
  {
   "id": "mandato360-app",
   "nome": "Mandato360",
   "setor": "Política e Gestão Pública",
   "tipo": "Plataforma",
-  "url": "https://mandato360.app/"
+  "url": "https://mandato360.app/",
+  "h": 3000
  },
  {
   "id": "gabineteonline-base44-app",
   "nome": "Gabinete Online",
   "setor": "Política e Gestão Pública",
   "tipo": "Plataforma",
-  "url": "https://gabineteonline.base44.app/"
+  "url": "https://gabineteonline.base44.app/",
+  "h": 986
  },
  {
   "id": "electorbrasil-com-br",
   "nome": "Elector Brasil",
   "setor": "Política e Gestão Pública",
   "tipo": "Landing page",
-  "url": "https://electorbrasil.com.br/"
+  "url": "https://electorbrasil.com.br/",
+  "h": 3000
  },
  {
   "id": "cvjovem-mouraclientes-com-br",
   "nome": "CV Jovem",
   "setor": "RH e Carreira",
   "tipo": "Site",
-  "url": "http://cvjovem.mouraclientes.com.br/"
+  "url": "http://cvjovem.mouraclientes.com.br/",
+  "h": 2640
  },
  {
   "id": "gentia-com-br",
   "nome": "Gentia · Guia de Remuneração",
   "setor": "RH e Carreira",
   "tipo": "Landing page",
-  "url": "https://gentia.com.br/"
+  "url": "https://gentia.com.br/",
+  "h": 3000
  },
  {
   "id": "oficina-simplusbr-com",
   "nome": "Simplus Oficina",
   "setor": "Automotivo e Transportes",
   "tipo": "Landing page",
-  "url": "https://oficina.simplusbr.com/"
+  "url": "https://oficina.simplusbr.com/",
+  "h": 3000
  },
  {
   "id": "rondoni-com-br",
   "nome": "Rondoni Transportes",
   "setor": "Automotivo e Transportes",
   "tipo": "Site",
-  "url": "https://rondoni.com.br/"
+  "url": "https://rondoni.com.br/",
+  "h": 2374
  },
  {
   "id": "roadfloridarentacar-com",
   "nome": "Road Florida Rent a Car",
   "setor": "Automotivo e Transportes",
   "tipo": "Site",
-  "url": "https://roadfloridarentacar.com/"
+  "url": "https://roadfloridarentacar.com/",
+  "h": 3000
  },
  {
   "id": "4carconsultoria-mouraclientes-com-br",
   "nome": "4Car Consultoria",
   "setor": "Automotivo e Transportes",
   "tipo": "Site",
-  "url": "https://4carconsultoria.mouraclientes.com.br/"
+  "url": "https://4carconsultoria.mouraclientes.com.br/",
+  "h": 3000
  },
  {
   "id": "telaautostrada-com-br",
   "nome": "Tela AutoStrada",
   "setor": "Automotivo e Transportes",
   "tipo": "Landing page",
-  "url": "http://telaautostrada.com.br/"
+  "url": "http://telaautostrada.com.br/",
+  "h": 1919
  },
  {
   "id": "schaffertlaw-com",
   "nome": "Schaffert Law",
   "setor": "Advocacia",
   "tipo": "Site",
-  "url": "https://www.schaffertlaw.com/"
+  "url": "https://www.schaffertlaw.com/",
+  "h": 3000
  },
  {
   "id": "debiasidullius-adv-br",
   "nome": "Debiasi & Dullius",
   "setor": "Advocacia",
   "tipo": "Site",
-  "url": "https://debiasidullius.adv.br"
+  "url": "https://debiasidullius.adv.br",
+  "h": 3000
  },
  {
   "id": "lucasvianaadv-com",
   "nome": "Lucas Viana Advogado",
   "setor": "Advocacia",
   "tipo": "Site",
-  "url": "https://www.lucasvianaadv.com/"
+  "url": "https://www.lucasvianaadv.com/",
+  "h": 3000
  },
  {
   "id": "angelaurio-com-br-lp-juridico",
   "nome": "Angela Urio · Jurídico",
   "setor": "Advocacia",
   "tipo": "Landing page",
-  "url": "https://angelaurio.com.br/lp-juridico/"
+  "url": "https://angelaurio.com.br/lp-juridico/",
+  "h": 2301
  },
  {
   "id": "brandstories-com-br",
   "nome": "Brand&Stories",
   "setor": "Agências e Marketing",
   "tipo": "Site",
-  "url": "https://brandstories.com.br/"
+  "url": "https://brandstories.com.br/",
+  "h": 3000
  },
  {
   "id": "lc2neurocom-com-br",
   "nome": "LC2 NeuroCom",
   "setor": "Agências e Marketing",
   "tipo": "Site",
-  "url": "https://lc2neurocom.com.br/"
+  "url": "https://lc2neurocom.com.br/",
+  "h": 3000
  },
  {
   "id": "clartemarketing-com-br",
   "nome": "À La Clarté",
   "setor": "Agências e Marketing",
   "tipo": "Site",
-  "url": "https://clartemarketing.com.br/"
+  "url": "https://clartemarketing.com.br/",
+  "h": 1527
  },
  {
   "id": "clartemarketing-com-br-simple-feed",
   "nome": "Clarté · Simple Feed",
   "setor": "Agências e Marketing",
   "tipo": "Landing page",
-  "url": "https://clartemarketing.com.br/simple-feed/"
+  "url": "https://clartemarketing.com.br/simple-feed/",
+  "h": 3000
  },
  {
   "id": "ampliardigital-com",
   "nome": "Ampliar Digital",
   "setor": "Agências e Marketing",
   "tipo": "Site",
-  "url": "https://ampliardigital.com/"
+  "url": "https://ampliardigital.com/",
+  "h": 3000
  },
  {
   "id": "suupgrowth-mouraclientes-com-br",
   "nome": "Suup Growth",
   "setor": "Agências e Marketing",
   "tipo": "Site",
-  "url": "http://suupgrowth.mouraclientes.com.br/"
+  "url": "http://suupgrowth.mouraclientes.com.br/",
+  "h": 3000
  },
  {
   "id": "montemnt-com",
   "nome": "MNT. Monte",
   "setor": "Agências e Marketing",
   "tipo": "Site",
-  "url": "https://montemnt.com/"
+  "url": "https://montemnt.com/",
+  "h": 3000
  },
  {
   "id": "imergge-mouraclientes-com-br",
   "nome": "Imergge",
   "setor": "Agências e Marketing",
   "tipo": "Site",
-  "url": "https://imergge.mouraclientes.com.br/"
+  "url": "https://imergge.mouraclientes.com.br/",
+  "h": 3000
  },
  {
   "id": "matheusmoura-com-br",
   "nome": "Matheus Moura · Método Tração",
   "setor": "Agências e Marketing",
   "tipo": "Site",
-  "url": "https://matheusmoura.com.br/"
+  "url": "https://matheusmoura.com.br/",
+  "h": 3000
  },
  {
   "id": "matheusmoura-lovable-app",
   "nome": "Matheus Moura · Site em 7 dias",
   "setor": "Agências e Marketing",
   "tipo": "Landing page",
-  "url": "https://matheusmoura.lovable.app/"
+  "url": "https://matheusmoura.lovable.app/",
+  "h": 3000
  },
  {
   "id": "mouraid-lovable-app",
   "nome": "MouraID",
   "setor": "Agências e Marketing",
   "tipo": "Site",
-  "url": "https://mouraid.lovable.app/"
+  "url": "https://mouraid.lovable.app/",
+  "h": 3000
  },
  {
   "id": "oak-mouraclientes-com-br",
   "nome": "OakBerry Foz",
   "setor": "Alimentação e Bebidas",
   "tipo": "Site",
-  "url": "https://oak.mouraclientes.com.br/"
+  "url": "https://oak.mouraclientes.com.br/",
+  "h": 2065
  },
  {
   "id": "casalevigne-com-br",
   "nome": "Casa Le Vigne",
   "setor": "Alimentação e Bebidas",
   "tipo": "Site",
-  "url": "https://casalevigne.com.br/"
+  "url": "https://casalevigne.com.br/",
+  "h": 2786
  },
  {
   "id": "topfrutti-com-br",
   "nome": "TopFrutti",
   "setor": "Alimentação e Bebidas",
   "tipo": "Site",
-  "url": "https://topfrutti.com.br"
+  "url": "https://topfrutti.com.br",
+  "h": 3000
  },
  {
   "id": "venturatrade-com-br",
   "nome": "Ventura Representações",
   "setor": "Representação Comercial",
   "tipo": "Site",
-  "url": "https://venturatrade.com.br/"
+  "url": "https://venturatrade.com.br/",
+  "h": 3000
  },
  {
   "id": "medrec-com-br",
   "nome": "MedRec",
   "setor": "Saúde e Clínicas",
   "tipo": "Site",
-  "url": "https://medrec.com.br/"
+  "url": "https://medrec.com.br/",
+  "h": 2843
  },
  {
   "id": "dermatologianakamura-com-br",
   "nome": "Dermatologia Nakamura",
   "setor": "Saúde e Clínicas",
   "tipo": "Site",
-  "url": "https://dermatologianakamura.com.br/"
+  "url": "https://dermatologianakamura.com.br/",
+  "h": 2209
  },
  {
   "id": "clinicaaurum-com-br",
   "nome": "Clínica Aurum",
   "setor": "Saúde e Clínicas",
   "tipo": "Site",
-  "url": "https://www.clinicaaurum.com.br/"
+  "url": "https://www.clinicaaurum.com.br/",
+  "h": 3000
  },
  {
   "id": "drmatheusbarcelos-com",
   "nome": "Dr. Matheus Barcelos",
   "setor": "Saúde e Clínicas",
   "tipo": "Site",
-  "url": "https://drmatheusbarcelos.com/"
+  "url": "https://drmatheusbarcelos.com/",
+  "h": 2412
  },
  {
   "id": "akro-mouraclientes-com-br",
   "nome": "Akro Clínica",
   "setor": "Saúde e Clínicas",
   "tipo": "Site",
-  "url": "https://akro.mouraclientes.com.br/"
+  "url": "https://akro.mouraclientes.com.br/",
+  "h": 3000
  },
  {
   "id": "andre-mouraclientes-com-br",
   "nome": "Dr. André · Método AP",
   "setor": "Saúde e Clínicas",
   "tipo": "Landing page",
-  "url": "https://andre.mouraclientes.com.br/"
+  "url": "https://andre.mouraclientes.com.br/",
+  "h": 2957
  },
  {
   "id": "icnv-med-br",
   "nome": "ICNV · Cardio Neuro Vascular",
   "setor": "Saúde e Clínicas",
   "tipo": "Site",
-  "url": "https://icnv.med.br/"
+  "url": "https://icnv.med.br/",
+  "h": 1696
  },
  {
   "id": "grupoangiokormann-com-br",
   "nome": "Grupo AngioKormann",
   "setor": "Saúde e Clínicas",
   "tipo": "Site",
-  "url": "https://grupoangiokormann.com.br/"
+  "url": "https://grupoangiokormann.com.br/",
+  "h": 2292
  },
  {
   "id": "drothonciparoni-com-br",
   "nome": "Dr. Othon Ciparoni",
   "setor": "Saúde e Clínicas",
   "tipo": "Site",
-  "url": "https://drothonciparoni.com.br/"
+  "url": "https://drothonciparoni.com.br/",
+  "h": 2674
  },
  {
   "id": "mentesacorposao-com",
   "nome": "Mente Sã, Corpo São",
   "setor": "Saúde e Clínicas",
   "tipo": "Site",
-  "url": "https://mentesacorposao.com/"
+  "url": "https://mentesacorposao.com/",
+  "h": 3000
  },
  {
   "id": "fgabiancapinheiro-com",
   "nome": "Fga. Bianca Pinheiro",
   "setor": "Saúde e Clínicas",
   "tipo": "Site",
-  "url": "https://fgabiancapinheiro.com/"
+  "url": "https://fgabiancapinheiro.com/",
+  "h": 2909
  },
  {
   "id": "intrainvestimentos-com-br",
   "nome": "Intra Investimentos",
   "setor": "Finanças e Contabilidade",
   "tipo": "Site",
-  "url": "https://www.intrainvestimentos.com.br/"
+  "url": "https://www.intrainvestimentos.com.br/",
+  "h": 1535
  },
  {
   "id": "allianceaccounting-us",
   "nome": "Alliance Accounting",
   "setor": "Finanças e Contabilidade",
   "tipo": "Site",
-  "url": "https://allianceaccounting.us/"
+  "url": "https://allianceaccounting.us/",
+  "h": 1576
  },
  {
   "id": "creditsbrasil-com-br",
   "nome": "Credits Brasil",
   "setor": "Finanças e Contabilidade",
   "tipo": "Site",
-  "url": "https://creditsbrasil.com.br/"
+  "url": "https://creditsbrasil.com.br/",
+  "h": 2629
  },
  {
   "id": "blackfinance-com-br",
   "nome": "BlackFinance",
   "setor": "Finanças e Contabilidade",
   "tipo": "Site",
-  "url": "https://blackfinance.com.br/"
+  "url": "https://blackfinance.com.br/",
+  "h": 2936
  },
  {
   "id": "calixfamilyoffice-vercel-app",
   "nome": "Calix Family Office",
   "setor": "Finanças e Contabilidade",
   "tipo": "Site",
-  "url": "https://calixfamilyoffice.vercel.app/"
+  "url": "https://calixfamilyoffice.vercel.app/",
+  "h": 3000
  },
  {
   "id": "lpnobre-gpnobre-com-br",
   "nome": "Nobre Contabilidade",
   "setor": "Finanças e Contabilidade",
   "tipo": "Landing page",
-  "url": "https://lpnobre.gpnobre.com.br/"
+  "url": "https://lpnobre.gpnobre.com.br/",
+  "h": 3000
  },
  {
   "id": "inovapoxi-com-br",
   "nome": "InovaPoxi",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://inovapoxi.com.br/"
+  "url": "https://inovapoxi.com.br/",
+  "h": 3000
  },
  {
   "id": "inovapoxi-lovable-app",
   "nome": "InovaPoxi · Nova versão",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://inovapoxi.lovable.app/"
+  "url": "https://inovapoxi.lovable.app/",
+  "h": 3000
  },
  {
   "id": "inovapoxicondominios-lovable-app",
   "nome": "InovaPoxi Condomínios",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Landing page",
-  "url": "https://inovapoxicondominios.lovable.app/"
+  "url": "https://inovapoxicondominios.lovable.app/",
+  "h": 3000
  },
  {
   "id": "inovaepoxi-com-br",
   "nome": "InovaEpóxi",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "http://inovaepoxi.com.br/"
+  "url": "http://inovaepoxi.com.br/",
+  "h": 2913
  },
  {
   "id": "oficialepoxi-com-br",
   "nome": "Oficial Piso Epóxi",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://oficialepoxi.com.br/"
+  "url": "https://oficialepoxi.com.br/",
+  "h": 3000
  },
  {
   "id": "edpoxy-lovable-app",
   "nome": "EDPOXY",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Landing page",
-  "url": "https://edpoxy.lovable.app/"
+  "url": "https://edpoxy.lovable.app/",
+  "h": 3000
  },
  {
   "id": "buscaepoxi-com-br",
   "nome": "BuscaEpóxi",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Plataforma",
-  "url": "https://buscaepoxi.com.br/"
+  "url": "https://buscaepoxi.com.br/",
+  "h": 2255
  },
  {
   "id": "albacorquimica-com",
   "nome": "Albacor Química",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://albacorquimica.com/"
+  "url": "https://albacorquimica.com/",
+  "h": 3000
  },
  {
   "id": "rarpisos-com",
   "nome": "RAR Pisos",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://rarpisos.com/"
+  "url": "https://rarpisos.com/",
+  "h": 3000
  },
  {
   "id": "epoxibrasil-com-br",
   "nome": "Epóxi Brasil",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://epoxibrasil.com.br/"
+  "url": "https://epoxibrasil.com.br/",
+  "h": 2164
  },
  {
   "id": "epoxigalpao-com-br",
   "nome": "Epóxi Galpão",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Landing page",
-  "url": "https://epoxigalpao.com.br/"
+  "url": "https://epoxigalpao.com.br/",
+  "h": 3000
  },
  {
   "id": "epoxiestacionamento-com-br",
   "nome": "Epóxi Estacionamento",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Landing page",
-  "url": "https://epoxiestacionamento.com.br/"
+  "url": "https://epoxiestacionamento.com.br/",
+  "h": 2391
  },
  {
   "id": "epoxioficina-com-br",
   "nome": "Epóxi Oficina",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Landing page",
-  "url": "https://epoxioficina.com.br/"
+  "url": "https://epoxioficina.com.br/",
+  "h": 2374
  },
  {
   "id": "epoxiquadra-com-br",
   "nome": "Epóxi Quadra",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Landing page",
-  "url": "https://epoxiquadra.com.br/"
+  "url": "https://epoxiquadra.com.br/",
+  "h": 2227
  },
  {
   "id": "industriaepoxi-com-br",
   "nome": "Indústria Epóxi",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Landing page",
-  "url": "http://industriaepoxi.com.br/"
+  "url": "http://industriaepoxi.com.br/",
+  "h": 2101
  },
  {
   "id": "pinturapisoepoxi-com-br",
   "nome": "Pintura Piso Epóxi",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Landing page",
-  "url": "http://pinturapisoepoxi.com.br/"
+  "url": "http://pinturapisoepoxi.com.br/",
+  "h": 2134
  },
  {
   "id": "alphacolorspinturas-lovable-app",
   "nome": "AlphaColors Pinturas",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://alphacolorspinturas.lovable.app/"
+  "url": "https://alphacolorspinturas.lovable.app/",
+  "h": 3000
  },
  {
   "id": "alphaindustrias-com",
   "nome": "Alpha Indústrias",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://www.alphaindustrias.com/"
+  "url": "https://www.alphaindustrias.com/",
+  "h": 3000
  },
  {
   "id": "lp-steamtech-ind-br",
   "nome": "Steam Tech",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Landing page",
-  "url": "https://lp.steamtech.ind.br/"
+  "url": "https://lp.steamtech.ind.br/",
+  "h": 3000
  },
  {
   "id": "nivelogroup-com-br",
   "nome": "Nivelo Group",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://nivelogroup.com.br/"
+  "url": "https://nivelogroup.com.br/",
+  "h": 3000
  },
  {
   "id": "grupomxservicos-com-br",
   "nome": "Grupo MX",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://grupomxservicos.com.br/"
+  "url": "https://grupomxservicos.com.br/",
+  "h": 2974
  },
  {
   "id": "prssolucoes-com-br",
   "nome": "PRS Soluções",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://prssolucoes.com.br/"
+  "url": "https://prssolucoes.com.br/",
+  "h": 1872
  },
  {
   "id": "rentalmaster-com-br",
   "nome": "Rental Master",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://rentalmaster.com.br/"
+  "url": "https://rentalmaster.com.br/",
+  "h": 3000
  },
  {
   "id": "lucatmecanicahidraulica-com-br",
   "nome": "Lucat Mecânica Hidráulica",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://lucatmecanicahidraulica.com.br"
+  "url": "https://lucatmecanicahidraulica.com.br",
+  "h": 3000
  },
  {
   "id": "helpwin-com-br",
   "nome": "HelpWin Esquadrias",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://helpwin.com.br/"
+  "url": "https://helpwin.com.br/",
+  "h": 3000
  },
  {
   "id": "fabriciocortinasepersianas-com-br",
   "nome": "Fabricio Cortinas e Persianas",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://fabriciocortinasepersianas.com.br/"
+  "url": "https://fabriciocortinasepersianas.com.br/",
+  "h": 3000
  },
  {
   "id": "rekintmob-com-br",
   "nome": "reKint Mobiliário",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://rekintmob.com.br/"
+  "url": "https://rekintmob.com.br/",
+  "h": 3000
  },
  {
   "id": "kaizenrenovation-com",
   "nome": "Kaizen Renovation",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://kaizenrenovation.com"
+  "url": "https://kaizenrenovation.com",
+  "h": 2799
  },
  {
   "id": "jclproservices1-base44-app",
   "nome": "JCL Pro Services",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://jclproservices1.base44.app/"
+  "url": "https://jclproservices1.base44.app/",
+  "h": 3000
  },
  {
   "id": "jclproservices2-base44-app",
   "nome": "JCL Pro Services · Versão 2",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://jclproservices2.base44.app/"
+  "url": "https://jclproservices2.base44.app/",
+  "h": 3000
  },
  {
   "id": "assistenciabaixada-com-br",
   "nome": "Assistência Baixada",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://assistenciabaixada.com.br/"
+  "url": "https://assistenciabaixada.com.br/",
+  "h": 3000
  },
  {
   "id": "lavaesecaservices-com-br-samsung",
   "nome": "Lava e Seca Services",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Site",
-  "url": "https://lavaesecaservices.com.br/samsung"
+  "url": "https://lavaesecaservices.com.br/samsung",
+  "h": 1818
  },
  {
   "id": "lavaesecaservices-com-br-lg",
   "nome": "Lava e Seca Services · LG",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Landing page",
-  "url": "https://lavaesecaservices.com.br/lg/"
+  "url": "https://lavaesecaservices.com.br/lg/",
+  "h": 1725
  },
  {
   "id": "enlacecomamor-com",
   "nome": "Enlace com Amor",
   "setor": "Casamentos e Eventos",
   "tipo": "Site",
-  "url": "https://enlacecomamor.com/"
+  "url": "https://enlacecomamor.com/",
+  "h": 2884
  },
  {
   "id": "conviteinterativofidelidade-base44-app",
   "nome": "Fidelidade · Convite Interativo",
   "setor": "Casamentos e Eventos",
   "tipo": "Landing page",
-  "url": "https://conviteinterativofidelidade.base44.app/"
+  "url": "https://conviteinterativofidelidade.base44.app/",
+  "h": 450
  },
  {
   "id": "hoteltechbr-com",
   "nome": "Hotel Tech",
   "setor": "Hotelaria",
   "tipo": "Site",
-  "url": "https://hoteltechbr.com/"
+  "url": "https://hoteltechbr.com/",
+  "h": 2321
  },
  {
   "id": "textilflorence-com-br",
   "nome": "Têxtil Florence",
   "setor": "Indústria e Têxtil",
   "tipo": "Site",
-  "url": "https://textilflorence.com.br/"
+  "url": "https://textilflorence.com.br/",
+  "h": 1920
  },
  {
   "id": "roma-ind-br",
   "nome": "Indústria Roma",
   "setor": "Indústria e Têxtil",
   "tipo": "Site",
-  "url": "https://roma.ind.br/"
+  "url": "https://roma.ind.br/",
+  "h": 2833
  },
  {
   "id": "ginast-com-br",
   "nome": "Ginast",
   "setor": "Indústria e Têxtil",
   "tipo": "Site",
-  "url": "https://ginast.com.br/"
+  "url": "https://ginast.com.br/",
+  "h": 1756
  },
  {
   "id": "brumon-com-br",
   "nome": "Brumon Tecnologia",
   "setor": "Tecnologia",
   "tipo": "Site",
-  "url": "https://brumon.com.br/"
+  "url": "https://brumon.com.br/",
+  "h": 2145
  },
  {
   "id": "insyde-com-br",
   "nome": "Insyde",
   "setor": "Tecnologia",
   "tipo": "Site",
-  "url": "https://insyde.com.br/"
+  "url": "https://insyde.com.br/",
+  "h": 3000
  },
  {
   "id": "cafitech-com-br",
   "nome": "Cafi Tech",
   "setor": "Tecnologia",
   "tipo": "Site",
-  "url": "https://www.cafitech.com.br/"
+  "url": "https://www.cafitech.com.br/",
+  "h": 1966
  },
  {
   "id": "plan4mamy-com-br-sosamamentacao",
   "nome": "Plan4Mamy · SOS Amamentação",
   "setor": "Infantil e Maternidade",
   "tipo": "Landing page",
-  "url": "https://plan4mamy.com.br/sosamamentacao/"
+  "url": "https://plan4mamy.com.br/sosamamentacao/",
+  "h": 3000
  },
  {
   "id": "biancalisboa-mouraclientes-com-br",
   "nome": "Guia Bianca Lisboa",
   "setor": "Infantil e Maternidade",
   "tipo": "Landing page",
-  "url": "https://biancalisboa.mouraclientes.com.br/"
+  "url": "https://biancalisboa.mouraclientes.com.br/",
+  "h": 3000
  },
  {
   "id": "kidssavelives-mouraclientes-com-br",
   "nome": "Kids Save Lives Brasil",
   "setor": "Infantil e Maternidade",
   "tipo": "Site",
-  "url": "http://kidssavelives.mouraclientes.com.br/"
+  "url": "http://kidssavelives.mouraclientes.com.br/",
+  "h": 2769
  },
  {
   "id": "angelaurio-com-br",
   "nome": "Angela Urio Psicologia",
   "setor": "Psicologia e Terapia",
   "tipo": "Site",
-  "url": "https://angelaurio.com.br/"
+  "url": "https://angelaurio.com.br/",
+  "h": 2422
  },
  {
   "id": "giselesacconterapeuta-com-br",
   "nome": "Gisele Sacco · Reconexão Consciente",
   "setor": "Psicologia e Terapia",
   "tipo": "Site",
-  "url": "https://giselesacconterapeuta.com.br/"
+  "url": "https://giselesacconterapeuta.com.br/",
+  "h": 3000
  },
  {
   "id": "akatu-arq-br",
   "nome": "Akatu Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://akatu.arq.br/"
+  "url": "https://akatu.arq.br/",
+  "h": 2208
  },
  {
   "id": "vdarquitetura-com",
   "nome": "Vitor Dias Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://vdarquitetura.com/"
+  "url": "https://vdarquitetura.com/",
+  "h": 1734
  },
  {
   "id": "santoroarquitetura-com-br",
   "nome": "Santoro Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://santoroarquitetura.com.br/"
+  "url": "https://santoroarquitetura.com.br/",
+  "h": 3000
  },
  {
   "id": "rgbarquitetos-com",
   "nome": "RGB Arquitetos",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://rgbarquitetos.com/"
+  "url": "https://rgbarquitetos.com/",
+  "h": 3000
  },
  {
   "id": "arkitito-com-home",
   "nome": "Arkitito",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://arkitito.com/home/"
+  "url": "https://arkitito.com/home/",
+  "h": 1781
  },
  {
   "id": "habitaicasas-com-br",
   "nome": "Habitai Casas",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://habitaicasas.com.br/"
+  "url": "https://habitaicasas.com.br/",
+  "h": 3000
  },
  {
   "id": "aoro-com-br",
   "nome": "Aoro Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://www.aoro.com.br/"
+  "url": "https://www.aoro.com.br/",
+  "h": 1784
  },
  {
   "id": "mlucasarquitetura-com",
   "nome": "Lucas Menighini Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://mlucasarquitetura.com"
+  "url": "https://mlucasarquitetura.com",
+  "h": 1637
  },
  {
   "id": "interioresfoz-com-br",
   "nome": "Lazzarotto & Chou",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://interioresfoz.com.br/"
+  "url": "https://interioresfoz.com.br/",
+  "h": 3000
  },
  {
   "id": "annamaia-com",
   "nome": "Anna Maia Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://annamaia.com/"
+  "url": "https://annamaia.com/",
+  "h": 450
  },
  {
   "id": "bloco-arq-br",
   "nome": "BLOCO Arquitetos",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://www.bloco.arq.br/"
+  "url": "https://www.bloco.arq.br/",
+  "h": 491
  },
  {
   "id": "renatobianconi-com-br",
   "nome": "Bianconi Arquitetos",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "http://renatobianconi.com.br/"
+  "url": "http://renatobianconi.com.br/",
+  "h": 450
  },
  {
   "id": "vereda-pro",
   "nome": "Vereda Arquitetos",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "http://vereda.pro/"
+  "url": "http://vereda.pro/",
+  "h": 450
  },
  {
   "id": "gabrielaprado-arq-br",
   "nome": "Gabriela Prado",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://gabrielaprado.arq.br/"
+  "url": "https://gabrielaprado.arq.br/",
+  "h": 3000
  },
  {
   "id": "maena-com-br",
   "nome": "Maena Design",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://maena.com.br/"
+  "url": "https://maena.com.br/",
+  "h": 2426
  },
  {
   "id": "voaarquitetura-com",
   "nome": "Voa Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://voaarquitetura.com/"
+  "url": "https://voaarquitetura.com/",
+  "h": 450
  },
  {
   "id": "studiodelvalle-com-br",
   "nome": "Studio del Valle",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://studiodelvalle.com.br/"
+  "url": "https://studiodelvalle.com.br/",
+  "h": 2594
  },
  {
   "id": "salarquitetura-com-sal-escritorio-de-arquitetura-",
   "nome": "Sal Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://salarquitetura.com/sal-escritorio-de-arquitetura-dev/"
+  "url": "https://salarquitetura.com/sal-escritorio-de-arquitetura-dev/",
+  "h": 2134
  },
  {
   "id": "karennogueira-com-br",
   "nome": "Karen Nogueira Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://karennogueira.com.br/"
+  "url": "https://karennogueira.com.br/",
+  "h": 2991
  },
  {
   "id": "delmondesarquitetura-com-br",
   "nome": "Delmondes Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://delmondesarquitetura.com.br/"
+  "url": "https://delmondesarquitetura.com.br/",
+  "h": 3000
  },
  {
   "id": "naparquitetura-com-br",
   "nome": "Nap Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://naparquitetura.com.br/"
+  "url": "https://naparquitetura.com.br/",
+  "h": 2337
  },
  {
   "id": "isabellacosta-arq-br",
   "nome": "Isabella Costa",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://isabellacosta.arq.br/"
+  "url": "https://isabellacosta.arq.br/",
+  "h": 2495
  },
  {
   "id": "coaarquitetura-mouraclientes-com-br",
   "nome": "COA Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://coaarquitetura.mouraclientes.com.br/"
+  "url": "https://coaarquitetura.mouraclientes.com.br/",
+  "h": 2179
  },
  {
   "id": "ondecorarquitetura-mouraclientes-com-br",
   "nome": "On Decor",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://ondecorarquitetura.mouraclientes.com.br/"
+  "url": "https://ondecorarquitetura.mouraclientes.com.br/",
+  "h": 2567
  },
  {
   "id": "ocrearquitetura-mouraclientes-com-br",
   "nome": "Ocre Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://ocrearquitetura.mouraclientes.com.br/"
+  "url": "https://ocrearquitetura.mouraclientes.com.br/",
+  "h": 812
  },
  {
   "id": "rioarquitetura-mouraclientes-com-br",
   "nome": "Rio Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://rioarquitetura.mouraclientes.com.br/"
+  "url": "https://rioarquitetura.mouraclientes.com.br/",
+  "h": 3000
  },
  {
   "id": "traco8-base44-app",
   "nome": "Traço 8 Arquitetura",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://traco8.base44.app/"
+  "url": "https://traco8.base44.app/",
+  "h": 2983
  },
  {
   "id": "verticeaec-com-br",
   "nome": "Vértice AEC",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://verticeaec.com.br/"
+  "url": "https://verticeaec.com.br/",
+  "h": 2900
  },
  {
   "id": "fingercanada-ca-home",
   "nome": "Finger Canada",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://fingercanada.ca/home"
+  "url": "https://fingercanada.ca/home",
+  "h": 3000
  },
  {
   "id": "garbarinomarmores-com-br",
   "nome": "Garbarino Mármores",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://garbarinomarmores.com.br/"
+  "url": "https://garbarinomarmores.com.br/",
+  "h": 2362
  },
  {
   "id": "maparch-com-br",
   "nome": "Maparch Archviz",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://maparch.com.br"
+  "url": "https://maparch.com.br",
+  "h": 3000
  },
  {
   "id": "jc3dstudio-com",
   "nome": "JC 3D Studio",
   "setor": "Arquitetura e Interiores",
   "tipo": "Site",
-  "url": "https://jc3dstudio.com/"
+  "url": "https://jc3dstudio.com/",
+  "h": 3000
  },
  {
   "id": "zoomnareforma-com-br",
   "nome": "Zoom na Reforma",
   "setor": "Arquitetura e Interiores",
   "tipo": "Landing page",
-  "url": "https://zoomnareforma.com.br"
+  "url": "https://zoomnareforma.com.br",
+  "h": 3000
  },
  {
   "id": "arqui-studio",
   "nome": "ArquiStudio",
   "setor": "Arquitetura e Interiores",
   "tipo": "Plataforma",
-  "url": "https://arqui.studio/"
+  "url": "https://arqui.studio/",
+  "h": 3000
  },
  {
   "id": "dgsengenharia-eng-br",
   "nome": "DGS Engenharia",
   "setor": "Engenharia e Regularização",
   "tipo": "Site",
-  "url": "https://dgsengenharia.eng.br/"
+  "url": "https://dgsengenharia.eng.br/",
+  "h": 3000
  },
  {
   "id": "inovardoc-com-br",
   "nome": "Inovar Documentação Imobiliária",
   "setor": "Engenharia e Regularização",
   "tipo": "Site",
-  "url": "https://inovardoc.com.br/"
+  "url": "https://inovardoc.com.br/",
+  "h": 2211
  },
  {
   "id": "escol-ai",
   "nome": "Escol.AI",
   "setor": "Educação e Cursos",
   "tipo": "Site",
-  "url": "https://escol.ai/"
+  "url": "https://escol.ai/",
+  "h": 3000
  },
  {
   "id": "escoladaregularizacao-com-br",
   "nome": "Escola da Regularização",
   "setor": "Educação e Cursos",
   "tipo": "Site",
-  "url": "https://escoladaregularizacao.com.br/"
+  "url": "https://escoladaregularizacao.com.br/",
+  "h": 3000
  },
  {
   "id": "escoladaregularizacao-com-br-legalizacao-imobiliaria-descom",
   "nome": "Legalização Imobiliária Descomplicada",
   "setor": "Educação e Cursos",
   "tipo": "Landing page",
-  "url": "https://escoladaregularizacao.com.br/legalizacao-imobiliaria-descomplicada/"
+  "url": "https://escoladaregularizacao.com.br/legalizacao-imobiliaria-descomplicada/",
+  "h": 3000
  },
  {
   "id": "arabedataita-com-br",
   "nome": "Árabe da Taita",
   "setor": "Educação e Cursos",
   "tipo": "Landing page",
-  "url": "https://arabedataita.com.br/"
+  "url": "https://arabedataita.com.br/",
+  "h": 3000
  },
  {
   "id": "lazotourservices-com",
   "nome": "Lazo Tour",
   "setor": "Viagem e Turismo",
   "tipo": "Site",
-  "url": "https://lazotourservices.com/"
+  "url": "https://lazotourservices.com/",
+  "h": 3000
  },
  {
   "id": "cafitour-com",
   "nome": "Cafi Tour",
   "setor": "Viagem e Turismo",
   "tipo": "Site",
-  "url": "https://cafitour.com/"
+  "url": "https://cafitour.com/",
+  "h": 1621
  },
  {
   "id": "cafimilhas-com",
   "nome": "CaFi Milhas",
   "setor": "Viagem e Turismo",
   "tipo": "Site",
-  "url": "https://cafimilhas.com/"
+  "url": "https://cafimilhas.com/",
+  "h": 2012
  },
  {
   "id": "stonesom-base44-app",
   "nome": "Stone Som",
   "setor": "Música e Áudio",
   "tipo": "Site",
-  "url": "https://stonesom.base44.app/"
+  "url": "https://stonesom.base44.app/",
+  "h": 3000
  },
  {
   "id": "ferraritechnologies-com-br",
   "nome": "Ferrari Technologies",
   "setor": "Música e Áudio",
   "tipo": "Site",
-  "url": "http://ferraritechnologies.com.br/"
+  "url": "http://ferraritechnologies.com.br/",
+  "h": 2814
  },
  {
   "id": "avmag-com-br",
   "nome": "Clube do Áudio · AVMag",
   "setor": "Música e Áudio",
   "tipo": "Site",
-  "url": "https://avmag.com.br/"
+  "url": "https://avmag.com.br/",
+  "h": 2782
  },
  {
   "id": "onestampas-com-br",
   "nome": "On Estampas",
   "setor": "Estampas e Brindes",
   "tipo": "Site",
-  "url": "http://onestampas.com.br/"
+  "url": "http://onestampas.com.br/",
+  "h": 2511
  },
  {
   "id": "aquilabrindes-mouraclientes-com-br",
   "nome": "Aquila Brindes",
   "setor": "Estampas e Brindes",
   "tipo": "Site",
-  "url": "https://aquilabrindes.mouraclientes.com.br/"
+  "url": "https://aquilabrindes.mouraclientes.com.br/",
+  "h": 2045
  },
  {
   "id": "outletpro-store",
   "nome": "OutletPro",
   "setor": "Varejo e E-commerce",
   "tipo": "E-commerce",
-  "url": "https://www.outletpro.store/"
+  "url": "https://www.outletpro.store/",
+  "h": 3000
  },
  {
   "id": "techpink-matilab-com-br",
   "nome": "TechPink",
   "setor": "Varejo e E-commerce",
   "tipo": "E-commerce",
-  "url": "http://techpink.matilab.com.br/"
+  "url": "http://techpink.matilab.com.br/",
+  "h": 2964
  },
  {
   "id": "ynaecortez-com-br",
   "nome": "Ynaê Cortez",
   "setor": "Arte e Cultura",
   "tipo": "Site",
-  "url": "https://ynaecortez.com.br/"
+  "url": "https://ynaecortez.com.br/",
+  "h": 672
  }
 ]
