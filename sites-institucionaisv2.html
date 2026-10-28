@@ -634,6 +634,71 @@
   #contact .contact__ways { grid-template-columns: repeat(3, auto); justify-content: start; gap: 1.5rem 2.5rem; }
   #contact .contact__wa h3 { font-size: clamp(2rem, 3.4vw, 3rem); }
   @media (max-width: 47.99rem) { #contact .contact__ways { grid-template-columns: 1fr; } }
+  /* rotulos (eyebrow) */
+  h2[data-eyebrow]::before { content: attr(data-eyebrow); display: block; margin-bottom: 1.125rem; font-size: 0.8125rem; font-weight: 600; line-height: 1; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-5); }
+  .on-dark h2[data-eyebrow]::before, #rooms h2[data-eyebrow]::before { color: var(--color-9); }
+  #listen h2[data-eyebrow]::before { color: var(--color-5); }
+
+  /* widgets de vidro no hero */
+  #hero .hero__widgets { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+  #hero .hero__widget { position: absolute; padding: 0.875rem 1.125rem; border-radius: 1.125rem; background: color-mix(in srgb, #ffffff 16%, transparent); -webkit-backdrop-filter: blur(14px) saturate(1.3); backdrop-filter: blur(14px) saturate(1.3); border: 1px solid rgba(255,255,255,.24); color: #fff; box-shadow: 0 1.5rem 3rem -1.5rem rgba(0,0,0,.55); }
+  #hero .hero__widget--a { top: 19%; left: 45%; display: flex; align-items: center; gap: 0.875rem; }
+  #hero .hero__ring { width: 2.875rem; height: 2.875rem; rotate: -90deg; }
+  #hero .hero__ring circle { fill: none; stroke: rgba(255,255,255,.22); stroke-width: 4.5; }
+  #hero .hero__ring .hero__ring-on { stroke: var(--color-4); stroke-dasharray: 92 100; stroke-linecap: round; }
+  #hero .hero__widget--a b { display: block; font-size: 1.375rem; font-weight: 600; line-height: 1.05; letter-spacing: -0.02em; }
+  #hero .hero__widget--a span, #hero .hero__widget-k { font-size: 0.75rem; opacity: .82; }
+  #hero .hero__widget--b { top: 17%; right: 3%; width: 12.5rem; }
+  #hero .hero__widget-v { margin: 0.125rem 0 0.75rem; font-size: 2.25rem; font-weight: 300; line-height: 1; letter-spacing: -0.04em; }
+  #hero .hero__bars { display: flex; align-items: flex-end; gap: 0.25rem; height: 2.25rem; }
+  #hero .hero__bars i { flex: 1; height: calc(var(--b) * 100%); border-radius: 0.1875rem; background: var(--color-4); }
+  #hero .hero__widget--c { top: 43%; left: 47%; display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.875rem; border-radius: 62rem; font-size: 0.8125rem; font-weight: 600; }
+  #hero .hero__live { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--color-4); box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--color-4) 30%, transparent); }
+  @media (prefers-reduced-motion: no-preference) {
+    #hero .hero__widget { animation: hw-in 1s 0.5s cubic-bezier(0.16, 0.84, 0.3, 1) backwards, hw-float 6s 1.5s ease-in-out infinite alternate; }
+    #hero .hero__widget--b { animation-delay: 0.7s, 2.5s; }
+    #hero .hero__widget--c { animation-delay: 0.9s, 0.5s; }
+    #hero .hero__ring-on { animation: hw-ring 1.6s 0.8s cubic-bezier(0.5, 0, 0.2, 1) backwards; }
+    #hero .hero__bars i { transform-origin: 50% 100%; animation: hw-bar 0.9s cubic-bezier(0.16, 0.84, 0.3, 1) backwards; }
+    #hero .hero__bars i:nth-child(n) { animation-delay: calc(0.9s + var(--b) * 0.4s); }
+  }
+  @keyframes hw-in { from { opacity: 0; translate: 0 1.25rem; } }
+  @keyframes hw-float { to { translate: 0 -0.625rem; } }
+  @keyframes hw-ring { from { stroke-dasharray: 0 100; } }
+  @keyframes hw-bar { from { scale: 1 0; } }
+  @media (max-width: 63.99rem) { #hero .hero__widgets { display: none; } }
+
+  /* portfolio em moldura de navegador (imagens do /cases) */
+  #rooms .rooms__track { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  #rooms .rooms__place, #rooms .rooms__place:last-child { aspect-ratio: auto; height: auto; display: flex; flex-direction: column; border: 1px solid color-mix(in srgb, var(--color-2) 10%, transparent); background: #161616; }
+  #rooms .rooms__bar { display: flex; align-items: center; gap: 0.375rem; height: 2.25rem; padding-left: 0.875rem; flex: none; }
+  #rooms .rooms__bar i { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: color-mix(in srgb, var(--color-2) 22%, transparent); }
+  #rooms .rooms__screen { position: relative; aspect-ratio: 16 / 10; overflow: hidden; }
+  #rooms .rooms__place img { object-position: 50% 0; }
+  #rooms .rooms__place::after { top: 2.25rem; background: linear-gradient(180deg, transparent 45%, color-mix(in srgb, var(--color-1) 80%, transparent)); }
+  #rooms .rooms__label { top: 0.4rem; left: 4rem; padding: 0.25rem 0.625rem; background: color-mix(in srgb, var(--color-2) 8%, transparent); font-size: 0.75rem; }
+  @media (prefers-reduced-motion: no-preference) {
+    #rooms.is-track .rooms__place, #rooms.is-track .rooms__place:last-child { width: clamp(20rem, 44vw, 42rem); height: auto; }
+  }
+  @media (max-width: 63.99rem) { #rooms .rooms__track { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 47.99rem) {
+    #rooms .rooms__track { grid-template-columns: 1fr; }
+    #rooms.is-track .rooms__place, #rooms.is-track .rooms__place:last-child { width: 84vw; }
+    #rooms .rooms__label { left: 3.5rem; }
+  }
+
+  /* numeros + logos */
+  #voices .voices__stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+  #voices .voices__stats li { display: flex; flex-direction: column-reverse; justify-content: space-between; gap: 2.5rem; min-height: 11.5rem; padding: 1.5rem; border-radius: var(--radius-2); background: var(--color-3); }
+  #voices .voices__stats .m-text-6 { color: var(--color-5); }
+  #voices .voices__num { font-size: clamp(3rem, 5.6vw, 5.25rem); font-weight: 300; line-height: 0.9; letter-spacing: -0.055em; }
+  #voices .voices__logos { display: flex; gap: 0.75rem; overflow: hidden; margin-bottom: clamp(4rem, 8vw, 7rem); -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+  #voices .voices__logos ul { display: flex; flex: none; gap: 0.75rem; animation: logos-run 60s linear infinite; }
+  #voices .voices__logos li { display: grid; place-items: center; width: 10rem; height: 4.75rem; border-radius: 1rem; background: #fff; }
+  #voices .voices__logos img { max-width: 72%; max-height: 58%; object-fit: contain; filter: grayscale(1); opacity: .8; }
+  @keyframes logos-run { to { translate: calc(-100% - 0.75rem) 0; } }
+  @media (prefers-reduced-motion: reduce) { #voices .voices__logos ul { animation: none; } }
+  @media (max-width: 47.99rem) { #voices .voices__stats { grid-template-columns: 1fr 1fr; } #voices .voices__stats li { min-height: 8.5rem; gap: 1.5rem; } }
 }
 </style>
 
@@ -688,6 +753,10 @@
       <div class="hero__chip hero__chip--3"><p class="m-caption-2"><span class="m-caption__wave"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Fechado! Orçamento em até 2h.</span></p></div>
     </div>
   </div>
+  <div class="hero__widgets" aria-hidden="true">
+    <div class="hero__widget hero__widget--a"><svg class="hero__ring" viewBox="0 0 44 44"><circle cx="22" cy="22" r="18"/><circle class="hero__ring-on" cx="22" cy="22" r="18" pathLength="100"/></svg><p><b>90+</b><span>Performance Lighthouse</span></p></div>
+    <div class="hero__widget hero__widget--b"><p class="hero__widget-k">Projetos entregues</p><p class="hero__widget-v">+500</p><span class="hero__bars"><i style="--b:.35"></i><i style="--b:.5"></i><i style="--b:.42"></i><i style="--b:.66"></i><i style="--b:.58"></i><i style="--b:.8"></i><i style="--b:1"></i></span></div>
+  </div>
   <div class="hero__copy l-wrap">
     <div class="hero__intro">
       <h1 class="m-text-2 hero__title" id="hero-title">O site que dá autoridade à sua empresa.</h1>
@@ -710,7 +779,7 @@
 <section class="listen" id="listen" data-8b-section="voice-to-text" aria-labelledby="listen-title">
   <div class="listen__sheet m-band" aria-hidden="true"></div>
   <div class="listen__head l-wrap">
-    <h2 class="m-text-3 listen__title" id="listen-title">Um site institucional que trabalha por você.</h2>
+    <h2 class="m-text-3 listen__title" id="listen-title" data-eyebrow="Por que a Matilab">Um site institucional que trabalha por você.</h2>
     <p class="m-text-4 listen__lead" data-8b-motion="readAlong">Não é só um site bonito. É design editorial, SEO técnico e performance, feitos para transmitir autoridade e gerar negócio. Sem template, sem mediocridade.</p>
   </div>
   <div class="listen__hold">
@@ -738,7 +807,7 @@
   <div class="calls__sheet m-band-3" aria-hidden="true" data-8b-motion="bandRise"></div>
   <div class="calls__inner l-wrap">
     <div class="calls__head">
-      <h2 class="m-text-3" id="calls-title" data-8b-motion="captionIn">Um site que vende enquanto você dorme.</h2>
+      <h2 class="m-text-3" id="calls-title" data-eyebrow="O que você recebe" data-8b-motion="captionIn">Um site que vende enquanto você dorme.</h2>
       <div class="calls__head-copy">
         <p class="m-text-4 calls__lead">Design editorial com arquitetura técnica de ponta. Cada etapa é aprovada por você, tudo documentado no WhatsApp, sem ruído de comunicação.</p>
         <a class="m-btn" href="https://api.whatsapp.com/send/?phone=5511992644010&amp;text=Ol%C3%A1%2C%20vim%20da%20Matilab%20e%20quero%20um%20site%20institucional" target="_blank" rel="noopener"><span class="m-btn__label">Quero um site assim</span><span class="m-btn__wave" aria-hidden="true"><i></i><i></i><i></i></span></a>
@@ -795,7 +864,7 @@
     </div>
     <div class="tune__body">
       <div class="tune__head">
-        <h2 class="m-text-3" id="tune-title" data-8b-motion="captionIn">Muito além de um site bonito.</h2>
+        <h2 class="m-text-3" id="tune-title" data-eyebrow="Detalhes que fazem diferença" data-8b-motion="captionIn">Muito além de um site bonito.</h2>
         <p class="m-text-4">Performance, segurança e resultados, em linguagem que faz sentido para o seu negócio.</p>
       </div>
       <ul class="tune__settings">
@@ -815,7 +884,7 @@
 <section class="rooms on-dark" id="rooms" data-8b-section="in-person" aria-labelledby="rooms-title">
   <div class="rooms__sheet m-band-4" aria-hidden="true"></div>
   <div class="rooms__head l-wrap">
-    <h2 class="m-text-3" id="rooms-title" data-8b-motion="captionIn">Projetos que falam por si.</h2>
+    <h2 class="m-text-3" id="rooms-title" data-eyebrow="Portfólio" data-8b-motion="captionIn">Projetos que falam por si.</h2>
     <p class="m-text-4 rooms__lead" data-8b-motion="readAlong">Mais de 500 sites entregues para empresas de todo o Brasil. Advocacia, arquitetura, finanças, imobiliário: cada um com a cara da marca. <a class="m-link" href="/cases">Ver portfólio completo</a></p>
   </div>
   <div class="rooms__hold">
@@ -827,43 +896,75 @@
           <path class="rooms__line rooms__line--b" pathLength="1" d="M0 40C40 90 80 90 120 50S200 5 240 45 320 95 360 55 440 5 480 45 560 95 600 55 680 5 720 45 800 95 840 55 920 5 1000 50"/>
         </svg>
         <figure class="rooms__place">
-          <img src="/imgs/full_01.webp" width="1100" height="2000" style="background:#1c1c1c" alt="Site Schaffert Law, criado pela Matilab" loading="lazy" decoding="async">
+          <div class="rooms__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="rooms__screen"><img src="/imgs/cases/schaffertlaw-com.webp" width="800" height="500" style="background:#1c1c1c" alt="Site Schaffert Law, criado pela Matilab" loading="eager" fetchpriority="low" decoding="async"></div>
           <figcaption class="rooms__label m-text-6">Schaffert Law · Advocacia</figcaption>
           <div class="rooms__talk">
             <p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Site bilíngue PT/EN</span></p>
-            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Imigração empresarial nos EUA</span></p>
+            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Imigração empresarial</span></p>
           </div>
         </figure>
         <figure class="rooms__place">
-          <img src="/imgs/full_05.webp" width="1100" height="2000" style="background:#1c1c1c" alt="Site Calix Family Office, criado pela Matilab" loading="lazy" decoding="async">
+          <div class="rooms__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="rooms__screen"><img src="/imgs/cases/rgbarquitetos-com.webp" width="800" height="500" style="background:#1c1c1c" alt="Site RGB Arquitetos, criado pela Matilab" loading="eager" fetchpriority="low" decoding="async"></div>
+          <figcaption class="rooms__label m-text-6">RGB Arquitetos · Arquitetura</figcaption>
+          <div class="rooms__talk">
+            <p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Portfólio como argumento</span></p>
+            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Arte, natureza e tecnologia</span></p>
+          </div>
+        </figure>
+        <figure class="rooms__place">
+          <div class="rooms__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="rooms__screen"><img src="/imgs/cases/calixfamilyoffice-vercel-app.webp" width="800" height="500" style="background:#1c1c1c" alt="Site Calix Family Office, criado pela Matilab" loading="eager" fetchpriority="low" decoding="async"></div>
           <figcaption class="rooms__label m-text-6">Calix Family Office · Patrimônio</figcaption>
           <div class="rooms__talk">
             <p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Next.js na Vercel</span></p>
-            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Experiência sofisticada</span></p>
+            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Sofisticação e confiança</span></p>
           </div>
         </figure>
         <figure class="rooms__place">
-          <img src="/imgs/full_11.webp" width="1100" height="2000" style="background:#1c1c1c" alt="Site Cardim Paisagismo, criado pela Matilab" loading="lazy" decoding="async">
-          <figcaption class="rooms__label m-text-6">Cardim Paisagismo · Paisagismo</figcaption>
+          <div class="rooms__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="rooms__screen"><img src="/imgs/cases/clinicaaurum-com-br.webp" width="800" height="500" style="background:#1c1c1c" alt="Site Clínica Aurum, criado pela Matilab" loading="eager" fetchpriority="low" decoding="async"></div>
+          <figcaption class="rooms__label m-text-6">Clínica Aurum · Saúde</figcaption>
           <div class="rooms__talk">
-            <p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">50 projetos com curadoria</span></p>
-            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Premiado internacionalmente</span></p>
+            <p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Especialidades e equipe</span></p>
+            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Agendamento em destaque</span></p>
           </div>
         </figure>
         <figure class="rooms__place">
-          <img src="/imgs/full_12.webp" width="1100" height="2000" style="background:#1c1c1c" alt="Site Habitai Casas, criado pela Matilab" loading="lazy" decoding="async">
-          <figcaption class="rooms__label m-text-6">Habitai Casas · Imobiliário</figcaption>
+          <div class="rooms__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="rooms__screen"><img src="/imgs/cases/arkitito-com-home.webp" width="800" height="500" style="background:#1c1c1c" alt="Site Arkitito, criado pela Matilab" loading="eager" fetchpriority="low" decoding="async"></div>
+          <figcaption class="rooms__label m-text-6">Arkitito · Arquitetura</figcaption>
           <div class="rooms__talk">
-            <p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Catálogo, FAQ e blog</span></p>
-            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Do contato à assinatura</span></p>
+            <p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Projetos, imprensa e equipe</span></p>
+            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Site vivo e atualizado</span></p>
           </div>
         </figure>
         <figure class="rooms__place">
-          <img src="/imgs/full_08.webp" width="1100" height="2000" style="background:#1c1c1c" alt="Site Vitor Dias Arq., criado pela Matilab" loading="lazy" decoding="async">
-          <figcaption class="rooms__label m-text-6">Vitor Dias Arq. · Arquitetura</figcaption>
+          <div class="rooms__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="rooms__screen"><img src="/imgs/cases/intrainvestimentos-com-br.webp" width="800" height="500" style="background:#1c1c1c" alt="Site Intra Investimentos, criado pela Matilab" loading="eager" fetchpriority="low" decoding="async"></div>
+          <figcaption class="rooms__label m-text-6">Intra Investimentos · Finanças</figcaption>
           <div class="rooms__talk">
-            <p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Residências de alto padrão</span></p>
-            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Storytelling visual</span></p>
+            <p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Mercado de capitais</span></p>
+            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Autoridade B2B</span></p>
+          </div>
+        </figure>
+        <figure class="rooms__place">
+          <div class="rooms__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="rooms__screen"><img src="/imgs/cases/casalevigne-com-br.webp" width="800" height="500" style="background:#1c1c1c" alt="Site Casa Le Vigne, criado pela Matilab" loading="eager" fetchpriority="low" decoding="async"></div>
+          <figcaption class="rooms__label m-text-6">Casa Le Vigne · Vinhos</figcaption>
+          <div class="rooms__talk">
+            <p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Catálogo e WhatsApp</span></p>
+            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Histórias únicas</span></p>
+          </div>
+        </figure>
+        <figure class="rooms__place">
+          <div class="rooms__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="rooms__screen"><img src="/imgs/cases/mlucasarquitetura-com.webp" width="800" height="500" style="background:#1c1c1c" alt="Site Lucas Menighini, criado pela Matilab" loading="eager" fetchpriority="low" decoding="async"></div>
+          <figcaption class="rooms__label m-text-6">Lucas Menighini · Arquitetura</figcaption>
+          <div class="rooms__talk">
+            <p class="m-caption"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Alto padrão</span></p>
+            <p class="m-caption-2"><span class="m-caption__wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="m-caption__text">Identidade em cada detalhe</span></p>
           </div>
         </figure>
       </div>
@@ -874,7 +975,14 @@
 <section class="voices" id="voices" data-8b-section="testimonials" aria-labelledby="voices-title">
   <div class="voices__sheet m-band" aria-hidden="true" data-8b-motion="bandRise"></div>
   <div class="voices__inner l-wrap">
-    <h2 class="m-text-3 voices__title" id="voices-title" data-8b-motion="captionIn">+300 empresas atendidas. O que dizem nossos clientes.</h2>
+    <ul class="voices__stats">
+      <li><p class="voices__num">+300</p><p class="m-text-6">Empresas atendidas</p></li>
+      <li><p class="voices__num">+500</p><p class="m-text-6">Projetos entregues</p></li>
+      <li><p class="voices__num">8+</p><p class="m-text-6">Anos de mercado</p></li>
+      <li><p class="voices__num">98%</p><p class="m-text-6">Clientes satisfeitos</p></li>
+    </ul>
+    <div class="voices__logos" aria-label="Algumas empresas que confiam na Matilab"><ul><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio1.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio2.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio3.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio4.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio5.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio6.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio7.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio8.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio9.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio10.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio11.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio12.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio13.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio14.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio15.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio16.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio17.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio18.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio19.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio20.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio21.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio22.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio23.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio24.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio25.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio26.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio27.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio28.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio29.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio30.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li></ul><ul aria-hidden="true"><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio1.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio2.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio3.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio4.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio5.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio6.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio7.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio8.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio9.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio10.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio11.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio12.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio13.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio14.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio15.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio16.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio17.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio18.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio19.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio20.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio21.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio22.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio23.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio24.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio25.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio26.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio27.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio28.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio29.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li><li><img src="/imgs/clientes/Logotipos-Clientes-Mati-Studio30.webp" width="260" height="90" alt="" loading="lazy" decoding="async"></li></ul></div>
+    <h2 class="m-text-3 voices__title" id="voices-title" data-eyebrow="Depoimentos" data-8b-motion="captionIn">O que dizem nossos clientes.</h2>
     <div class="voices__grid">
       <figure class="voices__expert">
         <div class="voices__photo"><img src="/imgs/team-matheus.jpg" width="760" height="760" style="background:#1c1c1c" alt="Matheus Moura, fundador da Matilab" loading="lazy" decoding="async"></div>
@@ -903,7 +1011,7 @@
   <div class="setup__sheet m-band-2" aria-hidden="true"></div>
   <div class="setup__inner l-wrap">
     <div class="setup__head">
-      <h2 class="m-text-3" id="setup-title" data-8b-motion="captionIn">Como transformamos sua ideia em realidade.</h2>
+      <h2 class="m-text-3" id="setup-title" data-eyebrow="Nosso processo" data-8b-motion="captionIn">Como transformamos sua ideia em realidade.</h2>
       <p class="m-text-4">Cada etapa precisa da sua aprovação antes de avançar. Você sempre sabe onde está o seu projeto.</p>
     </div>
     <ol class="setup__steps">
@@ -949,7 +1057,7 @@
   <div class="faq__sheet m-band" aria-hidden="true"></div>
   <div class="faq__inner l-wrap">
     <div class="faq__head">
-      <h2 class="m-text-3" id="faq-title" data-8b-motion="captionIn">Perguntas frequentes.</h2>
+      <h2 class="m-text-3" id="faq-title" data-eyebrow="Perguntas frequentes" data-8b-motion="captionIn">Tudo o que você precisa saber.</h2>
       <p class="m-text-8">Ficou alguma dúvida? <a class="m-link" href="https://api.whatsapp.com/send/?phone=5511992644010&amp;text=Ol%C3%A1%2C%20vim%20da%20Matilab%20e%20quero%20um%20site%20institucional" target="_blank" rel="noopener">Chame no WhatsApp</a>, respondemos em até 2h.</p>
     </div>
     <div class="faq__list">
@@ -970,7 +1078,7 @@
       <img srcset="https://images.unsplash.com/photo-1726047336347-77803fc5f725?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d29tYW4lMjBzbWlsaW5nJTIwYXQlMjBwaG9uZSUyMGdyZWVuJTIwbGVhdmVzJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5Njc3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80 400w, https://images.unsplash.com/photo-1726047336347-77803fc5f725?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d29tYW4lMjBzbWlsaW5nJTIwYXQlMjBwaG9uZSUyMGdyZWVuJTIwbGVhdmVzJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5Njc3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;q=80 640w, https://images.unsplash.com/photo-1726047336347-77803fc5f725?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d29tYW4lMjBzbWlsaW5nJTIwYXQlMjBwaG9uZSUyMGdyZWVuJTIwbGVhdmVzJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5Njc3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1010&amp;q=80 1010w, https://images.unsplash.com/photo-1726047336347-77803fc5f725?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d29tYW4lMjBzbWlsaW5nJTIwYXQlMjBwaG9uZSUyMGdyZWVuJTIwbGVhdmVzJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5Njc3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1180&amp;q=80 1180w, https://images.unsplash.com/photo-1726047336347-77803fc5f725?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d29tYW4lMjBzbWlsaW5nJTIwYXQlMjBwaG9uZSUyMGdyZWVuJTIwbGVhdmVzJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5Njc3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=80 1280w, https://images.unsplash.com/photo-1726047336347-77803fc5f725?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d29tYW4lMjBzbWlsaW5nJTIwYXQlMjBwaG9uZSUyMGdyZWVuJTIwbGVhdmVzJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5Njc3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w" sizes="(max-width: 767px) 269vw, 92vw" style="background:#26260c" src="https://images.unsplash.com/photo-1726047336347-77803fc5f725?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d29tYW4lMjBzbWlsaW5nJTIwYXQlMjBwaG9uZSUyMGdyZWVuJTIwbGVhdmVzJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5Njc3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80" width="1600" height="1067" alt="Mulher sorri ao falar no celular" loading="lazy" decoding="async">
     </div>
     <div class="start__copy">
-      <h2 class="m-text-3" id="start-title">Seu próximo cliente pode chegar pelo site.</h2>
+      <h2 class="m-text-3" id="start-title" data-eyebrow="Vamos começar">Seu próximo cliente pode chegar pelo site.</h2>
       <p class="m-text-4">Sites institucionais a partir de R$1.800. Mande uma mensagem e receba o orçamento em até 2h.</p>
       <div class="start__actions">
         <a class="m-btn" href="https://api.whatsapp.com/send/?phone=5511992644010&amp;text=Ol%C3%A1%2C%20vim%20da%20Matilab%20e%20quero%20um%20site%20institucional" target="_blank" rel="noopener"><span class="m-btn__label">Receber orçamento no WhatsApp</span><span class="m-btn__wave" aria-hidden="true"><i></i><i></i><i></i></span></a>
@@ -984,7 +1092,7 @@
   <div class="contact__sheet m-band-2" aria-hidden="true" data-8b-motion="bandRise"></div>
   <div class="contact__inner l-wrap">
     <div class="contact__info">
-      <h2 class="m-text-3" id="contact-title" data-8b-motion="captionIn">Fale com uma pessoa de verdade.</h2>
+      <h2 class="m-text-3" id="contact-title" data-eyebrow="Contato" data-8b-motion="captionIn">Fale com uma pessoa de verdade.</h2>
       <p class="m-text-4">Nada de robô. Quem responde é o nosso time, no WhatsApp, em até 2h.</p>
       <figure class="contact__photo"><img src="/imgs/team-beatriz.jpg" width="700" height="700" style="background:#1c1c1c" alt="Beatriz Pinheiro, Account Manager da Matilab" loading="lazy" decoding="async"></figure>
       <ul class="contact__ways">
