@@ -336,14 +336,6 @@
   "h": 3000
  },
  {
-  "id": "mouraid-lovable-app",
-  "nome": "MouraID",
-  "setor": "Agências e Marketing",
-  "tipo": "Site",
-  "url": "https://mouraid.lovable.app/",
-  "h": 3000
- },
- {
   "id": "oak-mouraclientes-com-br",
   "nome": "OakBerry Foz",
   "setor": "Alimentação e Bebidas",
@@ -1365,6 +1357,166 @@
   "setor": "Automotivo e Transportes",
   "tipo": "Site",
   "url": "https://jordanwindowfilm.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "supporta-com-br",
+  "nome": "Supporta",
+  "setor": "Agências e Marketing",
+  "tipo": "Site",
+  "url": "https://supporta.com.br/",
+  "h": 3000
+ },
+ {
+  "id": "abriq-escolai-vercel-app",
+  "nome": "ABRIQ",
+  "setor": "Indústria e Têxtil",
+  "tipo": "Plataforma",
+  "url": "https://abriq-escolai.vercel.app/",
+  "h": 2015
+ },
+ {
+  "id": "hayahealth-vercel-app",
+  "nome": "Haya Health",
+  "setor": "Saúde e Clínicas",
+  "tipo": "Plataforma",
+  "url": "https://hayahealth.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "clarteboutique-com-br",
+  "nome": "Clarté Marketing Boutique",
+  "setor": "Agências e Marketing",
+  "tipo": "Site",
+  "url": "https://www.clarteboutique.com.br/",
+  "h": 2515
+ },
+ {
+  "id": "moura-id",
+  "nome": "Moura ID",
+  "setor": "Agências e Marketing",
+  "tipo": "Site",
+  "url": "https://moura.id/",
+  "h": 3000
+ },
+ {
+  "id": "ksvmedtr-com-br",
+  "nome": "KSV Medicina do Trabalho",
+  "setor": "Saúde e Clínicas",
+  "tipo": "Site",
+  "url": "https://www.ksvmedtr.com.br/",
+  "h": 3000
+ },
+ {
+  "id": "geracaodosaber-vercel-app",
+  "nome": "Geração do Saber",
+  "setor": "Igrejas e Projetos Sociais",
+  "tipo": "Site",
+  "url": "https://geracaodosaber.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "analise-matilab-com-br-yeshuavidroseserralheria",
+  "nome": "Yeshua Vidros e Serralheria",
+  "setor": "Construção, Pisos e Manutenção",
+  "tipo": "Site",
+  "url": "https://analise.matilab.com.br/yeshuavidroseserralheria",
+  "h": 3000
+ },
+ {
+  "id": "analise-matilab-com-br-dmkepoxi",
+  "nome": "DMK Epóxi",
+  "setor": "Construção, Pisos e Manutenção",
+  "tipo": "Site",
+  "url": "https://analise.matilab.com.br/dmkepoxi",
+  "h": 3000
+ },
+ {
+  "id": "malufernandes-com-br",
+  "nome": "Malu Fernandes",
+  "setor": "Política e Gestão Pública",
+  "tipo": "Site",
+  "url": "https://malufernandes.com.br/",
+  "h": 1058
+ },
+ {
+  "id": "labcore-site-vercel-app",
+  "nome": "Labcore",
+  "setor": "Indústria e Têxtil",
+  "tipo": "Site",
+  "url": "https://labcore-site.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "albacorquimica-com-br",
+  "nome": "Albacor Química · Site",
+  "setor": "Construção, Pisos e Manutenção",
+  "tipo": "Site",
+  "url": "https://www.albacorquimica.com.br/",
+  "h": 3000
+ },
+ {
+  "id": "albacor-com-br",
+  "nome": "Albacor · Piso Epóxi",
+  "setor": "Construção, Pisos e Manutenção",
+  "tipo": "Landing page",
+  "url": "https://albacor.com.br/",
+  "h": 3000
+ },
+ {
+  "id": "helinhozanatta-com-br",
+  "nome": "Helinho Zanatta",
+  "setor": "Política e Gestão Pública",
+  "tipo": "Site",
+  "url": "https://helinhozanatta.com.br/",
+  "h": 3000
+ },
+ {
+  "id": "gilbertonascimento-com-br",
+  "nome": "Gilberto Nascimento",
+  "setor": "Política e Gestão Pública",
+  "tipo": "Site",
+  "url": "https://www.gilbertonascimento.com.br/",
+  "h": 592
+ },
+ {
+  "id": "rodrigolacerda-org",
+  "nome": "Dr. Rodrigo Lacerda",
+  "setor": "Saúde e Clínicas",
+  "tipo": "Landing page",
+  "url": "https://www.rodrigolacerda.org/",
+  "h": 3000
+ },
+ {
+  "id": "produtoramedica-com-br",
+  "nome": "MedRec · Produtora Médica",
+  "setor": "Saúde e Clínicas",
+  "tipo": "Landing page",
+  "url": "https://www.produtoramedica.com.br/",
+  "h": 3000
+ },
+ {
+  "id": "inovaobra-com",
+  "nome": "InovaObra",
+  "setor": "Tecnologia",
+  "tipo": "Landing page",
+  "url": "https://www.inovaobra.com/",
+  "h": 3000
+ },
+ {
+  "id": "nexoleum-com-br",
+  "nome": "Nexoleum",
+  "setor": "Indústria e Têxtil",
+  "tipo": "Landing page",
+  "url": "https://www.nexoleum.com.br/",
+  "h": 3000
+ },
+ {
+  "id": "akatu-site-vercel-app",
+  "nome": "Akatu · Novo site",
+  "setor": "Arquitetura e Interiores",
+  "tipo": "Site",
+  "url": "https://akatu-site.vercel.app/",
   "h": 3000
  }
 ]
