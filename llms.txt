@@ -9,6 +9,7 @@
 - [Criação de Sites em São Paulo](https://matilab.com.br/criacao-de-sites-sao-paulo): serviço principal, preços e processo — a página mais completa
 - [Agência Web São Paulo](https://matilab.com.br/agencia-web-sao-paulo): posicionamento e diferenciais
 - [Sobre a Matilab](https://matilab.com.br/sobre): quem somos, cases e equipe
+- [Cases e portfólio](https://matilab.com.br/cases): sites criados pela Matilab que estão no ar, organizados por setor (arquitetura, construção, saúde, advocacia, igrejas, política e mais), com link para cada site real
 
 ## Serviços
 
