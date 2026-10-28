@@ -1,0 +1,54 @@
+/* ── CASES (/cases) ── */
+.cs-hero{padding-bottom:56px}
+.cs-hero .stats-row{margin-top:8px}
+
+.cs-bar-wrap{position:sticky;top:60px;z-index:150;background:rgba(10,10,10,.88);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-top:1px solid var(--ld);border-bottom:1px solid var(--ld)}
+.cs-filter{display:flex;gap:8px;align-items:center;overflow-x:auto;scrollbar-width:none;padding:14px var(--pad);max-width:none}
+.cs-filter::-webkit-scrollbar{display:none}
+.cs-search{flex:0 0 auto;display:flex;align-items:center;gap:8px;height:36px;padding:0 14px;border-radius:999px;border:1px solid var(--ld2);color:rgba(255,255,255,.45);margin-right:6px;transition:border-color .2s}
+.cs-search:focus-within{border-color:rgba(181,251,103,.5);color:var(--lime)}
+.cs-search input{background:none;border:0;outline:0;color:#fff;font:inherit;font-size:13px;width:150px}
+.cs-search input::placeholder{color:rgba(255,255,255,.38)}
+.cs-chip{flex:0 0 auto;height:36px;padding:0 14px;border-radius:999px;border:1px solid var(--ld2);color:rgba(255,255,255,.62);font-size:13px;white-space:nowrap;display:inline-flex;align-items:center;gap:7px;transition:all .2s}
+.cs-chip b{font-weight:500;font-size:11px;color:rgba(255,255,255,.35);font-variant-numeric:tabular-nums}
+.cs-chip:hover{color:#fff;border-color:rgba(255,255,255,.25)}
+.cs-chip.on{background:var(--lime);border-color:var(--lime);color:#080808;font-weight:600}
+.cs-chip.on b{color:rgba(8,8,8,.55)}
+
+.cs-main{padding:24px var(--pad) 40px}
+.cs-sec{padding:56px 0 8px;scroll-margin-top:130px}
+.cs-sh{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-bottom:20px;margin-bottom:28px;border-bottom:1px solid var(--ld)}
+.cs-sh h2{font-size:clamp(24px,2.6vw,36px);font-weight:700;letter-spacing:-1.2px;line-height:1.1}
+.cs-sh span{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--lime);white-space:nowrap;font-variant-numeric:tabular-nums}
+
+.cs-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 22px}
+.cs-card{display:block;border-radius:14px}
+.cs-shot{position:relative;border-radius:12px;overflow:hidden;background:var(--ink3);border:1px solid var(--ld);transition:border-color .3s,transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+.cs-bar{display:flex;align-items:center;gap:5px;height:26px;padding:0 10px;background:#141414;border-bottom:1px solid var(--ld)}
+.cs-bar i{width:7px;height:7px;border-radius:50%;background:#2a2a2a}
+.cs-bar span{margin-left:8px;font-size:10.5px;color:rgba(255,255,255,.4);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cs-shot img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.cs-meta{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:14px 2px 0}
+.cs-meta h3{font-size:15px;font-weight:500;letter-spacing:-.2px;line-height:1.3;color:#fff}
+.cs-type{display:inline-block;margin-top:5px;font-size:11px;color:rgba(255,255,255,.4)}
+.cs-go{flex:0 0 auto;width:30px;height:30px;border-radius:50%;border:1px solid var(--ld2);display:grid;place-items:center;font-size:13px;color:rgba(255,255,255,.5);transition:all .3s}
+.cs-card:hover .cs-shot{border-color:rgba(181,251,103,.35);transform:translateY(-4px);box-shadow:0 24px 48px -24px rgba(0,0,0,.9)}
+.cs-card:hover .cs-shot img{transform:scale(1.035)}
+.cs-card:hover .cs-go{background:var(--lime);border-color:var(--lime);color:#080808}
+.cs-card:focus-visible{outline:2px solid var(--lime);outline-offset:4px}
+.cs-card[hidden],.cs-sec[hidden]{display:none}
+.cs-empty{padding:80px 0;text-align:center;color:rgba(255,255,255,.45)}
+
+.cs-cta{padding:96px var(--pad) 120px;text-align:center;border-top:1px solid var(--ld)}
+.cs-cta h2{font-size:clamp(28px,3.6vw,48px);font-weight:700;letter-spacing:-1.8px;line-height:1.1;margin-bottom:14px}
+.cs-cta p{color:rgba(255,255,255,.55);margin-bottom:30px;font-size:16px}
+
+@media(max-width:1024px){.cs-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+  .cs-filter{padding:12px 16px}
+  .cs-main{padding:8px 16px 24px}
+  .cs-sec{padding-top:40px}
+  .cs-grid{grid-template-columns:1fr;gap:26px}
+  .cs-cta{padding:72px 16px 96px}
+}
+@media(prefers-reduced-motion:reduce){.cs-shot,.cs-shot img{transition:none}}
