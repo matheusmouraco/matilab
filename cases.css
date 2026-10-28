@@ -14,7 +14,7 @@
   --ease:cubic-bezier(.16,1,.3,1);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:136px}
+html{scroll-padding-top:136px}
 body.cs{background:var(--bg);color:var(--ink);font-family:'Hanken Grotesk',system-ui,-apple-system,sans-serif;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
@@ -39,7 +39,7 @@ img{display:block;max-width:100%}
 
 /* hero */
 .cs-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:64px;align-items:center;min-height:min(100dvh,860px);padding:112px var(--pad) 64px}
-.cs-hero h1{font-size:clamp(40px,5.2vw,76px);font-weight:300;letter-spacing:-.035em;line-height:1.02;max-width:12ch}
+.cs-hero h1{font-size:clamp(48px,7.2vw,112px);font-weight:300;letter-spacing:-.045em;line-height:.98;text-wrap:balance}
 .cs-hero h1 strong{font-weight:600}
 .cs-hero .tap{display:none}
 @media (hover:none){.cs-hero .hov{display:none}.cs-hero .tap{display:inline}}
@@ -70,7 +70,8 @@ img{display:block;max-width:100%}
 .cs-chip:focus-visible,.cs-card:focus-visible,.cs-btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 
 /* listas por setor */
-.cs-main{padding:16px var(--pad) 48px}
+.cs-main{padding:16px var(--pad) 48px;min-height:calc(100dvh - 64px)}
+.cs-main.instant .cs-card{transition:none}
 .cs-sec{padding-top:88px}
 .cs-sh{display:flex;align-items:baseline;gap:16px;margin-bottom:32px}
 .cs-sh h2{font-size:clamp(28px,3vw,42px);font-weight:400;letter-spacing:-.03em;line-height:1.1}
@@ -108,19 +109,6 @@ img{display:block;max-width:100%}
 .cs-empty{padding:96px 0;text-align:center;color:var(--mute)}
 .cs-clear{margin-top:16px;height:40px;padding:0 18px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line);color:var(--ink)}
 
-/* perguntas (AEO) */
-.cs-faq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:64px;padding:96px var(--pad) 0}
-.cs-faq h2{font-size:clamp(28px,3vw,42px);font-weight:400;letter-spacing:-.03em;line-height:1.1;max-width:12ch}
-.cs-q{border-top:1px solid var(--line)}
-.cs-q:last-child{border-bottom:1px solid var(--line)}
-.cs-q summary{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;font-size:18px;font-weight:500;letter-spacing:-.01em;cursor:pointer;list-style:none}
-.cs-q summary::-webkit-details-marker{display:none}
-.cs-q summary::after{content:'+';flex:0 0 auto;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:400;color:var(--ink2);box-shadow:inset 0 0 0 1px var(--line);transition:transform .3s var(--ease),background .3s}
-.cs-q[open] summary::after{transform:rotate(45deg);background:var(--lime);box-shadow:none}
-.cs-q summary:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
-.cs-q p{padding:0 48px 24px 0;font-size:16px;line-height:1.65;color:var(--ink2);max-width:62ch}
-.cs-q p a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:2px;text-underline-offset:3px}
-
 /* CTA e rodapé */
 .cs-cta{margin:72px var(--pad) 0;padding:96px 32px;border-radius:28px;text-align:center;background:var(--paper);box-shadow:var(--shadow)}
 .cs-cta h2{font-size:clamp(32px,4vw,56px);font-weight:300;letter-spacing:-.035em;line-height:1.08}
@@ -129,7 +117,6 @@ img{display:block;max-width:100%}
 .cs-foot a:hover{color:var(--ink)}
 
 @media (max-width:1100px){
-  .cs-faq{grid-template-columns:1fr;gap:32px}
   .cs-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .cs-hero{grid-template-columns:1fr;gap:48px;min-height:0;padding-top:120px}
   .cs-hero-vis{height:440px}
@@ -148,9 +135,6 @@ img{display:block;max-width:100%}
   .cs-sec{padding-top:56px}
   .cs-sh{flex-wrap:wrap;row-gap:8px}
   .cs-sh h2{flex-basis:100%}
-  .cs-faq{grid-template-columns:1fr;gap:24px;padding:64px 16px 0}
-  .cs-q summary{font-size:16px}
-  .cs-q p{padding-right:0}
   .cs-grid{grid-template-columns:minmax(0,1fr);gap:36px}
   .cs-cta{margin:48px 16px 0;padding:64px 20px}
   .cs-foot{flex-direction:column;align-items:flex-start;gap:12px}

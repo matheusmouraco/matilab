@@ -9,7 +9,6 @@ Uso: python3 scripts/build_cases.py
 """
 import html
 import json
-from datetime import date
 import re
 import unicodedata
 from collections import OrderedDict
@@ -21,7 +20,6 @@ BASE = "https://www.matilab.com.br"
 WHATS = "https://api.whatsapp.com/send/?phone=5511992644010&text=Ol%C3%A1%2C%20vi%20os%20cases%20da%20Matilab%20e%20quero%20um%20site"
 HERO_IDS = ["santoroarquitetura-com-br", "medrec-com-br", "vdarquitetura-com"]
 OG_IMG = BASE + "/imgs/cases/og.jpg"  # 1200x630, colagem de capas (gerada uma vez)
-ORG = {"@id": BASE + "/#organization"}
 
 # Setor do portfólio -> página de serviço do segmento (link interno para SEO).
 SERVICO = {
@@ -94,10 +92,6 @@ def svc(setor):
     return f'<a class="cs-svc" href="/{href}">{e(txt)}</a>'
 
 
-def lista(itens):
-    return ", ".join(itens[:-1]) + " e " + itens[-1] if len(itens) > 1 else "".join(itens)
-
-
 def main():
     cases = json.loads((ROOT / "content/cases.json").read_text())
     by_id = {c["id"]: c for c in cases}
@@ -124,73 +118,18 @@ def main():
         for n, h in enumerate(HERO_IDS) if by_id.get(h, {}).get("h")
     )
 
-    hoje = date.today()
-    top = [f"{x} ({len(grupos[x])})" for x in setores[:6]]
-    faq = [
-        ("Quantos sites a Matilab já criou?",
-         f"O portfólio público da Matilab reúne {total} sites, landing pages e plataformas no ar, em {n_set} setores. "
-         "No total são mais de 500 projetos entregues; aqui ficam os que continuam publicados e podem ser visitados."),
-        ("Em quais setores a Matilab tem cases?",
-         f"Os setores com mais projetos são {lista(top)}. Há também cases em {lista([x.lower() for x in setores[6:]])}."),
-        ("Os sites do portfólio estão no ar?",
-         "Sim. Cada case abre o site real, publicado pelo cliente. A lista é conferida a cada atualização e sites "
-         "fora do ar saem do portfólio."),
-        ("A Matilab faz site para o meu segmento?",
-         "Sim. A Matilab cria sites sob medida para qualquer segmento, com SEO técnico e otimização para IA (GEO) "
-         "incluídos em todos os projetos. O orçamento é feito pelo WhatsApp (11) 99264-4010."),
-        ("Quanto custa e quanto tempo leva um site como esses?",
-         "Depende do escopo de cada projeto. Os valores de referência estão no guia Quanto custa criar um site "
-         "e os prazos no guia Quanto tempo leva criar um site, ambos em matilab.com.br."),
-    ]
-    faq_links = {
-        "Quanto custa criar um site": "/quanto-custa-criar-um-site",
-        "Quanto tempo leva criar um site": "/quanto-tempo-leva-criar-um-site",
-    }
-
-    def faq_html(a):
-        a = e(a)
-        for t, h in faq_links.items():
-            a = a.replace(t, f'<a href="{h}">{t}</a>')
-        return a.replace(", ambos em matilab.com.br", "")
-
-    faq_sec = "\n".join(
-        f'    <details class="cs-q"{" open" if n == 0 else ""}><summary>{e(q)}</summary><p>{faq_html(a)}</p></details>'
-        for n, (q, a) in enumerate(faq)
-    )
-
     desc = (f"Portfólio da Matilab: {total} sites, landing pages e plataformas no ar, organizados em "
             f"{n_set} setores. Arquitetura, saúde, construção, advocacia, igrejas e mais.")
-    page_id = BASE + "/cases"
     schema = {
         "@context": "https://schema.org",
         "@graph": [
-            {"@type": "Organization", "@id": ORG["@id"], "name": "Matilab Creative House", "alternateName": "Matilab",
-             "url": BASE + "/", "logo": BASE + "/icon-512.png", "email": "contato@matilab.com.br",
-             "telephone": "+55-11-99264-4010",
-             "address": {"@type": "PostalAddress", "streetAddress": "Alameda Vicente Pinzon, 173",
-                         "addressLocality": "São Paulo", "addressRegion": "SP", "postalCode": "04547-130",
-                         "addressCountry": "BR"}},
-            {"@type": "WebSite", "@id": BASE + "/#website", "url": BASE + "/", "name": "Matilab",
-             "inLanguage": "pt-BR", "publisher": ORG},
-            {"@type": "BreadcrumbList", "@id": page_id + "#breadcrumb", "itemListElement": [
+            {"@type": "BreadcrumbList", "itemListElement": [
                 {"@type": "ListItem", "position": 1, "name": "Início", "item": BASE + "/"},
-                {"@type": "ListItem", "position": 2, "name": "Cases", "item": page_id},
+                {"@type": "ListItem", "position": 2, "name": "Cases", "item": BASE + "/cases"},
             ]},
-            {"@type": "CollectionPage", "@id": page_id + "#webpage", "url": page_id,
-             "name": "Cases e portfólio Matilab", "description": desc, "inLanguage": "pt-BR",
-             "isPartOf": {"@id": BASE + "/#website"}, "about": ORG, "publisher": ORG,
-             "breadcrumb": {"@id": page_id + "#breadcrumb"},
-             "primaryImageOfPage": {"@type": "ImageObject", "url": OG_IMG, "width": 1200, "height": 630},
-             "dateModified": hoje.isoformat(),
-             "mainEntity": {"@type": "ItemList", "name": "Sites criados pela Matilab", "numberOfItems": total,
-                            "itemListOrder": "https://schema.org/ItemListUnordered", "itemListElement": [
-                 {"@type": "ListItem", "position": i + 1, "item": {
-                     "@type": "WebSite", "name": c["nome"], "url": c["url"], "genre": c["setor"],
-                     "description": f"{c['tipo']} criado pela Matilab para {c['nome']} ({c['setor']}).",
-                     "image": f"{BASE}/imgs/cases/{c['id']}.webp", "creator": ORG}}
-                 for i, c in enumerate(cases)]}},
-            {"@type": "FAQPage", "@id": page_id + "#faq", "mainEntity": [
-                {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
+            {"@type": "CollectionPage", "url": BASE + "/cases", "name": "Cases e portfólio Matilab", "description": desc,
+             "mainEntity": {"@type": "ItemList", "numberOfItems": total, "itemListElement": [
+                 {"@type": "ListItem", "position": i + 1, "name": c["nome"], "url": c["url"]} for i, c in enumerate(cases)]}},
         ],
     }
 
@@ -215,7 +154,6 @@ def main():
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Prints de sites criados pela Matilab">
-<meta property="article:modified_time" content="{hoje.isoformat()}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cases Matilab: {total} sites no ar, por setor">
 <meta name="twitter:description" content="{e(desc)}">
@@ -270,13 +208,6 @@ def main():
   <div class="cs-empty" hidden><p>Nenhum cliente com esse nome.</p><button type="button" class="cs-clear">Limpar busca</button></div>
 </main>
 
-<section class="cs-faq" id="perguntas" aria-labelledby="faq-t">
-  <h2 id="faq-t">Perguntas sobre o portfólio</h2>
-  <div class="cs-qs">
-{faq_sec}
-  </div>
-</section>
-
 <section class="cs-cta">
   <h2>O próximo case pode ser o seu.</h2>
   <p>Site sob medida, rápido e pronto para aparecer no Google e nas IAs.</p>
@@ -286,7 +217,6 @@ def main():
 <footer class="cs-foot">
   <a href="/" class="cs-logo" aria-label="Matilab">{logo}</a>
   <p>Vila Olímpia, São Paulo · <a href="mailto:contato@matilab.com.br">contato@matilab.com.br</a></p>
-  <p>Portfólio atualizado em <time datetime="{hoje.isoformat()}">{hoje.strftime("%d/%m/%Y")}</time></p>
   <p>&copy; Matilab Creative House</p>
 </footer>
 

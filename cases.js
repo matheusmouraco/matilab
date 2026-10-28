@@ -13,9 +13,11 @@
   var setor = '';
 
   /* filtro e busca */
+  var main = document.querySelector('.cs-main');
   function apply(){
     var q = input.value.trim().toLowerCase();
     var any = false;
+    main.classList.add('instant');
     secs.forEach(function(s){
       var vis = 0;
       s.querySelectorAll('.cs-card').forEach(function(c){
@@ -24,27 +26,40 @@
         if(ok){ vis++; c.classList.add('in'); }
       });
       s.hidden = (setor && s.getAttribute('data-s') !== setor) || !vis;
+      // setor escolhido: carrega as capas já, sem esperar o lazy-load
+      if(setor && !s.hidden) s.querySelectorAll('.cs-frame>img').forEach(function(i){ i.loading = 'eager'; });
       if(!s.hidden) any = true;
     });
     empty.hidden = any;
     chips.forEach(function(c){
       var on = c.getAttribute('data-f') === setor;
       c.classList.toggle('on', on);
-      if(on) c.parentElement.scrollLeft = c.offsetLeft - c.parentElement.offsetLeft - 16;
+      c.setAttribute('aria-pressed', on);
+      if(on){
+        var row = c.parentElement;
+        row.scrollTo({left: c.offsetLeft - row.offsetLeft - 16, behavior: reduce ? 'auto' : 'smooth'});
+      }
     });
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){ main.classList.remove('instant'); }); });
+  }
+  // Leva o início da lista para logo abaixo da barra fixa, sem animação (a página muda de altura ao filtrar).
+  function toList(){
+    var top = main.getBoundingClientRect().top + scrollY - bar.offsetHeight - 64;
+    if(Math.abs(scrollY - top) > 2) scrollTo({top: Math.max(top, 0), behavior: 'instant'});
   }
   function select(f, push){
     setor = f;
     apply();
-    if(push) history.replaceState(null, '', f ? '#' + f : location.pathname);
-    var jump = function(){
-      var top = bar.getBoundingClientRect().top + scrollY - 64;
-      if(scrollY > top || f) scrollTo({top: top, behavior: (reduce || !push) ? 'auto' : 'smooth'});
-    };
-    push ? jump() : setTimeout(jump, 60);
+    if(push) history.replaceState(null, '', f ? '#' + f : location.pathname + location.search);
+    push ? toList() : setTimeout(toList, 60);
   }
   chips.forEach(function(c){ c.addEventListener('click', function(){ select(c.getAttribute('data-f'), true); }); });
-  input.addEventListener('input', apply);
+  input.addEventListener('input', function(){
+    // a busca procura em todos os setores
+    if(setor && input.value.trim()){ setor = ''; history.replaceState(null, '', location.pathname + location.search); }
+    apply();
+  });
+  input.addEventListener('keydown', function(ev){ if(ev.key === 'Enter'){ ev.preventDefault(); toList(); } });
   document.querySelector('.cs-clear').addEventListener('click', function(){ input.value = ''; apply(); input.focus(); });
   function fromHash(){
     var h = decodeURIComponent(location.hash.slice(1));
@@ -52,6 +67,13 @@
   }
   addEventListener('hashchange', fromHash);
   fromHash();
+
+  /* "Ver os cases": rolagem suave até a lista */
+  var cta = document.querySelector('a[href="#lista"]');
+  if(cta) cta.addEventListener('click', function(ev){
+    ev.preventDefault();
+    scrollTo({top: bar.getBoundingClientRect().top + scrollY - 64, behavior: reduce ? 'auto' : 'smooth'});
+  });
 
   /* entrada */
   if('IntersectionObserver' in window && !reduce){
