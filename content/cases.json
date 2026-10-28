@@ -1518,5 +1518,53 @@
   "tipo": "Site",
   "url": "https://akatu-site.vercel.app/",
   "h": 3000
+ },
+ {
+  "id": "lp1-gpnobre-com-br",
+  "nome": "Nobre · E-book Provedores",
+  "setor": "Finanças e Contabilidade",
+  "tipo": "Landing page",
+  "url": "https://lp1.gpnobre.com.br/",
+  "h": 2312
+ },
+ {
+  "id": "dragiulianagraicer-com-br",
+  "nome": "Dra. Giuliana Graicer",
+  "setor": "Saúde e Clínicas",
+  "tipo": "Site",
+  "url": "https://www.dragiulianagraicer.com.br/",
+  "h": 3000
+ },
+ {
+  "id": "piemouarquitetura-base44-app",
+  "nome": "Piemou Arquitetura",
+  "setor": "Arquitetura e Interiores",
+  "tipo": "Site",
+  "url": "https://piemouarquitetura.base44.app/",
+  "h": 3000
+ },
+ {
+  "id": "concreplan-base44-app",
+  "nome": "Concreplan",
+  "setor": "Construção, Pisos e Manutenção",
+  "tipo": "Site",
+  "url": "https://concreplan.base44.app/",
+  "h": 2273
+ },
+ {
+  "id": "stonesom-com-br",
+  "nome": "Stone Audio",
+  "setor": "Música e Áudio",
+  "tipo": "Site",
+  "url": "https://stonesom.com.br/",
+  "h": 3000
+ },
+ {
+  "id": "bandainit-com",
+  "nome": "Banda Inít",
+  "setor": "Música e Áudio",
+  "tipo": "Site",
+  "url": "https://bandainit.com/",
+  "h": 2522
  }
 ]
