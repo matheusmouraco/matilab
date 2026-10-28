@@ -24,14 +24,6 @@
   "h": 2262
  },
  {
-  "id": "hayadobrasil-lovable-app",
-  "nome": "Haya do Brasil",
-  "setor": "Logística e Comércio Exterior",
-  "tipo": "Site",
-  "url": "https://hayadobrasil.lovable.app/",
-  "h": 2506
- },
- {
   "id": "dioika-mouraclientes-com-br",
   "nome": "Dioika Ambiental",
   "setor": "Ambiental e Sustentabilidade",
@@ -1302,5 +1294,77 @@
   "tipo": "Site",
   "url": "https://ynaecortez.com.br/",
   "h": 672
+ },
+ {
+  "id": "lp-concreart-com-br",
+  "nome": "Concreart",
+  "setor": "Construção, Pisos e Manutenção",
+  "tipo": "Landing page",
+  "url": "https://lp.concreart.com.br/",
+  "h": 3000
+ },
+ {
+  "id": "srgmarketing-co",
+  "nome": "SRG Marketing",
+  "setor": "Agências e Marketing",
+  "tipo": "Site",
+  "url": "https://www.srgmarketing.co/",
+  "h": 3000
+ },
+ {
+  "id": "plenno-pt",
+  "nome": "Plenno",
+  "setor": "Construção, Pisos e Manutenção",
+  "tipo": "Site",
+  "url": "https://www.plenno.pt/",
+  "h": 3000
+ },
+ {
+  "id": "wearebz-com",
+  "nome": "BZ&Co Brand House",
+  "setor": "Agências e Marketing",
+  "tipo": "Site",
+  "url": "https://www.wearebz.com/",
+  "h": 3000
+ },
+ {
+  "id": "conradoceravolo-vercel-app-v2-site-index-html",
+  "nome": "Conrado Ceravolo Arquitetos",
+  "setor": "Arquitetura e Interiores",
+  "tipo": "Site",
+  "url": "https://conradoceravolo.vercel.app/v2/site/index.html",
+  "h": 1833
+ },
+ {
+  "id": "inovapoxi-com-lp-tinta-epoxi-piso-a",
+  "nome": "InovaPoxi · Tinta Epóxi",
+  "setor": "Construção, Pisos e Manutenção",
+  "tipo": "Landing page",
+  "url": "https://www.inovapoxi.com/lp/tinta-epoxi-piso-a",
+  "h": 3000
+ },
+ {
+  "id": "hayadobrasil-com-br",
+  "nome": "HAYA do Brasil",
+  "setor": "Logística e Comércio Exterior",
+  "tipo": "Site",
+  "url": "https://www.hayadobrasil.com.br/",
+  "h": 3000
+ },
+ {
+  "id": "siteescolainovo-vercel-app",
+  "nome": "Escol.AI · Novo site",
+  "setor": "Educação e Cursos",
+  "tipo": "Site",
+  "url": "https://siteescolainovo.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "jordanwindowfilm-vercel-app",
+  "nome": "Jordan Window Film",
+  "setor": "Automotivo e Transportes",
+  "tipo": "Site",
+  "url": "https://jordanwindowfilm.vercel.app/",
+  "h": 3000
  }
 ]
