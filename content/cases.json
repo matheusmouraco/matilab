@@ -744,14 +744,6 @@
   "h": 3000
  },
  {
-  "id": "assistenciabaixada-com-br",
-  "nome": "Assistência Baixada",
-  "setor": "Construção, Pisos e Manutenção",
-  "tipo": "Site",
-  "url": "https://assistenciabaixada.com.br/",
-  "h": 3000
- },
- {
   "id": "lavaesecaservices-com-br-samsung",
   "nome": "Lava e Seca Services",
   "setor": "Construção, Pisos e Manutenção",
@@ -950,14 +942,6 @@
   "tipo": "Site",
   "url": "https://interioresfoz.com.br/",
   "h": 3000
- },
- {
-  "id": "annamaia-com",
-  "nome": "Anna Maia Arquitetura",
-  "setor": "Arquitetura e Interiores",
-  "tipo": "Site",
-  "url": "https://annamaia.com/",
-  "h": 450
  },
  {
   "id": "bloco-arq-br",
@@ -1181,14 +1165,6 @@
   "setor": "Educação e Cursos",
   "tipo": "Site",
   "url": "https://escoladaregularizacao.com.br/",
-  "h": 3000
- },
- {
-  "id": "escoladaregularizacao-com-br-legalizacao-imobiliaria-descom",
-  "nome": "Legalização Imobiliária Descomplicada",
-  "setor": "Educação e Cursos",
-  "tipo": "Landing page",
-  "url": "https://escoladaregularizacao.com.br/legalizacao-imobiliaria-descomplicada/",
   "h": 3000
  },
  {
