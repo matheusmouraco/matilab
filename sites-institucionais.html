@@ -9,6 +9,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" as="image" href="/imgs/performance/sites-institucionais-hero-720.webp" media="(max-width: 47.99rem)" fetchpriority="high">
+<link rel="preload" as="image" href="/imgs/performance/sites-institucionais-hero-1280.webp" media="(min-width: 48rem)" fetchpriority="high">
+<style>#hero .hero__media{background:#1d2a33 url(data:image/webp;base64,UklGRhQBAABXRUJQVlA4IAgBAABwBgCdASogABgAPu1wr1KppiQiqAgBMB2JbACdMoSCyKt1kj6zztGN7yTYODLZPeFpISV5p+gXzQsW0AAA+ltVigr+D8mvnvd4Y9G8IO4Vl58qGyJvPC7Mf/7g6awnv4YM6f/yDHvIRnRrhnWblxDlVBvH2iCoYXrVEjOoP9wCp1XxbLjcdVbbmpwaORsQDjClgUqwedte/uvfv7L+hdqhqZ6RgkKustrD/nTzKMVZ3feMBoPnryn3z90rbAmZZo/ouOReKgLibSz5J7gsOMwnTpnECEvbbig525t0NcK0qdkWAnGDg2RPRnroco/rbiiBcFpj4AUnvNQFB1+QuuUTb5kxVUYAAAA=) 50% 28%/cover no-repeat}#hero .hero__media img{filter:none}@media (max-width:47.99rem){#hero .hero__media{background-position:64% 18%}}</style>
 <!-- Google tag (gtag.js) — carregamento adiado p/ performance -->
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -655,8 +658,8 @@
   #rooms .pf__bar { display: flex; align-items: center; gap: 0.375rem; height: 2rem; padding-inline: 0.75rem; border-bottom: 1px solid color-mix(in srgb, var(--color-2) 8%, transparent); }
   #rooms .pf__bar i { flex: none; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: color-mix(in srgb, var(--color-2) 22%, transparent); }
   #rooms .pf__bar span { overflow: hidden; flex: 1; min-width: 0; margin-left: 0.5rem; padding: 0.1875rem 0.625rem; border-radius: 99px; background: color-mix(in srgb, var(--color-2) 7%, transparent); color: var(--color-9); font-size: 0.6875rem; line-height: 1.3; text-align: center; white-space: nowrap; text-overflow: ellipsis; }
-  #rooms .pf__screen { position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: #1c1c1c; }
-  #rooms .pf__screen img { position: absolute; top: 0; left: 0; width: 100%; height: auto; transform: translateY(0); transition: top .9s cubic-bezier(.4,0,.2,1), transform .9s cubic-bezier(.4,0,.2,1); }
+  #rooms .pf__screen { position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: #1c1c1c; container-type: size; }
+  #rooms .pf__screen img { position: absolute; top: 0; left: 0; width: 100%; height: auto; transform: translate3d(0, 0, 0); transition: transform 1.2s cubic-bezier(.4,0,.2,1); will-change: transform; backface-visibility: hidden; }
   #rooms .pf__screen::after { content: ""; position: absolute; inset: auto 0 0; height: 30%; background: linear-gradient(180deg, transparent, rgba(10,10,10,.55)); opacity: 1; transition: opacity .45s; pointer-events: none; }
   #rooms .pf__meta { display: grid; grid-template-columns: 1fr auto; gap: 0.125rem 1rem; align-items: baseline; padding-inline: 0.25rem; }
   #rooms .pf__name { font-size: 1.125rem; font-weight: 500; letter-spacing: -0.01em; }
@@ -666,7 +669,7 @@
   #rooms .pf__card:hover .pf__go, #rooms .pf__card:focus-visible .pf__go { color: var(--color-4); }
   #rooms .pf__card:hover .pf__screen::after, #rooms .pf__item.is-play .pf__screen::after { opacity: 0; }
   @media (prefers-reduced-motion: no-preference) {
-    #rooms .pf__card:hover .pf__screen img, #rooms .pf__card:focus-visible .pf__screen img, #rooms .pf__item.is-play .pf__screen img { top: 100%; transform: translateY(-100%); transition-duration: calc(var(--h) * 2.4ms); transition-timing-function: linear; }
+    #rooms .pf__item.is-full .pf__card:hover .pf__screen img, #rooms .pf__item.is-full .pf__card:focus-visible .pf__screen img, #rooms .pf__item.is-full.is-play .pf__screen img { transform: translate3d(0, calc(-100% + 100cqh), 0); transition-duration: calc(var(--h) * 3.4ms); transition-timing-function: cubic-bezier(.45, .05, .55, .95); }
     #rooms .pf.is-js .pf__item { opacity: 0; translate: 0 2rem; transition: opacity .7s cubic-bezier(.2,.7,.2,1), translate .7s cubic-bezier(.2,.7,.2,1); transition-delay: var(--d, 0s); }
     #rooms .pf.is-js .pf__item.is-in { opacity: 1; translate: 0 0; }
   }
@@ -894,7 +897,7 @@
   #calls .phone [data-step] { opacity: 1 !important; transform: none !important; }
 
   /* cases: rolagem automatica mais lenta no celular */
-  #rooms .pf__item.is-play .pf__screen img { transition-duration: calc(var(--h) * 6ms) !important; }
+  #rooms .pf__item.is-full.is-play .pf__screen img { transition-duration: calc(var(--h) * 6ms) !important; }
 }
 </style>
 </head>
@@ -934,7 +937,7 @@
   <div class="hero__media">
     <picture>
       <source media="(max-width: 47.99rem)" srcset="/imgs/performance/sites-institucionais-hero-720.webp">
-      <img src="/imgs/performance/sites-institucionais-hero-1280.webp" width="1280" height="960" alt="Mulher sorri ao ler uma mensagem no celular" loading="eager" fetchpriority="high" decoding="async">
+      <img src="/imgs/performance/sites-institucionais-hero-1280.webp" width="1280" height="960" alt="Mulher sorri ao ler uma mensagem no celular" loading="eager" fetchpriority="high">
     </picture>
   </div>
   <div class="hero__shade" aria-hidden="true"></div>
@@ -1101,131 +1104,131 @@
     <p class="rooms__now m-text-6"><i aria-hidden="true"></i>32 sites no ar · <span class="pf-hover">passe o mouse para ver a página inteira</span><span class="pf-touch">a página rola sozinha, toque para visitar</span></p>
     <ul class="pf" id="pf">
       <li class="pf__item" style="--h:1734;--d:0.00s"><a class="pf__card" href="https://vdarquitetura.com/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>vdarquitetura.com</span></div><div class="pf__screen"><img src="/imgs/cases/full/vdarquitetura-com.webp" width="720" height="1734" alt="Página do site Vitor Dias Arquitetura, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>vdarquitetura.com</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/vdarquitetura-com.webp" data-full="/imgs/cases/full/vdarquitetura-com.webp" width="720" height="540" alt="Página do site Vitor Dias Arquitetura, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Vitor Dias Arquitetura</h3><p class="pf__sector m-text-7">Arquitetura</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.08s"><a class="pf__card" href="https://www.rodrigolacerda.org/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>rodrigolacerda.org</span></div><div class="pf__screen"><img src="/imgs/v2pf/rodrigolacerda.webp" width="720" height="3000" alt="Página do site Dr. Rodrigo Lacerda, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>rodrigolacerda.org</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/rodrigolacerda.webp" data-full="/imgs/v2pf/rodrigolacerda.webp" width="720" height="540" alt="Página do site Dr. Rodrigo Lacerda, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Dr. Rodrigo Lacerda</h3><p class="pf__sector m-text-7">Cirurgia plástica</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.16s"><a class="pf__card" href="https://www.nexoleum.com.br/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>nexoleum.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/nexoleum.webp" width="720" height="3000" alt="Página do site Nexoleum, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>nexoleum.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/nexoleum.webp" data-full="/imgs/v2pf/nexoleum.webp" width="720" height="540" alt="Página do site Nexoleum, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Nexoleum</h3><p class="pf__sector m-text-7">Resinas industriais</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.00s"><a class="pf__card" href="https://calixfamilyoffice.vercel.app/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>calixfamilyoffice.vercel.app</span></div><div class="pf__screen"><img src="/imgs/cases/full/calixfamilyoffice-vercel-app.webp" width="720" height="3000" alt="Página do site Calix Family Office, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>calixfamilyoffice.vercel.app</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/calixfamilyoffice-vercel-app.webp" data-full="/imgs/cases/full/calixfamilyoffice-vercel-app.webp" width="720" height="540" alt="Página do site Calix Family Office, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Calix Family Office</h3><p class="pf__sector m-text-7">Gestão patrimonial</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:1309;--d:0.08s"><a class="pf__card" href="https://cardimpaisagismo.com.br/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>cardimpaisagismo.com.br</span></div><div class="pf__screen"><img src="/imgs/full_11.webp" width="720" height="1309" alt="Página do site Cardim Paisagismo, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>cardimpaisagismo.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/full_11.webp" data-full="/imgs/full_11.webp" width="720" height="540" alt="Página do site Cardim Paisagismo, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Cardim Paisagismo</h3><p class="pf__sector m-text-7">Paisagismo</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.16s"><a class="pf__card" href="https://inovapoxicondominios.lovable.app/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>inovapoxicondominios.lovable.app</span></div><div class="pf__screen"><img src="/imgs/cases/full/inovapoxicondominios-lovable-app.webp" width="720" height="3000" alt="Página do site InovaPoxi Condomínios, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>inovapoxicondominios.lovable.app</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/inovapoxicondominios-lovable-app.webp" data-full="/imgs/cases/full/inovapoxicondominios-lovable-app.webp" width="720" height="540" alt="Página do site InovaPoxi Condomínios, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">InovaPoxi Condomínios</h3><p class="pf__sector m-text-7">Pisos para condomínios</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.00s"><a class="pf__card" href="https://www.srgmarketing.co/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>srgmarketing.co</span></div><div class="pf__screen"><img src="/imgs/cases/full/srgmarketing-co.webp" width="720" height="3000" alt="Página do site SRG Marketing, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>srgmarketing.co</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/srgmarketing-co.webp" data-full="/imgs/cases/full/srgmarketing-co.webp" width="720" height="540" alt="Página do site SRG Marketing, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">SRG Marketing</h3><p class="pf__sector m-text-7">Agência de marketing</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.08s"><a class="pf__card" href="https://www.mandato360.app/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>mandato360.app</span></div><div class="pf__screen"><img src="/imgs/cases/full/mandato360-app.webp" width="720" height="3000" alt="Página do site Mandato360, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>mandato360.app</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/mandato360-app.webp" data-full="/imgs/cases/full/mandato360-app.webp" width="720" height="540" alt="Página do site Mandato360, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Mandato360</h3><p class="pf__sector m-text-7">Software de gestão pública</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.16s"><a class="pf__card" href="https://gabrielaprado.arq.br/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>gabrielaprado.arq.br</span></div><div class="pf__screen"><img src="/imgs/cases/full/gabrielaprado-arq-br.webp" width="720" height="3000" alt="Página do site Gabriela Prado, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>gabrielaprado.arq.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/gabrielaprado-arq-br.webp" data-full="/imgs/cases/full/gabrielaprado-arq-br.webp" width="720" height="540" alt="Página do site Gabriela Prado, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Gabriela Prado</h3><p class="pf__sector m-text-7">Arquitetura e interiores</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.00s"><a class="pf__card" href="https://labcore-site.vercel.app/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>labcore-site.vercel.app</span></div><div class="pf__screen"><img src="/imgs/v2pf/labcore.webp" width="720" height="3000" alt="Página do site Labcore, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>labcore-site.vercel.app</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/labcore.webp" data-full="/imgs/v2pf/labcore.webp" width="720" height="540" alt="Página do site Labcore, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Labcore</h3><p class="pf__sector m-text-7">Laboratório de análises</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.08s"><a class="pf__card" href="https://helpwin.com.br/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>helpwin.com.br</span></div><div class="pf__screen"><img src="/imgs/cases/full/helpwin-com-br.webp" width="720" height="3000" alt="Página do site HelpWin Esquadrias, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>helpwin.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/helpwin-com-br.webp" data-full="/imgs/cases/full/helpwin-com-br.webp" width="720" height="540" alt="Página do site HelpWin Esquadrias, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">HelpWin Esquadrias</h3><p class="pf__sector m-text-7">Esquadrias</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.16s"><a class="pf__card" href="https://www.hayadobrasil.com.br/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>hayadobrasil.com.br</span></div><div class="pf__screen"><img src="/imgs/cases/full/hayadobrasil-com-br.webp" width="720" height="3000" alt="Página do site HAYA do Brasil, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>hayadobrasil.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/hayadobrasil-com-br.webp" data-full="/imgs/cases/full/hayadobrasil-com-br.webp" width="720" height="540" alt="Página do site HAYA do Brasil, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">HAYA do Brasil</h3><p class="pf__sector m-text-7">Comércio exterior</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:1781;--d:0.00s"><a class="pf__card" href="https://arkitito.com/home/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>arkitito.com</span></div><div class="pf__screen"><img src="/imgs/cases/full/arkitito-com-home.webp" width="720" height="1781" alt="Página do site Arkitito, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>arkitito.com</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/arkitito-com-home.webp" data-full="/imgs/cases/full/arkitito-com-home.webp" width="720" height="540" alt="Página do site Arkitito, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Arkitito</h3><p class="pf__sector m-text-7">Arquitetura</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.08s"><a class="pf__card" href="https://siteescolainovo.vercel.app/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>siteescolainovo.vercel.app</span></div><div class="pf__screen"><img src="/imgs/cases/full/siteescolainovo-vercel-app.webp" width="720" height="3000" alt="Página do site Escol.AI, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>siteescolainovo.vercel.app</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/siteescolainovo-vercel-app.webp" data-full="/imgs/cases/full/siteescolainovo-vercel-app.webp" width="720" height="540" alt="Página do site Escol.AI, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Escol.AI</h3><p class="pf__sector m-text-7">Educação corporativa</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.16s"><a class="pf__card" href="https://albacor.com.br/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>albacor.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/albacor.webp" width="720" height="3000" alt="Página do site Albacor Química, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>albacor.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/albacor.webp" data-full="/imgs/v2pf/albacor.webp" width="720" height="540" alt="Página do site Albacor Química, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Albacor Química</h3><p class="pf__sector m-text-7">Pisos industriais</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.00s"><a class="pf__card" href="https://montemnt.com/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>montemnt.com</span></div><div class="pf__screen"><img src="/imgs/cases/full/montemnt-com.webp" width="720" height="3000" alt="Página do site MNT. Monte, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>montemnt.com</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/montemnt-com.webp" data-full="/imgs/cases/full/montemnt-com.webp" width="720" height="540" alt="Página do site MNT. Monte, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">MNT. Monte</h3><p class="pf__sector m-text-7">Agência</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:2426;--d:0.08s"><a class="pf__card" href="https://maena.com.br/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>maena.com.br</span></div><div class="pf__screen"><img src="/imgs/cases/full/maena-com-br.webp" width="720" height="2426" alt="Página do site Maena Design, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>maena.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/maena-com-br.webp" data-full="/imgs/cases/full/maena-com-br.webp" width="720" height="540" alt="Página do site Maena Design, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Maena Design</h3><p class="pf__sector m-text-7">Design de interiores</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.16s"><a class="pf__card" href="https://www.inovaobra.com/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>inovaobra.com</span></div><div class="pf__screen"><img src="/imgs/v2pf/inovaobra.webp" width="720" height="3000" alt="Página do site InovaObra, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>inovaobra.com</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/inovaobra.webp" data-full="/imgs/v2pf/inovaobra.webp" width="720" height="540" alt="Página do site InovaObra, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">InovaObra</h3><p class="pf__sector m-text-7">Software de gestão de obras</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.00s"><a class="pf__card" href="https://jordanwindowfilm.vercel.app/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>jordanwindowfilm.vercel.app</span></div><div class="pf__screen"><img src="/imgs/cases/full/jordanwindowfilm-vercel-app.webp" width="720" height="3000" alt="Página do site Jordan Window Film, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>jordanwindowfilm.vercel.app</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/jordanwindowfilm-vercel-app.webp" data-full="/imgs/cases/full/jordanwindowfilm-vercel-app.webp" width="720" height="540" alt="Página do site Jordan Window Film, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Jordan Window Film</h3><p class="pf__sector m-text-7">Películas para vidros</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.08s"><a class="pf__card" href="https://akro.mouraclientes.com.br/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>akro.mouraclientes.com.br</span></div><div class="pf__screen"><img src="/imgs/cases/full/akro-mouraclientes-com-br.webp" width="720" height="3000" alt="Página do site Akro Clínica, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>akro.mouraclientes.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/akro-mouraclientes-com-br.webp" data-full="/imgs/cases/full/akro-mouraclientes-com-br.webp" width="720" height="540" alt="Página do site Akro Clínica, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Akro Clínica</h3><p class="pf__sector m-text-7">Saúde</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:1833;--d:0.16s"><a class="pf__card" href="https://conradoceravolo.vercel.app/v2/site/index.html" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>conradoceravolo.vercel.app</span></div><div class="pf__screen"><img src="/imgs/cases/full/conradoceravolo-vercel-app-v2-site-index-html.webp" width="720" height="1833" alt="Página do site Conrado Ceravolo Arquitetos, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>conradoceravolo.vercel.app</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/conradoceravolo-vercel-app-v2-site-index-html.webp" data-full="/imgs/cases/full/conradoceravolo-vercel-app-v2-site-index-html.webp" width="720" height="540" alt="Página do site Conrado Ceravolo Arquitetos, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Conrado Ceravolo Arquitetos</h3><p class="pf__sector m-text-7">Arquitetura</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:2015;--d:0.00s"><a class="pf__card" href="https://abriq-escolai.vercel.app/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>abriq-escolai.vercel.app</span></div><div class="pf__screen"><img src="/imgs/v2pf/abriq.webp" width="720" height="2015" alt="Página do site ABRIQ, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>abriq-escolai.vercel.app</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/abriq.webp" data-full="/imgs/v2pf/abriq.webp" width="720" height="540" alt="Página do site ABRIQ, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">ABRIQ</h3><p class="pf__sector m-text-7">Associação setorial</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.08s"><a class="pf__card" href="https://lp.concreart.com.br/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>lp.concreart.com.br</span></div><div class="pf__screen"><img src="/imgs/cases/full/lp-concreart-com-br.webp" width="720" height="3000" alt="Página do site Concreart, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>lp.concreart.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/lp-concreart-com-br.webp" data-full="/imgs/cases/full/lp-concreart-com-br.webp" width="720" height="540" alt="Página do site Concreart, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Concreart</h3><p class="pf__sector m-text-7">Concreto de alto padrão</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:450;--d:0.16s"><a class="pf__card" href="https://voaarquitetura.com/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>voaarquitetura.com</span></div><div class="pf__screen"><img src="/imgs/cases/full/voaarquitetura-com.webp" width="720" height="450" alt="Página do site Voa Arquitetura, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>voaarquitetura.com</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/voaarquitetura-com.webp" data-full="/imgs/cases/full/voaarquitetura-com.webp" width="720" height="540" alt="Página do site Voa Arquitetura, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Voa Arquitetura</h3><p class="pf__sector m-text-7">Arquitetura</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.00s"><a class="pf__card" href="https://analise.matilab.com.br/dmkepoxi" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>analise.matilab.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/dmk.webp" width="720" height="3000" alt="Página do site DMK Epóxi, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>analise.matilab.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/dmk.webp" data-full="/imgs/v2pf/dmk.webp" width="720" height="540" alt="Página do site DMK Epóxi, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">DMK Epóxi</h3><p class="pf__sector m-text-7">Pisos epóxi</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.08s"><a class="pf__card" href="https://arqui.studio/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>arqui.studio</span></div><div class="pf__screen"><img src="/imgs/cases/full/arqui-studio.webp" width="720" height="3000" alt="Página do site ArquiStudio, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>arqui.studio</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/arqui-studio.webp" data-full="/imgs/cases/full/arqui-studio.webp" width="720" height="540" alt="Página do site ArquiStudio, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">ArquiStudio</h3><p class="pf__sector m-text-7">Software para arquitetos</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.16s"><a class="pf__card" href="https://www.plenno.pt/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>plenno.pt</span></div><div class="pf__screen"><img src="/imgs/cases/full/plenno-pt.webp" width="720" height="3000" alt="Página do site Plenno, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>plenno.pt</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/plenno-pt.webp" data-full="/imgs/cases/full/plenno-pt.webp" width="720" height="540" alt="Página do site Plenno, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Plenno</h3><p class="pf__sector m-text-7">Construção · Portugal</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.00s"><a class="pf__card" href="https://habitaicasas.com.br/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>habitaicasas.com.br</span></div><div class="pf__screen"><img src="/imgs/cases/full/habitaicasas-com-br.webp" width="720" height="3000" alt="Página do site Habitai Casas, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>habitaicasas.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/habitaicasas-com-br.webp" data-full="/imgs/cases/full/habitaicasas-com-br.webp" width="720" height="540" alt="Página do site Habitai Casas, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Habitai Casas</h3><p class="pf__sector m-text-7">Arquitetura e construção</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.08s"><a class="pf__card" href="https://nivelogroup.com.br/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>nivelogroup.com.br</span></div><div class="pf__screen"><img src="/imgs/cases/full/nivelogroup-com-br.webp" width="720" height="3000" alt="Página do site Nivelo Group, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>nivelogroup.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/nivelogroup-com-br.webp" data-full="/imgs/cases/full/nivelogroup-com-br.webp" width="720" height="540" alt="Página do site Nivelo Group, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Nivelo Group</h3><p class="pf__sector m-text-7">Construção</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.16s"><a class="pf__card" href="https://akatu-site.vercel.app/" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>akatu-site.vercel.app</span></div><div class="pf__screen"><img src="/imgs/v2pf/akatu.webp" width="720" height="3000" alt="Página do site Akatu Arquitetura, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>akatu-site.vercel.app</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/akatu.webp" data-full="/imgs/v2pf/akatu.webp" width="720" height="540" alt="Página do site Akatu Arquitetura, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Akatu Arquitetura</h3><p class="pf__sector m-text-7">Arquitetura e construção</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.00s"><a class="pf__card" href="https://www.inovapoxi.com/lp/tinta-epoxi-piso-a" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>inovapoxi.com</span></div><div class="pf__screen"><img src="/imgs/cases/full/inovapoxi-com-lp-tinta-epoxi-piso-a.webp" width="720" height="3000" alt="Página do site InovaPoxi · Tinta Epóxi, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>inovapoxi.com</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/inovapoxi-com-lp-tinta-epoxi-piso-a.webp" data-full="/imgs/cases/full/inovapoxi-com-lp-tinta-epoxi-piso-a.webp" width="720" height="540" alt="Página do site InovaPoxi · Tinta Epóxi, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">InovaPoxi · Tinta Epóxi</h3><p class="pf__sector m-text-7">Landing page de produto</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
       <li class="pf__item" style="--h:3000;--d:0.08s"><a class="pf__card" href="https://analise.matilab.com.br/yeshuavidroseserralheria" target="_blank" rel="noopener">
-        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>analise.matilab.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/yeshua.webp" width="720" height="3000" alt="Página do site Yeshua Vidros e Serralheria, criado pela Matilab" loading="lazy" decoding="async"></div></div>
+        <div class="pf__frame"><div class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><span>analise.matilab.com.br</span></div><div class="pf__screen"><img src="/imgs/v2pf/thumb/yeshua.webp" data-full="/imgs/v2pf/yeshua.webp" width="720" height="540" alt="Página do site Yeshua Vidros e Serralheria, criado pela Matilab" loading="lazy" decoding="async"></div></div>
         <div class="pf__meta"><h3 class="pf__name">Yeshua Vidros e Serralheria</h3><p class="pf__sector m-text-7">Vidraçaria e serralheria</p><span class="pf__go m-text-7">Visitar site ↗</span></div>
       </a></li>
     </ul>
@@ -1460,13 +1463,29 @@
   ul.classList.add('is-js');
   const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
   items.forEach((li) => io.observe(li));
+  // capa leve primeiro; a pagina inteira (para rolar) carrega depois do load ou no hover
+  const loadFull = (li) => {
+    const img = li.querySelector('.pf__screen img');
+    if (!img || !img.dataset.full || li.dataset.state) return;
+    li.dataset.state = 'loading';
+    const pre = new Image();
+    pre.src = img.dataset.full;
+    (pre.decode ? pre.decode() : Promise.resolve()).catch(() => {}).then(() => {
+      img.setAttribute('height', li.style.getPropertyValue('--h') || '');
+      img.src = pre.src;
+      li.dataset.state = 'ok';
+      requestAnimationFrame(() => li.classList.add('is-full'));
+    });
+  };
+  items.forEach((li) => { li.addEventListener('pointerenter', () => loadFull(li)); li.addEventListener('focusin', () => loadFull(li)); });
+  const idle = window.requestIdleCallback || ((fn) => setTimeout(fn, 200));
+  const near = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { near.unobserve(e.target); idle(() => loadFull(e.target)); } }), { rootMargin: '300px 0px' });
+  const startNear = () => items.forEach((li) => near.observe(li));
+  if (document.readyState === 'complete') startNear(); else addEventListener('load', startNear, { once: true });
   if (matchMedia('(hover: none)').matches) {
     const play = new IntersectionObserver((es) => es.forEach((e) => e.target.classList.toggle('is-play', e.intersectionRatio > 0.6)), { threshold: [0, 0.6] });
     items.forEach((li) => play.observe(li));
   }
-})();
-(() => {
-  document.querySelector('#voices .voices__logos ul[aria-hidden="true"]')?.remove();
 })();
 </script>
 <script>
