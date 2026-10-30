@@ -153,6 +153,25 @@ p,li,h4{text-wrap:pretty}
 .techbar li img{width:24px;height:24px}
 .techbar li small{display:block;font-size:12px;color:var(--gray);line-height:1.3}
 
+/* mockup do protótipo */
+.mock{margin-bottom:clamp(48px, 5vw, 72px)}
+.mock-stage{position:relative;background:var(--ink);padding:clamp(28px, 5vw, 72px) clamp(20px, 9vw, 140px) clamp(40px, 6vw, 88px);overflow:hidden}
+.mock-stage::before{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--yellow)}
+.browser{background:#fff;box-shadow:0 30px 70px rgba(0,0,0,.45);border-radius:8px;overflow:hidden}
+.browser-bar{height:32px;background:#e9e8e9;display:flex;align-items:center;gap:7px;padding:0 14px}
+.browser-bar i{width:10px;height:10px;border-radius:50%;background:#c9c7c8}
+.browser-bar span{margin:0 auto;transform:translateX(-24px);font-size:12px;color:var(--gray);background:#fff;border-radius:20px;padding:3px 40px}
+.browser-screen{aspect-ratio:16/10;overflow:hidden;background:var(--paper)}
+.browser-screen img,.phone-screen img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.js .browser-screen img{animation:browse 16s ease-in-out 1.5s infinite alternate}
+@keyframes browse{0%,12%{object-position:50% 0}88%,100%{object-position:50% 100%}}
+.device{position:absolute;right:clamp(14px, 4.5vw, 64px);bottom:clamp(22px, 3.5vw, 48px);width:clamp(92px, 15%, 190px);background:#0d0d0d;border-radius:22px;padding:7px;box-shadow:0 24px 50px rgba(0,0,0,.55);border:1px solid #3a3a3b}
+.phone-screen{aspect-ratio:390/844;border-radius:16px;overflow:hidden;background:var(--paper)}
+.mock-note{max-width:640px;margin:clamp(28px, 3vw, 40px) auto 0;text-align:center}
+.mock-note .pill{margin-bottom:14px}
+.mock-note h4{font-size:clamp(22px, 2.1vw, 30px);font-weight:400;letter-spacing:-.035em;line-height:1.12}
+.mock-note p{margin-top:12px;color:var(--gray);font-size:16.5px}
+
 /* escopo */
 .pages{display:grid;grid-template-columns:repeat(4, 1fr);border-top:1px solid var(--ink)}
 .pages>div{padding:24px 22px 22px 0;border-bottom:1px solid var(--light)}
@@ -218,19 +237,21 @@ p,li,h4{text-wrap:pretty}
 .weeks{padding-bottom:12px}
 .weeks div{grid-column:4;display:grid;grid-template-columns:repeat(6, 1fr);gap:3px;font-size:11px;letter-spacing:.12em;color:var(--muted)}
 
-/* investimento: bloco amarelo + barra clara, como o filtro do protótipo */
-.price-card{display:grid;grid-template-columns:38% 1fr;background:var(--light)}
-.price-main{background:var(--yellow);padding:clamp(28px, 3.5vw, 48px);display:flex;flex-direction:column}
-.price-main .tag{font-size:12px;letter-spacing:.2em;text-transform:uppercase}
-.price-main h4{font-size:clamp(22px, 2vw, 28px);font-weight:400;letter-spacing:-.035em;line-height:1.08;margin-top:12px}
-.price{font-weight:300;font-size:clamp(58px, 6.4vw, 92px);line-height:.9;margin:30px 0 10px;letter-spacing:-.06em;display:flex;align-items:flex-start;gap:10px}
-.price small{font-size:18px;letter-spacing:0;margin-top:10px;font-weight:400}
-.price-main .small{color:var(--ink)}
-.pay{margin-top:auto;padding-top:22px;border-top:1px solid rgba(26,26,26,.25);font-size:16px;line-height:1.45}
-.pay b{font-size:12px;letter-spacing:.2em;text-transform:uppercase;display:block;margin-bottom:6px;font-weight:500}
+/* investimento */
+.price-card{display:grid;grid-template-columns:40% 1fr;background:var(--white);border:1px solid var(--light)}
+.price-main{position:relative;background:var(--ink);color:#fff;padding:clamp(32px, 4vw, 56px);display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.price-main::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--yellow)}
+.price-main::after{content:"";position:absolute;right:-90px;bottom:-90px;width:240px;height:240px;border:1px solid rgba(241,194,51,.35);border-radius:50%}
+.price-main .tag{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--yellow)}
+.price-main h4{font-size:clamp(22px, 2vw, 28px);font-weight:400;letter-spacing:-.035em;line-height:1.12;margin-top:14px;max-width:16ch}
+.price{font-weight:300;font-size:clamp(64px, 7vw, 104px);line-height:.9;margin:34px 0 0;letter-spacing:-.06em;display:flex;align-items:flex-start;gap:12px}
+.price small{font-size:20px;letter-spacing:0;margin-top:12px;font-weight:400;color:var(--yellow)}
+.price-note{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.22);font-size:16px;color:#d8d6d7;max-width:28ch}
 .price-inc{padding:clamp(28px, 3.5vw, 48px)}
-.price-inc .dash{columns:2;column-gap:32px}
-.price-inc .dash li{break-inside:avoid;font-size:15.5px;padding-bottom:10px;color:var(--ink)}
+.inc-title{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gray);margin-bottom:14px}
+.inc{list-style:none;display:grid;grid-template-columns:1fr 1fr;column-gap:32px;border-top:1px solid var(--ink)}
+.inc li{display:grid;grid-template-columns:34px 1fr;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--light);font-size:16.5px;color:var(--ink);line-height:1.35}
+.inc li b{font-size:12.5px;letter-spacing:.14em;color:#b08a12;font-weight:500}
 .recur{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
 .recur>div{background:var(--white);border:1px solid var(--light);padding:26px 28px;display:grid;grid-template-columns:1fr auto;gap:6px 20px;align-items:start}
 .recur .pill{grid-column:1 / -1;justify-self:start}
@@ -323,6 +344,7 @@ p,li,h4{text-wrap:pretty}
   .tl p,.tl .gantt{grid-column:2}
   .weeks{display:none}
   .price-card{grid-template-columns:1fr}
+  .inc{grid-template-columns:1fr}
   .recur{grid-template-columns:1fr}
   .contact-inner{flex-direction:column;align-items:flex-start}
   .contact-button{width:100%}
@@ -425,18 +447,37 @@ p,li,h4{text-wrap:pretty}
   .tl li{padding:2.8mm 0}
   .price{font-size:52pt;margin:6mm 0 2mm}
   .price-main,.price-inc{padding:7mm}
+  .price-main h4{font-size:13pt}
+  .price-note{font-size:9.5pt;margin-top:5mm;padding-top:3mm}
+  .inc li{font-size:9.5pt;padding:2.4mm 0}
+  .inc-title{font-size:8pt}
+  .mock{margin-bottom:7mm}
+  .mock-stage{padding:7mm 30mm 9mm}
+  .mock-sec .grid>div{padding-top:2.5mm;padding-bottom:2.5mm}
+  .mock-sec .grid .k{margin-bottom:1.5mm}
+  .mock-sec .grid h4{margin-bottom:1mm}
+  .mock-sec .techbar{margin-top:4mm}
+  .mock-sec .head{margin-bottom:5mm}
+  .price-photo{display:none}
+  .browser-bar{height:6mm}
+  .device{width:22mm;right:10mm;bottom:7mm;border-radius:4mm;padding:1.2mm}
+  .phone-screen{border-radius:3mm}
+  .mock-note{margin-top:5mm}
+  .mock-note h4{font-size:14pt}
+  .mock-note p{font-size:9.3pt}
+  .browser-screen img{animation:none !important}
   .price-inc .dash li{font-size:9pt}
   .recur>div{padding:5mm}
   .recur .val{font-size:20pt}
   .panel li,.wants li,.steps li{padding:2.8mm 0}
-  .contact-band{min-height:0;height:62mm;margin-top:8mm;padding:0 10mm}
-  .contact-band h2{font-size:34pt}
+  .contact-band{min-height:0;height:48mm;margin-top:6mm;padding:0 10mm}
+  .contact-band h2{font-size:30pt}
   .contact-button{min-height:22mm;font-size:16pt}
-  .footer{padding:6mm 0 0;break-inside:avoid}
+  .footer{padding:4mm 0 0;break-inside:avoid}
   .footer-main{padding-bottom:0}
   .footer-main p,.footer-bottom{display:none}
   .footer a.big{font-size:12pt}
-  .facts div,.issues>div,.grid>div,.pages>div,.panel li,.motion>div,.seo3>div,.tl li,.price-card,.recur>div,.steps li,.photo,.stats,.wants li,.engines,.ask,.techbar,.contact-band,.footer-main{break-inside:avoid}
+  .facts div,.issues>div,.grid>div,.pages>div,.panel li,.motion>div,.seo3>div,.tl li,.price-card,.mock,.recur>div,.steps li,.photo,.stats,.wants li,.engines,.ask,.techbar,.contact-band,.footer-main{break-inside:avoid}
   .head,h2,h3,h4,.label{break-after:avoid}
 }
 </style>
@@ -469,7 +510,7 @@ p,li,h4{text-wrap:pretty}
   <div class="wrap">
     <div class="head" data-r>
       <div><p class="label">01 · O projeto</p><h2>Um site à altura do que a XOK <em>projeta</em></h2></div>
-      <span class="folio">01 / 09</span>
+      <span class="folio">01 / 08</span>
     </div>
     <div class="cols fit">
       <div data-r>
@@ -499,7 +540,7 @@ p,li,h4{text-wrap:pretty}
   <div class="wrap">
     <div class="head" data-r>
       <div><p class="label">02 · O site hoje</p><h2>Cumpriu seu papel. A base ficou pesada</h2></div>
-      <span class="folio">02 / 09</span>
+      <span class="folio">02 / 08</span>
     </div>
     <div class="facts" data-r>
       <div><span class="num">3</span><span>construtores visuais juntos: Divi, Elementor e Slider Revolution</span></div>
@@ -517,11 +558,25 @@ p,li,h4{text-wrap:pretty}
 </section>
 
 <!-- 03 · SOLUÇÃO -->
-<section class="sheet flow">
+<section class="sheet mock-sec">
   <div class="wrap">
     <div class="head" data-r>
       <div><p class="label">03 · A solução</p><h2>Código próprio, <em>fiel ao protótipo</em></h2></div>
-      <span class="folio">03 / 09</span>
+      <span class="folio">03 / 08</span>
+    </div>
+    <div class="mock" data-r>
+      <div class="mock-stage">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span>xok.arq.br</span></div>
+          <div class="browser-screen"><img src="/propostas/xok/assets/proto-desktop.jpg" alt="Protótipo do novo site da XOK no computador"></div>
+        </div>
+        <div class="device"><div class="phone-screen"><img src="/propostas/xok/assets/proto-mobile.jpg" alt="Protótipo do novo site da XOK no celular"></div></div>
+      </div>
+      <div class="mock-note">
+        <span class="pill sun">Nosso compromisso</span>
+        <h4>O layout é da XOK. A gente segue fielmente.</h4>
+        <p>Cada tela do protótipo desenvolvido pela equipe da XOK vira código exatamente como foi desenhada: grid, tipografia, cores, respiros e imagens. Nada é reinterpretado por conta própria.</p>
+      </div>
     </div>
     <div class="grid">
       <div data-r><span class="k">01</span><h4>Fidelidade total</h4><p>Grid, tipografia e respiros do protótipo, em todas as telas.</p></div>
@@ -547,7 +602,7 @@ p,li,h4{text-wrap:pretty}
   <div class="wrap">
     <div class="head" data-r>
       <div><p class="label">04 · Escopo</p><h2>Páginas, painel e migração</h2></div>
-      <span class="folio">04 / 09</span>
+      <span class="folio">04 / 08</span>
     </div>
     <div class="pages" data-r>
       <div><h4>Home</h4><small>Completa</small><ul class="dash"><li>Abertura em tela cheia</li><li>Assinatura XOK e equipe</li><li>Território XOK: mapa dos projetos</li><li>Publicações e contato</li></ul></div>
@@ -592,7 +647,7 @@ p,li,h4{text-wrap:pretty}
   <div class="wrap">
     <div class="head" data-r>
       <div><p class="label">05 · Animações</p><h2>Movimento lento, preciso, sem exibicionismo</h2></div>
-      <span class="folio">05 / 09</span>
+      <span class="folio">05 / 08</span>
     </div>
     <div class="motion">
       <div data-r><h4>Abertura</h4><p>Logo e imagem principal entram em sequência, como uma cortina.</p></div>
@@ -615,7 +670,7 @@ p,li,h4{text-wrap:pretty}
   <div class="wrap">
     <div class="head" data-r>
       <div><p class="label">06 · SEO e GEO</p><h2>Encontrada no Google e nas <em>respostas das IAs</em></h2></div>
-      <span class="folio">06 / 09</span>
+      <span class="folio">06 / 08</span>
     </div>
     <p class="lead wide" data-r>Quem procura um escritório de arquitetura em Campinas pergunta ao Google e, cada vez mais, ao ChatGPT ou ao Gemini. O site novo nasce preparado para os dois.</p>
     <div class="engines" data-r>
@@ -644,7 +699,7 @@ p,li,h4{text-wrap:pretty}
   <div class="wrap">
     <div class="head" data-r>
       <div><p class="label">07 · Cronograma</p><h2>Seis semanas, do kickoff ao ar</h2></div>
-      <span class="folio">07 / 09</span>
+      <span class="folio">07 / 08</span>
     </div>
     <div class="weeks" aria-hidden="true"><div><span>S1</span><span>S2</span><span>S3</span><span>S4</span><span>S5</span><span>S6</span></div></div>
     <ul class="tl">
@@ -665,29 +720,29 @@ p,li,h4{text-wrap:pretty}
   <div class="wrap">
     <div class="head" data-r>
       <div><p class="label">08 · Investimento</p><h2>Um valor fechado, <em>com tudo incluso</em></h2></div>
-      <span class="folio">08 / 09</span>
+      <span class="folio">08 / 08</span>
     </div>
     <div class="price-card" data-r>
       <div class="price-main">
-        <span class="tag">Investimento</span>
+        <span class="tag">Investimento único</span>
         <h4>Site completo com painel administrável</h4>
         <div class="price"><small>R$</small><span data-count="4000">4.000</span></div>
-        <p class="small">Pagamento único</p>
-        <div class="pay"><b>Condições</b>Forma de pagamento a combinar com a XOK.</div>
+        <p class="price-note">Forma de pagamento a combinar com a XOK.</p>
       </div>
       <div class="price-inc">
-        <ul class="dash">
-          <li>Todas as páginas, fiéis ao protótipo</li>
-          <li>Painel completo de gestão</li>
-          <li>Mapa Território XOK</li>
-          <li>Animações e transições</li>
-          <li>Versão celular e tablet</li>
-          <li>SEO técnico e GEO</li>
-          <li>Migração e redirecionamentos 301</li>
-          <li>Duas rodadas de revisão</li>
-          <li>Treinamento do painel</li>
-          <li>90 dias de garantia técnica</li>
-        </ul>
+        <p class="inc-title">Tudo o que está incluso</p>
+        <ol class="inc">
+          <li><b>01</b>Todas as páginas, fiéis ao protótipo</li>
+          <li><b>02</b>Painel completo de gestão</li>
+          <li><b>03</b>Mapa Território XOK</li>
+          <li><b>04</b>Animações e transições</li>
+          <li><b>05</b>Versão celular e tablet</li>
+          <li><b>06</b>SEO técnico e GEO</li>
+          <li><b>07</b>Migração e redirecionamentos 301</li>
+          <li><b>08</b>Duas rodadas de revisão</li>
+          <li><b>09</b>Treinamento do painel</li>
+          <li><b>10</b>90 dias de garantia técnica</li>
+        </ol>
       </div>
     </div>
     <div class="recur">
@@ -704,36 +759,8 @@ p,li,h4{text-wrap:pretty}
         <p>A gente cuida das inserções de projetos, posts e trocas de texto e foto, além de atualizações e suporte por WhatsApp. Sem fidelidade.</p>
       </div>
     </div>
-    <figure class="photo rv r-wide" style="margin-top:clamp(44px, 5vw, 68px)"><img src="/propostas/xok/assets/garden-rua.jpg" alt="Garden City, Nova Campinas"></figure>
-    <p class="cap">Garden City · Campinas</p>
-  </div>
-</section>
-
-<!-- 09 · MATILAB E PRÓXIMOS PASSOS -->
-<section class="sheet">
-  <div class="wrap">
-    <div class="head" data-r>
-      <div><p class="label">09 · Matilab</p><h2>A gente entende de site. E de <em>arquitetura</em></h2></div>
-      <span class="folio">09 / 09</span>
-    </div>
-    <div class="cols top">
-      <p class="lead" data-r>Estúdio digital em São Paulo que cria sites e sistemas sob medida. Boa parte do nosso trabalho é com escritórios de arquitetura: chegamos sabendo o valor da foto certa e do respeito ao desenho.</p>
-      <div data-r style="--d:.1s">
-        <ul class="steps">
-          <li><b>01</b><span><strong>Conversa.</strong> Uma call rápida com o Rafael para tirar dúvidas.</span></li>
-          <li><b>02</b><span><strong>Aprovação.</strong> Aceite, forma de pagamento e contrato simples.</span></li>
-          <li><b>03</b><span><strong>Acessos.</strong> Protótipo, domínio e conta Supabase da XOK.</span></li>
-          <li><b>04</b><span><strong>Kickoff.</strong> Na semana seguinte, com datas fechadas.</span></li>
-        </ul>
-        <div class="valid"><span class="pill sun">Válida por 15 dias</span><span class="small">Até 14 de novembro de 2026</span></div>
-      </div>
-    </div>
-    <div class="stats" data-r>
-      <div><span class="num" data-count="9" data-pre="+">+9</span><span>Anos</span></div>
-      <div><span class="num" data-count="500" data-pre="+">+500</span><span>Projetos</span></div>
-      <div><span class="num" data-count="70" data-pre="+">+70</span><span>Escritórios de arquitetura</span></div>
-      <div><span class="num">6</span><span>Semanas até o ar</span></div>
-    </div>
+    <figure class="photo rv r-wide price-photo" style="margin-top:clamp(44px, 5vw, 68px)"><img src="/propostas/xok/assets/garden-rua.jpg" alt="Garden City, Nova Campinas"></figure>
+    <p class="cap price-photo">Garden City · Campinas</p>
   </div>
 </section>
 
