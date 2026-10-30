@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XOK Arquitetura · Proposta Matilab</title>
+<meta name="description" content="Proposta da Matilab para o desenvolvimento do novo site da XOK Arquitetos & Associados.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/propostas/xok/assets/xok_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1d1d1b;
+  --ink-2:#4a4a47;
+  --mute:#7a7a76;
+  --line:#e2e0da;
+  --paper:#ffffff;
+  --stone:#f4f3ef;
+  --sun:#ffe12e;
+  --display:"Josefin Sans", "Helvetica Neue", Arial, sans-serif;
+  --text:"Figtree", "Helvetica Neue", Arial, sans-serif;
+  --gut:clamp(20px, 6vw, 96px);
+  --max:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--text);font-weight:400;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+
+/* tipografia */
+.label{font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--ink)}
+.label::before{content:"";display:block;width:34px;height:2px;background:var(--sun);margin-bottom:16px}
+.label.light{color:#fff}
+h1,h2,h3{font-family:var(--display);font-weight:300;text-transform:uppercase;letter-spacing:.06em;line-height:1.08}
+h2{font-size:clamp(30px, 4.4vw, 56px);margin:22px 0 0;max-width:16ch}
+h3{font-size:17px;font-weight:600;letter-spacing:.16em;line-height:1.35}
+p{max-width:62ch}
+.lead{font-size:clamp(18px, 1.6vw, 21px);line-height:1.6;color:var(--ink-2);font-weight:300}
+.small{font-size:14px;color:var(--mute)}
+strong{font-weight:600}
+
+/* estrutura */
+.sheet{position:relative;padding:clamp(80px, 11vw, 150px) var(--gut)}
+.sheet.stone{background:var(--stone)}
+.sheet.dark{background:var(--ink);color:#fff}
+.wrap{max-width:var(--max);margin:0 auto}
+.head{display:grid;grid-template-columns:1fr auto;align-items:end;gap:24px;margin-bottom:clamp(48px, 6vw, 80px)}
+.folio{font-family:var(--display);font-size:12px;letter-spacing:.24em;color:var(--mute);text-transform:uppercase;white-space:nowrap}
+.dark .folio{color:#9a9a95}
+.split{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px, 6vw, 96px);align-items:start}
+.split.rev{grid-template-columns:7fr 5fr}
+.stack>*+*{margin-top:22px}
+
+/* capa */
+.cover{position:relative;min-height:100vh;min-height:100svh;color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(28px, 4vw, 56px) var(--gut);overflow:hidden;background:#111}
+.cover>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(10,10,9,.55) 0%, rgba(10,10,9,.05) 30%, rgba(10,10,9,.15) 55%, rgba(10,10,9,.78) 100%)}
+.cover>*:not(img){position:relative;z-index:1}
+.cover-top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+.cover-top img{width:clamp(130px, 14vw, 190px)}
+.cover-top .folio{color:rgba(255,255,255,.75);text-align:right;line-height:2}
+.cover h1{font-size:clamp(36px, 6.4vw, 92px);max-width:13ch;margin-top:26px}
+.cover-foot{display:grid;grid-template-columns:repeat(3, auto);justify-content:space-between;gap:24px;border-top:1px solid rgba(255,255,255,.35);padding-top:22px;margin-top:40px}
+.cover-foot div{font-family:var(--display);font-size:12px;letter-spacing:.22em;text-transform:uppercase;line-height:1.9;color:rgba(255,255,255,.8)}
+.cover-foot b{display:block;color:#fff;font-weight:600}
+.slogan{font-family:var(--display);font-weight:300;letter-spacing:.14em;text-transform:uppercase;font-size:clamp(14px, 1.3vw, 17px);color:rgba(255,255,255,.92);margin-top:22px}
+.slogan::before{content:"";display:inline-block;width:12px;height:12px;border:2px solid var(--sun);border-radius:50%;margin-right:12px;vertical-align:-1px}
+
+/* números */
+.stats{display:grid;grid-template-columns:repeat(4, 1fr);border-top:1px solid var(--ink);margin-top:clamp(56px, 7vw, 96px)}
+.stat{padding:26px 22px 0 0}
+.stat+.stat{padding-left:22px;border-left:1px solid var(--line)}
+.stat b{display:block;font-family:var(--display);font-weight:200;font-size:clamp(34px, 4vw, 54px);letter-spacing:.02em;line-height:1}
+.stat span{display:block;margin-top:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-family:var(--display)}
+
+/* fotos */
+.photo{position:relative;overflow:hidden;background:var(--stone)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo figcaption,.cap{font-family:var(--display);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);margin-top:12px}
+.tall{aspect-ratio:4/5}
+.wide{aspect-ratio:16/9}
+.pano{aspect-ratio:21/8}
+.bleed{margin:0 calc(var(--gut) * -1)}
+.bleed .photo{aspect-ratio:21/8}
+
+/* listas de diagnóstico e itens */
+.rows{border-top:1px solid var(--ink)}
+.row{display:grid;grid-template-columns:72px 1fr 1.4fr;gap:28px;padding:30px 0;border-bottom:1px solid var(--line)}
+.row .n{font-family:var(--display);font-weight:300;font-size:14px;letter-spacing:.2em;color:var(--mute)}
+.row p{color:var(--ink-2)}
+.facts{display:grid;grid-template-columns:repeat(4, 1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:clamp(40px, 5vw, 64px) 0}
+.fact{background:var(--paper);padding:24px 22px}
+.fact b{display:block;font-family:var(--display);font-weight:200;font-size:clamp(30px, 3.4vw, 44px);line-height:1}
+.fact span{display:block;font-size:13px;color:var(--mute);margin-top:10px;line-height:1.45}
+.note{border-left:2px solid var(--sun);padding:4px 0 4px 22px;color:var(--ink-2);max-width:68ch}
+
+/* grade de pilares */
+.grid3{display:grid;grid-template-columns:repeat(3, 1fr);gap:1px;background:var(--line);border-top:1px solid var(--ink)}
+.cell{background:var(--paper);padding:30px 26px 34px 0}
+.grid3 .cell:nth-child(3n+2),.grid3 .cell:nth-child(3n){padding-left:26px}
+.stone .cell{background:var(--stone)}
+.cell h3{margin-bottom:12px}
+.cell p{font-size:15.5px;color:var(--ink-2)}
+.cell .k{font-family:var(--display);font-size:12px;letter-spacing:.24em;color:var(--mute);display:block;margin-bottom:18px}
+
+/* escopo por página */
+.page-item{display:grid;grid-template-columns:260px 1fr;gap:clamp(24px, 4vw, 64px);padding:36px 0;border-bottom:1px solid var(--line)}
+.page-item:first-child{border-top:1px solid var(--ink)}
+.page-item h3{font-size:20px;font-weight:300;letter-spacing:.14em}
+.page-item h3 small{display:block;font-size:11px;letter-spacing:.24em;color:var(--mute);margin-top:10px;font-weight:600}
+.ticks{list-style:none;columns:2;column-gap:40px}
+.ticks li{break-inside:avoid;padding:0 0 10px 22px;position:relative;font-size:15.5px;color:var(--ink-2)}
+.ticks li::before{content:"";position:absolute;left:0;top:.72em;width:10px;height:1px;background:var(--ink)}
+.ticks.one{columns:1}
+
+/* faixa de projetos */
+.strip{display:grid;grid-template-columns:repeat(5, 1fr);gap:clamp(8px, 1vw, 14px);margin-top:clamp(56px, 7vw, 90px)}
+.strip .photo{aspect-ratio:3/4}
+
+/* animações */
+.motion{display:grid;grid-template-columns:repeat(2, 1fr);gap:0 clamp(32px, 5vw, 80px);border-top:1px solid rgba(255,255,255,.35)}
+.motion div{padding:28px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.motion h3{color:#fff;margin-bottom:10px}
+.motion p{color:#c9c8c2;font-size:15.5px}
+.dark .label::before{background:var(--sun)}
+.dark .lead{color:#d8d7d1}
+
+/* cronograma */
+.timeline{border-top:1px solid var(--ink)}
+.step{display:grid;grid-template-columns:110px 1fr 1.3fr 120px;gap:28px;padding:28px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.step .n{font-family:var(--display);font-weight:200;font-size:36px;line-height:1}
+.step p{font-size:15.5px;color:var(--ink-2)}
+.step .w{font-family:var(--display);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);text-align:right}
+.bar{height:4px;background:var(--line);margin-top:14px;position:relative}
+.bar i{position:absolute;top:0;bottom:0;background:var(--ink)}
+.step.hl .bar i{background:var(--sun)}
+
+/* investimento */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px, 3vw, 36px)}
+.plan{border:1px solid var(--line);background:var(--paper);padding:clamp(28px, 3.4vw, 44px);display:flex;flex-direction:column}
+.plan.featured{border-color:var(--ink);box-shadow:inset 0 3px 0 var(--sun)}
+.plan .tag{font-family:var(--display);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+.plan h3{font-size:22px;font-weight:300;letter-spacing:.1em;margin:14px 0 6px}
+.plan .price{font-family:var(--display);font-weight:200;font-size:clamp(44px, 5vw, 64px);line-height:1;letter-spacing:.01em;margin:26px 0 6px}
+.plan .price small{font-size:.32em;letter-spacing:.2em;font-weight:400;vertical-align:.9em;margin-right:6px}
+.plan .sub{font-size:14px;color:var(--mute);margin-bottom:26px}
+.plan .ticks{columns:1;margin-top:auto;border-top:1px solid var(--line);padding-top:24px}
+.terms{display:grid;grid-template-columns:repeat(3, 1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:clamp(32px, 4vw, 48px)}
+.terms div{background:var(--paper);padding:22px 24px}
+.terms b{display:block;font-family:var(--display);font-size:12px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:8px}
+.terms span{font-size:15px;color:var(--ink-2)}
+
+/* recorrente */
+.rec{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px, 3vw, 36px)}
+.rec-card{background:var(--paper);padding:clamp(28px, 3.4vw, 44px);border:1px solid var(--line)}
+.rec-card .price{font-family:var(--display);font-weight:200;font-size:clamp(36px, 4vw, 50px);line-height:1;margin:18px 0 4px}
+.rec-card .price small{font-size:.36em;letter-spacing:.18em;font-weight:400}
+.pill{display:inline-block;font-family:var(--display);font-size:11px;letter-spacing:.22em;text-transform:uppercase;padding:7px 12px 5px;border:1px solid var(--ink)}
+.pill.sun{background:var(--sun);border-color:var(--sun)}
+
+/* matilab */
+.mstats{display:grid;grid-template-columns:repeat(3, 1fr);border-top:1px solid rgba(255,255,255,.35)}
+.mstats div{padding:30px 24px 0 0}
+.mstats div+div{padding-left:24px;border-left:1px solid rgba(255,255,255,.14)}
+.mstats b{display:block;font-family:var(--display);font-weight:200;font-size:clamp(46px, 6vw, 84px);line-height:1}
+.mstats span{display:block;margin-top:12px;font-family:var(--display);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#a9a8a2}
+
+/* próximos passos e contato */
+.next{counter-reset:s;list-style:none;border-top:1px solid var(--ink)}
+.next li{counter-increment:s;display:grid;grid-template-columns:72px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid var(--line);color:var(--ink-2)}
+.next li::before{content:"0" counter(s);font-family:var(--display);font-weight:300;letter-spacing:.2em;color:var(--mute);font-size:14px;padding-top:3px}
+.next li b{color:var(--ink);display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:.14em;font-size:15px;font-weight:600;margin-bottom:4px}
+.validity{margin-top:36px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.contact{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(32px, 6vw, 96px);align-items:end}
+.contact .name{font-family:var(--display);font-weight:300;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(34px, 4.6vw, 60px);line-height:1.05;margin:22px 0 10px}
+.clist{list-style:none;border-top:1px solid rgba(255,255,255,.35)}
+.clist li{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.clist span{font-family:var(--display);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#a9a8a2;padding-top:4px}
+.clist a{text-decoration:none;color:#fff}
+.clist a:hover{color:var(--sun)}
+.sign{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:clamp(64px, 9vw, 120px);padding-top:28px;border-top:1px solid rgba(255,255,255,.14)}
+.sign img{height:26px;width:auto}
+.btn{display:inline-block;font-family:var(--display);font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;padding:17px 26px 15px;background:var(--sun);color:var(--ink);margin-top:30px}
+.btn:hover{background:#fff}
+
+/* carimbo de prancha (só no PDF) */
+.stamp{display:none}
+
+/* responsivo */
+@media screen and (max-width: 980px){
+  .split,.split.rev{grid-template-columns:1fr}
+  .grid3{grid-template-columns:1fr 1fr}
+  .grid3 .cell{padding:26px 20px 30px 0 !important}
+  .grid3 .cell:nth-child(2n){padding-left:20px !important}
+  .row{grid-template-columns:52px 1fr}
+  .row p{grid-column:2}
+  .step{grid-template-columns:70px 1fr;gap:10px 20px}
+  .step p,.step .w{grid-column:2;text-align:left}
+  .plans,.rec,.contact{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr 1fr}
+  .page-item{grid-template-columns:1fr;gap:18px}
+}
+@media screen and (max-width: 640px){
+  body{font-size:16px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){padding-left:0;border-left:0}
+  .stat:nth-child(n+3){margin-top:22px}
+  .grid3{grid-template-columns:1fr}
+  .grid3 .cell{padding:24px 0 28px 0 !important}
+  .ticks{columns:1}
+  .strip{grid-template-columns:repeat(3, 1fr)}
+  .strip .photo:nth-child(n+4){display:none}
+  .motion{grid-template-columns:1fr}
+  .terms{grid-template-columns:1fr}
+  .mstats{grid-template-columns:1fr}
+  .mstats div,.mstats div+div{padding:22px 0;border-left:0;border-bottom:1px solid rgba(255,255,255,.14)}
+  .cover-foot{grid-template-columns:1fr;gap:14px}
+  .cover h1{font-size:8.6vw;letter-spacing:.03em}
+  .cover-top .folio{font-size:10px;letter-spacing:.16em}
+  h2{font-size:8vw;letter-spacing:.04em}
+  .head{grid-template-columns:1fr}
+  .head .folio{display:none}
+  .bleed .photo,.pano{aspect-ratio:4/3}
+  .sign{flex-direction:column;align-items:flex-start}
+}
+
+/* ============ impressão / PDF A4 ============ */
+@page{size:A4;margin:15mm 15mm 18mm 15mm;
+  @bottom-left{content:"XOK \00D7  Matilab \00B7  Proposta de novo site";font-family:"Josefin Sans",Arial,sans-serif;font-size:6.5pt;letter-spacing:.22em;text-transform:uppercase;color:#7a7a76}
+  @bottom-right{content:counter(page, decimal-leading-zero);font-family:"Josefin Sans",Arial,sans-serif;font-size:7pt;letter-spacing:.2em;color:#1d1d1b}
+}
+@page cover{margin:0;@bottom-left{content:none}@bottom-right{content:none}}
+@media print{
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  html,body{background:#fff}
+  body{font-size:10pt;line-height:1.55}
+  p{orphans:3;widows:3}
+  .cover{page:cover;height:297mm;min-height:0;width:210mm;padding:16mm 15mm 18mm}
+  .sheet{padding:0;break-before:page;page-break-before:always}
+  .sheet.stone,.sheet.dark{background:none}
+  .sheet.dark{color:var(--ink)}
+  .dark .lead,.motion p{color:var(--ink-2)}
+  .motion{border-top-color:var(--ink)}
+  .motion div{border-bottom-color:var(--line)}
+  .motion h3{color:var(--ink)}
+  .dark .folio{color:var(--mute)}
+  .label.light{color:var(--ink)}
+  .contact .small{color:var(--mute) !important}
+  .wrap{max-width:none}
+  h2{font-size:21pt;max-width:24ch;margin-top:4mm}
+  .label::before{margin-bottom:3mm}
+  h3{font-size:9.5pt}
+  .head{grid-template-columns:1fr auto}
+  .folio{font-size:7pt}
+  .lead{font-size:11pt}
+  .cell{padding:4mm 4mm 5mm 0}
+  .grid3 .cell:nth-child(3n+2),.grid3 .cell:nth-child(3n){padding-left:4mm}
+  .cell .k{margin-bottom:2.5mm;font-size:7pt}
+  .cell h3{margin-bottom:1.5mm}
+  .stat{padding-top:4mm}
+  .fact{padding:4mm}
+  .fact span{font-size:8pt}
+  .terms div{padding:4mm 5mm}
+  .terms span{font-size:9pt}
+  .terms{margin-top:6mm}
+  .plan .sub{margin-bottom:4mm}
+  .plan .ticks{padding-top:4mm}
+  .motion div{padding:4mm 0}
+  .rec-card .ticks li{padding-bottom:1.2mm}
+  .note{font-size:9.5pt}
+  .cap{font-size:6.5pt;margin-top:2mm}
+  .head{margin-bottom:9mm}
+  .stats{margin-top:10mm}
+  .stat b{font-size:28pt}
+  .split{gap:10mm;grid-template-columns:5fr 7fr}
+  .split.rev{grid-template-columns:7fr 5fr}
+  .bleed{margin:8mm 0 0}
+  .bleed .photo{aspect-ratio:auto;height:62mm}
+  .tall{aspect-ratio:auto;height:100mm}
+  .wide{aspect-ratio:auto;height:72mm}
+  .strip{margin-top:9mm}
+  .strip .photo{aspect-ratio:auto;height:44mm}
+  .row,.step,.page-item,.cell,.fact,.plan,.rec-card,.next li,.motion div,.terms div,.stat,.photo,figure,.note,.mstats div{break-inside:avoid;page-break-inside:avoid}
+  .head,h2,h3,.label{break-after:avoid;page-break-after:avoid}
+  .row{padding:4.5mm 0;grid-template-columns:14mm 1fr 1.4fr;gap:6mm}
+  .page-item{padding:5mm 0;grid-template-columns:52mm 1fr}
+  .page-item h3{font-size:13pt}
+  .ticks li,.cell p,.step p,.motion p,.next li{font-size:9.5pt}
+  .ticks li{padding-bottom:1.6mm}
+  .step{padding:4mm 0;grid-template-columns:20mm 1fr 1.3fr 24mm}
+  .step .n{font-size:20pt}
+  .facts{margin:8mm 0}
+  .fact b{font-size:22pt}
+  .plan{padding:8mm}
+  .plan .price{font-size:32pt;margin:5mm 0 2mm}
+  .rec-card{padding:8mm}
+  .rec-card .price{font-size:26pt}
+  .mstats{border-top-color:var(--ink)}
+  .mstats div+div{border-left-color:var(--line)}
+  .mstats b{font-size:40pt}
+  .mstats span{color:var(--mute)}
+  .clist{border-top-color:var(--ink)}
+  .clist li{border-bottom-color:var(--line)}
+  .clist span{color:var(--mute)}
+  .clist a{color:var(--ink)}
+  .sign{border-top-color:var(--line);margin-top:14mm}
+  .sign .on-dark{display:none}
+  .sign .on-light{display:block !important}
+  .btn{display:none}
+  .grid3{grid-template-columns:repeat(3, 1fr)}
+  .plans,.rec{grid-template-columns:1fr 1fr}
+  .contact{grid-template-columns:1.2fr 1fr}
+  .motion{grid-template-columns:1fr 1fr}
+  .terms{grid-template-columns:repeat(3, 1fr)}
+  .mstats{grid-template-columns:repeat(3, 1fr)}
+  .no-print{display:none !important}
+  .stamp{display:none;justify-content:space-between;margin-top:8mm;padding-top:3mm;border-top:1px solid var(--line);font-family:var(--display);font-size:7pt;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+  .stamp b{color:var(--ink);font-weight:600}
+}
+</style>
+</head>
+<body>
+
+<!-- 00 · CAPA -->
+<header class="cover">
+  <img src="/propostas/xok/assets/jatibela-capa.jpg" alt="Casa Jatibela, projeto da XOK Arquitetura em Campinas" fetchpriority="high">
+  <div class="cover-top">
+    <img src="/propostas/xok/assets/xok_logo_white.png" alt="XOK Arquitetos & Associados">
+    <div class="folio">Proposta Nº 2026/XOK<br>Outubro de 2026</div>
+  </div>
+  <div>
+    <p class="label light">Matilab para XOK Arquitetura</p>
+    <h1>Proposta de desenvolvimento do novo site</h1>
+    <p class="slogan">Projetada para acontecer.</p>
+    <div class="cover-foot">
+      <div>Preparada para<b>Rafael · XOK Arquitetos & Associados</b></div>
+      <div>Por<b>Matheus Moura · Matilab</b></div>
+      <div>Na foto<b>Casa Jatibela, Campinas</b></div>
+    </div>
+  </div>
+</header>
+
+<!-- 01 · ENTENDIMENTO -->
+<section class="sheet" id="entendimento">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">01 · Entendimento</p>
+        <h2>Um site que trate o portfólio como vocês tratam um projeto</h2>
+      </div>
+      <span class="folio">Folha 01 / 12</span>
+    </div>
+    <div class="split rev">
+      <div class="stack">
+        <p class="lead">A XOK já desenhou o próprio site. O protótipo está pronto, com a linguagem, o ritmo e a hierarquia que o escritório quer mostrar. O que falta é uma base técnica à altura dele.</p>
+        <p>O novo site tem um papel institucional claro: reforçar o posicionamento da XOK no residencial e nos empreendimentos de alto padrão, e apresentar o portfólio com a mesma intenção que vocês colocam em cada fachada, planta e detalhe. Quem chega precisa entender rápido o tamanho do trabalho e a qualidade do desenho.</p>
+        <p>Contato é importante, mas vem como consequência. Nada de botão piscando nem formulário empurrado. O site convida, não insiste.</p>
+        <p>Nosso papel aqui é simples de explicar e exigente de cumprir: <strong>levar o protótipo para o código com fidelidade total</strong>, deixar o site rápido e seguro, e dar a vocês autonomia para cuidar do conteúdo.</p>
+      </div>
+      <figure class="photo tall">
+        <img src="/propostas/xok/assets/escritorio.jpg" alt="Fachada do escritório da XOK em Nova Campinas">
+      </figure>
+    </div>
+    <p class="cap" style="text-align:right">Escritório XOK · Nova Campinas, Campinas/SP</p>
+    <div class="stats">
+      <div class="stat"><b>2015</b><span>Desde</span></div>
+      <div class="stat"><b>+600 mil</b><span>m² projetados</span></div>
+      <div class="stat"><b>+130</b><span>Projetos</span></div>
+      <div class="stat"><b>+70</b><span>Clientes</span></div>
+    </div>
+    <div class="stamp"><span>XOK × Matilab · Proposta de novo site</span><span><b>01</b> Entendimento</span></div>
+  </div>
+</section>
+
+<!-- 02 · DIAGNÓSTICO -->
+<section class="sheet stone" id="diagnostico">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">02 · Diagnóstico do site atual</p>
+        <h2>O site cumpriu seu papel. A base é que ficou pesada</h2>
+      </div>
+      <span class="folio">Folha 02 / 12</span>
+    </div>
+    <p class="lead">Nada do que segue é erro de ninguém. É o caminho natural de um WordPress que foi crescendo por cima de plugins ao longo dos anos. Olhamos o código da home em outubro de 2026 e estes são os pontos que pesam no dia a dia.</p>
+
+    <div class="facts">
+      <div class="fact"><b>3</b><span>construtores visuais ativos ao mesmo tempo: Divi, Elementor e Slider Revolution</span></div>
+      <div class="fact"><b>46</b><span>scripts e 23 folhas de estilo carregados só na home</span></div>
+      <div class="fact"><b>66</b><span>requisições e cerca de 2,7 MB para abrir a página inicial</span></div>
+      <div class="fact"><b>+80</b><span>páginas de projeto no portfólio, todas presas ao construtor</span></div>
+    </div>
+
+    <div class="rows">
+      <div class="row"><span class="n">A</span><h3>Performance</h3><p>Cada construtor traz seu próprio pacote de código, e o navegador precisa baixar tudo antes de mostrar as fotos. No celular, com rede comum, isso vira espera. Para um portfólio que vive de imagem, os primeiros segundos são justamente os que contam.</p></div>
+      <div class="row"><span class="n">B</span><h3>Segurança</h3><p>WordPress com vários plugins de terceiros (Slider Revolution, filtros do Divi, WhatsApp, LeadConnector, ícones empacotados) é a combinação mais visada por ataques automáticos. Cada plugin desatualizado é uma porta. Manter tudo em dia exige atenção constante.</p></div>
+      <div class="row"><span class="n">C</span><h3>Manutenção</h3><p>Trocar uma foto ou publicar um projeto passa por telas de construtor pensadas para montar layout, não para cuidar de conteúdo. É fácil desalinhar uma página sem querer, e difícil manter o padrão visual entre projetos.</p></div>
+      <div class="row"><span class="n">D</span><h3>Estrutura e SEO</h3><p>Os endereços carregam "/index.php/" e alguns slugs automáticos. O link do Garden City na home, por exemplo, aponta para um endereço que hoje abre "página não encontrada". São detalhes pequenos, mas o Google repara neles.</p></div>
+    </div>
+    <p class="note" style="margin-top:40px">A boa notícia: o conteúdo é forte. Fotos de alta qualidade, fichas técnicas, textos de conceito. O trabalho é dar a esse material uma base que acompanhe o nível dele.</p>
+    <div class="stamp"><span>XOK × Matilab · Proposta de novo site</span><span><b>02</b> Diagnóstico</span></div>
+  </div>
+</section>
+
+<!-- 03 · SOLUÇÃO -->
+<section class="sheet" id="solucao">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">03 · A solução</p>
+        <h2>Código próprio, desenhado a partir do protótipo de vocês</h2>
+      </div>
+      <span class="folio">Folha 03 / 12</span>
+    </div>
+    <div class="split">
+      <figure class="photo tall">
+        <img src="/propostas/xok/assets/bossa-torre.jpg" alt="Edifício Bossa Nova, Cambuí, projeto da XOK">
+      </figure>
+      <div class="stack">
+        <p class="lead">Em vez de adaptar um tema, construímos o site do zero em <strong>Next.js</strong>, o mesmo padrão usado por marcas que dependem de velocidade e imagem. Cada tela nasce do protótipo, medida a medida.</p>
+        <div class="grid3" style="grid-template-columns:1fr 1fr;margin-top:34px">
+          <div class="cell"><span class="k">01</span><h3>Fidelidade total</h3><p>Tipografia, grid, espaçamentos e respiros reproduzidos como estão no protótipo, em todas as larguras de tela.</p></div>
+          <div class="cell"><span class="k">02</span><h3>Painel próprio</h3><p>Uma área de gestão feita para o conteúdo da XOK: projetos, galerias, textos e blog. Sem construtor no meio.</p></div>
+          <div class="cell"><span class="k">03</span><h3>Movimento sob medida</h3><p>Animações e transições pensadas para o portfólio, discretas e precisas. Nada de efeito pronto de biblioteca.</p></div>
+          <div class="cell"><span class="k">04</span><h3>Carregamento rápido</h3><p>Imagens otimizadas automaticamente em formatos modernos e tamanhos certos para cada tela. Meta de 90+ no PageSpeed.</p></div>
+          <div class="cell"><span class="k">05</span><h3>SEO técnico</h3><p>Endereços limpos, metadados por página, sitemap, dados estruturados de escritório de arquitetura e projetos.</p></div>
+          <div class="cell"><span class="k">06</span><h3>Seguro por desenho</h3><p>Sem plugins de terceiros e sem painel WordPress exposto. Menos portas abertas, menos manutenção de emergência.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="stamp"><span>XOK × Matilab · Proposta de novo site</span><span><b>03</b> Solução</span></div>
+  </div>
+</section>
+
+<!-- 04 · ESCOPO -->
+<section class="sheet stone" id="escopo">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">04 · Escopo por página</p>
+        <h2>O que será construído, tela a tela</h2>
+      </div>
+      <span class="folio">Folha 04 / 12</span>
+    </div>
+    <div>
+      <div class="page-item">
+        <h3>Home<small>Página completa</small></h3>
+        <ul class="ticks">
+          <li>Abertura com foto ou vídeo em tela cheia, conforme o protótipo</li>
+          <li>Manifesto e apresentação do escritório</li>
+          <li>Projetos em destaque escolhidos pelo painel</li>
+          <li>Números do escritório (m², projetos, clientes)</li>
+          <li>Áreas de atuação em resumo</li>
+          <li>Parceiros e incorporadoras</li>
+          <li>Chamada discreta para contato</li>
+          <li>Últimos textos do blog</li>
+        </ul>
+      </div>
+      <div class="page-item">
+        <h3>Portfólio<small>Listagem</small></h3>
+        <ul class="ticks">
+          <li>Grade de projetos com o desenho do protótipo</li>
+          <li>Filtro por categoria (residencial, empreendimentos, comercial, interiores)</li>
+          <li>Transição suave ao filtrar, sem recarregar a página</li>
+          <li>Carregamento progressivo das imagens</li>
+        </ul>
+      </div>
+      <div class="page-item">
+        <h3>Projeto<small>Página modelo</small></h3>
+        <ul class="ticks">
+          <li>Imagem de abertura e título do projeto</li>
+          <li>Ficha técnica: local, área, ano, cliente, parceiros</li>
+          <li>Texto de conceito</li>
+          <li>Galeria com fotos horizontais, verticais e plantas</li>
+          <li>Visualização ampliada das imagens</li>
+          <li>Navegação para o próximo projeto e projetos relacionados</li>
+        </ul>
+      </div>
+      <div class="page-item">
+        <h3>Atuação<small>Serviços</small></h3>
+        <ul class="ticks">
+          <li>Frentes de trabalho do escritório</li>
+          <li>Como a XOK conduz cada tipo de projeto</li>
+          <li>Projetos de exemplo ligados a cada frente</li>
+        </ul>
+      </div>
+      <div class="page-item">
+        <h3>Sobre nós<small>Institucional</small></h3>
+        <ul class="ticks">
+          <li>História desde 2015 e posicionamento</li>
+          <li>Sócios e equipe</li>
+          <li>O escritório em Nova Campinas</li>
+          <li>Valores e forma de trabalhar</li>
+        </ul>
+      </div>
+      <div class="page-item">
+        <h3>Contato<small>Conversa</small></h3>
+        <ul class="ticks">
+          <li>Formulário enxuto com envio para o e-mail da XOK</li>
+          <li>WhatsApp, telefone e endereço</li>
+          <li>Mapa do escritório</li>
+          <li>Registro dos contatos recebidos no painel</li>
+        </ul>
+      </div>
+      <div class="page-item">
+        <h3>Blog<small>Listagem e post</small></h3>
+        <ul class="ticks">
+          <li>Listagem com categorias</li>
+          <li>Página de artigo com boa leitura e imagens grandes</li>
+          <li>Compartilhamento e artigos relacionados</li>
+          <li>Estrutura pronta para SEO de cada post</li>
+        </ul>
+      </div>
+      <div class="page-item">
+        <h3>Em todo o site<small>Base comum</small></h3>
+        <ul class="ticks">
+          <li>Menu e rodapé do protótipo</li>
+          <li>Versão celular, tablet e desktop</li>
+          <li>Página de erro 404 com a cara da XOK</li>
+          <li>Política de privacidade e aviso de cookies (LGPD)</li>
+          <li>Google Analytics e Search Console configurados</li>
+          <li>Migração dos projetos e posts atuais</li>
+        </ul>
+      </div>
+    </div>
+    <div class="strip">
+      <figure class="photo"><img src="/propostas/xok/assets/jatibela-fachada.jpg" alt="Casa Jatibela"></figure>
+      <figure class="photo"><img src="/propostas/xok/assets/beaumont-torre.jpg" alt="Beaumont"></figure>
+      <figure class="photo"><img src="/propostas/xok/assets/garden-fachada.jpg" alt="Garden City"></figure>
+      <figure class="photo"><img src="/propostas/xok/assets/altocambui-torre.jpg" alt="Alto Cambuí"></figure>
+      <figure class="photo"><img src="/propostas/xok/assets/coworking.jpg" alt="Coworking Bossa Nova"></figure>
+    </div>
+    <p class="cap">Jatibela · Beaumont · Garden City · Alto Cambuí · Coworking Bossa Nova</p>
+    <div class="stamp"><span>XOK × Matilab · Proposta de novo site</span><span><b>04</b> Escopo</span></div>
+  </div>
+</section>
+
+<!-- 05 · PAINEL -->
+<section class="sheet" id="painel">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">05 · Painel de gerenciamento</p>
+        <h2>O que a XOK passa a fazer sozinha</h2>
+      </div>
+      <span class="folio">Folha 05 / 12</span>
+    </div>
+    <div class="split">
+      <div class="stack">
+        <p class="lead">Um painel feito para o conteúdo de um escritório de arquitetura. Campos claros, ordem lógica e o layout protegido: quem edita mexe no conteúdo, o desenho continua intacto.</p>
+        <p>Ele entra completo na <strong>Opção B</strong> do investimento. Na <strong>Opção A</strong>, a Matilab cuida dessas inserções para vocês (veja a folha 09).</p>
+        <p class="small">Acesso por e-mail e senha, com usuários separados para cada pessoa da equipe.</p>
+      </div>
+      <div class="grid3" style="grid-template-columns:1fr 1fr">
+        <div class="cell"><span class="k">Projetos</span><h3>Publicar e editar</h3><p>Criar um projeto novo, preencher a ficha técnica, escrever o conceito, escolher categoria e marcar como destaque na home.</p></div>
+        <div class="cell"><span class="k">Galerias</span><h3>Fotos sem dor</h3><p>Arrastar as fotos, reordenar, definir a capa e a imagem de abertura. O sistema otimiza o tamanho sozinho.</p></div>
+        <div class="cell"><span class="k">Textos</span><h3>Páginas institucionais</h3><p>Ajustar textos da home, Sobre nós e Atuação, números do escritório, equipe e parceiros.</p></div>
+        <div class="cell"><span class="k">Blog</span><h3>Escrever e agendar</h3><p>Editor de texto com imagens, categorias, rascunho, agendamento e campos de SEO por post.</p></div>
+        <div class="cell"><span class="k">Contatos</span><h3>Mensagens recebidas</h3><p>Todos os contatos do formulário guardados no painel, além de chegarem por e-mail.</p></div>
+        <div class="cell"><span class="k">Ordem</span><h3>Curadoria</h3><p>Definir a ordem dos projetos no portfólio e quais aparecem na home, sem depender de ninguém.</p></div>
+      </div>
+    </div>
+    <div class="stamp"><span>XOK × Matilab · Proposta de novo site</span><span><b>05</b> Painel</span></div>
+  </div>
+</section>
+
+<!-- 06 · ANIMAÇÕES -->
+<section class="sheet dark" id="animacoes">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label light">06 · Animações e interações</p>
+        <h2>Movimento como parte da arquitetura da página</h2>
+      </div>
+      <span class="folio">Folha 06 / 12</span>
+    </div>
+    <p class="lead" style="margin-bottom:56px">O protótipo define o tom. A gente traduz em movimento: lento, preciso, sem exibicionismo. Tudo leve o suficiente para não atrapalhar a velocidade, e respeitando quem prefere menos movimento no sistema.</p>
+    <div class="motion">
+      <div><h3>Abertura</h3><p>Entrada do logo e da imagem principal em sequência, como uma cortina que se abre para o projeto.</p></div>
+      <div><h3>Transição entre páginas</h3><p>Ao abrir um projeto, a foto da grade cresce e vira a capa da página. O visitante não sente o corte.</p></div>
+      <div><h3>Revelação no scroll</h3><p>Títulos, textos e imagens surgem conforme a leitura, com tempos e distâncias calibrados.</p></div>
+      <div><h3>Parallax nas fotos</h3><p>Leve diferença de velocidade entre imagem e moldura, dando profundidade às fachadas.</p></div>
+      <div><h3>Galeria do projeto</h3><p>Passagem fluida entre fotos, com gesto de arrastar no celular e visualização ampliada.</p></div>
+      <div><h3>Números que contam</h3><p>Os indicadores do escritório (m², projetos, clientes) sobem até o valor quando entram na tela.</p></div>
+      <div><h3>Filtros do portfólio</h3><p>Os projetos se reorganizam com suavidade ao trocar de categoria.</p></div>
+      <div><h3>Microinterações</h3><p>Cursor, links, botões e menu com respostas sutis ao toque e ao passar do mouse.</p></div>
+    </div>
+    <div class="stamp"><span>XOK × Matilab · Proposta de novo site</span><span><b>06</b> Animações</span></div>
+  </div>
+</section>
+
+<!-- 07 · CRONOGRAMA -->
+<section class="sheet" id="cronograma">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">07 · Etapas e cronograma</p>
+        <h2>Cerca de oito semanas, do kickoff ao ar</h2>
+      </div>
+      <span class="folio">Folha 07 / 12</span>
+    </div>
+    <div class="timeline">
+      <div class="step"><span class="n">01</span><h3>Kickoff e análise do protótipo</h3><p>Reunião de início, leitura detalhada do protótipo, levantamento de conteúdo e definição do que entra em cada tela.</p><span class="w">Semana 1<div class="bar"><i style="left:0;width:13%"></i></div></span></div>
+      <div class="step"><span class="n">02</span><h3>Desenvolvimento front</h3><p>Todas as páginas em código, fiéis ao protótipo, em celular, tablet e desktop. Vocês acompanham por um link de prévia.</p><span class="w">Semanas 2 a 4<div class="bar"><i style="left:13%;width:37%"></i></div></span></div>
+      <div class="step"><span class="n">03</span><h3>Painel e integração</h3><p>Estrutura de dados, painel de gestão e ligação de todas as páginas ao conteúdo real.</p><span class="w">Semanas 4 e 5<div class="bar"><i style="left:38%;width:25%"></i></div></span></div>
+      <div class="step"><span class="n">04</span><h3>Animações</h3><p>Transições, revelações e microinterações aplicadas e ajustadas página por página.</p><span class="w">Semanas 5 e 6<div class="bar"><i style="left:50%;width:25%"></i></div></span></div>
+      <div class="step"><span class="n">05</span><h3>Revisões</h3><p>Duas rodadas de ajustes com a equipe da XOK, sobre o site já navegável.</p><span class="w">Semanas 6 e 7<div class="bar"><i style="left:63%;width:25%"></i></div></span></div>
+      <div class="step hl"><span class="n">06</span><h3>Migração e SEO</h3><p>Projetos e posts migrados, redirecionamentos 301 de cada endereço antigo para o novo, sitemap e Search Console. É isso que garante que o site não perde o ranqueamento que já conquistou.</p><span class="w">Semana 7<div class="bar"><i style="left:75%;width:13%"></i></div></span></div>
+      <div class="step"><span class="n">07</span><h3>Publicação</h3><p>Troca no domínio xok.arq.br sem tirar o site do ar, testes finais e treinamento do painel.</p><span class="w">Semana 8<div class="bar"><i style="left:88%;width:12%"></i></div></span></div>
+    </div>
+    <p class="small" style="margin-top:28px">O prazo conta a partir do kickoff e do recebimento do protótipo e dos acessos. Depende também do tempo de retorno nas revisões.</p>
+    <div class="stamp"><span>XOK × Matilab · Proposta de novo site</span><span><b>07</b> Cronograma</span></div>
+  </div>
+</section>
+
+<!-- 08 · INVESTIMENTO -->
+<section class="sheet stone" id="investimento">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">08 · Investimento</p>
+        <h2>Duas formas de cuidar do conteúdo</h2>
+      </div>
+      <span class="folio">Folha 08 / 12</span>
+    </div>
+    <p class="lead" style="margin-bottom:8mm">O site é o mesmo nas duas opções: mesmo protótipo, mesmas páginas, mesmas animações, mesma migração. A diferença está em quem atualiza o conteúdo depois que ele vai ao ar.</p>
+    <div class="plans">
+      <div class="plan">
+        <span class="tag">Opção A</span>
+        <h3>Site com gestão Matilab</h3>
+        <p class="small">A XOK manda o material, a Matilab publica.</p>
+        <div class="price"><small>R$</small>8.900</div>
+        <p class="sub">Pagamento único</p>
+        <ul class="ticks">
+          <li>Todas as páginas do escopo, fiéis ao protótipo</li>
+          <li>Animações e transições personalizadas</li>
+          <li>SEO técnico, migração e redirecionamentos 301</li>
+          <li>Conteúdo guardado em banco próprio, pronto para ganhar painel no futuro</li>
+          <li>Inserções feitas pela Matilab, pela mensalidade opcional</li>
+        </ul>
+      </div>
+      <div class="plan featured">
+        <span class="tag">Opção B · Recomendada</span>
+        <h3>Site com painel administrável</h3>
+        <p class="small">A XOK publica o que quiser, quando quiser.</p>
+        <div class="price"><small>R$</small>12.400</div>
+        <p class="sub">Pagamento único</p>
+        <ul class="ticks">
+          <li>Tudo da Opção A</li>
+          <li>Painel completo: projetos, galerias, textos, blog e contatos</li>
+          <li>Usuários separados para a equipe</li>
+          <li>Treinamento gravado do painel</li>
+          <li>Autonomia total, com a mensalidade opcional como apoio</li>
+        </ul>
+      </div>
+    </div>
+    <div class="terms">
+      <div><b>Condições</b><span>50% na aprovação e 50% na publicação, por PIX ou transferência. Ou cartão em até 10x, com as taxas da operadora.</span></div>
+      <div><b>Prazo</b><span>Cerca de 8 semanas a partir do kickoff e do recebimento do material.</span></div>
+      <div><b>Garantia</b><span>90 dias de correção de qualquer falha técnica após a publicação, sem custo.</span></div>
+    </div>
+    <div class="stamp"><span>XOK × Matilab · Proposta de novo site</span><span><b>08</b> Investimento</span></div>
+  </div>
+</section>
+
+<!-- 09 · RECORRENTE -->
+<section class="sheet" id="recorrente">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">09 · Hospedagem, manutenção e suporte</p>
+        <h2>O que fica depois que o site vai ao ar</h2>
+      </div>
+      <span class="folio">Folha 09 / 12</span>
+    </div>
+    <div class="rec">
+      <div class="rec-card">
+        <span class="pill sun">Obrigatório</span>
+        <h3 style="margin-top:22px">Hospedagem Supabase</h3>
+        <div class="price">US$ 25 <small>/ mês</small></div>
+        <p class="small" style="margin-bottom:22px">Plano Pro, contratado no nome da XOK e pago direto ao Supabase.</p>
+        <ul class="ticks one">
+          <li>É a nova casa do site: banco de dados, fotos, painel e acessos</li>
+          <li>Infraestrutura profissional, com backup diário automático</li>
+          <li>Substitui a hospedagem atual do WordPress</li>
+          <li>A conta é da XOK. Os dados e o conteúdo ficam com vocês, sempre</li>
+        </ul>
+      </div>
+      <div class="rec-card">
+        <span class="pill">Opcional</span>
+        <h3 style="margin-top:22px">Manutenção e suporte Matilab</h3>
+        <div class="price">R$ 350 <small>/ mês</small></div>
+        <p class="small" style="margin-bottom:22px">Sem fidelidade. Pode começar ou parar quando quiser.</p>
+        <ul class="ticks one">
+          <li>Inserção de novos projetos, galerias e posts que vocês enviarem</li>
+          <li>Troca de textos, fotos e números do site</li>
+          <li>Atualizações técnicas e monitoramento de segurança</li>
+          <li>Acompanhamento do site no ar e do Search Console</li>
+          <li>Suporte por WhatsApp em horário comercial</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note" style="margin-top:44px">Na Opção A, a mensalidade é o caminho natural para manter o portfólio sempre atualizado. Na Opção B, ela serve como apoio para quando a equipe estiver sem tempo. Fora dela, ajustes pontuais são orçados à parte.</p>
+    <div class="bleed no-print" style="margin-top:56px">
+      <figure class="photo"><img src="/propostas/xok/assets/bossa-living.jpg" alt="Living do Bossa Nova"></figure>
+    </div>
+    <p class="cap no-print">Bossa Nova · Cambuí, Campinas</p>
+    <div class="stamp"><span>XOK × Matilab · Proposta de novo site</span><span><b>09</b> Recorrente</span></div>
+  </div>
+</section>
+
+<!-- 10 · POR QUE A MATILAB -->
+<section class="sheet dark" id="matilab">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label light">10 · Por que a Matilab</p>
+        <h2>A gente entende de site. E entende de arquitetura</h2>
+      </div>
+      <span class="folio">Folha 10 / 12</span>
+    </div>
+    <div class="split rev" style="margin-bottom:64px">
+      <div class="stack">
+        <p class="lead">A Matilab é um estúdio digital em São Paulo que cria sites, landing pages e sistemas sob medida. Boa parte do nosso trabalho é com escritórios de arquitetura, então a gente chega sabendo o que importa: a foto certa no tamanho certo, a ficha técnica bem resolvida, o respeito ao desenho.</p>
+        <p style="color:#c9c8c2">Trabalhamos com código próprio porque é o que garante velocidade, segurança e liberdade de desenho. E ficamos por perto depois da entrega, porque site bom é site cuidado.</p>
+      </div>
+      <figure class="photo wide">
+        <img src="/propostas/xok/assets/garden-gourmet.jpg" alt="Área gourmet do Garden City">
+      </figure>
+    </div>
+    <div class="mstats">
+      <div><b>+9</b><span>Anos de estúdio</span></div>
+      <div><b>+500</b><span>Projetos entregues</span></div>
+      <div><b>+70</b><span>Escritórios de arquitetura atendidos</span></div>
+    </div>
+    <div class="stamp"><span>XOK × Matilab · Proposta de novo site</span><span><b>10</b> Matilab</span></div>
+  </div>
+</section>
+
+<!-- 11 · PRÓXIMOS PASSOS -->
+<section class="sheet" id="proximos">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">11 · Próximos passos</p>
+        <h2>Como seguimos daqui</h2>
+      </div>
+      <span class="folio">Folha 11 / 12</span>
+    </div>
+    <div class="split">
+      <div class="stack">
+        <p class="lead">Se fizer sentido para vocês, o caminho é curto. Uma conversa para tirar dúvidas e, aprovado, já agendamos o kickoff.</p>
+        <div class="validity">
+          <span class="pill sun">Válida por 15 dias</span>
+          <span class="small">Até 14 de novembro de 2026</span>
+        </div>
+      </div>
+      <ol class="next">
+        <li><div><b>Conversa</b>Uma call rápida com o Rafael para revisar a proposta e escolher entre a Opção A e a B.</div></li>
+        <li><div><b>Aprovação</b>Aceite por escrito, contrato simples e pagamento da primeira parte.</div></li>
+        <li><div><b>Acessos</b>Envio do protótipo, acessos ao domínio e ao WordPress atual, e criação da conta Supabase no nome da XOK.</div></li>
+        <li><div><b>Kickoff</b>Reunião de início na semana seguinte, com o cronograma fechado em datas.</div></li>
+      </ol>
+    </div>
+    <div class="bleed" style="margin-top:72px">
+      <figure class="photo"><img src="/propostas/xok/assets/jatibela-varanda.jpg" alt="Varanda da Casa Jatibela"></figure>
+    </div>
+    <p class="cap">Casa Jatibela · Campinas</p>
+    <div class="stamp"><span>XOK × Matilab · Proposta de novo site</span><span><b>11</b> Próximos passos</span></div>
+  </div>
+</section>
+
+<!-- 12 · CONTATO -->
+<section class="sheet dark" id="contato">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="label light">12 · Contato</p></div>
+      <span class="folio">Folha 12 / 12</span>
+    </div>
+    <div class="contact">
+      <div>
+        <p class="lead">Fico à disposição para conversar, Rafael. Vai ser um prazer colocar o novo site da XOK no ar.</p>
+        <p class="name">Matheus Moura</p>
+        <p class="small" style="color:#a9a8a2">Fundador · Matilab</p>
+        <a class="btn" href="https://wa.me/5511992644010?text=Ol%C3%A1%20Matheus%2C%20aqui%20%C3%A9%20o%20Rafael%20da%20XOK.%20Vi%20a%20proposta%20do%20novo%20site." target="_blank" rel="noopener">Conversar pelo WhatsApp</a>
+      </div>
+      <ul class="clist">
+        <li><span>WhatsApp</span><a href="https://wa.me/5511992644010" target="_blank" rel="noopener">(11) 99264-4010</a></li>
+        <li><span>E-mail</span><a href="mailto:contato@matilab.com.br">contato@matilab.com.br</a></li>
+        <li><span>Site</span><a href="https://matilab.com.br" target="_blank" rel="noopener">matilab.com.br</a></li>
+        <li><span>Estúdio</span><span style="color:inherit;letter-spacing:0;text-transform:none;font-family:var(--text);font-size:15px;padding:0">Al. Vicente Pinzon, 173 · Vila Olímpia, São Paulo</span></li>
+      </ul>
+    </div>
+    <div class="sign">
+      <img class="on-dark" src="/propostas/xok/assets/matilab-logo-white.svg" alt="Matilab">
+      <img class="on-light" src="/propostas/xok/assets/matilab-logo-dark.svg" alt="Matilab" style="display:none">
+      <span class="folio">Proposta Nº 2026/XOK · Outubro de 2026</span>
+    </div>
+    <div class="stamp"><span>XOK × Matilab · Proposta de novo site</span><span><b>12</b> Contato</span></div>
+  </div>
+</section>
+
+</body>
+</html>
