@@ -162,11 +162,9 @@ p,li,h4{text-wrap:pretty}
 .browser-bar i{width:10px;height:10px;border-radius:50%;background:#c9c7c8}
 .browser-bar span{margin:0 auto;transform:translateX(-24px);font-size:12px;color:var(--gray);background:#fff;border-radius:20px;padding:3px 40px}
 .browser-screen{aspect-ratio:16/10;overflow:hidden;background:var(--paper)}
-.browser-screen img,.phone-screen img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.browser-screen img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
 .js .browser-screen img{animation:browse 16s ease-in-out 1.5s infinite alternate}
 @keyframes browse{0%,12%{object-position:50% 0}88%,100%{object-position:50% 100%}}
-.device{position:absolute;right:clamp(14px, 4.5vw, 64px);bottom:clamp(22px, 3.5vw, 48px);width:clamp(92px, 15%, 190px);background:#0d0d0d;border-radius:22px;padding:7px;box-shadow:0 24px 50px rgba(0,0,0,.55);border:1px solid #3a3a3b}
-.phone-screen{aspect-ratio:390/844;border-radius:16px;overflow:hidden;background:var(--paper)}
 .mock-note{max-width:640px;margin:clamp(28px, 3vw, 40px) auto 0;text-align:center}
 .mock-note .pill{margin-bottom:14px}
 .mock-note h4{font-size:clamp(22px, 2.1vw, 30px);font-weight:400;letter-spacing:-.035em;line-height:1.12}
@@ -363,10 +361,8 @@ p,li,h4{text-wrap:pretty}
   .techbar li{width:100%;justify-content:flex-start}
   .techbar li+li{border-left:0;border-top:1px solid #aeabac}
   .price-inc .dash{columns:1}
-  .mock-stage{padding:36px 20px 44px}
-  .browser{display:none}
-  .device{position:relative;right:auto;bottom:auto;width:64%;margin:0 auto;border-radius:30px;padding:8px}
-  .phone-screen{border-radius:22px}
+  .mock-stage{padding:28px 16px 36px}
+  .browser-bar span{padding:3px 18px;transform:none}
   .cover h1{font-size:11.5vw}
   .cover-bar span{font-size:11px}
   .cover-bar span i,.cover-bar span em{display:none}
@@ -464,8 +460,6 @@ p,li,h4{text-wrap:pretty}
   .mock-sec .head{margin-bottom:5mm}
   .price-photo{display:none}
   .browser-bar{height:6mm}
-  .device{width:22mm;right:10mm;bottom:7mm;border-radius:4mm;padding:1.2mm}
-  .phone-screen{border-radius:3mm}
   .mock-note{margin-top:5mm}
   .mock-note h4{font-size:14pt}
   .mock-note p{font-size:9.3pt}
@@ -574,7 +568,6 @@ p,li,h4{text-wrap:pretty}
           <div class="browser-bar"><i></i><i></i><i></i><span>xok.arq.br</span></div>
           <div class="browser-screen"><img src="/propostas/xok/assets/proto-desktop.jpg" alt="Protótipo do novo site da XOK no computador"></div>
         </div>
-        <div class="device"><div class="phone-screen"><img src="/propostas/xok/assets/proto-mobile.jpg" alt="Protótipo do novo site da XOK no celular"></div></div>
       </div>
       <div class="mock-note">
         <span class="pill sun">Nosso compromisso</span>
