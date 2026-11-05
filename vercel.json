@@ -9,6 +9,30 @@
     {
       "source": "/propostas/engeajuda/calculadora/:path*",
       "destination": "https://engeajuda-calculadora.vercel.app/propostas/engeajuda/calculadora/:path*"
+    },
+    {
+      "source": "/propostas/_next/:path*",
+      "destination": "https://matilab-briefing.vercel.app/propostas/_next/:path*"
+    },
+    {
+      "source": "/propostas/api/notificar-pendentes",
+      "destination": "https://matilab-briefing.vercel.app/propostas/api/notificar-pendentes"
+    },
+    {
+      "source": "/propostas/matilab-logo-white.svg",
+      "destination": "https://matilab-briefing.vercel.app/propostas/matilab-logo-white.svg"
+    },
+    {
+      "source": "/propostas/favicon.svg",
+      "destination": "https://matilab-briefing.vercel.app/propostas/favicon.svg"
+    },
+    {
+      "source": "/propostas/:slug/briefing",
+      "destination": "https://matilab-briefing.vercel.app/propostas/:slug/briefing"
+    },
+    {
+      "source": "/propostas/:slug/briefing/:path*",
+      "destination": "https://matilab-briefing.vercel.app/propostas/:slug/briefing/:path*"
     }
   ],
   "headers": [
