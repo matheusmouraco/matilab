@@ -1086,6 +1086,12 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://www.matilab.com.br/exclusao-de-dados</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 
   <url>
     <loc>https://www.matilab.com.br/site-para-distribuidora</loc>
