@@ -1,0 +1,74 @@
+name: Cases (prints e sites no ar)
+
+# A cada 15 dias (dias 1 e 16, 06:00 BRT): abre todos os sites do /cases, atualiza os prints
+# que mudaram e manda e-mail se algum site não abrir. Também pode ser disparado à mão.
+on:
+  schedule:
+    - cron: "0 9 1,16 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cases-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: tools/cases/package-lock.json
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências e Chrome
+        working-directory: tools/cases
+        run: |
+          npm ci
+          npx playwright install --with-deps chrome
+          sudo apt-get install -y fonts-noto fonts-noto-color-emoji > /dev/null
+
+      - name: Atualizar prints e checar sites
+        id: refresh
+        working-directory: tools/cases
+        run: node refresh.mjs
+
+      - name: Commit e push (se algum print mudou)
+        run: |
+          if [ -n "$(git status --porcelain content imgs/cases cases.html)" ]; then
+            git config user.name "Matilab Cases Bot"
+            git config user.email "bot@matilab.com.br"
+            git add content/cases.json cases.html imgs/cases
+            git commit -m "chore(cases): atualiza prints do portfólio"
+            git pull --rebase origin main
+            git push
+          else
+            echo "Nenhum print mudou."
+          fi
+
+      - name: Avisar por e-mail os sites fora do ar
+        if: steps.refresh.outputs.has_down == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: Matilab Cases <${{ secrets.MAIL_USERNAME }}>
+          to: matheusmoura.co@gmail.com
+          subject: ${{ steps.refresh.outputs.subject }}
+          html_body: ${{ steps.refresh.outputs.body }}

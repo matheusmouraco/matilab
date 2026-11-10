@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const DATA = path.join(ROOT, 'content/cases.json');
-const OUT = path.join(ROOT, 'imgs/cases');
+export const OUT = path.join(ROOT, 'imgs/cases');
 const MAX_H = 6000; // px CSS; acima disso a página é cortada
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
 
@@ -20,15 +20,16 @@ export async function launch() {
   catch { return chromium.launch(); }
 }
 
-export async function capture(browser, { id, url }) {
+export async function capture(browser, { id, url }, out = OUT) {
   const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, locale: 'pt-BR', userAgent: UA, ignoreHTTPSErrors: true });
   const page = await ctx.newPage();
   try {
-    await page.goto(url, { waitUntil: 'load', timeout: 45000 });
+    const resp = await page.goto(url, { waitUntil: 'load', timeout: 45000 });
+    if (resp && resp.status() >= 400) throw new Error(`HTTP ${resp.status()}`);
     try { await page.waitForLoadState('networkidle', { timeout: 12000 }); } catch {}
     await page.waitForTimeout(3500);
     const cover = await page.screenshot({ type: 'png' });
-    await sharp(cover).resize(800).webp({ quality: 70 }).toFile(path.join(OUT, `${id}.webp`));
+    await sharp(cover).resize(800).webp({ quality: 70 }).toFile(path.join(out, `${id}.webp`));
 
     // Desce a página aos poucos para disparar lazy-load e animações de entrada.
     await page.evaluate(async (max) => {
@@ -42,7 +43,7 @@ export async function capture(browser, { id, url }) {
     await page.waitForTimeout(1500);
     const h = Math.min(await page.evaluate(() => document.documentElement.scrollHeight), MAX_H);
     const full = await page.screenshot({ type: 'png', fullPage: true, clip: { x: 0, y: 0, width: 1440, height: h } });
-    const info = await sharp(full).resize(720).webp({ quality: 62 }).toFile(path.join(OUT, 'full', `${id}.webp`));
+    const info = await sharp(full).resize(720).webp({ quality: 62 }).toFile(path.join(out, 'full', `${id}.webp`));
     return { ok: true, h: info.height };
   } catch (e) {
     return { ok: false, err: String(e.message).split('\n')[0].slice(0, 140) };

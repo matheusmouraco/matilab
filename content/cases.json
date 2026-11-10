@@ -88,30 +88,6 @@
   "h": 3000
  },
  {
-  "id": "org-crossmissions-com",
-  "nome": "CrossMissions.Org",
-  "setor": "Igrejas e Projetos Sociais",
-  "tipo": "Site",
-  "url": "https://org.crossmissions.com/",
-  "h": 3000
- },
- {
-  "id": "crossmissions-com-2-2",
-  "nome": "CrossMissions",
-  "setor": "Igrejas e Projetos Sociais",
-  "tipo": "Site",
-  "url": "https://crossmissions.com/2-2/",
-  "h": 1324
- },
- {
-  "id": "crossmissions2-base44-app",
-  "nome": "CrossMissions · Formação",
-  "setor": "Igrejas e Projetos Sociais",
-  "tipo": "Site",
-  "url": "https://crossmissions2.base44.app/",
-  "h": 2507
- },
- {
   "id": "filhascafi-com-br",
   "nome": "Filhas da Visão 2026",
   "setor": "Igrejas e Projetos Sociais",
@@ -381,7 +357,7 @@
   "setor": "Saúde e Clínicas",
   "tipo": "Site",
   "url": "https://dermatologianakamura.com.br/",
-  "h": 2209
+  "h": 2995
  },
  {
   "id": "clinicaaurum-com-br",
@@ -413,7 +389,7 @@
   "setor": "Saúde e Clínicas",
   "tipo": "Landing page",
   "url": "https://andre.mouraclientes.com.br/",
-  "h": 2957
+  "h": 3000
  },
  {
   "id": "icnv-med-br",
@@ -477,7 +453,7 @@
   "setor": "Finanças e Contabilidade",
   "tipo": "Site",
   "url": "https://creditsbrasil.com.br/",
-  "h": 2629
+  "h": 2627
  },
  {
   "id": "blackfinance-com-br",
@@ -485,14 +461,6 @@
   "setor": "Finanças e Contabilidade",
   "tipo": "Site",
   "url": "https://blackfinance.com.br/",
-  "h": 2936
- },
- {
-  "id": "calixfamilyoffice-vercel-app",
-  "nome": "Calix Family Office",
-  "setor": "Finanças e Contabilidade",
-  "tipo": "Site",
-  "url": "https://calixfamilyoffice.vercel.app/",
   "h": 3000
  },
  {
@@ -781,7 +749,7 @@
   "setor": "Hotelaria",
   "tipo": "Site",
   "url": "https://hoteltechbr.com/",
-  "h": 2321
+  "h": 3000
  },
  {
   "id": "textilflorence-com-br",
@@ -1229,7 +1197,7 @@
   "setor": "Estampas e Brindes",
   "tipo": "Site",
   "url": "http://onestampas.com.br/",
-  "h": 2511
+  "h": 1690
  },
  {
   "id": "aquilabrindes-mouraclientes-com-br",
@@ -1550,5 +1518,69 @@
   "tipo": "Site",
   "url": "https://fastrepair.base44.app/",
   "h": 2529
+ },
+ {
+  "id": "calixfamilly-vercel-app",
+  "nome": "Calix Family Office",
+  "setor": "Finanças e Contabilidade",
+  "tipo": "Site",
+  "url": "https://calixfamilly.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "crossmissions-com",
+  "nome": "Cross Missions",
+  "setor": "Igrejas e Projetos Sociais",
+  "tipo": "Site",
+  "url": "https://crossmissions.com/",
+  "h": 450
+ },
+ {
+  "id": "render-arqui-studio",
+  "nome": "ArquiStudio Render",
+  "setor": "Arquitetura e Interiores",
+  "tipo": "Plataforma",
+  "url": "https://render.arqui.studio/",
+  "h": 3000
+ },
+ {
+  "id": "ntc-telecom-vercel-app",
+  "nome": "NTC telecom",
+  "setor": "Tecnologia",
+  "tipo": "Landing page",
+  "url": "https://ntc-telecom.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "matilab-com-br-propostas-engeajuda-calculador",
+  "nome": "EngeAjuda · Simulador de Regularização",
+  "setor": "Engenharia e Regularização",
+  "tipo": "Plataforma",
+  "url": "https://www.matilab.com.br/propostas/engeajuda/calculadora/simulador-regularizacao",
+  "h": 2863
+ },
+ {
+  "id": "marcenaria-irmaos-almeida-vercel-app",
+  "nome": "Marcenaria Irmãos Almeida",
+  "setor": "Arquitetura e Interiores",
+  "tipo": "Landing page",
+  "url": "https://marcenaria-irmaos-almeida.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "analise-matilab-com-br-rood-garage",
+  "nome": "Rood Garage",
+  "setor": "Automotivo e Transportes",
+  "tipo": "Site",
+  "url": "https://analise.matilab.com.br/rood-garage",
+  "h": 3000
+ },
+ {
+  "id": "igrejacasafirme-vercel-app",
+  "nome": "Igreja Casa Firme · Novo site",
+  "setor": "Igrejas e Projetos Sociais",
+  "tipo": "Site",
+  "url": "https://igrejacasafirme.vercel.app/",
+  "h": 3000
  }
 ]
