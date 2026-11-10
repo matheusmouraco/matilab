@@ -9,35 +9,38 @@
 <meta property="og:title" content="Identidade Visual e Papelaria para Casamento | Proposta Matilab" />
 <meta property="og:description" content="Cada detalhe pensado para contar a história de vocês." />
 <meta property="og:type" content="website" />
-<meta name="theme-color" content="#F3F4F7" />
+<meta name="theme-color" content="#FBF6F4" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --bg:#F3F4F7;
+    --bg:#FBF6F4;
     --paper:#FFFFFF;
-    --mist:#E6E9F2;
-    --ink:#11182E;
-    --ink-2:#4A5168;
-    --ink-3:#808699;
-    --cobalt:#2A45B0;
-    --cobalt-d:#1D3189;
-    --cobalt-l:#C9D2F2;
-    --line:rgba(17,24,46,.12);
-    --line-2:rgba(17,24,46,.07);
+    --mist:#F5E8E5;
+    --blush:#F2DCD7;
+    --sage:#DFE7DA;
+    --lav:#E9E3F0;
+    --ink:#2F2731;
+    --ink-2:#5B515B;
+    --ink-3:#877D86;
+    --cobalt:#A55A69;
+    --cobalt-d:#8B4756;
+    --cobalt-l:#EAC6C9;
+    --line:rgba(47,39,49,.12);
+    --line-2:rgba(47,39,49,.07);
     --r:14px;
     --maxw:1200px;
     --ease:cubic-bezier(.16,1,.3,1);
-    --serif:"Bodoni Moda", "Didot", Georgia, serif;
+    --serif:"Playfair Display", Georgia, serif;
     --sans:"Geist", system-ui, sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
   a{color:inherit}
-  h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:1.08}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;line-height:1.12}
   em{font-style:italic}
   .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--cobalt)}
   .muted{color:var(--ink-2)}
@@ -65,9 +68,9 @@
   .hero .facts span{display:block;margin-top:6px;font-size:13px;line-height:1.35;color:var(--ink-3)}
 
   /* flat lay */
-  .flatlay{position:relative;aspect-ratio:4/4.4;background:var(--cobalt);border-radius:var(--r);overflow:hidden;
-    background-image:radial-gradient(120% 80% at 80% 0%,rgba(255,255,255,.14),transparent 60%),radial-gradient(80% 60% at 0% 100%,rgba(0,0,0,.18),transparent 60%)}
-  .card{position:absolute;background:var(--paper);color:var(--cobalt);box-shadow:0 2px 4px rgba(10,20,60,.18),0 30px 50px -20px rgba(10,20,60,.55);text-align:center;font-family:var(--serif)}
+  .flatlay{position:relative;aspect-ratio:4/4.4;background:var(--blush);border-radius:var(--r);overflow:hidden;
+    background-image:radial-gradient(120% 80% at 80% 0%,rgba(255,255,255,.55),transparent 60%),radial-gradient(70% 60% at 0% 100%,rgba(223,231,218,.9),transparent 65%)}
+  .card{position:absolute;background:var(--paper);color:var(--cobalt);box-shadow:0 2px 4px rgba(120,60,70,.12),0 30px 50px -22px rgba(120,60,70,.4);text-align:center;font-family:var(--serif)}
   .invite{width:52%;aspect-ratio:5/7;left:21%;top:11%;transform:rotate(-3deg);padding:7% 6%;display:flex;flex-direction:column;align-items:center;justify-content:space-between;animation:float1 1.2s var(--ease) both}
   .invite::after{content:"";position:absolute;inset:4.5%;border:1px solid var(--cobalt-l);pointer-events:none}
   .invite .tiny{font-family:var(--sans);font-size:clamp(7px,.72vw,9.5px);letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2)}
@@ -76,7 +79,7 @@
   .invite .names i{font-size:.8em}
   .invite .line{width:30%;height:1px;background:var(--cobalt-l)}
   .invite .date{font-family:var(--sans);font-size:clamp(8px,.8vw,10.5px);letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
-  .std{width:28%;aspect-ratio:1;right:7%;top:6%;transform:rotate(8deg);display:grid;place-content:center;gap:6px;background:#FBFBFD;animation:float2 1.2s .1s var(--ease) both}
+  .std{width:28%;aspect-ratio:1;right:7%;top:6%;transform:rotate(8deg);display:grid;place-content:center;gap:6px;background:#F7FAF5;animation:float2 1.2s .1s var(--ease) both}
   .std em{font-size:clamp(16px,1.8vw,25px);line-height:1.05}
   .std span{font-family:var(--sans);font-size:clamp(7px,.7vw,9.5px);letter-spacing:.12em;color:var(--ink)}
   .table{width:22%;aspect-ratio:3/4;left:5%;bottom:9%;transform:rotate(-9deg);display:grid;place-content:center;animation:float3 1.2s .2s var(--ease) both}
@@ -105,15 +108,15 @@
   .bento{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:auto auto;gap:16px;margin-top:56px}
   .tile{border-radius:var(--r);padding:30px;position:relative;overflow:hidden;min-height:250px;display:flex;flex-direction:column;justify-content:space-between}
   .tile h3{font-size:24px;line-height:1.2}
-  .tile p{font-size:15px;color:var(--ink-2);margin-top:6px}
-  .t-mono{grid-row:span 2;background:var(--cobalt);color:#fff}
-  .t-mono p{color:rgba(255,255,255,.75)}
-  .t-mono .big{font-family:var(--serif);font-style:italic;font-size:clamp(120px,14vw,200px);line-height:.9;color:#fff;text-align:center;margin:20px 0}
-  .t-mono .big small{font-size:.42em;vertical-align:.5em;color:var(--cobalt-l)}
+  .tile p{font-size:15.5px;color:var(--ink-2);margin-top:6px}
+  .t-mono{grid-row:span 2;background:var(--blush);color:var(--ink)}
+  .t-mono p{color:var(--ink-2)}
+  .t-mono .big{font-family:var(--serif);font-style:italic;font-size:clamp(120px,14vw,200px);line-height:.9;color:var(--cobalt);text-align:center;margin:20px 0}
+  .t-mono .big small{font-size:.42em;vertical-align:.5em;color:var(--ink-3)}
   .t-pal{background:var(--paper);border:1px solid var(--line-2)}
   .swatch{display:flex;height:84px;border-radius:10px;overflow:hidden}
   .swatch i{flex:1}
-  .t-type{background:var(--mist)}
+  .t-type{background:var(--lav)}
   .t-type .spec{font-family:var(--serif);font-size:58px;line-height:1}
   .t-type .spec em{color:var(--cobalt)}
   .t-type .spec2{font-family:var(--sans);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2);margin-top:8px}
@@ -122,12 +125,12 @@
   .orn::before,.orn::after{content:"";flex:1;height:1px;background:currentColor;opacity:.4}
   .orn i{width:9px;height:9px;border:1px solid currentColor;transform:rotate(45deg)}
   .orn b{font-family:var(--serif);font-weight:400;font-style:italic;font-size:26px}
-  .t-std{background:var(--ink);color:#fff}
-  .t-std p{color:rgba(255,255,255,.65)}
+  .t-std{background:var(--sage);color:var(--ink)}
+  .t-std p{color:var(--ink-2)}
   .stack{display:flex;gap:8px}
   .stack i{flex:1;aspect-ratio:3/4;border-radius:4px;background:#fff;opacity:.95;position:relative}
   .stack i::after{content:"&";position:absolute;inset:0;display:grid;place-items:center;font-family:var(--serif);font-style:italic;color:var(--cobalt);font-size:22px}
-  .stack i:nth-child(2){background:var(--cobalt-l)} .stack i:nth-child(4){background:var(--cobalt-l)}
+  .stack i:nth-child(2){background:var(--blush)} .stack i:nth-child(4){background:var(--lav)}
 
   /* pre casamento: indice */
   .suite{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
@@ -144,11 +147,11 @@
   /* cerimonia: grade de pecas */
   .pieces{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
   .piece{background:var(--paper);border-radius:var(--r);overflow:hidden;border:1px solid var(--line-2);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
-  .piece:hover{transform:translateY(-4px);box-shadow:0 30px 50px -30px rgba(17,24,46,.35)}
-  .stage{height:200px;background:var(--mist);display:grid;place-items:center;position:relative;overflow:hidden}
-  .piece:nth-child(2) .stage,.piece:nth-child(6) .stage{background:var(--cobalt)}
-  .piece:nth-child(4) .stage{background:var(--ink)}
-  .mini{background:#fff;color:var(--cobalt);font-family:var(--serif);text-align:center;box-shadow:0 18px 30px -16px rgba(10,20,60,.45);transition:transform .6s var(--ease)}
+  .piece:hover{transform:translateY(-4px);box-shadow:0 30px 50px -30px rgba(120,60,70,.3)}
+  .stage{height:200px;background:var(--blush);display:grid;place-items:center;position:relative;overflow:hidden}
+  .piece:nth-child(2) .stage,.piece:nth-child(6) .stage{background:var(--sage)}
+  .piece:nth-child(4) .stage{background:var(--lav)}
+  .mini{background:#fff;color:var(--cobalt);font-family:var(--serif);text-align:center;box-shadow:0 18px 30px -16px rgba(120,60,70,.35);transition:transform .6s var(--ease)}
   .piece:hover .mini{transform:rotate(0) scale(1.04)!important}
   .m-menu{width:92px;height:140px;transform:rotate(-4deg);padding:16px 10px;display:flex;flex-direction:column;align-items:center;gap:7px}
   .m-menu em{font-size:17px}
@@ -169,7 +172,7 @@
   .m-tag em{font-size:14px;line-height:1.1;display:block}
   .piece .txt{padding:24px 26px 28px}
   .piece h3{font-size:23px}
-  .piece p{font-size:15px;color:var(--ink-2);margin-top:6px}
+  .piece p{font-size:15.5px;color:var(--ink-2);margin-top:6px}
 
   /* entrega */
   .deliver{display:grid;grid-template-columns:1fr 1.4fr;gap:72px;align-items:center}
@@ -180,22 +183,24 @@
   .exclude{margin-top:18px;font-size:14.5px;color:var(--ink-3);padding-left:24px;border-left:2px solid var(--cobalt-l)}
 
   /* investimento */
-  .invest{background:var(--cobalt);color:#fff;border-radius:calc(var(--r) * 1.6);padding:72px;display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;position:relative;overflow:hidden}
-  .invest::after{content:"&";position:absolute;right:-30px;bottom:-140px;font-family:var(--serif);font-style:italic;font-size:520px;line-height:1;color:rgba(255,255,255,.06);pointer-events:none}
-  .invest .eyebrow{color:var(--cobalt-l)}
+  .invest{background:var(--blush);color:var(--ink);border-radius:calc(var(--r) * 1.6);padding:72px;display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;position:relative;overflow:hidden}
+  .invest::after{content:"&";position:absolute;right:-30px;bottom:-140px;font-family:var(--serif);font-style:italic;font-size:520px;line-height:1;color:rgba(165,90,105,.08);pointer-events:none}
+  .invest .eyebrow{color:var(--cobalt)}
   .invest h2{font-size:clamp(34px,4vw,52px);margin-top:14px}
-  .invest .muted{color:rgba(255,255,255,.75);margin-top:16px;max-width:42ch}
+  .invest .muted{color:var(--ink-2);margin-top:16px;max-width:42ch}
   .invest ul{list-style:none;margin-top:26px;display:grid;gap:10px}
-  .invest li{display:flex;gap:12px;align-items:center;font-size:15.5px;color:rgba(255,255,255,.9)}
-  .invest li svg{width:18px;height:18px;flex:none;color:var(--cobalt-l)}
-  .ticket{background:#fff;color:var(--ink);border-radius:var(--r);padding:40px;position:relative;z-index:1}
+  .invest li{display:flex;gap:12px;align-items:center;font-size:16px;color:var(--ink)}
+  .invest li svg{width:18px;height:18px;flex:none;color:var(--cobalt)}
+  .ticket{background:#fff;color:var(--ink);border-radius:var(--r);padding:40px;position:relative;z-index:1;box-shadow:0 30px 60px -36px rgba(120,60,70,.45)}
   .ticket small{font-size:13px;color:var(--ink-3)}
-  .price{font-family:var(--serif);font-size:clamp(56px,6.5vw,84px);line-height:1;margin:8px 0 28px;color:var(--cobalt)}
+  .price{font-family:var(--serif);font-size:clamp(56px,6.5vw,84px);line-height:1;margin:8px 0 10px;color:var(--cobalt)}
+  .install{font-size:18px;color:var(--ink-2);margin-bottom:24px}
+  .install b{color:var(--ink);font-weight:600}
   .price sup{font-size:.36em;vertical-align:1.3em;margin-right:6px}
   .price span{font-size:.42em}
   .parts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .parts div{background:var(--mist);border-radius:10px;padding:16px 18px}
-  .parts b{font-family:var(--serif);font-weight:500;font-size:24px;display:block}
+  .parts div{background:var(--bg);border-radius:10px;padding:16px 18px}
+  .parts b{font-family:var(--serif);font-weight:500;font-size:20px;display:block}
   .parts span{font-size:13px;color:var(--ink-2)}
   .ticket .btn{width:100%;justify-content:center;margin-top:20px}
 
@@ -206,7 +211,7 @@
   .step .dot{width:56px;height:56px;border-radius:50%;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;font-family:var(--serif);font-style:italic;font-size:22px;color:var(--cobalt);position:relative}
   .step:first-child .dot{background:var(--cobalt);color:#fff;border-color:var(--cobalt)}
   .step h3{font-size:23px;margin-top:22px}
-  .step p{font-size:15px;color:var(--ink-2);margin-top:8px}
+  .step p{font-size:15.5px;color:var(--ink-2);margin-top:8px}
   .fineprint{margin-top:48px;padding:24px 28px;background:var(--paper);border-radius:var(--r);border:1px solid var(--line-2);font-size:15px;color:var(--ink-2);max-width:780px}
 
   /* cta */
@@ -321,7 +326,7 @@
           <div class="big">N<small>&amp;</small>N</div>
         </div>
         <div class="tile t-pal reveal d1">
-          <div class="swatch" aria-hidden="true"><i style="background:#11182E"></i><i style="background:#2A45B0"></i><i style="background:#C9D2F2"></i><i style="background:#E6E9F2"></i><i style="background:#fff"></i></div>
+          <div class="swatch" aria-hidden="true"><i style="background:#A55A69"></i><i style="background:#F2DCD7"></i><i style="background:#DFE7DA"></i><i style="background:#E9E3F0"></i><i style="background:#FBF6F4"></i></div>
           <div><h3>Paleta de cores</h3><p>Definida a partir do estilo da festa.</p></div>
         </div>
         <div class="tile t-type reveal d2">
@@ -409,9 +414,10 @@
         <div class="ticket">
           <small>Valor total do projeto</small>
           <p class="price"><sup>R$</sup>1.090<span>,00</span></p>
+          <p class="install">em <b>2x de R$ 545,00</b></p>
           <div class="parts">
-            <div><b>R$ 545,00</b><span>50% na contratação</span></div>
-            <div><b>R$ 545,00</b><span>50% na aprovação final</span></div>
+            <div><b>1ª parcela</b><span>na contratação</span></div>
+            <div><b>2ª parcela</b><span>na aprovação final</span></div>
           </div>
           <a class="btn solid" data-wa href="#">Aprovar pelo WhatsApp</a>
         </div>
