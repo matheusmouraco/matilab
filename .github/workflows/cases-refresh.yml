@@ -16,7 +16,8 @@ concurrency:
 
 jobs:
   refresh:
-    runs-on: ubuntu-latest
+    # 24.04 fixo: o Playwright 1.56 não suporta o Ubuntu 26.04 do ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 120
     steps:
       - name: Checkout
