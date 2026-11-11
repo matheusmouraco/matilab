@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Proposta Matilab | Site EngePrado</title>
+<meta name="description" content="Proposta comercial da Matilab para o novo site da EngePrado Projetos e Consultoria.">
+<link rel="icon" href="/propostas/engeprado/assets/favicon.png">
+<link rel="preload" href="/propostas/engeprado/assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Geist';font-style:normal;font-weight:100 900;font-display:swap;src:url(/propostas/engeprado/assets/fonts/geist-latin.woff2) format('woff2')}
+@font-face{font-family:'Geist Mono';font-style:normal;font-weight:100 900;font-display:swap;src:url(/propostas/engeprado/assets/fonts/geist-mono-latin.woff2) format('woff2')}
+:root{
+  --bg:#fafaf8;--bg-2:#f1f0ec;--card:#fff;
+  --ink:#1f1f1e;--ink-2:#3a3a38;--muted:#6a6862;--line:#e3e1dc;--line-2:#d4d1ca;
+  --dark:#232322;--line-d:rgba(255,255,255,.12);--muted-d:#a9a59d;
+  --amber:#ffa30f;--amber-2:#f09400;--amber-ink:#975800;--amber-soft:#fff4e0;
+  --sans:"Geist",system-ui,-apple-system,sans-serif;--mono:"Geist Mono",ui-monospace,monospace;
+  --max:1280px;--pad:clamp(20px,4vw,56px);--ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;letter-spacing:-.005em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--amber);color:var(--ink)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.sec{padding:clamp(72px,8vw,112px) 0}
+.alt{background:var(--bg-2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 22px;border-radius:999px;font-weight:580;font-size:15.5px;letter-spacing:-.01em;white-space:nowrap;transition:background .25s,border-color .25s,transform .2s}
+.btn:active{transform:translateY(1px)}
+.btn-a{background:var(--amber);color:var(--ink)}
+.btn-a:hover{background:var(--amber-2)}
+.btn-l{border:1px solid var(--line-2);color:var(--ink);background:var(--card)}
+.btn-l:hover{border-color:var(--ink)}
+.btn .ar{transition:transform .3s var(--ease)}
+.btn:hover .ar{transform:translateX(3px)}
+
+h1,h2,h3{font-weight:600;letter-spacing:-.03em;text-wrap:balance}
+.h2{font-size:clamp(30px,3.4vw,46px);line-height:1.1;max-width:22ch}
+.intro{max-width:720px;margin-bottom:clamp(40px,5vw,60px)}
+.intro p{margin-top:18px;font-size:clamp(16.5px,1.2vw,18.5px);color:var(--muted);max-width:62ch;text-wrap:pretty}
+.intro p b{color:var(--ink);font-weight:550}
+.eyebrow{display:block;font-size:14.5px;font-weight:550;color:var(--amber-ink);margin-bottom:16px}
+
+.rv{opacity:0;transform:translateY(16px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* topo */
+.top{position:sticky;top:0;z-index:30;background:rgba(250,250,248,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.brands{display:flex;align-items:center;gap:14px}
+.brands .ep{height:34px;width:auto}
+.brands .x{color:var(--muted);font-size:14px}
+.brands .mt{height:18px;width:auto}
+.top nav{display:flex;gap:2px}
+.top nav a{padding:8px 12px;border-radius:999px;font-size:14.5px;color:var(--ink-2);transition:background .2s}
+.top nav a:hover{background:var(--bg-2)}
+.top .btn{height:40px;padding:0 18px;font-size:14.5px}
+
+/* hero */
+.hero{padding:clamp(48px,6vw,80px) 0 0}
+.hero-in{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(38px,4.4vw,60px);line-height:1.06;letter-spacing:-.038em;max-width:16ch}
+.hero h1 mark{background:linear-gradient(transparent 62%,var(--amber) 62%,var(--amber) 92%,transparent 92%);color:inherit;padding:0 .04em}
+.hero .sub{margin-top:22px;font-size:clamp(17px,1.3vw,19px);color:var(--muted);max-width:46ch}
+.hero .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.wall{border-radius:16px;background:var(--card);border:1px solid var(--line);padding:clamp(16px,2vw,24px);box-shadow:0 24px 60px -30px rgba(40,30,10,.25)}
+.wall figcaption{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.wall figcaption b{color:var(--ink);font-weight:550}
+.meta{margin-top:clamp(48px,6vw,72px);display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr;border-top:1px solid var(--line-2)}
+.meta div{padding:20px 20px 28px 0}
+.meta div+div{padding-left:20px;border-left:1px solid var(--line)}
+.meta dt{font-size:13px;color:var(--muted)}
+.meta dd{font-size:15.5px;font-weight:550;margin-top:4px;line-height:1.35}
+.meta .o{color:var(--amber-ink)}
+
+/* diagnóstico */
+.gap{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line-2);border-radius:16px;overflow:hidden;background:var(--card)}
+.gap>div{padding:clamp(24px,3vw,36px)}
+.gap>div+div{border-left:1px solid var(--line)}
+.gap strong{display:block;font-size:clamp(40px,4.4vw,60px);font-weight:600;letter-spacing:-.045em;line-height:.95}
+.gap strong small{font-size:.36em;font-weight:550;letter-spacing:-.01em;color:var(--amber-ink);margin-left:6px}
+.gap h3{margin-top:14px;font-size:18px;line-height:1.3;letter-spacing:-.015em}
+.gap p{margin-top:6px;font-size:15.5px;color:var(--muted)}
+.search{margin-top:clamp(40px,5vw,56px);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,72px);align-items:start}
+.search h3{font-size:clamp(20px,1.7vw,24px);line-height:1.25}
+.search>div>p{margin-top:10px;color:var(--muted);font-size:16px;max-width:52ch}
+.q{display:grid;gap:8px}
+.q span{display:flex;align-items:center;gap:12px;padding:13px 18px;border-radius:12px;background:var(--card);border:1px solid var(--line);font-size:15.5px;color:var(--ink-2)}
+.q span::before{content:"";flex:0 0 14px;height:14px;border:1.6px solid var(--muted);border-radius:50%;box-shadow:5px 5px 0 -3.6px var(--muted)}
+.q span em{margin-left:auto;font-style:normal;font-family:var(--mono);font-size:12px;color:var(--amber-ink);white-space:nowrap}
+
+/* motivos */
+.why{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,96px);align-items:start}
+.why .intro{position:sticky;top:110px;margin-bottom:0}
+.reason{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:30px 0;border-top:1px solid var(--line-2)}
+.reason:last-child{border-bottom:1px solid var(--line-2)}
+.reason .n{font-family:var(--mono);font-size:14px;color:var(--amber-ink);padding-top:4px}
+.reason h3{font-size:clamp(20px,1.7vw,24px);line-height:1.2}
+.reason p{margin-top:10px;color:var(--muted);font-size:16px;max-width:56ch}
+.reason p b{color:var(--ink);font-weight:550}
+.brandrow{display:flex;flex-wrap:wrap;gap:18px;margin-top:16px;align-items:center}
+.brandrow span{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--ink-2)}
+.brandrow img{width:18px;height:18px}
+
+/* escopo */
+.map{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2);border-radius:16px;overflow:hidden;margin-bottom:clamp(40px,5vw,56px)}
+.map div{background:var(--card);padding:22px 24px 24px}
+.map .u{font-family:var(--mono);font-size:12.5px;color:var(--amber-ink)}
+.map h3{margin-top:8px;font-size:18px;letter-spacing:-.015em;line-height:1.25}
+.map p{margin-top:6px;font-size:14.5px;color:var(--muted);line-height:1.5}
+.pages{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:clamp(36px,4vw,48px)}
+.pages span{padding:9px 15px;border-radius:999px;border:1px solid var(--line-2);font-size:15px;background:var(--card)}
+.pages span.k{background:var(--ink);color:#fff;border-color:var(--ink)}
+.scope{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-2)}
+.scope div{padding:24px 24px 28px 0;border-bottom:1px solid var(--line)}
+.scope div:not(:nth-child(4n+1)){padding-left:24px;border-left:1px solid var(--line)}
+.scope h3{font-size:17px;letter-spacing:-.015em;line-height:1.3}
+.scope p{margin-top:8px;font-size:15px;color:var(--muted)}
+
+/* cronograma */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);counter-reset:s}
+.steps li{position:relative;padding:30px 20px 0 0;border-top:2px solid var(--line-2)}
+.steps li.hl{border-color:var(--amber)}
+.steps li::before{counter-increment:s;content:counter(s,decimal-leading-zero);position:absolute;top:10px;left:0;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.steps li.hl::before{color:var(--amber-ink)}
+.steps strong{display:block;margin-top:8px;font-size:16px;font-weight:600;letter-spacing:-.015em;line-height:1.25}
+.steps p{margin-top:6px;font-size:14.5px;color:var(--muted);line-height:1.5}
+.dur{margin-top:clamp(36px,4vw,48px);display:flex;align-items:baseline;gap:20px;flex-wrap:wrap}
+.dur strong{font-size:clamp(28px,2.8vw,36px);font-weight:600;letter-spacing:-.035em}
+.dur p{color:var(--muted);font-size:16px;max-width:62ch}
+
+/* investimento */
+.quote{border:1px solid var(--line-2);border-radius:16px;overflow:hidden;background:var(--card)}
+.q-head,.q-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr) 220px;gap:clamp(20px,3vw,48px)}
+.q-head{padding:14px clamp(20px,3vw,36px);background:var(--bg-2);border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+.q-head span:last-child{text-align:right}
+.q-row{padding:clamp(24px,3vw,36px);border-bottom:1px solid var(--line);align-items:start}
+.q-row h3{font-size:clamp(20px,1.7vw,23px);line-height:1.2}
+.q-row .d{margin-top:8px;color:var(--muted);font-size:15px}
+.q-row ul{list-style:none;display:grid;gap:8px}
+.q-row li{font-size:15px;color:var(--ink-2);padding-left:20px;position:relative;line-height:1.5}
+.q-row li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:1.5px;background:var(--amber-2)}
+.q-row li b{color:var(--ink);font-weight:550}
+.q-val{text-align:right}
+.q-val strong{display:block;font-size:clamp(38px,3.8vw,52px);font-weight:600;letter-spacing:-.045em;line-height:1;white-space:nowrap}
+.q-val strong small{font-size:.4em;font-weight:550;letter-spacing:-.01em;margin-right:4px;color:var(--muted)}
+.q-val span{display:block;margin-top:8px;font-size:14px;color:var(--muted)}
+.q-total{display:grid;grid-template-columns:repeat(2,1fr);background:var(--dark);color:#fff}
+.q-total div{padding:clamp(22px,2.6vw,30px) clamp(20px,3vw,36px)}
+.q-total div+div{border-left:1px solid var(--line-d)}
+.q-total span{font-size:14px;color:var(--muted-d)}
+.q-total strong{display:block;margin-top:6px;font-size:clamp(20px,1.9vw,26px);font-weight:600;letter-spacing:-.03em}
+.q-total strong em{font-style:normal;color:var(--amber)}
+.terms{margin-top:clamp(32px,4vw,48px);display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,28px)}
+.terms div{border-top:1px solid var(--line-2);padding-top:16px}
+.terms dt{font-size:13px;color:var(--muted)}
+.terms dd{margin-top:4px;font-size:16px;font-weight:600;letter-spacing:-.015em;line-height:1.3}
+.terms dd small{display:block;margin-top:4px;font-size:14px;font-weight:400;color:var(--muted);letter-spacing:0}
+
+/* quem faz */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:start}
+.about img.logo{height:28px;width:auto;margin-bottom:24px}
+.about p{color:var(--muted);font-size:17px;max-width:54ch;margin-top:16px}
+.about p b{color:var(--ink);font-weight:550}
+.contact{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-2)}
+.contact div{padding:20px 0 22px;border-bottom:1px solid var(--line)}
+.contact div:nth-child(even){padding-left:24px;border-left:1px solid var(--line)}
+.contact div.full{grid-column:1/-1}
+.contact dt{font-size:13px;color:var(--muted)}
+.contact dd{margin-top:4px;font-size:16px;font-weight:550;line-height:1.4}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:start}
+.faq-grid .intro{position:sticky;top:110px;margin-bottom:0}
+.faq details{border-top:1px solid var(--line-2)}
+.faq details:last-child{border-bottom:1px solid var(--line-2)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-size:clamp(17px,1.3vw,19px);font-weight:550;letter-spacing:-.015em;line-height:1.35}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:0 0 22px;height:22px;position:relative;transition:transform .35s var(--ease)}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1.5px;background:var(--ink);transform:translate(-50%,-50%)}
+.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq details[open] summary i{transform:rotate(45deg)}
+.faq .ans{padding:0 44px 24px 0;color:var(--muted);font-size:16px;max-width:64ch}
+.faq .ans b{color:var(--ink);font-weight:550}
+
+/* final */
+.final{background:var(--dark);color:#fff;padding:clamp(72px,8vw,112px) 0 0;position:relative;overflow:hidden}
+.final-in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(32px,5vw,72px);align-items:end}
+.final h2{font-size:clamp(36px,4.4vw,60px);line-height:1.05;letter-spacing:-.04em;max-width:15ch}
+.final p{margin-top:20px;color:var(--muted-d);font-size:18px;max-width:48ch}
+.final .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.final .btn-l{background:transparent;color:#fff;border-color:rgba(255,255,255,.28)}
+.final .btn-l:hover{border-color:#fff}
+.cube{justify-self:end;width:min(260px,60%);opacity:.95}
+footer{margin-top:clamp(64px,7vw,96px);border-top:1px solid var(--line-d);padding:24px 0 28px;font-size:13.5px;color:var(--muted-d)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer img{height:18px;width:auto}
+
+/* responsivo */
+@media (max-width:1080px){
+  .top nav{display:none}
+  .meta{grid-template-columns:repeat(3,1fr)}
+  .meta div:nth-child(4){padding-left:0;border-left:0}
+  .meta div:nth-child(n+4){border-top:1px solid var(--line)}
+  .scope{grid-template-columns:repeat(2,1fr)}
+  .scope div:not(:nth-child(4n+1)){padding-left:0;border-left:0}
+  .scope div:nth-child(even){padding-left:24px;border-left:1px solid var(--line)}
+  .map{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr);row-gap:28px}
+  .q-head{display:none}
+  .q-row{grid-template-columns:1fr 1fr}
+  .q-val{grid-column:1/-1;text-align:left;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding-top:18px;border-top:1px solid var(--line)}
+  .q-val span{margin-top:0}
+  .terms{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  .hero-in,.search,.why,.about,.faq-grid,.final-in{grid-template-columns:1fr}
+  .why .intro,.faq-grid .intro{position:static}
+  .gap{grid-template-columns:1fr}
+  .gap>div+div{border-left:0;border-top:1px solid var(--line)}
+  .q-row{grid-template-columns:1fr}
+  .q-total{grid-template-columns:1fr}
+  .q-total div+div{border-left:0;border-top:1px solid var(--line-d)}
+  .steps{grid-template-columns:1fr 1fr}
+  .cube{justify-self:start;width:140px}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .top .wrap{height:60px}
+  .brands .ep{height:28px}
+  .brands .mt,.brands .x{display:none}
+  .top .btn{padding:0 14px;font-size:14px}
+  .hero .acts .btn{flex:1}
+  .meta{grid-template-columns:1fr 1fr}
+  .meta div,.meta div+div{padding:16px 12px 18px 0;border-left:0;border-top:1px solid var(--line)}
+  .meta div:nth-child(1),.meta div:nth-child(5){grid-column:1/-1}
+  .meta div:nth-child(1){border-top:0}
+  .meta div:nth-child(3){padding-left:16px;border-left:1px solid var(--line)}
+  .map{grid-template-columns:1fr}
+  .scope{grid-template-columns:1fr}
+  .scope div:nth-child(even){padding-left:0;border-left:0}
+  .steps{grid-template-columns:1fr}
+  .terms{grid-template-columns:1fr}
+  .contact{grid-template-columns:1fr}
+  .contact div:nth-child(even){padding-left:0;border-left:0}
+  .reason{grid-template-columns:36px 1fr;gap:12px}
+  .q span em{display:none}
+  .faq .ans{padding-right:0}
+  .final .acts .btn{flex:1}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brands">
+      <img class="ep" src="/propostas/engeprado/assets/engeprado-logo.png" alt="EngePrado Projetos e Consultoria" width="79" height="34">
+      <span class="x">×</span>
+      <img class="mt" src="/propostas/engeprado/assets/matilab-logo-dark.svg" alt="Matilab" width="78" height="18">
+    </div>
+    <nav aria-label="Seções">
+      <a href="#diagnostico">Diagnóstico</a>
+      <a href="#escopo">Escopo</a>
+      <a href="#cronograma">Cronograma</a>
+      <a href="#investimento">Investimento</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-a" data-wa href="https://wa.me/5511992644010" target="_blank" rel="noopener">Aprovar proposta</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-in">
+      <div>
+        <span class="eyebrow">Proposta comercial para a EngePrado</span>
+        <h1>Quem atende Netflix e NBA precisa ser <mark>encontrado</mark> no Google.</h1>
+        <p class="sub">Um site novo no engeprado.com, com uma página para cada frente de serviço, a carteira de clientes à mostra e o WhatsApp a um toque de distância.</p>
+        <div class="acts">
+          <a class="btn btn-a" href="#investimento">Ver investimento <span class="ar">→</span></a>
+          <a class="btn btn-l" href="#escopo">O que entra no site</a>
+        </div>
+      </div>
+      <figure class="wall">
+        <img src="/propostas/engeprado/assets/clientes.webp" alt="Logos de clientes da EngePrado, entre eles Netflix, Heineken, Bayer, Volkswagen, CasaCor, Palmeiras, Rock in Rio, NBA, Metrô de São Paulo, Prefeitura de São Paulo, Governo do Estado de São Paulo, WeWork, MRV, Allianz Parque e TV Globo" fetchpriority="high" width="646" height="536">
+        <figcaption><span>Carteira atual, tirada do portfólio de vocês</span><b>36 marcas</b></figcaption>
+      </figure>
+    </div>
+    <dl class="meta">
+      <div><dt>Cliente</dt><dd>EngePrado Projetos e Consultoria</dd></div>
+      <div><dt>Aos cuidados de</dt><dd>Gabriela</dd></div>
+      <div><dt>Emissão</dt><dd>11/11/2026</dd></div>
+      <div><dt>Validade</dt><dd class="o">26/11/2026</dd></div>
+      <div><dt>Responsável</dt><dd>Matheus Moura, Matilab</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="sec" id="diagnostico">
+  <div class="wrap">
+    <div class="intro rv">
+      <h2 class="h2">A carteira é de gente grande. A presença online ainda não acompanha.</h2>
+      <p>Hoje a EngePrado é indicada boca a boca e pelo Instagram. Funciona, mas tem um teto: <b>quem não conhece vocês e procura no Google não encontra a empresa</b>, e quem recebe uma indicação não tem onde conferir.</p>
+    </div>
+    <div class="gap rv">
+      <div><strong>0<small>páginas</small></strong><h3>no Google hoje</h3><p>O domínio engeprado.com existe, mas não tem site no ar.</p></div>
+      <div><strong>6<small>frentes</small></strong><h3>de serviço no portfólio</h3><p>Alvarás, eventos, segurança, edificações, assessoria e bombeiros.</p></div>
+      <div><strong>40+<small>serviços</small></strong><h3>que alguém pesquisa todo dia</h3><p>Cada um deles é uma busca que hoje vai para um concorrente.</p></div>
+    </div>
+    <div class="search rv">
+      <div>
+        <h3>É isso que o síndico, o produtor de evento e o dono de restaurante digitam.</h3>
+        <p>Buscas com intenção de contratar, na região de São Paulo. O site novo é construído para aparecer nelas, com texto próprio para cada serviço.</p>
+      </div>
+      <div class="q">
+        <span>AVCB para evento em São Paulo<em>Corpo de Bombeiros</em></span>
+        <span>como tirar alvará de funcionamento local de reunião<em>Alvarás</em></span>
+        <span>regularização de imóvel com anistia SP<em>Edificações</em></span>
+        <span>despachante para desinterdição na prefeitura<em>Assessoria</em></span>
+        <span>certificado de acessibilidade São Paulo<em>Segurança</em></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="porque">
+  <div class="wrap why">
+    <div class="intro rv">
+      <h2 class="h2">O que o site resolve para a EngePrado.</h2>
+      <p>Não é um cartão de visita. É a porta de entrada para quem ainda não conhece vocês, e a prova para quem já recebeu uma indicação.</p>
+    </div>
+    <div>
+      <div class="reason rv">
+        <span class="n">01</span>
+        <div>
+          <h3>Clientes novos pelo Google</h3>
+          <p>Uma página por frente de serviço, com os termos que o cliente usa de verdade. Somado ao <b>perfil da empresa no Google</b>, é o que coloca a EngePrado nas buscas de São Paulo.</p>
+          <div class="brandrow"><span><img src="/propostas/engeprado/assets/logo-google.svg" alt="">Google Busca e Maps</span></div>
+        </div>
+      </div>
+      <div class="reason rv">
+        <span class="n">02</span>
+        <div>
+          <h3>Credibilidade em contas grandes</h3>
+          <p>Empresa grande pesquisa o fornecedor antes de fechar. Ter <b>site próprio com a carteira de clientes</b> e os serviços explicados encurta a conversa e justifica o preço.</p>
+        </div>
+      </div>
+      <div class="reason rv">
+        <span class="n">03</span>
+        <div>
+          <h3>Recomendado pelas IAs</h3>
+          <p>Cada vez mais gente pergunta para a IA quem resolve um AVCB ou um alvará. Estruturamos o conteúdo para que essas ferramentas consigam ler e citar a EngePrado.</p>
+          <div class="brandrow"><span><img src="/propostas/engeprado/assets/logo-chatgpt.svg" alt="">ChatGPT</span><span><img src="/propostas/engeprado/assets/logo-gemini.svg" alt="">Gemini</span><span><img src="/propostas/engeprado/assets/logo-perplexity.svg" alt="">Perplexity</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="escopo">
+  <div class="wrap">
+    <div class="intro rv">
+      <h2 class="h2">O que entra no projeto.</h2>
+      <p>O portfólio de vocês já organiza tudo em seis frentes. <b>Cada frente vira uma página</b>, com os serviços explicados em linguagem de cliente e um botão direto para o WhatsApp.</p>
+    </div>
+    <div class="map rv">
+      <div><span class="u">/alvaras</span><h3>Alvarás</h3><p>AFL, ALF, Vigilância Sanitária, heliponto, CADAN e revalidações.</p></div>
+      <div><span class="u">/eventos</span><h3>Eventos temporários</h3><p>Alvará de evento, AVCB temporário, laudos de estruturas e montagem.</p></div>
+      <div><span class="u">/seguranca-e-acessibilidade</span><h3>Segurança e acessibilidade</h3><p>Certificado de Segurança, FICAM, cadastros especiais e acessibilidade.</p></div>
+      <div><span class="u">/edificacoes</span><h3>Edificações</h3><p>Aprovação e execução, reforma, Habite-se, regularização e anistia.</p></div>
+      <div><span class="u">/gestao-e-assessoria</span><h3>Gestão e assessoria</h3><p>Desinterdição, CTLU, TCAEP e controle de prazos e renovações.</p></div>
+      <div><span class="u">/corpo-de-bombeiros</span><h3>Corpo de Bombeiros</h3><p>Projeto de incêndio, AVCB e CLCB, brigada e plano de emergência.</p></div>
+    </div>
+    <div class="pages rv">
+      <span class="k">Home</span><span class="k">6 páginas de serviço</span><span>Clientes</span><span>Sobre a EngePrado</span><span>Contato e WhatsApp</span>
+    </div>
+    <div class="scope rv">
+      <div><h3>Layout exclusivo</h3><p>Desktop e celular, na identidade da EngePrado, com 2 rodadas de ajuste.</p></div>
+      <div><h3>Textos dos serviços</h3><p>Escrevemos a partir do portfólio, em linguagem de quem contrata, e vocês revisam.</p></div>
+      <div><h3>SEO técnico e local</h3><p>Títulos, descrições, dados estruturados da empresa, sitemap e Search Console.</p></div>
+      <div><h3>Preparado para IAs</h3><p>Conteúdo organizado para ser lido e citado por ChatGPT, Gemini e afins.</p></div>
+      <div><h3>WhatsApp em todo lugar</h3><p>Botão fixo e chamadas por serviço, já com a mensagem certa preenchida.</p></div>
+      <div><h3>Velocidade no celular</h3><p>Meta de 90+ no PageSpeed. Site leve, que abre rápido até no 4G.</p></div>
+      <div><h3>Publicação no domínio</h3><p>Configuração do engeprado.com com HTTPS e e-mail preservado.</p></div>
+      <div><h3>Tudo no nome de vocês</h3><p>Domínio, conteúdo e acessos ficam com a EngePrado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="cronograma">
+  <div class="wrap">
+    <div class="intro rv">
+      <h2 class="h2">Do ok ao site no ar, em cinco passos.</h2>
+    </div>
+    <ol class="steps rv">
+      <li><strong>Aprovação</strong><p>Fechamento e reserva da produção.</p></li>
+      <li><strong>Material</strong><p>Logo, fotos de obras e eventos, e o portfólio que já temos.</p></li>
+      <li><strong>Layout</strong><p>Home e uma página de serviço para vocês aprovarem.</p></li>
+      <li><strong>Produção</strong><p>Todas as páginas, textos e SEO técnico.</p></li>
+      <li class="hl"><strong>No ar</strong><p>Publicação no engeprado.com e envio ao Google.</p></li>
+    </ol>
+    <div class="dur rv">
+      <strong>2 a 3 semanas</strong>
+      <p>a partir do material em mãos. Fotos reais de obras e eventos fazem muita diferença; se faltar, usamos imagens de banco escolhidas com critério.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="investimento">
+  <div class="wrap">
+    <div class="intro rv">
+      <span class="eyebrow">Investimento</span>
+      <h2 class="h2">Escopo fechado, valor único.</h2>
+      <p>Um investimento só, sem surpresa no meio do caminho.</p>
+    </div>
+    <div class="quote rv">
+      <div class="q-head"><span>Item</span><span>O que inclui</span><span>Valor</span></div>
+      <div class="q-row">
+        <div><h3>Site EngePrado</h3><p class="d">Projeto completo, do layout à publicação no domínio.</p></div>
+        <ul>
+          <li><b>Home, 6 páginas de serviço</b>, clientes, sobre e contato</li>
+          <li><b>Textos dos serviços</b> escritos a partir do portfólio</li>
+          <li><b>SEO técnico e local</b>, dados estruturados e Search Console</li>
+          <li><b>WhatsApp</b> em todas as páginas, com mensagem por serviço</li>
+          <li><b>Publicação</b> no engeprado.com com HTTPS</li>
+        </ul>
+        <div class="q-val"><strong><small>R$</small>2.000</strong><span>valor único</span></div>
+      </div>
+      <div class="q-total">
+        <div><span>Investimento total</span><strong>R$ 2.000 <em>valor único</em></strong></div>
+        <div><span>Domínio</span><strong>engeprado.com, já é de vocês</strong></div>
+      </div>
+    </div>
+    <dl class="terms rv">
+      <div><dt>Prazo</dt><dd>2 a 3 semanas<small>após o material em mãos</small></dd></div>
+      <div><dt>Ajustes</dt><dd>2 rodadas<small>no layout, antes da produção</small></dd></div>
+      <div><dt>Pagamento</dt><dd>50% + 50%<small>na aprovação e na publicação</small></dd></div>
+      <div><dt>Validade</dt><dd>26/11/2026<small>15 dias a partir da emissão</small></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="sec alt" id="quem">
+  <div class="wrap about">
+    <div class="rv">
+      <img class="logo" src="/propostas/engeprado/assets/matilab-logo-dark.svg" alt="Matilab" width="122" height="28">
+      <h2 class="h2">Quem conduz o projeto.</h2>
+      <p>A Matilab é uma agência de <b>sites, sistemas, landing pages, identidade visual, ads e social media</b>, com foco em desenvolvimento. O atendimento e a parte técnica ficam com o Matheus, dono da agência, com time de comercial, design e gestão por trás.</p>
+      <p>Já fizemos sites para escritórios de engenharia e regularização, então o vocabulário de alvará, AVCB e Habite-se não é novidade por aqui.</p>
+    </div>
+    <dl class="contact rv">
+      <div><dt>Responsável</dt><dd>Matheus Moura</dd></div>
+      <div><dt>WhatsApp</dt><dd>(11) 99264-4010</dd></div>
+      <div><dt>E-mail</dt><dd>contato@matilab.com.br</dd></div>
+      <div><dt>Site</dt><dd>matilab.com.br</dd></div>
+      <div class="full"><dt>Escritório</dt><dd>Alameda Vicente Pinzón, 173, Vila Olímpia, São Paulo</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="sec" id="duvidas">
+  <div class="wrap faq-grid">
+    <div class="intro rv">
+      <h2 class="h2">Perguntas frequentes.</h2>
+      <p>O que costuma aparecer antes de fechar, em poucas linhas.</p>
+    </div>
+    <div class="faq rv">
+      <details open><summary>Preciso escrever os textos?<i></i></summary><div class="ans">Não. Escrevemos a partir do portfólio que vocês mandaram e da nossa conversa. Vocês só revisam e corrigem o que for técnico.</div></details>
+      <details><summary>Vou perder o domínio ou o e-mail?<i></i></summary><div class="ans">Não. O engeprado.com continua no nome de vocês. Só apontamos o site para ele, e se houver e-mail no domínio, preservamos a configuração.</div></details>
+      <details><summary>Posso mostrar os logos dos clientes?<i></i></summary><div class="ans">Eles já estão no portfólio de vocês. No site, mostramos do mesmo jeito. Se algum cliente pedir sigilo, é só tirar da lista.</div></details>
+      <details><summary>O site aparece no Google logo que sobe?<i></i></summary><div class="ans">Enviamos o site ao Google no dia da publicação. A indexação costuma levar dias, e o posicionamento cresce nas semanas seguintes, conforme o Google lê as páginas de serviço.</div></details>
+      <details><summary>E se eu quiser mudar algo depois?<i></i></summary><div class="ans">Ajustes pequenos logo após a entrega fazem parte do projeto. Depois disso, mudanças pontuais são orçadas à parte, ou podemos combinar uma manutenção mensal se fizer sentido.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap final-in">
+    <div>
+      <h2>Vamos colocar a EngePrado no Google?</h2>
+      <p>Me manda o ok por aqui que eu reservo a produção e já te passo a lista de material. Em 2 a 3 semanas o engeprado.com está no ar.</p>
+      <div class="acts">
+        <a class="btn btn-a" data-wa href="https://wa.me/5511992644010" target="_blank" rel="noopener">Aprovar proposta <span class="ar">→</span></a>
+        <a class="btn btn-l" href="#investimento">Rever valores</a>
+      </div>
+    </div>
+    <svg class="cube" viewBox="0 0 120 130" aria-hidden="true"><path d="M60 4 112 32 60 60 8 32Z" fill="#3a3a38"/><path d="M8 32 60 60V126L8 98Z" fill="#ffa30f"/><path d="M112 32 60 60V126L112 98Z" fill="#2b2b2a"/><path d="M60 60 86 46V82L60 96Z" fill="#ffa30f" opacity=".9"/></svg>
+  </div>
+  <footer>
+    <div class="wrap">
+      <span>Proposta Matilab para EngePrado Projetos e Consultoria, emitida em 11/11/2026 e válida até 26/11/2026.</span>
+      <img src="/propostas/engeprado/assets/matilab-logo-white.svg" alt="Matilab" width="78" height="18">
+    </div>
+  </footer>
+</section>
+
+</main>
+
+<script>
+(()=>{
+  const CONFIG={whatsapp:"5511992644010",saudacao:"Oi Matheus! Vi a proposta do site da EngePrado e quero seguir."};
+  document.querySelectorAll('[data-wa]').forEach(a=>a.href="https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(CONFIG.saudacao));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target)}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+})();
+</script>
+</body>
+</html>
