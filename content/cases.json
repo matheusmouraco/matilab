@@ -1582,5 +1582,13 @@
   "tipo": "Site",
   "url": "https://alphacolors-site.vercel.app/",
   "h": 3000
+ },
+ {
+  "id": "techpink-com-br",
+  "nome": "TechPink",
+  "setor": "Varejo e E-commerce",
+  "tipo": "E-commerce",
+  "url": "https://techpink.com.br/",
+  "h": 2426
  }
 ]
