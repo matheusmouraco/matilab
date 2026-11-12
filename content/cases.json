@@ -1352,14 +1352,6 @@
   "h": 3000
  },
  {
-  "id": "geracaodosaber-vercel-app",
-  "nome": "Geração do Saber",
-  "setor": "Igrejas e Projetos Sociais",
-  "tipo": "Site",
-  "url": "https://geracaodosaber.vercel.app/",
-  "h": 3000
- },
- {
   "id": "analise-matilab-com-br-yeshuavidroseserralheria",
   "nome": "Yeshua Vidros e Serralheria",
   "setor": "Construção, Pisos e Manutenção",
@@ -1581,6 +1573,70 @@
   "setor": "Igrejas e Projetos Sociais",
   "tipo": "Site",
   "url": "https://igrejacasafirme.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "geracaodosaber-org",
+  "nome": "Geração do Saber",
+  "setor": "Igrejas e Projetos Sociais",
+  "tipo": "Site",
+  "url": "https://geracaodosaber.org/",
+  "h": 3000
+ },
+ {
+  "id": "simposio-cefaleia-vercel-app",
+  "nome": "II Simpósio Brasileiro de Cefaleia",
+  "setor": "Saúde e Clínicas",
+  "tipo": "Landing page",
+  "url": "https://simposio-cefaleia.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "pontocomprodutora-vercel-app",
+  "nome": "Ponto Comunicação",
+  "setor": "Agências e Marketing",
+  "tipo": "Site",
+  "url": "https://pontocomprodutora.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "murilobarbeiro-vercel-app",
+  "nome": "Murilo Barbeiro",
+  "setor": "Beleza e Estética",
+  "tipo": "Landing page",
+  "url": "https://murilobarbeiro.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "enjoy4famlies-info",
+  "nome": "Enjoy 4 Families",
+  "setor": "Igrejas e Projetos Sociais",
+  "tipo": "Site",
+  "url": "https://www.enjoy4famlies.info/",
+  "h": 1788
+ },
+ {
+  "id": "crossgift-org",
+  "nome": "CrossGifts",
+  "setor": "Igrejas e Projetos Sociais",
+  "tipo": "Site",
+  "url": "https://www.crossgift.org/",
+  "h": 2744
+ },
+ {
+  "id": "escoladosobrenatural-vercel-app",
+  "nome": "Escola do Sobrenatural",
+  "setor": "Igrejas e Projetos Sociais",
+  "tipo": "Site",
+  "url": "https://escoladosobrenatural.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "cavalosdoben-vercel-app",
+  "nome": "Cavalos do Ben · Novo site",
+  "setor": "Igrejas e Projetos Sociais",
+  "tipo": "Site",
+  "url": "https://cavalosdoben.vercel.app/",
   "h": 3000
  }
 ]
