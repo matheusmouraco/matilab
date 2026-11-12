@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Proposta Matilab | Site Dra. Taíse Tognon</title>
+<meta name="description" content="Proposta comercial da Matilab para a Dra. Taíse Tognon: o mesmo layout que ela ama, reconstruído em estrutura própria para ranquear no Google e ser citado pelas IAs.">
+<meta property="og:title" content="Dra. Taíse Tognon · Proposta do novo site">
+<meta property="og:description" content="O mesmo olhar, agora encontrado por quem procura.">
+<meta property="og:image" content="/propostas/taise/assets/hero.webp">
+<meta name="theme-color" content="#1d1f22">
+<link rel="icon" href="/propostas/taise/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Recoleta';src:url('/propostas/taise/assets/Recoleta-Light.woff2') format('woff2');font-weight:300;font-display:swap}
+  @font-face{font-family:'Recoleta';src:url('/propostas/taise/assets/Recoleta-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+
+  :root{
+    /* paleta tirada do site atual da Dra. Taíse */
+    --ouro:#BC9F77;
+    --ouro-esc:#9C7F57;
+    --ouro-cl:#F4EEE6;
+    --tinta:#33373D;
+    --tinta-2:#495057;
+    --cinza:#6B7178;
+    --grafite:#3F444B;
+    --noite:#1d1f22;
+    --branco:#ffffff;
+    --off:#FAF8F5;
+    --linha:rgba(51,55,61,.12);
+    --max:1140px;
+    --serif:'Recoleta',Georgia,serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+  body{font-family:var(--sans);color:var(--tinta);background:var(--branco);font-size:16.5px;line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:var(--serif);font-weight:300;line-height:1.12;letter-spacing:-.2px}
+  b,strong{font-weight:600}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+  @media(max-width:600px){.wrap{padding:0 16px}}
+
+  .eyebrow{font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ouro);font-weight:500}
+  .h2{font-size:clamp(2rem,4.2vw,3.1rem);color:var(--ouro)}
+  .h2.dark{color:var(--tinta)}
+  .lead{font-size:1.06rem;color:var(--tinta-2);max-width:620px}
+
+  .btn{display:inline-flex;align-items:center;gap:.7rem;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;padding:17px 30px;border:1px solid var(--ouro);color:var(--branco);background:var(--ouro);transition:background .25s,color .25s,border-color .25s}
+  .btn:hover{background:var(--ouro-esc);border-color:var(--ouro-esc)}
+  .btn.ghost{background:transparent;color:var(--branco);border-color:rgba(255,255,255,.55)}
+  .btn.ghost:hover{background:#fff;color:var(--tinta)}
+  .btn.line{background:transparent;color:var(--tinta);border-color:var(--ouro)}
+  .btn.line:hover{background:var(--ouro);color:#fff}
+  .btn svg{width:16px;height:16px}
+
+  /* NAV */
+  nav{position:absolute;top:0;left:0;right:0;z-index:10}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:104px}
+  nav .logo img{height:54px;width:auto}
+  nav .tag{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:.6rem}
+  nav .tag span{display:inline-block;width:28px;height:1px;background:var(--ouro)}
+  @media(max-width:640px){nav .tag span{display:none}nav .tag{font-size:.66rem;letter-spacing:.14em}nav .logo img{height:44px}}
+
+  /* HERO */
+  .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:#2a2624 url('/propostas/taise/assets/hero.webp') center/cover no-repeat}
+  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.28),rgba(0,0,0,.08) 40%,rgba(0,0,0,.45))}
+  .hero .in{position:relative;padding:150px 16px 120px;max-width:900px}
+  .hero .eyebrow{color:var(--ouro)}
+  .hero h1{font-size:clamp(2.6rem,7vw,5rem);margin:22px 0 24px;color:#fff}
+  .hero p{font-size:1.1rem;color:rgba(255,255,255,.86);max-width:620px;margin:0 auto 38px;font-weight:300}
+  .hero .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .hero .down{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ouro);display:flex;flex-direction:column;align-items:center;gap:8px}
+
+  /* CARTA (citação como no site dela) */
+  .carta{padding:120px 0 100px;text-align:center}
+  .carta .q{width:30px;margin:0 auto 22px;opacity:.5}
+  .carta blockquote{font-family:var(--serif);font-weight:300;font-size:clamp(1.35rem,2.6vw,1.75rem);line-height:1.38;max-width:780px;margin:0 auto;color:var(--tinta)}
+  .carta blockquote b{font-weight:700}
+  .carta .assina{margin-top:28px;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ouro)}
+
+  /* SPLIT (foto + texto, como "acompanha você em toda a sua jornada") */
+  .split{padding:40px 0 120px}
+  .split .grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0}
+  .split .foto{aspect-ratio:570/700;background:#eee center/cover no-repeat}
+  .split .txt{padding:0 0 0 64px;position:relative}
+  .split .txt h2{background:transparent}
+  .split .txt .body{padding-left:0;margin-top:26px;color:var(--tinta-2)}
+  .split .txt .body p+p{margin-top:14px}
+  .keep{margin-top:26px;padding-left:0;display:grid;gap:10px}
+  .keep li{list-style:none;display:flex;gap:12px;align-items:flex-start;font-size:.97rem}
+  .keep li::before{content:"";flex:0 0 18px;height:18px;margin-top:4px;border-radius:50%;background:var(--ouro-cl) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239C7F57' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/11px no-repeat}
+  @media(max-width:900px){
+    .split .grid{grid-template-columns:1fr}
+    .split .foto{max-width:460px;width:100%}
+    .split .txt{margin:34px 0 0;padding:0}
+    .split .txt .body,.keep{padding-left:0}
+  }
+
+  /* GALERIA (fotos reais dela e da clínica) */
+  .galeria{padding:0 0 120px}
+  .galeria .gr{display:grid;grid-template-columns:1fr 1.25fr 1.25fr 1fr;gap:14px;align-items:stretch}
+  .galeria .gr div{background:#eee center/cover no-repeat;aspect-ratio:3/4}
+  .galeria .gr div:nth-child(2),.galeria .gr div:nth-child(3){aspect-ratio:auto}
+  .galeria p{margin-top:18px;font-size:.84rem;color:var(--cinza);text-align:center;letter-spacing:.04em}
+  @media(max-width:760px){.galeria .gr{grid-template-columns:1fr 1fr}.galeria .gr div{aspect-ratio:3/4!important}}
+
+  /* DIAGNÓSTICO */
+  .diag{background:var(--off);padding:110px 0}
+  .diag .head{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:end;margin-bottom:56px}
+  .diag .head p{color:var(--tinta-2)}
+  .nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--linha);border:1px solid var(--linha)}
+  .num{background:#fff;padding:30px 26px 28px}
+  .num .v{font-family:var(--serif);font-size:2.9rem;line-height:1;color:var(--ouro)}
+  .num .v small{font-size:1.2rem;color:var(--cinza)}
+  .num .l{margin-top:14px;font-size:.92rem;color:var(--tinta-2);line-height:1.5}
+  .achados{margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:18px 50px}
+  .achado{display:flex;gap:16px;padding:20px 0;border-top:1px solid var(--linha)}
+  .achado .i{flex:0 0 auto;font-family:var(--serif);color:var(--ouro);font-size:1.1rem;width:28px}
+  .achado h3{font-family:var(--sans);font-weight:600;font-size:1rem;color:var(--tinta);margin-bottom:4px;letter-spacing:0}
+  .achado p{font-size:.93rem;color:var(--cinza);line-height:1.6}
+  .achado code{font-family:ui-monospace,Menlo,monospace;font-size:.84rem;background:var(--ouro-cl);color:var(--ouro-esc);padding:1px 6px;border-radius:3px}
+  .diag .nota{margin-top:36px;font-size:.84rem;color:var(--cinza)}
+  @media(max-width:900px){.diag .head,.achados{grid-template-columns:1fr}.nums{grid-template-columns:1fr 1fr}.diag .head{gap:20px}}
+  @media(max-width:420px){.num{padding:22px 16px}.num .v{font-size:2.3rem}}
+
+  /* SERP / IA */
+  .busca{padding:120px 0}
+  .busca .head{text-align:center;max-width:720px;margin:0 auto 60px}
+  .busca .head .lead{margin:18px auto 0}
+  .serps{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .serp{border:1px solid var(--linha);padding:28px 28px 30px;background:#fff}
+  .serp .lab{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+  .serp.antes .lab{color:var(--cinza)}
+  .serp.depois{border-color:var(--ouro);box-shadow:0 30px 60px -40px rgba(156,127,87,.55)}
+  .serp.depois .lab{color:var(--ouro-esc)}
+  .g{font-family:Arial,sans-serif}
+  .g .site{display:flex;align-items:center;gap:10px;font-size:13px;color:#202124}
+  .g .fav{width:26px;height:26px;border-radius:50%;background:#f1f3f4;display:grid;place-items:center}
+  .g .fav img{width:16px}
+  .g .url{font-size:12px;color:#4d5156}
+  .g .t{font-size:19px;color:#1a0dab;margin:8px 0 4px;line-height:1.3}
+  .g .d{font-size:13.5px;color:#4d5156;line-height:1.55}
+  .g .d.vazio{color:#9aa0a6;font-style:italic}
+  .g .stars{font-size:13px;color:#70757a;margin-top:6px}
+  .ia{margin-top:28px;border:1px solid var(--linha);background:var(--off);padding:30px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start}
+  .ia .av{width:42px;height:42px;border-radius:50%;background:var(--noite);display:grid;place-items:center;color:var(--ouro);font-family:var(--serif);font-size:1.1rem}
+  .ia .pergunta{font-weight:600;color:var(--tinta);margin-bottom:10px}
+  .ia .resp{font-size:.96rem;color:var(--tinta-2)}
+  .ia .fonte{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:.78rem;background:#fff;border:1px solid var(--linha);padding:5px 12px;border-radius:30px;color:var(--tinta)}
+  .ia .fonte i{width:7px;height:7px;border-radius:50%;background:var(--ouro);display:inline-block}
+  .busca .obs{text-align:center;margin-top:20px;font-size:.82rem;color:var(--cinza)}
+  @media(max-width:900px){.serps{grid-template-columns:1fr}.ia{grid-template-columns:1fr}}
+
+  /* POR QUE ESTRUTURA PRÓPRIA (faixa escura, como o hero) */
+  .proprio{background:var(--noite);color:#fff;padding:120px 0}
+  .proprio .h2{color:var(--ouro)}
+  .proprio .lead{color:rgba(255,255,255,.72);margin-top:20px}
+  .comp{margin-top:56px;border-top:1px solid rgba(255,255,255,.14)}
+  .comp .row{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:24px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:.95rem}
+  .comp .row.h{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);padding:16px 0}
+  .comp .row.h div:last-child{color:var(--ouro)}
+  .comp .row div:first-child{color:#fff;font-weight:500}
+  .comp .row div:nth-child(2){color:rgba(255,255,255,.55)}
+  .comp .row div:last-child{color:#fff}
+  @media(max-width:760px){
+    .comp .row{grid-template-columns:1fr 1fr;gap:6px 18px}
+    .comp .row div:first-child{grid-column:1/-1}
+    .comp .row.h div:first-child{display:none}
+  }
+
+  /* ESCOPO */
+  .escopo{padding:120px 0}
+  .escopo .head{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:end;margin-bottom:60px}
+  .itens{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--linha);border-left:1px solid var(--linha)}
+  .item{padding:34px 30px 36px;border-right:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+  .item .n{font-family:var(--serif);color:var(--ouro);font-size:1rem;margin-bottom:18px}
+  .item h3{font-size:1.45rem;color:var(--tinta);margin-bottom:12px}
+  .item p{font-size:.93rem;color:var(--cinza)}
+  .item ul{margin-top:12px;display:grid;gap:6px}
+  .item li{list-style:none;font-size:.9rem;color:var(--tinta-2);padding-left:16px;position:relative}
+  .item li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:1px;background:var(--ouro)}
+  @media(max-width:960px){.itens{grid-template-columns:1fr 1fr}.escopo .head{grid-template-columns:1fr;gap:18px}}
+  @media(max-width:620px){.itens{grid-template-columns:1fr}.item{padding:28px 22px}}
+
+  /* PÁGINAS (cards com fotos dos tratamentos dela) */
+  .paginas{background:var(--off);padding:110px 0}
+  .paginas .head{max-width:700px;margin-bottom:50px}
+  .paginas .head .lead{margin-top:16px}
+  .pgs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .pg{background:#fff}
+  .pg .img{aspect-ratio:16/10;background:#ddd center/cover no-repeat}
+  .pg .c{padding:22px 24px 26px}
+  .pg .kw{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ouro);font-weight:500}
+  .pg h3{font-size:1.35rem;margin:8px 0 6px;color:var(--tinta)}
+  .pg p{font-size:.9rem;color:var(--cinza)}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .chips span{font-size:.85rem;border:1px solid var(--linha);background:#fff;padding:8px 16px;color:var(--tinta-2)}
+  @media(max-width:900px){.pgs{grid-template-columns:1fr}.pg{display:grid;grid-template-columns:38% 1fr}.pg .img{aspect-ratio:auto;min-height:150px}}
+  @media(max-width:520px){.pg{grid-template-columns:1fr}.pg .img{aspect-ratio:16/9}}
+
+  /* ETAPAS */
+  .etapas{padding:120px 0}
+  .etapas .head{text-align:center;margin-bottom:60px}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;counter-reset:s}
+  .step{border-top:1px solid var(--ouro);padding-top:24px}
+  .step .s{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ouro);font-weight:500}
+  .step h3{font-size:1.4rem;margin:10px 0 10px;color:var(--tinta)}
+  .step p{font-size:.92rem;color:var(--cinza)}
+  @media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.steps{grid-template-columns:1fr}}
+
+  /* INVESTIMENTO */
+  .invest{background:var(--off);padding:120px 0}
+  .invest .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center}
+  .invest .foto{aspect-ratio:570/701;background:#eee center/cover no-repeat}
+  .card{background:#fff;border:1px solid var(--linha);padding:44px 42px}
+  .card .eyebrow{display:block;margin-bottom:12px}
+  .card h3{font-size:1.7rem;color:var(--tinta)}
+  .preco{display:flex;align-items:baseline;gap:10px;margin:22px 0 4px}
+  .preco .rs{font-size:1rem;color:var(--cinza)}
+  .preco .v{font-family:var(--serif);font-size:4rem;line-height:1;color:var(--ouro)}
+  .preco-sub{font-size:.88rem;color:var(--cinza)}
+  .card ul{margin:26px 0;display:grid;gap:9px}
+  .card li{list-style:none;display:flex;gap:12px;font-size:.94rem;color:var(--tinta-2)}
+  .card li::before{content:"";flex:0 0 16px;height:16px;margin-top:5px;border-radius:50%;background:var(--ouro-cl) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239C7F57' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/10px no-repeat}
+  .host{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);margin-bottom:26px}
+  .host b{display:block;color:var(--tinta);font-weight:600}
+  .host small{font-size:.86rem;color:var(--cinza)}
+  .host .hv{font-family:var(--serif);font-size:2rem;color:var(--ouro);white-space:nowrap}
+  .host .hv small{font-family:var(--sans);font-size:.85rem}
+  .cond{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:30px}
+  .cond div{font-size:.82rem;color:var(--cinza)}
+  .cond b{display:block;font-size:.95rem;color:var(--tinta);font-weight:600}
+  .card .btn{width:100%;justify-content:center}
+  @media(max-width:900px){.invest .grid{grid-template-columns:1fr}.invest .foto{display:none}}
+  @media(max-width:520px){.card{padding:32px 22px}.preco .v{font-size:3.3rem}.cond{grid-template-columns:1fr 1fr}}
+
+  /* QUEM CONDUZ */
+  .quem{background:var(--off);padding:110px 0}
+  .quem .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+  .quem .ml{height:26px;width:auto;margin-bottom:26px}
+  .quem p{color:var(--tinta-2);margin-top:16px;max-width:560px}
+  .quem dl{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--linha);border-left:1px solid var(--linha);background:#fff}
+  .quem dl div{padding:18px 20px;border-right:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+  .quem dl .full{grid-column:1/-1}
+  .quem dt{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ouro);font-weight:500}
+  .quem dd{margin-top:4px;font-size:.95rem;color:var(--tinta)}
+  @media(max-width:900px){.quem .grid{grid-template-columns:1fr;gap:34px}}
+  @media(max-width:420px){.quem dl{grid-template-columns:1fr}}
+
+  /* FAQ */
+  .faq{padding:120px 0}
+  .faq .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+  details{border-top:1px solid var(--linha);padding:22px 0}
+  details:last-child{border-bottom:1px solid var(--linha)}
+  summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-family:var(--serif);font-size:1.3rem;color:var(--tinta);font-weight:300}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--ouro);font-family:var(--sans);font-size:1.4rem;line-height:1;transition:transform .25s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{margin-top:12px;color:var(--tinta-2);font-size:.97rem;max-width:620px}
+  @media(max-width:900px){.faq .grid{grid-template-columns:1fr;gap:30px}}
+
+  /* CTA FINAL */
+  .final{position:relative;padding:140px 0;text-align:center;color:#fff;background:#2a2624 url('/propostas/taise/assets/hero.webp') center 40%/cover no-repeat}
+  .final::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.32)}
+  .final .in{position:relative}
+  .final h2{font-size:clamp(2.2rem,5vw,3.6rem);margin:18px 0 20px}
+  .final p{color:rgba(255,255,255,.8);max-width:560px;margin:0 auto 36px}
+  footer{background:var(--noite);color:rgba(255,255,255,.55);padding:44px 0;text-align:center;font-size:.84rem}
+  footer img{height:46px;margin:0 auto 16px;opacity:.9}
+  footer img.mfoot{height:18px;width:auto;margin:18px auto 0;opacity:.7}
+
+  /* WhatsApp flutuante como no site dela */
+  .wa-float{position:fixed;right:22px;bottom:22px;z-index:20;width:56px;height:56px;border-radius:50%;background:#00A32A;display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.4)}
+  .wa-float svg{width:30px;height:30px;fill:#fff}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#topo" aria-label="Dra. Taíse Tognon"><img src="/propostas/taise/assets/logo-white.svg" alt="Dra. Taíse Tognon"></a>
+    <div class="tag"><span></span>Proposta · novembro de 2026</div>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <div class="in">
+    <div class="eyebrow">Para a Dra. Taíse Tognon</div>
+    <h1>O mesmo olhar,<br>agora encontrado.</h1>
+    <p>Você ama o seu site, e com razão. A proposta é manter tudo o que você vê e reconstruir o que o Google e as IAs leem por trás dele.</p>
+    <div class="ctas">
+      <a class="btn" href="#investimento">Ver a proposta
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn ghost js-wa" data-msg="Oi Matheus! Aqui é a Taíse. Vi a proposta do site e fiquei com uma dúvida:" href="https://wa.me/5511992644010">Tirar uma dúvida</a>
+    </div>
+  </div>
+  <a class="down" href="#carta">Começar
+    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M7 0v16M1 10l6 6 6-6"/></svg></a>
+</header>
+
+<section class="carta" id="carta">
+  <div class="wrap reveal">
+    <img class="q" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 24'%3E%3Cpath fill='%23BC9F77' d='M0 24V14C0 6 4 1.3 12 0l1.3 2.7C8.7 4 6.6 7 6.4 11H12v13H0Zm19 0V14c0-8 4-12.7 12-14l1 2.7c-4.6 1.3-6.7 4.3-6.9 8.3H31v13H19Z'/%3E%3C/svg%3E" alt="">
+    <blockquote>Taíse, o seu site já tem o que é mais difícil de construir: <b>cuidado</b>, <b>identidade</b> e <b>um olhar humano</b>. O que falta é ele ser lido do jeito certo por quem procura um oftalmologista em Campinas, seja no Google, seja perguntando para uma IA.</blockquote>
+    <div class="assina">Matheus Moura · Matilab</div>
+  </div>
+</section>
+
+<section class="split">
+  <div class="wrap">
+    <div class="grid">
+      <div class="foto reveal" style="background-image:url('/propostas/taise/assets/retrato.webp')" role="img" aria-label="Dra. Taíse Tognon"></div>
+      <div class="txt reveal">
+        <h2 class="h2">O layout que você ama continua exatamente onde está.</h2>
+        <div class="body">
+          <p>Nada de site novo com cara de outro. A ideia é preservar a sua marca do jeito que ela é hoje e trocar só o que fica por baixo: o código, a estrutura e as informações que os buscadores usam para decidir quem aparece primeiro.</p>
+        </div>
+        <ul class="keep">
+          <li>As mesmas cores, a fonte Recoleta e o seu logo</li>
+          <li>As suas fotos e a sua frase: “Meu foco é no SEU olhar”</li>
+          <li>O mesmo endereço: taiseoftalmo.com.br</li>
+          <li>WhatsApp, telefone e Instagram nos mesmos lugares</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="galeria">
+  <div class="wrap reveal">
+    <div class="gr">
+      <div style="background-image:url('/propostas/taise/assets/retrato3.webp')" role="img" aria-label="Dra. Taíse Tognon"></div>
+      <div style="background-image:url('/propostas/taise/assets/img-clinica1.webp')" role="img" aria-label="Recepção do consultório"></div>
+      <div style="background-image:url('/propostas/taise/assets/img-clinica2.webp')" role="img" aria-label="Sala de espera do consultório"></div>
+      <div style="background-image:url('/propostas/taise/assets/img-clinica4.webp')" role="img" aria-label="Equipamentos de exame"></div>
+    </div>
+    <p>As suas fotos e as da clínica entram no site novo exatamente como são hoje.</p>
+  </div>
+</section>
+
+<section class="diag" id="diagnostico">
+  <div class="wrap">
+    <div class="head reveal">
+      <div>
+        <div class="eyebrow">O que eu encontrei</div>
+        <h2 class="h2 dark" style="margin-top:14px">Bonito por fora, silencioso para o Google.</h2>
+      </div>
+      <p>Analisei as 7 páginas do seu site hoje. O visual está ótimo; o problema está nas informações invisíveis que o Google e as IAs leem para entender quem você é, o que você trata e onde atende.</p>
+    </div>
+
+    <div class="nums reveal">
+      <div class="num"><div class="v">0<small> de 7</small></div><div class="l">páginas com descrição para aparecer no Google</div></div>
+      <div class="num"><div class="v">15<small> de 15</small></div><div class="l">imagens da home sem descrição (o Google não sabe o que mostram)</div></div>
+      <div class="num"><div class="v">4<small> de 7</small></div><div class="l">páginas sem título principal (H1), incluindo as de tratamentos</div></div>
+      <div class="num"><div class="v">63</div><div class="l">arquivos carregados para abrir a página inicial (27 de estilo e 38 scripts)</div></div>
+    </div>
+
+    <div class="achados">
+      <div class="achado reveal"><div class="i">01</div><div><h3>Títulos que não dizem o que você faz</h3><p>No Google, as páginas aparecem como <code>Home page</code> e <code>Arquivo de Consultas e Exames</code>. Em nenhum título aparecem “oftalmologista”, “Campinas”, “ceratocone” ou “catarata”, que é exatamente o que os pacientes digitam.</p></div></div>
+      <div class="achado reveal"><div class="i">02</div><div><h3>O Google não sabe que você é médica</h3><p>Não existe a marcação de dados (schema) que identifica médica, especialidade, endereço e horário. É ela que alimenta o mapa, as estrelas e as respostas das IAs.</p></div></div>
+      <div class="achado reveal"><div class="i">03</div><div><h3>Tratamentos sem página própria</h3><p>Ceratocone, catarata, cirurgia refrativa e córnea ficam misturados em três páginas genéricas. Quem procura “ceratocone Campinas” não encontra uma página feita para essa busca.</p></div></div>
+      <div class="achado reveal"><div class="i">04</div><div><h3>Link compartilhado aparece como aspas</h3><p>Quando alguém manda o seu site no WhatsApp, a imagem de prévia é o ícone de aspas do site, e não a sua foto ou a sua marca.</p></div></div>
+      <div class="achado reveal"><div class="i">05</div><div><h3>Peso que deixa o site lento no celular</h3><p>A foto de capa sozinha pesa 822 KB. Nesta proposta, a mesma foto, no mesmo tamanho e com a mesma qualidade visual, ficou com 28 KB. Velocidade no celular conta pontos no Google.</p></div></div>
+      <div class="achado reveal"><div class="i">06</div><div><h3>Nada preparado para as IAs</h3><p>Não há perguntas e respostas estruturadas nem o arquivo de orientação para IAs (llms.txt). ChatGPT, Gemini e Perplexity têm pouco material claro para citar você.</p></div></div>
+    </div>
+    <p class="nota">Levantamento feito em 12/11/2026 diretamente no site taiseoftalmo.com.br.</p>
+  </div>
+</section>
+
+<section class="busca">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Como você aparece</div>
+      <h2 class="h2" style="margin-top:14px">De “Home page” para oftalmologista em Campinas.</h2>
+      <p class="lead">Este é o primeiro contato do paciente com você, antes mesmo de entrar no site. Hoje e depois da reconstrução:</p>
+    </div>
+    <div class="serps">
+      <div class="serp antes reveal">
+        <div class="lab">Hoje</div>
+        <div class="g">
+          <div class="site"><div class="fav"><img src="/propostas/taise/assets/logo-gold.svg" alt=""></div><div>Dra Taíse Tognon<div class="url">https://taiseoftalmo.com.br</div></div></div>
+          <div class="t">Home page - Dra Taíse Tognon</div>
+          <div class="d vazio">Sem descrição. O Google recorta um pedaço qualquer do texto da página.</div>
+        </div>
+      </div>
+      <div class="serp depois reveal">
+        <div class="lab">Depois</div>
+        <div class="g">
+          <div class="site"><div class="fav"><img src="/propostas/taise/assets/logo-gold.svg" alt=""></div><div>Dra. Taíse Tognon · Oftalmologista<div class="url">https://taiseoftalmo.com.br</div></div></div>
+          <div class="t">Oftalmologista em Campinas | Córnea, Ceratocone e Catarata</div>
+          <div class="d">Dra. Taíse Tognon, oftalmologista com título pelo CBO e AMB. Consultas, cirurgias e adaptação de lentes de contato no Instituto Penido Burnier. Agende pelo WhatsApp.</div>
+        </div>
+      </div>
+    </div>
+    <div class="ia reveal">
+      <div class="av">IA</div>
+      <div>
+        <div class="pergunta">“Qual oftalmologista atende ceratocone em Campinas?”</div>
+        <div class="resp">Uma das opções é a Dra. Taíse Tognon, oftalmologista formada pelo Instituto Penido Burnier, com título de especialista pelo CBO. Ela trata patologias de córnea e ceratocone e faz adaptação de lentes de contato especiais em Campinas/SP.</div>
+        <span class="fonte"><i></i>taiseoftalmo.com.br</span>
+      </div>
+    </div>
+    <p class="obs">Simulação ilustrativa. Posição no Google e citação em IAs dependem também de concorrência e tempo; o site passa a dar todas as condições para isso.</p>
+  </div>
+</section>
+
+<section class="proprio">
+  <div class="wrap">
+    <div class="reveal" style="max-width:720px">
+      <div class="eyebrow">Por que sair da plataforma atual</div>
+      <h2 class="h2" style="margin-top:14px">Uma estrutura própria, feita só para o seu site.</h2>
+      <p class="lead">Hoje o site roda sobre um construtor visual cheio de plugins. É prático para montar, mas carrega muito código que você não usa e limita o que dá para fazer em SEO. Em estrutura própria, cada linha existe por um motivo.</p>
+    </div>
+    <div class="comp reveal">
+      <div class="row h"><div></div><div>Plataforma atual</div><div>Estrutura própria</div></div>
+      <div class="row"><div>Velocidade</div><div>63 arquivos para abrir a home</div><div>Código enxuto, carrega em instantes no celular</div></div>
+      <div class="row"><div>SEO técnico</div><div>Depende de plugins e configurações soltas</div><div>Títulos, descrições e dados médicos escritos página por página</div></div>
+      <div class="row"><div>IAs (ChatGPT, Gemini)</div><div>Sem preparo</div><div>Perguntas frequentes estruturadas e llms.txt</div></div>
+      <div class="row"><div>Segurança</div><div>Plugins que precisam de atualização constante</div><div>Site estático, sem painel exposto a ataques</div></div>
+      <div class="row"><div>Manutenção</div><div>Atualizações de tema e plugins</div><div>Nada para atualizar; eu cuido da hospedagem</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="escopo" id="escopo">
+  <div class="wrap">
+    <div class="head reveal">
+      <div>
+        <div class="eyebrow">O que está incluído</div>
+        <h2 class="h2 dark" style="margin-top:14px">Tudo o que o site precisa para performar.</h2>
+      </div>
+      <p class="lead">Um único projeto, sem pacotes escondidos. Você aprova o visual antes de qualquer coisa ir ao ar.</p>
+    </div>
+    <div class="itens">
+      <div class="item reveal"><div class="n">01</div><h3>Reconstrução fiel</h3><p>O seu layout recriado em código próprio, idêntico no visual e muito mais leve.</p><ul><li>Todas as páginas atuais</li><li>Fotos otimizadas em WebP</li><li>Perfeito no celular</li></ul></div>
+      <div class="item reveal"><div class="n">02</div><h3>SEO para o Google</h3><p>A base técnica que faz o Google entender e confiar no site.</p><ul><li>Título e descrição em cada página</li><li>H1, textos alternativos e URLs limpas</li><li>Sitemap e Google Search Console</li></ul></div>
+      <div class="item reveal"><div class="n">03</div><h3>Dados de médica</h3><p>Marcação estruturada (schema) de médica e clínica.</p><ul><li>Especialidade, formação e títulos</li><li>Endereço, telefone e horários</li><li>Pronto para o Perfil no Google</li></ul></div>
+      <div class="item reveal"><div class="n">04</div><h3>Pronto para as IAs</h3><p>Conteúdo organizado para ser citado por ChatGPT, Gemini e Perplexity.</p><ul><li>Perguntas frequentes com respostas diretas</li><li>Arquivo llms.txt</li><li>Autoria médica clara em cada página</li></ul></div>
+      <div class="item reveal"><div class="n">05</div><h3>Páginas por tratamento</h3><p>Cada tratamento que você já oferece ganha uma página feita para ser encontrada.</p><ul><li>Com base nos seus textos atuais</li><li>Revisados para busca</li><li>Botão de agendamento em todas</li></ul></div>
+      <div class="item reveal"><div class="n">06</div><h3>Migração sem sustos</h3><p>A troca acontece sem o site sair do ar e sem perder o que já foi conquistado.</p><ul><li>Redirecionamento das URLs antigas</li><li>Mesmo domínio</li><li>Prévia da sua marca no WhatsApp</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="paginas">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Novas portas de entrada</div>
+      <h2 class="h2" style="margin-top:14px">Uma página para cada busca que importa.</h2>
+      <p class="lead">Hoje três páginas genéricas tentam responder tudo. No novo site, cada tratamento tem a sua página, com o termo que o paciente realmente procura.</p>
+    </div>
+    <div class="pgs">
+      <div class="pg reveal"><div class="img" style="background-image:url('/propostas/taise/assets/Cirurgias-e-Tratamentos-1.webp')"></div><div class="c"><div class="kw">ceratocone campinas</div><h3>Córnea e Ceratocone</h3><p>Diagnóstico, acompanhamento e tratamento das patologias de córnea.</p></div></div>
+      <div class="pg reveal"><div class="img" style="background-image:url('/propostas/taise/assets/Consultas-e-exames-1.webp')"></div><div class="c"><div class="kw">cirurgia de catarata campinas</div><h3>Catarata e Refrativa</h3><p>Cirurgia de catarata e cirurgia refrativa para deixar os óculos.</p></div></div>
+      <div class="pg reveal"><div class="img" style="background-image:url('/propostas/taise/assets/Adaptacao-de-lentes-1.webp')"></div><div class="c"><div class="kw">lentes de contato especiais</div><h3>Lentes de Contato</h3><p>Adaptação de todos os tipos de lentes, inclusive para ceratocone.</p></div></div>
+    </div>
+    <div class="chips reveal">
+      <span>Consulta oftalmológica</span><span>Exames de vista</span><span>Mapeamento de retina</span><span>A doutora</span><span>A clínica</span><span>Perguntas frequentes</span><span>Contato</span>
+    </div>
+  </div>
+</section>
+
+<section class="etapas">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="eyebrow">Como funciona</div>
+      <h2 class="h2 dark" style="margin-top:14px">Quatro etapas, nenhuma dor de cabeça.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="s">Etapa 1</div><h3>Aprovação</h3><p>Você aprova a proposta e me passa os acessos do domínio e do site atual.</p></div>
+      <div class="step reveal"><div class="s">Etapa 2</div><h3>Reconstrução</h3><p>Recrio o site em estrutura própria, com as páginas novas e todo o SEO.</p></div>
+      <div class="step reveal"><div class="s">Etapa 3</div><h3>Sua revisão</h3><p>Você navega na prévia, pede ajustes e só aprova quando estiver do seu jeito.</p></div>
+      <div class="step reveal"><div class="s">Etapa 4</div><h3>No ar</h3><p>Publico no seu domínio, sem tirar o site do ar, e conecto ao Google Search Console.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="invest" id="investimento">
+  <div class="wrap">
+    <div class="grid">
+      <div class="foto reveal" style="background-image:url('/propostas/taise/assets/retrato2.webp')" role="img" aria-label="Dra. Taíse Tognon"></div>
+      <div class="card reveal">
+        <span class="eyebrow">Investimento</span>
+        <h3>Novo site em estrutura própria</h3>
+        <div class="preco"><span class="rs">R$</span><span class="v">1.700</span></div>
+        <div class="preco-sub">valor único pelo projeto completo</div>
+        <ul>
+          <li>Layout atual reconstruído em código próprio</li>
+          <li>Páginas dedicadas para cada tratamento</li>
+          <li>SEO técnico completo e dados de médica (schema)</li>
+          <li>Preparo para ChatGPT, Gemini e Perplexity</li>
+          <li>Migração com redirecionamentos, sem sair do ar</li>
+          <li>Configuração do Google Search Console</li>
+        </ul>
+        <div class="host">
+          <div><b>Hospedagem do site</b><small>Servidor rápido, certificado de segurança (cadeado), backup e monitoramento</small></div>
+          <div class="hv">R$ 59<small>/mês</small></div>
+        </div>
+        <div class="cond">
+          <div><b>50% + 50%</b>no início e na entrega</div>
+          <div><b>15 dias úteis</b>após os acessos</div>
+          <div><b>27/11/2026</b>validade da proposta</div>
+        </div>
+        <a class="btn js-wa" data-msg="Oi Matheus! Aqui é a Taíse. Li a proposta e quero seguir com o novo site por R$ 1.700 + hospedagem de R$ 59/mês." href="https://wa.me/5511992644010">Quero seguir com o projeto</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quem" id="quem">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <img class="ml" src="/propostas/taise/assets/matilab-logo-dark.svg" alt="Matilab" width="122" height="28">
+        <h2 class="h2">Quem conduz o projeto.</h2>
+        <p>A Matilab é uma agência de <b>sites, sistemas, landing pages, identidade visual, ads e social media</b>, com foco em desenvolvimento. O atendimento e a parte técnica ficam com o Matheus, dono da agência, com time de comercial, design e gestão por trás.</p>
+        <p>Já fizemos sites para médicos e clínicas, então cuidado com a linguagem médica, autoria e confiança do paciente faz parte do nosso dia a dia.</p>
+      </div>
+      <dl class="reveal">
+        <div><dt>Responsável</dt><dd>Matheus Moura</dd></div>
+        <div><dt>WhatsApp</dt><dd>(11) 99264-4010</dd></div>
+        <div><dt>E-mail</dt><dd>contato@matilab.com.br</dd></div>
+        <div><dt>Site</dt><dd>matilab.com.br</dd></div>
+        <div class="full"><dt>Escritório</dt><dd>Alameda Vicente Pinzón, 173, Vila Olímpia, São Paulo</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <div class="eyebrow">Dúvidas comuns</div>
+        <h2 class="h2" style="margin-top:14px">Antes de você perguntar.</h2>
+      </div>
+      <div class="reveal">
+        <details open><summary>O visual vai mudar?</summary><p>Não. O objetivo é que você abra o site novo e reconheça o seu site. Mudam só detalhes que você aprovar, como as páginas novas de tratamento, que seguem o mesmo estilo.</p></details>
+        <details><summary>Vou perder o que já tenho no Google?</summary><p>Não. Cada endereço antigo é redirecionado para o novo equivalente, então o histórico do domínio é aproveitado. O domínio taiseoftalmo.com.br continua o mesmo.</p></details>
+        <details><summary>Em quanto tempo vejo resultado?</summary><p>As melhorias técnicas valem a partir da publicação. A subida nas buscas costuma aparecer ao longo de algumas semanas a poucos meses, conforme o Google reprocessa o site. Não existe garantia de primeira posição, e desconfie de quem prometer isso.</p></details>
+        <details><summary>E a hospedagem atual?</summary><p>Depois que o site novo estiver no ar e aprovado, a hospedagem atual pode ser cancelada. A partir daí fica só a hospedagem de R$ 59 por mês.</p></details>
+        <details><summary>Preciso escrever algum texto?</summary><p>Não. Eu parto dos seus textos atuais e organizo para cada página. Você só revisa para garantir que tudo está correto do ponto de vista médico.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap in reveal">
+    <div class="eyebrow">Próximo passo</div>
+    <h2>Que tal o seu site<br>ser visto como você?</h2>
+    <p>Responda pelo WhatsApp e eu já começo pelo levantamento dos acessos.</p>
+    <a class="btn js-wa" data-msg="Oi Matheus! Aqui é a Taíse. Li a proposta e quero seguir com o novo site." href="https://wa.me/5511992644010">Falar com o Matheus
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<footer>
+  <img src="/propostas/taise/assets/logo-white.svg" alt="">
+  <div>Proposta Matilab para a Dra. Taíse Tognon, emitida em 12/11/2026 e válida até 27/11/2026.</div>
+  <img class="mfoot" src="/propostas/taise/assets/matilab-logo-white.svg" alt="Matilab" width="78" height="18">
+</footer>
+
+<a class="wa-float js-wa" data-msg="Oi Matheus! Aqui é a Taíse. Vi a proposta do site e fiquei com uma dúvida:" href="https://wa.me/5511992644010" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4ZM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8Zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.6-8.4Z"/></svg>
+</a>
+
+<script>
+  document.querySelectorAll('.js-wa').forEach(a=>{
+    a.href='https://wa.me/5511992644010?text='+encodeURIComponent(a.dataset.msg);
+    a.target='_blank';a.rel='noopener';
+  });
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
