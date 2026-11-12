@@ -512,60 +512,12 @@
   "h": 3000
  },
  {
-  "id": "epoxibrasil-com-br",
-  "nome": "Epóxi Brasil",
-  "setor": "Construção, Pisos e Manutenção",
-  "tipo": "Site",
-  "url": "https://epoxibrasil.com.br/",
-  "h": 2164
- },
- {
-  "id": "epoxigalpao-com-br",
-  "nome": "Epóxi Galpão",
-  "setor": "Construção, Pisos e Manutenção",
-  "tipo": "Landing page",
-  "url": "https://epoxigalpao.com.br/",
-  "h": 3000
- },
- {
   "id": "epoxiestacionamento-com-br",
   "nome": "Epóxi Estacionamento",
   "setor": "Construção, Pisos e Manutenção",
   "tipo": "Landing page",
   "url": "https://epoxiestacionamento.com.br/",
   "h": 2391
- },
- {
-  "id": "epoxioficina-com-br",
-  "nome": "Epóxi Oficina",
-  "setor": "Construção, Pisos e Manutenção",
-  "tipo": "Landing page",
-  "url": "https://epoxioficina.com.br/",
-  "h": 2374
- },
- {
-  "id": "epoxiquadra-com-br",
-  "nome": "Epóxi Quadra",
-  "setor": "Construção, Pisos e Manutenção",
-  "tipo": "Landing page",
-  "url": "https://epoxiquadra.com.br/",
-  "h": 2227
- },
- {
-  "id": "industriaepoxi-com-br",
-  "nome": "Indústria Epóxi",
-  "setor": "Construção, Pisos e Manutenção",
-  "tipo": "Landing page",
-  "url": "http://industriaepoxi.com.br/",
-  "h": 2101
- },
- {
-  "id": "pinturapisoepoxi-com-br",
-  "nome": "Pintura Piso Epóxi",
-  "setor": "Construção, Pisos e Manutenção",
-  "tipo": "Landing page",
-  "url": "http://pinturapisoepoxi.com.br/",
-  "h": 2134
  },
  {
   "id": "alphacolorspinturas-lovable-app",
