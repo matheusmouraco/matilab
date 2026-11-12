@@ -5,211 +5,230 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Proposta Matilab | Site Sagita</title>
-<meta name="description" content="Proposta comercial da Matilab para o site institucional e a plataforma de cursos da Sagita Educação em Oftalmologia.">
+<meta name="description" content="Proposta comercial da Matilab para o site da Sagita Educação em Oftalmologia.">
+<meta name="theme-color" content="#0B1322">
 <link rel="icon" href="/propostas/sagita/assets/favicon.png">
-<link rel="preload" href="/propostas/sagita/assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-@font-face{font-family:'Geist';font-style:normal;font-weight:100 900;font-display:swap;src:url(/propostas/sagita/assets/fonts/geist-latin.woff2) format('woff2')}
-@font-face{font-family:'Geist Mono';font-style:normal;font-weight:100 900;font-display:swap;src:url(/propostas/sagita/assets/fonts/geist-mono-latin.woff2) format('woff2')}
 :root{
-  --bg:#fafaf8;--bg-2:#f1f0ec;--card:#fff;
-  --ink:#1f1f1e;--ink-2:#3a3a38;--muted:#6a6862;--line:#e3e1dc;--line-2:#d4d1ca;
-  --dark:#232322;--line-d:rgba(255,255,255,.12);--muted-d:#a9a59d;
-  --amber:#ffa30f;--amber-2:#f09400;--amber-ink:#975800;--amber-soft:#fff4e0;
-  --sans:"Geist",system-ui,-apple-system,sans-serif;--mono:"Geist Mono",ui-monospace,monospace;
-  --max:1280px;--pad:clamp(20px,4vw,56px);--ease:cubic-bezier(.16,1,.3,1);
+  --noturno:#0B1322;--marinho:#1F2E4A;--marinho-2:#152036;--areia:#C4AE88;--areia-2:#D3C09E;--bege:#E6DAC4;--linho:#F1E9DA;--bronze:#6B5534;
+  --txt:rgba(230,218,196,.74);--txt-2:rgba(230,218,196,.55);--line:rgba(196,174,136,.22);--line-2:rgba(196,174,136,.38);
+  --ink:#0B1322;--ink-2:#2E384C;--line-l:rgba(11,19,34,.14);
+  --serif:Georgia,"Times New Roman",serif;--sans:Arial,"Helvetica Neue",Helvetica,sans-serif;
+  --max:1240px;--pad:clamp(20px,4vw,56px);--ease:cubic-bezier(.16,1,.3,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
-body{font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;letter-spacing:-.005em;-webkit-font-smoothing:antialiased}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--noturno);color:var(--bege);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
-::selection{background:var(--amber);color:var(--ink)}
+::selection{background:var(--areia);color:var(--noturno)}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
-.sec{padding:clamp(72px,8vw,112px) 0}
-.alt{background:var(--bg-2)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 22px;border-radius:999px;font-weight:580;font-size:15.5px;letter-spacing:-.01em;white-space:nowrap;transition:background .25s,border-color .25s,transform .2s}
+.sec{padding:clamp(80px,9vw,128px) 0;position:relative}
+.light{background:var(--bege);color:var(--ink)}
+.linho{background:var(--linho);color:var(--ink)}
+
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.005em;text-wrap:balance}
+.h2{font-size:clamp(32px,3.6vw,50px);line-height:1.12;max-width:20ch}
+.eyebrow{display:block;font-size:12.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--areia);margin-bottom:22px}
+.light .eyebrow,.linho .eyebrow{color:var(--bronze)}
+.intro{max-width:740px;margin-bottom:clamp(44px,5vw,64px)}
+.intro p{margin-top:20px;font-size:clamp(16.5px,1.2vw,18.5px);color:var(--txt);max-width:62ch;text-wrap:pretty}
+.intro p b{color:var(--bege);font-weight:700}
+.light .intro p,.linho .intro p{color:var(--ink-2)}
+.light .intro p b,.linho .intro p b{color:var(--ink)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;height:50px;padding:0 26px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;transition:background .25s,border-color .25s,color .25s,transform .2s}
 .btn:active{transform:translateY(1px)}
-.btn-a{background:var(--amber);color:var(--ink)}
-.btn-a:hover{background:var(--amber-2)}
-.btn-l{border:1px solid var(--line-2);color:var(--ink);background:var(--card)}
-.btn-l:hover{border-color:var(--ink)}
-.btn .ar{transition:transform .3s var(--ease)}
+.btn-a{background:var(--areia);color:var(--noturno)}
+.btn-a:hover{background:var(--areia-2)}
+.btn-l{border:1px solid var(--line-2);color:var(--bege)}
+.btn-l:hover{border-color:var(--areia)}
+.btn .ar{transition:transform .3s var(--ease);letter-spacing:0}
 .btn:hover .ar{transform:translateX(3px)}
 
-h1,h2,h3{font-weight:600;letter-spacing:-.03em;text-wrap:balance}
-.h2{font-size:clamp(30px,3.4vw,46px);line-height:1.1;max-width:22ch}
-.intro{max-width:720px;margin-bottom:clamp(40px,5vw,60px)}
-.intro p{margin-top:18px;font-size:clamp(16.5px,1.2vw,18.5px);color:var(--muted);max-width:62ch;text-wrap:pretty}
-.intro p b{color:var(--ink);font-weight:550}
-.eyebrow{display:block;font-size:14.5px;font-weight:550;color:var(--amber-ink);margin-bottom:16px}
-
-.rv{opacity:0;transform:translateY(16px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
 .rv.in{opacity:1;transform:none}
 
+/* arco da sagita */
+.arc{position:absolute;pointer-events:none;fill:none;stroke:var(--areia);opacity:.16}
+.arc path{stroke-width:1.3;vector-effect:non-scaling-stroke}
+.arc circle{fill:var(--areia);stroke:none}
+.arc .d{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s cubic-bezier(.4,0,.2,1) .3s}
+.arc.in .d{stroke-dashoffset:0}
+.bul{display:inline-block;width:22px;height:13px;flex:none;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 14'%3E%3Cpath d='M2 12 A12 12 0 0 1 22 12' fill='none' stroke='%23C4AE88' stroke-width='1.5'/%3E%3Cpath d='M2 12 H22 M12 12 V2.5' stroke='%23C4AE88' stroke-width='1.5'/%3E%3C/svg%3E")}
+
 /* topo */
-.top{position:sticky;top:0;z-index:30;background:rgba(250,250,248,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
-.brands{display:flex;align-items:center;gap:14px}
-.brands .ep{height:34px;width:auto}
-.brands .x{color:var(--muted);font-size:14px}
-.brands .mt{height:18px;width:auto}
+.top{position:sticky;top:0;z-index:30;background:rgba(11,19,34,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.brands{display:flex;align-items:center;gap:18px;flex:none}
+.sg-brand{display:flex;align-items:center;gap:12px}
+.sg-brand img{width:46px}
+.sg-brand b{display:block;font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:.2em;line-height:1;color:var(--bege)}
+.sg-brand small{display:block;margin-top:5px;font-size:8.5px;letter-spacing:.26em;color:var(--areia);white-space:nowrap}
+.brands .x{color:var(--txt-2);font-size:14px}
+.brands .mt{height:25px;width:auto}
 .top nav{display:flex;gap:2px}
-.top nav a{padding:8px 12px;border-radius:999px;font-size:14.5px;color:var(--ink-2);transition:background .2s}
-.top nav a:hover{background:var(--bg-2)}
-.top .btn{height:40px;padding:0 18px;font-size:14.5px}
+.top nav a{padding:8px 12px;border-radius:999px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--txt);transition:color .2s}
+.top nav a:hover{color:var(--areia)}
+.top .btn{height:42px;padding:0 20px;font-size:11.5px}
 
 /* hero */
-.hero{padding:clamp(48px,6vw,80px) 0 0}
-.hero-in{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,5vw,72px);align-items:center}
-.hero h1{font-size:clamp(38px,4.4vw,60px);line-height:1.06;letter-spacing:-.038em;max-width:16ch}
-.hero h1 mark{background:linear-gradient(transparent 62%,var(--amber) 62%,var(--amber) 92%,transparent 92%);color:inherit;padding:0 .04em}
-.hero .sub{margin-top:22px;font-size:clamp(17px,1.3vw,19px);color:var(--muted);max-width:46ch}
-.hero .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
-.wall{border-radius:16px;background:var(--card);border:1px solid var(--line);padding:clamp(16px,2vw,24px);box-shadow:0 24px 60px -30px rgba(40,30,10,.25)}
-.wall figcaption{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.wall figcaption b{color:var(--ink);font-weight:550}
-.meta{margin-top:clamp(48px,6vw,72px);display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr;border-top:1px solid var(--line-2)}
-.meta div{padding:20px 20px 28px 0}
+.hero{position:relative;overflow:hidden;padding:clamp(56px,7vw,96px) 0 0}
+.hero .arc{width:1100px;right:-260px;top:120px}
+.hero-in{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(36px,5vw,80px);align-items:center}
+.hero h1{font-size:clamp(40px,4.6vw,64px);line-height:1.08;max-width:15ch;color:var(--bege)}
+.hero h1 em{font-style:italic;color:var(--areia)}
+.hero .sub{margin-top:26px;font-size:clamp(17px,1.3vw,19px);color:var(--txt);max-width:46ch}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.slogan{margin-top:30px;font-family:var(--serif);font-style:italic;font-size:17px;color:var(--txt-2)}
+.docs{border-radius:18px;background:var(--marinho);border-top:2px solid var(--areia);padding:clamp(18px,2vw,26px);box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.6vw,20px)}
+.doc img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;border-radius:12px;background:var(--marinho-2)}
+.doc b{display:block;margin-top:16px;font-family:var(--serif);font-weight:400;font-size:19px;line-height:1.2;color:var(--bege)}
+.doc .crm{display:block;margin-top:6px;font-size:11px;letter-spacing:.16em;color:var(--areia)}
+.doc p{margin-top:10px;font-size:14px;line-height:1.55;color:var(--txt)}
+.docs figcaption{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--txt-2);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.docs figcaption b{color:var(--areia);font-weight:400}
+.meta{position:relative;margin-top:clamp(56px,6vw,84px);display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr;border-top:1px solid var(--line-2)}
+.meta div{padding:22px 20px 32px 0}
 .meta div+div{padding-left:20px;border-left:1px solid var(--line)}
-.meta dt{font-size:13px;color:var(--muted)}
-.meta dd{font-size:15.5px;font-weight:550;margin-top:4px;line-height:1.35}
-.meta .o{color:var(--amber-ink)}
+.meta dt{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--txt-2)}
+.meta dd{font-family:var(--serif);font-size:18px;margin-top:6px;line-height:1.3;color:var(--bege)}
+.meta .o{color:var(--areia)}
 
 /* diagnóstico */
-.gap{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line-2);border-radius:16px;overflow:hidden;background:var(--card)}
-.gap>div{padding:clamp(24px,3vw,36px)}
-.gap>div+div{border-left:1px solid var(--line)}
-.gap strong{display:block;font-size:clamp(40px,4.4vw,60px);font-weight:600;letter-spacing:-.045em;line-height:.95}
-.gap strong small{font-size:.36em;font-weight:550;letter-spacing:-.01em;color:var(--amber-ink);margin-left:6px}
-.gap h3{margin-top:14px;font-size:18px;line-height:1.3;letter-spacing:-.015em}
-.gap p{margin-top:6px;font-size:15.5px;color:var(--muted)}
-.search{margin-top:clamp(40px,5vw,56px);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,72px);align-items:start}
-.search h3{font-size:clamp(20px,1.7vw,24px);line-height:1.25}
-.search>div>p{margin-top:10px;color:var(--muted);font-size:16px;max-width:52ch}
+.gap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gap>div{background:var(--marinho);border-radius:16px;border-top:2px solid var(--areia);padding:clamp(26px,3vw,38px)}
+.gap strong{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(48px,5vw,68px);line-height:.95;color:var(--bege)}
+.gap strong small{font-family:var(--sans);font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--areia);margin-left:10px;vertical-align:middle}
+.gap h3{margin-top:18px;font-size:21px;line-height:1.3;color:var(--bege)}
+.gap p{margin-top:8px;font-size:15.5px;color:var(--txt)}
+.search{margin-top:clamp(48px,5vw,72px);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:start}
+.search h3{font-size:clamp(23px,2vw,28px);line-height:1.25;color:var(--bege)}
+.search>div>p{margin-top:12px;color:var(--txt);font-size:16px;max-width:52ch}
 .q{display:grid;gap:8px}
-.q span{display:flex;align-items:center;gap:12px;padding:13px 18px;border-radius:12px;background:var(--card);border:1px solid var(--line);font-size:15.5px;color:var(--ink-2)}
-.q span::before{content:"";flex:0 0 14px;height:14px;border:1.6px solid var(--muted);border-radius:50%;box-shadow:5px 5px 0 -3.6px var(--muted)}
-.q span em{margin-left:auto;font-style:normal;font-family:var(--mono);font-size:12px;color:var(--amber-ink);white-space:nowrap}
+.q span{display:flex;align-items:center;gap:14px;padding:14px 20px;border-radius:999px;border:1px solid var(--line);background:rgba(31,46,74,.45);font-size:15.5px;color:var(--bege)}
+.q span::before{content:"";flex:0 0 14px;height:14px;border:1.5px solid var(--areia);border-radius:50%;box-shadow:5px 5px 0 -3.6px var(--areia)}
+.q span em{margin-left:auto;font-style:normal;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--areia);white-space:nowrap}
 
-/* motivos */
+/* motivos (bege) */
 .why{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,96px);align-items:start}
-.why .intro{position:sticky;top:110px;margin-bottom:0}
-.reason{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:30px 0;border-top:1px solid var(--line-2)}
-.reason:last-child{border-bottom:1px solid var(--line-2)}
-.reason .n{font-family:var(--mono);font-size:14px;color:var(--amber-ink);padding-top:4px}
-.reason h3{font-size:clamp(20px,1.7vw,24px);line-height:1.2}
-.reason p{margin-top:10px;color:var(--muted);font-size:16px;max-width:56ch}
-.reason p b{color:var(--ink);font-weight:550}
+.why .intro{position:sticky;top:120px;margin-bottom:0}
+.reason{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:32px 0;border-top:1px solid var(--line-l)}
+.reason:last-child{border-bottom:1px solid var(--line-l)}
+.reason .n{font-family:var(--serif);font-size:22px;color:var(--bronze)}
+.reason h3{font-size:clamp(23px,2vw,28px);line-height:1.2;color:var(--ink)}
+.reason p{margin-top:10px;color:var(--ink-2);font-size:16px;max-width:56ch}
+.reason p b{color:var(--ink)}
 .brandrow{display:flex;flex-wrap:wrap;gap:18px;margin-top:16px;align-items:center}
 .brandrow span{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--ink-2)}
 .brandrow img{width:18px;height:18px}
 
 /* escopo */
-.map{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2);border-radius:16px;overflow:hidden;margin-bottom:clamp(40px,5vw,56px)}
-.map div{background:var(--card);padding:22px 24px 24px}
-.map .u{font-family:var(--mono);font-size:12.5px;color:var(--amber-ink)}
-.map h3{margin-top:8px;font-size:18px;letter-spacing:-.015em;line-height:1.25}
-.map p{margin-top:6px;font-size:14.5px;color:var(--muted);line-height:1.5}
-.pages{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:clamp(36px,4vw,48px)}
-.pages span{padding:9px 15px;border-radius:999px;border:1px solid var(--line-2);font-size:15px;background:var(--card)}
-.pages span.k{background:var(--ink);color:#fff;border-color:var(--ink)}
+.map{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:clamp(40px,5vw,56px)}
+.map div{background:var(--marinho);border-radius:14px;padding:24px 26px 26px}
+.map .u{font-size:11px;letter-spacing:.2em;color:var(--areia)}
+.map h3{margin-top:10px;font-size:22px;line-height:1.25;color:var(--bege)}
+.map p{margin-top:8px;font-size:15px;color:var(--txt);line-height:1.55}
+.pages{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:clamp(40px,4vw,56px)}
+.pages span{padding:10px 18px;border-radius:999px;border:1px solid var(--line-2);font-size:14.5px;color:var(--bege)}
+.pages span.k{background:var(--bege);color:var(--noturno);border-color:var(--bege)}
 .scope{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-2)}
-.scope div{padding:24px 24px 28px 0;border-bottom:1px solid var(--line)}
-.scope div:not(:nth-child(4n+1)){padding-left:24px;border-left:1px solid var(--line)}
-.scope h3{font-size:17px;letter-spacing:-.015em;line-height:1.3}
-.scope p{margin-top:8px;font-size:15px;color:var(--muted)}
+.scope div{padding:26px 26px 30px 0;border-bottom:1px solid var(--line)}
+.scope div:not(:nth-child(4n+1)){padding-left:26px;border-left:1px solid var(--line)}
+.scope h3{display:flex;align-items:center;gap:12px;font-size:19px;line-height:1.3;color:var(--bege)}
+.scope p{margin-top:10px;font-size:15px;color:var(--txt)}
 
-/* cronograma */
+/* cronograma (linho) */
 .steps{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);counter-reset:s}
-.steps li{position:relative;padding:30px 20px 0 0;border-top:2px solid var(--line-2)}
-.steps li.hl{border-color:var(--amber)}
-.steps li::before{counter-increment:s;content:counter(s,decimal-leading-zero);position:absolute;top:10px;left:0;font-family:var(--mono);font-size:12px;color:var(--muted)}
-.steps li.hl::before{color:var(--amber-ink)}
-.steps strong{display:block;margin-top:8px;font-size:16px;font-weight:600;letter-spacing:-.015em;line-height:1.25}
-.steps p{margin-top:6px;font-size:14.5px;color:var(--muted);line-height:1.5}
-.dur{margin-top:clamp(36px,4vw,48px);display:flex;align-items:baseline;gap:20px;flex-wrap:wrap}
-.dur strong{font-size:clamp(28px,2.8vw,36px);font-weight:600;letter-spacing:-.035em}
-.dur p{color:var(--muted);font-size:16px;max-width:62ch}
+.steps li{position:relative;padding:34px 22px 0 0;border-top:1px solid rgba(11,19,34,.25)}
+.steps li.hl{border-top:2px solid var(--noturno)}
+.steps li::before{counter-increment:s;content:counter(s,decimal-leading-zero);position:absolute;top:10px;left:0;font-family:var(--serif);font-size:15px;color:var(--bronze)}
+.steps strong{display:block;margin-top:8px;font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.25;color:var(--ink)}
+.steps p{margin-top:8px;font-size:15px;color:var(--ink-2);line-height:1.55}
+.dur{margin-top:clamp(40px,4vw,56px);display:flex;align-items:baseline;gap:24px;flex-wrap:wrap}
+.dur strong{font-family:var(--serif);font-weight:400;font-size:clamp(34px,3.2vw,46px);color:var(--ink)}
+.dur p{color:var(--ink-2);font-size:16px;max-width:62ch}
 
 /* investimento */
-.quote{border:1px solid var(--line-2);border-radius:16px;overflow:hidden;background:var(--card)}
-.q-head,.q-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr) 220px;gap:clamp(20px,3vw,48px)}
-.q-head{padding:14px clamp(20px,3vw,36px);background:var(--bg-2);border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+.quote{border:1px solid var(--line-2);border-radius:18px;overflow:hidden;background:var(--marinho-2)}
+.q-head,.q-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr) 230px;gap:clamp(20px,3vw,48px)}
+.q-head{padding:16px clamp(20px,3vw,38px);background:var(--marinho);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--areia)}
 .q-head span:last-child{text-align:right}
-.q-row{padding:clamp(24px,3vw,36px);border-bottom:1px solid var(--line);align-items:start}
-.q-row h3{font-size:clamp(20px,1.7vw,23px);line-height:1.2}
-.q-row .d{margin-top:8px;color:var(--muted);font-size:15px}
-.q-row ul{list-style:none;display:grid;gap:8px}
-.q-row li{font-size:15px;color:var(--ink-2);padding-left:20px;position:relative;line-height:1.5}
-.q-row li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:1.5px;background:var(--amber-2)}
-.q-row li b{color:var(--ink);font-weight:550}
+.q-row{padding:clamp(26px,3vw,38px);border-top:1px solid var(--line);align-items:start}
+.q-row.main{background:linear-gradient(160deg,rgba(196,174,136,.10),rgba(196,174,136,.02));box-shadow:inset 3px 0 0 var(--areia)}
+.q-row h3{font-size:clamp(23px,2vw,28px);line-height:1.2;color:var(--bege)}
+.q-row .d{margin-top:8px;color:var(--txt);font-size:15px}
+.q-row ul{list-style:none;display:grid;gap:10px}
+.q-row li{display:flex;gap:14px;font-size:15.5px;color:var(--txt);line-height:1.5}
+.q-row li .bul{margin-top:.3em}
+.q-row li b{color:var(--bege)}
 .q-val{text-align:right}
-.q-val strong{display:block;font-size:clamp(38px,3.8vw,52px);font-weight:600;letter-spacing:-.045em;line-height:1;white-space:nowrap}
-.q-val strong small{font-size:.4em;font-weight:550;letter-spacing:-.01em;margin-right:4px;color:var(--muted)}
-.q-val span{display:block;margin-top:8px;font-size:14px;color:var(--muted)}
-.q-total{display:grid;grid-template-columns:repeat(2,1fr);background:var(--dark);color:#fff}
-.q-total div{padding:clamp(22px,2.6vw,30px) clamp(20px,3vw,36px)}
-.q-total div+div{border-left:1px solid var(--line-d)}
-.q-total span{font-size:14px;color:var(--muted-d)}
-.q-total strong{display:block;margin-top:6px;font-size:clamp(20px,1.9vw,26px);font-weight:600;letter-spacing:-.03em}
-.q-total strong em{font-style:normal;color:var(--amber)}
-.terms{margin-top:clamp(32px,4vw,48px);display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(16px,2vw,28px)}
-.terms div{border-top:1px solid var(--line-2);padding-top:16px}
-.terms dt{font-size:13px;color:var(--muted)}
-.terms dd{margin-top:4px;font-size:16px;font-weight:600;letter-spacing:-.015em;line-height:1.3}
-.terms dd small{display:block;margin-top:4px;font-size:14px;font-weight:400;color:var(--muted);letter-spacing:0}
+.q-val strong{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(42px,4vw,58px);line-height:1;white-space:nowrap;color:var(--bege)}
+.q-val strong small{font-family:var(--sans);font-size:.3em;letter-spacing:.1em;margin-right:6px;color:var(--areia);vertical-align:.9em}
+.q-val span{display:block;margin-top:10px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--txt-2)}
+.q-total{display:grid;grid-template-columns:repeat(2,1fr);background:var(--bege);color:var(--ink)}
+.q-total div{padding:clamp(24px,2.6vw,32px) clamp(20px,3vw,38px)}
+.q-total div+div{border-left:1px solid var(--line-l)}
+.q-total span{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze)}
+.q-total strong{display:block;margin-top:8px;font-family:var(--serif);font-weight:400;font-size:clamp(23px,2.1vw,30px)}
+.q-total strong em{color:var(--bronze)}
+.terms{margin-top:clamp(36px,4vw,52px);display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(16px,2vw,28px)}
+.terms div{border-top:1px solid var(--line-2);padding-top:18px}
+.terms dt{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--areia)}
+.terms dd{margin-top:8px;font-family:var(--serif);font-size:20px;line-height:1.3;color:var(--bege)}
+.terms dd small{display:block;margin-top:6px;font-family:var(--sans);font-size:14px;color:var(--txt-2)}
 
-/* quem faz */
+/* quem (bege) */
 .about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:start}
-.about img.logo{height:28px;width:auto;margin-bottom:24px}
-.about p{color:var(--muted);font-size:17px;max-width:54ch;margin-top:16px}
-.about p b{color:var(--ink);font-weight:550}
-.contact{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-2)}
-.contact div{padding:20px 0 22px;border-bottom:1px solid var(--line)}
-.contact div:nth-child(even){padding-left:24px;border-left:1px solid var(--line)}
+.about img.logo{height:36px;width:auto;margin-bottom:30px}
+.about p{color:var(--ink-2);font-size:17px;max-width:54ch;margin-top:18px}
+.about p b{color:var(--ink)}
+.contact{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(11,19,34,.25)}
+.contact div{padding:20px 0 22px;border-bottom:1px solid var(--line-l)}
+.contact div:nth-child(even){padding-left:24px;border-left:1px solid var(--line-l)}
 .contact div.full{grid-column:1/-1}
-.contact dt{font-size:13px;color:var(--muted)}
-.contact dd{margin-top:4px;font-size:16px;font-weight:550;line-height:1.4}
+.contact dt{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze)}
+.contact dd{margin-top:6px;font-family:var(--serif);font-size:19px;line-height:1.35;color:var(--ink)}
 
 /* faq */
 .faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:start}
-.faq-grid .intro{position:sticky;top:110px;margin-bottom:0}
+.faq-grid .intro{position:sticky;top:120px;margin-bottom:0}
 .faq details{border-top:1px solid var(--line-2)}
 .faq details:last-child{border-bottom:1px solid var(--line-2)}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-size:clamp(17px,1.3vw,19px);font-weight:550;letter-spacing:-.015em;line-height:1.35}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font-family:var(--serif);font-size:clamp(19px,1.5vw,22px);line-height:1.35;color:var(--bege)}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary i{flex:0 0 22px;height:22px;position:relative;transition:transform .35s var(--ease)}
-.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1.5px;background:var(--ink);transform:translate(-50%,-50%)}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1.5px;background:var(--areia);transform:translate(-50%,-50%)}
 .faq summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
 .faq details[open] summary i{transform:rotate(45deg)}
-.faq .ans{padding:0 44px 24px 0;color:var(--muted);font-size:16px;max-width:64ch}
-.faq .ans b{color:var(--ink);font-weight:550}
+.faq .ans{padding:0 44px 26px 0;color:var(--txt);font-size:16px;max-width:64ch}
+.faq .ans b{color:var(--bege)}
 
 /* final */
-.final{background:var(--dark);color:#fff;padding:clamp(72px,8vw,112px) 0 0;position:relative;overflow:hidden}
-.final-in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(32px,5vw,72px);align-items:end}
-.final h2{font-size:clamp(36px,4.4vw,60px);line-height:1.05;letter-spacing:-.04em;max-width:15ch}
-.final p{margin-top:20px;color:var(--muted-d);font-size:18px;max-width:48ch}
-.final .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
-.final .btn-l{background:transparent;color:#fff;border-color:rgba(255,255,255,.28)}
-.final .btn-l:hover{border-color:#fff}
-.cube{justify-self:end;width:min(260px,60%);opacity:.95}
-footer{margin-top:clamp(64px,7vw,96px);border-top:1px solid var(--line-d);padding:24px 0 28px;font-size:13.5px;color:var(--muted-d)}
+.final{background:var(--marinho-2);padding:clamp(88px,9vw,128px) 0 0;position:relative;overflow:hidden;border-top:1px solid var(--line)}
+.final .arc{width:1300px;left:50%;margin-left:-650px;bottom:-330px;opacity:.2}
+.final-in{position:relative;text-align:center;display:flex;flex-direction:column;align-items:center}
+.final .sym{width:120px;margin-bottom:34px}
+.final h2{font-size:clamp(38px,4.6vw,62px);line-height:1.08;max-width:16ch}
+.final p{margin-top:22px;color:var(--txt);font-size:18px;max-width:48ch}
+.final .acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:38px}
+.final .slogan{margin-top:56px}
+footer{position:relative;z-index:1;background:var(--marinho-2);margin-top:clamp(72px,8vw,104px);border-top:1px solid var(--line);padding:26px 0 30px;font-size:13px;color:var(--txt-2)}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-footer img{height:18px;width:auto}
+footer img{height:24px;width:auto}
 
 /* responsivo */
+@media (max-width:1480px){.top nav{display:none}}
 @media (max-width:1080px){
-  .top nav{display:none}
   .meta{grid-template-columns:repeat(3,1fr)}
   .meta div:nth-child(4){padding-left:0;border-left:0}
   .meta div:nth-child(n+4){border-top:1px solid var(--line)}
   .scope{grid-template-columns:repeat(2,1fr)}
   .scope div:not(:nth-child(4n+1)){padding-left:0;border-left:0}
-  .scope div:nth-child(even){padding-left:24px;border-left:1px solid var(--line)}
+  .scope div:nth-child(even){padding-left:26px;border-left:1px solid var(--line)}
   .map{grid-template-columns:repeat(2,1fr)}
-  .steps{grid-template-columns:repeat(3,1fr);row-gap:28px}
+  .steps{grid-template-columns:repeat(3,1fr);row-gap:30px}
   .q-head{display:none}
   .q-row{grid-template-columns:1fr 1fr}
   .q-val{grid-column:1/-1;text-align:left;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding-top:18px;border-top:1px solid var(--line)}
@@ -217,22 +236,21 @@ footer img{height:18px;width:auto}
   .terms{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:860px){
-  .hero-in,.search,.why,.about,.faq-grid,.final-in{grid-template-columns:1fr}
+  .hero-in,.search,.why,.about,.faq-grid{grid-template-columns:1fr}
   .why .intro,.faq-grid .intro{position:static}
   .gap{grid-template-columns:1fr}
-  .gap>div+div{border-left:0;border-top:1px solid var(--line)}
   .q-row{grid-template-columns:1fr}
   .q-total{grid-template-columns:1fr}
-  .q-total div+div{border-left:0;border-top:1px solid var(--line-d)}
+  .q-total div+div{border-left:0;border-top:1px solid var(--line-l)}
   .steps{grid-template-columns:1fr 1fr}
-  .cube{justify-self:start;width:140px}
 }
 @media (max-width:560px){
   body{font-size:16px}
-  .top .wrap{height:60px}
-  .brands .ep{height:28px}
-  .brands .mt,.brands .x{display:none}
-  .top .btn{padding:0 14px;font-size:14px}
+  .top .wrap{height:64px}
+  .sg-brand img{width:38px}
+  .sg-brand b{font-size:18px}
+  .sg-brand small,.brands .mt,.brands .x{display:none}
+  .top .btn{padding:0 14px;font-size:10.5px;letter-spacing:.12em}
   .hero .acts .btn{flex:1}
   .meta{grid-template-columns:1fr 1fr}
   .meta div,.meta div+div{padding:16px 12px 18px 0;border-left:0;border-top:1px solid var(--line)}
@@ -246,34 +264,26 @@ footer img{height:18px;width:auto}
   .terms{grid-template-columns:1fr}
   .contact{grid-template-columns:1fr}
   .contact div:nth-child(even){padding-left:0;border-left:0}
-  .reason{grid-template-columns:36px 1fr;gap:12px}
+  .reason{grid-template-columns:40px 1fr;gap:12px}
   .q span em{display:none}
+  .doc p{display:none}
   .faq .ans{padding-right:0}
   .final .acts .btn{flex:1}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{transition-duration:.01ms!important}
   .rv{opacity:1;transform:none}
+  .arc .d{stroke-dashoffset:0}
 }
-
-/* sagita */
-.docs .doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.6vw,20px)}
-.doc img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;border-radius:12px;background:var(--bg-2)}
-.doc b{display:block;margin-top:14px;font-size:16.5px;font-weight:600;letter-spacing:-.015em;line-height:1.25}
-.doc .crm{display:block;margin-top:4px;font-family:var(--mono);font-size:12px;color:var(--amber-ink)}
-.doc p{margin-top:8px;font-size:14px;line-height:1.5;color:var(--muted)}
-.q-row.rec{background:var(--amber-soft);box-shadow:inset 3px 0 0 var(--amber)}
-.tag-rec{display:inline-block;margin-bottom:10px;padding:4px 10px;border-radius:999px;background:var(--amber);color:var(--ink);font-size:12.5px;font-weight:600;letter-spacing:.01em}
-@media (max-width:560px){.doc p{display:none}}
 </style>
 </head>
 <body>
 <header class="top">
   <div class="wrap">
     <div class="brands">
-      <img class="ep" src="/propostas/sagita/assets/sagita-logo.png" alt="Sagita Educação em Oftalmologia" width="181" height="34">
+      <span class="sg-brand"><img src="/propostas/sagita/assets/simbolo-sagita.png" alt="" width="46" height="22"><span><b>SAGITA</b><small>EDUCAÇÃO EM OFTALMOLOGIA</small></span></span>
       <span class="x">×</span>
-      <img class="mt" src="/propostas/sagita/assets/matilab-logo-dark.svg" alt="Matilab" width="78" height="18">
+      <img class="mt" src="/propostas/sagita/assets/matilab-logo-bege.svg" alt="Matilab" width="135" height="25">
     </div>
     <nav aria-label="Seções">
       <a href="#diagnostico">Diagnóstico</a>
@@ -287,18 +297,20 @@ footer img{height:18px;width:auto}
 </header>
 <main>
 <section class="hero">
+  <svg class="arc" data-arc viewBox="0 0 1000 420" aria-hidden="true"><path class="d" pathLength="1" d="M40 380 A560.8 560.8 0 0 1 960 380"/><path class="d" pathLength="1" d="M40 380 H960"/><path class="d" pathLength="1" d="M500 380 V140"/><circle cx="40" cy="380" r="5"/><circle cx="960" cy="380" r="5"/><circle cx="500" cy="140" r="4"/></svg>
   <div class="wrap">
     <div class="hero-in">
       <div>
         <span class="eyebrow">Proposta comercial para a Sagita</span>
-        <h1>Esse corpo docente precisa ser <mark>encontrado</mark> no Google e nas IAs.</h1>
-        <p class="sub">Um site próprio para a Sagita, que mostra a autoridade do corpo docente, vende os cursos pela Hotmart e trabalha sozinho para trazer alunos.</p>
+        <h1>Esse corpo docente precisa ser <em>encontrado</em> no Google e nas IAs.</h1>
+        <p class="sub">Um site próprio para a Sagita, que mostra a autoridade de quem ensina, vende os cursos pela Hotmart e trabalha sozinho para trazer alunos.</p>
         <div class="acts">
           <a class="btn btn-a" href="#investimento">Ver investimento <span class="ar">→</span></a>
           <a class="btn btn-l" href="#escopo">O que entra no site</a>
         </div>
+        <p class="slogan">Experiência que ensina. Técnica que transforma.</p>
       </div>
-      <figure class="wall docs">
+      <figure class="docs">
         <div class="doc-grid">
           <div class="doc">
             <img src="/propostas/sagita/assets/taise.webp" alt="Dra. Taíse Tognon" width="498" height="626">
@@ -313,7 +325,7 @@ footer img{height:18px;width:auto}
             <p>Doutor pela FMRP-USP. Preceptor de Lentes de Contato do HC-FMRP-USP desde 2009.</p>
           </div>
         </div>
-        <figcaption><span>Corpo docente de estreia, tirado do lookbook de vocês</span><b>e mais professores a caminho</b></figcaption>
+        <figcaption><span>Corpo docente de estreia</span><b>E mais professores a caminho</b></figcaption>
       </figure>
     </div>
     <dl class="meta">
@@ -329,18 +341,19 @@ footer img{height:18px;width:auto}
 <section class="sec" id="diagnostico">
   <div class="wrap">
     <div class="intro rv">
+      <span class="eyebrow">01 · Diagnóstico</span>
       <h2 class="h2">A marca já nasceu pronta. Falta a casa onde ela vende.</h2>
       <p>A Sagita chega com branding, lookbook, domínio e gravações em estúdio. O que ainda não existe é o lugar que junta tudo isso: <b>quem procura um curso no Google ou pergunta para uma IA ainda não encontra a Sagita</b>, e quem recebe uma indicação não tem onde conferir quem ensina.</p>
     </div>
     <div class="gap rv">
-      <div><strong>3<small>cursos</small></strong><h3>online no lançamento</h3><p>Depois vêm consultorias, treinamentos presenciais e novos cursos.</p></div>
-      <div><strong>3<small>públicos</small></strong><h3>com dores diferentes</h3><p>Auxiliares de oftalmologia, contatólogos, enfermagem e secretariado.</p></div>
-      <div><strong>1<small>canal</small></strong><h3>que precisa ser de vocês</h3><p>A venda começa na Hotmart, mas inscrição, dúvidas e certificado moram no site.</p></div>
+      <div><strong>3<small>cursos</small></strong><h3>Online no lançamento</h3><p>Depois vêm consultorias, treinamentos presenciais e novos cursos.</p></div>
+      <div><strong>3<small>públicos</small></strong><h3>Com dores diferentes</h3><p>Auxiliares de oftalmologia, contatólogos, enfermagem e secretariado.</p></div>
+      <div><strong>1<small>canal</small></strong><h3>Que precisa ser de vocês</h3><p>A venda começa na Hotmart, mas inscrição, dúvidas e certificado moram no site.</p></div>
     </div>
     <div class="search rv">
       <div>
         <h3>É isso que o auxiliar, o contatólogo e a secretária de clínica digitam.</h3>
-        <p>Buscas de quem quer estudar e está decidindo onde. O site é construído para aparecer nelas, com uma página e artigos próprios para cada tema.</p>
+        <p>Buscas de quem quer estudar e está decidindo onde. O site é construído para aparecer nelas, com páginas e artigos próprios para cada tema.</p>
       </div>
       <div class="q">
         <span>curso auxiliar de oftalmologia<em>Auxiliares</em></span>
@@ -354,43 +367,18 @@ footer img{height:18px;width:auto}
   </div>
 </section>
 
-<section class="sec alt" id="porque">
+<section class="sec light" id="porque">
   <div class="wrap why">
     <div class="intro rv">
-      <h2 class="h2">O que o site resolve para a Sagita.</h2>
-      <p>Não é uma vitrine bonita. É um site que <b>se auto-entrega</b>: aparece para quem procura, prova a competência de quem ensina e leva até a inscrição.</p>
+      <span class="eyebrow">02 · O que o site resolve</span>
+      <h2 class="h2">Um site que se auto-entrega.</h2>
+      <p>Não é uma vitrine bonita. É um site que <b>aparece para quem procura</b>, prova a competência de quem ensina e leva até a inscrição.</p>
     </div>
     <div>
-      <div class="reason rv">
-        <span class="n">01</span>
-        <div>
-          <h3>Alunos novos pelo Google</h3>
-          <p>Uma página por curso e por público, com as palavras que o aluno usa de verdade, mais <b>artigos técnicos assinados pelos docentes</b>. Cada artigo continua trazendo gente meses depois de publicado.</p>
-          <div class="brandrow"><span><img src="/propostas/sagita/assets/logo-google.svg" alt="">Google Busca e AI Overviews</span></div>
-        </div>
-      </div>
-      <div class="reason rv">
-        <span class="n">02</span>
-        <div>
-          <h3>Recomendada pelas IAs</h3>
-          <p>Cada vez mais gente pergunta para a IA onde estudar contatologia. Estruturamos o site com <b>schema.org completo, llms.txt e respostas claras</b> para que essas ferramentas consigam ler, entender e citar a Sagita.</p>
-          <div class="brandrow"><span><img src="/propostas/sagita/assets/logo-chatgpt.svg" alt="">ChatGPT</span><span><img src="/propostas/sagita/assets/logo-gemini.svg" alt="">Gemini</span><span><img src="/propostas/sagita/assets/logo-perplexity.svg" alt="">Perplexity</span></div>
-        </div>
-      </div>
-      <div class="reason rv">
-        <span class="n">03</span>
-        <div>
-          <h3>Autoridade que vende sozinha</h3>
-          <p>Página individual para cada professor, com formação, <b>CRM e RQE</b> e os cursos que ministra. É o que convence o aluno a pagar e o que o Google usa para confiar no conteúdo de saúde.</p>
-        </div>
-      </div>
-      <div class="reason rv">
-        <span class="n">04</span>
-        <div>
-          <h3>Canal próprio, com a Hotmart por trás</h3>
-          <p>O aluno conhece, tira dúvidas e se inscreve no site da Sagita. O pagamento e as aulas ficam na Hotmart no começo, e o site já nasce <b>pronto para uma área de membros própria</b> quando fizer sentido.</p>
-        </div>
-      </div>
+      <div class="reason rv"><span class="n">01</span><div><h3>Alunos novos pelo Google</h3><p>Uma página por curso e por público, com as palavras que o aluno usa de verdade, mais <b>artigos técnicos assinados pelos docentes</b>. Cada artigo continua trazendo gente meses depois de publicado.</p><div class="brandrow"><span><img src="/propostas/sagita/assets/logo-google.svg" alt="">Google Busca e AI Overviews</span></div></div></div>
+      <div class="reason rv"><span class="n">02</span><div><h3>Recomendada pelas IAs</h3><p>Cada vez mais gente pergunta para a IA onde estudar contatologia. Estruturamos o site com <b>schema.org completo, llms.txt e respostas claras</b> para que essas ferramentas consigam ler, entender e citar a Sagita.</p><div class="brandrow"><span><img src="/propostas/sagita/assets/logo-chatgpt.svg" alt="">ChatGPT</span><span><img src="/propostas/sagita/assets/logo-gemini.svg" alt="">Gemini</span><span><img src="/propostas/sagita/assets/logo-perplexity.svg" alt="">Perplexity</span></div></div></div>
+      <div class="reason rv"><span class="n">03</span><div><h3>Autoridade que vende sozinha</h3><p>Página individual para cada professor, com formação, <b>CRM e RQE</b> e os cursos que ministra. É o que convence o aluno a se inscrever e o que o Google usa para confiar em conteúdo de saúde.</p></div></div>
+      <div class="reason rv"><span class="n">04</span><div><h3>Canal próprio, com a Hotmart por trás</h3><p>O aluno conhece, tira dúvidas e se inscreve no site da Sagita. O pagamento e as aulas ficam na Hotmart, e o site já nasce <b>preparado para uma área de membros própria</b> quando fizer sentido.</p></div></div>
     </div>
   </div>
 </section>
@@ -398,6 +386,7 @@ footer img{height:18px;width:auto}
 <section class="sec" id="escopo">
   <div class="wrap">
     <div class="intro rv">
+      <span class="eyebrow">03 · Escopo</span>
       <h2 class="h2">O que entra no projeto.</h2>
       <p>Cada parte do site tem um papel claro. <b>Cursos, professores e artigos são editados por vocês</b> num painel próprio, sem depender de programador.</p>
     </div>
@@ -413,33 +402,34 @@ footer img{height:18px;width:auto}
       <span class="k">Home</span><span class="k">Páginas de curso</span><span class="k">Páginas de professor</span><span>Artigos</span><span>Central do Aluno</span><span>Sobre</span><span>Contato</span><span>Privacidade e Termos</span>
     </div>
     <div class="scope rv">
-      <div><h3>Layout exclusivo</h3><p>Na identidade do lookbook: marinho profundo, areia, Georgia e o arco da sagita. 2 rodadas de ajuste.</p></div>
-      <div><h3>Painel administrativo</h3><p>Vocês cadastram cursos, professores, artigos e perguntas frequentes sem programador.</p></div>
-      <div><h3>SEO técnico completo</h3><p>Schema Organization, EducationalOrganization, Course, Person, FAQPage e Article, sitemap e Search Console.</p></div>
-      <div><h3>Preparado para IAs</h3><p>llms.txt e conteúdo estruturado para ser lido e citado por ChatGPT, Gemini e Perplexity.</p></div>
-      <div><h3>Hotmart e rastreamento</h3><p>Checkout em cada curso, Meta Pixel, GA4 e Google Ads medindo de onde vem cada inscrição.</p></div>
-      <div><h3>Vídeos de estúdio</h3><p>As gravações de vocês abrindo a home e as páginas de curso, leves e sem travar.</p></div>
-      <div><h3>Velocidade no celular</h3><p>Next.js na Vercel, com meta de 90+ no PageSpeed. Abre rápido até no 4G.</p></div>
-      <div><h3>LGPD e tudo no nome de vocês</h3><p>Política, termos e aviso de cookies. Domínio, conteúdo e acessos ficam com a Sagita.</p></div>
+      <div><h3><span class="bul"></span>Layout exclusivo</h3><p>Na identidade do lookbook: marinho profundo, areia, Georgia e o arco da sagita. 2 rodadas de ajuste.</p></div>
+      <div><h3><span class="bul"></span>Painel administrativo</h3><p>Vocês cadastram cursos, professores, artigos e perguntas frequentes sem programador.</p></div>
+      <div><h3><span class="bul"></span>SEO técnico</h3><p>Schema Organization, EducationalOrganization, Course, Person, FAQPage e Article, sitemap e Search Console.</p></div>
+      <div><h3><span class="bul"></span>Preparado para IAs</h3><p>llms.txt e conteúdo estruturado para ser lido e citado por ChatGPT, Gemini e Perplexity.</p></div>
+      <div><h3><span class="bul"></span>Hotmart e rastreamento</h3><p>Checkout em cada curso, Meta Pixel, GA4 e Google Ads medindo de onde vem cada inscrição.</p></div>
+      <div><h3><span class="bul"></span>Vídeos de estúdio</h3><p>As gravações de vocês abrindo a home e as páginas de curso, leves e sem travar.</p></div>
+      <div><h3><span class="bul"></span>Velocidade no celular</h3><p>Código próprio com meta de 90+ no PageSpeed. Abre rápido até no 4G.</p></div>
+      <div><h3><span class="bul"></span>LGPD e tudo no nome de vocês</h3><p>Política, termos e aviso de cookies. Domínio, conteúdo e acessos ficam com a Sagita.</p></div>
     </div>
   </div>
 </section>
 
-<section class="sec alt" id="cronograma">
+<section class="sec linho" id="cronograma">
   <div class="wrap">
     <div class="intro rv">
+      <span class="eyebrow">04 · Cronograma</span>
       <h2 class="h2">Do ok ao site no ar, em cinco passos.</h2>
     </div>
     <ol class="steps rv">
       <li><strong>Aprovação</strong><p>Fechamento e reserva da produção.</p></li>
       <li><strong>Imersão</strong><p>Reunião com as sócias e os professores, e pesquisa das palavras-chave do nicho.</p></li>
       <li><strong>Layout</strong><p>Home e uma página de curso para vocês aprovarem.</p></li>
-      <li><strong>Produção</strong><p>Todas as páginas, painel, Hotmart, SEO e os primeiros artigos.</p></li>
+      <li><strong>Produção</strong><p>Todas as páginas, painel, Hotmart e SEO.</p></li>
       <li class="hl"><strong>No ar</strong><p>Publicação no domínio de vocês, envio ao Google e treinamento da equipe.</p></li>
     </ol>
     <div class="dur rv">
-      <strong>6 a 8 semanas</strong>
-      <p>no pacote Completo, a partir do material em mãos (vídeos, textos dos cursos e fotos). O Essencial sai em 4 a 5 semanas. A área de membros própria soma mais 6 a 8 semanas.</p>
+      <strong>4 semanas</strong>
+      <p>a partir do material em mãos: vídeos, textos dos cursos e fotos.</p>
     </div>
   </div>
 </section>
@@ -447,69 +437,56 @@ footer img{height:18px;width:auto}
 <section class="sec" id="investimento">
   <div class="wrap">
     <div class="intro rv">
-      <span class="eyebrow">Investimento</span>
-      <h2 class="h2">Três caminhos, valores claros.</h2>
-      <p>O projeto é pago uma vez. Depois, só a hospedagem mensal, e alterações apenas quando vocês pedirem. Recomendamos o <b>Completo</b>: é ele que faz o site se auto-entregar.</p>
+      <span class="eyebrow">05 · Investimento</span>
+      <h2 class="h2">Escopo fechado, valores claros.</h2>
+      <p>O site é pago uma vez. Depois, só a hospedagem mensal e o domínio anual, e alterações apenas quando vocês pedirem.</p>
     </div>
     <div class="quote rv">
-      <div class="q-head"><span>Pacote</span><span>O que inclui</span><span>Valor</span></div>
-      <div class="q-row">
-        <div><h3>Essencial</h3><p class="d">Para lançar com presença forte e base de busca.</p></div>
+      <div class="q-head"><span>Item</span><span>O que inclui</span><span>Valor</span></div>
+      <div class="q-row main">
+        <div><h3>Site Sagita</h3><p class="d">Projeto completo, do layout à publicação no domínio.</p></div>
         <ul>
-          <li><b>Home, cursos, corpo docente</b>, sobre e contato</li>
-          <li><b>Página de venda por curso</b> com checkout da Hotmart</li>
-          <li><b>SEO técnico</b>, schema.org, sitemap e Search Console</li>
-          <li><b>Pixels e analytics</b>, WhatsApp e LGPD</li>
-          <li>Painel para editar <b>cursos e professores</b></li>
+          <li><span class="bul"></span><span><b>Home, cursos, corpo docente</b>, artigos, Central do Aluno, sobre e contato</span></li>
+          <li><span class="bul"></span><span><b>Página de venda por curso</b> com checkout da Hotmart</span></li>
+          <li><span class="bul"></span><span><b>Painel</b> para cursos, professores, artigos e perguntas frequentes</span></li>
+          <li><span class="bul"></span><span><b>SEO técnico e preparo para IAs</b>, schema.org, llms.txt e Search Console</span></li>
+          <li><span class="bul"></span><span><b>Pixels, analytics, WhatsApp</b> e LGPD</span></li>
         </ul>
-        <div class="q-val"><strong><small>R$</small>7.900</strong><span>valor único</span></div>
-      </div>
-      <div class="q-row rec">
-        <div><span class="tag-rec">Recomendado</span><h3>Completo</h3><p class="d">O site que se auto-entrega, pronto para crescer.</p></div>
-        <ul>
-          <li><b>Tudo do Essencial</b></li>
-          <li><b>Artigos técnicos</b> com estrutura de SEO e GEO, e 6 artigos iniciais escritos com os docentes</li>
-          <li><b>Central do Aluno</b>: FAQ, acesso ao curso e validação de certificado</li>
-          <li><b>Painel completo</b>: cursos, professores, artigos e perguntas frequentes</li>
-          <li><b>llms.txt</b>, conteúdo estruturado para IAs e kit de lançamento</li>
-        </ul>
-        <div class="q-val"><strong><small>R$</small>12.900</strong><span>valor único</span></div>
-      </div>
-      <div class="q-row">
-        <div><h3>Completo + Plataforma</h3><p class="d">Para ter os alunos dentro de casa, sem depender da Hotmart.</p></div>
-        <ul>
-          <li><b>Tudo do Completo</b></li>
-          <li><b>Área de membros própria</b>, com login do aluno</li>
-          <li><b>Aulas e progresso</b> em cada curso</li>
-          <li><b>Certificado automático</b> com QR Code de validação</li>
-        </ul>
-        <div class="q-val"><strong><small>R$</small>23.900</strong><span>valor único</span></div>
+        <div class="q-val"><strong><small>R$</small>3.000</strong><span>Valor único</span></div>
       </div>
       <div class="q-row">
         <div><h3>Hospedagem</h3><p class="d">O site no ar, rápido e seguro, todo mês.</p></div>
         <ul>
-          <li><b>Vercel</b> com HTTPS e entrega rápida em todo o Brasil</li>
-          <li><b>Banco de dados</b> do painel e <b>monitoramento</b> para o site não sair do ar</li>
-          <li>Com a área de membros: <b>R$ 299,90 por mês</b>. Os vídeos das aulas ficam num player profissional (Panda Video ou Vimeo) contratado em nome de vocês</li>
+          <li><span class="bul"></span><span><b>Hospedagem</b> do site com HTTPS</span></li>
+          <li><span class="bul"></span><span><b>Monitoramento</b> para o site não sair do ar</span></li>
+          <li><span class="bul"></span><span>Começa a contar depois que o site estiver publicado</span></li>
         </ul>
-        <div class="q-val"><strong><small>R$</small>149,90</strong><span>por mês</span></div>
+        <div class="q-val"><strong><small>R$</small>59</strong><span>Por mês</span></div>
+      </div>
+      <div class="q-row">
+        <div><h3>Domínio</h3><p class="d">O endereço do site, renovado todo ano.</p></div>
+        <ul>
+          <li><span class="bul"></span><span><b>Renovação anual</b> no Registro.br</span></li>
+          <li><span class="bul"></span><span>Sempre <b>em nome da Sagita</b></span></li>
+        </ul>
+        <div class="q-val"><strong><small>R$</small>40</strong><span>Por ano</span></div>
       </div>
       <div class="q-row">
         <div><h3>Alterações pontuais</h3><p class="d">Depois dos primeiros 30 dias do site no ar.</p></div>
         <ul>
-          <li><b>Nos primeiros 30 dias</b>, ajustes pequenos estão inclusos</li>
-          <li>Cursos, professores e artigos novos vocês mesmos publicam pelo painel</li>
-          <li>Para o resto, <b>mandamos antes quantas horas leva</b> e o valor. Só fazemos depois do seu ok</li>
+          <li><span class="bul"></span><span><b>Nos primeiros 30 dias</b>, ajustes pequenos estão inclusos</span></li>
+          <li><span class="bul"></span><span>Cursos, professores e artigos novos vocês mesmos publicam pelo painel</span></li>
+          <li><span class="bul"></span><span>Para o resto, <b>mandamos antes quantas horas leva</b> e o valor. Só fazemos depois do seu ok</span></li>
         </ul>
-        <div class="q-val"><strong><small>R$</small>150</strong><span>por hora</span></div>
+        <div class="q-val"><strong><small>R$</small>150</strong><span>Por hora</span></div>
       </div>
       <div class="q-total">
-        <div><span>Projeto recomendado</span><strong>R$ 12.900 <em>Completo, valor único</em></strong></div>
-        <div><span>Depois do site no ar, todo mês</span><strong>R$ 149,90 <em>hospedagem</em></strong></div>
+        <div><span>Projeto</span><strong>R$ 3.000 <em>valor único</em></strong></div>
+        <div><span>Depois do site no ar</span><strong>R$ 59 <em>por mês</em> + R$ 40 <em>por ano</em></strong></div>
       </div>
     </div>
     <dl class="terms rv">
-      <div><dt>Prazo</dt><dd>6 a 8 semanas<small>no Completo, após o material em mãos</small></dd></div>
+      <div><dt>Prazo</dt><dd>4 semanas<small>após o material em mãos</small></dd></div>
       <div><dt>Ajustes</dt><dd>2 rodadas<small>no layout, antes da produção</small></dd></div>
       <div><dt>Pagamento</dt><dd>50% + 50%<small>na aprovação e na publicação</small></dd></div>
       <div><dt>Alterações</dt><dd>Inclusas por 30 dias<small>depois, R$ 150/h com orçamento antes</small></dd></div>
@@ -518,10 +495,10 @@ footer img{height:18px;width:auto}
   </div>
 </section>
 
-<section class="sec alt" id="quem">
+<section class="sec light" id="quem">
   <div class="wrap about">
     <div class="rv">
-      <img class="logo" src="/propostas/sagita/assets/matilab-logo-dark.svg" alt="Matilab" width="122" height="28">
+      <img class="logo" src="/propostas/sagita/assets/matilab-logo-navy.svg" alt="Matilab" width="195" height="36">
       <h2 class="h2">Quem conduz o projeto.</h2>
       <p>A Matilab é uma agência de <b>sites, sistemas, landing pages, identidade visual, ads e social media</b>, com foco em desenvolvimento. São 9 anos de mercado e mais de 500 projetos, atendendo o Brasil todo. O atendimento e a parte técnica ficam com o Matheus, dono da agência, com time de comercial, design e gestão por trás.</p>
       <p>Temos a <b>MedRec</b>, braço da Matilab dedicado a médicos, então a linguagem e os cuidados da comunicação em saúde fazem parte do nosso dia a dia.</p>
@@ -539,36 +516,37 @@ footer img{height:18px;width:auto}
 <section class="sec" id="duvidas">
   <div class="wrap faq-grid">
     <div class="intro rv">
+      <span class="eyebrow">06 · Dúvidas</span>
       <h2 class="h2">Perguntas frequentes.</h2>
       <p>O que costuma aparecer antes de fechar, em poucas linhas.</p>
     </div>
     <div class="faq rv">
-      <details open><summary>Já temos hospedagem. Precisa trocar?<i></i></summary><div class="ans">Recomendamos a Vercel porque ela foi feita para o Next.js: o site sai do servidor mais próximo de cada aluno, atualiza em minutos com HTTPS automático e aguenta pico de acesso em lançamento. O <b>domínio continua no Registro.br, em nome de vocês</b>. Se preferirem manter a hospedagem atual, avaliamos juntos se ela roda o projeto.</div></details>
+      <details open><summary>Já temos hospedagem. Precisa trocar?<i></i></summary><div class="ans">Recomendamos a nossa porque o site é feito em código próprio e roda numa estrutura pensada para ele: entrega rápida em todo o Brasil, HTTPS automático e estabilidade em pico de acesso de lançamento. O <b>domínio continua no Registro.br, em nome de vocês</b>. Se preferirem manter a hospedagem atual, avaliamos juntos se ela roda o projeto.</div></details>
       <details><summary>Por que não fazer em Wix, como o site de referência?<i></i></summary><div class="ans">O drbarella.com.br tem uma presença bonita. Por ser feito em construtor pronto, alguns pontos ficam difíceis de controlar: hierarquia de títulos, texto alternativo nas imagens, descrição única por página e conteúdo sem repetição. Em código próprio, <b>tudo isso é pensado desde o começo</b>, e é o que o Google e as IAs leem.</div></details>
-      <details><summary>Como fica a Hotmart?<i></i></summary><div class="ans">No Essencial e no Completo, o pagamento e as aulas continuam na Hotmart. O site leva o aluno até o checkout já com o rastreamento ligado. Quando quiserem ter os alunos dentro de casa, a área de membros própria entra sem refazer o site.</div></details>
-      <details><summary>Preciso escrever os textos?<i></i></summary><div class="ans">Não. Escrevemos a partir do lookbook, do material dos cursos e da reunião de imersão. Nos artigos técnicos, os docentes revisam e corrigem o que for clínico, e o artigo sai assinado por eles.</div></details>
-      <details><summary>O site aparece no Google e nas IAs logo que sobe?<i></i></summary><div class="ans">Enviamos o site ao Google e ao Bing no dia da publicação. A indexação costuma levar dias, e o posicionamento cresce nas semanas seguintes, conforme os artigos e as páginas de curso são lidos. Ninguém controla o algoritmo: o que entregamos é a base técnica completa e o conteúdo certo para disputar as primeiras posições.</div></details>
+      <details><summary>Como fica a Hotmart?<i></i></summary><div class="ans">O pagamento e as aulas continuam na Hotmart. O site leva o aluno até o checkout já com o rastreamento ligado. Quando quiserem ter os alunos dentro de casa, a área de membros própria entra como um projeto à parte, sem refazer o site.</div></details>
+      <details><summary>Preciso escrever os textos?<i></i></summary><div class="ans">Não. Escrevemos a partir do lookbook, do material dos cursos e da reunião de imersão. Vocês revisam e corrigem o que for clínico.</div></details>
+      <details><summary>O site aparece no Google e nas IAs logo que sobe?<i></i></summary><div class="ans">Enviamos o site ao Google e ao Bing no dia da publicação. A indexação costuma levar dias, e o posicionamento cresce nas semanas seguintes, conforme os artigos e as páginas de curso são lidos. Ninguém controla o algoritmo: o que entregamos é a base técnica completa e a estrutura certa para disputar as primeiras posições.</div></details>
       <details><summary>E se eu quiser mudar algo depois?<i></i></summary><div class="ans">Cursos, professores, artigos e perguntas frequentes vocês publicam pelo painel. Nos primeiros 30 dias com o site no ar, ajustes pequenos estão inclusos. Depois disso, cada alteração custa <b>R$ 150 por hora</b>: vocês mandam o pedido, a gente calcula quantas horas leva e passa o valor antes de fazer.</div></details>
     </div>
   </div>
 </section>
 
 <section class="final">
+  <svg class="arc" data-arc viewBox="0 0 1000 420" aria-hidden="true"><path class="d" pathLength="1" d="M40 380 A560.8 560.8 0 0 1 960 380"/><path class="d" pathLength="1" d="M40 380 H960"/><path class="d" pathLength="1" d="M500 380 V140"/><circle cx="40" cy="380" r="5"/><circle cx="960" cy="380" r="5"/><circle cx="500" cy="140" r="4"/></svg>
   <div class="wrap final-in">
-    <div>
-      <h2>Vamos colocar a Sagita no Google e nas IAs?</h2>
-      <p>Me manda o ok por aqui que eu reservo a produção e já marco a reunião de imersão com as sócias e os professores.</p>
-      <div class="acts">
-        <a class="btn btn-a" data-wa href="https://wa.me/5511992644010" target="_blank" rel="noopener">Aprovar proposta <span class="ar">→</span></a>
-        <a class="btn btn-l" href="#investimento">Rever valores</a>
-      </div>
+    <img class="sym" src="/propostas/sagita/assets/simbolo-sagita.png" alt="" width="120" height="58">
+    <h2>Vamos colocar a Sagita no Google e nas IAs?</h2>
+    <p>Me manda o ok por aqui que eu reservo a produção e já marco a reunião de imersão com as sócias e os professores.</p>
+    <div class="acts">
+      <a class="btn btn-a" data-wa href="https://wa.me/5511992644010" target="_blank" rel="noopener">Aprovar proposta <span class="ar">→</span></a>
+      <a class="btn btn-l" href="#investimento">Rever valores</a>
     </div>
-    <svg class="cube" viewBox="0 0 120 130" aria-hidden="true"><path d="M60 4 112 32 60 60 8 32Z" fill="#3a3a38"/><path d="M8 32 60 60V126L8 98Z" fill="#ffa30f"/><path d="M112 32 60 60V126L112 98Z" fill="#2b2b2a"/><path d="M60 60 86 46V82L60 96Z" fill="#ffa30f" opacity=".9"/></svg>
+    <p class="slogan">Experiência que ensina. Técnica que transforma.</p>
   </div>
   <footer>
     <div class="wrap">
       <span>Proposta Matilab para a Sagita Educação em Oftalmologia, emitida em 12/11/2026 e válida até 27/11/2026.</span>
-      <img src="/propostas/sagita/assets/matilab-logo-white.svg" alt="Matilab" width="78" height="18">
+      <img src="/propostas/sagita/assets/matilab-logo-bege.svg" alt="Matilab" width="130" height="24">
     </div>
   </footer>
 </section>
@@ -578,9 +556,8 @@ footer img{height:18px;width:auto}
   const CONFIG={whatsapp:"5511992644010",saudacao:"Oi Matheus! Vi a proposta do site da Sagita e quero seguir."};
   document.querySelectorAll('[data-wa]').forEach(a=>a.href="https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(CONFIG.saudacao));
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target)}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
-  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  document.querySelectorAll('.rv,[data-arc]').forEach(el=>io.observe(el));
 })();
 </script>
 </body>
-
 </html>
