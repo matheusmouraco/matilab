@@ -1622,5 +1622,13 @@
   "tipo": "Site",
   "url": "https://estudio-bloco-7.vercel.app/",
   "h": 3000
+ },
+ {
+  "id": "maya-saude-site-vercel-app",
+  "nome": "Maya Saúde",
+  "setor": "Saúde e Clínicas",
+  "tipo": "Site",
+  "url": "https://maya-saude-site.vercel.app/",
+  "h": 3000
  }
 ]
