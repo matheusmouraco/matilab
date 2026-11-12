@@ -37,6 +37,9 @@
 .mx-nav svg.mx-i,.mx-menu svg.mx-i,.mx-footer svg.mx-i{width:1.15em;height:1.15em;flex:none;display:inline-block;vertical-align:-.2em}
 footer.mx-footer{background:var(--ink);color:var(--t-light);border-top:1px solid var(--line-d);margin:0;position:relative;z-index:1}
 html.mx-open{overflow:hidden}
+/* cursor padrão do navegador (remove o cursor de bolinha antigo) */
+#cur,#ring{display:none!important}
+html body :is(button,summary,select,[role=button]){cursor:pointer}
 .mx-nav.mx-nav{z-index:10000}.mx-menu.mx-menu{z-index:10001}
 svg.mx-i{width:1.15em;height:1.15em;flex:none;display:inline-block;vertical-align:-.2em}
 .mx-wrap{width:100%;max-width:calc(var(--max) + var(--gut)*2);margin:0 auto;padding:0 var(--gut)}
@@ -83,11 +86,13 @@ svg.mx-i{width:1.15em;height:1.15em;flex:none;display:inline-block;vertical-alig
 /* ─── FOOTER ─── */
 .mx-footer{padding:clamp(72px,8vw,110px) 0 36px}
 .mx-ft-top{display:grid;grid-template-columns:1.3fr repeat(3,1fr);gap:40px;padding-bottom:56px;border-bottom:1px solid var(--line-d)}
-.mx-ft-brand svg{height:28px;width:auto;margin-bottom:22px}
+.mx-ft-brand>svg{height:28px;width:auto;margin-bottom:22px}
 .mx-ft-brand p{color:var(--t-light-2);font-size:15px;max-width:34ch}
 .mx-ft-social{display:flex;gap:8px;margin-top:24px}
-.mx-ft-social a{width:44px;height:44px;border-radius:999px;display:grid;place-items:center;border:1px solid var(--line-d);font-size:19px;transition:background-color .3s,color .3s}
-.mx-ft-social a:hover{background:var(--lime);color:var(--ink)}
+.mx-ft-social{gap:10px!important}
+.mx-ft-social a{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.06);font-size:24px;transition:transform .5s var(--ease),background-color .3s}
+.mx-ft-social a:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+.mx-ft-social svg.mx-i{width:24px;height:24px;vertical-align:0;margin:0}
 .mx-ft-col h3{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--t-light-2);font-weight:500;margin-bottom:18px}
 .mx-ft-col a,.mx-ft-col address{display:block;font-size:15px;padding:5px 0;font-style:normal;color:var(--t-light);opacity:.85;transition:opacity .3s,color .3s}
 .mx-ft-col a:hover{opacity:1;color:var(--lime)}

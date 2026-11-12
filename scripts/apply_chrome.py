@@ -84,6 +84,9 @@ chrome_css = f"""/* Header, menu e rodapé da home aplicados no site todo. Gerad
 .mx-nav svg.mx-i,.mx-menu svg.mx-i,.mx-footer svg.mx-i{{width:1.15em;height:1.15em;flex:none;display:inline-block;vertical-align:-.2em}}
 footer.mx-footer{{background:var(--ink);color:var(--t-light);border-top:1px solid var(--line-d);margin:0;position:relative;z-index:1}}
 html.mx-open{{overflow:hidden}}
+/* cursor padrão do navegador (remove o cursor de bolinha antigo) */
+#cur,#ring{{display:none!important}}
+html body :is(button,summary,select,[role=button]){{cursor:pointer}}
 .mx-nav.mx-nav{{z-index:10000}}.mx-menu.mx-menu{{z-index:10001}}
 {chr(10).join(rules)}
 {chr(10).join(medias)}

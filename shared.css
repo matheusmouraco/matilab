@@ -1,8 +1,8 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{background:#0A0A0A;color:#fff;font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;cursor:none}
-a{text-decoration:none;color:inherit;cursor:none}
-button{cursor:none;border:none;background:none;font-family:inherit}
+body{background:#0A0A0A;color:#fff;font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;cursor:auto}
+a{text-decoration:none;color:inherit;cursor:auto}
+button{cursor:auto;border:none;background:none;font-family:inherit}
 img{display:block;max-width:100%}
 ::selection{background:#B5FB67;color:#0A0A0A}
 ::-webkit-scrollbar{width:2px}
@@ -119,7 +119,7 @@ footer{background:#080808;border-top:1px solid var(--ld);padding:64px 0 32px;col
 /* ── FAQ ── */
 .faq{max-width:720px;margin:32px auto 0;text-align:left}
 .faq-item{border-bottom:1px solid var(--ld);padding:24px 0}
-.faq-q{font-size:16px;font-weight:600;color:#fff;cursor:none;display:flex;justify-content:space-between;align-items:center;gap:16px;letter-spacing:-.2px;width:100%;text-align:left}
+.faq-q{font-size:16px;font-weight:600;color:#fff;cursor:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;letter-spacing:-.2px;width:100%;text-align:left}
 .faq-a{font-size:14px;font-weight:300;color:rgba(255,255,255,.6);line-height:1.8;margin-top:14px}
 .faq-icon{width:24px;height:24px;border-radius:50%;border:1px solid var(--ld);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:rgba(255,255,255,.4);font-size:16px;transition:all .2s}
 .faq-item.open .faq-icon{background:var(--lime);border-color:var(--lime);color:#080808}
