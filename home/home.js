@@ -35,7 +35,8 @@
   var cards = [].slice.call(document.querySelectorAll('.svc-card'));
   if (cards.length) {
     var panels = [].slice.call(document.querySelectorAll('.svc-panel'));
-    var chips = [].slice.call(document.querySelectorAll('.svc-panel li'));
+    var chips = [].slice.call(document.querySelectorAll('.svc-panel li, .svc-imgs img'));
+    var count = document.querySelector('.svc-count b');
     var sIO = new IntersectionObserver(function (es) {
       es.forEach(function (e) {
         if (!e.isIntersecting) return;
@@ -43,6 +44,7 @@
         cards.forEach(function (c) { c.classList.toggle('on', c === e.target); });
         panels.forEach(function (x) { x.classList.toggle('on', x.getAttribute('data-p') === p); });
         chips.forEach(function (x) { x.classList.toggle('on', x.getAttribute('data-s') === s); });
+        if (count) count.textContent = s.slice(1);
       });
     }, { rootMargin: '-48% 0px -48% 0px' });
     cards.forEach(function (c) { sIO.observe(c); });
