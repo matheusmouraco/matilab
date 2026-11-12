@@ -135,7 +135,8 @@ def main():
 
     sobre = (ROOT / "sobre.html").read_text()
     gtag = sobre[: sobre.index("<meta charset")]
-    logo = re.search(r"<svg height=\"18\".*?</svg>", sobre, re.S).group(0).replace('fill="white"', 'fill="currentColor"')
+    m_logo = re.search(r"<svg height=\"18\".*?</svg>", sobre, re.S)
+    logo = m_logo.group(0).replace('fill="white"', 'fill="currentColor"') if m_logo else '<svg height="18" viewBox="0 0 1439 266" fill="currentColor" aria-hidden="true"><use href="#mt-logo"/></svg>'
 
     page = f"""{gtag}<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -226,6 +227,9 @@ def main():
 """
     (ROOT / "cases.html").write_text(page)
     print(f"cases.html: {total} cases em {n_set} setores")
+    # header e rodapé padrão do site (mesmos da home)
+    import subprocess, sys
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "apply_chrome.py")], check=True)
 
 
 if __name__ == "__main__":
