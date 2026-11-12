@@ -1590,5 +1590,37 @@
   "tipo": "E-commerce",
   "url": "https://techpink.com.br/",
   "h": 2426
+ },
+ {
+  "id": "atelier-vareda-vercel-app",
+  "nome": "Atelier Vareda",
+  "setor": "Arquitetura e Interiores",
+  "tipo": "Site",
+  "url": "https://atelier-vareda.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "nox-arquitetura-vercel-app",
+  "nome": "NOX Arquitetura",
+  "setor": "Arquitetura e Interiores",
+  "tipo": "Site",
+  "url": "https://nox-arquitetura.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "linha-zero-vercel-app",
+  "nome": "Linha Zero Arquitetura",
+  "setor": "Arquitetura e Interiores",
+  "tipo": "Site",
+  "url": "https://linha-zero.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "estudio-bloco-7-vercel-app",
+  "nome": "Estúdio Bloco 7",
+  "setor": "Arquitetura e Interiores",
+  "tipo": "Site",
+  "url": "https://estudio-bloco-7.vercel.app/",
+  "h": 3000
  }
 ]
