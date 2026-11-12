@@ -31,16 +31,21 @@
   }, { rootMargin: '-46px 0px -92% 0px' });
   chapters.forEach(function (c) { navIO.observe(c); });
 
-  /* índice de serviços acompanha o pilar visível */
-  var idx = [].slice.call(document.querySelectorAll('.svc-index a'));
-  if (idx.length) {
-    var pIO = new IntersectionObserver(function (es) {
+  /* serviços: o painel à esquerda acompanha o cartão no centro da tela */
+  var cards = [].slice.call(document.querySelectorAll('.svc-card'));
+  if (cards.length) {
+    var panels = [].slice.call(document.querySelectorAll('.svc-panel'));
+    var chips = [].slice.call(document.querySelectorAll('.svc-panel li'));
+    var sIO = new IntersectionObserver(function (es) {
       es.forEach(function (e) {
         if (!e.isIntersecting) return;
-        idx.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id); });
+        var p = e.target.getAttribute('data-p'), s = e.target.getAttribute('data-s');
+        cards.forEach(function (c) { c.classList.toggle('on', c === e.target); });
+        panels.forEach(function (x) { x.classList.toggle('on', x.getAttribute('data-p') === p); });
+        chips.forEach(function (x) { x.classList.toggle('on', x.getAttribute('data-s') === s); });
       });
-    }, { rootMargin: '-45% 0px -45% 0px' });
-    document.querySelectorAll('.pillar').forEach(function (p) { pIO.observe(p); });
+    }, { rootMargin: '-48% 0px -48% 0px' });
+    cards.forEach(function (c) { sIO.observe(c); });
   }
 
   /* contadores */
@@ -106,21 +111,13 @@
 
     var mm = gsap.matchMedia();
 
-    /* 1. parede de telas do hero: colunas em velocidades diferentes (profundidade) */
-    mm.add('(min-width: 1px)', function () {
-      var cols = gsap.utils.toArray('.wall-col');
-      var dist = [-14, 10, -22];
-      cols.forEach(function (c, i) {
-        gsap.to(c, { yPercent: dist[i], ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
-      });
-    });
-
     /* 2. manifesto: palavras acendem com o scroll e o capítulo escuro vira claro */
     var words = gsap.utils.toArray('.manifesto .w');
     if (words.length) {
       var mt = gsap.timeline({ scrollTrigger: { trigger: '.manifesto', start: 'top top', end: 'bottom bottom', scrub: .6 } });
       /* 0 a 10: palavras acendem / 11 a 12.2: escuro vira claro (rápido, sem meio-termo cinza longo) / até 13: respiro */
-      mt.to(words, { opacity: 1, stagger: 9 / Math.max(1, words.length - 1), ease: 'none', duration: 1 }, 0)
+      mt.to(words, { opacity: 1, y: 0, filter: 'blur(0px)', stagger: 8 / Math.max(1, words.length - 1), ease: 'power2.out', duration: 1.4 }, 0)
+        .to('.manifesto-sign', { opacity: .85, y: 0, duration: 1, ease: 'power2.out' }, 9.2)
         .to('.manifesto', { backgroundColor: '#EEF0EA', color: '#0E0F0C', duration: 1.2, ease: 'power1.inOut' }, 11)
         .to({}, { duration: .8 }, 12.2);
       ST.create({
@@ -129,32 +126,15 @@
       });
     }
 
-    /* 3. cases: scroll vertical vira pan horizontal; cada print rola por dentro da moldura */
+    /* 3. cases: scroll vertical vira pan horizontal (o print fica parado, mostrando o topo do site) */
     mm.add('(min-width: 901px)', function () {
       var track = document.querySelector('.pan-track');
       if (!track) return;
       function dist() { return Math.max(0, track.scrollWidth - innerWidth); }
-      var pan = gsap.to(track, {
+      gsap.to(track, {
         x: function () { return -dist(); }, ease: 'none',
         scrollTrigger: { trigger: '.cases-pin', start: 'bottom bottom', end: function () { return '+=' + dist(); }, pin: '.cases-pin', scrub: 1, invalidateOnRefresh: true, anticipatePin: 1 }
       });
-      gsap.utils.toArray('.case').forEach(function (card) {
-        var img = card.querySelector('.case-frame img');
-        var frame = card.querySelector('.case-frame');
-        if (!img) return;
-        gsap.fromTo(img, { y: 0 }, {
-          y: function () { return -Math.max(0, img.offsetHeight - frame.offsetHeight); }, ease: 'none',
-          scrollTrigger: { trigger: card, containerAnimation: pan, start: 'left 85%', end: 'right 15%', scrub: true, invalidateOnRefresh: true }
-        });
-      });
-    });
-
-    /* 4. processo: cartão anterior recua quando o próximo encosta */
-    var steps = gsap.utils.toArray('.step');
-    steps.forEach(function (s, i) {
-      var next = steps[i + 1];
-      if (!next) return;
-      gsap.fromTo(s, { scale: 1, filter: 'brightness(1)' }, { scale: .94, filter: 'brightness(.9)', ease: 'none', scrollTrigger: { trigger: next, start: 'top 85%', end: 'top 30%', scrub: true } });
     });
 
     /* 5. foto do fundador com leve parallax */
