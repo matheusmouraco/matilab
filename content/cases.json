@@ -144,14 +144,6 @@
   "h": 3000
  },
  {
-  "id": "cvjovem-mouraclientes-com-br",
-  "nome": "CV Jovem",
-  "setor": "RH e Carreira",
-  "tipo": "Site",
-  "url": "http://cvjovem.mouraclientes.com.br/",
-  "h": 2640
- },
- {
   "id": "gentia-com-br",
   "nome": "Gentia · Guia de Remuneração",
   "setor": "RH e Carreira",
@@ -272,14 +264,6 @@
   "h": 3000
  },
  {
-  "id": "suupgrowth-mouraclientes-com-br",
-  "nome": "Suup Growth",
-  "setor": "Agências e Marketing",
-  "tipo": "Site",
-  "url": "http://suupgrowth.mouraclientes.com.br/",
-  "h": 3000
- },
- {
   "id": "montemnt-com",
   "nome": "MNT. Monte",
   "setor": "Agências e Marketing",
@@ -310,14 +294,6 @@
   "tipo": "Landing page",
   "url": "https://matheusmoura.lovable.app/",
   "h": 3000
- },
- {
-  "id": "oak-mouraclientes-com-br",
-  "nome": "OakBerry Foz",
-  "setor": "Alimentação e Bebidas",
-  "tipo": "Site",
-  "url": "https://oak.mouraclientes.com.br/",
-  "h": 2065
  },
  {
   "id": "casalevigne-com-br",
@@ -382,14 +358,6 @@
   "tipo": "Site",
   "url": "https://akro.mouraclientes.com.br/",
   "h": 3000
- },
- {
-  "id": "andre-mouraclientes-com-br",
-  "nome": "Dr. André · Método AP",
-  "setor": "Saúde e Clínicas",
-  "tipo": "Landing page",
-  "url": "https://andre.mouraclientes.com.br/",
-  "h": 2957
  },
  {
   "id": "icnv-med-br",
@@ -816,14 +784,6 @@
   "h": 3000
  },
  {
-  "id": "kidssavelives-mouraclientes-com-br",
-  "nome": "Kids Save Lives Brasil",
-  "setor": "Infantil e Maternidade",
-  "tipo": "Site",
-  "url": "http://kidssavelives.mouraclientes.com.br/",
-  "h": 2769
- },
- {
   "id": "angelaurio-com-br",
   "nome": "Angela Urio Psicologia",
   "setor": "Psicologia e Terapia",
@@ -1016,22 +976,6 @@
   "h": 2179
  },
  {
-  "id": "ondecorarquitetura-mouraclientes-com-br",
-  "nome": "On Decor",
-  "setor": "Arquitetura e Interiores",
-  "tipo": "Site",
-  "url": "https://ondecorarquitetura.mouraclientes.com.br/",
-  "h": 2567
- },
- {
-  "id": "ocrearquitetura-mouraclientes-com-br",
-  "nome": "Ocre Arquitetura",
-  "setor": "Arquitetura e Interiores",
-  "tipo": "Site",
-  "url": "https://ocrearquitetura.mouraclientes.com.br/",
-  "h": 812
- },
- {
   "id": "rioarquitetura-mouraclientes-com-br",
   "nome": "Rio Arquitetura",
   "setor": "Arquitetura e Interiores",
@@ -1214,14 +1158,6 @@
   "tipo": "E-commerce",
   "url": "https://www.outletpro.store/",
   "h": 3000
- },
- {
-  "id": "techpink-matilab-com-br",
-  "nome": "TechPink",
-  "setor": "Varejo e E-commerce",
-  "tipo": "E-commerce",
-  "url": "http://techpink.matilab.com.br/",
-  "h": 2957
  },
  {
   "id": "ynaecortez-com-br",
@@ -1637,6 +1573,14 @@
   "setor": "Igrejas e Projetos Sociais",
   "tipo": "Site",
   "url": "https://cavalosdoben.vercel.app/",
+  "h": 3000
+ },
+ {
+  "id": "alphacolors-site-vercel-app",
+  "nome": "AlphaColors · Novo site",
+  "setor": "Construção, Pisos e Manutenção",
+  "tipo": "Site",
+  "url": "https://alphacolors-site.vercel.app/",
   "h": 3000
  }
 ]
