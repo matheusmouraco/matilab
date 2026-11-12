@@ -306,10 +306,10 @@ svg.i{width:1.15em;height:1.15em;flex:none;display:inline-block;vertical-align:-
 .ft-brand>svg{height:28px;width:auto;margin-bottom:22px}
 .ft-brand p{color:var(--t-light-2);font-size:15px;max-width:34ch}
 .ft-social{display:flex;gap:8px;margin-top:24px}
-.ft-social{gap:10px!important}
-.ft-social a{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.06);font-size:24px;transition:transform .5s var(--ease),background-color .3s}
-.ft-social a:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
-.ft-social svg.i{width:24px;height:24px;vertical-align:0;margin:0}
+.ft-social{gap:6px!important;margin-left:-8px}
+.ft-social a{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;color:#fff;background:transparent;font-size:28px;opacity:.9;transition:opacity .3s,transform .5s var(--ease)}
+.ft-social a:hover{opacity:1;transform:translateY(-2px)}
+.ft-social svg.i{width:28px;height:28px;vertical-align:0;margin:0;color:#fff}
 .ft-col h3{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--t-light-2);font-weight:500;margin-bottom:18px}
 .ft-col a,.ft-col address{display:block;font-size:15px;padding:5px 0;font-style:normal;color:var(--t-light);opacity:.85;transition:opacity .3s,color .3s}
 .ft-col a:hover{opacity:1;color:var(--lime)}
